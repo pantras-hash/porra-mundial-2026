@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porra Mundial 2026</title>
+  <style>
+:root {
+  --bg: #08111f;
+  --panel: #101b2f;
+  --panel-2: #13233d;
+  --text: #edf4ff;
+  --muted: #9eb1cc;
+  --line: rgba(255, 255, 255, 0.1);
+  --accent: #39d98a;
+  --accent-2: #51a7ff;
+  --warn: #ffd166;
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #1b4d61 0, transparent 34rem), var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.45;
+}
+
+.hero { padding: 4rem 1.25rem 2rem; }
+.hero__content, main, footer { width: min(1180px, 100%); margin: 0 auto; }
+.eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 .7rem; }
+h1 { font-size: clamp(2.4rem, 7vw, 5rem); line-height: .95; margin: 0; max-width: 880px; }
+.subtitle { color: var(--muted); font-size: 1.12rem; max-width: 760px; margin: 1.15rem 0 1.6rem; }
+.hero__actions { display: flex; gap: .9rem; align-items: center; flex-wrap: wrap; }
+.button, .tab {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  border-radius: 999px;
+  padding: .7rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:hover, .tab:hover, .tab.is-active { background: var(--accent); color: #06121c; border-color: transparent; }
+.source-label { color: var(--muted); font-size: .92rem; }
+
+main { padding: 0 1.25rem 3rem; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+.kpi, .card, .round-card {
+  background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.kpi { padding: 1rem; }
+.kpi span, .results-grid span { color: var(--muted); display: block; font-size: .85rem; }
+.kpi strong { display: block; font-size: clamp(1.25rem, 2vw, 1.9rem); margin-top: .25rem; }
+.tabs { display: flex; gap: .6rem; overflow-x: auto; padding: .4rem 0 1.25rem; position: sticky; top: 0; backdrop-filter: blur(18px); z-index: 2; }
+.panel { display: none; }
+.panel.is-active { display: block; }
+.grid { display: grid; gap: 1rem; }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 1rem; }
+.grid.groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { padding: 1.1rem; margin-bottom: 1rem; }
+.card__header { margin-bottom: 1rem; }
+.card__header h2, .round-card h2 { margin: 0 0 .2rem; font-size: 1.2rem; }
+.card__header p { margin: 0; color: var(--muted); }
+.row-header { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.text-link { color: var(--accent); font-weight: 700; text-decoration: none; }
+.search {
+  width: min(280px, 100%);
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  padding: .75rem 1rem;
+  outline: none;
+}
+.search::placeholder { color: var(--muted); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 620px; }
+th, td { padding: .72rem .75rem; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+th { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+tr:hover td { background: rgba(255,255,255,.035); }
+.pill, .paid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  padding: .18rem .55rem;
+  border-radius: 999px;
+  background: rgba(81,167,255,.18);
+  color: #cde5ff;
+  font-weight: 800;
+}
+.paid { background: rgba(57,217,138,.17); color: #adffd0; }
+.bars { display: grid; gap: .8rem; }
+.bar-row__top { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .35rem; }
+.bar { height: .65rem; background: rgba(255,255,255,.09); border-radius: 999px; overflow: hidden; }
+.bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius: inherit; }
+.podium { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+.podium-card { background: rgba(255,255,255,.06); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem; }
+.podium-card strong, .podium-card span { display: block; }
+.rank { color: var(--accent); font-weight: 900; }
+.muted { color: var(--muted); }
+.group-card table { min-width: 0; }
+.group-card th, .group-card td { padding: .5rem .45rem; }
+.matches { display: grid; gap: .35rem; margin-top: .75rem; }
+.match-line, .teams { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: .6rem; }
+.match-line { background: rgba(0,0,0,.16); border-radius: .8rem; padding: .55rem .65rem; color: var(--muted); }
+.match-line strong, .teams strong { color: var(--text); text-align: center; }
+.match-line span:last-child, .teams span:last-child { text-align: right; }
+.results-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .7rem; }
+.results-grid div { background: rgba(255,255,255,.06); border: 1px solid var(--line); border-radius: 1rem; padding: .85rem; }
+.bracket-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.round-card { padding: 1rem; }
+.knockout-match { border-top: 1px solid var(--line); padding: .75rem 0; }
+.knockout-match:first-of-type { border-top: 0; }
+.match-meta { display: flex; justify-content: space-between; color: var(--muted); font-size: .78rem; margin-bottom: .35rem; }
+.winner { margin-top: .35rem; color: var(--muted); font-size: .86rem; }
+.error { border: 1px solid rgba(255, 102, 102, .5); background: rgba(255, 102, 102, .12); padding: .85rem 1rem; border-radius: 1rem; margin-bottom: 1rem; }
+footer { color: var(--muted); padding: 0 1.25rem 2rem; }
+code { color: #cde5ff; }
+
+@media (max-width: 900px) {
+  .kpis, .grid.two, .grid.groups, .bracket-grid, .results-grid, .podium { grid-template-columns: 1fr; }
+  .row-header { align-items: flex-start; flex-direction: column; }
+  .hero { padding-top: 2.5rem; }
+}
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Porra Mundial 2026</p>
+      <h1>Tauler de seguiment de la porra</h1>
+      <p class="subtitle">Classificació, tendències de pronòstics, classificacions de grups, millors tercers i eliminatòries en una sola pàgina per compartir.</p>
+      <div class="hero__actions">
+        <button id="refreshBtn" class="button">Actualitzar dades</button>
+        <span id="sourceLabel" class="source-label">Carregant…</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="kpis" id="kpis" aria-label="Estadístiques resum"></section>
+
+    <nav class="tabs" aria-label="Seccions del tauler">
+      <button class="tab is-active" data-target="overview">Resum</button>
+      <button class="tab" data-target="leaderboard">Classificació</button>
+      <button class="tab" data-target="predictions">Pronòstics</button>
+      <button class="tab" data-target="groups">Grups</button>
+      <button class="tab" data-target="thirds">Millors 3rs</button>
+      <button class="tab" data-target="bracket">Eliminatòries</button>
+    </nav>
+
+    <section id="overview" class="panel is-active">
+      <div class="grid two">
+        <article class="card">
+          <div class="card__header">
+            <h2>Campió més triat</h2>
+            <p>Agregat a partir del full de pronòstics.</p>
+          </div>
+          <div id="championPicks" class="bars"></div>
+        </article>
+        <article class="card">
+          <div class="card__header">
+            <h2>Màxim golejador més triat</h2>
+            <p>Pronòstics del màxim golejador.</p>
+          </div>
+          <div id="scorerPicks" class="bars"></div>
+        </article>
+      </div>
+      <article class="card">
+        <div class="card__header row-header">
+          <div>
+            <h2>Líders actuals</h2>
+            <p>Primers de la classificació ara mateix.</p>
+          </div>
+          <a href="#leaderboard" class="text-link" data-jump="leaderboard">Veure la taula completa</a>
+        </div>
+        <div id="topLeaders" class="podium"></div>
+      </article>
+    </section>
+
+    <section id="leaderboard" class="panel">
+      <article class="card">
+        <div class="card__header row-header">
+          <div>
+            <h2>Classificació</h2>
+            <p>Punts totals i desglossament per categoria.</p>
+          </div>
+          <input id="leaderSearch" class="search" type="search" placeholder="Buscar participant…" autocomplete="off">
+        </div>
+        <div class="table-wrap"><table id="leaderboardTable"></table></div>
+      </article>
+    </section>
+
+    <section id="predictions" class="panel">
+      <article class="card">
+        <div class="card__header row-header">
+          <div>
+            <h2>Pronòstics dels participants</h2>
+            <p>Campió, podi, màxim golejador i gols.</p>
+          </div>
+          <input id="predictionSearch" class="search" type="search" placeholder="Buscar pronòstic…" autocomplete="off">
+        </div>
+        <div class="table-wrap"><table id="predictionsTable"></table></div>
+      </article>
+    </section>
+
+    <section id="groups" class="panel">
+      <div id="groupsGrid" class="grid groups"></div>
+    </section>
+
+    <section id="thirds" class="panel">
+      <article class="card">
+        <div class="card__header">
+          <h2>Millors tercers classificats</h2>
+          <p>Els vuit primers es classifiquen per als setzens de final.</p>
+        </div>
+        <div class="table-wrap"><table id="thirdsTable"></table></div>
+      </article>
+    </section>
+
+    <section id="bracket" class="panel">
+      <article class="card results-card">
+        <div class="card__header">
+          <h2>Resultats del torneig</h2>
+          <p>S’omple a mesura que es completen les eliminatòries.</p>
+        </div>
+        <div id="tournamentResults" class="results-grid"></div>
+      </article>
+      <div id="bracketGrid" class="bracket-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creat com a tauler estàtic. Fes servir Google Sheets com a font de veritat, o regenera <code>data.json</code> des de l’Excel.</p>
+  </footer>
+
+  <script>
+window.SHEET_CONFIG = { sheetId: "", refreshMinutes: 0, tabs: {} };
+window.BUNDLED_DATA = {"meta":{"sourceFile":"AA Classificació Porra Mundial 2026.xlsx","generatedAt":"2026-06-11T15:10:32+00:00","mode":"xlsx-cache"},"leaderboard":[{"name":"Albert Barneda","paid":null,"total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Albert Benach","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Albert Cosí","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Aleix","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Andreu","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Antonio","paid":null,"total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Bernat Garreta","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Bernat Orriols","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Bernat Raventós","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Biel","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Carlo","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Chús","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Colten","paid":null,"total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Daniela","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"David Muñoz","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Eduard Verdaguer","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Eduardo Morales","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Emiliano","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Enrique Moral","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Guille Amor","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Guillem Ochoa","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Isra","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Jaume","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Joan","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"JoanRa","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Jordi Cunyao","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Jordi Ollé","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Jordi Raventós","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Jordi Reig","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Juanma","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Manu GS","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Marc","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Martina","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Michael","paid":null,"total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Miquel","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Nick","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Nicolau","paid":null,"total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Norber","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Oriol Oltra","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Oriol Valls","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Oscar Bordas","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Oscar Campanyà","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Pablo","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Paco","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Pau","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Pere","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Pol","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Rafa Angulo","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Rafa Bravo","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Rubi","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Sergi Sanromà","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Teo","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Toni Campanyà","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1},{"name":"Xavi Ferrés","paid":"Fet","total":0,"breakdown":{"1X2":0,"G1":0,"CTG":0,"GTG":0,"PTG":0,"E16":0,"E16P":0,"G16":0,"E8":0,"E8P":0,"G8":0,"E4":0,"E4P":0,"G4":0,"ES":0,"ESP":0,"GS":0,"EF":0,"EC":0,"GC":0,"4rt":0,"3er":0,"GF":0,"2on":0,"1er":0,"PCH":0,"GPCH":0},"rank":1}],"stats":{"predictions":[{"name":"Albert Barneda","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"Albert Benach","champion":"Portugal","runnerUp":"France","third":"England","fourth":"Belgium","topScorer":"Dembélé","topScorerGoals":5},{"name":"Albert Cosí","champion":"Argentina","runnerUp":"Netherlands","third":"Morocco","fourth":"England","topScorer":"Harry Kane","topScorerGoals":7},{"name":"Aleix","champion":"Portugal","runnerUp":"Spain","third":"France","fourth":"Brazil","topScorer":"Raphinha","topScorerGoals":8},{"name":"Andreu","champion":"France","runnerUp":"Portugal","third":"Spain","fourth":"England","topScorer":"Dembélé","topScorerGoals":8},{"name":"Antonio","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"Bernat Garreta","champion":"England","runnerUp":"Morocco","third":"Spain","fourth":"Belgium","topScorer":"Harry Kane","topScorerGoals":15},{"name":"Bernat Orriols","champion":"Argentina","runnerUp":"Spain","third":"France","fourth":"Senegal","topScorer":"Mbappé","topScorerGoals":6},{"name":"Bernat Raventós","champion":"France","runnerUp":"Portugal","third":"England","fourth":"Spain","topScorer":"Mbappé","topScorerGoals":8},{"name":"Biel","champion":"France","runnerUp":"Norway","third":"Portugal","fourth":"Spain","topScorer":"Mbappé","topScorerGoals":8},{"name":"Carlo","champion":"England","runnerUp":"Spain","third":"France","fourth":"Portugal","topScorer":"Harry Kane","topScorerGoals":5},{"name":"Chús","champion":"Spain","runnerUp":"Portugal","third":"Germany","fourth":"England","topScorer":"Ferran Torres","topScorerGoals":5},{"name":"Colten","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"David Muñoz","champion":"Spain","runnerUp":"England","third":"France","fourth":"Portugal","topScorer":"Harry Kane","topScorerGoals":8},{"name":"Daniela","champion":"Spain","runnerUp":"Brazil","third":"France","fourth":"Argentina","topScorer":"Mbappé","topScorerGoals":7},{"name":"Eduardo Morales","champion":"Portugal","runnerUp":"Spain","third":"France","fourth":"Brazil","topScorer":"Vinicius","topScorerGoals":5},{"name":"Eduard Verdaguer","champion":"France","runnerUp":"England","third":"Spain","fourth":"Colombia","topScorer":"Harry Kane","topScorerGoals":6},{"name":"Emiliano","champion":"France","runnerUp":"Argentina","third":"Spain","fourth":"England","topScorer":"Mbappé","topScorerGoals":8},{"name":"Enrique Moral","champion":"Germany","runnerUp":"Argentina","third":"Brazil","fourth":"Belgium","topScorer":"Harry Kane","topScorerGoals":5},{"name":"Guille Amor","champion":"Spain","runnerUp":"England","third":"Uruguay","fourth":"Netherlands","topScorer":"Harry Kane","topScorerGoals":6},{"name":"Guillem Ochoa","champion":"Spain","runnerUp":"Argentina","third":"France","fourth":"Brazil","topScorer":"Oyarzábal","topScorerGoals":6},{"name":"Isra","champion":"Spain","runnerUp":"Argentina","third":"England","fourth":"France","topScorer":"Mbappé","topScorerGoals":9},{"name":"Jaume","champion":"Brazil","runnerUp":"Spain","third":"Portugal","fourth":"France","topScorer":"Raphinha","topScorerGoals":8},{"name":"Joan","champion":"Argentina","runnerUp":"Germany","third":"Brazil","fourth":"Colombia","topScorer":"Messi","topScorerGoals":6},{"name":"JoanRa","champion":"Germany","runnerUp":"Argentina","third":"Spain","fourth":"England","topScorer":"Kai Havertz","topScorerGoals":8},{"name":"Jordi Cunyao","champion":"France","runnerUp":"Brazil","third":"Spain","fourth":"Argentina","topScorer":"Mbappé","topScorerGoals":7},{"name":"Jordi Ollé","champion":"Spain","runnerUp":"England","third":"France","fourth":"Portugal","topScorer":"Mbappé","topScorerGoals":7},{"name":"Jordi Raventós","champion":"France","runnerUp":"Morocco","third":"Portugal","fourth":"Spain","topScorer":"Mbappé","topScorerGoals":7},{"name":"Jordi Reig","champion":"Spain","runnerUp":"England","third":"Argentina","fourth":"France","topScorer":"Harry Kane","topScorerGoals":7},{"name":"Juanma","champion":"Spain","runnerUp":"Portugal","third":"France","fourth":"England","topScorer":"Mbappé","topScorerGoals":8},{"name":"Manu GS","champion":"Spain","runnerUp":"Portugal","third":"Morocco","fourth":"England","topScorer":"Harry Kane","topScorerGoals":6},{"name":"Marc","champion":"Spain","runnerUp":"Argentina","third":"Brazil","fourth":"France","topScorer":"Julián Álvarez","topScorerGoals":7},{"name":"Martina","champion":"Spain","runnerUp":"Argentina","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Michael","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"Miquel","champion":"Spain","runnerUp":"Portugal","third":"France","fourth":"England","topScorer":"Harry Kane","topScorerGoals":7},{"name":"Nick","champion":"Spain","runnerUp":"Portugal","third":"Norway","fourth":"France","topScorer":"Ferran Torres","topScorerGoals":6},{"name":"Nicolau","champion":"Brazil","runnerUp":"Netherlands","third":"Belgium","fourth":"Portugal","topScorer":"Raphinha","topScorerGoals":5},{"name":"Norber","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"Oriol Oltra","champion":"Spain","runnerUp":"Argentina","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Oriol Valls","champion":"Spain","runnerUp":"England","third":"Argentina","fourth":"France","topScorer":"Harry Kane","topScorerGoals":7},{"name":"Oscar Bordas","champion":"Spain","runnerUp":"Argentina","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Oscar Campanyà","champion":"Argentina","runnerUp":"Spain","third":"Brazil","fourth":"France","topScorer":"Mbappé","topScorerGoals":7},{"name":"Pablo","champion":"Portugal","runnerUp":"Spain","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Paco","champion":"TBD","runnerUp":"TBD","third":"TBD","fourth":"TBD","topScorer":null,"topScorerGoals":null},{"name":"Pau","champion":"France","runnerUp":"Portugal","third":"Spain","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Pere","champion":"Spain","runnerUp":"Portugal","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":13},{"name":"Pol","champion":"France","runnerUp":"Argentina","third":"Brazil","fourth":"Spain","topScorer":"Mbappé","topScorerGoals":8},{"name":"Rafa Angulo","champion":"Spain","runnerUp":"Argentina","third":"Germany","fourth":"England","topScorer":"Lamine Yamal","topScorerGoals":7},{"name":"Rafa Bravo","champion":"France","runnerUp":"England","third":"Spain","fourth":"Argentina","topScorer":"Mbappé","topScorerGoals":7},{"name":"Rubi","champion":"Portugal","runnerUp":"France","third":"Brazil","fourth":"Spain","topScorer":"Mbappé","topScorerGoals":8},{"name":"Sergi Sanromà","champion":"Spain","runnerUp":"Portugal","third":"Brazil","fourth":"France","topScorer":"Mbappé","topScorerGoals":8},{"name":"Teo","champion":"Spain","runnerUp":"Portugal","third":"France","fourth":"Brazil","topScorer":"Mbappé","topScorerGoals":7},{"name":"Toni Campanyà","champion":"Brazil","runnerUp":"Portugal","third":"Spain","fourth":"Norway","topScorer":"Haaland","topScorerGoals":8},{"name":"Xavi Ferrés","champion":"Spain","runnerUp":"Portugal","third":"Morocco","fourth":"England","topScorer":"Mbappé","topScorerGoals":8}],"teamSummary":[{"team":"Spain","champion":22,"runnerUp":7,"third":9,"fourth":5,"total":43},{"team":"France","champion":10,"runnerUp":2,"third":16,"fourth":8,"total":36},{"team":"Portugal","champion":5,"runnerUp":13,"third":3,"fourth":4,"total":25},{"team":"Brazil","champion":3,"runnerUp":2,"third":7,"fourth":10,"total":22},{"team":"England","champion":2,"runnerUp":7,"third":3,"fourth":10,"total":22},{"team":"Argentina","champion":4,"runnerUp":11,"third":2,"fourth":3,"total":20},{"team":"Germany","champion":2,"runnerUp":1,"third":2,"fourth":0,"total":5},{"team":"Morocco","champion":0,"runnerUp":2,"third":3,"fourth":0,"total":5},{"team":"Belgium","champion":0,"runnerUp":0,"third":1,"fourth":3,"total":4},{"team":"Netherlands","champion":0,"runnerUp":2,"third":0,"fourth":1,"total":3},{"team":"Norway","champion":0,"runnerUp":1,"third":1,"fourth":1,"total":3},{"team":"Colombia","champion":0,"runnerUp":0,"third":0,"fourth":2,"total":2},{"team":"Senegal","champion":0,"runnerUp":0,"third":0,"fourth":1,"total":1},{"team":"Uruguay","champion":0,"runnerUp":0,"third":1,"fourth":0,"total":1}],"scorerSummary":[{"player":"Mbappé","count":23},{"player":"Harry Kane","count":11},{"player":"Raphinha","count":3},{"player":"Dembélé","count":2},{"player":"Ferran Torres","count":2},{"player":"Haaland","count":1},{"player":"Julián Álvarez","count":1},{"player":"Kai Havertz","count":1},{"player":"Lamine Yamal","count":1},{"player":"Messi","count":1},{"player":"Oyarzábal","count":1},{"player":"Vinicius","count":1}]},"groups":[{"name":"GROUP A","matches":[{"home":"Mexico","homeScore":null,"awayScore":null,"away":"South Africa","winner":"Empat"},{"home":"Korea Republic","homeScore":null,"awayScore":null,"away":"Czechia","winner":"Empat"},{"home":"Mexico","homeScore":null,"awayScore":null,"away":"Korea Republic","winner":"Empat"},{"home":"Czechia","homeScore":null,"awayScore":null,"away":"South Africa","winner":"Empat"},{"home":"Mexico","homeScore":null,"awayScore":null,"away":"Czechia","winner":"Empat"},{"home":"South Africa","homeScore":null,"awayScore":null,"away":"Korea Republic","winner":"Empat"}],"standings":[{"pos":1,"team":"Mexico","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"South Africa","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Korea Republic","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Czechia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP B","matches":[{"home":"Canada","homeScore":null,"awayScore":null,"away":"Bosnia-Herzegovina","winner":"Empat"},{"home":"Qatar","homeScore":null,"awayScore":null,"away":"Switzerland","winner":"Empat"},{"home":"Canada","homeScore":null,"awayScore":null,"away":"Qatar","winner":"Empat"},{"home":"Switzerland","homeScore":null,"awayScore":null,"away":"Bosnia-Herzegovina","winner":"Empat"},{"home":"Canada","homeScore":null,"awayScore":null,"away":"Switzerland","winner":"Empat"},{"home":"Bosnia-Herzegovina","homeScore":null,"awayScore":null,"away":"Qatar","winner":"Empat"}],"standings":[{"pos":1,"team":"Canada","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Bosnia-Herzegovina","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Qatar","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Switzerland","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP C","matches":[{"home":"Brazil","homeScore":null,"awayScore":null,"away":"Morocco","winner":"Empat"},{"home":"Haiti","homeScore":null,"awayScore":null,"away":"Scotland","winner":"Empat"},{"home":"Brazil","homeScore":null,"awayScore":null,"away":"Haiti","winner":"Empat"},{"home":"Scotland","homeScore":null,"awayScore":null,"away":"Morocco","winner":"Empat"},{"home":"Brazil","homeScore":null,"awayScore":null,"away":"Scotland","winner":"Empat"},{"home":"Morocco","homeScore":null,"awayScore":null,"away":"Haiti","winner":"Empat"}],"standings":[{"pos":1,"team":"Brazil","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Morocco","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Haiti","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Scotland","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP D","matches":[{"home":"USA","homeScore":null,"awayScore":null,"away":"Paraguay","winner":"Empat"},{"home":"Australia","homeScore":null,"awayScore":null,"away":"Türkiye","winner":"Empat"},{"home":"USA","homeScore":null,"awayScore":null,"away":"Australia","winner":"Empat"},{"home":"Türkiye","homeScore":null,"awayScore":null,"away":"Paraguay","winner":"Empat"},{"home":"USA","homeScore":null,"awayScore":null,"away":"Türkiye","winner":"Empat"},{"home":"Paraguay","homeScore":null,"awayScore":null,"away":"Australia","winner":"Empat"}],"standings":[{"pos":1,"team":"USA","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Paraguay","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Australia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Türkiye","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP E","matches":[{"home":"Germany","homeScore":null,"awayScore":null,"away":"Curaçao","winner":"Empat"},{"home":"Côte d'Ivoire","homeScore":null,"awayScore":null,"away":"Ecuador","winner":"Empat"},{"home":"Germany","homeScore":null,"awayScore":null,"away":"Côte d'Ivoire","winner":"Empat"},{"home":"Ecuador","homeScore":null,"awayScore":null,"away":"Curaçao","winner":"Empat"},{"home":"Germany","homeScore":null,"awayScore":null,"away":"Ecuador","winner":"Empat"},{"home":"Curaçao","homeScore":null,"awayScore":null,"away":"Côte d'Ivoire","winner":"Empat"}],"standings":[{"pos":1,"team":"Germany","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Curaçao","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Côte d'Ivoire","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Ecuador","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP F","matches":[{"home":"Netherlands","homeScore":null,"awayScore":null,"away":"Japan","winner":"Empat"},{"home":"Sweden","homeScore":null,"awayScore":null,"away":"Tunisia","winner":"Empat"},{"home":"Netherlands","homeScore":null,"awayScore":null,"away":"Sweden","winner":"Empat"},{"home":"Tunisia","homeScore":null,"awayScore":null,"away":"Japan","winner":"Empat"},{"home":"Netherlands","homeScore":null,"awayScore":null,"away":"Tunisia","winner":"Empat"},{"home":"Japan","homeScore":null,"awayScore":null,"away":"Sweden","winner":"Empat"}],"standings":[{"pos":1,"team":"Netherlands","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Japan","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Sweden","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Tunisia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP G","matches":[{"home":"Belgium","homeScore":null,"awayScore":null,"away":"Egypt","winner":"Empat"},{"home":"IR Iran","homeScore":null,"awayScore":null,"away":"New Zealand","winner":"Empat"},{"home":"Belgium","homeScore":null,"awayScore":null,"away":"IR Iran","winner":"Empat"},{"home":"New Zealand","homeScore":null,"awayScore":null,"away":"Egypt","winner":"Empat"},{"home":"Belgium","homeScore":null,"awayScore":null,"away":"New Zealand","winner":"Empat"},{"home":"Egypt","homeScore":null,"awayScore":null,"away":"IR Iran","winner":"Empat"}],"standings":[{"pos":1,"team":"Belgium","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Egypt","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"IR Iran","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"New Zealand","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP H","matches":[{"home":"Spain","homeScore":null,"awayScore":null,"away":"Cabo Verde","winner":"Empat"},{"home":"Saudi Arabia","homeScore":null,"awayScore":null,"away":"Uruguay","winner":"Empat"},{"home":"Spain","homeScore":null,"awayScore":null,"away":"Saudi Arabia","winner":"Empat"},{"home":"Uruguay","homeScore":null,"awayScore":null,"away":"Cabo Verde","winner":"Empat"},{"home":"Spain","homeScore":null,"awayScore":null,"away":"Uruguay","winner":"Empat"},{"home":"Cabo Verde","homeScore":null,"awayScore":null,"away":"Saudi Arabia","winner":"Empat"}],"standings":[{"pos":1,"team":"Spain","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Cabo Verde","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Saudi Arabia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Uruguay","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP I","matches":[{"home":"France","homeScore":null,"awayScore":null,"away":"Senegal","winner":"Empat"},{"home":"Iraq","homeScore":null,"awayScore":null,"away":"Norway","winner":"Empat"},{"home":"France","homeScore":null,"awayScore":null,"away":"Iraq","winner":"Empat"},{"home":"Norway","homeScore":null,"awayScore":null,"away":"Senegal","winner":"Empat"},{"home":"France","homeScore":null,"awayScore":null,"away":"Norway","winner":"Empat"},{"home":"Senegal","homeScore":null,"awayScore":null,"away":"Iraq","winner":"Empat"}],"standings":[{"pos":1,"team":"France","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Senegal","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Iraq","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Norway","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP J","matches":[{"home":"Argentina","homeScore":null,"awayScore":null,"away":"Algeria","winner":"Empat"},{"home":"Austria","homeScore":null,"awayScore":null,"away":"Jordan","winner":"Empat"},{"home":"Argentina","homeScore":null,"awayScore":null,"away":"Austria","winner":"Empat"},{"home":"Jordan","homeScore":null,"awayScore":null,"away":"Algeria","winner":"Empat"},{"home":"Argentina","homeScore":null,"awayScore":null,"away":"Jordan","winner":"Empat"},{"home":"Algeria","homeScore":null,"awayScore":null,"away":"Austria","winner":"Empat"}],"standings":[{"pos":1,"team":"Argentina","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Algeria","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Austria","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Jordan","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP K","matches":[{"home":"Portugal","homeScore":null,"awayScore":null,"away":"DR Congo","winner":"Empat"},{"home":"Uzbekistan","homeScore":null,"awayScore":null,"away":"Colombia","winner":"Empat"},{"home":"Portugal","homeScore":null,"awayScore":null,"away":"Uzbekistan","winner":"Empat"},{"home":"Colombia","homeScore":null,"awayScore":null,"away":"DR Congo","winner":"Empat"},{"home":"Portugal","homeScore":null,"awayScore":null,"away":"Colombia","winner":"Empat"},{"home":"DR Congo","homeScore":null,"awayScore":null,"away":"Uzbekistan","winner":"Empat"}],"standings":[{"pos":1,"team":"Portugal","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"DR Congo","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Uzbekistan","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Colombia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]},{"name":"GROUP L","matches":[{"home":"England","homeScore":null,"awayScore":null,"away":"Croatia","winner":"Empat"},{"home":"Ghana","homeScore":null,"awayScore":null,"away":"Panama","winner":"Empat"},{"home":"England","homeScore":null,"awayScore":null,"away":"Ghana","winner":"Empat"},{"home":"Panama","homeScore":null,"awayScore":null,"away":"Croatia","winner":"Empat"},{"home":"England","homeScore":null,"awayScore":null,"away":"Panama","winner":"Empat"},{"home":"Croatia","homeScore":null,"awayScore":null,"away":"Ghana","winner":"Empat"}],"standings":[{"pos":1,"team":"England","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":1},{"pos":2,"team":"Croatia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":2},{"pos":3,"team":"Ghana","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":3},{"pos":4,"team":"Panama","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"rank":4}]}],"thirdPlaces":[{"group":"3D","team":"Australia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3J","team":"Austria","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3E","team":"Côte d'Ivoire","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3L","team":"Ghana","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3C","team":"Haiti","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3G","team":"IR Iran","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3I","team":"Iraq","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3A","team":"Korea Republic","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3B","team":"Qatar","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3H","team":"Saudi Arabia","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3F","team":"Sweden","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1},{"group":"3K","team":"Uzbekistan","played":0,"wins":0,"draws":0,"losses":0,"gf":0,"ga":0,"gd":0,"pts":0,"qualified":"✓ QUALIFIED","rank":1}],"knockout":{"rounds":[{"name":"Setzens de final","matches":[{"id":"M73","home":"South Africa","homeSeed":"2A","homeScore":null,"awayScore":null,"away":"Bosnia-Herzegovina","awaySeed":"2B","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M74","home":"Germany","homeSeed":"1E","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M75","home":"Netherlands","homeSeed":"1F","homeScore":null,"awayScore":null,"away":"Morocco","awaySeed":"2C","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M76","home":"Brazil","homeSeed":"1C","homeScore":null,"awayScore":null,"away":"Japan","awaySeed":"2F","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M77","home":"France","homeSeed":"1I","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M78","home":"Curaçao","homeSeed":"2E","homeScore":null,"awayScore":null,"away":"Senegal","awaySeed":"2I","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M79","home":"Mexico","homeSeed":"1A","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M80","home":"England","homeSeed":"1L","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M81","home":"USA","homeSeed":"1D","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M82","home":"Belgium","homeSeed":"1G","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M83","home":"DR Congo","homeSeed":"2K","homeScore":null,"awayScore":null,"away":"Croatia","awaySeed":"2L","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M84","home":"Spain","homeSeed":"1H","homeScore":null,"awayScore":null,"away":"Algeria","awaySeed":"2J","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M85","home":"Canada","homeSeed":"1B","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M86","home":"Argentina","homeSeed":"1J","homeScore":null,"awayScore":null,"away":"Cabo Verde","awaySeed":"2H","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M87","home":"Portugal","homeSeed":"1K","homeScore":null,"awayScore":null,"away":"#N/A","awaySeed":"#N/A","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M88","home":"Paraguay","homeSeed":"2D","homeScore":null,"awayScore":null,"away":"Egypt","awaySeed":"2G","winner":"TBD","penHome":null,"penAway":null,"otherResult":null}]},{"name":"Vuitens de final","matches":[{"id":"M89","home":"TBD","homeSeed":"W74","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W77","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M90","home":"TBD","homeSeed":"W73","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W75","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M91","home":"TBD","homeSeed":"W76","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W78","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M92","home":"TBD","homeSeed":"W79","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W80","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M93","home":"TBD","homeSeed":"W83","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W84","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M94","home":"TBD","homeSeed":"W81","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W82","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M95","home":"TBD","homeSeed":"W86","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W88","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M96","home":"TBD","homeSeed":"W85","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W87","winner":"TBD","penHome":null,"penAway":null,"otherResult":null}]},{"name":"Quarts de final","matches":[{"id":"M97","home":"TBD","homeSeed":"W89","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W90","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M98","home":"TBD","homeSeed":"W93","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W94","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M99","home":"TBD","homeSeed":"W91","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W92","winner":"TBD","penHome":null,"penAway":null,"otherResult":null},{"id":"M100","home":"TBD","homeSeed":"W95","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W96","winner":"TBD","penHome":null,"penAway":null,"otherResult":null}]},{"name":"Semifinals","matches":[{"id":"M101","home":"TBD","homeSeed":"W97","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W98","winner":"TBD","penHome":null,"penAway":null,"otherResult":"TBD"},{"id":"M102","home":"TBD","homeSeed":"W99","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W100","winner":"TBD","penHome":null,"penAway":null,"otherResult":"TBD"}]},{"name":"Partit pel tercer lloc","matches":[{"id":"M103","home":"TBD","homeSeed":"L101","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"L102","winner":"TBD","penHome":null,"penAway":null,"otherResult":"TBD"}]},{"name":"Final","matches":[{"id":"M104","home":"TBD","homeSeed":"W101","homeScore":null,"awayScore":null,"away":"TBD","awaySeed":"W102","winner":"TBD","penHome":null,"penAway":null,"otherResult":"TBD"}]}],"results":{"fourth":"TBD","third":"TBD","runnerUp":"TBD","champion":"TBD","topScorer":null,"topScorerGoals":null},"qualifiers":[{"group":"Group A","winner":"Mexico","runnerUp":"South Africa","third":"Korea Republic","thirdPts":0,"thirdGd":0},{"group":"Group B","winner":"Canada","runnerUp":"Bosnia-Herzegovina","third":"Qatar","thirdPts":0,"thirdGd":0},{"group":"Group C","winner":"Brazil","runnerUp":"Morocco","third":"Haiti","thirdPts":0,"thirdGd":0},{"group":"Group D","winner":"USA","runnerUp":"Paraguay","third":"Australia","thirdPts":0,"thirdGd":0},{"group":"Group E","winner":"Germany","runnerUp":"Curaçao","third":"Côte d'Ivoire","thirdPts":0,"thirdGd":0},{"group":"Group F","winner":"Netherlands","runnerUp":"Japan","third":"Sweden","thirdPts":0,"thirdGd":0},{"group":"Group G","winner":"Belgium","runnerUp":"Egypt","third":"IR Iran","thirdPts":0,"thirdGd":0},{"group":"Group H","winner":"Spain","runnerUp":"Cabo Verde","third":"Saudi Arabia","thirdPts":0,"thirdGd":0},{"group":"Group I","winner":"France","runnerUp":"Senegal","third":"Iraq","thirdPts":0,"thirdGd":0},{"group":"Group J","winner":"Argentina","runnerUp":"Algeria","third":"Austria","thirdPts":0,"thirdGd":0},{"group":"Group K","winner":"Portugal","runnerUp":"DR Congo","third":"Uzbekistan","thirdPts":0,"thirdGd":0},{"group":"Group L","winner":"England","runnerUp":"Croatia","third":"Ghana","thirdPts":0,"thirdGd":0}]}};
+  </script>
+  <script>
+const state = { data: null, leaderFilter: "", predictionFilter: "" };
+
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function num(value, fallback = 0) {
+  if (value === null || value === undefined || value === "") return fallback;
+  const n = Number(String(value).replace(/,/g, ""));
+  return Number.isFinite(n) ? n : fallback;
+}
+
+function display(value, fallback = "Per definir") {
+  if (value === null || value === undefined || value === "" || value === "#N/A") return fallback;
+  if (String(value).trim().toUpperCase() === "TBD") return fallback;
+  return value;
+}
+
+function translateGroupName(value) {
+  const text = String(value ?? "");
+  const match = text.match(/^GROUP\s+([A-L])$/i);
+  return match ? `Grup ${match[1].toUpperCase()}` : text;
+}
+
+function translateThirdGroup(value) {
+  const text = String(value ?? "");
+  const match = text.match(/^3([A-L])$/i);
+  return match ? `3r del grup ${match[1].toUpperCase()}` : display(value, "");
+}
+
+function translateStatus(value) {
+  const text = String(value ?? "").trim();
+  if (!text) return "";
+  if (/QUALIFIED/i.test(text)) return "✓ Classificat";
+  if (/ELIMINATED/i.test(text)) return "Eliminat";
+  return text;
+}
+
+function translateRoundName(value) {
+  const map = {
+    "Round of 32": "Setzens de final",
+    "Round of 16": "Vuitens de final",
+    "Quarter-finals": "Quarts de final",
+    "Semi-finals": "Semifinals",
+    "Third place": "Partit pel tercer lloc",
+    "Final": "Final",
+  };
+  return map[value] || value;
+}
+
+function score(homeScore, awayScore) {
+  if (homeScore === null || homeScore === undefined || homeScore === "") return "–";
+  if (awayScore === null || awayScore === undefined || awayScore === "") return "–";
+  return `${homeScore}–${awayScore}`;
+}
+
+function percentageWidth(value, max) {
+  if (!max) return 0;
+  return Math.max(4, Math.round((value / max) * 100));
+}
+
+async function loadData() {
+  const cfg = window.SHEET_CONFIG || {};
+  const tabValues = cfg.tabs ? Object.values(cfg.tabs) : [];
+  const hasLiveConfig = cfg.sheetId && tabValues.length && tabValues.every(Boolean);
+
+  if (!hasLiveConfig && window.BUNDLED_DATA) {
+    const data = JSON.parse(JSON.stringify(window.BUNDLED_DATA));
+    data.meta = data.meta || {};
+    data.meta.source = "instantània de l’Excel incrustada";
+    return data;
+  }
+
+  if (!hasLiveConfig) {
+    const res = await fetch("data.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("No s’ha pogut carregar data.json. Serveix aquesta carpeta amb un servidor web local o publica-la en línia.");
+    const data = await res.json();
+    data.meta = data.meta || {};
+    data.meta.source = "data.json inclòs";
+    return data;
+  }
+
+  const rows = {};
+  for (const [name, gid] of Object.entries(cfg.tabs)) {
+    const url = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(cfg.sheetId)}/export?format=csv&gid=${encodeURIComponent(gid)}`;
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`No s’ha pogut carregar la pestanya de Google Sheets: ${name}`);
+    rows[name] = parseCsv(await res.text());
+  }
+  return buildDataFromRows(rows, "Google Sheets");
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i += 1) {
+    const ch = text[i];
+    const next = text[i + 1];
+    if (inQuotes) {
+      if (ch === '"' && next === '"') {
+        field += '"';
+        i += 1;
+      } else if (ch === '"') {
+        inQuotes = false;
+      } else {
+        field += ch;
+      }
+    } else if (ch === '"') {
+      inQuotes = true;
+    } else if (ch === ",") {
+      row.push(clean(field));
+      field = "";
+    } else if (ch === "\n") {
+      row.push(clean(field));
+      rows.push(row);
+      row = [];
+      field = "";
+    } else if (ch !== "\r") {
+      field += ch;
+    }
+  }
+  row.push(clean(field));
+  rows.push(row);
+  return rows;
+}
+
+function clean(value) {
+  if (value === null || value === undefined) return null;
+  const trimmed = String(value).trim();
+  if (!trimmed) return null;
+  const numeric = Number(trimmed.replace(/,/g, ""));
+  if (Number.isFinite(numeric) && /^-?\d+(\.\d+)?$/.test(trimmed.replace(/,/g, ""))) return numeric;
+  return trimmed;
+}
+
+function cell(rows, r, c) {
+  return rows?.[r - 1]?.[c - 1] ?? null;
+}
+
+function buildDataFromRows(raw, source) {
+  return {
+    meta: { source, generatedAt: new Date().toISOString(), mode: "google-sheets-csv" },
+    leaderboard: parseLeaderboard(raw.classificacio),
+    stats: parseStats(raw.estadistica),
+    groups: parseGroups(raw.faseGrups),
+    thirdPlaces: parseThirds(raw.thirds),
+    knockout: parseKnockout(raw.eliminatories),
+  };
+}
+
+function parseLeaderboard(rows) {
+  const headers = [...(rows?.[0] || [])];
+  if (!headers[0]) headers[0] = "Participant";
+  const out = [];
+  for (const row of (rows || []).slice(1, 250)) {
+    const name = row[0];
+    if (!name) continue;
+    const breakdown = {};
+    headers.slice(3).forEach((header, i) => {
+      if (header) breakdown[String(header)] = num(row[i + 3]);
+    });
+    out.push({ name, paid: row[1], total: num(row[2]), breakdown });
+  }
+  out.sort((a, b) => b.total - a.total || String(a.name).localeCompare(String(b.name)));
+  let lastTotal = null;
+  let rank = 0;
+  out.forEach((row, index) => {
+    if (row.total !== lastTotal) {
+      rank = index + 1;
+      lastTotal = row.total;
+    }
+    row.rank = rank;
+  });
+  return out;
+}
+
+function parseStats(rows) {
+  const predictions = [];
+  const teamSummary = [];
+  const scorerSummary = [];
+  for (const row of (rows || []).slice(1, 250)) {
+    if (row[0]) {
+      predictions.push({
+        name: row[0], champion: row[1], runnerUp: row[2], third: row[3], fourth: row[4],
+        topScorer: row[5], topScorerGoals: row[6],
+      });
+    }
+    if (row[8]) {
+      teamSummary.push({ team: row[8], champion: num(row[9]), runnerUp: num(row[10]), third: num(row[11]), fourth: num(row[12]), total: num(row[13]) });
+    }
+    if (row[14]) scorerSummary.push({ player: row[14], count: num(row[15]) });
+  }
+  teamSummary.sort((a, b) => b.total - a.total || a.team.localeCompare(b.team));
+  scorerSummary.sort((a, b) => b.count - a.count || a.player.localeCompare(b.player));
+  return { predictions, teamSummary, scorerSummary };
+}
+
+function parseGroups(rows) {
+  const groups = [];
+  for (let i = 1; i <= (rows || []).length; i += 1) {
+    const label = cell(rows, i, 1);
+    if (typeof label !== "string" || !label.toUpperCase().startsWith("GROUP ")) continue;
+    const group = { name: label, matches: [], standings: [] };
+    for (let r = i + 3; r <= i + 8; r += 1) {
+      if (cell(rows, r, 1) && cell(rows, r, 6)) {
+        group.matches.push({ home: cell(rows, r, 1), homeScore: cell(rows, r, 3), awayScore: cell(rows, r, 5), away: cell(rows, r, 6), winner: cell(rows, r, 8) });
+      }
+    }
+    for (let r = i + 12; r <= i + 15; r += 1) {
+      if (cell(rows, r, 2)) {
+        group.standings.push({ pos: num(cell(rows, r, 1)), team: cell(rows, r, 2), played: num(cell(rows, r, 3)), wins: num(cell(rows, r, 4)), draws: num(cell(rows, r, 5)), losses: num(cell(rows, r, 6)), gf: num(cell(rows, r, 7)), ga: num(cell(rows, r, 8)), gd: num(cell(rows, r, 9)), pts: num(cell(rows, r, 10)), rank: num(cell(rows, r, 11)) });
+      }
+    }
+    groups.push(group);
+  }
+  return groups;
+}
+
+function parseThirds(rows) {
+  const out = [];
+  for (let r = 5; r <= Math.min((rows || []).length, 80); r += 1) {
+    const group = cell(rows, r, 1);
+    const team = cell(rows, r, 2);
+    if (!group || !team || typeof group !== "string" || !group.startsWith("3")) continue;
+    out.push({ group, team, played: num(cell(rows, r, 3)), wins: num(cell(rows, r, 4)), draws: num(cell(rows, r, 5)), losses: num(cell(rows, r, 6)), gf: num(cell(rows, r, 7)), ga: num(cell(rows, r, 8)), gd: num(cell(rows, r, 9)), pts: num(cell(rows, r, 10)), qualified: cell(rows, r, 11), rank: num(cell(rows, r, 12)) });
+  }
+  out.sort((a, b) => a.rank - b.rank || b.pts - a.pts || b.gd - a.gd || a.team.localeCompare(b.team));
+  return out;
+}
+
+function parseKnockout(rows) {
+  const roundNames = {
+    "ROUND OF 32": "Setzens de final",
+    "ROUND OF 16": "Vuitens de final",
+    "QUARTER-FINALS": "Quarts de final",
+    "SEMI-FINALS": "Semifinals",
+    "THIRD PLACE MATCH": "Partit pel tercer lloc",
+    "🏆 FINAL 🏆": "Final",
+  };
+  const rounds = [];
+  let current = null;
+  for (let i = 1; i <= Math.min((rows || []).length, 140); i += 1) {
+    const label = cell(rows, i, 1);
+    if (roundNames[label]) {
+      current = { name: roundNames[label], matches: [] };
+      rounds.push(current);
+      continue;
+    }
+    if (!current || typeof label !== "string" || !/^M\d+$/.test(label)) continue;
+    current.matches.push({ id: label, home: cell(rows, i, 2), homeSeed: cell(rows, i, 3), homeScore: cell(rows, i, 4), awayScore: cell(rows, i, 5), away: cell(rows, i, 6), awaySeed: cell(rows, i, 7), winner: cell(rows, i, 8), penHome: cell(rows, i, 9), penAway: cell(rows, i, 10), otherResult: cell(rows, i, 11) });
+  }
+  const qualifiers = [];
+  for (let r = 6; r <= 17; r += 1) {
+    if (cell(rows, r, 1)) qualifiers.push({ group: cell(rows, r, 1), winner: cell(rows, r, 2), runnerUp: cell(rows, r, 4), third: cell(rows, r, 6), thirdPts: num(cell(rows, r, 7)), thirdGd: num(cell(rows, r, 8)) });
+  }
+  return {
+    rounds,
+    qualifiers,
+    results: { fourth: cell(rows, 77, 2), third: cell(rows, 78, 2), runnerUp: cell(rows, 79, 2), champion: cell(rows, 80, 2), topScorer: cell(rows, 79, 6), topScorerGoals: cell(rows, 80, 6) },
+  };
+}
+
+function render() {
+  const data = state.data;
+  renderKpis(data);
+  renderBars("#championPicks", data.stats.teamSummary.slice(0, 8), "team", "total");
+  renderBars("#scorerPicks", data.stats.scorerSummary.slice(0, 8), "player", "count");
+  renderTopLeaders(data.leaderboard.slice(0, 5));
+  renderLeaderboard(data.leaderboard);
+  renderPredictions(data.stats.predictions);
+  renderGroups(data.groups);
+  renderThirds(data.thirdPlaces);
+  renderBracket(data.knockout);
+  renderSource(data.meta);
+}
+
+function renderKpis(data) {
+  const gamesPlayed = data.groups.flatMap(g => g.matches).filter(m => m.homeScore !== null && m.homeScore !== undefined && m.awayScore !== null && m.awayScore !== undefined).length;
+  const paid = data.leaderboard.filter(p => String(p.paid || "").toLowerCase().includes("fet")).length;
+  const leader = data.leaderboard[0];
+  const kpis = [
+    ["Participants", data.leaderboard.length],
+    ["Pagats", `${paid}/${data.leaderboard.length}`],
+    ["Partits amb resultat", gamesPlayed],
+    ["Líder actual", leader ? `${leader.name} (${leader.total})` : "Per definir"],
+  ];
+  $("#kpis").innerHTML = kpis.map(([label, value]) => `<article class="kpi"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></article>`).join("");
+}
+
+function renderBars(selector, rows, labelKey, valueKey) {
+  const max = Math.max(...rows.map(r => num(r[valueKey])), 0);
+  $(selector).innerHTML = rows.map(row => {
+    const value = num(row[valueKey]);
+    return `<div class="bar-row">
+      <div class="bar-row__top"><span>${escapeHtml(row[labelKey])}</span><strong>${value}</strong></div>
+      <div class="bar"><span style="width:${percentageWidth(value, max)}%"></span></div>
+    </div>`;
+  }).join("") || `<p class="muted">Encara no hi ha dades.</p>`;
+}
+
+function renderTopLeaders(rows) {
+  $("#topLeaders").innerHTML = rows.map(row => `<div class="podium-card">
+    <span class="rank">#${row.rank}</span>
+    <strong>${escapeHtml(row.name)}</strong>
+    <span>${row.total} punts</span>
+  </div>`).join("");
+}
+
+function table(headers, rows) {
+  return `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody>`;
+}
+
+function renderLeaderboard(rows) {
+  const filter = state.leaderFilter.toLowerCase();
+  const visible = rows.filter(row => row.name.toLowerCase().includes(filter));
+  const allBreakdowns = [...new Set(rows.flatMap(row => Object.keys(row.breakdown || {})))].slice(0, 12);
+  const headers = ["Pos.", "Participant", "Pagat", "Total", ...allBreakdowns];
+  const body = visible.map(row => `<tr>
+    <td><span class="pill">${row.rank}</span></td>
+    <td><strong>${escapeHtml(row.name)}</strong></td>
+    <td>${row.paid ? `<span class="paid">${escapeHtml(row.paid)}</span>` : ""}</td>
+    <td><strong>${row.total}</strong></td>
+    ${allBreakdowns.map(key => `<td>${num(row.breakdown[key])}</td>`).join("")}
+  </tr>`);
+  $("#leaderboardTable").innerHTML = table(headers, body);
+}
+
+function renderPredictions(rows) {
+  const filter = state.predictionFilter.toLowerCase();
+  const visible = rows.filter(row => Object.values(row).join(" ").toLowerCase().includes(filter));
+  const body = visible.map(row => `<tr>
+    <td><strong>${escapeHtml(row.name)}</strong></td>
+    <td>${escapeHtml(display(row.champion))}</td>
+    <td>${escapeHtml(display(row.runnerUp))}</td>
+    <td>${escapeHtml(display(row.third))}</td>
+    <td>${escapeHtml(display(row.fourth))}</td>
+    <td>${escapeHtml(display(row.topScorer))}</td>
+    <td>${escapeHtml(display(row.topScorerGoals, ""))}</td>
+  </tr>`);
+  $("#predictionsTable").innerHTML = table(["Participant", "Campió", "Subcampió", "3r", "4t", "Màxim golejador", "Gols"], body);
+}
+
+function renderGroups(groups) {
+  $("#groupsGrid").innerHTML = groups.map(group => `<article class="card group-card">
+    <div class="card__header"><h2>${escapeHtml(translateGroupName(group.name))}</h2></div>
+    <div class="mini-table"><table>${table(["#", "Equip", "PJ", "DG", "Pts"], group.standings.map(row => `<tr><td>${row.pos}</td><td>${escapeHtml(row.team)}</td><td>${row.played}</td><td>${row.gd}</td><td><strong>${row.pts}</strong></td></tr>`))}</table></div>
+    <div class="matches">${group.matches.map(match => `<div class="match-line"><span>${escapeHtml(match.home)}</span><strong>${score(match.homeScore, match.awayScore)}</strong><span>${escapeHtml(match.away)}</span></div>`).join("")}</div>
+  </article>`).join("");
+}
+
+function renderThirds(rows) {
+  const body = rows.map(row => `<tr>
+    <td><span class="pill">${row.rank}</span></td><td>${escapeHtml(translateThirdGroup(row.group))}</td><td><strong>${escapeHtml(row.team)}</strong></td><td>${row.played}</td><td>${row.gd}</td><td>${row.pts}</td><td>${escapeHtml(translateStatus(row.qualified))}</td>
+  </tr>`);
+  $("#thirdsTable").innerHTML = table(["Pos.", "Grup", "Equip", "PJ", "DG", "Pts", "Estat"], body);
+}
+
+function renderBracket(knockout) {
+  const results = knockout.results || {};
+  const resultItems = [
+    ["Campió", display(results.champion)],
+    ["Subcampió", display(results.runnerUp)],
+    ["Tercer lloc", display(results.third)],
+    ["Quart lloc", display(results.fourth)],
+    ["Màxim golejador", display(results.topScorer)],
+    ["Gols del màxim golejador", display(results.topScorerGoals, "Per definir")],
+  ];
+  $("#tournamentResults").innerHTML = resultItems.map(([label, value]) => `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("");
+
+  $("#bracketGrid").innerHTML = (knockout.rounds || []).map(round => `<article class="round-card">
+    <h2>${escapeHtml(translateRoundName(round.name))}</h2>
+    ${round.matches.map(match => `<div class="knockout-match">
+      <div class="match-meta"><span>${escapeHtml(match.id)}</span><span>${escapeHtml(match.homeSeed || "")}${match.awaySeed ? " contra " + escapeHtml(match.awaySeed) : ""}</span></div>
+      <div class="teams"><span>${escapeHtml(display(match.home))}</span><strong>${score(match.homeScore, match.awayScore)}</strong><span>${escapeHtml(display(match.away))}</span></div>
+      <div class="winner">Guanyador: <strong>${escapeHtml(display(match.winner))}</strong></div>
+    </div>`).join("")}
+  </article>`).join("");
+}
+
+function renderSource(meta) {
+  const generated = meta.generatedAt ? new Date(meta.generatedAt).toLocaleString() : "hora desconeguda";
+  $("#sourceLabel").textContent = `${meta.source || meta.sourceFile || "Dades"} · actualitzat ${generated}`;
+}
+
+function activateTab(target) {
+  $$(".tab").forEach(tab => tab.classList.toggle("is-active", tab.dataset.target === target));
+  $$(".panel").forEach(panel => panel.classList.toggle("is-active", panel.id === target));
+  history.replaceState(null, "", `#${target}`);
+}
+
+async function init() {
+  $$(".tab").forEach(tab => tab.addEventListener("click", () => activateTab(tab.dataset.target)));
+  $$('[data-jump]').forEach(link => link.addEventListener("click", (event) => { event.preventDefault(); activateTab(link.dataset.jump); }));
+  $("#leaderSearch").addEventListener("input", event => { state.leaderFilter = event.target.value; renderLeaderboard(state.data.leaderboard); });
+  $("#predictionSearch").addEventListener("input", event => { state.predictionFilter = event.target.value; renderPredictions(state.data.stats.predictions); });
+  $("#refreshBtn").addEventListener("click", refresh);
+  await refresh();
+  const initial = location.hash.replace("#", "");
+  if (initial && $(`#${initial}`)) activateTab(initial);
+  const minutes = Number(window.SHEET_CONFIG?.refreshMinutes || 0);
+  if (minutes > 0) setInterval(refresh, minutes * 60 * 1000);
+}
+
+async function refresh() {
+  try {
+    $("#sourceLabel").textContent = "Actualitzant…";
+    state.data = await loadData();
+    render();
+  } catch (error) {
+    console.error(error);
+    $("#sourceLabel").textContent = "Error carregant les dades";
+    document.querySelector("main").insertAdjacentHTML("afterbegin", `<div class="error">${escapeHtml(error.message)}</div>`);
+  }
+}
+
+init();
+
+  </script>
+</body>
+</html>
