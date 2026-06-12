@@ -9,9 +9,9 @@ window.PORRA_RESULTATS = {
   matches: {
     // Grups
     // Mexico vs South Africa
-    "G-A-1": { homeScore: null, awayScore: null, penHome: null, penAway: null },
+    "G-A-1": { homeScore: 2, awayScore: 0, penHome: null, penAway: null },
     // Korea Republic vs Czechia
-    "G-A-2": { homeScore: null, awayScore: null, penHome: null, penAway: null },
+    "G-A-2": { homeScore: 1, awayScore: 1, penHome: null, penAway: null },
     // Mexico vs Korea Republic
     "G-A-3": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // Czechia vs South Africa
