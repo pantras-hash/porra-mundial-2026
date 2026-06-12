@@ -124,6 +124,7 @@ td.num, th.num { text-align: right; }
 tbody tr { cursor: pointer; transition: background .15s ease; }
 tbody tr:hover { background: var(--accent-soft); }
 .participant-cell { display: flex; align-items: center; gap: 10px; font-weight: 750; }
+.participant-cell--plain { gap: 0; }
 .avatar { width: 34px; height: 34px; border-radius: 50%; display: inline-grid; place-items: center; background: linear-gradient(135deg, #eaf0ff, #f7f8fc); color: var(--accent); border: 1px solid #dce5ff; font-size: .8rem; font-weight: 900; }
 .rank-pill, .score-pill, .winner-pill { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-weight: 850; }
 .rank-pill { min-width: 42px; padding: 5px 9px; background: var(--accent-soft); color: var(--accent); }

@@ -327,7 +327,7 @@
     return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
       <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
       <td><span class="move ${m.cls}">${escapeHtml(m.label)}</span></td>
-      <td><span class="participant-cell"><span class="avatar">${escapeHtml(initials(row.name))}</span>${escapeHtml(row.name)}</span></td>
+      <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
       <td class="num"><strong>${escapeHtml(row.total)}</strong></td>
       <td><span class="score-pill">${escapeHtml(scoreText(nextPred))}</span>${nextPred && nextPred.winner ? `<span class="winner-pill">${escapeHtml(nextPred.winner)}</span>` : ''}</td>
       <td>${escapeHtml(display(row.summary.champion))}</td>
