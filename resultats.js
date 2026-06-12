@@ -12,9 +12,9 @@ window.PORRA_RESULTATS = {
     // Grups
     // 2026-06-11
     // Mexico vs South Africa
-    "G-A-1": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-11", sortOrder: 1 },
+    "G-A-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-11", sortOrder: 1 },
     // Korea Republic vs Czechia
-    "G-A-2": { homeScore: 2, awayScore: 1, penHome: null, penAway: null, date: "2026-06-11", sortOrder: 2 },
+    "G-A-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-11", sortOrder: 2 },
     // 2026-06-12
     // Canada vs Bosnia-Herzegovina
     "G-B-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 3 },
