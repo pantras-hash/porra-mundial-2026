@@ -17,7 +17,7 @@ window.PORRA_RESULTATS = {
     "G-A-2": { homeScore: 2, awayScore: 1, penHome: null, penAway: null, date: "2026-06-11", sortOrder: 2 },
     // 2026-06-12
     // Canada vs Bosnia-Herzegovina
-    "G-B-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 3 },
+    "G-B-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 3 },
     // USA vs Paraguay
     "G-D-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 4 },
     // 2026-06-13
