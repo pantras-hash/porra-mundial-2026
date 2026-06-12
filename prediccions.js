@@ -1,7 +1,7 @@
 window.PORRA_DATA = {
   "meta": {
-    "generatedAt": "2026-06-12T22:06:03+00:00",
-    "sourceWorkbook": "AA Classificació Porra Mundial 2026 (3)(1).xlsx",
+    "generatedAt": "2026-06-12T22:20:23+00:00",
+    "sourceWorkbook": "AA Classificació Porra Mundial 2026 (4).xlsx",
     "excludedIncompletePlayers": 0,
     "excludedPlayers": [],
     "mode": "github-results-file",
@@ -9437,12 +9437,12 @@ window.PORRA_DATA = {
       "id": "p06",
       "name": "Andy",
       "summary": {
-        "fourth": "TBD",
-        "third": "TBD",
-        "topScorer": null,
-        "runnerUp": "TBD",
-        "topScorerGoals": null,
-        "champion": "TBD"
+        "fourth": "Portugal",
+        "third": "France",
+        "topScorer": "Mbappé",
+        "runnerUp": "Spain",
+        "topScorerGoals": 7,
+        "champion": "Colombia"
       },
       "groupMatches": [
         {
@@ -9468,8 +9468,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "Mexico",
           "away": "Korea Republic",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 2,
           "winner": "Empat"
         },
         {
@@ -9477,27 +9477,27 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "Czechia",
           "away": "South Africa",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Czechia"
         },
         {
           "id": "G-A-5",
           "round": "Grup A",
           "home": "Mexico",
           "away": "Czechia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Mexico"
         },
         {
           "id": "G-A-6",
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 1,
+          "awayScore": 3,
+          "winner": "Korea Republic"
         },
         {
           "id": "G-B-1",
@@ -9513,35 +9513,35 @@ window.PORRA_DATA = {
           "round": "Grup B",
           "home": "Qatar",
           "away": "Switzerland",
-          "homeScore": 3,
-          "awayScore": 0,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 3,
+          "winner": "Switzerland"
         },
         {
           "id": "G-B-3",
           "round": "Grup B",
           "home": "Canada",
           "away": "Qatar",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 1,
+          "winner": "Canada"
         },
         {
           "id": "G-B-4",
           "round": "Grup B",
           "home": "Switzerland",
           "away": "Bosnia-Herzegovina",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Switzerland"
         },
         {
           "id": "G-B-5",
           "round": "Grup B",
           "home": "Canada",
           "away": "Switzerland",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -9549,9 +9549,9 @@ window.PORRA_DATA = {
           "round": "Grup B",
           "home": "Bosnia-Herzegovina",
           "away": "Qatar",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Bosnia-Herzegovina"
         },
         {
           "id": "G-C-1",
@@ -9569,24 +9569,24 @@ window.PORRA_DATA = {
           "away": "Scotland",
           "homeScore": 0,
           "awayScore": 3,
-          "winner": "Empat"
+          "winner": "Scotland"
         },
         {
           "id": "G-C-3",
           "round": "Grup C",
           "home": "Brazil",
           "away": "Haiti",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 4,
+          "awayScore": 0,
+          "winner": "Brazil"
         },
         {
           "id": "G-C-4",
           "round": "Grup C",
           "home": "Scotland",
           "away": "Morocco",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 2,
           "winner": "Empat"
         },
         {
@@ -9594,18 +9594,18 @@ window.PORRA_DATA = {
           "round": "Grup C",
           "home": "Brazil",
           "away": "Scotland",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 2,
+          "winner": "Brazil"
         },
         {
           "id": "G-C-6",
           "round": "Grup C",
           "home": "Morocco",
           "away": "Haiti",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Morocco"
         },
         {
           "id": "G-D-1",
@@ -9614,7 +9614,7 @@ window.PORRA_DATA = {
           "away": "Paraguay",
           "homeScore": 2,
           "awayScore": 0,
-          "winner": "Empat"
+          "winner": "USA"
         },
         {
           "id": "G-D-2",
@@ -9623,24 +9623,24 @@ window.PORRA_DATA = {
           "away": "Türkiye",
           "homeScore": 0,
           "awayScore": 1,
-          "winner": "Empat"
+          "winner": "Türkiye"
         },
         {
           "id": "G-D-3",
           "round": "Grup D",
           "home": "USA",
           "away": "Australia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "USA"
         },
         {
           "id": "G-D-4",
           "round": "Grup D",
           "home": "Türkiye",
           "away": "Paraguay",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 2,
           "winner": "Empat"
         },
         {
@@ -9648,18 +9648,18 @@ window.PORRA_DATA = {
           "round": "Grup D",
           "home": "USA",
           "away": "Türkiye",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 1,
+          "awayScore": 2,
+          "winner": "Türkiye"
         },
         {
           "id": "G-D-6",
           "round": "Grup D",
           "home": "Paraguay",
           "away": "Australia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Paraguay"
         },
         {
           "id": "G-E-1",
@@ -9668,52 +9668,52 @@ window.PORRA_DATA = {
           "away": "Curaçao",
           "homeScore": 6,
           "awayScore": 0,
-          "winner": "Empat"
+          "winner": "Germany"
         },
         {
           "id": "G-E-2",
           "round": "Grup E",
           "home": "Côte d'Ivoire",
           "away": "Ecuador",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Côte d'Ivoire"
         },
         {
           "id": "G-E-3",
           "round": "Grup E",
           "home": "Germany",
           "away": "Côte d'Ivoire",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Germany"
         },
         {
           "id": "G-E-4",
           "round": "Grup E",
           "home": "Ecuador",
           "away": "Curaçao",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Ecuador"
         },
         {
           "id": "G-E-5",
           "round": "Grup E",
           "home": "Germany",
           "away": "Ecuador",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Germany"
         },
         {
           "id": "G-E-6",
           "round": "Grup E",
           "home": "Curaçao",
           "away": "Côte d'Ivoire",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 2,
+          "winner": "Côte d'Ivoire"
         },
         {
           "id": "G-F-1",
@@ -9729,44 +9729,44 @@ window.PORRA_DATA = {
           "round": "Grup F",
           "home": "Sweden",
           "away": "Tunisia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Sweden"
         },
         {
           "id": "G-F-3",
           "round": "Grup F",
           "home": "Netherlands",
           "away": "Sweden",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Netherlands"
         },
         {
           "id": "G-F-4",
           "round": "Grup F",
           "home": "Tunisia",
           "away": "Japan",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 2,
+          "winner": "Japan"
         },
         {
           "id": "G-F-5",
           "round": "Grup F",
           "home": "Netherlands",
           "away": "Tunisia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Netherlands"
         },
         {
           "id": "G-F-6",
           "round": "Grup F",
           "home": "Japan",
           "away": "Sweden",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "winner": "Empat"
         },
         {
@@ -9774,17 +9774,17 @@ window.PORRA_DATA = {
           "round": "Grup G",
           "home": "Belgium",
           "away": "Egypt",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Belgium"
         },
         {
           "id": "G-G-2",
           "round": "Grup G",
           "home": "IR Iran",
           "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "winner": "Empat"
         },
         {
@@ -9792,17 +9792,17 @@ window.PORRA_DATA = {
           "round": "Grup G",
           "home": "Belgium",
           "away": "IR Iran",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Belgium"
         },
         {
           "id": "G-G-4",
           "round": "Grup G",
           "home": "New Zealand",
           "away": "Egypt",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "winner": "Empat"
         },
         {
@@ -9810,71 +9810,71 @@ window.PORRA_DATA = {
           "round": "Grup G",
           "home": "Belgium",
           "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Belgium"
         },
         {
           "id": "G-G-6",
           "round": "Grup G",
           "home": "Egypt",
           "away": "IR Iran",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Egypt"
         },
         {
           "id": "G-H-1",
           "round": "Grup H",
           "home": "Spain",
           "away": "Cabo Verde",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 4,
+          "awayScore": 0,
+          "winner": "Spain"
         },
         {
           "id": "G-H-2",
           "round": "Grup H",
           "home": "Saudi Arabia",
           "away": "Uruguay",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 2,
+          "winner": "Uruguay"
         },
         {
           "id": "G-H-3",
           "round": "Grup H",
           "home": "Spain",
           "away": "Saudi Arabia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Spain"
         },
         {
           "id": "G-H-4",
           "round": "Grup H",
           "home": "Uruguay",
           "away": "Cabo Verde",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Uruguay"
         },
         {
           "id": "G-H-5",
           "round": "Grup H",
           "home": "Spain",
           "away": "Uruguay",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Spain"
         },
         {
           "id": "G-H-6",
           "round": "Grup H",
           "home": "Cabo Verde",
           "away": "Saudi Arabia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "winner": "Empat"
         },
         {
@@ -9882,89 +9882,89 @@ window.PORRA_DATA = {
           "round": "Grup I",
           "home": "France",
           "away": "Senegal",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "France"
         },
         {
           "id": "G-I-2",
           "round": "Grup I",
           "home": "Iraq",
           "away": "Norway",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 2,
+          "winner": "Norway"
         },
         {
           "id": "G-I-3",
           "round": "Grup I",
           "home": "France",
           "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 4,
+          "awayScore": 0,
+          "winner": "France"
         },
         {
           "id": "G-I-4",
           "round": "Grup I",
           "home": "Norway",
           "away": "Senegal",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Norway"
         },
         {
           "id": "G-I-5",
           "round": "Grup I",
           "home": "France",
           "away": "Norway",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "France"
         },
         {
           "id": "G-I-6",
           "round": "Grup I",
           "home": "Senegal",
           "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Senegal"
         },
         {
           "id": "G-J-1",
           "round": "Grup J",
           "home": "Argentina",
           "away": "Algeria",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Argentina"
         },
         {
           "id": "G-J-2",
           "round": "Grup J",
           "home": "Austria",
           "away": "Jordan",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Austria"
         },
         {
           "id": "G-J-3",
           "round": "Grup J",
           "home": "Argentina",
           "away": "Austria",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Argentina"
         },
         {
           "id": "G-J-4",
           "round": "Grup J",
           "home": "Jordan",
           "away": "Algeria",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "winner": "Empat"
         },
         {
@@ -9972,17 +9972,17 @@ window.PORRA_DATA = {
           "round": "Grup J",
           "home": "Argentina",
           "away": "Jordan",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 4,
+          "awayScore": 0,
+          "winner": "Argentina"
         },
         {
           "id": "G-J-6",
           "round": "Grup J",
           "home": "Algeria",
           "away": "Austria",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -9990,62 +9990,62 @@ window.PORRA_DATA = {
           "round": "Grup K",
           "home": "Portugal",
           "away": "DR Congo",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "Portugal"
         },
         {
           "id": "G-K-2",
           "round": "Grup K",
           "home": "Uzbekistan",
           "away": "Colombia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 3,
+          "winner": "Colombia"
         },
         {
           "id": "G-K-3",
           "round": "Grup K",
           "home": "Portugal",
           "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Portugal"
         },
         {
           "id": "G-K-4",
           "round": "Grup K",
           "home": "Colombia",
           "away": "DR Congo",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 0,
+          "awayScore": 2,
+          "winner": "DR Congo"
         },
         {
           "id": "G-K-5",
           "round": "Grup K",
           "home": "Portugal",
           "away": "Colombia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 1,
+          "winner": "Portugal"
         },
         {
           "id": "G-K-6",
           "round": "Grup K",
           "home": "DR Congo",
           "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 1,
+          "awayScore": 0,
+          "winner": "DR Congo"
         },
         {
           "id": "G-L-1",
           "round": "Grup L",
           "home": "England",
           "away": "Croatia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 2,
           "winner": "Empat"
         },
         {
@@ -10053,45 +10053,45 @@ window.PORRA_DATA = {
           "round": "Grup L",
           "home": "Ghana",
           "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 1,
+          "awayScore": 0,
+          "winner": "Ghana"
         },
         {
           "id": "G-L-3",
           "round": "Grup L",
           "home": "England",
           "away": "Ghana",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "England"
         },
         {
           "id": "G-L-4",
           "round": "Grup L",
           "home": "Panama",
           "away": "Croatia",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 1,
+          "awayScore": 2,
+          "winner": "Croatia"
         },
         {
           "id": "G-L-5",
           "round": "Grup L",
           "home": "England",
           "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 3,
+          "awayScore": 0,
+          "winner": "England"
         },
         {
           "id": "G-L-6",
           "round": "Grup L",
           "home": "Croatia",
           "away": "Ghana",
-          "homeScore": null,
-          "awayScore": null,
-          "winner": "Empat"
+          "homeScore": 2,
+          "awayScore": 0,
+          "winner": "Croatia"
         }
       ],
       "groupStandings": {
@@ -10099,67 +10099,67 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "gf": 2,
-            "ga": 0,
-            "gd": 2,
-            "pts": 3
+            "gf": 6,
+            "ga": 3,
+            "gd": 3,
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "gf": 1,
-            "ga": 0,
-            "gd": 1,
-            "pts": 3
+            "gf": 6,
+            "ga": 3,
+            "gd": 3,
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "gf": 0,
-            "ga": 1,
-            "gd": -1,
-            "pts": 0
+            "gf": 3,
+            "ga": 3,
+            "gd": 0,
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "gf": 0,
-            "ga": 2,
-            "gd": -2,
+            "gf": 1,
+            "ga": 7,
+            "gd": -6,
             "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
-            "team": "Canada",
-            "gf": 2,
+            "team": "Switzerland",
+            "gf": 6,
             "ga": 1,
-            "gd": 1,
-            "pts": 3
+            "gd": 5,
+            "pts": 7
           },
           {
             "pos": 2,
-            "team": "Qatar",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Canada",
+            "gf": 6,
+            "ga": 3,
+            "gd": 3,
+            "pts": 7
           },
           {
             "pos": 3,
-            "team": "Switzerland",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Bosnia-Herzegovina",
+            "gf": 3,
+            "ga": 4,
+            "gd": -1,
+            "pts": 3
           },
           {
             "pos": 4,
-            "team": "Bosnia-Herzegovina",
+            "team": "Qatar",
             "gf": 1,
-            "ga": 2,
-            "gd": -1,
+            "ga": 8,
+            "gd": -7,
             "pts": 0
           }
         ],
@@ -10167,67 +10167,67 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Brazil",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 9,
+            "ga": 4,
+            "gd": 5,
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 6,
+            "ga": 4,
+            "gd": 2,
+            "pts": 5
           },
           {
             "pos": 3,
-            "team": "Haiti",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Scotland",
+            "gf": 7,
+            "ga": 5,
+            "gd": 2,
+            "pts": 4
           },
           {
             "pos": 4,
-            "team": "Scotland",
+            "team": "Haiti",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "ga": 9,
+            "gd": -9,
             "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
-            "team": "USA",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Türkiye",
+            "gf": 5,
+            "ga": 3,
+            "gd": 2,
+            "pts": 7
           },
           {
             "pos": 2,
-            "team": "Paraguay",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "USA",
+            "gf": 5,
+            "ga": 3,
+            "gd": 2,
+            "pts": 6
           },
           {
             "pos": 3,
-            "team": "Australia",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Paraguay",
+            "gf": 4,
+            "ga": 5,
+            "gd": -1,
+            "pts": 4
           },
           {
             "pos": 4,
-            "team": "Türkiye",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "team": "Australia",
+            "gf": 2,
+            "ga": 5,
+            "gd": -3,
             "pts": 0
           }
         ],
@@ -10235,33 +10235,33 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Germany",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 10,
+            "ga": 1,
+            "gd": 9,
+            "pts": 9
           },
           {
             "pos": 2,
-            "team": "Curaçao",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Côte d'Ivoire",
+            "gf": 4,
+            "ga": 3,
+            "gd": 1,
+            "pts": 6
           },
           {
             "pos": 3,
-            "team": "Côte d'Ivoire",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Ecuador",
+            "gf": 5,
+            "ga": 4,
+            "gd": 1,
+            "pts": 3
           },
           {
             "pos": 4,
-            "team": "Ecuador",
+            "team": "Curaçao",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "ga": 11,
+            "gd": -11,
             "pts": 0
           }
         ],
@@ -10269,33 +10269,33 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Netherlands",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 6,
+            "ga": 3,
+            "gd": 3,
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 4,
+            "ga": 2,
+            "gd": 2,
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 4,
+            "ga": 2,
+            "gd": 2,
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "ga": 7,
+            "gd": -7,
             "pts": 0
           }
         ],
@@ -10303,101 +10303,101 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Belgium",
-            "gf": 0,
+            "gf": 7,
             "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gd": 7,
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 2,
+            "ga": 3,
+            "gd": -1,
+            "pts": 4
           },
           {
             "pos": 3,
-            "team": "IR Iran",
+            "team": "New Zealand",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "ga": 3,
+            "gd": -3,
+            "pts": 2
           },
           {
             "pos": 4,
-            "team": "New Zealand",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "IR Iran",
+            "gf": 1,
+            "ga": 4,
+            "gd": -3,
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 9,
+            "ga": 1,
+            "gd": 8,
+            "pts": 9
           },
           {
             "pos": 2,
-            "team": "Cabo Verde",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Uruguay",
+            "gf": 6,
+            "ga": 2,
+            "gd": 4,
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "ga": 5,
+            "gd": -5,
+            "pts": 1
           },
           {
             "pos": 4,
-            "team": "Uruguay",
+            "team": "Cabo Verde",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "ga": 7,
+            "gd": -7,
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "gf": 0,
+            "gf": 9,
             "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gd": 9,
+            "pts": 9
           },
           {
             "pos": 2,
-            "team": "Senegal",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Norway",
+            "gf": 4,
+            "ga": 3,
+            "gd": 1,
+            "pts": 6
           },
           {
             "pos": 3,
-            "team": "Iraq",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Senegal",
+            "gf": 3,
+            "ga": 5,
+            "gd": -2,
+            "pts": 3
           },
           {
             "pos": 4,
-            "team": "Norway",
+            "team": "Iraq",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "ga": 8,
+            "gd": -8,
             "pts": 0
           }
         ],
@@ -10405,67 +10405,67 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Argentina",
-            "gf": 0,
+            "gf": 9,
             "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gd": 9,
+            "pts": 9
           },
           {
             "pos": 2,
-            "team": "Algeria",
-            "gf": 0,
-            "ga": 0,
+            "team": "Austria",
+            "gf": 3,
+            "ga": 3,
             "gd": 0,
-            "pts": 0
+            "pts": 4
           },
           {
             "pos": 3,
-            "team": "Austria",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "team": "Algeria",
+            "gf": 1,
+            "ga": 4,
+            "gd": -3,
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "ga": 6,
+            "gd": -6,
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 7,
+            "ga": 1,
+            "gd": 6,
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "DR Congo",
-            "gf": 0,
-            "ga": 0,
+            "gf": 3,
+            "ga": 3,
             "gd": 0,
-            "pts": 0
+            "pts": 6
           },
           {
             "pos": 3,
-            "team": "Uzbekistan",
-            "gf": 0,
-            "ga": 0,
+            "team": "Colombia",
+            "gf": 4,
+            "ga": 4,
             "gd": 0,
-            "pts": 0
+            "pts": 3
           },
           {
             "pos": 4,
-            "team": "Colombia",
+            "team": "Uzbekistan",
             "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "ga": 6,
+            "gd": -6,
             "pts": 0
           }
         ],
@@ -10473,33 +10473,33 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "England",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 8,
+            "ga": 2,
+            "gd": 6,
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 6,
+            "ga": 3,
+            "gd": 3,
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
-            "pts": 0
+            "gf": 1,
+            "ga": 5,
+            "gd": -4,
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "gf": 0,
-            "ga": 0,
-            "gd": 0,
+            "gf": 1,
+            "ga": 6,
+            "gd": -5,
             "pts": 0
           }
         ]
@@ -10509,353 +10509,353 @@ window.PORRA_DATA = {
           "id": "M73",
           "round": "Setzens de final",
           "home": "Korea Republic",
-          "away": "Bosnia-Herzegovina",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Canada",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Canada"
         },
         {
           "id": "M74",
           "round": "Setzens de final",
           "home": "Germany",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Paraguay",
+          "homeScore": 3,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Germany"
         },
         {
           "id": "M75",
           "round": "Setzens de final",
           "home": "Netherlands",
           "away": "Morocco",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Netherlands"
         },
         {
           "id": "M76",
           "round": "Setzens de final",
           "home": "Brazil",
           "away": "Japan",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Brazil"
         },
         {
           "id": "M77",
           "round": "Setzens de final",
           "home": "France",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Sweden",
+          "homeScore": 3,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "France"
         },
         {
           "id": "M78",
           "round": "Setzens de final",
-          "home": "Curaçao",
-          "away": "Senegal",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Côte d'Ivoire",
+          "away": "Norway",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Norway"
         },
         {
           "id": "M79",
           "round": "Setzens de final",
           "home": "Mexico",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Scotland",
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Mexico"
         },
         {
           "id": "M80",
           "round": "Setzens de final",
           "home": "England",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Colombia",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Colombia"
         },
         {
           "id": "M81",
           "round": "Setzens de final",
-          "home": "USA",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Türkiye",
+          "away": "Bosnia-Herzegovina",
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Türkiye"
         },
         {
           "id": "M82",
           "round": "Setzens de final",
           "home": "Belgium",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Czechia",
+          "homeScore": 2,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Belgium"
         },
         {
           "id": "M83",
           "round": "Setzens de final",
           "home": "DR Congo",
           "away": "Croatia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Croatia"
         },
         {
           "id": "M84",
           "round": "Setzens de final",
           "home": "Spain",
-          "away": "Algeria",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Austria",
+          "homeScore": 3,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Spain"
         },
         {
           "id": "M85",
           "round": "Setzens de final",
-          "home": "Canada",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
-          "penHome": null,
-          "penAway": null,
-          "winner": "TBD"
+          "home": "Switzerland",
+          "away": "Ecuador",
+          "homeScore": 1,
+          "awayScore": 1,
+          "penHome": 4,
+          "penAway": 3,
+          "winner": "Switzerland"
         },
         {
           "id": "M86",
           "round": "Setzens de final",
           "home": "Argentina",
-          "away": "Cabo Verde",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Uruguay",
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Argentina"
         },
         {
           "id": "M87",
           "round": "Setzens de final",
           "home": "Portugal",
-          "away": "#N/A",
-          "homeScore": null,
-          "awayScore": null,
+          "away": "Senegal",
+          "homeScore": 3,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Portugal"
         },
         {
           "id": "M88",
           "round": "Setzens de final",
-          "home": "Paraguay",
+          "home": "USA",
           "away": "Egypt",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "USA"
         },
         {
           "id": "M89",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Germany",
+          "away": "France",
+          "homeScore": 1,
+          "awayScore": 3,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "France"
         },
         {
           "id": "M90",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Canada",
+          "away": "Netherlands",
+          "homeScore": 1,
+          "awayScore": 3,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Netherlands"
         },
         {
           "id": "M91",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Brazil",
+          "away": "Norway",
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Brazil"
         },
         {
           "id": "M92",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Mexico",
+          "away": "Colombia",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Colombia"
         },
         {
           "id": "M93",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Croatia",
+          "away": "Spain",
+          "homeScore": 1,
+          "awayScore": 3,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Spain"
         },
         {
           "id": "M94",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Türkiye",
+          "away": "Belgium",
+          "homeScore": 0,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Belgium"
         },
         {
           "id": "M95",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Argentina",
+          "away": "USA",
+          "homeScore": 3,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Argentina"
         },
         {
           "id": "M96",
           "round": "Vuitens de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Switzerland",
+          "away": "Portugal",
+          "homeScore": 1,
+          "awayScore": 3,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Portugal"
         },
         {
           "id": "M97",
           "round": "Quarts de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "France",
+          "away": "Netherlands",
+          "homeScore": 2,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "France"
         },
         {
           "id": "M98",
           "round": "Quarts de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Spain",
+          "away": "Belgium",
+          "homeScore": 2,
+          "awayScore": 0,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Spain"
         },
         {
           "id": "M99",
           "round": "Quarts de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Brazil",
+          "away": "Colombia",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Colombia"
         },
         {
           "id": "M100",
           "round": "Quarts de final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
-          "penHome": null,
-          "penAway": null,
-          "winner": "TBD"
+          "home": "Argentina",
+          "away": "Portugal",
+          "homeScore": 2,
+          "awayScore": 2,
+          "penHome": 3,
+          "penAway": 4,
+          "winner": "Portugal"
         },
         {
           "id": "M101",
           "round": "Semifinals",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
-          "penHome": null,
-          "penAway": null,
-          "winner": "TBD"
+          "home": "France",
+          "away": "Spain",
+          "homeScore": 1,
+          "awayScore": 1,
+          "penHome": 3,
+          "penAway": 4,
+          "winner": "Spain"
         },
         {
           "id": "M102",
           "round": "Semifinals",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Colombia",
+          "away": "Portugal",
+          "homeScore": 2,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Colombia"
         },
         {
           "id": "M103",
           "round": "Tercer lloc",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "France",
+          "away": "Portugal",
+          "homeScore": 2,
+          "awayScore": 1,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "France"
         },
         {
           "id": "M104",
           "round": "Final",
-          "home": "TBD",
-          "away": "TBD",
-          "homeScore": null,
-          "awayScore": null,
+          "home": "Spain",
+          "away": "Colombia",
+          "homeScore": 1,
+          "awayScore": 2,
           "penHome": null,
           "penAway": null,
-          "winner": "TBD"
+          "winner": "Colombia"
         }
       ]
     },
