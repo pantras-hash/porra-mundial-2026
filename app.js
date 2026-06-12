@@ -1,419 +1,349 @@
-const state = { data: null, leaderFilter: "", predictionFilter: "" };
-
-const $ = (selector) => document.querySelector(selector);
-const $$ = (selector) => [...document.querySelectorAll(selector)];
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function num(value, fallback = 0) {
-  if (value === null || value === undefined || value === "") return fallback;
-  const n = Number(String(value).replace(/,/g, ""));
-  return Number.isFinite(n) ? n : fallback;
-}
-
-function display(value, fallback = "Per definir") {
-  if (value === null || value === undefined || value === "" || value === "#N/A") return fallback;
-  if (String(value).trim().toUpperCase() === "TBD") return fallback;
-  return value;
-}
-
-function translateGroupName(value) {
-  const text = String(value ?? "");
-  const match = text.match(/^GROUP\s+([A-L])$/i);
-  return match ? `Grup ${match[1].toUpperCase()}` : text;
-}
-
-function translateThirdGroup(value) {
-  const text = String(value ?? "");
-  const match = text.match(/^3([A-L])$/i);
-  return match ? `3r del grup ${match[1].toUpperCase()}` : display(value, "");
-}
-
-function translateStatus(value) {
-  const text = String(value ?? "").trim();
-  if (!text) return "";
-  if (/QUALIFIED/i.test(text)) return "✓ Classificat";
-  if (/ELIMINATED/i.test(text)) return "Eliminat";
-  return text;
-}
-
-function translateRoundName(value) {
-  const map = {
-    "Round of 32": "Setzens de final",
-    "Round of 16": "Vuitens de final",
-    "Quarter-finals": "Quarts de final",
-    "Semi-finals": "Semifinals",
-    "Third place": "Partit pel tercer lloc",
-    "Final": "Final",
+(function () {
+  const data = window.PORRA_DATA;
+  const resultats = window.PORRA_RESULTATS || { matches: {}, final: {}, groupRankingOverrides: {} };
+  const state = { filter: '', computed: null };
+  const els = {
+    status: document.getElementById('dataStatus'),
+    nextTitle: document.getElementById('nextMatchTitle'),
+    nextMeta: document.getElementById('nextMatchMeta'),
+    nextHeader: document.getElementById('nextPredictionHeader'),
+    body: document.getElementById('leaderboardBody'),
+    search: document.getElementById('searchInput'),
+    drawer: document.getElementById('playerDrawer'),
+    closeDrawer: document.getElementById('closeDrawer'),
+    drawerTitle: document.getElementById('drawerTitle'),
+    drawerRank: document.getElementById('drawerRank'),
+    drawerSubtitle: document.getElementById('drawerSubtitle'),
+    drawerContent: document.getElementById('drawerContent')
   };
-  return map[value] || value;
-}
+  const stageConfig = {
+    r32: { keys: rangeKeys(73, 88), team: 'E16', pos: 'E16P', goals: 'G16', teamPts: 4, posPts: 4, goalPts: 4, goalMin: 4 },
+    r16: { keys: rangeKeys(89, 96), team: 'E8', pos: 'E8P', goals: 'G8', teamPts: 6, posPts: 6, goalPts: 6 },
+    qf:  { keys: rangeKeys(97, 100), team: 'E4', pos: 'E4P', goals: 'G4', teamPts: 8, posPts: 8, goalPts: 6 },
+    sf:  { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
+  };
 
-function score(homeScore, awayScore) {
-  if (homeScore === null || homeScore === undefined || homeScore === "") return "–";
-  if (awayScore === null || awayScore === undefined || awayScore === "") return "–";
-  return `${homeScore}–${awayScore}`;
-}
-
-function percentageWidth(value, max) {
-  if (!max) return 0;
-  return Math.max(4, Math.round((value / max) * 100));
-}
-
-async function loadData() {
-  const cfg = window.SHEET_CONFIG || {};
-  const tabValues = cfg.tabs ? Object.values(cfg.tabs) : [];
-  const hasLiveConfig = cfg.sheetId && tabValues.length && tabValues.every(Boolean);
-
-  if (!hasLiveConfig) {
-    const res = await fetch("data.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("No s’ha pogut carregar data.json. Serveix aquesta carpeta amb un servidor web local o publica-la en línia.");
-    const data = await res.json();
-    data.meta = data.meta || {};
-    data.meta.source = "data.json inclòs";
-    return data;
+  function rangeKeys(a, b) { const out = []; for (let i = a; i <= b; i++) out.push('M' + i); return out; }
+  function escapeHtml(value) { return String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c])); }
+  function display(value, fallback = '—') { if (value === null || value === undefined || value === '') return fallback; const s = String(value).trim(); if (!s || s === '#N/A' || s.toUpperCase() === 'TBD') return fallback; return s; }
+  function isNum(v) { return typeof v === 'number' && Number.isFinite(v); }
+  function scoreText(m) { if (!m || !isNum(m.homeScore) || !isNum(m.awayScore)) return '—'; let s = `${m.homeScore}–${m.awayScore}`; if (isNum(m.penHome) && isNum(m.penAway)) s += ` (${m.penHome}–${m.penAway} pen.)`; return s; }
+  function initials(name) { return String(name || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase(); }
+  function matchLabel(m) { if (!m) return '—'; return `${display(m.home)} vs ${display(m.away)}`; }
+  function cloneResultsWithout(matchId) {
+    const copy = JSON.parse(JSON.stringify(resultats));
+    if (matchId && copy.matches && copy.matches[matchId]) {
+      copy.matches[matchId] = { homeScore: null, awayScore: null, penHome: null, penAway: null };
+    }
+    return copy;
   }
 
-  const rows = {};
-  for (const [name, gid] of Object.entries(cfg.tabs)) {
-    const url = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(cfg.sheetId)}/export?format=csv&gid=${encodeURIComponent(gid)}`;
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`No s’ha pogut carregar la pestanya de Google Sheets: ${name}`);
-    rows[name] = parseCsv(await res.text());
+  function buildActual(resultsObj) {
+    const resultMap = resultsObj.matches || {};
+    const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
+    const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {});
+    const third = computeThirdPlaces(groups);
+    const r32ThirdMap = computeThirdMap(third);
+    const allMatches = [];
+    for (const gm of groupMatches) {
+      allMatches.push({ ...gm, winner: groupWinner(gm) });
+    }
+    const byId = Object.fromEntries(allMatches.map(m => [m.id, m]));
+    for (const tmpl of data.matches.filter(m => m.type === 'knockout')) {
+      const base = resultMap[tmpl.id] || {};
+      const home = resolveSlot(tmpl.homeSlot, groups, third, r32ThirdMap, byId, 'home');
+      const away = resolveSlot(tmpl.awaySlot, groups, third, r32ThirdMap, byId, 'away');
+      const km = { ...tmpl, home, away, ...base };
+      km.winner = koWinner(km);
+      km.loser = koLoser(km);
+      byId[km.id] = km;
+      allMatches.push(km);
+    }
+    return { matches: allMatches, byId, groups, third, final: resultsObj.final || {} };
   }
-  return buildDataFromRows(rows, "Google Sheets");
-}
 
-function parseCsv(text) {
-  const rows = [];
-  let row = [];
-  let field = "";
-  let inQuotes = false;
-  for (let i = 0; i < text.length; i += 1) {
-    const ch = text[i];
-    const next = text[i + 1];
-    if (inQuotes) {
-      if (ch === '"' && next === '"') {
-        field += '"';
-        i += 1;
-      } else if (ch === '"') {
-        inQuotes = false;
-      } else {
-        field += ch;
+  function groupWinner(m) {
+    if (!isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+    if (m.homeScore > m.awayScore) return m.home;
+    if (m.awayScore > m.homeScore) return m.away;
+    return 'Empat';
+  }
+  function koWinner(m) {
+    if (!isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+    if (m.homeScore > m.awayScore) return m.home;
+    if (m.awayScore > m.homeScore) return m.away;
+    if (isNum(m.penHome) && isNum(m.penAway)) {
+      if (m.penHome > m.penAway) return m.home;
+      if (m.penAway > m.penHome) return m.away;
+    }
+    return null;
+  }
+  function koLoser(m) {
+    const w = koWinner(m);
+    if (!w) return null;
+    if (w === m.home) return m.away;
+    if (w === m.away) return m.home;
+    return null;
+  }
+
+  function computeGroups(groupMatches, overrides) {
+    const groups = {};
+    for (const [g, teams] of Object.entries(data.groups)) {
+      const table = Object.fromEntries(teams.map(t => [t, { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]));
+      const matches = groupMatches.filter(m => m.group === g);
+      for (const m of matches) {
+        if (!isNum(m.homeScore) || !isNum(m.awayScore)) continue;
+        const h = table[m.home], a = table[m.away];
+        if (!h || !a) continue;
+        h.p++; a.p++;
+        h.gf += m.homeScore; h.ga += m.awayScore;
+        a.gf += m.awayScore; a.ga += m.homeScore;
+        if (m.homeScore > m.awayScore) { h.w++; a.l++; h.pts += 3; }
+        else if (m.awayScore > m.homeScore) { a.w++; h.l++; a.pts += 3; }
+        else { h.d++; a.d++; h.pts += 1; a.pts += 1; }
       }
-    } else if (ch === '"') {
-      inQuotes = true;
-    } else if (ch === ",") {
-      row.push(clean(field));
-      field = "";
-    } else if (ch === "\n") {
-      row.push(clean(field));
-      rows.push(row);
-      row = [];
-      field = "";
-    } else if (ch !== "\r") {
-      field += ch;
+      Object.values(table).forEach(t => { t.gd = t.gf - t.ga; });
+      let arr = Object.values(table);
+      arr.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+      const override = overrides[g];
+      if (Array.isArray(override) && override.length) {
+        const order = new Map(override.map((team, idx) => [team, idx]));
+        arr.sort((a, b) => (order.has(a.team) ? order.get(a.team) : 999) - (order.has(b.team) ? order.get(b.team) : 999));
+      }
+      arr.forEach((t, idx) => { t.pos = idx + 1; });
+      const complete = matches.length === 6 && matches.every(m => isNum(m.homeScore) && isNum(m.awayScore));
+      groups[g] = { table: arr, matches, complete };
     }
+    return groups;
   }
-  row.push(clean(field));
-  rows.push(row);
-  return rows;
-}
 
-function clean(value) {
-  if (value === null || value === undefined) return null;
-  const trimmed = String(value).trim();
-  if (!trimmed) return null;
-  const numeric = Number(trimmed.replace(/,/g, ""));
-  if (Number.isFinite(numeric) && /^-?\d+(\.\d+)?$/.test(trimmed.replace(/,/g, ""))) return numeric;
-  return trimmed;
-}
-
-function cell(rows, r, c) {
-  return rows?.[r - 1]?.[c - 1] ?? null;
-}
-
-function buildDataFromRows(raw, source) {
-  return {
-    meta: { source, generatedAt: new Date().toISOString(), mode: "google-sheets-csv" },
-    leaderboard: parseLeaderboard(raw.classificacio),
-    stats: parseStats(raw.estadistica),
-    groups: parseGroups(raw.faseGrups),
-    thirdPlaces: parseThirds(raw.thirds),
-    knockout: parseKnockout(raw.eliminatories),
-  };
-}
-
-function parseLeaderboard(rows) {
-  const headers = [...(rows?.[0] || [])];
-  if (!headers[0]) headers[0] = "Participant";
-  const out = [];
-  for (const row of (rows || []).slice(1, 250)) {
-    const name = row[0];
-    if (!name) continue;
-    const breakdown = {};
-    headers.slice(3).forEach((header, i) => {
-      if (header) breakdown[String(header)] = num(row[i + 3]);
-    });
-    out.push({ name, paid: row[1], total: num(row[2]), breakdown });
+  function computeThirdPlaces(groups) {
+    const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
+    const sorted = rows.slice().sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+    sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = idx < 8 && t.complete; });
+    return sorted;
   }
-  out.sort((a, b) => b.total - a.total || String(a.name).localeCompare(String(b.name)));
-  let lastTotal = null;
-  let rank = 0;
-  out.forEach((row, index) => {
-    if (row.total !== lastTotal) {
-      rank = index + 1;
-      lastTotal = row.total;
-    }
-    row.rank = rank;
-  });
-  return out;
-}
 
-function parseStats(rows) {
-  const predictions = [];
-  const teamSummary = [];
-  const scorerSummary = [];
-  for (const row of (rows || []).slice(1, 250)) {
-    if (row[0]) {
-      predictions.push({
-        name: row[0], champion: row[1], runnerUp: row[2], third: row[3], fourth: row[4],
-        topScorer: row[5], topScorerGoals: row[6],
-      });
+  function computeThirdMap(third) {
+    const qualified = third.filter(t => t.qualified).map(t => t.group).sort().join('');
+    const matrixRow = data.thirdPlaceMatrix[qualified] || {};
+    const map = {};
+    for (const [paired, seed] of Object.entries(matrixRow)) {
+      const team = third.find(t => t.seed === seed && t.qualified);
+      if (team) map[paired] = { seed, team: team.team };
     }
-    if (row[8]) {
-      teamSummary.push({ team: row[8], champion: num(row[9]), runnerUp: num(row[10]), third: num(row[11]), fourth: num(row[12]), total: num(row[13]) });
-    }
-    if (row[14]) scorerSummary.push({ player: row[14], count: num(row[15]) });
+    return map;
   }
-  teamSummary.sort((a, b) => b.total - a.total || a.team.localeCompare(b.team));
-  scorerSummary.sort((a, b) => b.count - a.count || a.player.localeCompare(b.player));
-  return { predictions, teamSummary, scorerSummary };
-}
 
-function parseGroups(rows) {
-  const groups = [];
-  for (let i = 1; i <= (rows || []).length; i += 1) {
-    const label = cell(rows, i, 1);
-    if (typeof label !== "string" || !label.toUpperCase().startsWith("GROUP ")) continue;
-    const group = { name: label, matches: [], standings: [] };
-    for (let r = i + 3; r <= i + 8; r += 1) {
-      if (cell(rows, r, 1) && cell(rows, r, 6)) {
-        group.matches.push({ home: cell(rows, r, 1), homeScore: cell(rows, r, 3), awayScore: cell(rows, r, 5), away: cell(rows, r, 6), winner: cell(rows, r, 8) });
+  function resolveSlot(slot, groups, third, r32ThirdMap, byId) {
+    if (!slot) return null;
+    if (slot.startsWith('third:')) {
+      const paired = slot.split(':')[1];
+      return r32ThirdMap[paired] ? r32ThirdMap[paired].team : null;
+    }
+    const m = slot.match(/^([123])([A-L])$/);
+    if (m) {
+      const pos = Number(m[1]), g = m[2];
+      const group = groups[g];
+      if (!group || !group.complete) return slot;
+      return group.table[pos - 1] ? group.table[pos - 1].team : null;
+    }
+    const w = slot.match(/^W(\d+)$/);
+    if (w) return byId['M' + w[1]] ? byId['M' + w[1]].winner : slot;
+    const l = slot.match(/^L(\d+)$/);
+    if (l) return byId['M' + l[1]] ? byId['M' + l[1]].loser : slot;
+    return slot;
+  }
+
+  function teamSet(matches, keys) {
+    const set = new Set();
+    for (const key of keys) {
+      const m = matches.byId[key];
+      if (m) { if (m.home && !isSeedLike(m.home)) set.add(m.home); if (m.away && !isSeedLike(m.away)) set.add(m.away); }
+    }
+    return set;
+  }
+  function isSeedLike(v) { return typeof v === 'string' && (/^[123][A-L]$/.test(v) || /^W\d+$/.test(v) || /^L\d+$/.test(v)); }
+
+  function scorePlayer(player, actual) {
+    const bd = { '1X2': 0, G1: 0, CTG: 0, GTG: 0, PTG: 0, E16: 0, E16P: 0, G16: 0, E8: 0, E8P: 0, G8: 0, E4: 0, E4P: 0, G4: 0, ES: 0, ESP: 0, GS: 0, EF: 0, EC: 0, GC: 0, '4rt': 0, '3er': 0, GF: 0, '2on': 0, '1er': 0, PCH: 0, GPCH: 0 };
+    const pGroupById = Object.fromEntries(player.groupMatches.map(m => [m.id, m]));
+    for (const am of actual.matches.filter(m => m.type === 'group')) {
+      if (!isNum(am.homeScore) || !isNum(am.awayScore)) continue;
+      const pm = pGroupById[am.id];
+      if (!pm) continue;
+      if (pm.winner === groupWinner(am)) bd['1X2'] += data.rules['1X2'];
+      if (pm.homeScore === am.homeScore) bd.G1 += Math.max(data.rules.G1_MIN, am.homeScore);
+      if (pm.awayScore === am.awayScore) bd.G1 += Math.max(data.rules.G1_MIN, am.awayScore);
+    }
+    for (const [g, obj] of Object.entries(actual.groups)) {
+      if (!obj.complete) continue;
+      const predRows = player.groupStandings[g] || [];
+      for (let i = 0; i < 4; i++) {
+        const ar = obj.table[i], pr = predRows[i];
+        if (!ar || !pr) continue;
+        if (pr.team === ar.team) bd.CTG += data.rules.CTG;
+        if (pr.gf === ar.gf) bd.GTG += data.rules.GTG;
+        if (pr.pts === ar.pts) bd.PTG += data.rules.PTG;
       }
     }
-    for (let r = i + 12; r <= i + 15; r += 1) {
-      if (cell(rows, r, 2)) {
-        group.standings.push({ pos: num(cell(rows, r, 1)), team: cell(rows, r, 2), played: num(cell(rows, r, 3)), wins: num(cell(rows, r, 4)), draws: num(cell(rows, r, 5)), losses: num(cell(rows, r, 6)), gf: num(cell(rows, r, 7)), ga: num(cell(rows, r, 8)), gd: num(cell(rows, r, 9)), pts: num(cell(rows, r, 10)), rank: num(cell(rows, r, 11)) });
+    const pKoById = Object.fromEntries(player.knockoutMatches.map(m => [m.id, m]));
+    for (const cfg of Object.values(stageConfig)) {
+      const actualSet = teamSet(actual, cfg.keys);
+      for (const key of cfg.keys) {
+        const am = actual.byId[key], pm = pKoById[key];
+        if (!am || !pm) continue;
+        for (const side of ['home', 'away']) {
+          const pTeam = pm[side];
+          const aTeam = am[side];
+          if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
+          if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
+        }
+        if (isNum(am.homeScore) && isNum(am.awayScore)) {
+          if (pm.homeScore === am.homeScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.homeScore) : cfg.goalPts;
+          if (pm.awayScore === am.awayScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.awayScore) : cfg.goalPts;
+        }
       }
     }
-    groups.push(group);
-  }
-  return groups;
-}
-
-function parseThirds(rows) {
-  const out = [];
-  for (let r = 5; r <= Math.min((rows || []).length, 80); r += 1) {
-    const group = cell(rows, r, 1);
-    const team = cell(rows, r, 2);
-    if (!group || !team || typeof group !== "string" || !group.startsWith("3")) continue;
-    out.push({ group, team, played: num(cell(rows, r, 3)), wins: num(cell(rows, r, 4)), draws: num(cell(rows, r, 5)), losses: num(cell(rows, r, 6)), gf: num(cell(rows, r, 7)), ga: num(cell(rows, r, 8)), gd: num(cell(rows, r, 9)), pts: num(cell(rows, r, 10)), qualified: cell(rows, r, 11), rank: num(cell(rows, r, 12)) });
-  }
-  out.sort((a, b) => a.rank - b.rank || b.pts - a.pts || b.gd - a.gd || a.team.localeCompare(b.team));
-  return out;
-}
-
-function parseKnockout(rows) {
-  const roundNames = {
-    "ROUND OF 32": "Setzens de final",
-    "ROUND OF 16": "Vuitens de final",
-    "QUARTER-FINALS": "Quarts de final",
-    "SEMI-FINALS": "Semifinals",
-    "THIRD PLACE MATCH": "Partit pel tercer lloc",
-    "🏆 FINAL 🏆": "Final",
-  };
-  const rounds = [];
-  let current = null;
-  for (let i = 1; i <= Math.min((rows || []).length, 140); i += 1) {
-    const label = cell(rows, i, 1);
-    if (roundNames[label]) {
-      current = { name: roundNames[label], matches: [] };
-      rounds.push(current);
-      continue;
+    // Finalists and consolation teams.
+    const finalM = actual.byId.M104, consM = actual.byId.M103;
+    const pFinal = pKoById.M104, pCons = pKoById.M103;
+    if (finalM && pFinal) {
+      const finalSet = new Set([finalM.home, finalM.away].filter(Boolean));
+      for (const t of [pFinal.home, pFinal.away]) if (finalSet.has(t)) bd.EF += data.rules.EF;
+      if (isNum(finalM.homeScore) && isNum(finalM.awayScore)) {
+        if (pFinal.homeScore === finalM.homeScore) bd.GF += data.rules.GF;
+        if (pFinal.awayScore === finalM.awayScore) bd.GF += data.rules.GF;
+      }
     }
-    if (!current || typeof label !== "string" || !/^M\d+$/.test(label)) continue;
-    current.matches.push({ id: label, home: cell(rows, i, 2), homeSeed: cell(rows, i, 3), homeScore: cell(rows, i, 4), awayScore: cell(rows, i, 5), away: cell(rows, i, 6), awaySeed: cell(rows, i, 7), winner: cell(rows, i, 8), penHome: cell(rows, i, 9), penAway: cell(rows, i, 10), otherResult: cell(rows, i, 11) });
+    if (consM && pCons) {
+      const consSet = new Set([consM.home, consM.away].filter(Boolean));
+      for (const t of [pCons.home, pCons.away]) if (consSet.has(t)) bd.EC += data.rules.EC;
+      if (isNum(consM.homeScore) && isNum(consM.awayScore)) {
+        if (pCons.homeScore === consM.homeScore) bd.GC += data.rules.GC;
+        if (pCons.awayScore === consM.awayScore) bd.GC += data.rules.GC;
+      }
+    }
+    const finalPlayed = finalM && finalM.winner;
+    const thirdPlayed = consM && consM.winner;
+    if (thirdPlayed) {
+      const third = consM.winner, fourth = consM.loser;
+      if (player.summary.third === third) bd['3er'] += data.rules['3er'];
+      if (player.summary.fourth === fourth) bd['4rt'] += data.rules['4rt'];
+    }
+    if (finalPlayed) {
+      const champion = finalM.winner, runnerUp = finalM.loser;
+      if (player.summary.champion === champion) bd['1er'] += data.rules['1er'];
+      if (player.summary.runnerUp === runnerUp) bd['2on'] += data.rules['2on'];
+      if (actual.final.topScorer && player.summary.topScorer === actual.final.topScorer) bd.PCH += data.rules.PCH;
+      if (isNum(actual.final.topScorerGoals) && player.summary.topScorerGoals === actual.final.topScorerGoals) bd.GPCH += data.rules.GPCH;
+    }
+    const total = Object.values(bd).reduce((a, b) => a + b, 0);
+    return { breakdown: bd, total };
   }
-  const qualifiers = [];
-  for (let r = 6; r <= 17; r += 1) {
-    if (cell(rows, r, 1)) qualifiers.push({ group: cell(rows, r, 1), winner: cell(rows, r, 2), runnerUp: cell(rows, r, 4), third: cell(rows, r, 6), thirdPts: num(cell(rows, r, 7)), thirdGd: num(cell(rows, r, 8)) });
+
+  function computeLeaderboard(resultsObj) {
+    const actual = buildActual(resultsObj);
+    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual) }));
+    rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
+    let last = null, rank = 0;
+    rows.forEach((r, i) => { if (r.total !== last) { rank = i + 1; last = r.total; } r.rank = rank; });
+    return { actual, rows };
   }
-  return {
-    rounds,
-    qualifiers,
-    results: { fourth: cell(rows, 77, 2), third: cell(rows, 78, 2), runnerUp: cell(rows, 79, 2), champion: cell(rows, 80, 2), topScorer: cell(rows, 79, 6), topScorerGoals: cell(rows, 80, 6) },
-  };
-}
 
-function render() {
-  const data = state.data;
-  renderKpis(data);
-  renderBars("#championPicks", data.stats.teamSummary.slice(0, 8), "team", "total");
-  renderBars("#scorerPicks", data.stats.scorerSummary.slice(0, 8), "player", "count");
-  renderTopLeaders(data.leaderboard.slice(0, 5));
-  renderLeaderboard(data.leaderboard);
-  renderPredictions(data.stats.predictions);
-  renderGroups(data.groups);
-  renderThirds(data.thirdPlaces);
-  renderBracket(data.knockout);
-  renderSource(data.meta);
-}
+  function findLastPlayed(actual) {
+    const override = window.PORRA_ULTIM_PARTIT;
+    if (override && actual.byId[override]) return actual.byId[override];
+    return actual.matches.filter(m => isNum(m.homeScore) && isNum(m.awayScore)).sort((a, b) => b.order - a.order)[0] || null;
+  }
+  function findNextMatch(actual) {
+    return actual.matches.find(m => !isSeedLike(m.home) && !isSeedLike(m.away) && (!isNum(m.homeScore) || !isNum(m.awayScore))) || null;
+  }
+  function playerPredictionFor(player, match) {
+    if (!match) return null;
+    if (match.type === 'group') return player.groupMatches.find(m => m.id === match.id) || null;
+    return player.knockoutMatches.find(m => m.id === match.id) || null;
+  }
+  function movement(row, prevById) {
+    const prev = prevById[row.id];
+    if (!prev || prev.rank === row.rank) return { cls: 'same', label: '—' };
+    const delta = prev.rank - row.rank;
+    if (delta > 0) return { cls: 'up', label: `▲ ${delta}` };
+    return { cls: 'down', label: `▼ ${Math.abs(delta)}` };
+  }
 
-function renderKpis(data) {
-  const gamesPlayed = data.groups.flatMap(g => g.matches).filter(m => m.homeScore !== null && m.homeScore !== undefined && m.awayScore !== null && m.awayScore !== undefined).length;
-  const paid = data.leaderboard.filter(p => String(p.paid || "").toLowerCase().includes("fet")).length;
-  const leader = data.leaderboard[0];
-  const kpis = [
-    ["Participants", data.leaderboard.length],
-    ["Pagats", `${paid}/${data.leaderboard.length}`],
-    ["Partits amb resultat", gamesPlayed],
-    ["Líder actual", leader ? `${leader.name} (${leader.total})` : "Per definir"],
-  ];
-  $("#kpis").innerHTML = kpis.map(([label, value]) => `<article class="kpi"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></article>`).join("");
-}
-
-function renderBars(selector, rows, labelKey, valueKey) {
-  const max = Math.max(...rows.map(r => num(r[valueKey])), 0);
-  $(selector).innerHTML = rows.map(row => {
-    const value = num(row[valueKey]);
-    return `<div class="bar-row">
-      <div class="bar-row__top"><span>${escapeHtml(row[labelKey])}</span><strong>${value}</strong></div>
-      <div class="bar"><span style="width:${percentageWidth(value, max)}%"></span></div>
-    </div>`;
-  }).join("") || `<p class="muted">Encara no hi ha dades.</p>`;
-}
-
-function renderTopLeaders(rows) {
-  $("#topLeaders").innerHTML = rows.map(row => `<div class="podium-card">
-    <span class="rank">#${row.rank}</span>
-    <strong>${escapeHtml(row.name)}</strong>
-    <span>${row.total} punts</span>
-  </div>`).join("");
-}
-
-function table(headers, rows) {
-  return `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody>`;
-}
-
-function renderLeaderboard(rows) {
-  const filter = state.leaderFilter.toLowerCase();
-  const visible = rows.filter(row => row.name.toLowerCase().includes(filter));
-  const allBreakdowns = [...new Set(rows.flatMap(row => Object.keys(row.breakdown || {})))].slice(0, 12);
-  const headers = ["Pos.", "Participant", "Pagat", "Total", ...allBreakdowns];
-  const body = visible.map(row => `<tr>
-    <td><span class="pill">${row.rank}</span></td>
-    <td><strong>${escapeHtml(row.name)}</strong></td>
-    <td>${row.paid ? `<span class="paid">${escapeHtml(row.paid)}</span>` : ""}</td>
-    <td><strong>${row.total}</strong></td>
-    ${allBreakdowns.map(key => `<td>${num(row.breakdown[key])}</td>`).join("")}
-  </tr>`);
-  $("#leaderboardTable").innerHTML = table(headers, body);
-}
-
-function renderPredictions(rows) {
-  const filter = state.predictionFilter.toLowerCase();
-  const visible = rows.filter(row => Object.values(row).join(" ").toLowerCase().includes(filter));
-  const body = visible.map(row => `<tr>
-    <td><strong>${escapeHtml(row.name)}</strong></td>
-    <td>${escapeHtml(display(row.champion))}</td>
-    <td>${escapeHtml(display(row.runnerUp))}</td>
-    <td>${escapeHtml(display(row.third))}</td>
-    <td>${escapeHtml(display(row.fourth))}</td>
-    <td>${escapeHtml(display(row.topScorer))}</td>
-    <td>${escapeHtml(display(row.topScorerGoals, ""))}</td>
-  </tr>`);
-  $("#predictionsTable").innerHTML = table(["Participant", "Campió", "Subcampió", "3r", "4t", "Màxim golejador", "Gols"], body);
-}
-
-function renderGroups(groups) {
-  $("#groupsGrid").innerHTML = groups.map(group => `<article class="card group-card">
-    <div class="card__header"><h2>${escapeHtml(translateGroupName(group.name))}</h2></div>
-    <div class="mini-table"><table>${table(["#", "Equip", "PJ", "DG", "Pts"], group.standings.map(row => `<tr><td>${row.pos}</td><td>${escapeHtml(row.team)}</td><td>${row.played}</td><td>${row.gd}</td><td><strong>${row.pts}</strong></td></tr>`))}</table></div>
-    <div class="matches">${group.matches.map(match => `<div class="match-line"><span>${escapeHtml(match.home)}</span><strong>${score(match.homeScore, match.awayScore)}</strong><span>${escapeHtml(match.away)}</span></div>`).join("")}</div>
-  </article>`).join("");
-}
-
-function renderThirds(rows) {
-  const body = rows.map(row => `<tr>
-    <td><span class="pill">${row.rank}</span></td><td>${escapeHtml(translateThirdGroup(row.group))}</td><td><strong>${escapeHtml(row.team)}</strong></td><td>${row.played}</td><td>${row.gd}</td><td>${row.pts}</td><td>${escapeHtml(translateStatus(row.qualified))}</td>
-  </tr>`);
-  $("#thirdsTable").innerHTML = table(["Pos.", "Grup", "Equip", "PJ", "DG", "Pts", "Estat"], body);
-}
-
-function renderBracket(knockout) {
-  const results = knockout.results || {};
-  const resultItems = [
-    ["Campió", display(results.champion)],
-    ["Subcampió", display(results.runnerUp)],
-    ["Tercer lloc", display(results.third)],
-    ["Quart lloc", display(results.fourth)],
-    ["Màxim golejador", display(results.topScorer)],
-    ["Gols del màxim golejador", display(results.topScorerGoals, "Per definir")],
-  ];
-  $("#tournamentResults").innerHTML = resultItems.map(([label, value]) => `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("");
-
-  $("#bracketGrid").innerHTML = (knockout.rounds || []).map(round => `<article class="round-card">
-    <h2>${escapeHtml(translateRoundName(round.name))}</h2>
-    ${round.matches.map(match => `<div class="knockout-match">
-      <div class="match-meta"><span>${escapeHtml(match.id)}</span><span>${escapeHtml(match.homeSeed || "")}${match.awaySeed ? " contra " + escapeHtml(match.awaySeed) : ""}</span></div>
-      <div class="teams"><span>${escapeHtml(display(match.home))}</span><strong>${score(match.homeScore, match.awayScore)}</strong><span>${escapeHtml(display(match.away))}</span></div>
-      <div class="winner">Guanyador: <strong>${escapeHtml(display(match.winner))}</strong></div>
-    </div>`).join("")}
-  </article>`).join("");
-}
-
-function renderSource(meta) {
-  const generated = meta.generatedAt ? new Date(meta.generatedAt).toLocaleString() : "hora desconeguda";
-  $("#sourceLabel").textContent = `${meta.source || meta.sourceFile || "Dades"} · actualitzat ${generated}`;
-}
-
-function activateTab(target) {
-  $$(".tab").forEach(tab => tab.classList.toggle("is-active", tab.dataset.target === target));
-  $$(".panel").forEach(panel => panel.classList.toggle("is-active", panel.id === target));
-  history.replaceState(null, "", `#${target}`);
-}
-
-async function init() {
-  $$(".tab").forEach(tab => tab.addEventListener("click", () => activateTab(tab.dataset.target)));
-  $$('[data-jump]').forEach(link => link.addEventListener("click", (event) => { event.preventDefault(); activateTab(link.dataset.jump); }));
-  $("#leaderSearch").addEventListener("input", event => { state.leaderFilter = event.target.value; renderLeaderboard(state.data.leaderboard); });
-  $("#predictionSearch").addEventListener("input", event => { state.predictionFilter = event.target.value; renderPredictions(state.data.stats.predictions); });
-  $("#refreshBtn").addEventListener("click", refresh);
-  await refresh();
-  const initial = location.hash.replace("#", "");
-  if (initial && $(`#${initial}`)) activateTab(initial);
-  const minutes = Number(window.SHEET_CONFIG?.refreshMinutes || 0);
-  if (minutes > 0) setInterval(refresh, minutes * 60 * 1000);
-}
-
-async function refresh() {
-  try {
-    $("#sourceLabel").textContent = "Actualitzant…";
-    state.data = await loadData();
+  function init() {
+    const current = computeLeaderboard(resultats);
+    const last = findLastPlayed(current.actual);
+    const previous = computeLeaderboard(cloneResultsWithout(last && last.id));
+    const prevById = Object.fromEntries(previous.rows.map(r => [r.id, r]));
+    const next = findNextMatch(current.actual);
+    state.computed = { ...current, previous, prevById, last, next };
+    els.nextTitle.textContent = next ? matchLabel(next) : 'Tots els partits tenen resultat';
+    els.nextMeta.textContent = next ? `${display(next.round)} · ${next.id}` : 'No queda cap partit pendent.';
+    els.nextHeader.textContent = next ? `Pronòstic: ${display(next.home)} – ${display(next.away)}` : 'Pròxim partit';
+    const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString('ca-ES') : 'snapshot';
+    els.status.textContent = `Dades inicials: ${generated}`;
     render();
-  } catch (error) {
-    console.error(error);
-    $("#sourceLabel").textContent = "Error carregant les dades";
-    document.querySelector("main").insertAdjacentHTML("afterbegin", `<div class="error">${escapeHtml(error.message)}</div>`);
   }
-}
 
-init();
+  function render() {
+    const comp = state.computed;
+    const q = state.filter.trim().toLowerCase();
+    const rows = comp.rows.filter(row => !q || row.name.toLowerCase().includes(q));
+    if (!rows.length) {
+      els.body.innerHTML = '<tr><td colspan="7" class="empty">No s’ha trobat cap participant.</td></tr>';
+      return;
+    }
+    els.body.innerHTML = rows.map(row => rowHtml(row, comp)).join('');
+    els.body.querySelectorAll('tr[data-player]').forEach(tr => {
+      tr.addEventListener('click', () => openPlayer(tr.dataset.player));
+      tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPlayer(tr.dataset.player); } });
+    });
+  }
+  function rowHtml(row, comp) {
+    const m = movement(row, comp.prevById);
+    const nextPred = playerPredictionFor(row, comp.next);
+    return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
+      <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+      <td><span class="move ${m.cls}">${escapeHtml(m.label)}</span></td>
+      <td><span class="participant-cell"><span class="avatar">${escapeHtml(initials(row.name))}</span>${escapeHtml(row.name)}</span></td>
+      <td class="num"><strong>${escapeHtml(row.total)}</strong></td>
+      <td><span class="score-pill">${escapeHtml(scoreText(nextPred))}</span>${nextPred && nextPred.winner ? `<span class="winner-pill">${escapeHtml(nextPred.winner)}</span>` : ''}</td>
+      <td>${escapeHtml(display(row.summary.champion))}</td>
+      <td>${escapeHtml(display(row.summary.topScorer))}</td>
+    </tr>`;
+  }
+  function openPlayer(id) {
+    const comp = state.computed;
+    const row = comp.rows.find(r => r.id === id);
+    if (!row) return;
+    const nextPred = playerPredictionFor(row, comp.next);
+    els.drawerTitle.textContent = row.name;
+    els.drawerRank.textContent = `#${row.rank}`;
+    els.drawerSubtitle.textContent = `${row.total} punts · ${row.groupMatches.length + row.knockoutMatches.length} pronòstics de partit`;
+    els.drawerContent.innerHTML = `
+      <div class="info-grid">
+        <div class="info-card"><span>Campió</span><strong>${escapeHtml(display(row.summary.champion))}</strong></div>
+        <div class="info-card"><span>Finalista</span><strong>${escapeHtml(display(row.summary.runnerUp))}</strong></div>
+        <div class="info-card"><span>Tercer</span><strong>${escapeHtml(display(row.summary.third))}</strong></div>
+        <div class="info-card"><span>Pichichi</span><strong>${escapeHtml(display(row.summary.topScorer))}${row.summary.topScorerGoals ? ` · ${escapeHtml(row.summary.topScorerGoals)} gols` : ''}</strong></div>
+      </div>
+      <div class="drawer-section"><h3>Pronòstic del pròxim partit</h3><div class="info-card"><span>${escapeHtml(matchLabel(comp.next))}</span><strong>${escapeHtml(scoreText(nextPred))}${nextPred && nextPred.winner ? ` · ${escapeHtml(nextPred.winner)}` : ''}</strong></div></div>
+      <div class="drawer-section"><h3>Desglossament de punts</h3><div class="breakdown">${Object.entries(row.breakdown).map(([k, v]) => `<span>${escapeHtml(k)} <strong>${escapeHtml(v)}</strong></span>`).join('')}</div></div>
+      <div class="drawer-section"><h3>Pronòstics de partits</h3>${matchesTable(row)}</div>`;
+    els.drawer.classList.add('is-open');
+    els.drawer.setAttribute('aria-hidden', 'false');
+  }
+  function matchesTable(row) {
+    const matches = [...row.groupMatches, ...row.knockoutMatches];
+    const body = matches.map(m => `<tr><td>${escapeHtml(display(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(scoreText(m))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
+    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>Fase</th><th>Partit</th><th>Resultat</th><th>Guanyador</th></tr></thead><tbody>${body}</tbody></table></div>`;
+  }
+  function closeDrawer() { els.drawer.classList.remove('is-open'); els.drawer.setAttribute('aria-hidden', 'true'); }
+  els.search.addEventListener('input', e => { state.filter = e.target.value; render(); });
+  els.closeDrawer.addEventListener('click', closeDrawer);
+  els.drawer.addEventListener('click', e => { if (e.target === els.drawer) closeDrawer(); });
+  window.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  document.addEventListener('DOMContentLoaded', init);
+})();

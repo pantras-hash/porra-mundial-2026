@@ -1,122 +1,88 @@
 <!doctype html>
 <html lang="ca">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porra Mundial 2026</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porra Mundial 2026 - Classificació</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__content">
+  <header class="topbar">
+    <div>
       <p class="eyebrow">Porra Mundial 2026</p>
-      <h1>Tauler de seguiment de la porra</h1>
-      <p class="subtitle">Classificació, tendències de pronòstics, classificacions de grups, millors tercers i eliminatòries en una sola pàgina per compartir.</p>
-      <div class="hero__actions">
-        <button id="refreshBtn" class="button">Actualitzar dades</button>
-        <span id="sourceLabel" class="source-label">Carregant…</span>
-      </div>
+      <h1>Classificació</h1>
     </div>
+    <div class="status" id="dataStatus">Carregant dades...</div>
   </header>
 
-  <main>
-    <section class="kpis" id="kpis" aria-label="Estadístiques resum"></section>
-
-    <nav class="tabs" aria-label="Seccions del tauler">
-      <button class="tab is-active" data-target="overview">Resum</button>
-      <button class="tab" data-target="leaderboard">Classificació</button>
-      <button class="tab" data-target="predictions">Pronòstics</button>
-      <button class="tab" data-target="groups">Grups</button>
-      <button class="tab" data-target="thirds">Millors 3rs</button>
-      <button class="tab" data-target="bracket">Eliminatòries</button>
-    </nav>
-
-    <section id="overview" class="panel is-active">
-      <div class="grid two">
-        <article class="card">
-          <div class="card__header">
-            <h2>Campió més triat</h2>
-            <p>Agregat a partir del full de pronòstics.</p>
-          </div>
-          <div id="championPicks" class="bars"></div>
-        </article>
-        <article class="card">
-          <div class="card__header">
-            <h2>Màxim golejador més triat</h2>
-            <p>Pronòstics del màxim golejador.</p>
-          </div>
-          <div id="scorerPicks" class="bars"></div>
-        </article>
+  <main class="layout">
+    <section class="summary-card" aria-live="polite">
+      <div>
+        <span class="label">Pròxim partit pendent</span>
+        <strong id="nextMatchTitle">—</strong>
+        <span id="nextMatchMeta" class="muted">La columna de la taula mostra el pronòstic de cada participant per a aquest partit.</span>
       </div>
-      <article class="card">
-        <div class="card__header row-header">
-          <div>
-            <h2>Líders actuals</h2>
-            <p>Primers de la classificació ara mateix.</p>
-          </div>
-          <a href="#leaderboard" class="text-link" data-jump="leaderboard">Veure la taula completa</a>
-        </div>
-        <div id="topLeaders" class="podium"></div>
-      </article>
+      <div class="legend" aria-label="Llegenda de moviments">
+        <span class="move up">▲ puja</span>
+        <span class="move down">▼ baixa</span>
+        <span class="move same">— igual</span>
+      </div>
     </section>
 
-    <section id="leaderboard" class="panel">
-      <article class="card">
-        <div class="card__header row-header">
-          <div>
-            <h2>Classificació</h2>
-            <p>Punts totals i desglossament per categoria.</p>
-          </div>
-          <input id="leaderSearch" class="search" type="search" placeholder="Buscar participant…" autocomplete="off">
+    <section class="table-card">
+      <div class="toolbar">
+        <div>
+          <h2>Taula completa</h2>
+          <p>Fes clic en un participant per veure tots els seus pronòstics.</p>
         </div>
-        <div class="table-wrap"><table id="leaderboardTable"></table></div>
-      </article>
+        <label class="search-wrap">
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Nom..." autocomplete="off" />
+        </label>
+      </div>
+      <div class="table-wrap">
+        <table id="leaderboardTable">
+          <thead>
+            <tr>
+              <th>Pos.</th>
+              <th>Mov.</th>
+              <th>Participant</th>
+              <th class="num">Punts</th>
+              <th id="nextPredictionHeader">Pròxim partit</th>
+              <th>Campió</th>
+              <th>Pichichi</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody">
+            <tr><td colspan="7" class="empty">Carregant...</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section id="predictions" class="panel">
-      <article class="card">
-        <div class="card__header row-header">
-          <div>
-            <h2>Pronòstics dels participants</h2>
-            <p>Campió, podi, màxim golejador i gols.</p>
-          </div>
-          <input id="predictionSearch" class="search" type="search" placeholder="Buscar pronòstic…" autocomplete="off">
-        </div>
-        <div class="table-wrap"><table id="predictionsTable"></table></div>
-      </article>
-    </section>
-
-    <section id="groups" class="panel">
-      <div id="groupsGrid" class="grid groups"></div>
-    </section>
-
-    <section id="thirds" class="panel">
-      <article class="card">
-        <div class="card__header">
-          <h2>Millors tercers classificats</h2>
-          <p>Els vuit primers es classifiquen per als setzens de final.</p>
-        </div>
-        <div class="table-wrap"><table id="thirdsTable"></table></div>
-      </article>
-    </section>
-
-    <section id="bracket" class="panel">
-      <article class="card results-card">
-        <div class="card__header">
-          <h2>Resultats del torneig</h2>
-          <p>S’omple a mesura que es completen les eliminatòries.</p>
-        </div>
-        <div id="tournamentResults" class="results-grid"></div>
-      </article>
-      <div id="bracketGrid" class="bracket-grid"></div>
+    <section class="help-card">
+      <h2>Com actualitzar resultats a GitHub</h2>
+      <p>Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.</p>
+      <pre><code>"G-A-1": { homeScore: 2, awayScore: 1, penHome: null, penAway: null }</code></pre>
     </section>
   </main>
 
-  <footer>
-    <p>Creat com a tauler estàtic. Fes servir Google Sheets com a font de veritat, o regenera <code>data.json</code> des de l’Excel.</p>
-  </footer>
+  <aside class="drawer" id="playerDrawer" aria-hidden="true" aria-label="Pronòstics del participant">
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <button class="drawer__close" id="closeDrawer" aria-label="Tancar">×</button>
+      <div class="drawer__header">
+        <span id="drawerRank" class="rank-pill">#—</span>
+        <div>
+          <h2 id="drawerTitle">Participant</h2>
+          <p id="drawerSubtitle">Pronòstics</p>
+        </div>
+      </div>
+      <div id="drawerContent"></div>
+    </div>
+  </aside>
 
-  <script src="config.js"></script>
+  <script src="prediccions.js"></script>
+  <script src="resultats.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
