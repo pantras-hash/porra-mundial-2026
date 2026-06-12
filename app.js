@@ -1,7 +1,7 @@
 (function () {
   const data = window.PORRA_DATA;
   const resultats = window.PORRA_RESULTATS || { matches: {}, final: {}, groupRankingOverrides: {} };
-  const state = { filter: '', computed: null };
+  const state = { filter: '', computed: null, lang: localStorage.getItem('porraLang') || 'ca' };
   const els = {
     status: document.getElementById('dataStatus'),
     nextTitle: document.getElementById('nextMatchTitle'),
@@ -14,7 +14,10 @@
     drawerTitle: document.getElementById('drawerTitle'),
     drawerRank: document.getElementById('drawerRank'),
     drawerSubtitle: document.getElementById('drawerSubtitle'),
-    drawerContent: document.getElementById('drawerContent')
+    drawerContent: document.getElementById('drawerContent'),
+    langButtons: document.querySelectorAll('[data-lang]'),
+    githubAccount: document.getElementById('githubAccountLink'),
+    resultsEdit: document.getElementById('resultsEditLink')
   };
   const stageConfig = {
     r32: { keys: rangeKeys(73, 88), team: 'E16', pos: 'E16P', goals: 'G16', teamPts: 4, posPts: 4, goalPts: 4, goalMin: 4 },
@@ -23,17 +26,82 @@
     sf:  { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
   };
 
+  const SCHEDULE_META = {"G-A-1":{"date":"2026-06-11","sortOrder":1},"G-A-2":{"date":"2026-06-11","sortOrder":2},"G-B-1":{"date":"2026-06-12","sortOrder":3},"G-D-1":{"date":"2026-06-12","sortOrder":4},"G-C-2":{"date":"2026-06-13","sortOrder":5},"G-D-2":{"date":"2026-06-13","sortOrder":6},"G-C-1":{"date":"2026-06-13","sortOrder":7},"G-B-2":{"date":"2026-06-13","sortOrder":8},"G-E-2":{"date":"2026-06-14","sortOrder":9},"G-E-1":{"date":"2026-06-14","sortOrder":10},"G-F-1":{"date":"2026-06-14","sortOrder":11},"G-F-2":{"date":"2026-06-14","sortOrder":12},"G-H-2":{"date":"2026-06-15","sortOrder":13},"G-H-1":{"date":"2026-06-15","sortOrder":14},"G-G-2":{"date":"2026-06-15","sortOrder":15},"G-G-1":{"date":"2026-06-15","sortOrder":16},"G-I-1":{"date":"2026-06-16","sortOrder":17},"G-I-2":{"date":"2026-06-16","sortOrder":18},"G-J-1":{"date":"2026-06-16","sortOrder":19},"G-J-2":{"date":"2026-06-16","sortOrder":20},"G-L-1":{"date":"2026-06-17","sortOrder":21},"G-L-2":{"date":"2026-06-17","sortOrder":22},"G-K-1":{"date":"2026-06-17","sortOrder":23},"G-K-2":{"date":"2026-06-17","sortOrder":24},"G-A-4":{"date":"2026-06-18","sortOrder":25},"G-B-4":{"date":"2026-06-18","sortOrder":26},"G-B-3":{"date":"2026-06-18","sortOrder":27},"G-A-3":{"date":"2026-06-18","sortOrder":28},"G-C-3":{"date":"2026-06-19","sortOrder":29},"G-C-4":{"date":"2026-06-19","sortOrder":30},"G-D-4":{"date":"2026-06-19","sortOrder":31},"G-D-3":{"date":"2026-06-19","sortOrder":32},"G-E-3":{"date":"2026-06-20","sortOrder":33},"G-E-4":{"date":"2026-06-20","sortOrder":34},"G-F-3":{"date":"2026-06-20","sortOrder":35},"G-F-4":{"date":"2026-06-20","sortOrder":36},"G-H-4":{"date":"2026-06-21","sortOrder":37},"G-H-3":{"date":"2026-06-21","sortOrder":38},"G-G-3":{"date":"2026-06-21","sortOrder":39},"G-G-4":{"date":"2026-06-21","sortOrder":40},"G-I-4":{"date":"2026-06-22","sortOrder":41},"G-I-3":{"date":"2026-06-22","sortOrder":42},"G-J-3":{"date":"2026-06-22","sortOrder":43},"G-J-4":{"date":"2026-06-22","sortOrder":44},"G-L-3":{"date":"2026-06-23","sortOrder":45},"G-L-4":{"date":"2026-06-23","sortOrder":46},"G-K-3":{"date":"2026-06-23","sortOrder":47},"G-K-4":{"date":"2026-06-23","sortOrder":48},"G-C-5":{"date":"2026-06-24","sortOrder":49},"G-C-6":{"date":"2026-06-24","sortOrder":50},"G-B-5":{"date":"2026-06-24","sortOrder":51},"G-B-6":{"date":"2026-06-24","sortOrder":52},"G-A-5":{"date":"2026-06-24","sortOrder":53},"G-A-6":{"date":"2026-06-24","sortOrder":54},"G-E-6":{"date":"2026-06-25","sortOrder":55},"G-E-5":{"date":"2026-06-25","sortOrder":56},"G-F-6":{"date":"2026-06-25","sortOrder":57},"G-F-5":{"date":"2026-06-25","sortOrder":58},"G-D-5":{"date":"2026-06-25","sortOrder":59},"G-D-6":{"date":"2026-06-25","sortOrder":60},"G-I-5":{"date":"2026-06-26","sortOrder":61},"G-I-6":{"date":"2026-06-26","sortOrder":62},"G-G-6":{"date":"2026-06-26","sortOrder":63},"G-G-5":{"date":"2026-06-26","sortOrder":64},"G-H-6":{"date":"2026-06-26","sortOrder":65},"G-H-5":{"date":"2026-06-26","sortOrder":66},"G-L-5":{"date":"2026-06-27","sortOrder":67},"G-L-6":{"date":"2026-06-27","sortOrder":68},"G-J-6":{"date":"2026-06-27","sortOrder":69},"G-J-5":{"date":"2026-06-27","sortOrder":70},"G-K-5":{"date":"2026-06-27","sortOrder":71},"G-K-6":{"date":"2026-06-27","sortOrder":72},"M73":{"date":"2026-06-28","sortOrder":73},"M74":{"date":"2026-06-29","sortOrder":74},"M75":{"date":"2026-06-29","sortOrder":75},"M76":{"date":"2026-06-29","sortOrder":76},"M77":{"date":"2026-06-30","sortOrder":77},"M78":{"date":"2026-06-30","sortOrder":78},"M79":{"date":"2026-06-30","sortOrder":79},"M80":{"date":"2026-07-01","sortOrder":80},"M81":{"date":"2026-07-01","sortOrder":81},"M82":{"date":"2026-07-01","sortOrder":82},"M83":{"date":"2026-07-02","sortOrder":83},"M84":{"date":"2026-07-02","sortOrder":84},"M85":{"date":"2026-07-02","sortOrder":85},"M86":{"date":"2026-07-03","sortOrder":86},"M87":{"date":"2026-07-03","sortOrder":87},"M88":{"date":"2026-07-03","sortOrder":88},"M89":{"date":"2026-07-04","sortOrder":89},"M90":{"date":"2026-07-04","sortOrder":90},"M91":{"date":"2026-07-05","sortOrder":91},"M92":{"date":"2026-07-05","sortOrder":92},"M93":{"date":"2026-07-06","sortOrder":93},"M94":{"date":"2026-07-06","sortOrder":94},"M95":{"date":"2026-07-07","sortOrder":95},"M96":{"date":"2026-07-07","sortOrder":96},"M97":{"date":"2026-07-09","sortOrder":97},"M98":{"date":"2026-07-10","sortOrder":98},"M99":{"date":"2026-07-11","sortOrder":99},"M100":{"date":"2026-07-11","sortOrder":100},"M101":{"date":"2026-07-14","sortOrder":101},"M102":{"date":"2026-07-15","sortOrder":102},"M103":{"date":"2026-07-18","sortOrder":103},"M104":{"date":"2026-07-19","sortOrder":104}};
+  const I18N = {
+    ca: {
+      title: 'Classificació', nextPendingLabel: 'Pròxim partit pendent', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.',
+      legendUp: '▲ puja', legendDown: '▼ baixa', legendSame: '— igual', fullTableTitle: 'Taula completa', clickHint: 'Fes clic en un participant per veure tots els seus pronòstics.',
+      searchLabel: 'Buscar', searchPlaceholder: 'Nom...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participant', colPoints: 'Punts', colChampion: 'Campió', colTopScorer: 'Pichichi',
+      nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
+      initialData: 'Dades inicials: {date}', noPlayerFound: 'No s’ha trobat cap participant.', points: 'punts', matchPredictions: 'pronòstics de partit',
+      champion: 'Campió', finalist: 'Finalista', third: 'Tercer', topScorer: 'Pichichi', goals: 'gols', nextPredictionTitle: 'Pronòstic del pròxim partit', pointsBreakdown: 'Desglossament de punts', matchPredictionsTitle: 'Pronòstics de partits',
+      stage: 'Fase', date: 'Data', match: 'Partit', result: 'Resultat', winner: 'Guanyador', penalty: 'pen.', close: 'Tancar',
+      updateTitle: 'Com actualitzar resultats a GitHub', updateInstructions: 'Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.',
+      footerText: 'Actualització de resultats:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grup', groups: 'Grups', r32: 'Setzens de final', r16: 'Vuitens de final', qf: 'Quarts de final', sf: 'Semifinals', thirdPlace: 'Tercer lloc', final: 'Final'
+    },
+    es: {
+      title: 'Clasificación', nextPendingLabel: 'Próximo partido pendiente', nextMetaHint: 'La columna de la tabla muestra el pronóstico de cada participante para este partido.',
+      legendUp: '▲ sube', legendDown: '▼ baja', legendSame: '— igual', fullTableTitle: 'Tabla completa', clickHint: 'Haz clic en un participante para ver todos sus pronósticos.',
+      searchLabel: 'Buscar', searchPlaceholder: 'Nombre...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participante', colPoints: 'Puntos', colChampion: 'Campeón', colTopScorer: 'Pichichi',
+      nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
+      initialData: 'Datos iniciales: {date}', noPlayerFound: 'No se ha encontrado ningún participante.', points: 'puntos', matchPredictions: 'pronósticos de partidos',
+      champion: 'Campeón', finalist: 'Finalista', third: 'Tercero', topScorer: 'Pichichi', goals: 'goles', nextPredictionTitle: 'Pronóstico del próximo partido', pointsBreakdown: 'Desglose de puntos', matchPredictionsTitle: 'Pronósticos de partidos',
+      stage: 'Fase', date: 'Fecha', match: 'Partido', result: 'Resultado', winner: 'Ganador', penalty: 'pen.', close: 'Cerrar',
+      updateTitle: 'Cómo actualizar resultados en GitHub', updateInstructions: 'Edita solo <code>resultats.js</code>. Busca el partido, cambia <code>null</code> por el resultado real y haz <strong>Commit changes</strong>. GitHub Pages actualizará la web después de publicar el cambio.',
+      footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
+    },
+    en: {
+      title: 'Leaderboard', nextPendingLabel: 'Next pending match', nextMetaHint: 'The table column shows each player’s prediction for this match.',
+      legendUp: '▲ up', legendDown: '▼ down', legendSame: '— same', fullTableTitle: 'Full leaderboard', clickHint: 'Click a player to see all of their predictions.',
+      searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Player', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
+      nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
+      initialData: 'Initial data: {date}', noPlayerFound: 'No player found.', points: 'points', matchPredictions: 'match predictions',
+      champion: 'Champion', finalist: 'Runner-up', third: 'Third', topScorer: 'Top scorer', goals: 'goals', nextPredictionTitle: 'Prediction for the next match', pointsBreakdown: 'Points breakdown', matchPredictionsTitle: 'Match predictions',
+      stage: 'Stage', date: 'Date', match: 'Match', result: 'Score', winner: 'Winner', penalty: 'pens', close: 'Close',
+      updateTitle: 'How to update results on GitHub', updateInstructions: 'Edit only <code>resultats.js</code>. Find the match, replace <code>null</code> with the real score, and click <strong>Commit changes</strong>. GitHub Pages will update the website after the change is published.',
+      footerText: 'Results updates:', githubAccount: 'GitHub', editResultsFile: 'Edit resultats.js', group: 'Group', groups: 'Groups', r32: 'Round of 32', r16: 'Round of 16', qf: 'Quarter-finals', sf: 'Semi-finals', thirdPlace: 'Third-place match', final: 'Final'
+    }
+  };
+  const LANG_LOCALES = { ca: 'ca-ES', es: 'es-ES', en: 'en-US' };
+
+
   function rangeKeys(a, b) { const out = []; for (let i = a; i <= b; i++) out.push('M' + i); return out; }
   function escapeHtml(value) { return String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c])); }
   function display(value, fallback = '—') { if (value === null || value === undefined || value === '') return fallback; const s = String(value).trim(); if (!s || s === '#N/A' || s.toUpperCase() === 'TBD') return fallback; return s; }
   function isNum(v) { return typeof v === 'number' && Number.isFinite(v); }
-  function scoreText(m) { if (!m || !isNum(m.homeScore) || !isNum(m.awayScore)) return '—'; let s = `${m.homeScore}–${m.awayScore}`; if (isNum(m.penHome) && isNum(m.penAway)) s += ` (${m.penHome}–${m.penAway} pen.)`; return s; }
-  function initials(name) { return String(name || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase(); }
+  function t(key, vars = {}) {
+    const dict = I18N[state.lang] || I18N.ca;
+    let text = dict[key] || I18N.ca[key] || key;
+    for (const [k, v] of Object.entries(vars)) {
+      text = text.replaceAll(`{{${k}}}`, v);
+      text = text.replaceAll(`{${k}}`, v);
+    }
+    return text;
+  }
+  function scoreText(m, opts = {}) {
+    if (!m || !isNum(m.homeScore) || !isNum(m.awayScore)) return '—';
+    let s = `${m.homeScore}–${m.awayScore}`;
+    const scoreIsTied = m.homeScore === m.awayScore;
+    const showPens = isNum(m.penHome) && isNum(m.penAway) && (!opts.pensOnlyWhenTied || scoreIsTied);
+    if (showPens) s += ` (${m.penHome}–${m.penAway} ${t('penalty')})`;
+    return s;
+  }
+  function predictionScoreText(m) { return scoreText(m, { pensOnlyWhenTied: true }); }
   function matchLabel(m) { if (!m) return '—'; return `${display(m.home)} vs ${display(m.away)}`; }
+  function matchMeta(id) {
+    const fromResults = id && resultats.matches && resultats.matches[id] ? resultats.matches[id] : null;
+    return { ...(SCHEDULE_META[id] || {}), ...(fromResults || {}) };
+  }
   function matchChronology(m) {
+    const meta = m && m.id ? matchMeta(m.id) : {};
     if (m && typeof m.sortOrder === 'number') return m.sortOrder;
+    if (typeof meta.sortOrder === 'number') return meta.sortOrder;
     if (m && m.date) {
       const parsed = Date.parse(`${m.date}T00:00:00Z`);
+      if (Number.isFinite(parsed)) return parsed / 86400000;
+    }
+    if (meta.date) {
+      const parsed = Date.parse(`${meta.date}T00:00:00Z`);
       if (Number.isFinite(parsed)) return parsed / 86400000;
     }
     return m && typeof m.order === 'number' ? m.order + 100000 : Number.MAX_SAFE_INTEGER;
@@ -42,10 +110,12 @@
     return [...matches].sort((a, b) => matchChronology(a) - matchChronology(b));
   }
   function formatMatchDate(m) {
-    if (!m || !m.date) return '';
-    const d = new Date(`${m.date}T12:00:00Z`);
+    const meta = m && m.id ? matchMeta(m.id) : {};
+    const date = (m && m.date) || meta.date;
+    if (!date) return '';
+    const d = new Date(`${date}T12:00:00Z`);
     if (Number.isNaN(d.getTime())) return '';
-    return new Intl.DateTimeFormat('ca-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+    return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
   }
   function cloneResultsWithout(matchId) {
     const copy = JSON.parse(JSON.stringify(resultats));
@@ -284,6 +354,67 @@
     if (match.type === 'group') return player.groupMatches.find(m => m.id === match.id) || null;
     return player.knockoutMatches.find(m => m.id === match.id) || null;
   }
+  function translateRound(value) {
+    const s = display(value);
+    if (s === '—') return s;
+    const groupMatch = s.match(/^Grup ([A-L])$/);
+    if (groupMatch) return `${t('group')} ${groupMatch[1]}`;
+    const map = {
+      'Grups': t('groups'), 'Setzens de final': t('r32'), 'Vuitens de final': t('r16'), 'Quarts de final': t('qf'),
+      'Semifinals': t('sf'), 'Tercer lloc': t('thirdPlace'), 'Final': t('final')
+    };
+    return map[s] || s;
+  }
+  function applyStaticTranslations() {
+    document.documentElement.lang = state.lang;
+    document.title = `Porra Mundial 2026 - ${t('title')}`;
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.innerHTML = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+    if (els.closeDrawer) els.closeDrawer.setAttribute('aria-label', t('close'));
+    els.langButtons.forEach(btn => btn.classList.toggle('is-active', btn.dataset.lang === state.lang));
+    setupGitHubLinks();
+  }
+  function inferGitHub() {
+    const cfg = window.PORRA_GITHUB || {};
+    let username = cfg.username || '';
+    let repo = cfg.repo || '';
+    const branch = cfg.branch || 'main';
+    if ((!username || !repo) && location.hostname.endsWith('.github.io')) {
+      username = username || location.hostname.replace(/\.github\.io$/, '');
+      const parts = location.pathname.split('/').filter(Boolean);
+      repo = repo || parts[0] || `${username}.github.io`;
+    }
+    if (!username) username = 'pantras';
+    if (!repo) repo = 'porra-mundial-2026';
+    return { username, repo, branch };
+  }
+  function setupGitHubLinks() {
+    const gh = inferGitHub();
+    if (els.githubAccount) {
+      els.githubAccount.href = `https://github.com/${gh.username}`;
+      els.githubAccount.textContent = `GitHub @${gh.username}`;
+    }
+    if (els.resultsEdit) {
+      els.resultsEdit.href = `https://github.com/${gh.username}/${gh.repo}/edit/${gh.branch}/resultats.js`;
+      els.resultsEdit.textContent = t('editResultsFile');
+    }
+  }
+  function setLang(lang) {
+    if (!I18N[lang]) return;
+    state.lang = lang;
+    localStorage.setItem('porraLang', lang);
+    applyStaticTranslations();
+    if (state.computed) {
+      const next = state.computed.next;
+      els.nextTitle.textContent = next ? matchLabel(next) : t('allMatchesHaveResults');
+      els.nextMeta.textContent = next ? `${translateRound(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : t('noPendingMatches');
+      els.nextHeader.textContent = next ? t('predictionFor', { home: display(next.home), away: display(next.away) }) : t('nextMatchColumn');
+      const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString(LANG_LOCALES[state.lang] || 'ca-ES') : 'snapshot';
+      els.status.textContent = t('initialData', { date: generated });
+      render();
+    }
+  }
+
   function movement(row, prevById) {
     const prev = prevById[row.id];
     if (!prev || prev.rank === row.rank) return { cls: 'same', label: '—' };
@@ -299,11 +430,12 @@
     const prevById = Object.fromEntries(previous.rows.map(r => [r.id, r]));
     const next = findNextMatch(current.actual);
     state.computed = { ...current, previous, prevById, last, next };
-    els.nextTitle.textContent = next ? matchLabel(next) : 'Tots els partits tenen resultat';
-    els.nextMeta.textContent = next ? `${display(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : 'No queda cap partit pendent.';
-    els.nextHeader.textContent = next ? `Pronòstic: ${display(next.home)} – ${display(next.away)}` : 'Pròxim partit';
-    const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString('ca-ES') : 'snapshot';
-    els.status.textContent = `Dades inicials: ${generated}`;
+    applyStaticTranslations();
+    els.nextTitle.textContent = next ? matchLabel(next) : t('allMatchesHaveResults');
+    els.nextMeta.textContent = next ? `${translateRound(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : t('noPendingMatches');
+    els.nextHeader.textContent = next ? t('predictionFor', { home: display(next.home), away: display(next.away) }) : t('nextMatchColumn');
+    const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString(LANG_LOCALES[state.lang] || 'ca-ES') : 'snapshot';
+    els.status.textContent = t('initialData', { date: generated });
     render();
   }
 
@@ -312,7 +444,7 @@
     const q = state.filter.trim().toLowerCase();
     const rows = comp.rows.filter(row => !q || row.name.toLowerCase().includes(q));
     if (!rows.length) {
-      els.body.innerHTML = '<tr><td colspan="7" class="empty">No s’ha trobat cap participant.</td></tr>';
+      els.body.innerHTML = `<tr><td colspan="7" class="empty">${escapeHtml(t('noPlayerFound'))}</td></tr>`;
       return;
     }
     els.body.innerHTML = rows.map(row => rowHtml(row, comp)).join('');
@@ -329,7 +461,7 @@
       <td><span class="move ${m.cls}">${escapeHtml(m.label)}</span></td>
       <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
       <td class="num"><strong>${escapeHtml(row.total)}</strong></td>
-      <td><span class="score-pill">${escapeHtml(scoreText(nextPred))}</span>${nextPred && nextPred.winner ? `<span class="winner-pill">${escapeHtml(nextPred.winner)}</span>` : ''}</td>
+      <td><span class="score-pill">${escapeHtml(predictionScoreText(nextPred))}</span>${nextPred && nextPred.winner ? `<span class="winner-pill">${escapeHtml(nextPred.winner)}</span>` : ''}</td>
       <td>${escapeHtml(display(row.summary.champion))}</td>
       <td>${escapeHtml(display(row.summary.topScorer))}</td>
     </tr>`;
@@ -341,26 +473,27 @@
     const nextPred = playerPredictionFor(row, comp.next);
     els.drawerTitle.textContent = row.name;
     els.drawerRank.textContent = `#${row.rank}`;
-    els.drawerSubtitle.textContent = `${row.total} punts · ${row.groupMatches.length + row.knockoutMatches.length} pronòstics de partit`;
+    els.drawerSubtitle.textContent = `${row.total} ${t('points')} · ${row.groupMatches.length + row.knockoutMatches.length} ${t('matchPredictions')}`;
     els.drawerContent.innerHTML = `
       <div class="info-grid">
-        <div class="info-card"><span>Campió</span><strong>${escapeHtml(display(row.summary.champion))}</strong></div>
-        <div class="info-card"><span>Finalista</span><strong>${escapeHtml(display(row.summary.runnerUp))}</strong></div>
-        <div class="info-card"><span>Tercer</span><strong>${escapeHtml(display(row.summary.third))}</strong></div>
-        <div class="info-card"><span>Pichichi</span><strong>${escapeHtml(display(row.summary.topScorer))}${row.summary.topScorerGoals ? ` · ${escapeHtml(row.summary.topScorerGoals)} gols` : ''}</strong></div>
+        <div class="info-card"><span>${escapeHtml(t('champion'))}</span><strong>${escapeHtml(display(row.summary.champion))}</strong></div>
+        <div class="info-card"><span>${escapeHtml(t('finalist'))}</span><strong>${escapeHtml(display(row.summary.runnerUp))}</strong></div>
+        <div class="info-card"><span>${escapeHtml(t('third'))}</span><strong>${escapeHtml(display(row.summary.third))}</strong></div>
+        <div class="info-card"><span>${escapeHtml(t('topScorer'))}</span><strong>${escapeHtml(display(row.summary.topScorer))}${row.summary.topScorerGoals ? ` · ${escapeHtml(row.summary.topScorerGoals)} ${escapeHtml(t('goals'))}` : ''}</strong></div>
       </div>
-      <div class="drawer-section"><h3>Pronòstic del pròxim partit</h3><div class="info-card"><span>${escapeHtml(matchLabel(comp.next))}</span><strong>${escapeHtml(scoreText(nextPred))}${nextPred && nextPred.winner ? ` · ${escapeHtml(nextPred.winner)}` : ''}</strong></div></div>
-      <div class="drawer-section"><h3>Desglossament de punts</h3><div class="breakdown">${Object.entries(row.breakdown).map(([k, v]) => `<span>${escapeHtml(k)} <strong>${escapeHtml(v)}</strong></span>`).join('')}</div></div>
-      <div class="drawer-section"><h3>Pronòstics de partits</h3>${matchesTable(row)}</div>`;
+      <div class="drawer-section"><h3>${escapeHtml(t('nextPredictionTitle'))}</h3><div class="info-card"><span>${escapeHtml(matchLabel(comp.next))}</span><strong>${escapeHtml(predictionScoreText(nextPred))}${nextPred && nextPred.winner ? ` · ${escapeHtml(nextPred.winner)}` : ''}</strong></div></div>
+      <div class="drawer-section"><h3>${escapeHtml(t('pointsBreakdown'))}</h3><div class="breakdown">${Object.entries(row.breakdown).map(([k, v]) => `<span>${escapeHtml(k)} <strong>${escapeHtml(v)}</strong></span>`).join('')}</div></div>
+      <div class="drawer-section"><h3>${escapeHtml(t('matchPredictionsTitle'))}</h3>${matchesTable(row)}</div>`;
     els.drawer.classList.add('is-open');
     els.drawer.setAttribute('aria-hidden', 'false');
   }
   function matchesTable(row) {
-    const matches = [...row.groupMatches, ...row.knockoutMatches];
-    const body = matches.map(m => `<tr><td>${escapeHtml(display(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(scoreText(m))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
-    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>Fase</th><th>Partit</th><th>Resultat</th><th>Guanyador</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    const matches = chronologicalMatches([...row.groupMatches, ...row.knockoutMatches]);
+    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
+    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('winner'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
   }
   function closeDrawer() { els.drawer.classList.remove('is-open'); els.drawer.setAttribute('aria-hidden', 'true'); }
+  els.langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
   els.search.addEventListener('input', e => { state.filter = e.target.value; render(); });
   els.closeDrawer.addEventListener('click', closeDrawer);
   els.drawer.addEventListener('click', e => { if (e.target === els.drawer) closeDrawer(); });

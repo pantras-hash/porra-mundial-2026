@@ -5,52 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Porra Mundial 2026 - Classificació</title>
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Optional: if automatic GitHub link detection does not work for your site,
+    // fill these in, for example: username: "pantras", repo: "porra-mundial-2026".
+    window.PORRA_GITHUB = { username: "", repo: "", branch: "main" };
+  </script>
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">Porra Mundial 2026</p>
-      <h1>Classificació</h1>
+      <h1 data-i18n="title">Classificació</h1>
     </div>
-    <div class="status" id="dataStatus">Carregant dades...</div>
+    <div class="header-actions">
+      <nav class="language-switcher" aria-label="Idioma">
+        <button type="button" class="lang-btn" data-lang="ca" aria-label="Català"><span class="flag flag-ca" aria-hidden="true"></span><span>CAT</span></button>
+        <button type="button" class="lang-btn" data-lang="es" aria-label="Español"><span aria-hidden="true">🇪🇸</span><span>ES</span></button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English"><span aria-hidden="true">🇬🇧</span><span>EN</span></button>
+      </nav>
+      <div class="status" id="dataStatus">Carregant dades...</div>
+    </div>
   </header>
 
   <main class="layout">
     <section class="summary-card" aria-live="polite">
       <div>
-        <span class="label">Pròxim partit pendent</span>
+        <span class="label" data-i18n="nextPendingLabel">Pròxim partit pendent</span>
         <strong id="nextMatchTitle">—</strong>
         <span id="nextMatchMeta" class="muted">La columna de la taula mostra el pronòstic de cada participant per a aquest partit.</span>
       </div>
       <div class="legend" aria-label="Llegenda de moviments">
-        <span class="move up">▲ puja</span>
-        <span class="move down">▼ baixa</span>
-        <span class="move same">— igual</span>
+        <span class="move up" data-i18n="legendUp">▲ puja</span>
+        <span class="move down" data-i18n="legendDown">▼ baixa</span>
+        <span class="move same" data-i18n="legendSame">— igual</span>
       </div>
     </section>
 
     <section class="table-card">
       <div class="toolbar">
         <div>
-          <h2>Taula completa</h2>
-          <p>Fes clic en un participant per veure tots els seus pronòstics.</p>
+          <h2 data-i18n="fullTableTitle">Taula completa</h2>
+          <p data-i18n="clickHint">Fes clic en un participant per veure tots els seus pronòstics.</p>
         </div>
         <label class="search-wrap">
-          <span>Buscar</span>
-          <input id="searchInput" type="search" placeholder="Nom..." autocomplete="off" />
+          <span data-i18n="searchLabel">Buscar</span>
+          <input id="searchInput" type="search" placeholder="Nom..." data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
         </label>
       </div>
       <div class="table-wrap">
         <table id="leaderboardTable">
           <thead>
             <tr>
-              <th>Pos.</th>
-              <th>Mov.</th>
-              <th>Participant</th>
-              <th class="num">Punts</th>
+              <th data-i18n="colPosition">Pos.</th>
+              <th data-i18n="colMovement">Mov.</th>
+              <th data-i18n="colParticipant">Participant</th>
+              <th class="num" data-i18n="colPoints">Punts</th>
               <th id="nextPredictionHeader">Pròxim partit</th>
-              <th>Campió</th>
-              <th>Pichichi</th>
+              <th data-i18n="colChampion">Campió</th>
+              <th data-i18n="colTopScorer">Pichichi</th>
             </tr>
           </thead>
           <tbody id="leaderboardBody">
@@ -61,11 +73,18 @@
     </section>
 
     <section class="help-card">
-      <h2>Com actualitzar resultats a GitHub</h2>
-      <p>Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.</p>
+      <h2 data-i18n="updateTitle">Com actualitzar resultats a GitHub</h2>
+      <p data-i18n="updateInstructions">Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.</p>
       <pre><code>"G-A-1": { homeScore: 2, awayScore: 1, penHome: null, penAway: null }</code></pre>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <span data-i18n="footerText">Actualització de resultats:</span>
+    <a id="githubAccountLink" href="#" target="_blank" rel="noopener" data-i18n="githubAccount">GitHub</a>
+    <span aria-hidden="true">·</span>
+    <a id="resultsEditLink" href="#" target="_blank" rel="noopener" data-i18n="editResultsFile">Editar resultats.js</a>
+  </footer>
 
   <aside class="drawer" id="playerDrawer" aria-hidden="true" aria-label="Pronòstics del participant">
     <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">

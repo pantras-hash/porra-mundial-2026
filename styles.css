@@ -29,6 +29,11 @@ button, input { font: inherit; }
   align-items: center;
   padding: 28px clamp(18px, 4vw, 56px) 18px;
 }
+.header-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.language-switcher { display: inline-flex; gap: 6px; padding: 5px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); box-shadow: 0 10px 30px rgba(20, 32, 51, .06); }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; border: 0; border-radius: 999px; padding: 7px 9px; background: transparent; color: var(--muted); cursor: pointer; font-size: .78rem; font-weight: 900; }
+.lang-btn:hover, .lang-btn.is-active { background: var(--accent-soft); color: var(--accent); }
+.flag-ca { width: 18px; height: 12px; display: inline-block; border-radius: 2px; border: 1px solid rgba(0,0,0,.12); background: repeating-linear-gradient(to bottom, #f7d117 0 1.35px, #c60b1e 1.35px 2.7px); }
 .eyebrow {
   margin: 0 0 4px;
   color: var(--accent);
@@ -54,7 +59,7 @@ pre code { background: transparent; padding: 0; color: inherit; }
   padding: 10px 14px;
   white-space: nowrap;
 }
-.layout { max-width: 1240px; margin: 0 auto; padding: 0 18px 44px; }
+.layout { max-width: 1240px; margin: 0 auto; padding: 0 18px 28px; }
 .summary-card, .table-card, .help-card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -154,4 +159,24 @@ tbody tr:hover { background: var(--accent-soft); }
   .search-wrap input { min-width: 100%; }
   th, td { padding: 11px 10px; }
   .info-grid { grid-template-columns: 1fr; }
+}
+
+.site-footer {
+  max-width: 1240px;
+  margin: 0 auto 34px;
+  padding: 0 18px;
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  font-size: .92rem;
+}
+.site-footer a { color: var(--accent); font-weight: 800; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.pred-table th:first-child, .pred-table td:first-child { white-space: nowrap; }
+@media (max-width: 760px) {
+  .header-actions { align-items: flex-start; }
+  .language-switcher { align-self: flex-start; }
+  .site-footer { justify-content: flex-start; }
 }
