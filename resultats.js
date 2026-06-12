@@ -9,9 +9,9 @@ window.PORRA_RESULTATS = {
   matches: {
     // Grups
     // Mexico vs South Africa
-    "G-A-1": { homeScore: 2, awayScore: 0, penHome: null, penAway: null },
+    "G-A-1": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // Korea Republic vs Czechia
-    "G-A-2": { homeScore: 1, awayScore: 1, penHome: null, penAway: null },
+    "G-A-2": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // Mexico vs Korea Republic
     "G-A-3": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // Czechia vs South Africa
@@ -140,18 +140,6 @@ window.PORRA_RESULTATS = {
     "G-K-5": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // DR Congo vs Uzbekistan
     "G-K-6": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // England vs Croatia
-    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // Ghana vs Panama
-    "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // England vs Ghana
-    "G-L-3": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // Panama vs Croatia
-    "G-L-4": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // England vs Panama
-    "G-L-5": { homeScore: null, awayScore: null, penHome: null, penAway: null },
-    // Croatia vs Ghana
-    "G-L-6": { homeScore: null, awayScore: null, penHome: null, penAway: null },
     // Setzens de final
     // 2A vs 2B
     "M73": { homeScore: null, awayScore: null, penHome: null, penAway: null },

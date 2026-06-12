@@ -82,7 +82,24 @@
   </aside>
 
   <script src="prediccions.js"></script>
-  <script src="resultats.js"></script>
-  <script src="app.js"></script>
+  <script>
+    // Carrega els resultats amb un paràmetre únic per evitar que el navegador
+    // o GitHub Pages mostrin una versió antiga de resultats.js.
+    (function () {
+      const cacheBuster = Date.now();
+      const resultats = document.createElement('script');
+      resultats.src = `resultats.js?v=${cacheBuster}`;
+      resultats.onload = function () {
+        const app = document.createElement('script');
+        app.src = `app.js?v=${cacheBuster}`;
+        document.body.appendChild(app);
+      };
+      resultats.onerror = function () {
+        const status = document.getElementById('dataStatus');
+        if (status) status.textContent = 'No s\'ha pogut carregar resultats.js';
+      };
+      document.body.appendChild(resultats);
+    })();
+  </script>
 </body>
 </html>

@@ -30,3 +30,13 @@ Després fes **Commit changes**. GitHub Pages publicarà l'actualització.
 - `app.js`: calcula la classificació i les fletxes de moviment.
 - `styles.css`: disseny visual.
 - `index_standalone.html`: previsualització d'un sol fitxer per obrir localment.
+
+
+## Si la web no s'actualitza
+
+Aquesta versió carrega `resultats.js` amb un paràmetre anti-cache automàtic. Després de fer un canvi a GitHub:
+
+1. Comprova que has fet **Commit changes** al branch que publica GitHub Pages, normalment `main`.
+2. Mira la pestanya **Actions** o **Settings > Pages** per confirmar que el desplegament ha acabat correctament.
+3. Obre la web i força una recàrrega: `Cmd+Shift+R` a Mac o `Ctrl+F5` a Windows.
+4. Si encara no es veu, obre directament `https://EL-TEU-USUARI.github.io/EL-REPO/resultats.js?v=test` i comprova que surt el marcador nou.

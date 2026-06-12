@@ -1,6 +1,6 @@
 window.PORRA_DATA = {
   "meta": {
-    "generatedAt": "2026-06-12T00:05:16+00:00",
+    "generatedAt": "2026-06-12T00:03:38+00:00",
     "excludedIncompletePlayers": 3,
     "mode": "github-results-file"
   },
@@ -99,12 +99,6 @@ window.PORRA_DATA = {
       "DR Congo",
       "Uzbekistan",
       "Colombia"
-    ],
-    "L": [
-      "England",
-      "Croatia",
-      "Ghana",
-      "Panama"
     ]
   },
   "thirdPlaceMatrix": {
@@ -1951,71 +1945,11 @@ window.PORRA_DATA = {
       "away": "Uzbekistan"
     },
     {
-      "id": "G-L-1",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 67,
-      "home": "England",
-      "away": "Croatia"
-    },
-    {
-      "id": "G-L-2",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 68,
-      "home": "Ghana",
-      "away": "Panama"
-    },
-    {
-      "id": "G-L-3",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 69,
-      "home": "England",
-      "away": "Ghana"
-    },
-    {
-      "id": "G-L-4",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 70,
-      "home": "Panama",
-      "away": "Croatia"
-    },
-    {
-      "id": "G-L-5",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 71,
-      "home": "England",
-      "away": "Panama"
-    },
-    {
-      "id": "G-L-6",
-      "type": "group",
-      "stage": "Grups",
-      "round": "Grup L",
-      "group": "L",
-      "order": 72,
-      "home": "Croatia",
-      "away": "Ghana"
-    },
-    {
       "id": "M73",
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 73,
+      "order": 67,
       "homeSlot": "2A",
       "awaySlot": "2B"
     },
@@ -2024,7 +1958,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 74,
+      "order": 68,
       "homeSlot": "1E",
       "awaySlot": "third:1E"
     },
@@ -2033,7 +1967,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 75,
+      "order": 69,
       "homeSlot": "1F",
       "awaySlot": "2C"
     },
@@ -2042,7 +1976,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 76,
+      "order": 70,
       "homeSlot": "1C",
       "awaySlot": "2F"
     },
@@ -2051,7 +1985,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 77,
+      "order": 71,
       "homeSlot": "1I",
       "awaySlot": "third:1I"
     },
@@ -2060,7 +1994,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 78,
+      "order": 72,
       "homeSlot": "2E",
       "awaySlot": "2I"
     },
@@ -2069,7 +2003,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 79,
+      "order": 73,
       "homeSlot": "1A",
       "awaySlot": "third:1A"
     },
@@ -2078,7 +2012,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 80,
+      "order": 74,
       "homeSlot": "1L",
       "awaySlot": "third:1L"
     },
@@ -2087,7 +2021,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 81,
+      "order": 75,
       "homeSlot": "1D",
       "awaySlot": "third:1D"
     },
@@ -2096,7 +2030,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 82,
+      "order": 76,
       "homeSlot": "1G",
       "awaySlot": "third:1G"
     },
@@ -2105,7 +2039,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 83,
+      "order": 77,
       "homeSlot": "2K",
       "awaySlot": "2L"
     },
@@ -2114,7 +2048,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 84,
+      "order": 78,
       "homeSlot": "1H",
       "awaySlot": "2J"
     },
@@ -2123,7 +2057,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 85,
+      "order": 79,
       "homeSlot": "1B",
       "awaySlot": "third:1B"
     },
@@ -2132,7 +2066,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 86,
+      "order": 80,
       "homeSlot": "1J",
       "awaySlot": "2H"
     },
@@ -2141,7 +2075,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 87,
+      "order": 81,
       "homeSlot": "1K",
       "awaySlot": "third:1K"
     },
@@ -2150,7 +2084,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Setzens de final",
       "round": "Setzens de final",
-      "order": 88,
+      "order": 82,
       "homeSlot": "2D",
       "awaySlot": "2G"
     },
@@ -2159,7 +2093,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 89,
+      "order": 83,
       "homeSlot": "W74",
       "awaySlot": "W77"
     },
@@ -2168,7 +2102,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 90,
+      "order": 84,
       "homeSlot": "W73",
       "awaySlot": "W75"
     },
@@ -2177,7 +2111,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 91,
+      "order": 85,
       "homeSlot": "W76",
       "awaySlot": "W78"
     },
@@ -2186,7 +2120,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 92,
+      "order": 86,
       "homeSlot": "W79",
       "awaySlot": "W80"
     },
@@ -2195,7 +2129,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 93,
+      "order": 87,
       "homeSlot": "W83",
       "awaySlot": "W84"
     },
@@ -2204,7 +2138,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 94,
+      "order": 88,
       "homeSlot": "W81",
       "awaySlot": "W82"
     },
@@ -2213,7 +2147,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 95,
+      "order": 89,
       "homeSlot": "W86",
       "awaySlot": "W88"
     },
@@ -2222,7 +2156,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Vuitens de final",
       "round": "Vuitens de final",
-      "order": 96,
+      "order": 90,
       "homeSlot": "W85",
       "awaySlot": "W87"
     },
@@ -2231,7 +2165,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Quarts de final",
       "round": "Quarts de final",
-      "order": 97,
+      "order": 91,
       "homeSlot": "W89",
       "awaySlot": "W90"
     },
@@ -2240,7 +2174,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Quarts de final",
       "round": "Quarts de final",
-      "order": 98,
+      "order": 92,
       "homeSlot": "W93",
       "awaySlot": "W94"
     },
@@ -2249,7 +2183,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Quarts de final",
       "round": "Quarts de final",
-      "order": 99,
+      "order": 93,
       "homeSlot": "W91",
       "awaySlot": "W92"
     },
@@ -2258,7 +2192,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Quarts de final",
       "round": "Quarts de final",
-      "order": 100,
+      "order": 94,
       "homeSlot": "W95",
       "awaySlot": "W96"
     },
@@ -2267,7 +2201,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Semifinals",
       "round": "Semifinals",
-      "order": 101,
+      "order": 95,
       "homeSlot": "W97",
       "awaySlot": "W98"
     },
@@ -2276,7 +2210,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Semifinals",
       "round": "Semifinals",
-      "order": 102,
+      "order": 96,
       "homeSlot": "W99",
       "awaySlot": "W100"
     },
@@ -2285,7 +2219,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Tercer lloc",
       "round": "Tercer lloc",
-      "order": 103,
+      "order": 97,
       "homeSlot": "L101",
       "awaySlot": "L102"
     },
@@ -2294,7 +2228,7 @@ window.PORRA_DATA = {
       "type": "knockout",
       "stage": "Final",
       "round": "Final",
-      "order": 104,
+      "order": 98,
       "homeSlot": "W101",
       "awaySlot": "W102"
     }
