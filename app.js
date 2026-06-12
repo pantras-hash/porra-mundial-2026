@@ -345,5 +345,9 @@
   els.closeDrawer.addEventListener('click', closeDrawer);
   els.drawer.addEventListener('click', e => { if (e.target === els.drawer) closeDrawer(); });
   window.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
-  document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
