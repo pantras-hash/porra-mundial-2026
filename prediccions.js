@@ -1,7 +1,7 @@
 window.PORRA_DATA = {
   "meta": {
-    "generatedAt": "2026-06-12T11:48:26+00:00",
-    "sourceWorkbook": "AA Classificació Porra Mundial 2026 (3).xlsx",
+    "generatedAt": "2026-06-12T22:06:03+00:00",
+    "sourceWorkbook": "AA Classificació Porra Mundial 2026 (3)(1).xlsx",
     "excludedIncompletePlayers": 0,
     "excludedPlayers": [],
     "mode": "github-results-file",
