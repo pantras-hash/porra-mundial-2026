@@ -30,6 +30,23 @@
   function scoreText(m) { if (!m || !isNum(m.homeScore) || !isNum(m.awayScore)) return '—'; let s = `${m.homeScore}–${m.awayScore}`; if (isNum(m.penHome) && isNum(m.penAway)) s += ` (${m.penHome}–${m.penAway} pen.)`; return s; }
   function initials(name) { return String(name || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase(); }
   function matchLabel(m) { if (!m) return '—'; return `${display(m.home)} vs ${display(m.away)}`; }
+  function matchChronology(m) {
+    if (m && typeof m.sortOrder === 'number') return m.sortOrder;
+    if (m && m.date) {
+      const parsed = Date.parse(`${m.date}T00:00:00Z`);
+      if (Number.isFinite(parsed)) return parsed / 86400000;
+    }
+    return m && typeof m.order === 'number' ? m.order + 100000 : Number.MAX_SAFE_INTEGER;
+  }
+  function chronologicalMatches(matches) {
+    return [...matches].sort((a, b) => matchChronology(a) - matchChronology(b));
+  }
+  function formatMatchDate(m) {
+    if (!m || !m.date) return '';
+    const d = new Date(`${m.date}T12:00:00Z`);
+    if (Number.isNaN(d.getTime())) return '';
+    return new Intl.DateTimeFormat('ca-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+  }
   function cloneResultsWithout(matchId) {
     const copy = JSON.parse(JSON.stringify(resultats));
     if (matchId && copy.matches && copy.matches[matchId]) {
@@ -254,10 +271,13 @@
   function findLastPlayed(actual) {
     const override = window.PORRA_ULTIM_PARTIT;
     if (override && actual.byId[override]) return actual.byId[override];
-    return actual.matches.filter(m => isNum(m.homeScore) && isNum(m.awayScore)).sort((a, b) => b.order - a.order)[0] || null;
+    return chronologicalMatches(actual.matches)
+      .filter(m => isNum(m.homeScore) && isNum(m.awayScore))
+      .sort((a, b) => matchChronology(b) - matchChronology(a))[0] || null;
   }
   function findNextMatch(actual) {
-    return actual.matches.find(m => !isSeedLike(m.home) && !isSeedLike(m.away) && (!isNum(m.homeScore) || !isNum(m.awayScore))) || null;
+    return chronologicalMatches(actual.matches)
+      .find(m => !isSeedLike(m.home) && !isSeedLike(m.away) && (!isNum(m.homeScore) || !isNum(m.awayScore))) || null;
   }
   function playerPredictionFor(player, match) {
     if (!match) return null;
@@ -280,7 +300,7 @@
     const next = findNextMatch(current.actual);
     state.computed = { ...current, previous, prevById, last, next };
     els.nextTitle.textContent = next ? matchLabel(next) : 'Tots els partits tenen resultat';
-    els.nextMeta.textContent = next ? `${display(next.round)} · ${next.id}` : 'No queda cap partit pendent.';
+    els.nextMeta.textContent = next ? `${display(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : 'No queda cap partit pendent.';
     els.nextHeader.textContent = next ? `Pronòstic: ${display(next.home)} – ${display(next.away)}` : 'Pròxim partit';
     const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString('ca-ES') : 'snapshot';
     els.status.textContent = `Dades inicials: ${generated}`;
