@@ -72,10 +72,7 @@
   function t(key, vars = {}) {
     const dict = I18N[state.lang] || I18N.ca;
     let text = dict[key] || I18N.ca[key] || key;
-    for (const [k, v] of Object.entries(vars)) {
-      text = text.replaceAll(`{{${k}}}`, v);
-      text = text.replaceAll(`{${k}}`, v);
-    }
+    for (const [k, v] of Object.entries(vars)) { text = text.replaceAll(`{{${k}}}`, v); text = text.replaceAll(`{${k}}`, v); }
     return text;
   }
   function scoreText(m, opts = {}) {
@@ -108,6 +105,46 @@
   }
   function chronologicalMatches(matches) {
     return [...matches].sort((a, b) => matchChronology(a) - matchChronology(b));
+  }
+  const LIVE_STATUSES = new Set(['IN_PLAY', 'PAUSED', 'EXTRA_TIME', 'PENALTY_SHOOTOUT']);
+  const FINAL_STATUSES = new Set(['FINISHED', 'AWARDED']);
+  const NON_FINAL_STATUSES = new Set(['SCHEDULED', 'TIMED', 'POSTPONED', 'SUSPENDED', 'CANCELED', ...LIVE_STATUSES]);
+  function matchStatus(m) {
+    const meta = m && m.id ? matchMeta(m.id) : {};
+    return String((m && m.status) || meta.status || '').trim().toUpperCase();
+  }
+  function hasMatchScore(m) { return !!m && isNum(m.homeScore) && isNum(m.awayScore); }
+  function isMatchFinal(m) {
+    const status = matchStatus(m);
+    if (FINAL_STATUSES.has(status)) return true;
+    if (NON_FINAL_STATUSES.has(status)) return false;
+    // Backwards compatible behavior: old/manual resultats.js entries had no status,
+    // so a score without a status is treated as final.
+    return hasMatchScore(m);
+  }
+  function statusLabel(status) {
+    const s = String(status || '').toUpperCase();
+    const labels = {
+      ca: { IN_PLAY: 'en joc', PAUSED: 'descans', EXTRA_TIME: 'pròrroga', PENALTY_SHOOTOUT: 'penals', FINISHED: 'finalitzat', AWARDED: 'finalitzat' },
+      es: { IN_PLAY: 'en juego', PAUSED: 'descanso', EXTRA_TIME: 'prórroga', PENALTY_SHOOTOUT: 'penaltis', FINISHED: 'finalizado', AWARDED: 'finalizado' },
+      en: { IN_PLAY: 'live', PAUSED: 'half-time', EXTRA_TIME: 'extra time', PENALTY_SHOOTOUT: 'penalties', FINISHED: 'final', AWARDED: 'final' }
+    };
+    return (labels[state.lang] && labels[state.lang][s]) || labels.ca[s] || '';
+  }
+  function focusMatchMetaText(m) {
+    if (!m) return t('noPendingMatches');
+    const parts = [translateRound(m.round), m.id];
+    const date = formatMatchDate(m);
+    if (date) parts.push(date);
+    if (hasMatchScore(m)) parts.push(scoreText(m));
+    const label = statusLabel(matchStatus(m));
+    if (label) parts.push(label);
+    return parts.join(' · ');
+  }
+  function updateFocusMatchHeader(match) {
+    els.nextTitle.textContent = match ? matchLabel(match) : t('allMatchesHaveResults');
+    els.nextMeta.textContent = match ? focusMatchMetaText(match) : t('noPendingMatches');
+    els.nextHeader.textContent = match ? t('predictionFor', { home: display(match.home), away: display(match.away) }) : t('nextMatchColumn');
   }
   function formatMatchDate(m) {
     const meta = m && m.id ? matchMeta(m.id) : {};
@@ -346,8 +383,12 @@
       .sort((a, b) => matchChronology(b) - matchChronology(a))[0] || null;
   }
   function findNextMatch(actual) {
+    // Show the first chronologically non-final match. This means that if a
+    // match is in progress and already has a live score, it stays in the
+    // prediction column until the API marks it FINISHED/AWARDED. Only then
+    // do we advance to the next scheduled match.
     return chronologicalMatches(actual.matches)
-      .find(m => !isSeedLike(m.home) && !isSeedLike(m.away) && (!isNum(m.homeScore) || !isNum(m.awayScore))) || null;
+      .find(m => !isSeedLike(m.home) && !isSeedLike(m.away) && !isMatchFinal(m)) || null;
   }
   function playerPredictionFor(player, match) {
     if (!match) return null;
@@ -406,11 +447,7 @@
     applyStaticTranslations();
     if (state.computed) {
       const next = state.computed.next;
-      els.nextTitle.textContent = next ? matchLabel(next) : t('allMatchesHaveResults');
-      els.nextMeta.textContent = next ? `${translateRound(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : t('noPendingMatches');
-      els.nextHeader.textContent = next ? t('predictionFor', { home: display(next.home), away: display(next.away) }) : t('nextMatchColumn');
-      const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString(LANG_LOCALES[state.lang] || 'ca-ES') : 'snapshot';
-      els.status.textContent = t('initialData', { date: generated });
+      updateFocusMatchHeader(next);
       render();
     }
   }
@@ -431,9 +468,7 @@
     const next = findNextMatch(current.actual);
     state.computed = { ...current, previous, prevById, last, next };
     applyStaticTranslations();
-    els.nextTitle.textContent = next ? matchLabel(next) : t('allMatchesHaveResults');
-    els.nextMeta.textContent = next ? `${translateRound(next.round)} · ${next.id}${formatMatchDate(next) ? ' · ' + formatMatchDate(next) : ''}` : t('noPendingMatches');
-    els.nextHeader.textContent = next ? t('predictionFor', { home: display(next.home), away: display(next.away) }) : t('nextMatchColumn');
+    updateFocusMatchHeader(next);
     const generated = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toLocaleString(LANG_LOCALES[state.lang] || 'ca-ES') : 'snapshot';
     els.status.textContent = t('initialData', { date: generated });
     render();

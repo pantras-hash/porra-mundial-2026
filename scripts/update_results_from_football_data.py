@@ -3,7 +3,7 @@
 
 This script is designed for the static GitHub Pages porra site. It reads the
 existing resultats.js file, fetches FIFA World Cup scores from football-data.org,
-matches API fixtures to local match IDs, updates only score fields, and writes
+matches API fixtures to local match IDs, updates score fields plus match status, and writes
 resultats.js back only when something changed.
 
 Required environment variable:
@@ -15,6 +15,8 @@ Useful optional variables:
   FOOTBALL_DATA_DATE_FROM    defaults to 2026-06-11
   FOOTBALL_DATA_DATE_TO      defaults to 2026-07-20 (dateTo is exclusive in API docs)
   FOOTBALL_DATA_FINAL_ONLY   set to true to update only FINISHED/AWARDED matches
+  FOOTBALL_DATA_USE_DAILY    defaults to true; also fetch /v4/matches around today for live scores
+  FOOTBALL_DATA_DAILY_DAYS   defaults to 1; fetch today +/- this many days from /v4/matches
 """
 
 from __future__ import annotations
@@ -38,7 +40,8 @@ RESULT_LINE_RE = re.compile(
     r'penHome: (?P<penHome>[^,]+), '
     r'penAway: (?P<penAway>[^,]+), '
     r'date: "(?P<date>[^"]+)", '
-    r'sortOrder: (?P<sortOrder>\d+) '
+    r'sortOrder: (?P<sortOrder>\d+)'
+    r'(?:, status: "(?P<status>[^"]*)")? '
     r'\},(?P<trailing>.*)$'
 )
 
@@ -132,6 +135,7 @@ class LocalMatch:
     away_score: Optional[int]
     pen_home: Optional[int]
     pen_away: Optional[int]
+    status: str = ""
     label: str = ""
     home_tla: Optional[str] = None
     away_tla: Optional[str] = None
@@ -241,6 +245,7 @@ def parse_local_matches(path: str) -> Tuple[List[str], List[LocalMatch]]:
                 away_score=parse_js_value(m.group("awayScore")),
                 pen_home=parse_js_value(m.group("penHome")),
                 pen_away=parse_js_value(m.group("penAway")),
+                status=m.group("status") or "",
                 label=label,
                 home_tla=home_tla,
                 away_tla=away_tla,
@@ -249,24 +254,76 @@ def parse_local_matches(path: str) -> Tuple[List[str], List[LocalMatch]]:
     return lines, matches
 
 
-def fetch_api_matches(token: str, competition: str, season: str, date_from: str, date_to: str) -> List[Dict[str, Any]]:
-    base_url = f"https://api.football-data.org/v4/competitions/{urllib.parse.quote(competition)}/matches"
-    params = {
-        "season": season,
-        "dateFrom": date_from,
-        "dateTo": date_to,
-    }
+def football_data_get(token: str, path: str, params: Dict[str, str]) -> List[Dict[str, Any]]:
+    base_url = "https://api.football-data.org/v4/" + path.lstrip("/")
     url = base_url + "?" + urllib.parse.urlencode(params)
+    print(f"Fetching {url.replace(token, '***')}")
     request = urllib.request.Request(
         url,
         headers={
             "X-Auth-Token": token,
-            "User-Agent": "porra-mundial-2026-github-action/1.0",
+            "User-Agent": "porra-mundial-2026-github-action/1.1",
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         payload = json.loads(response.read().decode("utf-8"))
     return list(payload.get("matches", []))
+
+
+def fetch_api_matches(
+    token: str,
+    competition: str,
+    season: str,
+    date_from: str,
+    date_to: str,
+    use_daily: bool = True,
+    daily_days: int = 1,
+) -> List[Dict[str, Any]]:
+    """Fetch competition matches plus a small daily live window.
+
+    football-data.org's public demo page uses /v4/matches for today's live
+    matches. The competition endpoint is better for the full tournament, but
+    the daily endpoint can expose live games sooner. We combine both and
+    deduplicate by provider id.
+    """
+    all_matches: List[Dict[str, Any]] = []
+
+    # Full tournament pull. This should cover final scores and scheduled WC data.
+    all_matches.extend(
+        football_data_get(
+            token,
+            f"competitions/{urllib.parse.quote(competition)}/matches",
+            {"season": season, "dateFrom": date_from, "dateTo": date_to},
+        )
+    )
+
+    # Live/daily pull. This mirrors the endpoint shown on football-data.org's
+    # front page and is useful when a match is IN_PLAY but not appearing through
+    # the competition query quickly enough.
+    if use_daily:
+        today = dt.datetime.now(dt.timezone.utc).date()
+        daily_from = (today - dt.timedelta(days=daily_days)).isoformat()
+        daily_to = (today + dt.timedelta(days=daily_days)).isoformat()
+        try:
+            all_matches.extend(
+                football_data_get(
+                    token,
+                    "matches",
+                    {"dateFrom": daily_from, "dateTo": daily_to},
+                )
+            )
+        except Exception as exc:  # Keep the competition endpoint as a fallback.
+            print(f"Warning: daily /matches fetch failed: {exc}", file=sys.stderr)
+
+    deduped: List[Dict[str, Any]] = []
+    seen = set()
+    for m in all_matches:
+        key = m.get("id") or (m.get("utcDate"), m.get("homeTeam", {}).get("name"), m.get("awayTeam", {}).get("name"))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(m)
+    return deduped
 
 
 def score_from_api_match(match: Dict[str, Any]) -> Optional[Tuple[int, int, Optional[int], Optional[int]]]:
@@ -281,6 +338,10 @@ def score_from_api_match(match: Dict[str, Any]) -> Optional[Tuple[int, int, Opti
         return node.get("home"), node.get("away")
 
     ft_home, ft_away = pair(full_time)
+
+    # In live games, football-data.org normally puts the running score in
+    # fullTime. If a provider response has status IN_PLAY but leaves the score
+    # null, there is nothing reliable to write yet.
     if ft_home is None or ft_away is None:
         return None
 
@@ -449,20 +510,22 @@ def rewrite_resultats(lines: List[str], updates: Dict[str, ApiScore]) -> Tuple[s
             parse_js_value(m.group("penHome")),
             parse_js_value(m.group("penAway")),
         )
+        old_status = m.group("status") or ""
+        new_status = update.status or ""
         new_tuple = (update.home_score, update.away_score, update.pen_home, update.pen_away)
-        if old_tuple == new_tuple:
+        if old_tuple == new_tuple and old_status == new_status:
             new_lines.append(line)
             continue
         changed.append(
             f"{match_id}: {old_tuple[0]}-{old_tuple[1]} -> {update.home_score}-{update.away_score}"
             + (f" ({update.pen_home}-{update.pen_away} pen.)" if update.pen_home is not None and update.pen_away is not None else "")
-            + f" [{update.status}; {update.api_home} vs {update.api_away}]"
+            + f" [{old_status or 'no status'} -> {new_status}; {update.api_home} vs {update.api_away}]"
         )
         new_lines.append(
             f'{m.group("indent")}"{match_id}": {{ homeScore: {js_value(update.home_score)}, '
             f'awayScore: {js_value(update.away_score)}, penHome: {js_value(update.pen_home)}, '
             f'penAway: {js_value(update.pen_away)}, date: "{m.group("date")}", '
-            f'sortOrder: {m.group("sortOrder")} }},{m.group("trailing")}'
+            f'sortOrder: {m.group("sortOrder")}, status: "{new_status}" }},{m.group("trailing")}'
         )
     return "\n".join(new_lines) + "\n", changed
 
@@ -475,6 +538,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--date-from", default=os.getenv("FOOTBALL_DATA_DATE_FROM", "2026-06-11"))
     parser.add_argument("--date-to", default=os.getenv("FOOTBALL_DATA_DATE_TO", "2026-07-20"))
     parser.add_argument("--final-only", action="store_true", default=os.getenv("FOOTBALL_DATA_FINAL_ONLY", "").lower() in {"1", "true", "yes"})
+    parser.add_argument("--use-daily", action="store_true", default=os.getenv("FOOTBALL_DATA_USE_DAILY", "true").lower() in {"1", "true", "yes"})
+    parser.add_argument("--daily-days", type=int, default=int(os.getenv("FOOTBALL_DATA_DAILY_DAYS", "1")))
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
 
@@ -486,8 +551,24 @@ def main(argv: Optional[List[str]] = None) -> int:
     lines, local_matches = parse_local_matches(args.resultats)
     print(f"Loaded {len(local_matches)} local matches from {args.resultats}")
 
-    api_matches = fetch_api_matches(token, args.competition, args.season, args.date_from, args.date_to)
-    print(f"Fetched {len(api_matches)} API matches from football-data.org")
+    api_matches = fetch_api_matches(
+        token,
+        args.competition,
+        args.season,
+        args.date_from,
+        args.date_to,
+        use_daily=args.use_daily,
+        daily_days=args.daily_days,
+    )
+    print(f"Fetched {len(api_matches)} API matches from football-data.org after deduping")
+
+    active = [m for m in api_matches if m.get("status") in SCORING_STATUSES_LIVE]
+    if active:
+        print("Scored/live API candidates:")
+        for m in active[:20]:
+            home = (m.get("homeTeam") or {}).get("name")
+            away = (m.get("awayTeam") or {}).get("name")
+            print(f"  - {m.get('utcDate')} {m.get('status')} {home} vs {away}: {score_from_api_match(m)}")
 
     updates, unmatched = map_api_to_local(api_matches, local_matches, final_only=args.final_only)
     new_text, changed = rewrite_resultats(lines, updates)
