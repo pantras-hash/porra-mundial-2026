@@ -1,7 +1,6 @@
 name: Update results from football-data.org
 
 on:
-  push:
   workflow_dispatch:
     inputs:
       final_only:
@@ -9,18 +8,19 @@ on:
         required: false
         default: "false"
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "7/5 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
   group: update-results
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update-results:
     runs-on: ubuntu-latest
+
     steps:
       - name: Show trigger
         run: |
@@ -28,12 +28,12 @@ jobs:
           echo "Current UTC time: $(date -u)"
 
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -53,6 +53,7 @@ jobs:
             echo "No result changes to commit."
             exit 0
           fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add resultats.js
