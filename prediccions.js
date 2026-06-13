@@ -9513,8 +9513,8 @@ window.PORRA_DATA = {
           "round": "Grup B",
           "home": "Qatar",
           "away": "Switzerland",
-          "homeScore": 0,
-          "awayScore": 3,
+          "homeScore": 3,
+          "awayScore": 0,
           "winner": "Switzerland"
         },
         {
