@@ -1,6 +1,7 @@
 name: Update results from football-data.org
 
 on:
+  push:
   workflow_dispatch:
     inputs:
       final_only:
