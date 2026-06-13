@@ -23,10 +23,12 @@ window.PORRA_RESULTATS = {
     // 2026-06-13
   // Qatar vs Switzerland
     "G-B-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 8 },
-    // Haiti vs Scotland
-    "G-C-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5 },
+   
 // Brazil vs Morocco
     "G-C-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 7 },
+
+ // Haiti vs Scotland
+    "G-C-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5 },
     // Australia vs Türkiye
     "G-D-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 6 },
     
