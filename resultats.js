@@ -22,15 +22,15 @@ window.PORRA_RESULTATS = {
     "G-D-1": { homeScore: 4, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 4, status: "FINISHED" },
     // 2026-06-13
   // Qatar vs Switzerland
-    "G-B-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 8 },
+    "G-B-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5 },
    
 // Brazil vs Morocco
-    "G-C-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 7 },
+    "G-C-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 6 },
 
  // Haiti vs Scotland
-    "G-C-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5 },
+    "G-C-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 7 },
     // Australia vs Türkiye
-    "G-D-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 6 },
+    "G-D-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 8 },
     
   
     // 2026-06-14
