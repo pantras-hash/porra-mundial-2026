@@ -22,7 +22,7 @@ window.PORRA_RESULTATS = {
     "G-D-1": { homeScore: 4, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 4, status: "FINISHED" },
     // 2026-06-13
   // Qatar vs Switzerland
-    "G-B-2": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5, status: "IN_PLAY" },
+    "G-B-2": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5, status: "IN_PLAY" },
    
 // Brazil vs Morocco
     "G-C-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 6 },
