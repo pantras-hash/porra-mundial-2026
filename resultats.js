@@ -19,7 +19,7 @@ window.PORRA_RESULTATS = {
     // Canada vs Bosnia-Herzegovina
     "G-B-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 3, status: "FINISHED" },
     // USA vs Paraguay
-    "G-D-1": { homeScore: 4, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 4, status: "IN_PLAY" },
+    "G-D-1": { homeScore: 4, awayScore: 1, penHome: null, penAway: null, date: "2026-06-12", sortOrder: 4, status: "FINISHED" },
     // 2026-06-13
     // Haiti vs Scotland
     "G-C-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 5 },
