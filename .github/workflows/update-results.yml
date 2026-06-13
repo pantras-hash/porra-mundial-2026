@@ -9,7 +9,7 @@ on:
         default: "false"
   schedule:
     # Every 5 minutes, offset away from the top of the hour to reduce delay risk.
-    - cron: "3/5 * * * *"
+    - "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
 
 permissions:
   contents: write
