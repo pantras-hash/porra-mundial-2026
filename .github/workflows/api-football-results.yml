@@ -1,0 +1,85 @@
+name: Update results from API-Football
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: api-football-results
+  cancel-in-progress: true
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show trigger
+        run: |
+          echo "Triggered by: ${{ github.event_name }}"
+          echo "Current UTC time: $(date -u)"
+
+      - name: Check update window
+        id: window
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          from datetime import datetime, time
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("America/New_York"))
+          start = time(11, 55)
+          end = time(2, 5)
+
+          allowed = now.time() >= start or now.time() <= end
+
+          print(f"now_et={now.isoformat()}")
+          print(f"should_run={'true' if allowed else 'false'}")
+          PY
+
+      - name: Explain skipped update
+        if: steps.window.outputs.should_run != 'true'
+        run: |
+          echo "Outside allowed update window."
+          echo "Current ET time: ${{ steps.window.outputs.now_et }}"
+          echo "Allowed window: 11:55am ET to 2:05am ET."
+
+      - name: Check out repository
+        if: steps.window.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        if: steps.window.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update resultats.js from API-Football
+        if: steps.window.outputs.should_run == 'true'
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          API_FOOTBALL_LEAGUE: "1"
+          API_FOOTBALL_SEASON: "2026"
+        run: python scripts/update_results_from_api_football.py --resultats resultats.js
+
+      - name: Commit updated resultats.js if changed
+        if: steps.window.outputs.should_run == 'true'
+        run: |
+          if git diff --quiet -- resultats.js; then
+            echo "No result changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultats.js
+          git commit -m "Update World Cup results from API-Football"
+
+          git pull --rebase origin main
+          git push
