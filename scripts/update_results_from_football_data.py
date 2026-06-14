@@ -189,6 +189,8 @@ def canonical_tla_from_team(team: Dict[str, Any]) -> Optional[str]:
             return "CUW"
         if tla == "CIV":
             return "CIV"
+          if tla == "HAI": 
+            return "HTI"
         return tla
     for key in ("name", "shortName"):
         maybe = canonical_tla_from_name(str(team.get(key) or ""))
