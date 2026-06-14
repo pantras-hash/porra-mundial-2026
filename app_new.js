@@ -518,7 +518,7 @@
 };
   const I18N = {
     ca: {
-      title: 'Classificació', nextPendingLabel: 'Pròxim partit pendent', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.', localTimeNote: 'Horaris en la teva hora local ({tz})',
+      title: 'Classificació', nextPendingLabel: 'Pròxims partits pendents', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.', localTimeNote: 'Horaris en la teva hora local ({tz})',
       legendUp: '▲ puja', legendDown: '▼ baixa', legendSame: '— igual', fullTableTitle: 'Taula completa', clickHint: 'Fes clic en un participant per veure tots els seus pronòstics.',
       searchLabel: 'Buscar', searchPlaceholder: 'Nom...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participant', colPoints: 'Punts', colChampion: 'Campió', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
@@ -529,7 +529,7 @@
       footerText: 'Actualització de resultats:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grup', groups: 'Grups', r32: 'Setzens de final', r16: 'Vuitens de final', qf: 'Quarts de final', sf: 'Semifinals', thirdPlace: 'Tercer lloc', final: 'Final'
     },
     es: {
-      title: 'Clasificación', nextPendingLabel: 'Próximo partido pendiente', nextMetaHint: 'La columna de la tabla muestra el pronóstico de cada participante para este partido.', localTimeNote: 'Horarios en tu hora local ({tz})',
+      title: 'Clasificación', nextPendingLabel: 'Próximos partidos pendientes', nextMetaHint: 'La columna de la tabla muestra el pronóstico de cada participante para este partido.', localTimeNote: 'Horarios en tu hora local ({tz})',
       legendUp: '▲ sube', legendDown: '▼ baja', legendSame: '— igual', fullTableTitle: 'Tabla completa', clickHint: 'Haz clic en un participante para ver todos sus pronósticos.',
       searchLabel: 'Buscar', searchPlaceholder: 'Nombre...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participante', colPoints: 'Puntos', colChampion: 'Campeón', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
@@ -540,7 +540,7 @@
       footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
     },
     en: {
-      title: 'Leaderboard', nextPendingLabel: 'Next pending match', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time ({tz})',
+      title: 'Leaderboard', nextPendingLabel: 'Next pending matches', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time ({tz})',
       legendUp: '▲ up', legendDown: '▼ down', legendSame: '— same', fullTableTitle: 'Full leaderboard', clickHint: 'Click a player to see all of their predictions.',
       searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Player', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
