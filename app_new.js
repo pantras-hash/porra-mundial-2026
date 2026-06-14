@@ -1130,21 +1130,22 @@
     });
   }
   function rowHtml(row, comp) {
-    const m = movement(row, comp.prevById);
-    const nextMatches = comp.nextMatches || [comp.next].filter(Boolean);
-    const nextPred1 = playerPredictionFor(row, nextMatches[0]);
-    const nextPred2 = playerPredictionFor(row, nextMatches[1]);
-    return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
-      <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-      <td><span class="move ${m.cls}">${escapeHtml(m.label)}</span></td>
-      <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
-      <td class="num"><strong>${escapeHtml(row.total)}</strong></td>
-      <td class="prediction-cell">${predictionCellHtml(nextPred1)}</td>
-      <td class="prediction-cell">${predictionCellHtml(nextPred2)}</td>
-      <td>${escapeHtml(teamDisplay(row.summary.champion))}</td>
-      <td>${escapeHtml(teamDisplay(row.summary.topScorer))}</td>
-    </tr>`;
-  }
+  const m = movement(row, comp.prevById);
+  const nextMatches = comp.nextMatches || [comp.next].filter(Boolean);
+  const nextPred1 = playerPredictionFor(row, nextMatches[0]);
+  const nextPred2 = playerPredictionFor(row, nextMatches[1]);
+
+  return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
+    <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+    <td><span class="move ${escapeHtml(m.cls)}">${escapeHtml(m.label)}</span></td>
+    <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
+    <td class="num">${escapeHtml(row.total)}</td>
+    <td class="prediction-cell">${predictionCellHtml(nextPred1)}</td>
+    <td class="prediction-cell">${predictionCellHtml(nextPred2)}</td>
+    <td>${escapeHtml(teamDisplay(row.summary.champion))}</td>
+    <td>${escapeHtml(teamDisplay(row.summary.topScorer))}</td>
+  </tr>`;
+}
   function openPlayer(id) {
     const comp = state.computed;
     const row = comp.rows.find(r => r.id === id);
