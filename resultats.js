@@ -34,23 +34,25 @@ window.PORRA_RESULTATS = {
     
   
     // 2026-06-14
-    // Côte d'Ivoire vs Ecuador
-    "G-E-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 9 },
     // Germany vs Curaçao
-    "G-E-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 10 },
+    "G-E-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 9 },
     // Netherlands vs Japan
-    "G-F-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11 },
+    "G-F-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 10 },
+    // Côte d'Ivoire vs Ecuador
+    "G-E-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11 },
     // Sweden vs Tunisia
     "G-F-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 12 },
+    
     // 2026-06-15
-    // Saudi Arabia vs Uruguay
-    "G-H-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13 },
     // Spain vs Cabo Verde
-    "G-H-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14 },
-    // IR Iran vs New Zealand
-    "G-G-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15 },
+    "G-H-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13 },
     // Belgium vs Egypt
-    "G-G-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 16 },
+    "G-G-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14 },
+    // Saudi Arabia vs Uruguay
+    "G-H-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15 },
+    // IR Iran vs New Zealand
+    "G-G-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 16 },
+    
     // 2026-06-16
     // France vs Senegal
     "G-I-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 17 },
@@ -60,15 +62,17 @@ window.PORRA_RESULTATS = {
     "G-J-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 19 },
     // Austria vs Jordan
     "G-J-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 20 },
+    
     // 2026-06-17
-    // England vs Croatia
-    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21 },
-    // Ghana vs Panama
-    "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22 },
     // Portugal vs DR Congo
-    "G-K-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23 },
+    "G-K-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21 },
+    // England vs Croatia
+    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22 },
+    // Ghana vs Panama
+    "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23 },
     // Uzbekistan vs Colombia
     "G-K-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 24 },
+    
     // 2026-06-18
     // Czechia vs South Africa
     "G-A-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 25 },
@@ -78,6 +82,7 @@ window.PORRA_RESULTATS = {
     "G-B-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 27 },
     // Mexico vs Korea Republic
     "G-A-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 28 },
+    
     // 2026-06-19
     // Brazil vs Haiti
     "G-C-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 29 },
