@@ -540,7 +540,7 @@
       footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
     },
     en: {
-      title: 'Leaderboard', nextPendingLabel: 'Next pending match', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time ({tz})',
+      title: 'Leaderboard', nextPendingLabel: 'Next pending match', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time',
       legendUp: '▲ up', legendDown: '▼ down', legendSame: '— same', fullTableTitle: 'Full leaderboard', clickHint: 'Click a player to see all of their predictions.',
       searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Player', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
