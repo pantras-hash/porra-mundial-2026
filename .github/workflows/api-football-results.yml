@@ -2,6 +2,7 @@ name: Update results from API-Football
 
 on:
   workflow_dispatch:
+  push:
   schedule:
     - cron: "7,22,37,52 * * * *"
 
