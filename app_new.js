@@ -726,16 +726,32 @@
     if (Number.isNaN(d.getTime())) return '';
     return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
   }
-  function formatKickoffBarcelona(m) {
-    const meta = m && m.id ? matchMeta(m.id) : {};
-    const kickoff = (m && m.kickoffUtc) || meta.kickoffUtc;
-    if (!kickoff) return formatMatchDate(m);
-    const d = new Date(kickoff);
-    if (Number.isNaN(d.getTime())) return formatMatchDate(m);
-    return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', {
-      timeZone: 'Europe/Madrid', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'
-    }).format(d);
-  }
+  function userTimeZone() {
+  return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Madrid';
+}
+
+function userTimeZoneLabel() {
+  return userTimeZone().replace(/_/g, ' ');
+}
+
+function formatKickoffLocal(m) {
+  const meta = m && m.id ? matchMeta(m.id) : {};
+  const kickoff = (m && m.kickoffUtc) || meta.kickoffUtc;
+  if (!kickoff) return formatMatchDate(m);
+
+  const d = new Date(kickoff);
+  if (Number.isNaN(d.getTime())) return formatMatchDate(m);
+
+  return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', {
+    timeZone: userTimeZone(),
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZoneName: 'short'
+  }).format(d);
+}
   function nextColumnLabel(m) {
     if (!m) return t('nextMatchColumn');
     const time = formatKickoffBarcelona(m);
