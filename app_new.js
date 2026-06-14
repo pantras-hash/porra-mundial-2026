@@ -518,7 +518,7 @@
 };
   const I18N = {
     ca: {
-      title: 'Classificació', nextPendingLabel: 'Pròxims partits', nextMetaHint: 'Tots els horaris són de Barcelona.',
+      title: 'Classificació', nextPendingLabel: 'Pròxim partit pendent', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.', localTimeNote: 'Horaris en la teva hora local ({tz})',
       legendUp: '▲ puja', legendDown: '▼ baixa', legendSame: '— igual', fullTableTitle: 'Taula completa', clickHint: 'Fes clic en un participant per veure tots els seus pronòstics.',
       searchLabel: 'Buscar', searchPlaceholder: 'Nom...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participant', colPoints: 'Punts', colChampion: 'Campió', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
@@ -529,7 +529,7 @@
       footerText: 'Actualització de resultats:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grup', groups: 'Grups', r32: 'Setzens de final', r16: 'Vuitens de final', qf: 'Quarts de final', sf: 'Semifinals', thirdPlace: 'Tercer lloc', final: 'Final'
     },
     es: {
-      title: 'Clasificación', nextPendingLabel: 'Próximos partidos', nextMetaHint: 'Todos los horarios son de Barcelona.',
+      title: 'Clasificación', nextPendingLabel: 'Próximo partido pendiente', nextMetaHint: 'La columna de la tabla muestra el pronóstico de cada participante para este partido.', localTimeNote: 'Horarios en tu hora local ({tz})',
       legendUp: '▲ sube', legendDown: '▼ baja', legendSame: '— igual', fullTableTitle: 'Tabla completa', clickHint: 'Haz clic en un participante para ver todos sus pronósticos.',
       searchLabel: 'Buscar', searchPlaceholder: 'Nombre...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participante', colPoints: 'Puntos', colChampion: 'Campeón', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
@@ -540,7 +540,7 @@
       footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
     },
     en: {
-      title: 'Leaderboard', nextPendingLabel: 'Next matches', nextMetaHint: 'All times shown in Barcelona.',
+      title: 'Leaderboard', nextPendingLabel: 'Next pending match', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time ({tz})',
       legendUp: '▲ up', legendDown: '▼ down', legendSame: '— same', fullTableTitle: 'Full leaderboard', clickHint: 'Click a player to see all of their predictions.',
       searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Player', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
@@ -712,7 +712,7 @@
     if (!list.length) {
       els.nextMeta.textContent = t('noPendingMatches');
     } else {
-      els.nextMeta.innerHTML = `<div class="next-match-list">${list.map((m, idx) => nextMatchCardHtml(m, idx)).join('')}</div>`;
+      els.nextMeta.innerHTML = `<div class="next-time-note">${escapeHtml(t('localTimeNote', { tz: userTimeZoneLabel() }))}</div><div class="next-match-list">${list.map(m => nextMatchCardHtml(m)).join('')}</div>`;
     }
     if (els.nextHeader) {
       els.nextHeader.textContent = first ? nextColumnLabel(first) : t('nextMatchColumn');
@@ -727,39 +727,35 @@
     return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
   }
   function userTimeZone() {
-  return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Madrid';
-}
-
-function userTimeZoneLabel() {
-  return userTimeZone().replace(/_/g, ' ');
-}
-
-function formatKickoffLocal(m) {
-  const meta = m && m.id ? matchMeta(m.id) : {};
-  const kickoff = (m && m.kickoffUtc) || meta.kickoffUtc;
-  if (!kickoff) return formatMatchDate(m);
-
-  const d = new Date(kickoff);
-  if (Number.isNaN(d.getTime())) return formatMatchDate(m);
-
-  return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', {
-    timeZone: userTimeZone(),
-    weekday: 'short',
-    day: 'numeric',
-    month: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZoneName: 'short'
-  }).format(d);
-}
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Madrid';
+  }
+  function userTimeZoneLabel() {
+    return userTimeZone().replace(/_/g, ' ');
+  }
+  function formatKickoffLocal(m) {
+    const meta = m && m.id ? matchMeta(m.id) : {};
+    const kickoff = (m && m.kickoffUtc) || meta.kickoffUtc;
+    if (!kickoff) return formatMatchDate(m);
+    const d = new Date(kickoff);
+    if (Number.isNaN(d.getTime())) return formatMatchDate(m);
+    return new Intl.DateTimeFormat(LANG_LOCALES[state.lang] || 'ca-ES', {
+      timeZone: userTimeZone(),
+      weekday: 'short',
+      day: 'numeric',
+      month: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZoneName: 'short'
+    }).format(d);
+  }
   function nextColumnLabel(m) {
     if (!m) return t('nextMatchColumn');
-    const time = formatKickoffBarcelona(m);
+    const time = formatKickoffLocal(m);
     return `${teamShort(m.home)} – ${teamShort(m.away)}${time ? ` · ${time}` : ''}`;
   }
   function nextMatchCardHtml(m) {
     const group = translateRound(m.round);
-    const time = formatKickoffBarcelona(m);
+    const time = formatKickoffLocal(m);
     const status = statusLabel(matchStatus(m));
     const score = hasMatchScore(m) ? scoreText(m) : '';
     const detailParts = [group, time, score, status].filter(Boolean);
