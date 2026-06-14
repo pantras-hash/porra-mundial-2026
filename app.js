@@ -26,7 +26,424 @@
     sf:  { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
   };
 
-  const SCHEDULE_META = {"G-A-1":{"date":"2026-06-11","sortOrder":1},"G-A-2":{"date":"2026-06-11","sortOrder":2},"G-B-1":{"date":"2026-06-12","sortOrder":3},"G-D-1":{"date":"2026-06-12","sortOrder":4},"G-B-2":{"date":"2026-06-13","sortOrder":5},"G-C-1":{"date":"2026-06-13","sortOrder":6},"G-C-2":{"date":"2026-06-13","sortOrder":7},"G-D-2":{"date":"2026-06-14","sortOrder":8},"G-E-1":{"date":"2026-06-14","sortOrder":9},"G-F-1":{"date":"2026-06-14","sortOrder":10},"G-E-2":{"date":"2026-06-14","sortOrder":11},"G-F-2":{"date":"2026-06-14","sortOrder":12},"G-H-1":{"date":"2026-06-15","sortOrder":13},"G-G-1":{"date":"2026-06-15","sortOrder":14},"G-H-2":{"date":"2026-06-15","sortOrder":15},"G-G-2":{"date":"2026-06-15","sortOrder":16},"G-I-1":{"date":"2026-06-16","sortOrder":17},"G-I-2":{"date":"2026-06-16","sortOrder":18},"G-J-1":{"date":"2026-06-16","sortOrder":19},"G-J-2":{"date":"2026-06-17","sortOrder":20},"G-K-1":{"date":"2026-06-17","sortOrder":21},"G-L-1":{"date":"2026-06-17","sortOrder":22},"G-L-2":{"date":"2026-06-17","sortOrder":23},"G-K-2":{"date":"2026-06-17","sortOrder":24},"G-A-4":{"date":"2026-06-18","sortOrder":25},"G-B-4":{"date":"2026-06-18","sortOrder":26},"G-B-3":{"date":"2026-06-18","sortOrder":27},"G-A-3":{"date":"2026-06-18","sortOrder":28},"G-D-3":{"date":"2026-06-19","sortOrder":29},"G-C-4":{"date":"2026-06-19","sortOrder":30},"G-C-3":{"date":"2026-06-19","sortOrder":31},"G-D-4":{"date":"2026-06-19","sortOrder":32},"G-F-3":{"date":"2026-06-20","sortOrder":33},"G-E-3":{"date":"2026-06-20","sortOrder":34},"G-E-4":{"date":"2026-06-20","sortOrder":35},"G-F-4":{"date":"2026-06-21","sortOrder":36},"G-H-3":{"date":"2026-06-21","sortOrder":37},"G-G-3":{"date":"2026-06-21","sortOrder":38},"G-H-4":{"date":"2026-06-21","sortOrder":39},"G-G-4":{"date":"2026-06-21","sortOrder":40},"G-J-3":{"date":"2026-06-22","sortOrder":41},"G-I-3":{"date":"2026-06-22","sortOrder":42},"G-I-4":{"date":"2026-06-22","sortOrder":43},"G-J-4":{"date":"2026-06-22","sortOrder":44},"G-K-3":{"date":"2026-06-23","sortOrder":45},"G-L-3":{"date":"2026-06-23","sortOrder":46},"G-L-4":{"date":"2026-06-23","sortOrder":47},"G-K-4":{"date":"2026-06-23","sortOrder":48},"G-B-5":{"date":"2026-06-24","sortOrder":49},"G-B-6":{"date":"2026-06-24","sortOrder":50},"G-C-5":{"date":"2026-06-24","sortOrder":51},"G-C-6":{"date":"2026-06-24","sortOrder":52},"G-A-5":{"date":"2026-06-24","sortOrder":53},"G-A-6":{"date":"2026-06-24","sortOrder":54},"G-E-5":{"date":"2026-06-25","sortOrder":55},"G-E-6":{"date":"2026-06-25","sortOrder":56},"G-F-5":{"date":"2026-06-25","sortOrder":57},"G-F-6":{"date":"2026-06-25","sortOrder":58},"G-D-5":{"date":"2026-06-25","sortOrder":59},"G-D-6":{"date":"2026-06-25","sortOrder":60},"G-I-5":{"date":"2026-06-26","sortOrder":61},"G-I-6":{"date":"2026-06-26","sortOrder":62},"G-H-5":{"date":"2026-06-26","sortOrder":63},"G-H-6":{"date":"2026-06-26","sortOrder":64},"G-G-5":{"date":"2026-06-26","sortOrder":65},"G-G-6":{"date":"2026-06-26","sortOrder":66},"G-L-5":{"date":"2026-06-27","sortOrder":67},"G-L-6":{"date":"2026-06-27","sortOrder":68},"G-K-5":{"date":"2026-06-27","sortOrder":69},"G-K-6":{"date":"2026-06-27","sortOrder":70},"G-J-5":{"date":"2026-06-27","sortOrder":71},"G-J-6":{"date":"2026-06-27","sortOrder":72},"M73":{"date":"2026-06-28","sortOrder":73},"M74":{"date":"2026-06-29","sortOrder":74},"M75":{"date":"2026-06-29","sortOrder":75},"M76":{"date":"2026-06-29","sortOrder":76},"M77":{"date":"2026-06-30","sortOrder":77},"M78":{"date":"2026-06-30","sortOrder":78},"M79":{"date":"2026-06-30","sortOrder":79},"M80":{"date":"2026-07-01","sortOrder":80},"M81":{"date":"2026-07-01","sortOrder":81},"M82":{"date":"2026-07-01","sortOrder":82},"M83":{"date":"2026-07-02","sortOrder":83},"M84":{"date":"2026-07-02","sortOrder":84},"M85":{"date":"2026-07-02","sortOrder":85},"M86":{"date":"2026-07-03","sortOrder":86},"M87":{"date":"2026-07-03","sortOrder":87},"M88":{"date":"2026-07-03","sortOrder":88},"M89":{"date":"2026-07-04","sortOrder":89},"M90":{"date":"2026-07-04","sortOrder":90},"M91":{"date":"2026-07-05","sortOrder":91},"M92":{"date":"2026-07-05","sortOrder":92},"M93":{"date":"2026-07-06","sortOrder":93},"M94":{"date":"2026-07-06","sortOrder":94},"M95":{"date":"2026-07-07","sortOrder":95},"M96":{"date":"2026-07-07","sortOrder":96},"M97":{"date":"2026-07-09","sortOrder":97},"M98":{"date":"2026-07-10","sortOrder":98},"M99":{"date":"2026-07-11","sortOrder":99},"M100":{"date":"2026-07-11","sortOrder":100},"M101":{"date":"2026-07-14","sortOrder":101},"M102":{"date":"2026-07-15","sortOrder":102},"M103":{"date":"2026-07-18","sortOrder":103},"M104":{"date":"2026-07-19","sortOrder":104}};
+  const SCHEDULE_META = {
+    "G-A-1": {
+      "date": "2026-06-11",
+      "sortOrder": 1
+    },
+    "G-A-2": {
+      "date": "2026-06-11",
+      "sortOrder": 2
+    },
+    "G-B-1": {
+      "date": "2026-06-12",
+      "sortOrder": 3
+    },
+    "G-D-1": {
+      "date": "2026-06-12",
+      "sortOrder": 4
+    },
+    "G-B-2": {
+      "date": "2026-06-13",
+      "sortOrder": 5
+    },
+    "G-C-1": {
+      "date": "2026-06-13",
+      "sortOrder": 6
+    },
+    "G-C-2": {
+      "date": "2026-06-13",
+      "sortOrder": 7
+    },
+    "G-D-2": {
+      "date": "2026-06-14",
+      "sortOrder": 8
+    },
+    "G-E-1": {
+      "date": "2026-06-14",
+      "sortOrder": 9
+    },
+    "G-F-1": {
+      "date": "2026-06-14",
+      "sortOrder": 10
+    },
+    "G-E-2": {
+      "date": "2026-06-14",
+      "sortOrder": 11
+    },
+    "G-F-2": {
+      "date": "2026-06-14",
+      "sortOrder": 12
+    },
+    "G-H-1": {
+      "date": "2026-06-15",
+      "sortOrder": 13
+    },
+    "G-G-1": {
+      "date": "2026-06-15",
+      "sortOrder": 14
+    },
+    "G-H-2": {
+      "date": "2026-06-15",
+      "sortOrder": 15
+    },
+    "G-G-2": {
+      "date": "2026-06-15",
+      "sortOrder": 16
+    },
+    "G-I-1": {
+      "date": "2026-06-16",
+      "sortOrder": 17
+    },
+    "G-I-2": {
+      "date": "2026-06-16",
+      "sortOrder": 18
+    },
+    "G-J-1": {
+      "date": "2026-06-16",
+      "sortOrder": 19
+    },
+    "G-J-2": {
+      "date": "2026-06-17",
+      "sortOrder": 20
+    },
+    "G-K-1": {
+      "date": "2026-06-17",
+      "sortOrder": 21
+    },
+    "G-L-1": {
+      "date": "2026-06-17",
+      "sortOrder": 22
+    },
+    "G-L-2": {
+      "date": "2026-06-17",
+      "sortOrder": 23
+    },
+    "G-K-2": {
+      "date": "2026-06-17",
+      "sortOrder": 24
+    },
+    "G-A-4": {
+      "date": "2026-06-18",
+      "sortOrder": 25
+    },
+    "G-B-4": {
+      "date": "2026-06-18",
+      "sortOrder": 26
+    },
+    "G-B-3": {
+      "date": "2026-06-18",
+      "sortOrder": 27
+    },
+    "G-A-3": {
+      "date": "2026-06-18",
+      "sortOrder": 28
+    },
+    "G-D-3": {
+      "date": "2026-06-19",
+      "sortOrder": 29
+    },
+    "G-C-4": {
+      "date": "2026-06-19",
+      "sortOrder": 30
+    },
+    "G-C-3": {
+      "date": "2026-06-19",
+      "sortOrder": 31
+    },
+    "G-D-4": {
+      "date": "2026-06-19",
+      "sortOrder": 32
+    },
+    "G-F-3": {
+      "date": "2026-06-20",
+      "sortOrder": 33
+    },
+    "G-E-3": {
+      "date": "2026-06-20",
+      "sortOrder": 34
+    },
+    "G-E-4": {
+      "date": "2026-06-20",
+      "sortOrder": 35
+    },
+    "G-F-4": {
+      "date": "2026-06-21",
+      "sortOrder": 36
+    },
+    "G-H-3": {
+      "date": "2026-06-21",
+      "sortOrder": 37
+    },
+    "G-G-3": {
+      "date": "2026-06-21",
+      "sortOrder": 38
+    },
+    "G-H-4": {
+      "date": "2026-06-21",
+      "sortOrder": 39
+    },
+    "G-G-4": {
+      "date": "2026-06-21",
+      "sortOrder": 40
+    },
+    "G-J-3": {
+      "date": "2026-06-22",
+      "sortOrder": 41
+    },
+    "G-I-3": {
+      "date": "2026-06-22",
+      "sortOrder": 42
+    },
+    "G-I-4": {
+      "date": "2026-06-22",
+      "sortOrder": 43
+    },
+    "G-J-4": {
+      "date": "2026-06-22",
+      "sortOrder": 44
+    },
+    "G-K-3": {
+      "date": "2026-06-23",
+      "sortOrder": 45
+    },
+    "G-L-3": {
+      "date": "2026-06-23",
+      "sortOrder": 46
+    },
+    "G-L-4": {
+      "date": "2026-06-23",
+      "sortOrder": 47
+    },
+    "G-K-4": {
+      "date": "2026-06-23",
+      "sortOrder": 48
+    },
+    "G-B-5": {
+      "date": "2026-06-24",
+      "sortOrder": 49
+    },
+    "G-B-6": {
+      "date": "2026-06-24",
+      "sortOrder": 50
+    },
+    "G-C-5": {
+      "date": "2026-06-24",
+      "sortOrder": 51
+    },
+    "G-C-6": {
+      "date": "2026-06-24",
+      "sortOrder": 52
+    },
+    "G-A-5": {
+      "date": "2026-06-24",
+      "sortOrder": 53
+    },
+    "G-A-6": {
+      "date": "2026-06-24",
+      "sortOrder": 54
+    },
+    "G-E-5": {
+      "date": "2026-06-25",
+      "sortOrder": 55
+    },
+    "G-E-6": {
+      "date": "2026-06-25",
+      "sortOrder": 56
+    },
+    "G-F-5": {
+      "date": "2026-06-25",
+      "sortOrder": 57
+    },
+    "G-F-6": {
+      "date": "2026-06-25",
+      "sortOrder": 58
+    },
+    "G-D-5": {
+      "date": "2026-06-25",
+      "sortOrder": 59
+    },
+    "G-D-6": {
+      "date": "2026-06-25",
+      "sortOrder": 60
+    },
+    "G-I-5": {
+      "date": "2026-06-26",
+      "sortOrder": 61
+    },
+    "G-I-6": {
+      "date": "2026-06-26",
+      "sortOrder": 62
+    },
+    "G-H-5": {
+      "date": "2026-06-26",
+      "sortOrder": 63
+    },
+    "G-H-6": {
+      "date": "2026-06-26",
+      "sortOrder": 64
+    },
+    "G-G-5": {
+      "date": "2026-06-26",
+      "sortOrder": 65
+    },
+    "G-G-6": {
+      "date": "2026-06-26",
+      "sortOrder": 66
+    },
+    "G-L-5": {
+      "date": "2026-06-27",
+      "sortOrder": 67
+    },
+    "G-L-6": {
+      "date": "2026-06-27",
+      "sortOrder": 68
+    },
+    "G-K-5": {
+      "date": "2026-06-27",
+      "sortOrder": 69
+    },
+    "G-K-6": {
+      "date": "2026-06-27",
+      "sortOrder": 70
+    },
+    "G-J-5": {
+      "date": "2026-06-27",
+      "sortOrder": 71
+    },
+    "G-J-6": {
+      "date": "2026-06-27",
+      "sortOrder": 72
+    },
+    "M73": {
+      "date": "2026-06-28",
+      "sortOrder": 73
+    },
+    "M74": {
+      "date": "2026-06-29",
+      "sortOrder": 74
+    },
+    "M75": {
+      "date": "2026-06-29",
+      "sortOrder": 75
+    },
+    "M76": {
+      "date": "2026-06-29",
+      "sortOrder": 76
+    },
+    "M77": {
+      "date": "2026-06-30",
+      "sortOrder": 77
+    },
+    "M78": {
+      "date": "2026-06-30",
+      "sortOrder": 78
+    },
+    "M79": {
+      "date": "2026-06-30",
+      "sortOrder": 79
+    },
+    "M80": {
+      "date": "2026-07-01",
+      "sortOrder": 80
+    },
+    "M81": {
+      "date": "2026-07-01",
+      "sortOrder": 81
+    },
+    "M82": {
+      "date": "2026-07-01",
+      "sortOrder": 82
+    },
+    "M83": {
+      "date": "2026-07-02",
+      "sortOrder": 83
+    },
+    "M84": {
+      "date": "2026-07-02",
+      "sortOrder": 84
+    },
+    "M85": {
+      "date": "2026-07-02",
+      "sortOrder": 85
+    },
+    "M86": {
+      "date": "2026-07-03",
+      "sortOrder": 86
+    },
+    "M87": {
+      "date": "2026-07-03",
+      "sortOrder": 87
+    },
+    "M88": {
+      "date": "2026-07-03",
+      "sortOrder": 88
+    },
+    "M89": {
+      "date": "2026-07-04",
+      "sortOrder": 89
+    },
+    "M90": {
+      "date": "2026-07-04",
+      "sortOrder": 90
+    },
+    "M91": {
+      "date": "2026-07-05",
+      "sortOrder": 91
+    },
+    "M92": {
+      "date": "2026-07-05",
+      "sortOrder": 92
+    },
+    "M93": {
+      "date": "2026-07-06",
+      "sortOrder": 93
+    },
+    "M94": {
+      "date": "2026-07-06",
+      "sortOrder": 94
+    },
+    "M95": {
+      "date": "2026-07-07",
+      "sortOrder": 95
+    },
+    "M96": {
+      "date": "2026-07-07",
+      "sortOrder": 96
+    },
+    "M97": {
+      "date": "2026-07-09",
+      "sortOrder": 97
+    },
+    "M98": {
+      "date": "2026-07-10",
+      "sortOrder": 98
+    },
+    "M99": {
+      "date": "2026-07-11",
+      "sortOrder": 99
+    },
+    "M100": {
+      "date": "2026-07-11",
+      "sortOrder": 100
+    },
+    "M101": {
+      "date": "2026-07-14",
+      "sortOrder": 101
+    },
+    "M102": {
+      "date": "2026-07-15",
+      "sortOrder": 102
+    },
+    "M103": {
+      "date": "2026-07-18",
+      "sortOrder": 103
+    },
+    "M104": {
+      "date": "2026-07-19",
+      "sortOrder": 104
+    }
+  };
   const I18N = {
     ca: {
       title: 'Classificació', nextPendingLabel: 'Pròxim partit pendent', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.',
@@ -193,13 +610,13 @@
   }
 
   function groupWinner(m) {
-    if (!isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     return 'Empat';
   }
   function koWinner(m) {
-    if (!isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     if (isNum(m.penHome) && isNum(m.penAway)) {
@@ -222,7 +639,7 @@
       const table = Object.fromEntries(teams.map(t => [t, { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]));
       const matches = groupMatches.filter(m => m.group === g);
       for (const m of matches) {
-        if (!isNum(m.homeScore) || !isNum(m.awayScore)) continue;
+        if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) continue;
         const h = table[m.home], a = table[m.away];
         if (!h || !a) continue;
         h.p++; a.p++;
@@ -241,7 +658,7 @@
         arr.sort((a, b) => (order.has(a.team) ? order.get(a.team) : 999) - (order.has(b.team) ? order.get(b.team) : 999));
       }
       arr.forEach((t, idx) => { t.pos = idx + 1; });
-      const complete = matches.length === 6 && matches.every(m => isNum(m.homeScore) && isNum(m.awayScore));
+      const complete = matches.length === 6 && matches.every(m => isMatchFinal(m));
       groups[g] = { table: arr, matches, complete };
     }
     return groups;
@@ -299,7 +716,7 @@
     const bd = { '1X2': 0, G1: 0, CTG: 0, GTG: 0, PTG: 0, E16: 0, E16P: 0, G16: 0, E8: 0, E8P: 0, G8: 0, E4: 0, E4P: 0, G4: 0, ES: 0, ESP: 0, GS: 0, EF: 0, EC: 0, GC: 0, '4rt': 0, '3er': 0, GF: 0, '2on': 0, '1er': 0, PCH: 0, GPCH: 0 };
     const pGroupById = Object.fromEntries(player.groupMatches.map(m => [m.id, m]));
     for (const am of actual.matches.filter(m => m.type === 'group')) {
-      if (!isNum(am.homeScore) || !isNum(am.awayScore)) continue;
+      if (!isMatchFinal(am) || !isNum(am.homeScore) || !isNum(am.awayScore)) continue;
       const pm = pGroupById[am.id];
       if (!pm) continue;
       if (pm.winner === groupWinner(am)) bd['1X2'] += data.rules['1X2'];
@@ -329,7 +746,7 @@
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
           if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
         }
-        if (isNum(am.homeScore) && isNum(am.awayScore)) {
+        if (isMatchFinal(am) && isNum(am.homeScore) && isNum(am.awayScore)) {
           if (pm.homeScore === am.homeScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.homeScore) : cfg.goalPts;
           if (pm.awayScore === am.awayScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.awayScore) : cfg.goalPts;
         }
@@ -341,7 +758,7 @@
     if (finalM && pFinal) {
       const finalSet = new Set([finalM.home, finalM.away].filter(Boolean));
       for (const t of [pFinal.home, pFinal.away]) if (finalSet.has(t)) bd.EF += data.rules.EF;
-      if (isNum(finalM.homeScore) && isNum(finalM.awayScore)) {
+      if (isMatchFinal(finalM) && isNum(finalM.homeScore) && isNum(finalM.awayScore)) {
         if (pFinal.homeScore === finalM.homeScore) bd.GF += data.rules.GF;
         if (pFinal.awayScore === finalM.awayScore) bd.GF += data.rules.GF;
       }
@@ -349,13 +766,13 @@
     if (consM && pCons) {
       const consSet = new Set([consM.home, consM.away].filter(Boolean));
       for (const t of [pCons.home, pCons.away]) if (consSet.has(t)) bd.EC += data.rules.EC;
-      if (isNum(consM.homeScore) && isNum(consM.awayScore)) {
+      if (isMatchFinal(consM) && isNum(consM.homeScore) && isNum(consM.awayScore)) {
         if (pCons.homeScore === consM.homeScore) bd.GC += data.rules.GC;
         if (pCons.awayScore === consM.awayScore) bd.GC += data.rules.GC;
       }
     }
-    const finalPlayed = finalM && finalM.winner;
-    const thirdPlayed = consM && consM.winner;
+    const finalPlayed = finalM && isMatchFinal(finalM) && finalM.winner;
+    const thirdPlayed = consM && isMatchFinal(consM) && consM.winner;
     if (thirdPlayed) {
       const third = consM.winner, fourth = consM.loser;
       if (player.summary.third === third) bd['3er'] += data.rules['3er'];
@@ -385,7 +802,7 @@
     const override = window.PORRA_ULTIM_PARTIT;
     if (override && actual.byId[override]) return actual.byId[override];
     return chronologicalMatches(actual.matches)
-      .filter(m => isNum(m.homeScore) && isNum(m.awayScore))
+      .filter(m => isMatchFinal(m))
       .sort((a, b) => matchChronology(b) - matchChronology(a))[0] || null;
   }
   function findNextMatch(actual) {
