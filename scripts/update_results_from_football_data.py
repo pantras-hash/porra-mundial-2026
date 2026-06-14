@@ -175,6 +175,7 @@ def canonical_tla_from_name(name: str) -> Optional[str]:
 
 def canonical_tla_from_team(team: Dict[str, Any]) -> Optional[str]:
     tla = (team.get("tla") or team.get("code") or "").strip().upper()
+
     if tla and tla not in {"TBD", "TBA", "---"}:
         # Normalize a few provider-specific alternatives.
         if tla == "IRN":
@@ -189,13 +190,15 @@ def canonical_tla_from_team(team: Dict[str, Any]) -> Optional[str]:
             return "CUW"
         if tla == "CIV":
             return "CIV"
-          if tla == "HAI": 
+        if tla == "HAI":
             return "HTI"
         return tla
+
     for key in ("name", "shortName"):
         maybe = canonical_tla_from_name(str(team.get(key) or ""))
         if maybe:
             return maybe
+
     return None
 
 
