@@ -135,7 +135,10 @@ pre code { background: transparent; padding: 0; color: inherit; }
 .next-match-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .next-match-card {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
   overflow: hidden;
   border: 1px solid rgba(11, 99, 246, .16);
   border-radius: 20px;
@@ -148,6 +151,17 @@ pre code { background: transparent; padding: 0; color: inherit; }
   inset: 0 auto 0 0;
   width: 5px;
   background: linear-gradient(180deg, var(--accent), var(--accent-2));
+}
+.next-match-number {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  color: #fff;
+  font-weight: 950;
+  box-shadow: 0 10px 20px rgba(11, 99, 246, .28);
 }
 .next-match-main strong { display: block; color: var(--ink); font-size: 1.06rem; }
 .next-match-main span { display: block; color: var(--muted); margin-top: 4px; font-size: .9rem; }

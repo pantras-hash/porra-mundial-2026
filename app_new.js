@@ -750,8 +750,7 @@
   }
   function nextColumnLabel(m) {
     if (!m) return t('nextMatchColumn');
-    const time = formatKickoffLocal(m);
-    return `${teamShort(m.home)} – ${teamShort(m.away)}${time ? ` · ${time}` : ''}`;
+    return `${teamShort(m.home)} – ${teamShort(m.away)}`;
   }
   function nextMatchCardHtml(m) {
     const group = translateRound(m.round);
