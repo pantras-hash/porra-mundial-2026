@@ -30,7 +30,7 @@ window.PORRA_RESULTATS = {
  // Haiti vs Scotland
     "G-C-2": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 7, status: "FINISHED" },
     // Australia vs Türkiye
-    "G-D-2": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 8, status: "IN_PLAY" },
+    "G-D-2": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-13", sortOrder: 8, status: "FINISHED" },
     
   
     // 2026-06-14
