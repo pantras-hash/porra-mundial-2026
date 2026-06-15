@@ -259,7 +259,8 @@
           const pred = playerPredictionFor(player, matches[idx]);
           const score = scoreText(pred);
           const outcome = predictedOutcomeLabel(pred);
-          cell.innerHTML = `<span class="porra-pred-score-v2">${escapeHtml(score)}</span><span class="porra-pred-winner-v2">${escapeHtml(outcome)}</span>`;
+          const html = `<span class="porra-pred-score-v2">${escapeHtml(score)}</span><span class="porra-pred-winner-v2">${escapeHtml(outcome)}</span>`;
+          if (cell.innerHTML !== html) cell.innerHTML = html;
         });
       });
     } finally {
@@ -686,11 +687,19 @@
 
     const tbody = document.getElementById('leaderboardBody');
     if (tbody) {
-      const observer = new MutationObserver(() => {
-        refreshDynamicLabels();
-        enhancePredictionCells();
-      });
-      observer.observe(tbody, { childList: true, subtree: true });
+      let refreshQueued = false;
+      const scheduleRefresh = () => {
+        if (refreshQueued) return;
+        refreshQueued = true;
+        requestAnimationFrame(() => {
+          refreshQueued = false;
+          refreshDynamicLabels();
+          enhancePredictionCells();
+        });
+      };
+
+      const observer = new MutationObserver(scheduleRefresh);
+      observer.observe(tbody, { childList: true });
     }
 
     document.querySelectorAll('[data-lang]').forEach(btn => {

@@ -174,3 +174,17 @@ body.porra-modal-v2-open {
     padding: 16px;
   }
 }
+
+/* Performance/mobile polish layered over styles_new.css: keep movement pills on one line. */
+.move {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width: 760px) {
+  .move {
+    min-width: 42px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
