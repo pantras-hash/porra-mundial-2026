@@ -46,7 +46,7 @@ window.PORRA_RESULTATS = {
     // Saudi Arabia vs Uruguay
     "G-H-2": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15, status: "IN_PLAY" },
     // IR Iran vs New Zealand
-    "G-G-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 16 },
+    "G-G-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 16, status: "TIMED" },
     
     // 2026-06-16
     // France vs Senegal
