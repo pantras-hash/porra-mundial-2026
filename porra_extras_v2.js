@@ -766,6 +766,15 @@
     return '—';
   }
 
+  function drawerGroupFromMatchIdV2(id) {
+  const match = String(id || '').match(/^G-([A-L])-/);
+  return match ? match[1] : '';
+}
+
+function drawerMatchTemplateV2(id) {
+  return (data().matches || []).find(match => match.id === id) || {};
+}
+  
   function drawerPredictedGroupTablesV2(player) {
     const d = data();
     const groups = d.groups || {};
@@ -787,40 +796,46 @@
       );
     });
 
-    (player.groupMatches || []).forEach(match => {
-      if (!match || !match.group || !isNum(match.homeScore) || !isNum(match.awayScore)) return;
+  (player.groupMatches || []).forEach(match => {
+  if (!match || !isNum(match.homeScore) || !isNum(match.awayScore)) return;
 
-      const table = tables[match.group];
-      if (!table) return;
+  const template = drawerMatchTemplateV2(match.id);
+  const groupName = match.group || template.group || drawerGroupFromMatchIdV2(match.id);
+  const homeName = match.home || template.home;
+  const awayName = match.away || template.away;
 
-      const home = table[match.home];
-      const away = table[match.away];
-      if (!home || !away) return;
+  if (!groupName || !homeName || !awayName) return;
 
-      home.p += 1;
-      away.p += 1;
+  const table = tables[groupName];
+  if (!table) return;
 
-      home.gf += match.homeScore;
-      home.ga += match.awayScore;
-      away.gf += match.awayScore;
-      away.ga += match.homeScore;
+  const home = table[homeName];
+  const away = table[awayName];
+  if (!home || !away) return;
 
-      if (match.homeScore > match.awayScore) {
-        home.w += 1;
-        away.l += 1;
-        home.pts += 3;
-      } else if (match.awayScore > match.homeScore) {
-        away.w += 1;
-        home.l += 1;
-        away.pts += 3;
-      } else {
-        home.d += 1;
-        away.d += 1;
-        home.pts += 1;
-        away.pts += 1;
-      }
-    });
+  home.p += 1;
+  away.p += 1;
 
+  home.gf += match.homeScore;
+  home.ga += match.awayScore;
+  away.gf += match.awayScore;
+  away.ga += match.homeScore;
+
+  if (match.homeScore > match.awayScore) {
+    home.w += 1;
+    away.l += 1;
+    home.pts += 3;
+  } else if (match.awayScore > match.homeScore) {
+    away.w += 1;
+    home.l += 1;
+    away.pts += 3;
+  } else {
+    home.d += 1;
+    away.d += 1;
+    home.pts += 1;
+    away.pts += 1;
+  }
+});
     const groupTablesHtml = Object.entries(tables).map(([groupName, tableObj]) => {
       let rows = Object.values(tableObj).map(row => ({
         ...row,
@@ -910,9 +925,8 @@
     if (!player) return;
 
     const html = `<div id="porraDrawerExtrasV2" class="porra-drawer-extras-v2">
-      ${drawerPredictedGroupTablesV2(player)}
-      ${drawerKnockoutRunV2(player)}
-    </div>`;
+  ${drawerPredictedGroupTablesV2(player)}
+</div>`;
 
     drawerContent.insertAdjacentHTML('beforeend', html);
   }
