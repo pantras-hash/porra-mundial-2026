@@ -120,7 +120,9 @@
 
       loadScript('prediccions.js', function () {
         loadScript('resultats.js', function () {
-          loadScript('app_new.js', null, 'app_new.js');
+        loadScript('app_new.js', function () {
+  loadScript('porra_extras_v2.js', null, 'porra_extras_v2.js');
+}, 'app_new.js');
         }, 'resultats.js');
       }, 'prediccions.js');
     })();
