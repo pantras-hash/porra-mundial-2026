@@ -789,14 +789,28 @@
     return { breakdown: bd, total };
   }
 
-  function computeLeaderboard(resultsObj) {
-    const actual = buildActual(resultsObj);
-    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual) }));
-    rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
-    let last = null, rank = 0;
-    rows.forEach((r, i) => { if (r.total !== last) { rank = i + 1; last = r.total; } r.rank = rank; });
-    return { actual, rows };
-  }
+ function computeLeaderboard(resultsObj) {
+  const actual = buildActual(resultsObj);
+  const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual) }));
+
+  rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
+
+  let last = null;
+  let rank = 0;
+
+  rows.forEach((r, i) => {
+    r.position = i + 1; // true displayed row position, never tied
+
+    if (r.total !== last) {
+      rank = i + 1; // tied rank for the Pos. column
+      last = r.total;
+    }
+
+    r.rank = rank;
+  });
+
+  return { actual, rows };
+}
 
   function findLastPlayed(actual) {
     const override = window.PORRA_ULTIM_PARTIT;
@@ -876,12 +890,18 @@
   }
 
   function movement(row, prevById) {
-    const prev = prevById[row.id];
-    if (!prev || prev.rank === row.rank) return { cls: 'same', label: '—' };
-    const delta = prev.rank - row.rank;
-    if (delta > 0) return { cls: 'up', label: `▲ ${delta}` };
-    return { cls: 'down', label: `▼ ${Math.abs(delta)}` };
-  }
+  const prev = prevById[row.id];
+  if (!prev) return { cls: 'same', label: '—' };
+
+  const previousPosition = Number.isFinite(prev.position) ? prev.position : prev.rank;
+  const currentPosition = Number.isFinite(row.position) ? row.position : row.rank;
+
+  if (previousPosition === currentPosition) return { cls: 'same', label: '—' };
+
+  const delta = previousPosition - currentPosition;
+  if (delta > 0) return { cls: 'up', label: `▲ ${delta}` };
+  return { cls: 'down', label: `▼ ${Math.abs(delta)}` };
+}
 
   function init() {
     const current = computeLeaderboard(resultats);
@@ -911,19 +931,23 @@
       tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPlayer(tr.dataset.player); } });
     });
   }
-  function rowHtml(row, comp) {
-    const m = movement(row, comp.prevById);
-    const nextPred = playerPredictionFor(row, comp.next);
-    return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
-      <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-      <td><span class="move ${m.cls}">${escapeHtml(m.label)}</span></td>
-      <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
-      <td class="num"><strong>${escapeHtml(row.total)}</strong></td>
-      <td><span class="score-pill">${escapeHtml(predictionScoreText(nextPred))}</span>${nextPred && nextPred.winner ? `<span class="winner-pill">${escapeHtml(nextPred.winner)}</span>` : ''}</td>
-      <td>${escapeHtml(display(row.summary.champion))}</td>
-      <td>${escapeHtml(display(row.summary.topScorer))}</td>
-    </tr>`;
-  }
+ function rowHtml(row, comp) {
+  const m = movement(row, comp.prevById);
+  const nextMatches = comp.nextMatches || [comp.next].filter(Boolean);
+  const nextPred1 = playerPredictionFor(row, nextMatches[0]);
+  const nextPred2 = playerPredictionFor(row, nextMatches[1]);
+
+  return `<tr data-player="${escapeHtml(row.id)}" tabindex="0">
+    <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+    <td><span class="move ${escapeHtml(m.cls)}">${escapeHtml(m.label)}</span></td>
+    <td><span class="participant-cell participant-cell--plain">${escapeHtml(row.name)}</span></td>
+    <td class="num">${escapeHtml(row.total)}</td>
+    <td class="prediction-cell">${predictionCellHtml(nextPred1)}</td>
+    <td class="prediction-cell">${predictionCellHtml(nextPred2)}</td>
+    <td>${escapeHtml(teamDisplay(row.summary.champion))}</td>
+    <td>${escapeHtml(teamDisplay(row.summary.topScorer))}</td>
+  </tr>`;
+}
   function openPlayer(id) {
     const comp = state.computed;
     const row = comp.rows.find(r => r.id === id);
