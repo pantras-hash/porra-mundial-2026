@@ -7,7 +7,7 @@
 
   const I18N = {
     ca: {
-      finishedResults: 'Resultats jugats',
+      finishedResults: 'Resultats de partits acabats',
       groupStandings: 'Classificacions de grups',
       topScorers: 'Pichichis',
       liveLeaderboard: 'Classificació en directe',
@@ -44,7 +44,7 @@
       finalAwards: 'Premis finals'
     },
     es: {
-      finishedResults: 'Resultados jugados',
+      finishedResults: 'Resultados de partidos acabados',
       groupStandings: 'Clasificaciones de grupos',
       topScorers: 'Pichichis',
       liveLeaderboard: 'Clasificación en directo',
@@ -81,7 +81,7 @@
       finalAwards: 'Premios finales'
     },
     en: {
-      finishedResults: 'Finished results',
+      finishedResults: 'Results of finished games',
       groupStandings: 'Group standings',
       topScorers: 'Top scorers',
       liveLeaderboard: 'Live leaderboard',
