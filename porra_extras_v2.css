@@ -1,0 +1,176 @@
+.porra-links-v2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.porra-links-v2--summary {
+  grid-column: 1 / -1;
+  padding-top: 2px;
+}
+
+.porra-links-v2--points {
+  max-width: 1380px;
+  margin: 10px auto 0;
+  padding: 0 22px;
+}
+
+.porra-links-v2 button {
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--accent, #0b63f6);
+  padding: 0;
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.porra-links-v2 button:hover,
+.porra-links-v2 button:focus-visible {
+  color: var(--navy, #061a36);
+  outline: none;
+}
+
+.porra-pred-score-v2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eafbea;
+  border: 1px solid #c4efcc;
+  color: #125c2c;
+  font-weight: 950;
+}
+
+.porra-pred-winner-v2 {
+  display: inline-flex;
+  max-width: 145px;
+  margin-left: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: var(--muted, #5f6f8a);
+  font-size: .82rem;
+  font-weight: 850;
+}
+
+.porra-modal-v2[hidden] {
+  display: none !important;
+}
+
+.porra-modal-v2 {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+}
+
+.porra-modal-v2__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 26, 54, .52);
+}
+
+.porra-modal-v2__panel {
+  position: absolute;
+  inset: 5vh max(18px, calc((100vw - 980px) / 2));
+  overflow: auto;
+  border: 1px solid rgba(8, 22, 44, .12);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 28px 80px rgba(8, 22, 44, .28);
+  padding: 22px;
+}
+
+.porra-modal-v2__panel h2 {
+  margin: 0 44px 14px 0;
+  font-size: 1.35rem;
+}
+
+.porra-modal-v2__panel h3 {
+  margin: 20px 0 8px;
+  font-size: 1rem;
+}
+
+.porra-modal-v2__close {
+  position: sticky;
+  top: 0;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: var(--ink, #08162c);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.porra-popup-table-wrap-v2 {
+  overflow: auto;
+  border: 1px solid var(--line, #dbe5f4);
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+.porra-popup-table-v2 {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+}
+
+.porra-popup-table-v2 th,
+.porra-popup-table-v2 td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line, #dbe5f4);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.porra-popup-table-v2 th {
+  position: static;
+  background: var(--navy, #061a36);
+  color: #eef6ff;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.porra-popup-table-v2 td.num,
+.porra-popup-table-v2 th.num {
+  text-align: right;
+}
+
+.porra-muted-v2 {
+  color: var(--muted, #5f6f8a);
+  margin: 0 0 10px;
+}
+
+body.porra-modal-v2-open {
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .porra-links-v2--points {
+    padding: 0 15px;
+  }
+
+  .porra-pred-winner-v2 {
+    display: block;
+    max-width: 120px;
+    margin: 4px 0 0;
+  }
+
+  .porra-modal-v2__panel {
+    inset: 10px;
+    border-radius: 18px;
+    padding: 16px;
+  }
+}
