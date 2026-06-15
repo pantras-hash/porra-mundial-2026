@@ -1,22 +1,22 @@
-.porra-links-v2 {
+.porra-links-v3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 12px;
   align-items: center;
 }
 
-.porra-links-v2--summary {
+.porra-links-v3--summary {
   grid-column: 1 / -1;
   padding-top: 2px;
 }
 
-.porra-links-v2--points {
+.porra-links-v3--points {
   max-width: 1380px;
   margin: 10px auto 0;
   padding: 0 22px;
 }
 
-.porra-links-v2 button {
+.porra-links-v3 button {
   appearance: none;
   border: 0;
   border-bottom: 1px solid currentColor;
@@ -29,13 +29,13 @@
   cursor: pointer;
 }
 
-.porra-links-v2 button:hover,
-.porra-links-v2 button:focus-visible {
+.porra-links-v3 button:hover,
+.porra-links-v3 button:focus-visible {
   color: var(--navy, #061a36);
   outline: none;
 }
 
-.porra-pred-score-v2 {
+.porra-pred-score-v3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@
   font-weight: 950;
 }
 
-.porra-pred-winner-v2 {
+.porra-pred-winner-v3 {
   display: inline-flex;
   max-width: 145px;
   margin-left: 6px;
@@ -61,23 +61,23 @@
   font-weight: 850;
 }
 
-.porra-modal-v2[hidden] {
+.porra-modal-v3[hidden] {
   display: none !important;
 }
 
-.porra-modal-v2 {
+.porra-modal-v3 {
   position: fixed;
   inset: 0;
   z-index: 50;
 }
 
-.porra-modal-v2__backdrop {
+.porra-modal-v3__backdrop {
   position: absolute;
   inset: 0;
   background: rgba(6, 26, 54, .52);
 }
 
-.porra-modal-v2__panel {
+.porra-modal-v3__panel {
   position: absolute;
   inset: 5vh max(18px, calc((100vw - 980px) / 2));
   overflow: auto;
@@ -88,17 +88,17 @@
   padding: 22px;
 }
 
-.porra-modal-v2__panel h2 {
+.porra-modal-v3__panel h2 {
   margin: 0 44px 14px 0;
   font-size: 1.35rem;
 }
 
-.porra-modal-v2__panel h3 {
+.porra-modal-v3__panel h3 {
   margin: 20px 0 8px;
   font-size: 1rem;
 }
 
-.porra-modal-v2__close {
+.porra-modal-v3__close {
   position: sticky;
   top: 0;
   float: right;
@@ -113,28 +113,28 @@
   cursor: pointer;
 }
 
-.porra-popup-table-wrap-v2 {
+.porra-popup-table-wrap-v3 {
   overflow: auto;
   border: 1px solid var(--line, #dbe5f4);
   border-radius: 16px;
   margin-top: 8px;
 }
 
-.porra-popup-table-v2 {
+.porra-popup-table-v3 {
   width: 100%;
   border-collapse: collapse;
   font-size: .92rem;
 }
 
-.porra-popup-table-v2 th,
-.porra-popup-table-v2 td {
+.porra-popup-table-v3 th,
+.porra-popup-table-v3 td {
   padding: 9px 10px;
   border-bottom: 1px solid var(--line, #dbe5f4);
   text-align: left;
   vertical-align: middle;
 }
 
-.porra-popup-table-v2 th {
+.porra-popup-table-v3 th {
   position: static;
   background: var(--navy, #061a36);
   color: #eef6ff;
@@ -143,34 +143,113 @@
   text-transform: uppercase;
 }
 
-.porra-popup-table-v2 td.num,
-.porra-popup-table-v2 th.num {
+.porra-popup-table-v3 td.num,
+.porra-popup-table-v3 th.num {
   text-align: right;
 }
 
-.porra-muted-v2 {
+.porra-muted-v3 {
   color: var(--muted, #5f6f8a);
   margin: 0 0 10px;
 }
 
-body.porra-modal-v2-open {
+body.porra-modal-v3-open {
   overflow: hidden;
 }
 
 @media (max-width: 760px) {
-  .porra-links-v2--points {
+  .porra-links-v3--points {
     padding: 0 15px;
   }
 
-  .porra-pred-winner-v2 {
+  .porra-pred-winner-v3 {
     display: block;
     max-width: 120px;
     margin: 4px 0 0;
   }
 
-  .porra-modal-v2__panel {
+  .porra-modal-v3__panel {
     inset: 10px;
     border-radius: 18px;
     padding: 16px;
+  }
+}
+
+
+.porra-player-extra-v3 {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line, #dbe5f4);
+}
+
+.porra-player-extra-section-v3 + .porra-player-extra-section-v3 {
+  margin-top: 20px;
+}
+
+.porra-player-extra-section-v3 h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.porra-player-groups-grid-v3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 12px;
+}
+
+.porra-player-group-card-v3 {
+  min-width: 0;
+}
+
+.porra-player-group-card-v3 h4 {
+  margin: 0 0 6px;
+  font-size: .9rem;
+  color: var(--muted, #5f6f8a);
+}
+
+.porra-player-extra-v3 .porra-popup-table-wrap-v3 {
+  border-radius: 12px;
+}
+
+.porra-player-extra-v3 .porra-popup-table-v3 {
+  font-size: .82rem;
+}
+
+.porra-player-extra-v3 .porra-popup-table-v3 th,
+.porra-player-extra-v3 .porra-popup-table-v3 td {
+  padding: 7px 8px;
+}
+
+@media (max-width: 760px) {
+  .porra-player-groups-grid-v3 {
+    grid-template-columns: 1fr;
+  }
+
+  .porra-player-extra-v3 .porra-popup-table-v3 {
+    font-size: .78rem;
+  }
+}
+
+/* Mobile movement-pill fix.
+   styles_new.css narrows .move on phones, which can let "▲ 1" or "▼ 2"
+   wrap onto two lines. This keeps the symbol and number together. */
+.move {
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  #leaderboardBody .move,
+  .legend .move,
+  .porra-popup-table-v3 .move {
+    min-width: 44px;
+    padding: 4px 7px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  #leaderboardBody td:nth-child(2),
+  #leaderboardBody th:nth-child(2) {
+    min-width: 52px;
   }
 }

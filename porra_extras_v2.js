@@ -7,11 +7,16 @@
 
   const I18N = {
     ca: {
-      finishedResults: 'Resultats jugats',
+      finishedResults: 'Resultats de partits acabats',
       groupStandings: 'Classificacions de grups',
       topScorers: 'Pichichis',
       liveLeaderboard: 'Classificació en directe',
       pointsSystem: 'Com funciona el sistema de punts',
+      predictedGroupTables: 'Classificacions de grup previstes',
+      knockoutRun: 'Pronòstics de la fase eliminatòria',
+      projectedWinner: 'Guanyador previst',
+      noKnockoutPredictions: 'No hi ha pronòstics de fase eliminatòria per a aquest participant.',
+      noGroupTablePredictions: 'No hi ha prou pronòstics de fase de grups per construir les classificacions.',
       close: 'Tancar',
       date: 'Data',
       stage: 'Fase',
@@ -41,14 +46,25 @@
       outcome: 'Guanyador o empat',
       groupTable: 'Classificació de grup',
       knockoutTeams: 'Equips i posicions en eliminatòries',
-      finalAwards: 'Premis finals'
+      finalAwards: 'Premis finals',
+      r32: 'Setzens de final',
+      r16: 'Vuitens de final',
+      qf: 'Quarts de final',
+      sf: 'Semifinals',
+      thirdPlace: 'Tercer lloc',
+      final: 'Final'
     },
     es: {
-      finishedResults: 'Resultados jugados',
+      finishedResults: 'Resultados de partidos acabados',
       groupStandings: 'Clasificaciones de grupos',
       topScorers: 'Pichichis',
       liveLeaderboard: 'Clasificación en directo',
       pointsSystem: 'Cómo funciona el sistema de puntos',
+      predictedGroupTables: 'Clasificaciones de grupo previstas',
+      knockoutRun: 'Pronósticos de la fase eliminatoria',
+      projectedWinner: 'Ganador previsto',
+      noKnockoutPredictions: 'No hay pronósticos de fase eliminatoria para este participante.',
+      noGroupTablePredictions: 'No hay suficientes pronósticos de fase de grupos para construir las clasificaciones.',
       close: 'Cerrar',
       date: 'Fecha',
       stage: 'Fase',
@@ -78,14 +94,25 @@
       outcome: 'Ganador o empate',
       groupTable: 'Clasificación de grupo',
       knockoutTeams: 'Equipos y posiciones en eliminatorias',
-      finalAwards: 'Premios finales'
+      finalAwards: 'Premios finales',
+      r32: 'Dieciseisavos de final',
+      r16: 'Octavos de final',
+      qf: 'Cuartos de final',
+      sf: 'Semifinales',
+      thirdPlace: 'Tercer puesto',
+      final: 'Final'
     },
     en: {
-      finishedResults: 'Finished results',
+      finishedResults: 'Results of finished games',
       groupStandings: 'Group standings',
       topScorers: 'Top scorers',
       liveLeaderboard: 'Live leaderboard',
       pointsSystem: 'How the points system works',
+      predictedGroupTables: 'Predicted group tables',
+      knockoutRun: 'Knockout run predictions',
+      projectedWinner: 'Predicted winner',
+      noKnockoutPredictions: 'There are no knockout-stage predictions for this participant.',
+      noGroupTablePredictions: 'There are not enough group-stage predictions to build the tables.',
       close: 'Close',
       date: 'Date',
       stage: 'Stage',
@@ -115,7 +142,13 @@
       outcome: 'Winner or tie',
       groupTable: 'Group table',
       knockoutTeams: 'Knockout teams and positions',
-      finalAwards: 'Final awards'
+      finalAwards: 'Final awards',
+      r32: 'Round of 32',
+      r16: 'Round of 16',
+      qf: 'Quarterfinals',
+      sf: 'Semifinals',
+      thirdPlace: 'Third place',
+      final: 'Final'
     }
   };
 
@@ -259,7 +292,7 @@
           const pred = playerPredictionFor(player, matches[idx]);
           const score = scoreText(pred);
           const outcome = predictedOutcomeLabel(pred);
-          cell.innerHTML = `<span class="porra-pred-score-v2">${escapeHtml(score)}</span><span class="porra-pred-winner-v2">${escapeHtml(outcome)}</span>`;
+          cell.innerHTML = `<span class="porra-pred-score-v3">${escapeHtml(score)}</span><span class="porra-pred-winner-v3">${escapeHtml(outcome)}</span>`;
         });
       });
     } finally {
@@ -269,43 +302,43 @@
 
   function installLinks() {
     const summary = document.querySelector('.summary-card');
-    if (summary && !document.getElementById('porraLinksSummaryV2')) {
+    if (summary && !document.getElementById('porraLinksSummaryV3')) {
       const wrap = document.createElement('div');
-      wrap.id = 'porraLinksSummaryV2';
-      wrap.className = 'porra-links-v2 porra-links-v2--summary';
-      wrap.innerHTML = ['finishedResults', 'groupStandings', 'topScorers', 'liveLeaderboard']
-        .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`)
+      wrap.id = 'porraLinksSummaryV3';
+      wrap.className = 'porra-links-v3 porra-links-v3--summary';
+      wrap.innerHTML = ['finishedResults', 'groupStandings', 'liveLeaderboard']
+        .map(type => `<button type="button" data-porra-modal-v3="${type}">${escapeHtml(t(type))}</button>`)
         .join('');
       summary.appendChild(wrap);
     }
 
     const tableCard = document.querySelector('.table-card');
-    if (tableCard && !document.getElementById('porraLinksPointsV2')) {
+    if (tableCard && !document.getElementById('porraLinksPointsV3')) {
       const wrap = document.createElement('div');
-      wrap.id = 'porraLinksPointsV2';
-      wrap.className = 'porra-links-v2 porra-links-v2--points';
-      wrap.innerHTML = `<button type="button" data-porra-modal-v2="pointsSystem">${escapeHtml(t('pointsSystem'))}</button>`;
+      wrap.id = 'porraLinksPointsV3';
+      wrap.className = 'porra-links-v3 porra-links-v3--points';
+      wrap.innerHTML = `<button type="button" data-porra-modal-v3="pointsSystem">${escapeHtml(t('pointsSystem'))}</button>`;
       tableCard.insertAdjacentElement('afterend', wrap);
     }
 
-    if (!document.getElementById('porraModalV2')) {
+    if (!document.getElementById('porraModalV3')) {
       const modal = document.createElement('div');
-      modal.id = 'porraModalV2';
-      modal.className = 'porra-modal-v2';
+      modal.id = 'porraModalV3';
+      modal.className = 'porra-modal-v3';
       modal.hidden = true;
-      modal.innerHTML = `<div class="porra-modal-v2__backdrop" data-porra-close-v2></div><div class="porra-modal-v2__panel" role="dialog" aria-modal="true" aria-labelledby="porraModalTitleV2"><button type="button" class="porra-modal-v2__close" data-porra-close-v2 aria-label="${escapeHtml(t('close'))}">×</button><h2 id="porraModalTitleV2"></h2><div id="porraModalBodyV2"></div></div>`;
+      modal.innerHTML = `<div class="porra-modal-v3__backdrop" data-porra-close-v3></div><div class="porra-modal-v3__panel" role="dialog" aria-modal="true" aria-labelledby="porraModalTitleV3"><button type="button" class="porra-modal-v3__close" data-porra-close-v3 aria-label="${escapeHtml(t('close'))}">×</button><h2 id="porraModalTitleV3"></h2><div id="porraModalBodyV3"></div></div>`;
       document.body.appendChild(modal);
     }
   }
 
   function bindEvents() {
     document.addEventListener('click', event => {
-      const openBtn = event.target.closest('[data-porra-modal-v2]');
+      const openBtn = event.target.closest('[data-porra-modal-v3]');
       if (openBtn) {
-        openModal(openBtn.getAttribute('data-porra-modal-v2'));
+        openModal(openBtn.getAttribute('data-porra-modal-v3'));
         return;
       }
-      if (event.target.closest('[data-porra-close-v2]')) closeModal();
+      if (event.target.closest('[data-porra-close-v3]')) closeModal();
     });
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeModal();
@@ -313,25 +346,25 @@
   }
 
   function openModal(type) {
-    const modal = document.getElementById('porraModalV2');
-    const title = document.getElementById('porraModalTitleV2');
-    const body = document.getElementById('porraModalBodyV2');
+    const modal = document.getElementById('porraModalV3');
+    const title = document.getElementById('porraModalTitleV3');
+    const body = document.getElementById('porraModalBodyV3');
     if (!modal || !title || !body) return;
     title.textContent = t(type);
     body.innerHTML = renderModal(type);
     modal.hidden = false;
-    document.body.classList.add('porra-modal-v2-open');
+    document.body.classList.add('porra-modal-v3-open');
   }
 
   function closeModal() {
-    const modal = document.getElementById('porraModalV2');
+    const modal = document.getElementById('porraModalV3');
     if (!modal) return;
     modal.hidden = true;
-    document.body.classList.remove('porra-modal-v2-open');
+    document.body.classList.remove('porra-modal-v3-open');
   }
 
   function tableHtml(headers, rows) {
-    return `<div class="porra-popup-table-wrap-v2"><table class="porra-popup-table-v2"><thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+    return `<div class="porra-popup-table-wrap-v3"><table class="porra-popup-table-v3"><thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
   }
 
   function renderModal(type) {
@@ -391,7 +424,7 @@
     if (!scorers.length) {
       const final = r.final || {};
       const known = final.topScorer ? `<p><strong>${escapeHtml(display(final.topScorer))}</strong>${isNum(final.topScorerGoals) ? ` · ${escapeHtml(final.topScorerGoals)} ${escapeHtml(t('points'))}` : ''}</p>` : '';
-      return `${known}<p>${escapeHtml(t('noScorers'))}</p><p class="porra-muted-v2">${escapeHtml(t('scorerHint'))}</p>`;
+      return `${known}<p>${escapeHtml(t('noScorers'))}</p><p class="porra-muted-v3">${escapeHtml(t('scorerHint'))}</p>`;
     }
     const sorted = scorers.slice().sort((a, b) => (Number(b.goals) || 0) - (Number(a.goals) || 0) || display(a.name).localeCompare(display(b.name)));
     const rows = sorted.map((s, idx) => `<tr><td>${escapeHtml(idx + 1)}</td><td>${escapeHtml(display(s.name))}</td><td>${escapeHtml(display(s.team))}</td><td>${escapeHtml(display(s.goals, 0))}</td></tr>`);
@@ -649,7 +682,7 @@
       const move = movementLabel(row, prevById);
       return `<tr><td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td><td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td><td>${escapeHtml(display(row.name))}</td><td class="num">${escapeHtml(row.total)}</td></tr>`;
     });
-    return `<p class="porra-muted-v2">${escapeHtml(t('liveHint'))}</p>${tableHtml([t('pos'), t('move'), t('player'), t('points')], rows)}`;
+    return `<p class="porra-muted-v3">${escapeHtml(t('liveHint'))}</p>${tableHtml([t('pos'), t('move'), t('player'), t('points')], rows)}`;
   }
 
   function renderPointsSystem() {
@@ -665,38 +698,200 @@
       [t('finalAwards'), '1er / 2on / 3er / 4rt', `${display(rules['1er'], 0)} / ${display(rules['2on'], 0)} / ${display(rules['3er'], 0)} / ${display(rules['4rt'], 0)}`],
       [t('topScorers'), 'PCH / GPCH', `${display(rules.PCH, 0)} / ${display(rules.GPCH, 0)}`]
     ].map(parts => `<tr><td>${escapeHtml(parts[0])}</td><td>${escapeHtml(parts[1])}</td><td>${escapeHtml(display(parts[2], 0))}</td></tr>`);
-    return `<p class="porra-muted-v2">${escapeHtml(t('rulesIntro'))}</p>${tableHtml([t('stage'), 'Code', t('points')], rows)}`;
+    return `<p class="porra-muted-v3">${escapeHtml(t('rulesIntro'))}</p>${tableHtml([t('stage'), 'Code', t('points')], rows)}`;
+  }
+
+
+  let currentDrawerPlayerIdV3 = null;
+
+  function matchByIdMap() {
+    return new Map((data().matches || []).map(m => [m.id, m]));
+  }
+
+  function displayTeam(value) {
+    return display(value);
+  }
+
+  function recordGroupPrediction(table, home, away, homeScore, awayScore) {
+    const h = table[home];
+    const a = table[away];
+    if (!h || !a || !isNum(homeScore) || !isNum(awayScore)) return;
+    h.p += 1; a.p += 1;
+    h.gf += homeScore; h.ga += awayScore; h.gd = h.gf - h.ga;
+    a.gf += awayScore; a.ga += homeScore; a.gd = a.gf - a.ga;
+    if (homeScore > awayScore) { h.w += 1; a.l += 1; h.pts += 3; }
+    else if (awayScore > homeScore) { a.w += 1; h.l += 1; a.pts += 3; }
+    else { h.d += 1; a.d += 1; h.pts += 1; a.pts += 1; }
+  }
+
+  function computePlayerPredictedGroups(player) {
+    const d = data();
+    const matchMap = matchByIdMap();
+    const predsById = new Map((player.groupMatches || []).map(m => [m.id, m]));
+    const out = {};
+
+    for (const [group, teams] of Object.entries(d.groups || {})) {
+      const table = Object.fromEntries(teams.map(team => [team, {
+        team, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0
+      }]));
+
+      (d.matches || [])
+        .filter(m => m.type === 'group' && m.group === group)
+        .forEach(base => {
+          const pred = predsById.get(base.id);
+          if (!pred) return;
+          const home = display(pred.home, base.home);
+          const away = display(pred.away, base.away);
+          recordGroupPrediction(table, home, away, pred.homeScore, pred.awayScore);
+        });
+
+      let rows = Object.values(table).sort((a, b) =>
+        b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team)
+      );
+
+      const provided = (player.groupStandings || {})[group];
+      if (Array.isArray(provided) && provided.length === rows.length) {
+        const order = new Map(provided.map((row, idx) => [row.team, idx]));
+        rows.sort((a, b) => (order.has(a.team) ? order.get(a.team) : 999) - (order.has(b.team) ? order.get(b.team) : 999));
+      }
+
+      rows.forEach((row, idx) => { row.pos = idx + 1; });
+      out[group] = rows;
+    }
+    return out;
+  }
+
+  function renderPlayerPredictedGroupTables(player) {
+    const groups = computePlayerPredictedGroups(player);
+    const blocks = Object.entries(groups).map(([group, rows]) => {
+      const body = rows.map(row => `<tr><td>${escapeHtml(row.pos)}</td><td>${escapeHtml(displayTeam(row.team))}</td><td>${escapeHtml(row.p)}</td><td>${escapeHtml(row.w)}</td><td>${escapeHtml(row.d)}</td><td>${escapeHtml(row.l)}</td><td>${escapeHtml(row.gf)}</td><td>${escapeHtml(row.ga)}</td><td>${escapeHtml(row.gd)}</td><td>${escapeHtml(row.pts)}</td></tr>`).join('');
+      return `<section class="porra-player-group-card-v3"><h4>${escapeHtml(t('group'))} ${escapeHtml(group)}</h4>${tableHtml([t('pos'), t('team'), t('played'), t('won'), t('drawn'), t('lost'), t('gf'), t('ga'), t('gd'), t('points')], [body])}</section>`;
+    }).join('');
+
+    if (!blocks) return `<p class="porra-muted-v3">${escapeHtml(t('noGroupTablePredictions'))}</p>`;
+    return `<div class="porra-player-groups-grid-v3">${blocks}</div>`;
+  }
+
+  function knockoutStageLabel(id) {
+    const n = Number(String(id || '').replace(/^M/, ''));
+    if (n >= 73 && n <= 88) return t('r32') || 'R32';
+    if (n >= 89 && n <= 96) return t('r16') || 'R16';
+    if (n >= 97 && n <= 100) return t('qf') || 'QF';
+    if (n >= 101 && n <= 102) return t('sf') || 'SF';
+    if (n === 103) return t('thirdPlace') || 'Third place';
+    if (n === 104) return t('final') || 'Final';
+    return display(id);
+  }
+
+  function knockoutWinnerLabel(pred) {
+    if (!pred) return '—';
+    if (pred.winner) return display(pred.winner);
+    if (!hasMatchScore(pred)) return '—';
+    if (pred.homeScore > pred.awayScore) return display(pred.home);
+    if (pred.awayScore > pred.homeScore) return display(pred.away);
+    if (isNum(pred.penHome) && isNum(pred.penAway)) {
+      if (pred.penHome > pred.penAway) return display(pred.home);
+      if (pred.penAway > pred.penHome) return display(pred.away);
+    }
+    return t('tie');
+  }
+
+  function renderPlayerKnockoutRun(player) {
+    const matchMap = matchByIdMap();
+    const rows = (player.knockoutMatches || [])
+      .slice()
+      .sort((a, b) => matchChronology(matchMap.get(a.id) || a) - matchChronology(matchMap.get(b.id) || b))
+      .map(pred => {
+        const base = matchMap.get(pred.id) || {};
+        const home = display(pred.home, base.home || base.homeSlot);
+        const away = display(pred.away, base.away || base.awaySlot);
+        return `<tr><td>${escapeHtml(knockoutStageLabel(pred.id))}</td><td>${escapeHtml(pred.id || '')}</td><td>${escapeHtml(home)} vs ${escapeHtml(away)}</td><td>${escapeHtml(scoreText(pred))}</td><td>${escapeHtml(knockoutWinnerLabel(pred))}</td></tr>`;
+      });
+    if (!rows.length) return `<p class="porra-muted-v3">${escapeHtml(t('noKnockoutPredictions'))}</p>`;
+    return tableHtml([t('stage'), '#', t('match'), t('score'), t('projectedWinner')], rows);
+  }
+
+  function enhancePlayerDrawer() {
+    const content = document.getElementById('drawerContent');
+    if (!content || !currentDrawerPlayerIdV3) return;
+    const player = (data().players || []).find(p => p.id === currentDrawerPlayerIdV3);
+    if (!player) return;
+
+    const existing = document.getElementById('porraPlayerExtraV3');
+    if (existing && existing.dataset.player === currentDrawerPlayerIdV3 && existing.dataset.lang === lang()) return;
+    if (existing) existing.remove();
+
+    const wrap = document.createElement('div');
+    wrap.id = 'porraPlayerExtraV3';
+    wrap.className = 'porra-player-extra-v3';
+    wrap.dataset.player = currentDrawerPlayerIdV3;
+    wrap.dataset.lang = lang();
+    wrap.innerHTML = `
+      <section class="porra-player-extra-section-v3">
+        <h3>${escapeHtml(t('predictedGroupTables'))}</h3>
+        ${renderPlayerPredictedGroupTables(player)}
+      </section>
+      <section class="porra-player-extra-section-v3">
+        <h3>${escapeHtml(t('knockoutRun'))}</h3>
+        ${renderPlayerKnockoutRun(player)}
+      </section>`;
+    content.appendChild(wrap);
+  }
+
+  function bindDrawerEnhancement() {
+    document.addEventListener('click', event => {
+      const row = event.target.closest('#leaderboardBody tr[data-player]');
+      if (!row) return;
+      currentDrawerPlayerIdV3 = row.getAttribute('data-player');
+      setTimeout(enhancePlayerDrawer, 40);
+      setTimeout(enhancePlayerDrawer, 180);
+    });
+
+    const content = document.getElementById('drawerContent');
+    if (content) {
+      const observer = new MutationObserver(() => setTimeout(enhancePlayerDrawer, 0));
+      observer.observe(content, { childList: true, subtree: false });
+    }
   }
 
   function refreshDynamicLabels() {
-    const summary = document.getElementById('porraLinksSummaryV2');
+    const summary = document.getElementById('porraLinksSummaryV3');
     if (summary) {
-      const types = ['finishedResults', 'groupStandings', 'topScorers', 'liveLeaderboard'];
-      summary.querySelectorAll('[data-porra-modal-v2]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
+      const types = ['finishedResults', 'groupStandings', 'liveLeaderboard'];
+      summary.querySelectorAll('[data-porra-modal-v3]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
     }
-    const points = document.querySelector('#porraLinksPointsV2 [data-porra-modal-v2]');
+    const points = document.querySelector('#porraLinksPointsV3 [data-porra-modal-v3]');
     if (points) points.textContent = t('pointsSystem');
   }
 
   function boot() {
     installLinks();
     bindEvents();
+    bindDrawerEnhancement();
     enhancePredictionCells();
     refreshDynamicLabels();
 
     const tbody = document.getElementById('leaderboardBody');
     if (tbody) {
-      const observer = new MutationObserver(() => {
-        refreshDynamicLabels();
-        enhancePredictionCells();
-      });
-      observer.observe(tbody, { childList: true, subtree: true });
+      let refreshQueued = false;
+      const scheduleLeaderboardRefresh = () => {
+        if (refreshQueued) return;
+        refreshQueued = true;
+        requestAnimationFrame(() => {
+          refreshQueued = false;
+          refreshDynamicLabels();
+          enhancePredictionCells();
+        });
+      };
+      const observer = new MutationObserver(scheduleLeaderboardRefresh);
+      observer.observe(tbody, { childList: true });
     }
 
     document.querySelectorAll('[data-lang]').forEach(btn => {
       btn.addEventListener('click', () => setTimeout(() => {
         refreshDynamicLabels();
         enhancePredictionCells();
+        enhancePlayerDrawer();
       }, 0));
     });
   }
