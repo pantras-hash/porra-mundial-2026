@@ -1014,13 +1014,22 @@
     return { actual, rows };
   }
 
-  function findLastPlayed(actual) {
-    const override = window.PORRA_ULTIM_PARTIT;
-    if (override && actual.byId[override]) return actual.byId[override];
-    return chronologicalMatches(actual.matches)
-      .filter(m => isMatchFinal(m))
-      .sort((a, b) => matchChronology(b) - matchChronology(a))[0] || null;
+ function findLastPlayed(actual) {
+  const override = window.PORRA_ULTIM_PARTIT;
+
+  if (
+    override &&
+    actual.byId[override] &&
+    isMatchFinal(actual.byId[override]) &&
+    hasMatchScore(actual.byId[override])
+  ) {
+    return actual.byId[override];
   }
+
+  return chronologicalMatches(actual.matches)
+    .filter(m => isMatchFinal(m) && hasMatchScore(m))
+    .sort((a, b) => matchChronology(b) - matchChronology(a))[0] || null;
+}
   function findNextMatches(actual, count = 2) {
     // Show the first chronologically non-final matches. If a match is live,
     // it stays here until the API marks it FINISHED/AWARDED.
