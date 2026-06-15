@@ -35,7 +35,7 @@ window.PORRA_RESULTATS = {
     // Netherlands vs Japan
     "G-F-1": { homeScore: 2, awayScore: 2, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 10, status: "FINISHED" },
     // Côte d'Ivoire vs Ecuador
-    "G-E-2": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11, status: "FINISHED" },
+    "G-E-2": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11, status: "IN_PLAY" },
     // Sweden vs Tunisia
     "G-F-2": { homeScore: 5, awayScore: 1, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 12, status: "FINISHED" },
     // 2026-06-15
