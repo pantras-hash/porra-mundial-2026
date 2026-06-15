@@ -274,7 +274,7 @@
       const wrap = document.createElement('div');
       wrap.id = 'porraLinksSummaryV2';
       wrap.className = 'porra-links-v2 porra-links-v2--summary';
-      wrap.innerHTML = ['finishedResults', 'groupStandings', 'topScorers', 'liveLeaderboard']
+      wrap.innerHTML = ['finishedResults', 'groupStandings', 'liveLeaderboard']
         .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`)
         .join('');
       summary.appendChild(wrap);
@@ -672,7 +672,7 @@
   function refreshDynamicLabels() {
     const summary = document.getElementById('porraLinksSummaryV2');
     if (summary) {
-      const types = ['finishedResults', 'groupStandings', 'topScorers', 'liveLeaderboard'];
+      const types = ['finishedResults', 'groupStandings', 'liveLeaderboard'];
       summary.querySelectorAll('[data-porra-modal-v2]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
     }
     const points = document.querySelector('#porraLinksPointsV2 [data-porra-modal-v2]');
