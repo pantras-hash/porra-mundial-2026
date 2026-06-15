@@ -679,11 +679,283 @@
     if (points) points.textContent = t('pointsSystem');
   }
 
+    const DRAWER_I18N_V2 = {
+    ca: {
+      predictedGroupTables: 'Classificacions de grup previstes',
+      knockoutRun: 'Eliminatòries previstes',
+      noGroupPredictions: 'No hi ha pronòstics de grup disponibles.',
+      noKnockoutPredictions: 'No hi ha pronòstics d’eliminatòries disponibles.',
+      winner: 'Guanyador',
+      r32: 'Setzens',
+      r16: 'Vuitens',
+      qf: 'Quarts',
+      sf: 'Semifinals',
+      thirdPlace: 'Tercer lloc',
+      final: 'Final'
+    },
+    es: {
+      predictedGroupTables: 'Clasificaciones de grupo previstas',
+      knockoutRun: 'Eliminatorias previstas',
+      noGroupPredictions: 'No hay pronósticos de grupo disponibles.',
+      noKnockoutPredictions: 'No hay pronósticos de eliminatorias disponibles.',
+      winner: 'Ganador',
+      r32: 'Dieciseisavos',
+      r16: 'Octavos',
+      qf: 'Cuartos',
+      sf: 'Semifinales',
+      thirdPlace: 'Tercer puesto',
+      final: 'Final'
+    },
+    en: {
+      predictedGroupTables: 'Predicted group tables',
+      knockoutRun: 'Predicted knockout run',
+      noGroupPredictions: 'No group-stage predictions available.',
+      noKnockoutPredictions: 'No knockout predictions available.',
+      winner: 'Winner',
+      r32: 'Round of 32',
+      r16: 'Round of 16',
+      qf: 'Quarter-finals',
+      sf: 'Semi-finals',
+      thirdPlace: 'Third-place match',
+      final: 'Final'
+    }
+  };
+
+  function drawerTextV2(key) {
+    const l = lang();
+    return (DRAWER_I18N_V2[l] && DRAWER_I18N_V2[l][key]) ||
+      (DRAWER_I18N_V2.ca && DRAWER_I18N_V2.ca[key]) ||
+      key;
+  }
+
+  function drawerMatchNumberV2(id) {
+    const match = String(id || '').match(/^M(\d+)$/);
+    return match ? Number(match[1]) : 0;
+  }
+
+  function drawerStageLabelV2(match) {
+    const n = drawerMatchNumberV2(match && match.id);
+
+    if (n >= 73 && n <= 88) return drawerTextV2('r32');
+    if (n >= 89 && n <= 96) return drawerTextV2('r16');
+    if (n >= 97 && n <= 100) return drawerTextV2('qf');
+    if (n >= 101 && n <= 102) return drawerTextV2('sf');
+    if (n === 103) return drawerTextV2('thirdPlace');
+    if (n === 104) return drawerTextV2('final');
+
+    return display(match && match.round);
+  }
+
+  function drawerPredictedWinnerV2(match) {
+    if (!match) return '—';
+
+    if (match.winner) return display(match.winner);
+
+    if (isNum(match.homeScore) && isNum(match.awayScore)) {
+      if (match.homeScore > match.awayScore) return display(match.home);
+      if (match.awayScore > match.homeScore) return display(match.away);
+
+      if (isNum(match.penHome) && isNum(match.penAway)) {
+        if (match.penHome > match.penAway) return display(match.home);
+        if (match.penAway > match.penHome) return display(match.away);
+      }
+
+      return t('tie');
+    }
+
+    return '—';
+  }
+
+  function drawerPredictedGroupTablesV2(player) {
+    const d = data();
+    const groups = d.groups || {};
+    const tables = {};
+
+    Object.entries(groups).forEach(([groupName, teams]) => {
+      tables[groupName] = Object.fromEntries(
+        teams.map(team => [team, {
+          team,
+          p: 0,
+          w: 0,
+          d: 0,
+          l: 0,
+          gf: 0,
+          ga: 0,
+          gd: 0,
+          pts: 0
+        }])
+      );
+    });
+
+    (player.groupMatches || []).forEach(match => {
+      if (!match || !match.group || !isNum(match.homeScore) || !isNum(match.awayScore)) return;
+
+      const table = tables[match.group];
+      if (!table) return;
+
+      const home = table[match.home];
+      const away = table[match.away];
+      if (!home || !away) return;
+
+      home.p += 1;
+      away.p += 1;
+
+      home.gf += match.homeScore;
+      home.ga += match.awayScore;
+      away.gf += match.awayScore;
+      away.ga += match.homeScore;
+
+      if (match.homeScore > match.awayScore) {
+        home.w += 1;
+        away.l += 1;
+        home.pts += 3;
+      } else if (match.awayScore > match.homeScore) {
+        away.w += 1;
+        home.l += 1;
+        away.pts += 3;
+      } else {
+        home.d += 1;
+        away.d += 1;
+        home.pts += 1;
+        away.pts += 1;
+      }
+    });
+
+    const groupTablesHtml = Object.entries(tables).map(([groupName, tableObj]) => {
+      let rows = Object.values(tableObj).map(row => ({
+        ...row,
+        gd: row.gf - row.ga
+      }));
+
+      const predictedOrder = (player.groupStandings && player.groupStandings[groupName]) || [];
+      const order = new Map(predictedOrder.map((row, idx) => [row.team, idx]));
+
+      if (order.size) {
+        rows.sort((a, b) => {
+          const ai = order.has(a.team) ? order.get(a.team) : 999;
+          const bi = order.has(b.team) ? order.get(b.team) : 999;
+          return ai - bi;
+        });
+      } else {
+        rows.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+      }
+
+      const body = rows.map((row, idx) => `<tr>
+        <td>${escapeHtml(idx + 1)}</td>
+        <td>${escapeHtml(display(row.team))}</td>
+        <td>${escapeHtml(row.p)}</td>
+        <td>${escapeHtml(row.w)}</td>
+        <td>${escapeHtml(row.d)}</td>
+        <td>${escapeHtml(row.l)}</td>
+        <td>${escapeHtml(row.gf)}</td>
+        <td>${escapeHtml(row.ga)}</td>
+        <td>${escapeHtml(row.gd)}</td>
+        <td>${escapeHtml(row.pts)}</td>
+      </tr>`);
+
+      return `<div class="porra-drawer-group-v2">
+        <h4>${escapeHtml(t('group'))} ${escapeHtml(groupName)}</h4>
+        ${tableHtml(
+          [t('pos'), t('team'), t('played'), t('won'), t('drawn'), t('lost'), t('gf'), t('ga'), t('gd'), t('points')],
+          body
+        )}
+      </div>`;
+    }).join('');
+
+    if (!groupTablesHtml) return `<p class="porra-muted-v2">${escapeHtml(drawerTextV2('noGroupPredictions'))}</p>`;
+
+    return `<section class="porra-drawer-section-v2">
+      <h3>${escapeHtml(drawerTextV2('predictedGroupTables'))}</h3>
+      <div class="porra-drawer-groups-v2">${groupTablesHtml}</div>
+    </section>`;
+  }
+
+  function drawerKnockoutRunV2(player) {
+    const matches = (player.knockoutMatches || [])
+      .slice()
+      .sort((a, b) => drawerMatchNumberV2(a.id) - drawerMatchNumberV2(b.id));
+
+    if (!matches.length) {
+      return `<section class="porra-drawer-section-v2">
+        <h3>${escapeHtml(drawerTextV2('knockoutRun'))}</h3>
+        <p class="porra-muted-v2">${escapeHtml(drawerTextV2('noKnockoutPredictions'))}</p>
+      </section>`;
+    }
+
+    const rows = matches.map(match => `<tr>
+      <td>${escapeHtml(drawerStageLabelV2(match))}</td>
+      <td>${escapeHtml(display(match.id))}</td>
+      <td>${escapeHtml(display(match.home))} vs ${escapeHtml(display(match.away))}</td>
+      <td>${escapeHtml(scoreText(match))}</td>
+      <td>${escapeHtml(drawerPredictedWinnerV2(match))}</td>
+    </tr>`);
+
+    return `<section class="porra-drawer-section-v2">
+      <h3>${escapeHtml(drawerTextV2('knockoutRun'))}</h3>
+      ${tableHtml([t('stage'), 'ID', t('match'), t('score'), drawerTextV2('winner')], rows)}
+    </section>`;
+  }
+
+  function enhancePlayerDrawerV2() {
+    const drawerContent = document.getElementById('drawerContent');
+    const drawerTitle = document.getElementById('drawerTitle');
+
+    if (!drawerContent || !drawerTitle) return;
+    if (drawerContent.querySelector('#porraDrawerExtrasV2')) return;
+
+    const playerName = drawerTitle.textContent.trim();
+    if (!playerName) return;
+
+    const player = (data().players || []).find(p => p.name === playerName);
+    if (!player) return;
+
+    const html = `<div id="porraDrawerExtrasV2" class="porra-drawer-extras-v2">
+      ${drawerPredictedGroupTablesV2(player)}
+      ${drawerKnockoutRunV2(player)}
+    </div>`;
+
+    drawerContent.insertAdjacentHTML('beforeend', html);
+  }
+
+  function installPlayerDrawerEnhancementV2() {
+    document.addEventListener('click', event => {
+      if (event.target.closest('tr[data-player]')) {
+        setTimeout(enhancePlayerDrawerV2, 0);
+      }
+    });
+
+    document.addEventListener('keydown', event => {
+      const row = event.target.closest && event.target.closest('tr[data-player]');
+      if (row && (event.key === 'Enter' || event.key === ' ')) {
+        setTimeout(enhancePlayerDrawerV2, 0);
+      }
+    });
+
+    const drawerContent = document.getElementById('drawerContent');
+    if (drawerContent) {
+      let queued = false;
+
+      const observer = new MutationObserver(() => {
+        if (drawerContent.querySelector('#porraDrawerExtrasV2')) return;
+        if (queued) return;
+
+        queued = true;
+        requestAnimationFrame(() => {
+          queued = false;
+          enhancePlayerDrawerV2();
+        });
+      });
+
+      observer.observe(drawerContent, { childList: true });
+    }
+  }
+  
   function boot() {
     installLinks();
     bindEvents();
     enhancePredictionCells();
     refreshDynamicLabels();
+    installPlayerDrawerEnhancementV2();
 
     const tbody = document.getElementById('leaderboardBody');
     if (tbody) {
