@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-E-1";
+window.PORRA_ULTIM_PARTIT = "G-H-1";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -40,7 +40,7 @@ window.PORRA_RESULTATS = {
     "G-F-2": { homeScore: 5, awayScore: 1, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 12, status: "FINISHED" },
     // 2026-06-15
     // Spain vs Cabo Verde
-    "G-H-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13, status: "TIMED" },
+    "G-H-1": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13, status: "IN_PLAY" },
     // Belgium vs Egypt
     "G-G-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14, status: "TIMED" },
     // Saudi Arabia vs Uruguay
