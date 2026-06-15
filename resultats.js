@@ -35,14 +35,14 @@ window.PORRA_RESULTATS = {
     // Netherlands vs Japan
     "G-F-1": { homeScore: 2, awayScore: 2, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 10, status: "FINISHED" },
     // Côte d'Ivoire vs Ecuador
-    "G-E-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11, status: "TIMED" },
+    "G-E-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 11},
     // Sweden vs Tunisia
-    "G-F-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 12, status: "TIMED" },
+    "G-F-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-14", sortOrder: 12},
     // 2026-06-15
     // Spain vs Cabo Verde
-    "G-H-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13, status: "TIMED" },
+    "G-H-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 13},
     // Belgium vs Egypt
-    "G-G-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14, status: "TIMED" },
+    "G-G-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14 },
     // Saudi Arabia vs Uruguay
     "G-H-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15 },
     // IR Iran vs New Zealand
