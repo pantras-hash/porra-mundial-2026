@@ -44,7 +44,7 @@ window.PORRA_RESULTATS = {
     // Belgium vs Egypt
     "G-G-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 14, status: "FINISHED" },
     // Saudi Arabia vs Uruguay
-    "G-H-2": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15, status: "IN_PLAY" },
+    "G-H-2": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 15, status: "FINISHED" },
     // IR Iran vs New Zealand
     "G-G-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-15", sortOrder: 16, status: "TIMED" },
     
