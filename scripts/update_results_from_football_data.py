@@ -449,6 +449,17 @@ def main() -> int:
     payload = football_data_get(url, token)
     api_matches = [parse_api_match(m) for m in payload.get("matches", [])]
     print(f"Loaded {len(api_matches)} matches from football-data.org")
+    for m in api_matches:
+        print(
+            "API match:",
+            m.home_tla or "?",
+            m.home_score,
+            "-",
+            m.away_score,
+            m.away_tla or "?",
+            "status=" + (m.status or "?"),
+            "date=" + (m.date or "?"),
+        )
 
     # First match by exact known teams, then by date/order for knockout matches whose local file has slots.
     date_index = make_date_index(api_matches)
@@ -502,7 +513,8 @@ def main() -> int:
                 f"{api.home_tla or '?'} {api.home_score}-{api.away_score} "
                 f"{api.away_tla or '?'} status={api.status}"
             )
-         if not replacements:  
+
+    if not replacements:
         print("No result changes to commit.")
         return 0
 
