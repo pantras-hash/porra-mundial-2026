@@ -694,23 +694,82 @@ function normalizeParticipantName(value) {
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/\./g, '')
+    .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function compactInitialKey(value) {
+  const normalized = normalizeParticipantName(value);
+  const parts = normalized.split(' ').filter(Boolean);
+
+  if (!parts.length) return '';
+
+  const first = parts[0];
+  const rest = parts.slice(1);
+
+  if (!rest.length) return first;
+
+  const initials = rest.map(part => part[0]).join('');
+  return `${first} ${initials}`.trim();
+}
+
+function nameMatchesAlias(fullName, alias) {
+  const full = normalizeParticipantName(fullName);
+  const shortFull = compactInitialKey(fullName);
+
+  const wanted = normalizeParticipantName(alias);
+  const shortWanted = compactInitialKey(alias);
+
+  return (
+    full === wanted ||
+    shortFull === wanted ||
+    full === shortWanted ||
+    shortFull === shortWanted
+  );
 }
 
 function renderSubgroupLeaderboard(type) {
   const subgroup = SUBGROUP_LEADERBOARDS[type];
   if (!subgroup) return '';
 
-  const normalizedGroups = subgroup.players.map(group =>
-    group.map(name => normalizeParticipantName(name))
-  );
-
   function isWantedPlayer(name) {
-    const normalized = normalizeParticipantName(name);
-    return normalizedGroups.some(group => group.includes(normalized));
+    return subgroup.players.some(aliasGroup =>
+      aliasGroup.some(alias => nameMatchesAlias(name, alias))
+    );
   }
 
+  const baseRows = computeLeaderboard(false);
+  const liveRows = computeLeaderboard(true);
+  const prevById = new Map(baseRows.map(row => [row.id, row]));
+
+  const rows = liveRows
+    .filter(row => isWantedPlayer(row.name))
+    .map(row => {
+      const move = movementLabel(row, prevById);
+
+      return `
+        <tr>
+          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
+          <td>${escapeHtml(display(row.name))}</td>
+          <td class="num">${escapeHtml(row.total)}</td>
+        </tr>
+      `;
+    });
+
+  if (!rows.length) {
+    return `
+      <p class="porra-muted-v2">
+        No s’ha trobat cap participant per a aquest subgrup.
+        Comprova que els noms al full coincideixin amb:
+        ${escapeHtml(subgroup.expectedNames.join(', '))}.
+      </p>
+    `;
+  }
+
+  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
+}
   const baseRows = computeLeaderboard(false);
   const liveRows = computeLeaderboard(true);
   const prevById = new Map(baseRows.map(row => [row.id, row]));
