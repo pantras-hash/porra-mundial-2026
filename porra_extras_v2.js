@@ -133,18 +133,18 @@
   };
 
 const SUBGROUP_LEADERBOARDS = {
-  familyAntras: {
-    players: [
-      ['Pol A'],
-      ['Daniela'],
-      ['Martina']
-    ],
-    expectedNames: ['Pol A', 'Daniela', 'Martina']
-  },
+ familyAntras: {
+  players: [
+    ['Pol A', 'Pol Antras', 'Pol Antràs'],
+    ['Daniela'],
+    ['Martina']
+  ],
+  expectedNames: ['Pol A', 'Daniela', 'Martina']
+},
 
   economistasEmporrados: {
     players: [
-      ['Pol A'],
+     ['Pol A', 'Pol Antras', 'Pol Antràs'],
       ['Eduardo M'],
       ['Enrique M'],
       ['Manu GS'],
@@ -726,7 +726,15 @@ function nameMatchesAlias(fullName, alias) {
     full === wanted ||
     shortFull === wanted ||
     full === shortWanted ||
-    shortFull === shortWanted
+    shortFull === shortWanted ||
+
+    // Allows "Pol A" to match "Pol Antras" or "Pol Antras Pujolas"
+    full.startsWith(wanted + ' ') ||
+    shortFull.startsWith(wanted) ||
+
+    // Allows "Pol Antras" to match "Pol Antras Pujolas"
+    full.startsWith(shortWanted + ' ') ||
+    shortFull.startsWith(shortWanted)
   );
 }
 
