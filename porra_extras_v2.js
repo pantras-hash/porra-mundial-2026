@@ -653,144 +653,233 @@
     return `<p class="porra-muted-v2">${escapeHtml(t('liveHint'))}</p>${tableHtml([t('pos'), t('move'), t('player'), t('points')], rows)}`;
   }
 
- function renderPointsSystem() {
-  const groupRows = [
-    `<tr><td>Equip en la posició correcta del grup</td><td class="num">4</td></tr>`,
-    `<tr><td>Gols totals a favor d’aquella posició</td><td class="num">4</td></tr>`,
-    `<tr><td>Punts totals d’aquella posició</td><td class="num">4</td></tr>`
-  ];
+function renderPointsSystem() {
+  const copy = {
+    ca: {
+      intro: 'La classificació es calcula sumant tots els encerts de cada participant. Els punts es van activant a mesura que els partits i les classificacions esdevenen definitius: primer els resultats dels partits de grup, després les classificacions de cada grup, més endavant les rondes eliminatòries i, finalment, els premis finals del torneig.',
+      groupStageTitle: 'Partits de la fase de grups',
+      groupStageIntro: 'En cada partit de la fase de grups es poden sumar punts de dues maneres.',
+      outcomeTitle: 'Encertar el signe del partit — 3 punts.',
+      outcomeText: 'Si el participant encerta si el partit acaba amb victòria local, empat o victòria visitant, suma 3 punts. No cal encertar el resultat exacte: per exemple, si algú pronostica 2–1 i el partit acaba 1–0, igualment suma aquests 3 punts perquè ha encertat el guanyador.',
+      goalsTitle: 'Encertar els gols de cada equip.',
+      goalsText: 'Els gols es puntuen equip per equip. Si encertes exactament els gols d’un equip, sumes com a mínim 2 punts per aquell equip. Si l’equip marca més de 2 gols, els punts són iguals al nombre de gols. Per tant, encertar que un equip marca 0, 1 o 2 gols dona 2 punts; encertar que en marca 3 dona 3 punts; encertar-ne 4 dona 4 punts, etc. Un resultat exacte de 0–0, per exemple, dona 4 punts pels gols —2 per cada equip— més els 3 punts de l’empat.',
+      groupStandingsTitle: 'Classificació dels grups',
+      groupStandingsIntro: 'Quan un grup ja té tots els partits acabats, també es puntua la classificació final del grup. Per cada una de les quatre posicions del grup es poden sumar:',
+      groupStandingsAfter: 'Això vol dir que no només compta haver encertat qui queda primer, segon, tercer o quart, sinó també haver previst bé els números de la classificació: els gols a favor i els punts totals. En cas d’empat entre equips, es farà servir l’ordre final que quedi fixat a la taula oficial de la porra, aplicant els desempats corresponents quan calgui.',
+      knockoutTitle: 'Eliminatòries',
+      knockoutIntro: 'A les eliminatòries es puntua tant haver previst quins equips arriben a cada ronda com haver-los col·locat correctament dins del quadre.',
+      knockoutAfter: 'Per cada equip que arriba a una ronda, es donen punts encara que el participant l’hagi posat en una altra part del quadre. A més, hi ha punts extra si l’equip apareix exactament a la mateixa posició del quadre pronosticada.',
+      knockoutGoalsIntro: 'També es poden sumar punts pels gols dels partits eliminatoris. Igual que a la fase de grups, els gols es compten per equip, no només pel resultat global. Als setzens de final, encertar els gols d’un equip dona com a mínim 4 punts, o més si l’equip marca més de 4 gols. A vuitens, quarts i semifinals, els punts per encertar els gols d’un equip són fixos:',
+      penaltiesText: 'Els gols de les tandes de penals no compten com a gols del partit per a aquests punts; els penals només serveixen per determinar quin equip passa ronda quan el partit acaba empatat.',
+      finalTitle: 'Final, tercer lloc i premis finals',
+      finalIntro: 'A la part final del torneig hi ha punts específics pels equips que arriben a la final, pel partit pel tercer lloc, pel resultat d’aquests partits i per les posicions finals.',
+      finalAfter: 'Així, la porra no premia només encertar el campió. També compta haver previst bé el recorregut dels equips, la composició de les rondes finals, els resultats dels partits importants i el màxim golejador.',
+      correct: 'Encert',
+      points: 'Punts',
+      round: 'Ronda',
+      teamReaches: 'Equip que arriba a la ronda',
+      correctPosition: 'Equip en la posició correcta',
+      goalsPerTeam: 'Punts per encertar els gols d’un equip',
+      groupRows: [
+        ['Equip en la posició correcta del grup', '4'],
+        ['Gols totals a favor d’aquella posició', '4'],
+        ['Punts totals d’aquella posició', '4']
+      ],
+      knockoutRows: [
+        ['Setzens de final', '4', '4'],
+        ['Vuitens de final', '6', '6'],
+        ['Quarts de final', '8', '8'],
+        ['Semifinals', '10', '10']
+      ],
+      knockoutGoalRows: [
+        ['Setzens de final', 'mínim 4'],
+        ['Vuitens de final', '6'],
+        ['Quarts de final', '6'],
+        ['Semifinals', '8']
+      ],
+      finalRows: [
+        ['Equip finalista', '15'],
+        ['Equip al partit pel tercer lloc', '12'],
+        ['Gols del partit pel tercer lloc, per equip', '10'],
+        ['Gols de la final, per equip', '10'],
+        ['Quart classificat', '15'],
+        ['Tercer classificat', '20'],
+        ['Subcampió', '30'],
+        ['Campió', '50'],
+        ['Pichichi del torneig', '15'],
+        ['Gols del pichichi', '10']
+      ]
+    },
 
-  const knockoutRows = [
-    `<tr><td>Setzens de final</td><td class="num">4</td><td class="num">4</td></tr>`,
-    `<tr><td>Vuitens de final</td><td class="num">6</td><td class="num">6</td></tr>`,
-    `<tr><td>Quarts de final</td><td class="num">8</td><td class="num">8</td></tr>`,
-    `<tr><td>Semifinals</td><td class="num">10</td><td class="num">10</td></tr>`
-  ];
+    es: {
+      intro: 'La clasificación se calcula sumando todos los aciertos de cada participante. Los puntos se van activando a medida que los partidos y las clasificaciones se vuelven definitivos: primero los resultados de los partidos de la fase de grupos, después las clasificaciones de cada grupo, más adelante las rondas eliminatorias y, finalmente, los premios finales del torneo.',
+      groupStageTitle: 'Partidos de la fase de grupos',
+      groupStageIntro: 'En cada partido de la fase de grupos se pueden sumar puntos de dos maneras.',
+      outcomeTitle: 'Acertar el signo del partido — 3 puntos.',
+      outcomeText: 'Si el participante acierta si el partido acaba con victoria local, empate o victoria visitante, suma 3 puntos. No hace falta acertar el resultado exacto: por ejemplo, si alguien pronostica 2–1 y el partido acaba 1–0, igualmente suma esos 3 puntos porque ha acertado el ganador.',
+      goalsTitle: 'Acertar los goles de cada equipo.',
+      goalsText: 'Los goles se puntúan equipo por equipo. Si aciertas exactamente los goles de un equipo, sumas como mínimo 2 puntos por ese equipo. Si el equipo marca más de 2 goles, los puntos son iguales al número de goles. Por tanto, acertar que un equipo marca 0, 1 o 2 goles da 2 puntos; acertar que marca 3 goles da 3 puntos; acertar 4 goles da 4 puntos, etc. Un resultado exacto de 0–0, por ejemplo, da 4 puntos por los goles —2 por cada equipo— más los 3 puntos del empate.',
+      groupStandingsTitle: 'Clasificación de los grupos',
+      groupStandingsIntro: 'Cuando un grupo ya tiene todos sus partidos terminados, también se puntúa la clasificación final del grupo. Por cada una de las cuatro posiciones del grupo se pueden sumar:',
+      groupStandingsAfter: 'Esto significa que no solo cuenta haber acertado quién queda primero, segundo, tercero o cuarto, sino también haber previsto bien los números de la clasificación: los goles a favor y los puntos totales. En caso de empate entre equipos, se utilizará el orden final que quede fijado en la tabla oficial de la porra, aplicando los desempates correspondientes cuando sea necesario.',
+      knockoutTitle: 'Eliminatorias',
+      knockoutIntro: 'En las eliminatorias se puntúa tanto haber previsto qué equipos llegan a cada ronda como haberlos colocado correctamente dentro del cuadro.',
+      knockoutAfter: 'Por cada equipo que llega a una ronda, se otorgan puntos aunque el participante lo haya colocado en otra parte del cuadro. Además, hay puntos extra si el equipo aparece exactamente en la misma posición del cuadro pronosticada.',
+      knockoutGoalsIntro: 'También se pueden sumar puntos por los goles de los partidos eliminatorios. Igual que en la fase de grupos, los goles se cuentan por equipo, no solo por el resultado global. En dieciseisavos de final, acertar los goles de un equipo da como mínimo 4 puntos, o más si el equipo marca más de 4 goles. En octavos, cuartos y semifinales, los puntos por acertar los goles de un equipo son fijos:',
+      penaltiesText: 'Los goles de las tandas de penaltis no cuentan como goles del partido para estos puntos; los penaltis solo sirven para determinar qué equipo pasa de ronda cuando el partido acaba empatado.',
+      finalTitle: 'Final, tercer puesto y premios finales',
+      finalIntro: 'En la parte final del torneo hay puntos específicos por los equipos que llegan a la final, por el partido por el tercer puesto, por el resultado de esos partidos y por las posiciones finales.',
+      finalAfter: 'Así, la porra no premia solo acertar el campeón. También cuenta haber previsto bien el recorrido de los equipos, la composición de las rondas finales, los resultados de los partidos importantes y el máximo goleador.',
+      correct: 'Acierto',
+      points: 'Puntos',
+      round: 'Ronda',
+      teamReaches: 'Equipo que llega a la ronda',
+      correctPosition: 'Equipo en la posición correcta',
+      goalsPerTeam: 'Puntos por acertar los goles de un equipo',
+      groupRows: [
+        ['Equipo en la posición correcta del grupo', '4'],
+        ['Goles totales a favor de esa posición', '4'],
+        ['Puntos totales de esa posición', '4']
+      ],
+      knockoutRows: [
+        ['Dieciseisavos de final', '4', '4'],
+        ['Octavos de final', '6', '6'],
+        ['Cuartos de final', '8', '8'],
+        ['Semifinales', '10', '10']
+      ],
+      knockoutGoalRows: [
+        ['Dieciseisavos de final', 'mínimo 4'],
+        ['Octavos de final', '6'],
+        ['Cuartos de final', '6'],
+        ['Semifinales', '8']
+      ],
+      finalRows: [
+        ['Equipo finalista', '15'],
+        ['Equipo en el partido por el tercer puesto', '12'],
+        ['Goles del partido por el tercer puesto, por equipo', '10'],
+        ['Goles de la final, por equipo', '10'],
+        ['Cuarto clasificado', '15'],
+        ['Tercer clasificado', '20'],
+        ['Subcampeón', '30'],
+        ['Campeón', '50'],
+        ['Pichichi del torneo', '15'],
+        ['Goles del pichichi', '10']
+      ]
+    },
 
-  const knockoutGoalRows = [
-    `<tr><td>Setzens de final</td><td>mínim 4</td></tr>`,
-    `<tr><td>Vuitens de final</td><td class="num">6</td></tr>`,
-    `<tr><td>Quarts de final</td><td class="num">6</td></tr>`,
-    `<tr><td>Semifinals</td><td class="num">8</td></tr>`
-  ];
+    en: {
+      intro: 'The standings are calculated by adding up all the correct predictions made by each participant. Points become active as matches and standings become final: first the results of the group-stage matches, then the final standings in each group, later the knockout rounds, and finally the tournament’s end-of-competition awards.',
+      groupStageTitle: 'Group-stage matches',
+      groupStageIntro: 'In each group-stage match, participants can earn points in two ways.',
+      outcomeTitle: 'Predicting the match outcome — 3 points.',
+      outcomeText: 'If the participant correctly predicts whether the match ends in a home win, a draw, or an away win, they earn 3 points. The exact score does not have to be correct: for example, if someone predicts 2–1 and the match ends 1–0, they still earn those 3 points because they correctly predicted the winner.',
+      goalsTitle: 'Predicting each team’s goals.',
+      goalsText: 'Goals are scored team by team. If you correctly predict exactly how many goals a team scores, you earn at least 2 points for that team. If the team scores more than 2 goals, the number of points is equal to the number of goals. So correctly predicting that a team scores 0, 1, or 2 goals gives 2 points; correctly predicting 3 goals gives 3 points; correctly predicting 4 goals gives 4 points, and so on. An exact 0–0 prediction, for example, gives 4 points for the goals —2 for each team— plus the 3 points for correctly predicting the draw.',
+      groupStandingsTitle: 'Group standings',
+      groupStandingsIntro: 'Once all matches in a group have been completed, the final group standings are also scored. For each of the four positions in the group, participants can earn:',
+      groupStandingsAfter: 'This means that it is not only important to predict who finishes first, second, third, or fourth, but also to predict the numbers in the standings correctly: goals scored and total points. If teams are tied, the final order used will be the one fixed in the official pool standings table, applying the relevant tiebreakers when necessary.',
+      knockoutTitle: 'Knockout rounds',
+      knockoutIntro: 'In the knockout rounds, points are awarded both for predicting which teams reach each round and for placing them correctly within the bracket.',
+      knockoutAfter: 'For every team that reaches a round, points are awarded even if the participant placed that team in a different part of the bracket. In addition, there are extra points if the team appears in exactly the same bracket position as predicted.',
+      knockoutGoalsIntro: 'Participants can also earn points for goals scored in knockout matches. As in the group stage, goals are counted team by team, not only by the overall scoreline. In the Round of 32, correctly predicting a team’s goals gives at least 4 points, or more if the team scores more than 4 goals. In the Round of 16, quarter-finals, and semi-finals, the points for correctly predicting a team’s goals are fixed:',
+      penaltiesText: 'Goals scored in penalty shootouts do not count as match goals for these points; penalties only determine which team advances when a match ends in a draw.',
+      finalTitle: 'Final, third-place match, and final awards',
+      finalIntro: 'At the end of the tournament, there are specific points for the teams that reach the final, the teams that play the third-place match, the results of those matches, and the final finishing positions.',
+      finalAfter: 'So the pool does not only reward predicting the champion. It also rewards correctly predicting each team’s path through the tournament, the composition of the final rounds, the results of the most important matches, and the tournament’s top scorer.',
+      correct: 'Correct prediction',
+      points: 'Points',
+      round: 'Round',
+      teamReaches: 'Team reaches the round',
+      correctPosition: 'Team in the correct position',
+      goalsPerTeam: 'Points for correctly predicting one team’s goals',
+      groupRows: [
+        ['Team in the correct group position', '4'],
+        ['Total goals scored by that position', '4'],
+        ['Total points earned by that position', '4']
+      ],
+      knockoutRows: [
+        ['Round of 32', '4', '4'],
+        ['Round of 16', '6', '6'],
+        ['Quarter-finals', '8', '8'],
+        ['Semi-finals', '10', '10']
+      ],
+      knockoutGoalRows: [
+        ['Round of 32', 'minimum 4'],
+        ['Round of 16', '6'],
+        ['Quarter-finals', '6'],
+        ['Semi-finals', '8']
+      ],
+      finalRows: [
+        ['Finalist', '15'],
+        ['Team in the third-place match', '12'],
+        ['Goals in the third-place match, per team', '10'],
+        ['Goals in the final, per team', '10'],
+        ['Fourth place', '15'],
+        ['Third place', '20'],
+        ['Runner-up', '30'],
+        ['Champion', '50'],
+        ['Tournament top scorer', '15'],
+        ['Top scorer’s number of goals', '10']
+      ]
+    }
+  };
 
-  const finalRows = [
-    `<tr><td>Equip finalista</td><td class="num">15</td></tr>`,
-    `<tr><td>Equip al partit pel tercer lloc</td><td class="num">12</td></tr>`,
-    `<tr><td>Gols del partit pel tercer lloc, per equip</td><td class="num">10</td></tr>`,
-    `<tr><td>Gols de la final, per equip</td><td class="num">10</td></tr>`,
-    `<tr><td>Quart classificat</td><td class="num">15</td></tr>`,
-    `<tr><td>Tercer classificat</td><td class="num">20</td></tr>`,
-    `<tr><td>Subcampió</td><td class="num">30</td></tr>`,
-    `<tr><td>Campió</td><td class="num">50</td></tr>`,
-    `<tr><td>Pichichi del torneig</td><td class="num">15</td></tr>`,
-    `<tr><td>Gols del pichichi</td><td class="num">10</td></tr>`
-  ];
+  const c = copy[lang()] || copy.ca;
+
+  const twoColRows = rows => rows.map(([a, b]) =>
+    `<tr><td>${escapeHtml(a)}</td><td class="num">${escapeHtml(b)}</td></tr>`
+  );
+
+  const threeColRows = rows => rows.map(([a, b, d]) =>
+    `<tr><td>${escapeHtml(a)}</td><td class="num">${escapeHtml(b)}</td><td class="num">${escapeHtml(d)}</td></tr>`
+  );
 
   return `
     <div class="porra-rules-prose-v2">
-      <p>
-        La classificació es calcula sumant tots els encerts de cada participant.
-        Els punts es van activant a mesura que els partits i les classificacions
-        esdevenen definitius: primer els resultats dels partits de grup, després
-        les classificacions de cada grup, més endavant les rondes eliminatòries
-        i, finalment, els premis finals del torneig.
-      </p>
+      <p>${escapeHtml(c.intro)}</p>
 
-      <h3>Partits de la fase de grups</h3>
+      <h3>${escapeHtml(c.groupStageTitle)}</h3>
+      <p>${escapeHtml(c.groupStageIntro)}</p>
 
       <p>
-        En cada partit de la fase de grups es poden sumar punts de dues maneres.
+        <strong>${escapeHtml(c.outcomeTitle)}</strong>
+        ${escapeHtml(c.outcomeText)}
       </p>
 
       <p>
-        <strong>Encertar el signe del partit — 3 punts.</strong>
-        Si el participant encerta si el partit acaba amb victòria local, empat
-        o victòria visitant, suma 3 punts. No cal encertar el resultat exacte:
-        per exemple, si algú pronostica 2–1 i el partit acaba 1–0, igualment
-        suma aquests 3 punts perquè ha encertat el guanyador.
+        <strong>${escapeHtml(c.goalsTitle)}</strong>
+        ${escapeHtml(c.goalsText)}
       </p>
 
-      <p>
-        <strong>Encertar els gols de cada equip.</strong>
-        Els gols es puntuen equip per equip. Si encertes exactament els gols
-        d’un equip, sumes com a mínim 2 punts per aquell equip. Si l’equip marca
-        més de 2 gols, els punts són iguals al nombre de gols. Per tant, encertar
-        que un equip marca 0, 1 o 2 gols dona 2 punts; encertar que en marca 3
-        dona 3 punts; encertar-ne 4 dona 4 punts, etc. Un resultat exacte de
-        0–0, per exemple, dona 4 punts pels gols —2 per cada equip— més els
-        3 punts de l’empat.
-      </p>
+      <h3>${escapeHtml(c.groupStandingsTitle)}</h3>
+      <p>${escapeHtml(c.groupStandingsIntro)}</p>
 
-      <h3>Classificació dels grups</h3>
+      ${tableHtml([c.correct, c.points], twoColRows(c.groupRows))}
 
-      <p>
-        Quan un grup ja té tots els partits acabats, també es puntua la
-        classificació final del grup. Per cada una de les quatre posicions del
-        grup es poden sumar:
-      </p>
+      <p>${escapeHtml(c.groupStandingsAfter)}</p>
 
-      ${tableHtml(['Encert', 'Punts'], groupRows)}
+      <h3>${escapeHtml(c.knockoutTitle)}</h3>
+      <p>${escapeHtml(c.knockoutIntro)}</p>
+      <p>${escapeHtml(c.knockoutAfter)}</p>
 
-      <p>
-        Això vol dir que no només compta haver encertat qui queda primer, segon,
-        tercer o quart, sinó també haver previst bé els números de la classificació:
-        els gols a favor i els punts totals. En cas d’empat entre equips, es farà
-        servir l’ordre final que quedi fixat a la taula oficial de la porra,
-        aplicant els desempats corresponents quan calgui.
-      </p>
+      ${tableHtml([c.round, c.teamReaches, c.correctPosition], threeColRows(c.knockoutRows))}
 
-      <h3>Eliminatòries</h3>
+      <p>${escapeHtml(c.knockoutGoalsIntro)}</p>
 
-      <p>
-        A les eliminatòries es puntua tant haver previst quins equips arriben a
-        cada ronda com haver-los col·locat correctament dins del quadre.
-      </p>
+      ${tableHtml([c.round, c.goalsPerTeam], twoColRows(c.knockoutGoalRows))}
 
-      <p>
-        Per cada equip que arriba a una ronda, es donen punts encara que el
-        participant l’hagi posat en una altra part del quadre. A més, hi ha punts
-        extra si l’equip apareix exactament a la mateixa posició del quadre
-        pronosticada.
-      </p>
+      <p>${escapeHtml(c.penaltiesText)}</p>
 
-      ${tableHtml(['Ronda', 'Equip que arriba a la ronda', 'Equip en la posició correcta'], knockoutRows)}
+      <h3>${escapeHtml(c.finalTitle)}</h3>
+      <p>${escapeHtml(c.finalIntro)}</p>
 
-      <p>
-        També es poden sumar punts pels gols dels partits eliminatoris. Igual
-        que a la fase de grups, els gols es compten per equip, no només pel
-        resultat global. Als setzens de final, encertar els gols d’un equip dona
-        com a mínim 4 punts, o més si l’equip marca més de 4 gols. A vuitens,
-        quarts i semifinals, els punts per encertar els gols d’un equip són fixos:
-      </p>
+      ${tableHtml([c.correct, c.points], twoColRows(c.finalRows))}
 
-      ${tableHtml(['Ronda', 'Punts per encertar els gols d’un equip'], knockoutGoalRows)}
-
-      <p>
-        Els gols de les tandes de penals no compten com a gols del partit per a
-        aquests punts; els penals només serveixen per determinar quin equip passa
-        ronda quan el partit acaba empatat.
-      </p>
-
-      <h3>Final, tercer lloc i premis finals</h3>
-
-      <p>
-        A la part final del torneig hi ha punts específics pels equips que
-        arriben a la final, pel partit pel tercer lloc, pel resultat d’aquests
-        partits i per les posicions finals.
-      </p>
-
-      ${tableHtml(['Encert', 'Punts'], finalRows)}
-
-      <p>
-        Així, la porra no premia només encertar el campió. També compta haver
-        previst bé el recorregut dels equips, la composició de les rondes finals,
-        els resultats dels partits importants i el màxim golejador.
-      </p>
+      <p>${escapeHtml(c.finalAfter)}</p>
     </div>
   `;
 }
-
+  
   function refreshDynamicLabels() {
     const summary = document.getElementById('porraLinksSummaryV2');
     if (summary) {
