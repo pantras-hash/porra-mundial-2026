@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-G-2";
+window.PORRA_ULTIM_PARTIT = "G-L-2";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -57,13 +57,13 @@ window.PORRA_RESULTATS = {
     "G-J-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 19 },
     // 2026-06-17
     // Austria vs Jordan
-    "G-J-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 20 },
+    "G-J-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 20, status: "TIMED" },
     // Portugal vs DR Congo
-    "G-K-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21 },
+    "G-K-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21, status: "TIMED" },
     // England vs Croatia
-    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22 },
+    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22, status: "TIMED" },
     // Ghana vs Panama
-    "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23 },
+    "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23, status: "TIMED" },
     // Uzbekistan vs Colombia
     "G-K-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 24 },
     // 2026-06-18
