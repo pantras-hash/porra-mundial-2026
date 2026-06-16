@@ -132,28 +132,17 @@
     sf: { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
   };
 
+
 const SUBGROUP_LEADERBOARDS = {
- familyAntras: {
-  players: [
-    ['Pol A', 'Pol Antras', 'Pol Antràs'],
-    ['Daniela'],
-    ['Martina']
-  ],
-  expectedNames: ['Pol A', 'Daniela', 'Martina']
-},
+  familyAntras: {
+    players: ['Pol A', 'Daniela', 'Martina']
+  },
 
   economistasEmporrados: {
-    players: [
-     ['Pol A', 'Pol Antras', 'Pol Antràs'],
-      ['Eduardo M'],
-      ['Enrique M'],
-      ['Manu GS'],
-      ['Juanma']
-    ],
-    expectedNames: ['Pol A', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
+    players: ['Pol A', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
   }
 };
-
+  
   let applyingPredictionEnhancement = false;
 
   function rangeKeys(a, b) {
@@ -700,53 +689,89 @@ function normalizeParticipantName(value) {
     .trim();
 }
 
-function compactInitialKey(value) {
+function participantIdentifierParts(value) {
   const normalized = normalizeParticipantName(value);
   const parts = normalized.split(' ').filter(Boolean);
 
-  if (!parts.length) return '';
+  if (!parts.length) {
+    return { first: '', initials: '' };
+  }
 
-  const first = parts[0];
-  const rest = parts.slice(1);
-
-  if (!rest.length) return first;
-
-  const initials = rest.map(part => part[0]).join('');
-  return `${first} ${initials}`.trim();
+  return {
+    first: parts[0],
+    initials: parts.slice(1).map(part => part[0]).join('')
+  };
 }
 
-function nameMatchesAlias(fullName, alias) {
-  const full = normalizeParticipantName(fullName);
-  const shortFull = compactInitialKey(fullName);
+function participantIdentifierMatches(fullName, wantedIdentifier) {
+  const full = participantIdentifierParts(fullName);
+  const wanted = participantIdentifierParts(wantedIdentifier);
 
-  const wanted = normalizeParticipantName(alias);
-  const shortWanted = compactInitialKey(alias);
+  if (!full.first || !wanted.first) return false;
 
-  return (
-    full === wanted ||
-    shortFull === wanted ||
-    full === shortWanted ||
-    shortFull === shortWanted ||
+  const firstMatches =
+    full.first === wanted.first ||
+    full.first.startsWith(wanted.first) ||
+    wanted.first.startsWith(full.first);
 
-    // Allows "Pol A" to match "Pol Antras" or "Pol Antras Pujolas"
-    full.startsWith(wanted + ' ') ||
-    shortFull.startsWith(wanted) ||
+  if (!firstMatches) return false;
 
-    // Allows "Pol Antras" to match "Pol Antras Pujolas"
-    full.startsWith(shortWanted + ' ') ||
-    shortFull.startsWith(shortWanted)
-  );
+  // If the wanted identifier is just a first name, e.g. "Daniela" or "Juanma",
+  // matching the first name is enough.
+  if (!wanted.initials) return true;
+
+  // If the wanted identifier has initials, e.g. "Pol A" or "Manu GS",
+  // the participant's initials must begin with those initials.
+  // This allows "Pol A" to match "Pol Antràs Pujolàs",
+  // and "Manu GS" to match a two-surname name.
+  return full.initials.startsWith(wanted.initials);
+}
+
+function subgroupDisplayNameForPlayer(fullName, subgroup) {
+  return subgroup.players.find(wantedIdentifier =>
+    participantIdentifierMatches(fullName, wantedIdentifier)
+  ) || null;
 }
 
 function renderSubgroupLeaderboard(type) {
   const subgroup = SUBGROUP_LEADERBOARDS[type];
   if (!subgroup) return '';
 
-  function isWantedPlayer(name) {
-    return subgroup.players.some(aliasGroup =>
-      aliasGroup.some(alias => nameMatchesAlias(name, alias))
-    );
+  const baseRows = computeLeaderboard(false);
+  const liveRows = computeLeaderboard(true);
+  const prevById = new Map(baseRows.map(row => [row.id, row]));
+
+  const rows = liveRows
+    .map(row => {
+      const subgroupName = subgroupDisplayNameForPlayer(row.name, subgroup);
+      return subgroupName ? { row, subgroupName } : null;
+    })
+    .filter(Boolean)
+    .map(({ row, subgroupName }) => {
+      const move = movementLabel(row, prevById);
+
+      return `
+        <tr>
+          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
+          <td title="${escapeHtml(row.name)}">${escapeHtml(subgroupName)}</td>
+          <td class="num">${escapeHtml(row.total)}</td>
+        </tr>
+      `;
+    });
+
+  if (!rows.length) {
+    return `
+      <p class="porra-muted-v2">
+        No s’ha trobat cap participant per a aquest subgrup.
+        Comprova que els identificadors coincideixin amb:
+        ${escapeHtml(subgroup.players.join(', '))}.
+      </p>
+    `;
   }
+
+  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
+}
 
   const baseRows = computeLeaderboard(false);
   const liveRows = computeLeaderboard(true);
