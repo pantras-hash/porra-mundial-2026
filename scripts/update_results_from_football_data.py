@@ -502,6 +502,7 @@ def main() -> int:
                 f"{api.home_tla or '?'} {api.home_score}-{api.away_score} "
                 f"{api.away_tla or '?'} status={api.status}"
             )
+         if not replacements:  
         print("No result changes to commit.")
         return 0
 
