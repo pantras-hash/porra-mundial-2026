@@ -688,6 +688,7 @@ return '';
     });
     return `<p class="porra-muted-v2">${escapeHtml(t('liveHint'))}</p>${tableHtml([t('pos'), t('move'), t('player'), t('points')], rows)}`;
   }
+  
 function normalizeParticipantName(value) {
   return String(value || '')
     .normalize('NFD')
@@ -739,37 +740,6 @@ function renderSubgroupLeaderboard(type) {
     );
   }
 
-  const baseRows = computeLeaderboard(false);
-  const liveRows = computeLeaderboard(true);
-  const prevById = new Map(baseRows.map(row => [row.id, row]));
-
-  const rows = liveRows
-    .filter(row => isWantedPlayer(row.name))
-    .map(row => {
-      const move = movementLabel(row, prevById);
-
-      return `
-        <tr>
-          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
-          <td>${escapeHtml(display(row.name))}</td>
-          <td class="num">${escapeHtml(row.total)}</td>
-        </tr>
-      `;
-    });
-
-  if (!rows.length) {
-    return `
-      <p class="porra-muted-v2">
-        No s’ha trobat cap participant per a aquest subgrup.
-        Comprova que els noms al full coincideixin amb:
-        ${escapeHtml(subgroup.expectedNames.join(', '))}.
-      </p>
-    `;
-  }
-
-  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
-}
   const baseRows = computeLeaderboard(false);
   const liveRows = computeLeaderboard(true);
   const prevById = new Map(baseRows.map(row => [row.id, row]));
