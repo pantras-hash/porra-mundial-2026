@@ -113,7 +113,10 @@ TEAM_ALIASES: Dict[str, str] = {
 }
 
 # Some providers use HAI, while the site has used HTI. Treat them as the same team.
-TLA_ALIASES = {"HAI": "HTI"}
+TLA_ALIASES = {
+    "HAI": "HTI",
+    "IRN": "IRI",
+}
 
 FINAL_STATUSES = {"FINISHED", "AWARDED"}
 LIVE_STATUSES = {"IN_PLAY", "PAUSED"}
@@ -461,17 +464,27 @@ def main() -> int:
             # Date/order fallback: only use when the local entry has seed-like teams or unknown teams.
             if not local.date:
                 continue
-            date_items = [m for m in date_index.get(local.date, []) if m.raw.get("id") not in used_api_ids]
-            local_same_day = sorted([lm for lm in locals_ if lm.date == local.date], key=lambda lm: lm.sort_order or 9999)
-            try:
-                same_day_index = [lm.id for lm in local_same_day].index(local.id)
-            except ValueError:
-                same_day_index = -1
-            if 0 <= same_day_index < len(date_items):
-                api = date_items[same_day_index]
-                used_api_ids.add(api.raw.get("id"))
-            else:
-                continue
+           date_items_all = sorted(date_index.get(local.date, []), key=lambda x: x.utc_date)
+local_same_day = sorted(
+    [lm for lm in locals_ if lm.date == local.date],
+    key=lambda lm: lm.sort_order or 9999
+)
+
+try:
+    same_day_index = [lm.id for lm in local_same_day].index(local.id)
+except ValueError:
+    same_day_index = -1
+
+if 0 <= same_day_index < len(date_items_all):
+    candidate = date_items_all[same_day_index]
+
+    if candidate.raw.get("id") not in used_api_ids:
+        api = candidate
+        used_api_ids.add(candidate.raw.get("id"))
+    else:
+        continue
+else:
+    continue
 
         new_entry, changed = update_entry(local, api)
         if changed:
