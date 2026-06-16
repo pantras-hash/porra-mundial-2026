@@ -132,23 +132,23 @@
     sf: { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
   };
 
-  const SUBGROUP_LEADERBOARDS = {
+const SUBGROUP_LEADERBOARDS = {
   familyAntras: {
     players: [
-      ['pol a', 'pol a.', 'pol antras', 'pol antràs'],
-      ['daniela'],
-      ['martina']
+      ['Pol A'],
+      ['Daniela'],
+      ['Martina']
     ],
     expectedNames: ['Pol A', 'Daniela', 'Martina']
   },
 
   economistasEmporrados: {
     players: [
-      ['pol a', 'pol a.', 'pol antras', 'pol antràs'],
-      ['eduardo m', 'eduardo m.'],
-      ['enrique m', 'enrique m.'],
-      ['manu gs', 'manu g s', 'manu g.s.', 'manu g. s.'],
-      ['juanma']
+      ['Pol A'],
+      ['Eduardo M'],
+      ['Enrique M'],
+      ['Manu GS'],
+      ['Juanma']
     ],
     expectedNames: ['Pol A', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
   }
