@@ -458,43 +458,50 @@ def main() -> int:
 
     for local in locals_:
         api = match_by_teams(local, api_matches)
+
         if api:
             used_api_ids.add(api.raw.get("id"))
         else:
-            # Date/order fallback: only use when the local entry has seed-like teams or unknown teams.
+            # Date/order fallback: use the full same-day API list, not the already-filtered leftover list.
             if not local.date:
                 continue
-           date_items_all = sorted(date_index.get(local.date, []), key=lambda x: x.utc_date)
-local_same_day = sorted(
-    [lm for lm in locals_ if lm.date == local.date],
-    key=lambda lm: lm.sort_order or 9999
-)
 
-try:
-    same_day_index = [lm.id for lm in local_same_day].index(local.id)
-except ValueError:
-    same_day_index = -1
+            date_items_all = sorted(
+                date_index.get(local.date, []),
+                key=lambda x: x.utc_date,
+            )
 
-if 0 <= same_day_index < len(date_items_all):
-    candidate = date_items_all[same_day_index]
+            local_same_day = sorted(
+                [lm for lm in locals_ if lm.date == local.date],
+                key=lambda lm: lm.sort_order or 9999,
+            )
 
-    if candidate.raw.get("id") not in used_api_ids:
-        api = candidate
-        used_api_ids.add(candidate.raw.get("id"))
-    else:
-        continue
-else:
-    continue
+            try:
+                same_day_index = [lm.id for lm in local_same_day].index(local.id)
+            except ValueError:
+                same_day_index = -1
+
+            if 0 <= same_day_index < len(date_items_all):
+                candidate = date_items_all[same_day_index]
+
+                if candidate.raw.get("id") not in used_api_ids:
+                    api = candidate
+                    used_api_ids.add(candidate.raw.get("id"))
+                else:
+                    continue
+            else:
+                continue
 
         new_entry, changed = update_entry(local, api)
+
         if changed:
             replacements[(local.start, local.end)] = new_entry
             changed_ids.append(local.id)
             print(
-                f"Will update {local.id}: {api.home_tla or '?'} {api.home_score}-{api.away_score} {api.away_tla or '?'} status={api.status}"
+                f"Will update {local.id}: "
+                f"{api.home_tla or '?'} {api.home_score}-{api.away_score} "
+                f"{api.away_tla or '?'} status={api.status}"
             )
-
-    if not replacements:
         print("No result changes to commit.")
         return 0
 
