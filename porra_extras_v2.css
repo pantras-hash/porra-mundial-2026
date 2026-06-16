@@ -244,3 +244,26 @@ body.porra-modal-v2-open {
     padding: 6px 7px;
   }
 }
+
+.legend--below-toolbar {
+  justify-content: flex-start;
+  gap: 8px;
+  margin: -2px 0 14px;
+  padding: 0 2px;
+}
+
+.legend--below-toolbar .move {
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .legend--below-toolbar {
+    margin: 8px 0 12px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .legend--below-toolbar .move {
+    min-width: max-content !important;
+  }
+}
