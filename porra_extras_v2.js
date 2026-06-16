@@ -716,14 +716,8 @@ function participantIdentifierMatches(fullName, wantedIdentifier) {
 
   if (!firstMatches) return false;
 
-  // If the wanted identifier is just a first name, e.g. "Daniela" or "Juanma",
-  // matching the first name is enough.
   if (!wanted.initials) return true;
 
-  // If the wanted identifier has initials, e.g. "Pol A" or "Manu GS",
-  // the participant's initials must begin with those initials.
-  // This allows "Pol A" to match "Pol Antràs Pujolàs",
-  // and "Manu GS" to match a two-surname name.
   return full.initials.startsWith(wanted.initials);
 }
 
@@ -773,38 +767,6 @@ function renderSubgroupLeaderboard(type) {
   return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
 }
 
-  const baseRows = computeLeaderboard(false);
-  const liveRows = computeLeaderboard(true);
-  const prevById = new Map(baseRows.map(row => [row.id, row]));
-
-  const rows = liveRows
-    .filter(row => isWantedPlayer(row.name))
-    .map(row => {
-      const move = movementLabel(row, prevById);
-
-      return `
-        <tr>
-          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
-          <td>${escapeHtml(display(row.name))}</td>
-          <td class="num">${escapeHtml(row.total)}</td>
-        </tr>
-      `;
-    });
-
-  if (!rows.length) {
-    return `
-      <p class="porra-muted-v2">
-        No s’ha trobat cap participant per a aquest subgrup.
-        Comprova que els noms al full coincideixin amb:
-        ${escapeHtml(subgroup.expectedNames.join(', '))}.
-      </p>
-    `;
-  }
-
-  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
-}
-  
 function renderPointsSystem() {
   const copy = {
     ca: {
