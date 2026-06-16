@@ -12,6 +12,8 @@
       topScorers: 'Pichichis',
       liveLeaderboard: 'Classificació en directe',
       pointsSystem: 'Com funciona el sistema de punts',
+      familyAntras: 'Familia Antras',
+      economistasEmporrados: 'Economistas emporrados',
       close: 'Tancar',
       date: 'Data',
       stage: 'Fase',
@@ -49,6 +51,8 @@
       topScorers: 'Pichichis',
       liveLeaderboard: 'Clasificación en directo',
       pointsSystem: 'Cómo funciona el sistema de puntos',
+      familyAntras: 'Familia Antras',
+      economistasEmporrados: 'Economistas emporrados',
       close: 'Cerrar',
       date: 'Fecha',
       stage: 'Fase',
@@ -86,6 +90,8 @@
       topScorers: 'Top scorers',
       liveLeaderboard: 'Live leaderboard',
       pointsSystem: 'How the points system works',
+      familyAntras: 'Familia Antras',
+      economistasEmporrados: 'Economistas emporrados',
       close: 'Close',
       date: 'Date',
       stage: 'Stage',
@@ -125,6 +131,28 @@
     qf: { keys: rangeKeys(97, 100), team: 'E4', pos: 'E4P', goals: 'G4', teamPts: 8, posPts: 8, goalPts: 6 },
     sf: { keys: rangeKeys(101, 102), team: 'ES', pos: 'ESP', goals: 'GS', teamPts: 10, posPts: 10, goalPts: 8 }
   };
+
+  const SUBGROUP_LEADERBOARDS = {
+  familyAntras: {
+    players: [
+      ['pol a', 'pol a.', 'pol antras', 'pol antràs'],
+      ['daniela'],
+      ['martina']
+    ],
+    expectedNames: ['Pol A', 'Daniela', 'Martina']
+  },
+
+  economistasEmporrados: {
+    players: [
+      ['pol a', 'pol a.', 'pol antras', 'pol antràs'],
+      ['eduardo m', 'eduardo m.'],
+      ['enrique m', 'enrique m.'],
+      ['manu gs', 'manu g s', 'manu g.s.', 'manu g. s.'],
+      ['juanma']
+    ],
+    expectedNames: ['Pol A', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
+  }
+};
 
   let applyingPredictionEnhancement = false;
 
@@ -281,13 +309,20 @@
     }
 
     const tableCard = document.querySelector('.table-card');
-    if (tableCard && !document.getElementById('porraLinksPointsV2')) {
-      const wrap = document.createElement('div');
-      wrap.id = 'porraLinksPointsV2';
-      wrap.className = 'porra-links-v2 porra-links-v2--points';
-      wrap.innerHTML = `<button type="button" data-porra-modal-v2="pointsSystem">${escapeHtml(t('pointsSystem'))}</button>`;
-      tableCard.insertAdjacentElement('afterend', wrap);
-    }
+if (tableCard && !document.getElementById('porraLinksPointsV2')) {
+  const wrap = document.createElement('div');
+  wrap.id = 'porraLinksPointsV2';
+  wrap.className = 'porra-links-v2 porra-links-v2--points';
+
+  wrap.innerHTML = [
+    `<button type="button" data-porra-modal-v2="pointsSystem">${escapeHtml(t('pointsSystem'))}</button>`,
+    ...Object.keys(SUBGROUP_LEADERBOARDS).map(type =>
+      `<button type="button" data-porra-modal-v2="${escapeHtml(type)}">${escapeHtml(t(type))}</button>`
+    )
+  ].join('');
+
+  tableCard.insertAdjacentElement('afterend', wrap);
+}
 
     if (!document.getElementById('porraModalV2')) {
       const modal = document.createElement('div');
@@ -341,7 +376,8 @@
     if (type === 'topScorers') return renderTopScorers();
     if (type === 'liveLeaderboard') return renderLiveLeaderboard();
     if (type === 'pointsSystem') return renderPointsSystem();
-    return '';
+    if (SUBGROUP_LEADERBOARDS[type]) return renderSubgroupLeaderboard(type);
+return '';
   }
 
   function renderFinishedResults() {
@@ -652,7 +688,61 @@
     });
     return `<p class="porra-muted-v2">${escapeHtml(t('liveHint'))}</p>${tableHtml([t('pos'), t('move'), t('player'), t('points')], rows)}`;
   }
+function normalizeParticipantName(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/\./g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
+function renderSubgroupLeaderboard(type) {
+  const subgroup = SUBGROUP_LEADERBOARDS[type];
+  if (!subgroup) return '';
+
+  const normalizedGroups = subgroup.players.map(group =>
+    group.map(name => normalizeParticipantName(name))
+  );
+
+  function isWantedPlayer(name) {
+    const normalized = normalizeParticipantName(name);
+    return normalizedGroups.some(group => group.includes(normalized));
+  }
+
+  const baseRows = computeLeaderboard(false);
+  const liveRows = computeLeaderboard(true);
+  const prevById = new Map(baseRows.map(row => [row.id, row]));
+
+  const rows = liveRows
+    .filter(row => isWantedPlayer(row.name))
+    .map(row => {
+      const move = movementLabel(row, prevById);
+
+      return `
+        <tr>
+          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
+          <td>${escapeHtml(display(row.name))}</td>
+          <td class="num">${escapeHtml(row.total)}</td>
+        </tr>
+      `;
+    });
+
+  if (!rows.length) {
+    return `
+      <p class="porra-muted-v2">
+        No s’ha trobat cap participant per a aquest subgrup.
+        Comprova que els noms al full coincideixin amb:
+        ${escapeHtml(subgroup.expectedNames.join(', '))}.
+      </p>
+    `;
+  }
+
+  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
+}
+  
 function renderPointsSystem() {
   const copy = {
     ca: {
@@ -886,8 +976,14 @@ function renderPointsSystem() {
       const types = ['finishedResults', 'groupStandings', 'liveLeaderboard'];
       summary.querySelectorAll('[data-porra-modal-v2]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
     }
-    const points = document.querySelector('#porraLinksPointsV2 [data-porra-modal-v2]');
-    if (points) points.textContent = t('pointsSystem');
+   const pointsWrap = document.getElementById('porraLinksPointsV2');
+
+if (pointsWrap) {
+  pointsWrap.querySelectorAll('[data-porra-modal-v2]').forEach(btn => {
+    const type = btn.getAttribute('data-porra-modal-v2');
+    btn.textContent = t(type);
+  });
+}
   }
 
     const DRAWER_I18N_V2 = {
