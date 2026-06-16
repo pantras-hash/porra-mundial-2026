@@ -135,11 +135,11 @@
 
 const SUBGROUP_LEADERBOARDS = {
   familyAntras: {
-    players: ['Pol A', 'Daniela', 'Martina']
+    players: ['Pol', 'Daniela', 'Martina']
   },
 
   economistasEmporrados: {
-    players: ['Pol A', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
+    players: ['Pol', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
   }
 };
   
