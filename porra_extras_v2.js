@@ -12,7 +12,7 @@
       topScorers: 'Pichichis',
       liveLeaderboard: 'Classificació en directe',
       pointsSystem: 'Com funciona el sistema de punts',
-      familyAntras: 'Familia Antras',
+      
       economistasEmporrados: 'Economistas emporrados',
       close: 'Tancar',
       date: 'Data',
@@ -51,7 +51,7 @@
       topScorers: 'Pichichis',
       liveLeaderboard: 'Clasificación en directo',
       pointsSystem: 'Cómo funciona el sistema de puntos',
-      familyAntras: 'Familia Antras',
+     
       economistasEmporrados: 'Economistas emporrados',
       close: 'Cerrar',
       date: 'Fecha',
@@ -90,7 +90,7 @@
       topScorers: 'Top scorers',
       liveLeaderboard: 'Live leaderboard',
       pointsSystem: 'How the points system works',
-      familyAntras: 'Familia Antras',
+     
       economistasEmporrados: 'Economistas emporrados',
       close: 'Close',
       date: 'Date',
@@ -134,9 +134,7 @@
 
 
 const SUBGROUP_LEADERBOARDS = {
-  familyAntras: {
-    players: ['Pol', 'Daniela', 'Martina']
-  },
+  
 
   economistasEmporrados: {
     players: ['Pol', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
