@@ -52,7 +52,7 @@ window.PORRA_RESULTATS = {
     // France vs Senegal
     "G-I-1": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 17, status: "FINISHED" },
     // Iraq vs Norway
-    "G-I-2": { homeScore: 1, awayScore: 2, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 18, status: "IN_PLAY" },
+    "G-I-2": { homeScore: 1, awayScore: 2, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 18, status: "PAUSED" },
     // Argentina vs Algeria
     "G-J-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 19 },
     // 2026-06-17
