@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-K-1";
+window.PORRA_ULTIM_PARTIT = "G-L-1";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -61,7 +61,7 @@ window.PORRA_RESULTATS = {
     // Portugal vs DR Congo
     "G-K-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21, status: "FINISHED" },
     // England vs Croatia
-    "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22, status: "TIMED" },
+    "G-L-1": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22, status: "IN_PLAY" },
     // Ghana vs Panama
     "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23, status: "TIMED" },
     // Uzbekistan vs Colombia
