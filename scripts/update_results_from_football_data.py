@@ -45,6 +45,7 @@ TEAM_ALIASES: Dict[str, str] = {
     # Group B
     "canada": "CAN",
     "bosnia-herzegovina": "BIH",
+    "bosnia herzegovina": "BIH",
     "bosnia and herzegovina": "BIH",
     "bosnia": "BIH",
     "qatar": "QAT",
@@ -116,6 +117,8 @@ TEAM_ALIASES: Dict[str, str] = {
 TLA_ALIASES = {
     "HAI": "HTI",
     "IRN": "IRI",
+    "ALG": "DZA",
+    "URY": "URU",
 }
 
 FINAL_STATUSES = {"FINISHED", "AWARDED"}
@@ -186,8 +189,20 @@ def canonical_tla(value: Optional[str]) -> Optional[str]:
 def tla_from_name(name: Optional[str]) -> Optional[str]:
     if not name:
         return None
+
     norm = normalize_text(name)
-    return TEAM_ALIASES.get(norm)
+
+    # Direct lookup.
+    if norm in TEAM_ALIASES:
+        return TEAM_ALIASES[norm]
+
+    # Robust lookup: compare normalized alias keys too, so
+    # "Bosnia-Herzegovina" and "Bosnia Herzegovina" match.
+    for alias, tla in TEAM_ALIASES.items():
+        if normalize_text(alias) == norm:
+            return tla
+
+    return None
 
 
 def parse_fields(body: str) -> Dict[str, str]:
@@ -298,7 +313,19 @@ def api_score(match: Dict[str, Any]) -> Tuple[Optional[int], Optional[int], Opti
 
 def parse_api_match(raw: Dict[str, Any]) -> ApiMatch:
     utc_date = raw.get("utcDate") or ""
-    date = utc_date[:10] if len(utc_date) >= 10 else ""
+    date = ""
+    if utc_date:
+        try:
+            from zoneinfo import ZoneInfo
+            date = (
+                dt.datetime
+                .fromisoformat(utc_date.replace("Z", "+00:00"))
+                .astimezone(ZoneInfo("America/New_York"))
+                .date()
+                .isoformat()
+            )
+        except Exception:
+            date = utc_date[:10] if len(utc_date) >= 10 else ""
     status = str(raw.get("status") or "").upper()
     home_team = raw.get("homeTeam") or {}
     away_team = raw.get("awayTeam") or {}
