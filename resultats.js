@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-I-2";
+window.PORRA_ULTIM_PARTIT = "G-B-3";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -65,14 +65,14 @@ window.PORRA_RESULTATS = {
     // Ghana vs Panama
     "G-L-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 23, status: "TIMED" },
     // Uzbekistan vs Colombia
-    "G-K-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 24 },
+    "G-K-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 24, status: "TIMED" },
     // 2026-06-18
     // Czechia vs South Africa
-    "G-A-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 25 },
+    "G-A-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 25, status: "TIMED" },
     // Switzerland vs Bosnia-Herzegovina
     "G-B-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 26 },
     // Canada vs Qatar
-    "G-B-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 27 },
+    "G-B-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 27, status: "TIMED" },
     // Mexico vs Korea Republic
     "G-A-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 28 },
     // 2026-06-19
