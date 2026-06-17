@@ -20,7 +20,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 5.788,
       "top3Pct": 12.752,
       "avgPoints": 736.6,
-      "maxPoints": 1030
+      "maxPoints": 1030,
+      "aliases": [
+        "Bernat G"
+      ]
     },
     {
       "player": "Joan",
@@ -38,7 +41,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 5.273,
       "top3Pct": 15.905,
       "avgPoints": 767.2,
-      "maxPoints": 1127
+      "maxPoints": 1127,
+      "aliases": [
+        "Oriol O"
+      ]
     },
     {
       "player": "Pablo",
@@ -56,7 +62,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 4.17,
       "top3Pct": 12.205,
       "avgPoints": 753.6,
-      "maxPoints": 1080
+      "maxPoints": 1080,
+      "aliases": [
+        "Xavi F"
+      ]
     },
     {
       "player": "Aleix",
@@ -74,7 +83,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 3.07,
       "top3Pct": 6.905,
       "avgPoints": 707.9,
-      "maxPoints": 1043
+      "maxPoints": 1043,
+      "aliases": [
+        "Eduard V"
+      ]
     },
     {
       "player": "Chús",
@@ -101,7 +113,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 2.398,
       "top3Pct": 7.11,
       "avgPoints": 745.3,
-      "maxPoints": 1084
+      "maxPoints": 1084,
+      "aliases": [
+        "Oscar C"
+      ]
     },
     {
       "player": "Marc",
@@ -128,7 +143,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 2.245,
       "top3Pct": 7.205,
       "avgPoints": 744.3,
-      "maxPoints": 1101
+      "maxPoints": 1101,
+      "aliases": [
+        "Rafa B"
+      ]
     },
     {
       "player": "Martina",
@@ -146,7 +164,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 2.06,
       "top3Pct": 5.827,
       "avgPoints": 738.2,
-      "maxPoints": 1069
+      "maxPoints": 1069,
+      "aliases": [
+        "Jaume C"
+      ]
     },
     {
       "player": "Miquel",
@@ -164,7 +185,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.933,
       "top3Pct": 6.735,
       "avgPoints": 743.1,
-      "maxPoints": 1136
+      "maxPoints": 1136,
+      "aliases": [
+        "Sergi S"
+      ]
     },
     {
       "player": "Andy",
@@ -182,7 +206,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.865,
       "top3Pct": 4.742,
       "avgPoints": 706.5,
-      "maxPoints": 1162
+      "maxPoints": 1162,
+      "aliases": [
+        "Toni C"
+      ]
     },
     {
       "player": "Albert Cosí",
@@ -191,7 +218,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.76,
       "top3Pct": 4.463,
       "avgPoints": 684.1,
-      "maxPoints": 1004
+      "maxPoints": 1004,
+      "aliases": [
+        "Albert C"
+      ]
     },
     {
       "player": "Biel",
@@ -204,12 +234,16 @@ window.PORRA_ODDS_LATEST = {
     },
     {
       "player": "Jordi Reig",
-      "displayName": "Jordi R.",
+      "displayName": "Jordi Re.",
       "rank": 23,
       "winPct": 1.635,
       "top3Pct": 4.807,
       "avgPoints": 725.5,
-      "maxPoints": 1144
+      "maxPoints": 1144,
+      "aliases": [
+        "Jordi Re",
+        "Jordi Re."
+      ]
     },
     {
       "player": "Bernat Orriols",
@@ -218,7 +252,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.63,
       "top3Pct": 4.965,
       "avgPoints": 718.1,
-      "maxPoints": 1035
+      "maxPoints": 1035,
+      "aliases": [
+        "Bernat O"
+      ]
     },
     {
       "player": "Pau",
@@ -236,7 +273,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.425,
       "top3Pct": 4.433,
       "avgPoints": 734.2,
-      "maxPoints": 1056
+      "maxPoints": 1056,
+      "aliases": [
+        "Oriol V"
+      ]
     },
     {
       "player": "Carlo",
@@ -263,7 +303,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.31,
       "top3Pct": 4.03,
       "avgPoints": 710.9,
-      "maxPoints": 1120
+      "maxPoints": 1120,
+      "aliases": [
+        "Guille A"
+      ]
     },
     {
       "player": "Juanma",
@@ -281,7 +324,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.265,
       "top3Pct": 3.8,
       "avgPoints": 716.6,
-      "maxPoints": 1033
+      "maxPoints": 1033,
+      "aliases": [
+        "Jaume M"
+      ]
     },
     {
       "player": "Pol",
@@ -294,12 +340,16 @@ window.PORRA_ODDS_LATEST = {
     },
     {
       "player": "Jordi Raventós",
-      "displayName": "Jordi R.",
+      "displayName": "Jordi Ra.",
       "rank": 33,
       "winPct": 1.18,
       "top3Pct": 3.587,
       "avgPoints": 701.2,
-      "maxPoints": 1019
+      "maxPoints": 1019,
+      "aliases": [
+        "Jordi Ra",
+        "Jordi Ra."
+      ]
     },
     {
       "player": "Antonio",
@@ -326,7 +376,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.1,
       "top3Pct": 3.593,
       "avgPoints": 718.4,
-      "maxPoints": 1075
+      "maxPoints": 1075,
+      "aliases": [
+        "Manu G"
+      ]
     },
     {
       "player": "Nick",
@@ -344,7 +397,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 1.01,
       "top3Pct": 2.803,
       "avgPoints": 682.3,
-      "maxPoints": 992
+      "maxPoints": 992,
+      "aliases": [
+        "Enrique M"
+      ]
     },
     {
       "player": "Michael",
@@ -362,7 +418,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.893,
       "top3Pct": 3.19,
       "avgPoints": 718.5,
-      "maxPoints": 1100
+      "maxPoints": 1100,
+      "aliases": [
+        "Eduardo M"
+      ]
     },
     {
       "player": "Bernat Raventós",
@@ -371,7 +430,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.873,
       "top3Pct": 2.987,
       "avgPoints": 720.4,
-      "maxPoints": 1106
+      "maxPoints": 1106,
+      "aliases": [
+        "Bernat R"
+      ]
     },
     {
       "player": "Teo",
@@ -389,7 +451,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.775,
       "top3Pct": 3.062,
       "avgPoints": 728.5,
-      "maxPoints": 1065
+      "maxPoints": 1065,
+      "aliases": [
+        "Jordi O"
+      ]
     },
     {
       "player": "Daniela",
@@ -407,7 +472,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.665,
       "top3Pct": 2.448,
       "avgPoints": 710.6,
-      "maxPoints": 1101
+      "maxPoints": 1101,
+      "aliases": [
+        "Rafa A"
+      ]
     },
     {
       "player": "Manel Pujol",
@@ -416,7 +484,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.66,
       "top3Pct": 1.93,
       "avgPoints": 671.7,
-      "maxPoints": 1058
+      "maxPoints": 1058,
+      "aliases": [
+        "Manel P"
+      ]
     },
     {
       "player": "Rubi",
@@ -434,7 +505,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.62,
       "top3Pct": 1.845,
       "avgPoints": 686.3,
-      "maxPoints": 1048
+      "maxPoints": 1048,
+      "aliases": [
+        "Albert B"
+      ]
     },
     {
       "player": "Oscar Bordas",
@@ -443,7 +517,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.535,
       "top3Pct": 2.59,
       "avgPoints": 735.2,
-      "maxPoints": 1122
+      "maxPoints": 1122,
+      "aliases": [
+        "Oscar B"
+      ]
     },
     {
       "player": "Albert Esteve",
@@ -452,7 +529,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.52,
       "top3Pct": 1.428,
       "avgPoints": 685.8,
-      "maxPoints": 1004
+      "maxPoints": 1004,
+      "aliases": [
+        "Albert E"
+      ]
     },
     {
       "player": "Pere",
@@ -479,7 +559,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.335,
       "top3Pct": 0.845,
       "avgPoints": 661.1,
-      "maxPoints": 1017
+      "maxPoints": 1017,
+      "aliases": [
+        "Jordi C"
+      ]
     },
     {
       "player": "Isra",
@@ -506,7 +589,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.03,
       "top3Pct": 0.2,
       "avgPoints": 681.1,
-      "maxPoints": 1014
+      "maxPoints": 1014,
+      "aliases": [
+        "Guillem O"
+      ]
     },
     {
       "player": "David Muñoz",
@@ -515,7 +601,10 @@ window.PORRA_ODDS_LATEST = {
       "winPct": 0.01,
       "top3Pct": 0.22,
       "avgPoints": 694.0,
-      "maxPoints": 1038
+      "maxPoints": 1038,
+      "aliases": [
+        "David M"
+      ]
     }
   ]
 };

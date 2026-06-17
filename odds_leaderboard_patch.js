@@ -21,6 +21,11 @@
       if (!row) return;
       if (row.player) map.set(normalizeName(row.player), row);
       if (row.displayName) map.set(normalizeName(row.displayName), row);
+      if (Array.isArray(row.aliases)) {
+        row.aliases.forEach(alias => {
+          map.set(normalizeName(alias), row);
+        });
+      }
     });
     return map;
   }
