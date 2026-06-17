@@ -54,7 +54,7 @@ window.PORRA_RESULTATS = {
     // Iraq vs Norway
     "G-I-2": { homeScore: 1, awayScore: 4, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 18, status: "FINISHED" },
     // Argentina vs Algeria
-    "G-J-1": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 19 },
+    "G-J-1": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-16", sortOrder: 19, status: "IN_PLAY" },
     // 2026-06-17
     // Austria vs Jordan
     "G-J-2": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 20, status: "TIMED" },
