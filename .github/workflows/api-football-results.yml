@@ -20,22 +20,11 @@ jobs:
           echo "Triggered by: ${{ github.event_name }}"
           echo "Current UTC time: $(date -u)"
 
-      - name: Check update window
+      - name: Allow updates at any time
         id: window
         run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
-          from datetime import datetime, time
-          from zoneinfo import ZoneInfo
-
-          now = datetime.now(ZoneInfo("America/New_York"))
-          start = time(11, 55)
-          end = time(2, 5)
-
-          allowed = now.time() >= start or now.time() <= end
-
-          print(f"now_et={now.isoformat()}")
-          print(f"should_run={'true' if allowed else 'false'}")
-          PY
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+          echo "Update window disabled: this workflow may run at any time."
 
       - name: Explain skipped update
         if: steps.window.outputs.should_run != 'true'
