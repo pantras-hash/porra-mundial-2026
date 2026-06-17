@@ -68,6 +68,7 @@ TEAM_ALIASES: Dict[str, str] = {
     "curacao": "CUW",
     "curaçao": "CUW",
     "cote divoire": "CIV",
+    "cote d ivoire": "CIV",
     "cote d'ivoire": "CIV",
     "côte d'ivoire": "CIV",
     "ivory coast": "CIV",
@@ -86,7 +87,9 @@ TEAM_ALIASES: Dict[str, str] = {
     # Group H
     "spain": "ESP",
     "cabo verde": "CPV",
+    "cabo verde islands": "CPV",
     "cape verde": "CPV",
+    "cape verde islands": "CPV",
     "saudi arabia": "KSA",
     "uruguay": "URU",
     # Group I
@@ -104,6 +107,7 @@ TEAM_ALIASES: Dict[str, str] = {
     "dr congo": "COD",
     "congo dr": "COD",
     "democratic republic of the congo": "COD",
+    "d r congo": "COD",
     "uzbekistan": "UZB",
     "colombia": "COL",
     # Group L
@@ -119,6 +123,14 @@ TLA_ALIASES = {
     "IRN": "IRI",
     "ALG": "DZA",
     "URY": "URU",
+    "CVE": "CPV",
+    "SAU": "KSA",
+    "DRC": "COD",
+    "CUR": "CUW",
+    "ZAF": "RSA",
+    "DEU": "GER",
+    "NLD": "NED",
+    "CHE": "SUI",
 }
 
 FINAL_STATUSES = {"FINISHED", "AWARDED"}
@@ -500,6 +512,16 @@ def main() -> int:
         if api:
             used_api_ids.add(api.raw.get("id"))
         else:
+            # Never use date/order fallback for group-stage matches.
+            # Group-stage fixtures have real team names, so a failed exact match
+            # should not risk copying another same-day score into the wrong fixture.
+            if local.id.startswith("G-"):
+                print(
+                    f"Warning: no exact API match for {local.id} "
+                    f"({local.home_name} vs {local.away_name}); skipping fallback."
+                )
+                continue
+
             # Date/order fallback: use the full same-day API list, not the already-filtered leftover list.
             if not local.date:
                 continue
