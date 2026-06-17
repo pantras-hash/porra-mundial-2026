@@ -59,7 +59,7 @@ window.PORRA_RESULTATS = {
     // Austria vs Jordan
     "G-J-2": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 20, status: "FINISHED" },
     // Portugal vs DR Congo
-    "G-K-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21, status: "IN_PLAY" },
+    "G-K-1": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 21, status: "FINISHED" },
     // England vs Croatia
     "G-L-1": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 22, status: "TIMED" },
     // Ghana vs Panama
