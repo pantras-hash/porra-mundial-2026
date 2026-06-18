@@ -430,6 +430,13 @@ def update_entry(local: LocalMatch, api: ApiMatch) -> Tuple[str, bool]:
         "penHome": parse_int_value(fields.get("penHome")),
         "penAway": parse_int_value(fields.get("penAway")),
         "status": parse_str_value(fields.get("status")),
+      # Never downgrade a locally final result to live/scheduled if the API is stale.
+if current.get("status") in FINAL_STATUSES and api.status not in FINAL_STATUSES:
+    print(
+        f"Skipping stale downgrade for {local.id}: "
+        f"local status={current.get('status')} api status={api.status}"
+    )
+    return local.full_text, False
     }
 
     # Only set scores when the API has a score. Status can update without score.
