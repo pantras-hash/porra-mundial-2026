@@ -19,7 +19,8 @@
         current: 'Actual',
         points: 'punts',
         after: 'després de',
-        source: 'Historial reconstruït a partir dels resultats oficials actuals.'
+        latest: 'Últim partit',
+        updated: 'Actualitzat'
       },
       es: {
         title: 'Evolución de la posición',
@@ -28,7 +29,8 @@
         current: 'Actual',
         points: 'puntos',
         after: 'después de',
-        source: 'Historial reconstruido a partir de los resultados oficiales actuales.'
+        latest: 'Último partido',
+        updated: 'Actualizado'
       },
       en: {
         title: 'Position over time',
@@ -37,7 +39,8 @@
         current: 'Current',
         points: 'points',
         after: 'after',
-        source: 'History reconstructed from the current official results.'
+        latest: 'Latest match',
+        updated: 'Updated'
       }
     };
     const lang = currentLang();
@@ -50,183 +53,257 @@
     style.id = STYLE_ID;
     style.textContent = `
       .ranking-history-card {
-        border: 1px solid rgba(148, 163, 184, 0.28);
-        border-radius: 16px;
-        padding: 14px 14px 10px;
+        border: 1px solid rgba(148, 163, 184, 0.30);
+        border-radius: 18px;
+        padding: 14px 14px 12px;
         margin: 0 0 18px;
-        background: rgba(15, 23, 42, 0.035);
+        background:
+          radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 34%),
+          linear-gradient(180deg, rgba(255,255,255,0.78), rgba(248,250,252,0.54));
+        box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+      }
+      .ranking-history-topline {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
       }
       .ranking-history-card h3 {
-        margin: 0 0 8px;
+        margin: 0;
         font-size: 1rem;
+        letter-spacing: -0.01em;
       }
-      .ranking-history-meta {
+      .ranking-history-badges {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 14px;
-        margin: 8px 0 0;
-        font-size: 0.82rem;
-        opacity: 0.8;
+        gap: 6px;
+        justify-content: flex-end;
+      }
+      .ranking-history-badge {
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        border-radius: 999px;
+        padding: 3px 8px;
+        font-size: 0.74rem;
+        font-weight: 700;
+        background: rgba(255,255,255,0.76);
+        color: rgb(51, 65, 85);
+        white-space: nowrap;
+      }
+      .ranking-history-badge strong {
+        color: rgb(15, 23, 42);
+      }
+      .ranking-history-chart-wrap {
+        overflow: hidden;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.60);
+        border: 1px solid rgba(226, 232, 240, 0.95);
       }
       .ranking-history-chart {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
         display: block;
+        width: 100%;
+        height: auto;
+      }
+      .ranking-history-axis {
+        fill: rgb(100, 116, 139);
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .ranking-history-grid {
+        stroke: rgba(148, 163, 184, 0.30);
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+      }
+      .ranking-history-area {
+        fill: rgba(37, 99, 235, 0.08);
       }
       .ranking-history-line {
         fill: none;
-        stroke: currentColor;
-        stroke-width: 2.5;
-        vector-effect: non-scaling-stroke;
+        stroke: rgb(37, 99, 235);
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: drop-shadow(0 2px 3px rgba(37, 99, 235, 0.22));
       }
       .ranking-history-dot {
-        fill: currentColor;
+        fill: white;
+        stroke: rgb(37, 99, 235);
+        stroke-width: 2.2;
       }
-      .ranking-history-axis,
-      .ranking-history-grid {
-        stroke: currentColor;
-        opacity: 0.18;
-        stroke-width: 1;
-        vector-effect: non-scaling-stroke;
+      .ranking-history-dot-end {
+        fill: rgb(37, 99, 235);
+        stroke: white;
+        stroke-width: 2.8;
       }
-      .ranking-history-label {
-        fill: currentColor;
-        opacity: 0.72;
-        font-size: 11px;
+      .ranking-history-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 8px;
+        color: rgb(100, 116, 139);
+        font-size: 0.76rem;
+        line-height: 1.35;
       }
-      .ranking-history-empty {
-        margin: 0;
-        opacity: 0.75;
-        font-size: 0.9rem;
+      .ranking-history-footer span:last-child {
+        text-align: right;
+      }
+      @media (max-width: 560px) {
+        .ranking-history-topline,
+        .ranking-history-footer {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .ranking-history-badges {
+          justify-content: flex-start;
+        }
+        .ranking-history-footer span:last-child {
+          text-align: left;
+        }
       }
     `;
     document.head.appendChild(style);
   }
 
-  function escapeHtml(value) {
-    return String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
+  function normalizeName(value) {
+    return String(value || '').trim().replace(/\s+/g, ' ');
   }
 
-  function playerName() {
+  function candidates(raw) {
+    const s = normalizeName(raw);
+    const out = [s];
+    if (s.endsWith('.')) out.push(s.slice(0, -1));
+    else out.push(`${s}.`);
+    return Array.from(new Set(out));
+  }
+
+  function drawerPlayerName() {
     const title = document.getElementById('drawerTitle');
-    return title ? title.textContent.trim() : '';
+    return title ? normalizeName(title.textContent) : '';
   }
 
-  function seriesFor(name) {
+  function seriesFor(playerName) {
     const d = data();
-    if (!d || !d.seriesByPlayer) return [];
-    return d.seriesByPlayer[name] || [];
+    if (!d || !d.seriesByPlayer || !playerName) return null;
+    for (const c of candidates(playerName)) {
+      if (d.seriesByPlayer[c]) return d.seriesByPlayer[c];
+    }
+    return null;
   }
 
-  function snapshotFor(x) {
-    const d = data();
-    return d && Array.isArray(d.snapshots) ? d.snapshots[x] : null;
+  function pathFrom(points) {
+    return points.map((p, i) => `${i ? 'L' : 'M'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
   }
 
-  function makeChart(series) {
-    const width = 620, height = 170;
-    const left = 34, right = 12, top = 16, bottom = 28;
-    const innerW = width - left - right;
-    const innerH = height - top - bottom;
-    const maxRank = Math.max(1, ...series.map(p => p.rank));
-    const maxX = Math.max(1, series.length - 1);
-
-    function sx(x) { return left + (x / maxX) * innerW; }
-    function sy(rank) {
-      if (maxRank <= 1) return top + innerH / 2;
-      return top + ((rank - 1) / (maxRank - 1)) * innerH;
+  function render(series, history) {
+    if (!series || series.length < 2) {
+      return `<div class="ranking-history-card" id="${CARD_ID}"><h3>${text('title')}</h3><p>${text('empty')}</p></div>`;
     }
 
-    const points = series.map(p => `${sx(p.x).toFixed(1)},${sy(p.rank).toFixed(1)}`).join(' ');
-    const last = series[series.length - 1];
-    const best = Math.min(...series.map(p => p.rank));
-    const firstSnap = snapshotFor(series[0].x);
-    const lastSnap = snapshotFor(last.x);
+    const width = 620, height = 178;
+    const left = 38, right = 16, top = 16, bottom = 28;
+    const plotW = width - left - right;
+    const plotH = height - top - bottom;
+    const maxRank = Math.max(10, ...series.map(d => d.rank));
 
-    const dots = series.map((p, i) => {
-      const snap = snapshotFor(p.x);
-      const show = i === 0 || i === series.length - 1 || p.rank === best;
-      if (!show) return '';
-      const title = snap ? `${snap.label}: #${p.rank}, ${p.points} ${text('points')}` : `#${p.rank}`;
-      return `<circle class="ranking-history-dot" cx="${sx(p.x).toFixed(1)}" cy="${sy(p.rank).toFixed(1)}" r="3.5"><title>${escapeHtml(title)}</title></circle>`;
+    const x = i => left + (series.length === 1 ? plotW : (i / (series.length - 1)) * plotW);
+    const y = rank => top + ((rank - 1) / (maxRank - 1 || 1)) * plotH;
+
+    const pts = series.map((d, i) => ({
+      x: x(i), y: y(d.rank), rank: d.rank, points: d.points, matchId: d.matchId
+    }));
+    const line = pathFrom(pts);
+    const area = `${line} L ${pts[pts.length - 1].x.toFixed(1)} ${(top + plotH).toFixed(1)} L ${pts[0].x.toFixed(1)} ${(top + plotH).toFixed(1)} Z`;
+
+    const current = series[series.length - 1];
+    const best = Math.min(...series.map(d => d.rank));
+    const latest = history.snapshots && history.snapshots.length ? history.snapshots[history.snapshots.length - 1] : null;
+    const latestLabel = latest ? latest.label : (history.lastMatchLabel || '');
+
+    const gridRanks = Array.from(new Set([1, 10, 20, 30, 40, 50, maxRank].filter(r => r >= 1 && r <= maxRank))).sort((a,b) => a-b);
+    const grid = gridRanks.map(r => {
+      const yy = y(r);
+      return `
+        <line class="ranking-history-grid" x1="${left}" y1="${yy.toFixed(1)}" x2="${width - right}" y2="${yy.toFixed(1)}"></line>
+        <text class="ranking-history-axis" x="${left - 8}" y="${(yy + 3).toFixed(1)}" text-anchor="end">#${r}</text>
+      `;
+    }).join('');
+
+    const dots = pts.map((p, i) => {
+      const snap = history.snapshots && history.snapshots[i] ? history.snapshots[i] : {};
+      const cls = i === pts.length - 1 ? 'ranking-history-dot-end' : 'ranking-history-dot';
+      const rr = i === pts.length - 1 ? 5.2 : 3.6;
+      const tip = `${text('after')} ${snap.label || p.matchId}: #${p.rank}, ${p.points} ${text('points')}`;
+      return `<circle class="${cls}" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${rr}"><title>${tip}</title></circle>`;
     }).join('');
 
     return `
-      <svg class="ranking-history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(text('title'))}">
-        <line class="ranking-history-axis" x1="${left}" y1="${top}" x2="${left}" y2="${top + innerH}" />
-        <line class="ranking-history-axis" x1="${left}" y1="${top + innerH}" x2="${left + innerW}" y2="${top + innerH}" />
-        <line class="ranking-history-grid" x1="${left}" y1="${top}" x2="${left + innerW}" y2="${top}" />
-        <text class="ranking-history-label" x="${left - 8}" y="${top + 4}" text-anchor="end">#1</text>
-        <text class="ranking-history-label" x="${left - 8}" y="${top + innerH + 4}" text-anchor="end">#${maxRank}</text>
-        <polyline class="ranking-history-line" points="${points}"></polyline>
-        ${dots}
-        <text class="ranking-history-label" x="${left}" y="${height - 8}" text-anchor="start">${escapeHtml(firstSnap ? firstSnap.matchId : '')}</text>
-        <text class="ranking-history-label" x="${left + innerW}" y="${height - 8}" text-anchor="end">${escapeHtml(lastSnap ? lastSnap.matchId : '')}</text>
-      </svg>
-      <div class="ranking-history-meta">
-        <span>${escapeHtml(text('best'))}: #${best}</span>
-        <span>${escapeHtml(text('current'))}: #${last.rank}</span>
-        <span>${escapeHtml(last.points)} ${escapeHtml(text('points'))}</span>
-        ${lastSnap ? `<span>${escapeHtml(text('after'))} ${escapeHtml(lastSnap.matchId)}</span>` : ''}
+      <div class="ranking-history-card" id="${CARD_ID}">
+        <div class="ranking-history-topline">
+          <h3>${text('title')}</h3>
+          <div class="ranking-history-badges">
+            <span class="ranking-history-badge">${text('current')} <strong>#${current.rank}</strong></span>
+            <span class="ranking-history-badge">${text('best')} <strong>#${best}</strong></span>
+          </div>
+        </div>
+        <div class="ranking-history-chart-wrap">
+          <svg class="ranking-history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${text('title')}">
+            ${grid}
+            <text class="ranking-history-axis" x="${left}" y="${height - 8}" text-anchor="start">M1</text>
+            <text class="ranking-history-axis" x="${width - right}" y="${height - 8}" text-anchor="end">M${series.length}</text>
+            <path class="ranking-history-area" d="${area}"></path>
+            <path class="ranking-history-line" d="${line}"></path>
+            ${dots}
+          </svg>
+        </div>
+        <div class="ranking-history-footer">
+          <span>${text('latest')}: ${latestLabel || '—'}</span>
+          <span>${text('updated')}: ${history.label || history.generatedAt || '—'}</span>
+        </div>
       </div>
     `;
   }
 
-  function renderCard() {
+  function update() {
     ensureStyle();
     const content = document.getElementById('drawerContent');
     if (!content) return;
 
-    const name = playerName();
-    if (!name) return;
+    const player = drawerPlayerName();
+    const history = data();
+    const series = seriesFor(player);
+    if (!history || !series) return;
 
-    const old = document.getElementById(CARD_ID);
-    if (old) old.remove();
-
-    const series = seriesFor(name);
-    if (!series || series.length < 2) return;
-
-    const card = document.createElement('section');
-    card.id = CARD_ID;
-    card.className = 'ranking-history-card';
-    card.innerHTML = `
-      <h3>${escapeHtml(text('title'))}</h3>
-      ${series.length >= 2 ? makeChart(series) : `<p class="ranking-history-empty">${escapeHtml(text('empty'))}</p>`}
-      <div class="ranking-history-meta"><span>${escapeHtml(text('source'))}</span></div>
-    `;
-    content.insertBefore(card, content.firstChild);
+    const html = render(series, history);
+    const existing = document.getElementById(CARD_ID);
+    if (existing) existing.outerHTML = html;
+    else content.insertAdjacentHTML('afterbegin', html);
   }
 
   let scheduled = false;
-  function scheduleRender() {
+  function schedule() {
     if (scheduled) return;
     scheduled = true;
-    window.requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
       scheduled = false;
-      renderCard();
+      update();
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', scheduleRender);
-  } else {
-    scheduleRender();
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', schedule);
+  else schedule();
 
-  const drawerContent = () => document.getElementById('drawerContent');
-  const observer = new MutationObserver(scheduleRender);
-  const start = () => {
-    const node = drawerContent();
-    if (node) observer.observe(node, { childList: true, subtree: false });
-  };
-  start();
-  document.addEventListener('click', event => {
-    if (event.target && event.target.closest && event.target.closest('tr[data-player]')) {
-      setTimeout(scheduleRender, 0);
-    }
+  const observer = new MutationObserver(schedule);
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+    attributes: true,
+    attributeFilter: ['aria-hidden', 'class']
+  });
+
+  document.addEventListener('click', function (event) {
     if (event.target && event.target.closest && event.target.closest('[data-lang]')) {
-      setTimeout(scheduleRender, 0);
+      setTimeout(schedule, 0);
     }
   });
 })();

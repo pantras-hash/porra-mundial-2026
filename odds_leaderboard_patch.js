@@ -21,11 +21,6 @@
       if (!row) return;
       if (row.player) map.set(normalizeName(row.player), row);
       if (row.displayName) map.set(normalizeName(row.displayName), row);
-      if (Array.isArray(row.aliases)) {
-        row.aliases.forEach(alias => {
-          map.set(normalizeName(alias), row);
-        });
-      }
     });
     return map;
   }
@@ -79,6 +74,7 @@
       #leaderboardTable .odds-header {
         text-align: right;
         white-space: nowrap;
+        padding-left: 0.75rem;
       }
 
       #leaderboardTable .odds-cell {
@@ -87,6 +83,7 @@
 
       .odds-note {
         margin: 0.75rem 0 0;
+        padding-left: 0.75rem;
         font-size: 0.85rem;
         opacity: 0.75;
       }
