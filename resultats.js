@@ -68,7 +68,7 @@ window.PORRA_RESULTATS = {
     "G-K-2": { homeScore: 1, awayScore: 3, penHome: null, penAway: null, date: "2026-06-17", sortOrder: 24, status: "FINISHED" },
     // 2026-06-18
     // Czechia vs South Africa
-    "G-A-4": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 25, status: "IN_PLAY" },
+    "G-A-4": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 25, status: "PAUSED" },
     // Switzerland vs Bosnia-Herzegovina
     "G-B-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 26, status: "TIMED" },
     // Canada vs Qatar
