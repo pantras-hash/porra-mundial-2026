@@ -1,89 +1,59 @@
 window.PORRA_ODDS_LATEST = {
-  "generatedAt": "2026-06-17T18:30:00Z",
-  "label": "17 Jun 2026, 10,000 simulations",
+  "generatedAt": "2026-06-18T10:15:24Z",
+  "label": "18 Jun 2026, 100,000 simulations",
   "model": "Monte Carlo amb ranking FIFA, gols limitats a 7, sense bonus de Pichichi",
-  "simulations": 10000,
+  "simulations": 100000,
   "players": [
     {
-      "player": "JoanRa",
-      "displayName": "JoanRa",
+      "player": "Joan",
+      "displayName": "Joan",
       "rank": 1,
-      "winPct": 6.585,
-      "top3Pct": 15.255,
-      "avgPoints": 750.0,
-      "maxPoints": 1114
+      "winPct": 6.604,
+      "top3Pct": 15.555,
+      "avgPoints": 737.8,
+      "maxPoints": 1098
     },
     {
       "player": "Bernat Garreta",
       "displayName": "Bernat G.",
       "rank": 2,
-      "winPct": 5.788,
-      "top3Pct": 12.752,
-      "avgPoints": 736.6,
-      "maxPoints": 1030,
+      "winPct": 5.525,
+      "top3Pct": 12.116,
+      "avgPoints": 723.7,
+      "maxPoints": 1104,
       "aliases": [
         "Bernat G"
       ]
     },
     {
-      "player": "Joan",
-      "displayName": "Joan",
+      "player": "JoanRa",
+      "displayName": "JoanRa",
       "rank": 3,
-      "winPct": 5.663,
-      "top3Pct": 13.955,
-      "avgPoints": 746.1,
-      "maxPoints": 1076
+      "winPct": 5.41,
+      "top3Pct": 13.303,
+      "avgPoints": 733.3,
+      "maxPoints": 1137
     },
     {
       "player": "Oriol Oltra",
       "displayName": "Oriol O.",
       "rank": 4,
-      "winPct": 5.273,
-      "top3Pct": 15.905,
-      "avgPoints": 767.2,
-      "maxPoints": 1127,
+      "winPct": 4.94,
+      "top3Pct": 14.509,
+      "avgPoints": 751.4,
+      "maxPoints": 1119,
       "aliases": [
         "Oriol O"
       ]
     },
     {
-      "player": "Pablo",
-      "displayName": "Pablo",
-      "rank": 5,
-      "winPct": 5.038,
-      "top3Pct": 14.652,
-      "avgPoints": 765.3,
-      "maxPoints": 1118
-    },
-    {
-      "player": "Xavi Ferrés",
-      "displayName": "Xavi F.",
-      "rank": 6,
-      "winPct": 4.17,
-      "top3Pct": 12.205,
-      "avgPoints": 753.6,
-      "maxPoints": 1080,
-      "aliases": [
-        "Xavi F"
-      ]
-    },
-    {
-      "player": "Aleix",
-      "displayName": "Aleix",
-      "rank": 7,
-      "winPct": 3.218,
-      "top3Pct": 10.705,
-      "avgPoints": 761.7,
-      "maxPoints": 1139
-    },
-    {
       "player": "Eduard Verdaguer",
       "displayName": "Eduard V.",
-      "rank": 8,
-      "winPct": 3.07,
-      "top3Pct": 6.905,
-      "avgPoints": 707.9,
-      "maxPoints": 1043,
+      "rank": 5,
+      "winPct": 3.867,
+      "top3Pct": 8.876,
+      "avgPoints": 704.8,
+      "maxPoints": 1093,
       "aliases": [
         "Eduard V"
       ]
@@ -91,520 +61,550 @@ window.PORRA_ODDS_LATEST = {
     {
       "player": "Chús",
       "displayName": "Chús",
+      "rank": 6,
+      "winPct": 3.743,
+      "top3Pct": 10.215,
+      "avgPoints": 730.1,
+      "maxPoints": 1140
+    },
+    {
+      "player": "Marc",
+      "displayName": "Marc",
+      "rank": 7,
+      "winPct": 3.69,
+      "top3Pct": 12.202,
+      "avgPoints": 750.5,
+      "maxPoints": 1139
+    },
+    {
+      "player": "Biel",
+      "displayName": "Biel",
+      "rank": 8,
+      "winPct": 3.376,
+      "top3Pct": 7.45,
+      "avgPoints": 706.6,
+      "maxPoints": 1069
+    },
+    {
+      "player": "Aleix",
+      "displayName": "Aleix",
       "rank": 9,
-      "winPct": 3.055,
-      "top3Pct": 8.053,
-      "avgPoints": 736.5,
-      "maxPoints": 1075
+      "winPct": 3.098,
+      "top3Pct": 10.485,
+      "avgPoints": 747.5,
+      "maxPoints": 1113
     },
     {
       "player": "Nicolau",
       "displayName": "Nicolau",
       "rank": 10,
-      "winPct": 2.76,
-      "top3Pct": 6.87,
-      "avgPoints": 715.9,
-      "maxPoints": 1083
-    },
-    {
-      "player": "Oscar Campanyà",
-      "displayName": "Oscar C.",
-      "rank": 11,
-      "winPct": 2.398,
-      "top3Pct": 7.11,
-      "avgPoints": 745.3,
-      "maxPoints": 1084,
-      "aliases": [
-        "Oscar C"
-      ]
-    },
-    {
-      "player": "Marc",
-      "displayName": "Marc",
-      "rank": 12,
-      "winPct": 2.39,
-      "top3Pct": 8.827,
-      "avgPoints": 754.6,
-      "maxPoints": 1149
-    },
-    {
-      "player": "Emiliano",
-      "displayName": "Emiliano",
-      "rank": 13,
-      "winPct": 2.26,
-      "top3Pct": 7.835,
-      "avgPoints": 750.3,
-      "maxPoints": 1093
-    },
-    {
-      "player": "Rafa Bravo",
-      "displayName": "Rafa B.",
-      "rank": 14,
-      "winPct": 2.245,
-      "top3Pct": 7.205,
-      "avgPoints": 744.3,
-      "maxPoints": 1101,
-      "aliases": [
-        "Rafa B"
-      ]
-    },
-    {
-      "player": "Martina",
-      "displayName": "Martina",
-      "rank": 15,
-      "winPct": 2.163,
-      "top3Pct": 8.432,
-      "avgPoints": 750.8,
-      "maxPoints": 1080
+      "winPct": 2.953,
+      "top3Pct": 7.279,
+      "avgPoints": 705.7,
+      "maxPoints": 1117
     },
     {
       "player": "Jaume Cardús",
       "displayName": "Jaume C.",
-      "rank": 16,
-      "winPct": 2.06,
-      "top3Pct": 5.827,
-      "avgPoints": 738.2,
-      "maxPoints": 1069,
+      "rank": 11,
+      "winPct": 2.892,
+      "top3Pct": 8.182,
+      "avgPoints": 733.2,
+      "maxPoints": 1100,
       "aliases": [
         "Jaume C"
       ]
     },
     {
-      "player": "Miquel",
-      "displayName": "Miquel",
-      "rank": 17,
-      "winPct": 1.99,
-      "top3Pct": 6.427,
-      "avgPoints": 745.8,
-      "maxPoints": 1082
+      "player": "Pablo",
+      "displayName": "Pablo",
+      "rank": 12,
+      "winPct": 2.792,
+      "top3Pct": 9.23,
+      "avgPoints": 739.2,
+      "maxPoints": 1083
     },
     {
-      "player": "Sergi Sanromà",
-      "displayName": "Sergi S.",
-      "rank": 18,
-      "winPct": 1.933,
-      "top3Pct": 6.735,
-      "avgPoints": 743.1,
-      "maxPoints": 1136,
+      "player": "Enrique Moral",
+      "displayName": "Enrique M.",
+      "rank": 13,
+      "winPct": 2.783,
+      "top3Pct": 7.365,
+      "avgPoints": 700.0,
+      "maxPoints": 1174,
       "aliases": [
-        "Sergi S"
+        "Enrique M"
+      ]
+    },
+    {
+      "player": "Rafa Bravo",
+      "displayName": "Rafa B.",
+      "rank": 14,
+      "winPct": 2.753,
+      "top3Pct": 8.446,
+      "avgPoints": 733.2,
+      "maxPoints": 1163,
+      "aliases": [
+        "Rafa B"
       ]
     },
     {
       "player": "Andy",
       "displayName": "Andy",
-      "rank": 19,
-      "winPct": 1.915,
-      "top3Pct": 6.007,
-      "avgPoints": 737.9,
-      "maxPoints": 1038
+      "rank": 15,
+      "winPct": 2.405,
+      "top3Pct": 6.122,
+      "avgPoints": 722.8,
+      "maxPoints": 1090
     },
     {
-      "player": "Toni Campanyà",
-      "displayName": "Toni C.",
-      "rank": 20,
-      "winPct": 1.865,
-      "top3Pct": 4.742,
-      "avgPoints": 706.5,
-      "maxPoints": 1162,
+      "player": "Oscar Campanyà",
+      "displayName": "Oscar C.",
+      "rank": 16,
+      "winPct": 1.901,
+      "top3Pct": 6.607,
+      "avgPoints": 729.2,
+      "maxPoints": 1108,
       "aliases": [
-        "Toni C"
+        "Oscar C"
       ]
     },
     {
       "player": "Albert Cosí",
       "displayName": "Albert C.",
-      "rank": 21,
-      "winPct": 1.76,
-      "top3Pct": 4.463,
-      "avgPoints": 684.1,
-      "maxPoints": 1004,
+      "rank": 17,
+      "winPct": 1.82,
+      "top3Pct": 4.438,
+      "avgPoints": 670.8,
+      "maxPoints": 1045,
       "aliases": [
         "Albert C"
       ]
     },
     {
-      "player": "Biel",
-      "displayName": "Biel",
-      "rank": 22,
-      "winPct": 1.755,
-      "top3Pct": 3.99,
-      "avgPoints": 701.0,
-      "maxPoints": 1043
+      "player": "Emiliano",
+      "displayName": "Emiliano",
+      "rank": 18,
+      "winPct": 1.82,
+      "top3Pct": 6.901,
+      "avgPoints": 733.5,
+      "maxPoints": 1114
     },
     {
-      "player": "Jordi Reig",
-      "displayName": "Jordi Re.",
-      "rank": 23,
-      "winPct": 1.635,
-      "top3Pct": 4.807,
-      "avgPoints": 725.5,
-      "maxPoints": 1144,
-      "aliases": [
-        "Jordi Re",
-        "Jordi Re."
-      ]
+      "player": "Martina",
+      "displayName": "Martina",
+      "rank": 19,
+      "winPct": 1.812,
+      "top3Pct": 6.802,
+      "avgPoints": 733.3,
+      "maxPoints": 1106
     },
     {
       "player": "Bernat Orriols",
       "displayName": "Bernat O.",
-      "rank": 24,
-      "winPct": 1.63,
-      "top3Pct": 4.965,
-      "avgPoints": 718.1,
-      "maxPoints": 1035,
+      "rank": 20,
+      "winPct": 1.788,
+      "top3Pct": 4.823,
+      "avgPoints": 702.8,
+      "maxPoints": 1121,
       "aliases": [
         "Bernat O"
       ]
     },
     {
-      "player": "Pau",
-      "displayName": "Pau",
-      "rank": 25,
-      "winPct": 1.483,
-      "top3Pct": 5.243,
-      "avgPoints": 741.8,
-      "maxPoints": 1128
+      "player": "Sergi Sanromà",
+      "displayName": "Sergi S.",
+      "rank": 21,
+      "winPct": 1.686,
+      "top3Pct": 6.048,
+      "avgPoints": 728.3,
+      "maxPoints": 1113,
+      "aliases": [
+        "Sergi S"
+      ]
     },
     {
-      "player": "Oriol Valls",
-      "displayName": "Oriol V.",
-      "rank": 26,
-      "winPct": 1.425,
-      "top3Pct": 4.433,
-      "avgPoints": 734.2,
-      "maxPoints": 1056,
-      "aliases": [
-        "Oriol V"
-      ]
+      "player": "Pol",
+      "displayName": "Pol",
+      "rank": 22,
+      "winPct": 1.681,
+      "top3Pct": 6.357,
+      "avgPoints": 734.4,
+      "maxPoints": 1118
+    },
+    {
+      "player": "Paco",
+      "displayName": "Paco",
+      "rank": 23,
+      "winPct": 1.589,
+      "top3Pct": 4.525,
+      "avgPoints": 696.7,
+      "maxPoints": 1132
+    },
+    {
+      "player": "Miquel",
+      "displayName": "Miquel",
+      "rank": 24,
+      "winPct": 1.569,
+      "top3Pct": 5.595,
+      "avgPoints": 727.4,
+      "maxPoints": 1134
     },
     {
       "player": "Carlo",
       "displayName": "Carlo",
-      "rank": 27,
-      "winPct": 1.315,
-      "top3Pct": 4.06,
-      "avgPoints": 718.1,
-      "maxPoints": 1068
+      "rank": 25,
+      "winPct": 1.568,
+      "top3Pct": 4.629,
+      "avgPoints": 707.7,
+      "maxPoints": 1077
     },
     {
-      "player": "Gerard",
-      "displayName": "Gerard",
-      "rank": 28,
-      "winPct": 1.31,
-      "top3Pct": 4.333,
-      "avgPoints": 727.1,
-      "maxPoints": 1057
-    },
-    {
-      "player": "Guille Amor",
-      "displayName": "Guille A.",
-      "rank": 29,
-      "winPct": 1.31,
-      "top3Pct": 4.03,
-      "avgPoints": 710.9,
-      "maxPoints": 1120,
+      "player": "Jordi Ollé",
+      "displayName": "Jordi O.",
+      "rank": 26,
+      "winPct": 1.52,
+      "top3Pct": 5.417,
+      "avgPoints": 725.1,
+      "maxPoints": 1146,
       "aliases": [
-        "Guille A"
+        "Jordi O"
+      ]
+    },
+    {
+      "player": "Rafa Angulo",
+      "displayName": "Rafa A.",
+      "rank": 27,
+      "winPct": 1.5,
+      "top3Pct": 5.075,
+      "avgPoints": 715.2,
+      "maxPoints": 1128,
+      "aliases": [
+        "Rafa A"
+      ]
+    },
+    {
+      "player": "Xavi Ferrés",
+      "displayName": "Xavi F.",
+      "rank": 28,
+      "winPct": 1.493,
+      "top3Pct": 4.979,
+      "avgPoints": 716.8,
+      "maxPoints": 1117,
+      "aliases": [
+        "Xavi F"
+      ]
+    },
+    {
+      "player": "Toni Campanyà",
+      "displayName": "Toni C.",
+      "rank": 29,
+      "winPct": 1.468,
+      "top3Pct": 3.721,
+      "avgPoints": 685.4,
+      "maxPoints": 1041,
+      "aliases": [
+        "Toni C"
       ]
     },
     {
       "player": "Juanma",
       "displayName": "Juanma",
       "rank": 30,
-      "winPct": 1.27,
-      "top3Pct": 4.878,
-      "avgPoints": 742.3,
-      "maxPoints": 1114
+      "winPct": 1.391,
+      "top3Pct": 5.666,
+      "avgPoints": 732.7,
+      "maxPoints": 1115
     },
     {
-      "player": "Jaume Martí",
-      "displayName": "Jaume M.",
+      "player": "Guille Amor",
+      "displayName": "Guille A.",
       "rank": 31,
-      "winPct": 1.265,
-      "top3Pct": 3.8,
-      "avgPoints": 716.6,
-      "maxPoints": 1033,
+      "winPct": 1.388,
+      "top3Pct": 3.954,
+      "avgPoints": 698.6,
+      "maxPoints": 1076,
       "aliases": [
-        "Jaume M"
+        "Guille A"
       ]
     },
     {
-      "player": "Pol",
-      "displayName": "Pol",
+      "player": "Michael",
+      "displayName": "Michael",
       "rank": 32,
-      "winPct": 1.23,
-      "top3Pct": 5.873,
-      "avgPoints": 747.1,
-      "maxPoints": 1110
+      "winPct": 1.351,
+      "top3Pct": 5.066,
+      "avgPoints": 723.5,
+      "maxPoints": 1142
     },
     {
-      "player": "Jordi Raventós",
-      "displayName": "Jordi Ra.",
+      "player": "Bernat Raventós",
+      "displayName": "Bernat R.",
       "rank": 33,
-      "winPct": 1.18,
-      "top3Pct": 3.587,
-      "avgPoints": 701.2,
-      "maxPoints": 1019,
+      "winPct": 1.315,
+      "top3Pct": 4.451,
+      "avgPoints": 714.6,
+      "maxPoints": 1096,
       "aliases": [
-        "Jordi Ra",
-        "Jordi Ra."
+        "Bernat R"
       ]
     },
     {
       "player": "Antonio",
       "displayName": "Antonio",
       "rank": 34,
-      "winPct": 1.16,
-      "top3Pct": 3.612,
-      "avgPoints": 696.0,
-      "maxPoints": 1073
+      "winPct": 1.268,
+      "top3Pct": 3.935,
+      "avgPoints": 686.9,
+      "maxPoints": 1090
     },
     {
-      "player": "Paco",
-      "displayName": "Paco",
+      "player": "Pau",
+      "displayName": "Pau",
       "rank": 35,
-      "winPct": 1.13,
-      "top3Pct": 3.745,
-      "avgPoints": 701.7,
-      "maxPoints": 1083
+      "winPct": 1.204,
+      "top3Pct": 4.392,
+      "avgPoints": 724.5,
+      "maxPoints": 1134
     },
     {
-      "player": "Manu GS",
-      "displayName": "Manu G.",
+      "player": "Jaume Martí",
+      "displayName": "Jaume M.",
       "rank": 36,
-      "winPct": 1.1,
-      "top3Pct": 3.593,
-      "avgPoints": 718.4,
-      "maxPoints": 1075,
+      "winPct": 1.175,
+      "top3Pct": 3.727,
+      "avgPoints": 703.3,
+      "maxPoints": 1118,
       "aliases": [
-        "Manu G"
-      ]
-    },
-    {
-      "player": "Nick",
-      "displayName": "Nick",
-      "rank": 37,
-      "winPct": 1.095,
-      "top3Pct": 3.393,
-      "avgPoints": 717.8,
-      "maxPoints": 1066
-    },
-    {
-      "player": "Enrique Moral",
-      "displayName": "Enrique M.",
-      "rank": 38,
-      "winPct": 1.01,
-      "top3Pct": 2.803,
-      "avgPoints": 682.3,
-      "maxPoints": 992,
-      "aliases": [
-        "Enrique M"
-      ]
-    },
-    {
-      "player": "Michael",
-      "displayName": "Michael",
-      "rank": 39,
-      "winPct": 0.948,
-      "top3Pct": 3.245,
-      "avgPoints": 725.8,
-      "maxPoints": 1060
-    },
-    {
-      "player": "Eduardo Morales",
-      "displayName": "Eduardo M.",
-      "rank": 40,
-      "winPct": 0.893,
-      "top3Pct": 3.19,
-      "avgPoints": 718.5,
-      "maxPoints": 1100,
-      "aliases": [
-        "Eduardo M"
-      ]
-    },
-    {
-      "player": "Bernat Raventós",
-      "displayName": "Bernat R.",
-      "rank": 41,
-      "winPct": 0.873,
-      "top3Pct": 2.987,
-      "avgPoints": 720.4,
-      "maxPoints": 1106,
-      "aliases": [
-        "Bernat R"
+        "Jaume M"
       ]
     },
     {
       "player": "Teo",
       "displayName": "Teo",
-      "rank": 42,
-      "winPct": 0.85,
-      "top3Pct": 3.57,
-      "avgPoints": 739.6,
-      "maxPoints": 1123
+      "rank": 37,
+      "winPct": 1.171,
+      "top3Pct": 4.877,
+      "avgPoints": 732.0,
+      "maxPoints": 1092
     },
     {
-      "player": "Jordi Ollé",
-      "displayName": "Jordi O.",
-      "rank": 43,
-      "winPct": 0.775,
-      "top3Pct": 3.062,
-      "avgPoints": 728.5,
-      "maxPoints": 1065,
+      "player": "Jordi Reig",
+      "displayName": "Jordi Re.",
+      "rank": 38,
+      "winPct": 0.976,
+      "top3Pct": 3.246,
+      "avgPoints": 705.1,
+      "maxPoints": 1115,
       "aliases": [
-        "Jordi O"
-      ]
-    },
-    {
-      "player": "Daniela",
-      "displayName": "Daniela",
-      "rank": 44,
-      "winPct": 0.745,
-      "top3Pct": 2.25,
-      "avgPoints": 724.0,
-      "maxPoints": 1035
-    },
-    {
-      "player": "Rafa Angulo",
-      "displayName": "Rafa A.",
-      "rank": 45,
-      "winPct": 0.665,
-      "top3Pct": 2.448,
-      "avgPoints": 710.6,
-      "maxPoints": 1101,
-      "aliases": [
-        "Rafa A"
-      ]
-    },
-    {
-      "player": "Manel Pujol",
-      "displayName": "Manel P.",
-      "rank": 46,
-      "winPct": 0.66,
-      "top3Pct": 1.93,
-      "avgPoints": 671.7,
-      "maxPoints": 1058,
-      "aliases": [
-        "Manel P"
+        "Jordi Re",
+        "Jordi Re."
       ]
     },
     {
       "player": "Rubi",
       "displayName": "Rubi",
+      "rank": 39,
+      "winPct": 0.896,
+      "top3Pct": 3.211,
+      "avgPoints": 709.3,
+      "maxPoints": 1087
+    },
+    {
+      "player": "Eduardo Morales",
+      "displayName": "Eduardo M.",
+      "rank": 40,
+      "winPct": 0.861,
+      "top3Pct": 3.067,
+      "avgPoints": 705.7,
+      "maxPoints": 1101,
+      "aliases": [
+        "Eduardo M"
+      ]
+    },
+    {
+      "player": "Oriol Valls",
+      "displayName": "Oriol V.",
+      "rank": 41,
+      "winPct": 0.776,
+      "top3Pct": 2.915,
+      "avgPoints": 711.3,
+      "maxPoints": 1123,
+      "aliases": [
+        "Oriol V"
+      ]
+    },
+    {
+      "player": "Jordi Raventós",
+      "displayName": "Jordi Ra.",
+      "rank": 42,
+      "winPct": 0.718,
+      "top3Pct": 2.411,
+      "avgPoints": 677.0,
+      "maxPoints": 1010,
+      "aliases": [
+        "Jordi Ra",
+        "Jordi Ra."
+      ]
+    },
+    {
+      "player": "Gerard",
+      "displayName": "Gerard",
+      "rank": 43,
+      "winPct": 0.695,
+      "top3Pct": 2.641,
+      "avgPoints": 701.4,
+      "maxPoints": 1096
+    },
+    {
+      "player": "Pere",
+      "displayName": "Pere",
+      "rank": 44,
+      "winPct": 0.687,
+      "top3Pct": 2.898,
+      "avgPoints": 716.7,
+      "maxPoints": 1097
+    },
+    {
+      "player": "Manu GS",
+      "displayName": "Manu G.",
+      "rank": 45,
+      "winPct": 0.614,
+      "top3Pct": 2.341,
+      "avgPoints": 696.9,
+      "maxPoints": 1098,
+      "aliases": [
+        "Manu G"
+      ]
+    },
+    {
+      "player": "Daniela",
+      "displayName": "Daniela",
+      "rank": 46,
+      "winPct": 0.544,
+      "top3Pct": 1.946,
+      "avgPoints": 705.9,
+      "maxPoints": 1119
+    },
+    {
+      "player": "Andreu",
+      "displayName": "Andreu",
       "rank": 47,
-      "winPct": 0.625,
-      "top3Pct": 2.745,
-      "avgPoints": 718.7,
-      "maxPoints": 1016
-    },
-    {
-      "player": "Albert Benach",
-      "displayName": "Albert B.",
-      "rank": 48,
-      "winPct": 0.62,
-      "top3Pct": 1.845,
-      "avgPoints": 686.3,
-      "maxPoints": 1048,
-      "aliases": [
-        "Albert B"
-      ]
-    },
-    {
-      "player": "Oscar Bordas",
-      "displayName": "Oscar B.",
-      "rank": 49,
-      "winPct": 0.535,
-      "top3Pct": 2.59,
-      "avgPoints": 735.2,
-      "maxPoints": 1122,
-      "aliases": [
-        "Oscar B"
-      ]
+      "winPct": 0.502,
+      "top3Pct": 1.886,
+      "avgPoints": 688.8,
+      "maxPoints": 1064
     },
     {
       "player": "Albert Esteve",
       "displayName": "Albert E.",
-      "rank": 50,
-      "winPct": 0.52,
-      "top3Pct": 1.428,
-      "avgPoints": 685.8,
-      "maxPoints": 1004,
+      "rank": 48,
+      "winPct": 0.496,
+      "top3Pct": 1.614,
+      "avgPoints": 674.3,
+      "maxPoints": 1064,
       "aliases": [
         "Albert E"
       ]
     },
     {
-      "player": "Pere",
-      "displayName": "Pere",
-      "rank": 51,
-      "winPct": 0.44,
-      "top3Pct": 2.43,
-      "avgPoints": 727.0,
-      "maxPoints": 1128
+      "player": "Nick",
+      "displayName": "Nick",
+      "rank": 49,
+      "winPct": 0.486,
+      "top3Pct": 1.81,
+      "avgPoints": 690.7,
+      "maxPoints": 1100
     },
     {
-      "player": "Andreu",
-      "displayName": "Andreu",
-      "rank": 52,
-      "winPct": 0.375,
-      "top3Pct": 1.558,
-      "avgPoints": 699.1,
-      "maxPoints": 1014
-    },
-    {
-      "player": "Jordi Cunyao",
-      "displayName": "Jordi C.",
-      "rank": 53,
-      "winPct": 0.335,
-      "top3Pct": 0.845,
-      "avgPoints": 661.1,
-      "maxPoints": 1017,
+      "player": "Albert Benach",
+      "displayName": "Albert B.",
+      "rank": 50,
+      "winPct": 0.395,
+      "top3Pct": 1.321,
+      "avgPoints": 672.8,
+      "maxPoints": 1074,
       "aliases": [
-        "Jordi C"
+        "Albert B"
       ]
     },
     {
       "player": "Isra",
       "displayName": "Isra",
-      "rank": 54,
-      "winPct": 0.155,
-      "top3Pct": 1.27,
-      "avgPoints": 715.4,
-      "maxPoints": 1076
+      "rank": 51,
+      "winPct": 0.318,
+      "top3Pct": 1.485,
+      "avgPoints": 705.5,
+      "maxPoints": 1098
     },
     {
-      "player": "Norber",
-      "displayName": "Norber",
-      "rank": 55,
-      "winPct": 0.04,
-      "top3Pct": 0.175,
-      "avgPoints": 673.4,
-      "maxPoints": 971
-    },
-    {
-      "player": "Guillem Ochoa",
-      "displayName": "Guillem O.",
-      "rank": 56,
-      "winPct": 0.03,
-      "top3Pct": 0.2,
-      "avgPoints": 681.1,
-      "maxPoints": 1014,
+      "player": "Manel Pujol",
+      "displayName": "Manel P.",
+      "rank": 52,
+      "winPct": 0.275,
+      "top3Pct": 0.923,
+      "avgPoints": 639.4,
+      "maxPoints": 1024,
       "aliases": [
-        "Guillem O"
+        "Manel P"
+      ]
+    },
+    {
+      "player": "Oscar Bordas",
+      "displayName": "Oscar B.",
+      "rank": 53,
+      "winPct": 0.214,
+      "top3Pct": 1.222,
+      "avgPoints": 711.6,
+      "maxPoints": 1081,
+      "aliases": [
+        "Oscar B"
+      ]
+    },
+    {
+      "player": "Jordi Cunyao",
+      "displayName": "Jordi C.",
+      "rank": 54,
+      "winPct": 0.102,
+      "top3Pct": 0.402,
+      "avgPoints": 636.5,
+      "maxPoints": 1064,
+      "aliases": [
+        "Jordi C"
       ]
     },
     {
       "player": "David Muñoz",
       "displayName": "David M.",
-      "rank": 57,
-      "winPct": 0.01,
-      "top3Pct": 0.22,
-      "avgPoints": 694.0,
-      "maxPoints": 1038,
+      "rank": 55,
+      "winPct": 0.055,
+      "top3Pct": 0.917,
+      "avgPoints": 696.5,
+      "maxPoints": 1096,
       "aliases": [
         "David M"
       ]
+    },
+    {
+      "player": "Guillem Ochoa",
+      "displayName": "Guillem O.",
+      "rank": 56,
+      "winPct": 0.047,
+      "top3Pct": 0.236,
+      "avgPoints": 670.9,
+      "maxPoints": 1045,
+      "aliases": [
+        "Guillem O"
+      ]
+    },
+    {
+      "player": "Norber",
+      "displayName": "Norber",
+      "rank": 57,
+      "winPct": 0.033,
+      "top3Pct": 0.189,
+      "avgPoints": 656.2,
+      "maxPoints": 1020
     }
   ]
 };
