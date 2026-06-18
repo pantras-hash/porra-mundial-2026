@@ -45,8 +45,8 @@ TEAM_ALIASES: Dict[str, str] = {
     # Group B
     "canada": "CAN",
     "bosnia-herzegovina": "BIH",
-    "bosnia herzegovina": "BIH",
     "bosnia and herzegovina": "BIH",
+    "bosnia herzegovina": "BIH",
     "bosnia": "BIH",
     "qatar": "QAT",
     "switzerland": "SUI",
@@ -68,7 +68,6 @@ TEAM_ALIASES: Dict[str, str] = {
     "curacao": "CUW",
     "curaçao": "CUW",
     "cote divoire": "CIV",
-    "cote d ivoire": "CIV",
     "cote d'ivoire": "CIV",
     "côte d'ivoire": "CIV",
     "ivory coast": "CIV",
@@ -87,9 +86,7 @@ TEAM_ALIASES: Dict[str, str] = {
     # Group H
     "spain": "ESP",
     "cabo verde": "CPV",
-    "cabo verde islands": "CPV",
     "cape verde": "CPV",
-    "cape verde islands": "CPV",
     "saudi arabia": "KSA",
     "uruguay": "URU",
     # Group I
@@ -107,7 +104,6 @@ TEAM_ALIASES: Dict[str, str] = {
     "dr congo": "COD",
     "congo dr": "COD",
     "democratic republic of the congo": "COD",
-    "d r congo": "COD",
     "uzbekistan": "UZB",
     "colombia": "COL",
     # Group L
@@ -126,11 +122,6 @@ TLA_ALIASES = {
     "CVE": "CPV",
     "SAU": "KSA",
     "DRC": "COD",
-    "CUR": "CUW",
-    "ZAF": "RSA",
-    "DEU": "GER",
-    "NLD": "NED",
-    "CHE": "SUI",
 }
 
 FINAL_STATUSES = {"FINISHED", "AWARDED"}
@@ -201,19 +192,13 @@ def canonical_tla(value: Optional[str]) -> Optional[str]:
 def tla_from_name(name: Optional[str]) -> Optional[str]:
     if not name:
         return None
-
     norm = normalize_text(name)
-
-    # Direct lookup.
     if norm in TEAM_ALIASES:
         return TEAM_ALIASES[norm]
-
-    # Robust lookup: compare normalized alias keys too, so
-    # "Bosnia-Herzegovina" and "Bosnia Herzegovina" match.
+    # Be forgiving about small spelling/punctuation differences in provider names.
     for alias, tla in TEAM_ALIASES.items():
         if normalize_text(alias) == norm:
             return tla
-
     return None
 
 
@@ -330,8 +315,7 @@ def parse_api_match(raw: Dict[str, Any]) -> ApiMatch:
         try:
             from zoneinfo import ZoneInfo
             date = (
-                dt.datetime
-                .fromisoformat(utc_date.replace("Z", "+00:00"))
+                dt.datetime.fromisoformat(utc_date.replace("Z", "+00:00"))
                 .astimezone(ZoneInfo("America/New_York"))
                 .date()
                 .isoformat()
@@ -430,14 +414,16 @@ def update_entry(local: LocalMatch, api: ApiMatch) -> Tuple[str, bool]:
         "penHome": parse_int_value(fields.get("penHome")),
         "penAway": parse_int_value(fields.get("penAway")),
         "status": parse_str_value(fields.get("status")),
-      # Never downgrade a locally final result to live/scheduled if the API is stale.
-if current.get("status") in FINAL_STATUSES and api.status not in FINAL_STATUSES:
-    print(
-        f"Skipping stale downgrade for {local.id}: "
-        f"local status={current.get('status')} api status={api.status}"
-    )
-    return local.full_text, False
     }
+
+    # Never downgrade a locally final result to live/scheduled if the API is stale.
+    # This protects manual corrections such as FINISHED -> IN_PLAY/TIMED reversions.
+    if current.get("status") in FINAL_STATUSES and api.status not in FINAL_STATUSES:
+        print(
+            f"Skipping stale downgrade for {local.id}: "
+            f"local status={current.get('status')} api status={api.status}"
+        )
+        return local.full_text, False
 
     # Only set scores when the API has a score. Status can update without score.
     desired = dict(current)
@@ -520,8 +506,8 @@ def main() -> int:
             used_api_ids.add(api.raw.get("id"))
         else:
             # Never use date/order fallback for group-stage matches.
-            # Group-stage fixtures have real team names, so a failed exact match
-            # should not risk copying another same-day score into the wrong fixture.
+            # Group entries have fixed teams, so if exact team matching fails, skipping is safer
+            # than accidentally copying another match result into the wrong slot.
             if local.id.startswith("G-"):
                 print(
                     f"Warning: no exact API match for {local.id} "
