@@ -74,7 +74,7 @@ window.PORRA_RESULTATS = {
     // Canada vs Qatar
     "G-B-3": { homeScore: 6, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 27, status: "FINISHED" },
     // Mexico vs Korea Republic
-    "G-A-3": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 28, status: "IN_PLAY" },
+    "G-A-3": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 28, status: "FINISHED" },
     // 2026-06-19
     // USA vs Australia
     "G-D-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 29, status: "TIMED" },
