@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-A-3";
+window.PORRA_ULTIM_PARTIT = "G-E-4";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -81,16 +81,16 @@ window.PORRA_RESULTATS = {
     // Scotland vs Morocco
     "G-C-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 30, status: "TIMED" },
     // Brazil vs Haiti
-    "G-C-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 31 },
+    "G-C-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 31, status: "TIMED" },
     // Türkiye vs Paraguay
-    "G-D-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 32 },
+    "G-D-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 32, status: "TIMED" },
     // 2026-06-20
     // Netherlands vs Sweden
-    "G-F-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 33 },
+    "G-F-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 33, status: "TIMED" },
     // Germany vs Côte d'Ivoire
-    "G-E-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 34 },
+    "G-E-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 34, status: "TIMED" },
     // Ecuador vs Curaçao
-    "G-E-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 35 },
+    "G-E-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 35, status: "TIMED" },
     // 2026-06-21
     // Tunisia vs Japan
     "G-F-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36 },
