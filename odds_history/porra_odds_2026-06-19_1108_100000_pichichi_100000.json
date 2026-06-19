@@ -1,4 +1,4 @@
-window.PORRA_ODDS_LATEST = {
+{
   "generatedAt": "2026-06-19T09:08:31Z",
   "label": "19 Jun 2026, 100,000 simulations (through Mexico-Korea)",
   "model": "Monte Carlo amb ranking FIFA, gols limitats a 7, amb bonus de Pichichi proxy",
@@ -1356,4 +1356,4 @@ window.PORRA_ODDS_LATEST = {
     ],
     "missingParticipantPicks": []
   }
-};
+}
