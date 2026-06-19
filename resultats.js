@@ -77,7 +77,7 @@ window.PORRA_RESULTATS = {
     "G-A-3": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-18", sortOrder: 28, status: "FINISHED" },
     // 2026-06-19
     // USA vs Australia
-    "G-D-3": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 29, status: "IN_PLAY" },
+    "G-D-3": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 29, status: "IN_PLAY" },
     // Scotland vs Morocco
     "G-C-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-19", sortOrder: 30, status: "TIMED" },
     // Brazil vs Haiti
