@@ -6,14 +6,10 @@
   <title>Porra Mundial 2026 - Classificació</title>
   <link rel="stylesheet" href="styles_new.css" />
   <link rel="stylesheet" href="porra_extras_v2.css" />
-  <script src="odds_latest.js"></script>
-  <script src="odds_leaderboard_patch.js" defer></script>
-  <script src="ranking_history_latest.js"></script>
-  <script src="ranking_history_drawer_patch.js" defer></script>
   <script>
-  // Optional: if automatic GitHub link detection does not work for your site,
-  // fill these in, for example: username: "pantras", repo: "porra-mundial-2026".
-  window.PORRA_GITHUB = { username: "", repo: "", branch: "main" };
+    // Optional: if automatic GitHub link detection does not work for your site,
+    // fill these in, for example: username: "pantras", repo: "porra-mundial-2026".
+    window.PORRA_GITHUB = { username: "", repo: "", branch: "main" };
   </script>
 </head>
 <body>
@@ -52,7 +48,6 @@
           <input id="searchInput" type="search" placeholder="Nom..." data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
         </label>
       </div>
-
       <div class="table-wrap">
         <table id="leaderboardTable">
           <thead>
@@ -72,8 +67,6 @@
         </table>
       </div>
     </section>
-
-    
   </main>
 
   <footer class="site-footer">
@@ -98,30 +91,29 @@
   </aside>
 
   <script>
-  // Carrega tots els fitxers de dades amb un paràmetre únic per evitar que
-  // el navegador o GitHub Pages mostrin versions antigues.
-  (function () {
-    const cacheBuster = Date.now();
-
-    function loadScript(src, onload, label) {
-      const script = document.createElement('script');
-      script.src = `${src}?v=${cacheBuster}`;
-      script.onload = onload;
-      script.onerror = function () {
-        const status = document.getElementById('dataStatus');
-        if (status) status.textContent = `No s'ha pogut carregar ${label || src}`;
-      };
-      document.body.appendChild(script);
-    }
-
-    loadScript('prediccions.js', function () {
-      loadScript('resultats.js', function () {
-        loadScript('app_new.js', function () {
-          loadScript('porra_extras_v2.js', null, 'porra_extras_v2.js');
-        }, 'app_new.js');
-      }, 'resultats.js');
-    }, 'prediccions.js');
-  })();
+    // Carrega tots els fitxers de dades amb un paràmetre únic per evitar que
+    // el navegador o GitHub Pages mostrin versions antigues.
+    (function () {
+      const cacheBuster = Date.now();
+      function loadScript(src, onload, label) {
+        const script = document.createElement('script');
+        script.src = `${src}?v=${cacheBuster}`;
+        script.onload = onload;
+        script.onerror = function () {
+          const status = document.getElementById('dataStatus');
+          if (status) status.textContent = `No s'ha pogut carregar ${label || src}`;
+        };
+        document.body.appendChild(script);
+      }
+      loadScript('prediccions.js', function () {
+        loadScript('resultats.js', function () {
+          loadScript('app_new.js', function () {
+            loadScript('porra_extras_v2.js', null, 'porra_extras_v2.js');
+          }, 'app_new.js');
+        }, 'resultats.js');
+      }, 'prediccions.js');
+    })();
   </script>
+  <script src="pichichi_link_patch.js?v=20260619"></script>
 </body>
 </html>
