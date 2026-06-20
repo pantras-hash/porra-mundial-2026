@@ -1,12 +1,12 @@
-// Robust win-probability tab patch.
-// Replace the existing odds_tab_patch.js with this file.
-// It does not require any index.html change.
+// Safe win-probability tab patch.
+// Replace odds_tab_patch.js with this file.
+// No index.html change required.
 (function () {
   'use strict';
 
   const TAB_ID = 'porraOddsTabButton';
   const MODAL_ID = 'porraOddsModal';
-  const STYLE_ID = 'porraOddsRobustPatchStyle';
+  const STYLE_ID = 'porraOddsModalStyle';
 
   const TEXT = {
     ca: {
@@ -38,34 +38,24 @@
     }
   };
 
-  window.porraPatchLang = window.porraPatchLang || function () {
+  function getLang() {
     const candidates = [];
-
     const activeButton = document.querySelector('.lang-btn.active, .lang-btn.is-active, .lang-btn[aria-pressed="true"]');
     if (activeButton && activeButton.dataset && activeButton.dataset.lang) candidates.push(activeButton.dataset.lang);
     if (window.PORRA_LANG) candidates.push(window.PORRA_LANG);
     if (document.documentElement.lang) candidates.push(document.documentElement.lang);
-
     try {
-      ['porraLang', 'PORRA_LANG', 'lang', 'language', 'locale'].forEach(function (key) {
-        const value = localStorage.getItem(key);
-        if (value) candidates.push(value);
-      });
+      const stored = localStorage.getItem('porraLang');
+      if (stored) candidates.push(stored);
     } catch (error) {}
-
-    try {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('lang')) candidates.push(params.get('lang'));
-    } catch (error) {}
-
     const raw = String(candidates.find(Boolean) || navigator.language || 'ca').toLowerCase();
-    if (raw.startsWith('es') || raw.includes('spanish') || raw.includes('castell')) return 'es';
-    if (raw.startsWith('en') || raw.includes('english') || raw.includes('angl')) return 'en';
+    if (raw.startsWith('es')) return 'es';
+    if (raw.startsWith('en')) return 'en';
     return 'ca';
-  };
+  }
 
   function t() {
-    return TEXT[window.porraPatchLang()] || TEXT.ca;
+    return TEXT[getLang()] || TEXT.ca;
   }
 
   function esc(value) {
@@ -116,43 +106,11 @@
     return [];
   }
 
-  function ensureStyle() {
+  function ensureModalStyle() {
     if (document.getElementById(STYLE_ID)) return;
     const style = document.createElement('style');
     style.id = STYLE_ID;
     style.textContent = `
-      .porra-links-v2 #pichichiOddsLink,
-      .porra-links-v2 #porraOddsTabButton {
-        appearance: none !important;
-        border: 0 !important;
-        border-bottom: 1px solid currentColor !important;
-        border-radius: 0 !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        color: var(--accent, #0b63f6) !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: .35rem !important;
-        padding: 0 !important;
-        font: inherit !important;
-        font-size: .9rem !important;
-        font-weight: 900 !important;
-        line-height: inherit !important;
-        white-space: nowrap !important;
-        text-decoration: none !important;
-        cursor: pointer !important;
-        transform: none !important;
-      }
-      .porra-links-v2 #pichichiOddsLink:hover,
-      .porra-links-v2 #pichichiOddsLink:focus-visible,
-      .porra-links-v2 #porraOddsTabButton:hover,
-      .porra-links-v2 #porraOddsTabButton:focus-visible {
-        color: var(--navy, #061a36) !important;
-        outline: none !important;
-        box-shadow: none !important;
-        transform: none !important;
-      }
       .porra-odds-modal { position: fixed; inset: 0; z-index: 9999; display: none; background: rgba(15, 23, 42, .56); padding: 1rem; }
       .porra-odds-modal[aria-hidden="false"] { display: flex; align-items: center; justify-content: center; }
       .porra-odds-panel { width: min(1120px, 100%); max-height: min(88vh, 980px); overflow: hidden; border-radius: 24px; background: #fff; box-shadow: 0 28px 90px rgba(15, 23, 42, .32); border: 1px solid rgba(15, 23, 42, .10); display: flex; flex-direction: column; }
@@ -189,26 +147,25 @@
   function updateText() {
     const text = t();
     const btn = document.getElementById(TAB_ID);
-    if (btn) btn.textContent = text.tab;
+    if (btn && btn.textContent !== text.tab) btn.textContent = text.tab;
 
     const title = document.getElementById('porraOddsTitle');
-    if (title) title.textContent = text.title;
+    if (title && title.textContent !== text.title) title.textContent = text.title;
 
     const footer = document.getElementById('porraOddsFooter');
-    if (footer) footer.textContent = text.footer;
+    if (footer && footer.textContent !== text.footer) footer.textContent = text.footer;
 
-    const columns = text.columns;
     const colMap = {
-      porraOddsColRank: columns.rank,
-      porraOddsColParticipant: columns.participant,
-      porraOddsColWin: columns.win,
-      porraOddsColTop3: columns.top3,
-      porraOddsColAvg: columns.avg,
-      porraOddsColPich: columns.pich
+      porraOddsColRank: text.columns.rank,
+      porraOddsColParticipant: text.columns.participant,
+      porraOddsColWin: text.columns.win,
+      porraOddsColTop3: text.columns.top3,
+      porraOddsColAvg: text.columns.avg,
+      porraOddsColPich: text.columns.pich
     };
     Object.keys(colMap).forEach(function (id) {
       const el = document.getElementById(id);
-      if (el) el.textContent = colMap[id];
+      if (el && el.textContent !== colMap[id]) el.textContent = colMap[id];
     });
   }
 
@@ -216,7 +173,7 @@
     let modal = document.getElementById(MODAL_ID);
     if (modal) return modal;
 
-    ensureStyle();
+    ensureModalStyle();
     const text = t();
     modal = document.createElement('div');
     modal.id = MODAL_ID;
@@ -328,49 +285,42 @@
     document.body.style.overflow = '';
   }
 
-  function findNavAndLiveButton() {
-    const nav =
-      document.getElementById('porraLinksSummaryV2') ||
-      document.querySelector('.porra-links-v2--summary') ||
-      document.querySelector('.porra-links-v2');
+  function findSummaryNav() {
+    return document.getElementById('porraLinksSummaryV2') ||
+      document.querySelector('.summary-card .porra-links-v2') ||
+      document.querySelector('.porra-links-v2--summary');
+  }
 
-    if (nav) {
-      const live =
-        nav.querySelector('[data-porra-modal-v2="liveLeaderboard"]') ||
-        Array.from(nav.querySelectorAll('button,a')).find(function (el) {
-          return /classificaci[o\u00f3]\s+en\s+directe|clasificaci[o\u00f3]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || '');
-        });
-      return { nav: nav, live: live };
-    }
-
-    const live = Array.from(document.querySelectorAll('button,a')).find(function (el) {
-      return /classificaci[o\u00f3]\s+en\s+directe|clasificaci[o\u00f3]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || '');
-    });
-    return { nav: live ? live.parentElement : null, live: live };
+  function findLiveButton(nav) {
+    if (!nav) return null;
+    return nav.querySelector('[data-porra-modal-v2="liveLeaderboard"]') ||
+      Array.from(nav.querySelectorAll('button,a')).find(function (el) {
+        return /classificaci[oó]\s+en\s+directe|clasificaci[oó]n\s+en\s+directo|live\s+leaderboard|live\s+standings|directe|directo|live/i.test(el.textContent || '');
+      });
   }
 
   function addOrUpdateTab() {
-    const found = findNavAndLiveButton();
-    if (!found.nav) return false;
+    const nav = findSummaryNav();
+    if (!nav) return false;
 
-    ensureStyle();
-
-    let btn = document.getElementById(TAB_ID);
-    if (!btn) {
-      btn = document.createElement('button');
-      btn.id = TAB_ID;
-      btn.type = 'button';
-      btn.className = 'porra-tab-patch porra-odds-tab-button';
-      btn.addEventListener('click', openModal);
+    let button = document.getElementById(TAB_ID);
+    if (!button) {
+      button = document.createElement('button');
+      button.id = TAB_ID;
+      button.type = 'button';
+      button.setAttribute('data-porra-extra-tab', 'win-probability');
+      button.addEventListener('click', openModal);
     }
 
-    btn.textContent = t().tab;
+    const text = t().tab;
+    if (button.textContent !== text) button.textContent = text;
 
-    if (btn.parentElement !== found.nav) {
-      if (found.live && found.live.parentElement === found.nav) {
-        found.nav.insertBefore(btn, found.live.nextSibling);
+    if (button.parentElement !== nav) {
+      const liveButton = findLiveButton(nav);
+      if (liveButton && liveButton.parentElement === nav) {
+        liveButton.insertAdjacentElement('afterend', button);
       } else {
-        found.nav.appendChild(btn);
+        nav.appendChild(button);
       }
     }
 
@@ -378,15 +328,29 @@
   }
 
   function start() {
+    let tries = 0;
+    const maxTries = 160; // 40 seconds at 250ms.
+
+    const timer = setInterval(function () {
+      tries += 1;
+      const ok = addOrUpdateTab();
+      if (ok || tries >= maxTries) clearInterval(timer);
+    }, 250);
+
     addOrUpdateTab();
 
-    const observer = new MutationObserver(addOrUpdateTab);
-    observer.observe(document.body || document.documentElement, { childList: true, subtree: true });
-
-    setInterval(function () {
-      addOrUpdateTab();
-      if (document.getElementById(MODAL_ID)) updateText();
-    }, 1000);
+    document.addEventListener('click', function (event) {
+      if (event.target && event.target.closest && event.target.closest('.lang-btn')) {
+        setTimeout(function () {
+          addOrUpdateTab();
+          updateText();
+        }, 0);
+        setTimeout(function () {
+          addOrUpdateTab();
+          updateText();
+        }, 100);
+      }
+    });
   }
 
   if (document.readyState === 'loading') {
