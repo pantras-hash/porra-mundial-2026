@@ -271,39 +271,79 @@
     const player = drawerPlayerName();
     const history = data();
     const series = seriesFor(player);
-    if (!history || !series) return;
+    const lang = currentLang();
+    if (!history || !series || !player) return;
+
+    const existing = document.getElementById(CARD_ID);
+    const version = String(history.label || history.generatedAt || '');
+    if (existing && existing.dataset.player === player && existing.dataset.lang === lang && existing.dataset.version === version) {
+      return;
+    }
 
     const html = render(series, history);
-    const existing = document.getElementById(CARD_ID);
     if (existing) existing.outerHTML = html;
     else content.insertAdjacentHTML('afterbegin', html);
+
+    const card = document.getElementById(CARD_ID);
+    if (card) {
+      card.dataset.player = player;
+      card.dataset.lang = lang;
+      card.dataset.version = version;
+    }
   }
 
   let scheduled = false;
-  function schedule() {
-    if (scheduled) return;
-    scheduled = true;
-    requestAnimationFrame(() => {
-      scheduled = false;
+  function schedule(delay) {
+    if (scheduled && !delay) return;
+    const run = () => {
+      if (scheduled && !delay) scheduled = false;
       update();
+    };
+    if (delay) {
+      setTimeout(update, delay);
+      return;
+    }
+    scheduled = true;
+    requestAnimationFrame(run);
+  }
+
+  function boot() {
+    schedule();
+
+    const content = document.getElementById('drawerContent');
+    if (content) {
+      const contentObserver = new MutationObserver(() => schedule());
+      contentObserver.observe(content, { childList: true });
+    }
+
+    const drawer = document.getElementById('playerDrawer');
+    if (drawer) {
+      const drawerObserver = new MutationObserver(() => schedule());
+      drawerObserver.observe(drawer, { attributes: true, attributeFilter: ['aria-hidden', 'class'] });
+    }
+
+    document.addEventListener('click', event => {
+      if (event.target && event.target.closest && event.target.closest('tr[data-player]')) {
+        schedule(0);
+        schedule(80);
+        schedule(180);
+      }
+      if (event.target && event.target.closest && event.target.closest('[data-lang]')) {
+        schedule(0);
+        schedule(80);
+      }
+    });
+
+    document.addEventListener('keydown', event => {
+      const row = event.target && event.target.closest && event.target.closest('tr[data-player]');
+      if (row && (event.key === 'Enter' || event.key === ' ')) {
+        schedule(0);
+        schedule(80);
+        schedule(180);
+      }
     });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', schedule);
-  else schedule();
-
-  const observer = new MutationObserver(schedule);
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-    characterData: true,
-    attributes: true,
-    attributeFilter: ['aria-hidden', 'class']
-  });
-
-  document.addEventListener('click', function (event) {
-    if (event.target && event.target.closest && event.target.closest('[data-lang]')) {
-      setTimeout(schedule, 0);
-    }
-  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
+  else boot();
 })();

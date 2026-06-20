@@ -6,10 +6,6 @@
   <title>Porra Mundial 2026 - Classificació</title>
   <link rel="stylesheet" href="styles_new.css" />
   <link rel="stylesheet" href="porra_extras_v2.css" />
-  <script src="odds_latest.js"></script>
-  <script src="odds_leaderboard_patch.js" defer></script>
-  <script src="ranking_history_latest.js"></script>
-  <script src="ranking_history_drawer_patch.js" defer></script>
   <script>
   // Optional: if automatic GitHub link detection does not work for your site,
   // fill these in, for example: username: "pantras", repo: "porra-mundial-2026".
@@ -117,13 +113,19 @@
     loadScript('prediccions.js', function () {
       loadScript('resultats.js', function () {
         loadScript('app_new.js', function () {
-          loadScript('porra_extras_v2.js', null, 'porra_extras_v2.js');
+          loadScript('porra_extras_v2.js', function () {
+            // Optional enhancements, loaded after the base leaderboard is stable.
+            loadScript('odds_latest.js', function () {
+              loadScript('odds_leaderboard_patch.js', null, 'odds_leaderboard_patch.js');
+            }, 'odds_latest.js');
+            loadScript('ranking_history_latest.js', function () {
+              loadScript('ranking_history_drawer_patch.js', null, 'ranking_history_drawer_patch.js');
+            }, 'ranking_history_latest.js');
+          }, 'porra_extras_v2.js');
         }, 'app_new.js');
       }, 'resultats.js');
     }, 'prediccions.js');
   })();
   </script>
-  <script src="pichichi_link_patch.js?v=emergency-disable-20260620"></script>
-  <script src="odds_tab_patch.js?v=emergency-disable-20260620" defer></script>
 </body>
 </html>

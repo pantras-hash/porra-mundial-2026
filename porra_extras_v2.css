@@ -16,7 +16,8 @@
   padding: 0 22px;
 }
 
-.porra-links-v2 button {
+.porra-links-v2 button,
+.porra-links-v2 a {
   appearance: none;
   border: 0;
   border-bottom: 1px solid currentColor;
@@ -30,7 +31,9 @@
 }
 
 .porra-links-v2 button:hover,
-.porra-links-v2 button:focus-visible {
+.porra-links-v2 button:focus-visible,
+.porra-links-v2 a:hover,
+.porra-links-v2 a:focus-visible {
   color: var(--navy, #061a36);
   outline: none;
 }
@@ -266,4 +269,9 @@ body.porra-modal-v2-open {
   .legend--below-toolbar .move {
     min-width: max-content !important;
   }
+}
+
+
+.porra-modal-v2__panel .porra-muted-v2 {
+  margin: 0 0 8px;
 }

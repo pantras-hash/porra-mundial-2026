@@ -10,6 +10,7 @@
       finishedResults: 'Resultats de partits acabats',
       groupStandings: 'Classificacions de grups',
       topScorers: 'Pichichis',
+      winProbability: 'Probabilitats de victòria',
       liveLeaderboard: 'Classificació en directe',
       pointsSystem: 'Com funciona el sistema de punts',
       
@@ -36,19 +37,28 @@
       tie: 'empat',
       noFinished: 'Encara no hi ha partits finalitzats.',
       noScorers: 'Encara no hi ha una taula de golejadors a resultats.js.',
-      scorerHint: 'Afegeix window.PORRA_RESULTATS.topScorers = [{ name, team, goals }] o una propietat topScorers dins PORRA_RESULTATS.',
+      scorerHint: 'Afegeix pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
+      scorerUpdated: 'Actualitzat',
       liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc.',
       rulesIntro: 'Resum dels punts configurats a prediccions.js.',
       exactResult: 'Resultat exacte / gols',
       outcome: 'Guanyador o empat',
       groupTable: 'Classificació de grup',
       knockoutTeams: 'Equips i posicions en eliminatòries',
-      finalAwards: 'Premis finals'
+      finalAwards: 'Premis finals',
+      oddsUpdated: 'Actualitzat',
+      oddsModel: 'Model',
+      oddsWin: 'Prob. victòria',
+      oddsTop3: 'Prob. top 3',
+      oddsAvg: 'Punts esperats',
+      oddsMax: 'Màxim',
+      oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
       finishedResults: 'Resultados de partidos acabados',
       groupStandings: 'Clasificaciones de grupos',
       topScorers: 'Pichichis',
+      winProbability: 'Probabilidades de victoria',
       liveLeaderboard: 'Clasificación en directo',
       pointsSystem: 'Cómo funciona el sistema de puntos',
      
@@ -75,19 +85,28 @@
       tie: 'empate',
       noFinished: 'Todavía no hay partidos finalizados.',
       noScorers: 'Todavía no hay una tabla de goleadores en resultats.js.',
-      scorerHint: 'Añade window.PORRA_RESULTATS.topScorers = [{ name, team, goals }] o una propiedad topScorers dentro de PORRA_RESULTATS.',
+      scorerHint: 'Añade pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
+      scorerUpdated: 'Actualizado',
       liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego.',
       rulesIntro: 'Resumen de los puntos configurados en prediccions.js.',
       exactResult: 'Resultado exacto / goles',
       outcome: 'Ganador o empate',
       groupTable: 'Clasificación de grupo',
       knockoutTeams: 'Equipos y posiciones en eliminatorias',
-      finalAwards: 'Premios finales'
+      finalAwards: 'Premios finales',
+      oddsUpdated: 'Actualizado',
+      oddsModel: 'Modelo',
+      oddsWin: 'Prob. victoria',
+      oddsTop3: 'Prob. top 3',
+      oddsAvg: 'Puntos esperados',
+      oddsMax: 'Máximo',
+      oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
       finishedResults: 'Results of finished games',
       groupStandings: 'Group standings',
       topScorers: 'Top scorers',
+      winProbability: 'Win probability',
       liveLeaderboard: 'Live leaderboard',
       pointsSystem: 'How the points system works',
      
@@ -114,14 +133,22 @@
       tie: 'tie',
       noFinished: 'No matches have finished yet.',
       noScorers: 'There is not yet a top-scorers table in resultats.js.',
-      scorerHint: 'Add window.PORRA_RESULTATS.topScorers = [{ name, team, goals }] or a topScorers property inside PORRA_RESULTATS.',
+      scorerHint: 'Add pichichi_current.json or window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
+      scorerUpdated: 'Updated',
       liveHint: 'Includes finished matches plus current scores for matches in play.',
       rulesIntro: 'Summary of the points configured in prediccions.js.',
       exactResult: 'Exact score / goals',
       outcome: 'Winner or tie',
       groupTable: 'Group table',
       knockoutTeams: 'Knockout teams and positions',
-      finalAwards: 'Final awards'
+      finalAwards: 'Final awards',
+      oddsUpdated: 'Updated',
+      oddsModel: 'Model',
+      oddsWin: 'Win probability',
+      oddsTop3: 'Top 3 probability',
+      oddsAvg: 'Expected points',
+      oddsMax: 'Max',
+      oddsNoData: 'No win-probability data is available yet.'
     }
   };
 
@@ -283,13 +310,23 @@ const SUBGROUP_LEADERBOARDS = {
     }
   }
 
+  function loadPichichiCurrent() {
+    if (!window.fetch || window.PORRA_PICHICHI_CURRENT) return;
+    fetch(`pichichi_current.json?v=${Date.now()}`, { cache: 'no-store' })
+      .then(response => response.ok ? response.json() : null)
+      .then(json => {
+        if (json && Array.isArray(json.players)) window.PORRA_PICHICHI_CURRENT = json;
+      })
+      .catch(() => {});
+  }
+
   function installLinks() {
     const summary = document.querySelector('.summary-card');
     if (summary && !document.getElementById('porraLinksSummaryV2')) {
       const wrap = document.createElement('div');
       wrap.id = 'porraLinksSummaryV2';
       wrap.className = 'porra-links-v2 porra-links-v2--summary';
-      wrap.innerHTML = ['finishedResults', 'groupStandings', 'liveLeaderboard']
+      wrap.innerHTML = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard']
         .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`)
         .join('');
       summary.appendChild(wrap);
@@ -361,6 +398,7 @@ if (tableCard && !document.getElementById('porraLinksPointsV2')) {
     if (type === 'finishedResults') return renderFinishedResults();
     if (type === 'groupStandings') return renderGroupStandings();
     if (type === 'topScorers') return renderTopScorers();
+    if (type === 'winProbability') return renderWinProbability();
     if (type === 'liveLeaderboard') return renderLiveLeaderboard();
     if (type === 'pointsSystem') return renderPointsSystem();
     if (SUBGROUP_LEADERBOARDS[type]) return renderSubgroupLeaderboard(type);
@@ -409,17 +447,62 @@ return '';
     }).join('');
   }
 
+  function formatPctV2(value) {
+    const n = Number(value);
+    return Number.isFinite(n) ? `${n.toFixed(2)}%` : '—';
+  }
+
+  function formatNumberV2(value, digits = 1) {
+    const n = Number(value);
+    return Number.isFinite(n) ? n.toFixed(digits) : '—';
+  }
+
+  function renderWinProbability() {
+    const odds = window.PORRA_ODDS_LATEST || null;
+    const rowsData = odds && Array.isArray(odds.players) ? odds.players.slice() : [];
+    if (!rowsData.length) return `<p>${escapeHtml(t('oddsNoData'))}</p>`;
+
+    rowsData.sort((a, b) => (Number(b.winPct) || 0) - (Number(a.winPct) || 0) || display(a.displayName || a.player).localeCompare(display(b.displayName || b.player)));
+    const intro = [
+      odds.label ? `<p class="porra-muted-v2"><strong>${escapeHtml(t('oddsUpdated'))}:</strong> ${escapeHtml(odds.label)}</p>` : '',
+      odds.model ? `<p class="porra-muted-v2"><strong>${escapeHtml(t('oddsModel'))}:</strong> ${escapeHtml(odds.model)}</p>` : ''
+    ].join('');
+
+    const rows = rowsData.map((row, idx) => `
+      <tr>
+        <td>${escapeHtml(idx + 1)}</td>
+        <td>${escapeHtml(display(row.displayName || row.player))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.winPct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.avgPoints, 1))}</td>
+        <td class="num">${escapeHtml(display(row.maxPoints, '—'))}</td>
+      </tr>
+    `);
+
+    return `${intro}${tableHtml([t('pos'), t('player'), t('oddsWin'), t('oddsTop3'), t('oddsAvg'), t('oddsMax')], rows)}`;
+  }
+
   function renderTopScorers() {
     const r = results();
-    const scorers = Array.isArray(r.topScorers) ? r.topScorers : (Array.isArray(r.scorers) ? r.scorers : []);
+    const current = window.PORRA_PICHICHI_CURRENT || null;
+    const scorers = Array.isArray(r.topScorers) && r.topScorers.length
+      ? r.topScorers
+      : (Array.isArray(r.scorers) && r.scorers.length
+        ? r.scorers
+        : (current && Array.isArray(current.players) ? current.players : []));
+
     if (!scorers.length) {
       const final = r.final || {};
       const known = final.topScorer ? `<p><strong>${escapeHtml(display(final.topScorer))}</strong>${isNum(final.topScorerGoals) ? ` · ${escapeHtml(final.topScorerGoals)} ${escapeHtml(t('points'))}` : ''}</p>` : '';
       return `${known}<p>${escapeHtml(t('noScorers'))}</p><p class="porra-muted-v2">${escapeHtml(t('scorerHint'))}</p>`;
     }
+
+    const updated = current && (current.asOf || current.source)
+      ? `<p class="porra-muted-v2"><strong>${escapeHtml(t('scorerUpdated'))}:</strong> ${escapeHtml(current.asOf || current.source)}</p>`
+      : '';
     const sorted = scorers.slice().sort((a, b) => (Number(b.goals) || 0) - (Number(a.goals) || 0) || display(a.name).localeCompare(display(b.name)));
-    const rows = sorted.map((s, idx) => `<tr><td>${escapeHtml(idx + 1)}</td><td>${escapeHtml(display(s.name))}</td><td>${escapeHtml(display(s.team))}</td><td>${escapeHtml(display(s.goals, 0))}</td></tr>`);
-    return tableHtml([t('pos'), t('player'), t('team'), 'Goals'], rows);
+    const rows = sorted.map((scorer, idx) => `<tr><td>${escapeHtml(idx + 1)}</td><td>${escapeHtml(display(scorer.name))}</td><td>${escapeHtml(display(scorer.team))}</td><td class="num">${escapeHtml(display(scorer.goals, 0))}</td></tr>`);
+    return `${updated}${tableHtml([t('pos'), t('player'), t('team'), 'Goals'], rows)}`;
   }
 
   function groupWinner(m, includeLive) {
@@ -995,7 +1078,7 @@ function renderPointsSystem() {
   function refreshDynamicLabels() {
     const summary = document.getElementById('porraLinksSummaryV2');
     if (summary) {
-      const types = ['finishedResults', 'groupStandings', 'liveLeaderboard'];
+      const types = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard'];
       summary.querySelectorAll('[data-porra-modal-v2]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
     }
    const pointsWrap = document.getElementById('porraLinksPointsV2');
@@ -1294,6 +1377,7 @@ function drawerMatchTemplateV2(id) {
   }
   
   function boot() {
+    loadPichichiCurrent();
     installLinks();
     bindEvents();
     enhancePredictionCells();
