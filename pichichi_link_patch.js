@@ -41,7 +41,13 @@
       link.href = PICHICHI_URL;
       link.target = '_blank';
       link.rel = 'noopener';
-      link.textContent = 'Pichichi';
+      const pichichiLabel = {
+      ca: "Pichichi",
+      es: "Pichichi",
+      en: "Golden Boot"
+      }[porraLang()] || "Pichichi";
+
+      link.textContent = pichichiLabel;
       link.setAttribute('aria-label', 'Pichichi odds, external link');
     }
 
