@@ -1,0 +1,36 @@
+Porra Mundial 2026 win-probability update
+Generated: 2026-06-20 09:27 UTC
+Simulation label: 2026-06-20 09:25, 100,000 simulations, amb Pichichi, distribució empírica recent
+
+Included final results:
+- All finals already present in resultats.js through Türkiye 0-1 Paraguay on 2026-06-19.
+- The latest included match is Türkiye 0-1 Paraguay.
+- No matches after Türkiye-Paraguay were added.
+
+Pichichi current goals:
+- Uses pichichi_current.json as bundled in the runbook package.
+- asOf: 20 Jun 2026, after Türkiye 0-1 Paraguay
+
+Model change:
+- This run explicitly switches the remaining-match score simulation from the previous independent Poisson goal model to a recent-weighted empirical World Cup scoreline distribution.
+- The empirical distribution is based on men's World Cup matches from 1930-2022, with a 16-year recency half-life.
+- Stage-specific empirical draw rates used in odds_latest.js modelDetails:
+  - group: 23.742%
+  - knockout: 21.683%
+- Team ratings are still used to decide which team receives the higher goal total in non-draw canonical scorelines and to break tied knockout matches.
+- Participant scoring and the Pichichi proxy logic are otherwise unchanged.
+
+Files in this patch:
+- odds_latest.js
+- resultats.js
+- pichichi_current.json
+- odds_history/porra_odds_2026-06-20_0925_100000_pichichi_empirical_100000.csv
+- odds_history/porra_odds_2026-06-20_0925_100000_pichichi_empirical_100000.json
+- odds_history/porra_odds_2026-06-20_0925_100000_pichichi_empirical_100000.js
+- scripts/run_monte_carlo_odds_fast.py
+- empirical_score_model_reference/worldcup_empirical_score_model.json
+
+Upload instructions:
+- Upload these files to the repository root, preserving folders.
+- Do not upload or replace index.html. This patch intentionally does not include index.html.
+- After upload, hard-refresh the live site.

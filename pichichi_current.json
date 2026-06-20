@@ -1,103 +1,727 @@
 {
-  "asOf": "19 Jun 2026, after Mexico 1-0 Korea Republic",
-  "source": "NBC Sports top goalscorers list published 18 Jun 2026 23:51 ET; FotMob player stats snapshot crawled 19 Jun 2026",
+  "asOf": "20 Jun 2026, after Türkiye 0-1 Paraguay",
+  "source": "Updated from match reports: USA 2-0 Australia, Scotland 0-1 Morocco, Brazil 3-0 Haiti, Türkiye 0-1 Paraguay; Oddspedia link retained for market reference.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
-    {"name":"Lionel Messi","team":"Argentina","goals":3,"aliases":["Messi"]},
-    {"name":"Jonathan David","team":"Canada","goals":3,"aliases":["David"]},
-    {"name":"Folarin Balogun","team":"USA","goals":2,"aliases":["Balogun"]},
-    {"name":"Kai Havertz","team":"Germany","goals":2,"aliases":["Havertz","Kai Havertz"]},
-    {"name":"Yasin Ayari","team":"Sweden","goals":2,"aliases":["Ayari"]},
-    {"name":"Elijah Just","team":"New Zealand","goals":2,"aliases":["Just"]},
-    {"name":"Erling Haaland","team":"Norway","goals":2,"aliases":["Haaland"]},
-    {"name":"Kylian Mbappé","team":"France","goals":2,"aliases":["Mbappé","Mbappe","Kylian Mbappe"]},
-    {"name":"Harry Kane","team":"England","goals":2,"aliases":["Kane","Harry Kane"]},
-    {"name":"Johan Manzambi","team":"Switzerland","goals":2,"aliases":["Manzambi"]},
-    {"name":"Cyle Larin","team":"Canada","goals":2,"aliases":["Larin"]},
-
-    {"name":"Julián Quiñones","team":"Mexico","goals":1,"aliases":["Julian Quinones","Quinones"]},
-    {"name":"Raúl Jiménez","team":"Mexico","goals":1,"aliases":["Raul Jimenez","Jimenez"]},
-    {"name":"Ladislav Krejčí","team":"Czechia","goals":1,"aliases":["Ladislav Krejci","Krejci"]},
-    {"name":"Hwang In-beom","team":"Korea Republic","goals":1,"aliases":["In-Beom Hwang","Hwang In-Beom"]},
-    {"name":"Oh Hyun-gyu","team":"Korea Republic","goals":1,"aliases":["Hyun-Gyu Oh","Oh Hyun-Gyu"]},
-    {"name":"Jovo Lukić","team":"Bosnia-Herzegovina","goals":1,"aliases":["Jovo Lukic","Lukic"]},
-    {"name":"Mauricio","team":"Paraguay","goals":1,"aliases":["Mauricio"]},
-    {"name":"Gio Reyna","team":"USA","goals":1,"aliases":["Giovanni Reyna","Reyna"]},
-    {"name":"Breel Embolo","team":"Switzerland","goals":1,"aliases":["Embolo"]},
-    {"name":"Boualem Khoukhi","team":"Qatar","goals":1,"aliases":["Khoukhi"]},
-    {"name":"Ismael Saibari","team":"Morocco","goals":1,"aliases":["Saibari"]},
-    {"name":"Vinícius Júnior","team":"Brazil","goals":1,"aliases":["Vinicius","Vinícius","Vinicius Junior","Vinícius Junior"]},
-    {"name":"John McGinn","team":"Scotland","goals":1,"aliases":["McGinn"]},
-    {"name":"Nestory Irankunda","team":"Australia","goals":1,"aliases":["Irankunda"]},
-    {"name":"Connor Metcalfe","team":"Australia","goals":1,"aliases":["Metcalfe"]},
-    {"name":"Felix Nmecha","team":"Germany","goals":1,"aliases":["Nmecha"]},
-    {"name":"Nico Schlotterbeck","team":"Germany","goals":1,"aliases":["Schlotterbeck"]},
-    {"name":"Livano Comenencia","team":"Curaçao","goals":1,"aliases":["Comenencia","Curacao Comenencia"]},
-    {"name":"Jamal Musiala","team":"Germany","goals":1,"aliases":["Musiala","Jamal Musialia"]},
-    {"name":"Nathaniel Brown","team":"Germany","goals":1,"aliases":["Brown"]},
-    {"name":"Deniz Undav","team":"Germany","goals":1,"aliases":["Undav","Denis Undav"]},
-    {"name":"Virgil van Dijk","team":"Netherlands","goals":1,"aliases":["Van Dijk","Virgil van Dijk"]},
-    {"name":"Crysencio Summerville","team":"Netherlands","goals":1,"aliases":["Summerville"]},
-    {"name":"Keito Nakamura","team":"Japan","goals":1,"aliases":["Nakamura"]},
-    {"name":"Daichi Kamada","team":"Japan","goals":1,"aliases":["Kamada"]},
-    {"name":"Amad Diallo","team":"Côte d'Ivoire","goals":1,"aliases":["Amad Dialllo","Diallo"]},
-    {"name":"Alexander Isak","team":"Sweden","goals":1,"aliases":["Isak"]},
-    {"name":"Omar Rekik","team":"Tunisia","goals":1,"aliases":["Rekik"]},
-    {"name":"Viktor Gyökeres","team":"Sweden","goals":1,"aliases":["Viktor Gyokeres","Gyokeres","Gyökeres"]},
-    {"name":"Mattias Svanberg","team":"Sweden","goals":1,"aliases":["Svanberg"]},
-    {"name":"Abdulelah Al-Amri","team":"Saudi Arabia","goals":1,"aliases":["Abdulelah Al Amri","Al Amri"]},
-    {"name":"Ayman Hussein","team":"Iraq","goals":1,"aliases":["Hussein"]},
-    {"name":"Bradley Barcola","team":"France","goals":1,"aliases":["Barcola"]},
-    {"name":"Emam Ashour","team":"Egypt","goals":1,"aliases":["Eman Ashour","Ashour"]},
-    {"name":"Ibrahim Mbaye","team":"Senegal","goals":1,"aliases":["Mbaye"]},
-    {"name":"Leo Østigård","team":"Norway","goals":1,"aliases":["Leo Ostigard","Ostigard","Østigård"]},
-    {"name":"Maxi Araújo","team":"Uruguay","goals":1,"aliases":["Maxi Araujo","Araujo","Araújo"]},
-    {"name":"Mohammad Mohebi","team":"IR Iran","goals":1,"aliases":["Mohamed Mohebi","Mohebi"]},
-    {"name":"Ramin Rezaeian","team":"IR Iran","goals":1,"aliases":["Ramid Rezaeian","Rezaeian"]},
-    {"name":"Romano Schmid","team":"Austria","goals":1,"aliases":["Schmid"]},
-    {"name":"Marko Arnautović","team":"Austria","goals":1,"aliases":["Marko Arnautovic","Arnautovic","Arnautović"]},
-    {"name":"Ali Iyad Olwan","team":"Jordan","goals":1,"aliases":["Olwan"]},
-    {"name":"João Neves","team":"Portugal","goals":1,"aliases":["Joao Neves","Neves"]},
-    {"name":"Yoane Wissa","team":"DR Congo","goals":1,"aliases":["Wissa"]},
-    {"name":"Martin Baturina","team":"Croatia","goals":1,"aliases":["Baturina"]},
-    {"name":"Petar Musa","team":"Croatia","goals":1,"aliases":["Musa"]},
-    {"name":"Jude Bellingham","team":"England","goals":1,"aliases":["Bellingham"]},
-    {"name":"Marcus Rashford","team":"England","goals":1,"aliases":["Rashford"]},
-    {"name":"Caleb Yirenkyi","team":"Ghana","goals":1,"aliases":["Yirenkyi"]},
-    {"name":"Daniel Muñoz","team":"Colombia","goals":1,"aliases":["Daniel Munoz","Munoz","Muñoz"]},
-    {"name":"Abbosbek Fayzullayev","team":"Uzbekistan","goals":1,"aliases":["Fayzullayev"]},
-    {"name":"Luis Díaz","team":"Colombia","goals":1,"aliases":["Luis Diaz","Diaz","Díaz"]},
-    {"name":"Jaminton Campaz","team":"Colombia","goals":1,"aliases":["Campaz"]},
-    {"name":"Michal Sadílek","team":"Czechia","goals":1,"aliases":["Michal Sadilek","Sadilek","Sadílek"]},
-    {"name":"Ruben Vargas","team":"Switzerland","goals":1,"aliases":["Vargas"]},
-    {"name":"Granit Xhaka","team":"Switzerland","goals":1,"aliases":["Xhaka"]},
-    {"name":"Ermin Mahmić","team":"Bosnia-Herzegovina","goals":1,"aliases":["Ermin Mahmic","Mahmic","Mahmić"]},
-    {"name":"Nathan Saliba","team":"Canada","goals":1,"aliases":["Saliba"]},
-    {"name":"Luis Romo","team":"Mexico","goals":1,"aliases":["Romo"]},
-
-    {"name":"Raphinha","team":"Brazil","goals":0,"aliases":["Raphinha"]},
-    {"name":"Ousmane Dembélé","team":"France","goals":0,"aliases":["Dembélé","Dembele","Ousmane Dembele"]},
-    {"name":"Ferran Torres","team":"Spain","goals":0,"aliases":["Ferran Torres","Ferran"]},
-    {"name":"Gonçalo Ramos","team":"Portugal","goals":0,"aliases":["Goncalo Ramos","Gonçalo Ramos"]},
-    {"name":"Mikel Oyarzabal","team":"Spain","goals":0,"aliases":["Oyarzábal","Oyarzabal","Mikel Oyarzábal"]},
-    {"name":"Michael Olise","team":"France","goals":0,"aliases":["Olise","Michael Olise"]},
-    {"name":"Julián Álvarez","team":"Argentina","goals":0,"aliases":["Julian Alvarez","Julián Alvarez","Julián Álvarez"]},
-    {"name":"Lamine Yamal","team":"Spain","goals":0,"aliases":["Lamine Yamal","Yamal"]}
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 3,
+      "aliases": [
+        "Messi"
+      ]
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Canada",
+      "goals": 3,
+      "aliases": [
+        "David"
+      ]
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "USA",
+      "goals": 2,
+      "aliases": [
+        "Balogun"
+      ]
+    },
+    {
+      "name": "Kai Havertz",
+      "team": "Germany",
+      "goals": 2,
+      "aliases": [
+        "Havertz",
+        "Kai Havertz"
+      ]
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "Sweden",
+      "goals": 2,
+      "aliases": [
+        "Ayari"
+      ]
+    },
+    {
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 2,
+      "aliases": [
+        "Just"
+      ]
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "goals": 2,
+      "aliases": [
+        "Haaland"
+      ]
+    },
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "goals": 2,
+      "aliases": [
+        "Mbappé",
+        "Mbappe",
+        "Kylian Mbappe"
+      ]
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 2,
+      "aliases": [
+        "Kane",
+        "Harry Kane"
+      ]
+    },
+    {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "goals": 2,
+      "aliases": [
+        "Manzambi"
+      ]
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "Canada",
+      "goals": 2,
+      "aliases": [
+        "Larin"
+      ]
+    },
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Julian Quinones",
+        "Quinones"
+      ]
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Raul Jimenez",
+        "Jimenez"
+      ]
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "team": "Czechia",
+      "goals": 1,
+      "aliases": [
+        "Ladislav Krejci",
+        "Krejci"
+      ]
+    },
+    {
+      "name": "Hwang In-beom",
+      "team": "Korea Republic",
+      "goals": 1,
+      "aliases": [
+        "In-Beom Hwang",
+        "Hwang In-Beom"
+      ]
+    },
+    {
+      "name": "Oh Hyun-gyu",
+      "team": "Korea Republic",
+      "goals": 1,
+      "aliases": [
+        "Hyun-Gyu Oh",
+        "Oh Hyun-Gyu"
+      ]
+    },
+    {
+      "name": "Jovo Lukić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1,
+      "aliases": [
+        "Jovo Lukic",
+        "Lukic"
+      ]
+    },
+    {
+      "name": "Mauricio",
+      "team": "Paraguay",
+      "goals": 1,
+      "aliases": [
+        "Mauricio"
+      ]
+    },
+    {
+      "name": "Gio Reyna",
+      "team": "USA",
+      "goals": 1,
+      "aliases": [
+        "Giovanni Reyna",
+        "Reyna"
+      ]
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "goals": 1,
+      "aliases": [
+        "Embolo"
+      ]
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "team": "Qatar",
+      "goals": 1,
+      "aliases": [
+        "Khoukhi"
+      ]
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "goals": 2,
+      "aliases": [
+        "Saibari"
+      ]
+    },
+    {
+      "name": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 2,
+      "aliases": [
+        "Vinicius",
+        "Vinícius",
+        "Vinicius Junior",
+        "Vinícius Junior"
+      ]
+    },
+    {
+      "name": "John McGinn",
+      "team": "Scotland",
+      "goals": 1,
+      "aliases": [
+        "McGinn"
+      ]
+    },
+    {
+      "name": "Nestory Irankunda",
+      "team": "Australia",
+      "goals": 1,
+      "aliases": [
+        "Irankunda"
+      ]
+    },
+    {
+      "name": "Connor Metcalfe",
+      "team": "Australia",
+      "goals": 1,
+      "aliases": [
+        "Metcalfe"
+      ]
+    },
+    {
+      "name": "Felix Nmecha",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Nmecha"
+      ]
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Schlotterbeck"
+      ]
+    },
+    {
+      "name": "Livano Comenencia",
+      "team": "Curaçao",
+      "goals": 1,
+      "aliases": [
+        "Comenencia",
+        "Curacao Comenencia"
+      ]
+    },
+    {
+      "name": "Jamal Musiala",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Musiala",
+        "Jamal Musialia"
+      ]
+    },
+    {
+      "name": "Nathaniel Brown",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Brown"
+      ]
+    },
+    {
+      "name": "Deniz Undav",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Undav",
+        "Denis Undav"
+      ]
+    },
+    {
+      "name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "goals": 1,
+      "aliases": [
+        "Van Dijk",
+        "Virgil van Dijk"
+      ]
+    },
+    {
+      "name": "Crysencio Summerville",
+      "team": "Netherlands",
+      "goals": 1,
+      "aliases": [
+        "Summerville"
+      ]
+    },
+    {
+      "name": "Keito Nakamura",
+      "team": "Japan",
+      "goals": 1,
+      "aliases": [
+        "Nakamura"
+      ]
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "Japan",
+      "goals": 1,
+      "aliases": [
+        "Kamada"
+      ]
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "Côte d'Ivoire",
+      "goals": 1,
+      "aliases": [
+        "Amad Dialllo",
+        "Diallo"
+      ]
+    },
+    {
+      "name": "Alexander Isak",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Isak"
+      ]
+    },
+    {
+      "name": "Omar Rekik",
+      "team": "Tunisia",
+      "goals": 1,
+      "aliases": [
+        "Rekik"
+      ]
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Viktor Gyokeres",
+        "Gyokeres",
+        "Gyökeres"
+      ]
+    },
+    {
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Svanberg"
+      ]
+    },
+    {
+      "name": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "goals": 1,
+      "aliases": [
+        "Abdulelah Al Amri",
+        "Al Amri"
+      ]
+    },
+    {
+      "name": "Ayman Hussein",
+      "team": "Iraq",
+      "goals": 1,
+      "aliases": [
+        "Hussein"
+      ]
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "France",
+      "goals": 1,
+      "aliases": [
+        "Barcola"
+      ]
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Eman Ashour",
+        "Ashour"
+      ]
+    },
+    {
+      "name": "Ibrahim Mbaye",
+      "team": "Senegal",
+      "goals": 1,
+      "aliases": [
+        "Mbaye"
+      ]
+    },
+    {
+      "name": "Leo Østigård",
+      "team": "Norway",
+      "goals": 1,
+      "aliases": [
+        "Leo Ostigard",
+        "Ostigard",
+        "Østigård"
+      ]
+    },
+    {
+      "name": "Maxi Araújo",
+      "team": "Uruguay",
+      "goals": 1,
+      "aliases": [
+        "Maxi Araujo",
+        "Araujo",
+        "Araújo"
+      ]
+    },
+    {
+      "name": "Mohammad Mohebi",
+      "team": "IR Iran",
+      "goals": 1,
+      "aliases": [
+        "Mohamed Mohebi",
+        "Mohebi"
+      ]
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "team": "IR Iran",
+      "goals": 1,
+      "aliases": [
+        "Ramid Rezaeian",
+        "Rezaeian"
+      ]
+    },
+    {
+      "name": "Romano Schmid",
+      "team": "Austria",
+      "goals": 1,
+      "aliases": [
+        "Schmid"
+      ]
+    },
+    {
+      "name": "Marko Arnautović",
+      "team": "Austria",
+      "goals": 1,
+      "aliases": [
+        "Marko Arnautovic",
+        "Arnautovic",
+        "Arnautović"
+      ]
+    },
+    {
+      "name": "Ali Iyad Olwan",
+      "team": "Jordan",
+      "goals": 1,
+      "aliases": [
+        "Olwan"
+      ]
+    },
+    {
+      "name": "João Neves",
+      "team": "Portugal",
+      "goals": 1,
+      "aliases": [
+        "Joao Neves",
+        "Neves"
+      ]
+    },
+    {
+      "name": "Yoane Wissa",
+      "team": "DR Congo",
+      "goals": 1,
+      "aliases": [
+        "Wissa"
+      ]
+    },
+    {
+      "name": "Martin Baturina",
+      "team": "Croatia",
+      "goals": 1,
+      "aliases": [
+        "Baturina"
+      ]
+    },
+    {
+      "name": "Petar Musa",
+      "team": "Croatia",
+      "goals": 1,
+      "aliases": [
+        "Musa"
+      ]
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "goals": 1,
+      "aliases": [
+        "Bellingham"
+      ]
+    },
+    {
+      "name": "Marcus Rashford",
+      "team": "England",
+      "goals": 1,
+      "aliases": [
+        "Rashford"
+      ]
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "goals": 1,
+      "aliases": [
+        "Yirenkyi"
+      ]
+    },
+    {
+      "name": "Daniel Muñoz",
+      "team": "Colombia",
+      "goals": 1,
+      "aliases": [
+        "Daniel Munoz",
+        "Munoz",
+        "Muñoz"
+      ]
+    },
+    {
+      "name": "Abbosbek Fayzullayev",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "aliases": [
+        "Fayzullayev"
+      ]
+    },
+    {
+      "name": "Luis Díaz",
+      "team": "Colombia",
+      "goals": 1,
+      "aliases": [
+        "Luis Diaz",
+        "Diaz",
+        "Díaz"
+      ]
+    },
+    {
+      "name": "Jaminton Campaz",
+      "team": "Colombia",
+      "goals": 1,
+      "aliases": [
+        "Campaz"
+      ]
+    },
+    {
+      "name": "Michal Sadílek",
+      "team": "Czechia",
+      "goals": 1,
+      "aliases": [
+        "Michal Sadilek",
+        "Sadilek",
+        "Sadílek"
+      ]
+    },
+    {
+      "name": "Ruben Vargas",
+      "team": "Switzerland",
+      "goals": 1,
+      "aliases": [
+        "Vargas"
+      ]
+    },
+    {
+      "name": "Granit Xhaka",
+      "team": "Switzerland",
+      "goals": 1,
+      "aliases": [
+        "Xhaka"
+      ]
+    },
+    {
+      "name": "Ermin Mahmić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1,
+      "aliases": [
+        "Ermin Mahmic",
+        "Mahmic",
+        "Mahmić"
+      ]
+    },
+    {
+      "name": "Nathan Saliba",
+      "team": "Canada",
+      "goals": 1,
+      "aliases": [
+        "Saliba"
+      ]
+    },
+    {
+      "name": "Luis Romo",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Romo"
+      ]
+    },
+    {
+      "name": "Raphinha",
+      "team": "Brazil",
+      "goals": 0,
+      "aliases": [
+        "Raphinha"
+      ]
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "goals": 0,
+      "aliases": [
+        "Dembélé",
+        "Dembele",
+        "Ousmane Dembele"
+      ]
+    },
+    {
+      "name": "Ferran Torres",
+      "team": "Spain",
+      "goals": 0,
+      "aliases": [
+        "Ferran Torres",
+        "Ferran"
+      ]
+    },
+    {
+      "name": "Gonçalo Ramos",
+      "team": "Portugal",
+      "goals": 0,
+      "aliases": [
+        "Goncalo Ramos",
+        "Gonçalo Ramos"
+      ]
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 0,
+      "aliases": [
+        "Oyarzábal",
+        "Oyarzabal",
+        "Mikel Oyarzábal"
+      ]
+    },
+    {
+      "name": "Michael Olise",
+      "team": "France",
+      "goals": 0,
+      "aliases": [
+        "Olise",
+        "Michael Olise"
+      ]
+    },
+    {
+      "name": "Julián Álvarez",
+      "team": "Argentina",
+      "goals": 0,
+      "aliases": [
+        "Julian Alvarez",
+        "Julián Alvarez",
+        "Julián Álvarez"
+      ]
+    },
+    {
+      "name": "Lamine Yamal",
+      "team": "Spain",
+      "goals": 0,
+      "aliases": [
+        "Lamine Yamal",
+        "Yamal"
+      ]
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "goals": 2,
+      "aliases": [
+        "Cunha",
+        "Matheus Cunha"
+      ]
+    },
+    {
+      "name": "Alex Freeman",
+      "team": "USA",
+      "goals": 1,
+      "aliases": [
+        "Freeman",
+        "Alex Freeman"
+      ]
+    },
+    {
+      "name": "Matías Galarza",
+      "team": "Paraguay",
+      "goals": 1,
+      "aliases": [
+        "Matias Galarza",
+        "Galarza"
+      ]
+    }
   ],
   "predictionTeamHints": {
-    "Mbappé":"France",
-    "Harry Kane":"England",
-    "Raphinha":"Brazil",
-    "Dembélé":"France",
-    "Haaland":"Norway",
-    "Ferran Torres":"Spain",
-    "Gonçalo Ramos":"Portugal",
-    "Vinicius":"Brazil",
-    "Oyarzábal":"Spain",
-    "Olise":"France",
-    "Messi":"Argentina",
-    "Kai Havertz":"Germany",
-    "Julián Álvarez":"Argentina",
-    "Lamine Yamal":"Spain"
+    "Mbappé": "France",
+    "Harry Kane": "England",
+    "Raphinha": "Brazil",
+    "Dembélé": "France",
+    "Haaland": "Norway",
+    "Ferran Torres": "Spain",
+    "Gonçalo Ramos": "Portugal",
+    "Vinicius": "Brazil",
+    "Oyarzábal": "Spain",
+    "Olise": "France",
+    "Messi": "Argentina",
+    "Kai Havertz": "Germany",
+    "Julián Álvarez": "Argentina",
+    "Lamine Yamal": "Spain",
+    "Matheus Cunha": "Brazil",
+    "Alex Freeman": "USA",
+    "Matías Galarza": "Paraguay"
   }
 }
