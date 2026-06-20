@@ -5,7 +5,7 @@
 // En eliminatories amb empat, afegeix tambe penHome i penAway.
 // Els camps date i sortOrder fixen el calendari: no els canviis.
 // Opcional: posa aqui l ID de l ultim partit editat per calcular les fletxes de moviment.
-window.PORRA_ULTIM_PARTIT = "G-D-4";
+window.PORRA_ULTIM_PARTIT = "G-H-4";
 
 window.PORRA_RESULTATS = {
   matches: {
@@ -93,13 +93,13 @@ window.PORRA_RESULTATS = {
     "G-E-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 35, status: "TIMED" },
     // 2026-06-21
     // Tunisia vs Japan
-    "G-F-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36 },
+    "G-F-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36, status: "TIMED" },
     // Spain vs Saudi Arabia
-    "G-H-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37 },
+    "G-H-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "TIMED" },
     // Belgium vs IR Iran
-    "G-G-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 38 },
+    "G-G-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 38, status: "TIMED" },
     // Uruguay vs Cabo Verde
-    "G-H-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 39 },
+    "G-H-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 39, status: "TIMED" },
     // New Zealand vs Egypt
     "G-G-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 40 },
     // 2026-06-22
