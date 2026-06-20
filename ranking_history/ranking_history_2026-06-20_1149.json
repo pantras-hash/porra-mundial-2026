@@ -1,4 +1,4 @@
-window.PORRA_RANKING_HISTORY = {
+{
   "generatedAt": "2026-06-20T11:49:11Z",
   "label": "20 Jun 2026, 11:49 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order",
@@ -11579,4 +11579,4 @@ window.PORRA_RANKING_HISTORY = {
       }
     ]
   }
-};
+}
