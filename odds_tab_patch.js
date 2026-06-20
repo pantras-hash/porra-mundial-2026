@@ -5,7 +5,41 @@
   const TAB_ID = "porraOddsTabButton";
   const MODAL_ID = "porraOddsModal";
   const STYLE_ID = "porraOddsTabStyle";
-  const TAB_LABEL = "Probabilitats";
+  function porraLang() {
+  const raw =
+    (document.documentElement.lang ||
+      window.PORRA_LANG ||
+      localStorage.g:contentReference[oaicite:0]{index=0}ator.language ||
+      "ca").toLowerCase();
+
+  if (raw.startsWith("es")) return "es";
+  if (raw.startsWith("en")) return "en";
+  return "ca";
+}
+
+const PORRA_TEXT = {
+  ca: {
+    oddsTab: "Probabilitats",
+    oddsTitle: "Probabilitats de guanyar",
+    loading: "Monte Carlo · carregant dades…",
+    footer: "Win % / Top 3 % són probabilitats simulades. Pich pts són punts esperats dels bonus de Pichichi."
+  },
+  es: {
+    oddsTab: "Probabilidad",
+    oddsTitle: "Probabilidad de ganar",
+    loading: "Monte Carlo · cargando datos…",
+    footer: "Win % / Top 3 % son probabilidades simuladas. Pich pts son puntos esperados de los bonus de Pichichi."
+  },
+  en: {
+    oddsTab: "Win probability",
+    oddsTitle: "Win probability",
+    loading: "Monte Carlo · loading data…",
+    footer: "Win % / Top 3 % are simulated probabilities. Pich pts are expected points from Golden Boot bonuses."
+  }
+};
+
+const T = PORRA_TEXT[porraLang()];
+const TAB_LABEL = T.oddsTab;
 
   function getOddsData() {
     return window.PORRA_ODDS_LATEST || null;
@@ -218,8 +252,8 @@
       <div class="porra-odds-panel" role="dialog" aria-modal="true" aria-labelledby="porraOddsTitle">
         <div class="porra-odds-header">
           <div>
-            <h2 class="porra-odds-title" id="porraOddsTitle">Probabilitats de guanyar</h2>
-            <p class="porra-odds-subtitle" id="porraOddsSubtitle">Monte Carlo · carregant dades…</p>
+           <h2 class="porra-odds-title" id="porraOddsTitle">${esc(T.oddsTitle)}</h2>
+           <p class="porra-odds-subtitle" id="porraOddsSubtitle">${esc(T.loading)}</p>
           </div>
           <button class="porra-odds-close" type="button" aria-label="Tancar">×</button>
         </div>
@@ -241,7 +275,7 @@
           </table>
         </div>
         <div class="porra-odds-footer">
-          Win % / Top 3 % són probabilitats simulades. Pich pts són punts esperats dels bonus de Pichichi.
+          ${esc(T.footer)}
         </div>
       </div>
     `;
