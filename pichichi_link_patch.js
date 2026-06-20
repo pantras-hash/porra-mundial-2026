@@ -1,78 +1,136 @@
+// Adds the external Pichichi / Golden Boot tab.
+// Safe patch: no index.html replacement.
+// Add this line to the current live index.html, near the bottom before </body>:
+// <script src="pichichi_link_patch.js" defer></script>
 (function () {
-  'use strict';
+  const LINK_ID = "pichichiOddsLink";
+  const PICHICHI_URL = "https://oddspedia.com/insights/football/world-cup-2026-top-scorer-odds";
 
-  const PICHICHI_URL = 'https://oddspedia.com/insights/football/world-cup-2026-top-scorer-odds';
-  const LINK_ID = 'porraPichichiExternalLink';
+  window.porraPatchLang = window.porraPatchLang || function () {
+    const candidates = [];
 
-  function installStyle() {
-    if (document.getElementById('porraPichichiExternalStyle')) return;
-    const style = document.createElement('style');
-    style.id = 'porraPichichiExternalStyle';
+    if (window.PORRA_LANG) candidates.push(window.PORRA_LANG);
+    if (document.documentElement.lang) candidates.push(document.documentElement.lang);
+
+    try {
+      const keys = ["porraLang", "PORRA_LANG", "lang", "language", "locale"];
+      keys.forEach(function (key) {
+        const value = localStorage.getItem(key);
+        if (value) candidates.push(value);
+      });
+    } catch (error) {}
+
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("lang")) candidates.push(params.get("lang"));
+    } catch (error) {}
+
+    const raw = String(candidates.find(Boolean) || navigator.language || "ca").toLowerCase();
+
+    if (raw.startsWith("es") || raw.includes("spanish") || raw.includes("castell")) return "es";
+    if (raw.startsWith("en") || raw.includes("english") || raw.includes("angl")) return "en";
+    return "ca";
+  };
+
+  const TEXT = {
+    ca: { label: "Pichichi", title: "Odds del Pichichi" },
+    es: { label: "Pichichi", title: "Odds del Pichichi" },
+    en: { label: "Golden Boot", title: "Golden Boot odds" }
+  };
+
+  function t() {
+    return TEXT[window.porraPatchLang()] || TEXT.ca;
+  }
+
+  function ensureStyle() {
+    if (document.getElementById("pichichiLinkPatchStyle")) return;
+    const style = document.createElement("style");
+    style.id = "pichichiLinkPatchStyle";
     style.textContent = `
-      .porra-links-v2 a.porra-pichichi-link-v2 {
-        border-bottom: 1px solid currentColor;
-        color: var(--accent, #0b63f6);
-        font: inherit;
-        font-size: .9rem;
-        font-weight: 900;
-        padding: 0;
+      .porra-pichichi-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: .65rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(15, 23, 42, .14);
+        background: #fff;
+        color: inherit;
         text-decoration: none;
+        font: inherit;
+        font-weight: 700;
+        white-space: nowrap;
       }
-      .porra-links-v2 a.porra-pichichi-link-v2:hover,
-      .porra-links-v2 a.porra-pichichi-link-v2:focus-visible {
-        color: var(--navy, #061a36);
-        outline: none;
+      .porra-pichichi-link:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, .10);
       }
     `;
     document.head.appendChild(style);
   }
 
-  function ensurePichichiLink() {
-    installStyle();
+  function findNavAndLiveButton() {
+    const nav = document.getElementById("porraLinksSummaryV2");
+    if (nav) {
+      const live =
+        nav.querySelector('[data-porra-modal-v2="liveLeaderboard"]') ||
+        Array.from(nav.querySelectorAll("button,a")).find(function (el) {
+          return /classificaci[oó]\s+en\s+directe|clasificaci[oó]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || "");
+        });
+      return { nav, live };
+    }
 
-    const summaryLinks = document.getElementById('porraLinksSummaryV2');
-    if (!summaryLinks) return false;
+    const live = Array.from(document.querySelectorAll("button,a")).find(function (el) {
+      return /classificaci[oó]\s+en\s+directe|clasificaci[oó]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || "");
+    });
+
+    return { nav: live ? live.parentElement : null, live };
+  }
+
+  function addPichichiTab() {
+    const found = findNavAndLiveButton();
+    if (!found.nav) return false;
+
+    ensureStyle();
 
     let link = document.getElementById(LINK_ID);
     if (!link) {
-      link = document.createElement('a');
+      link = document.createElement("a");
       link.id = LINK_ID;
-      link.className = 'porra-pichichi-link-v2';
       link.href = PICHICHI_URL;
-      link.target = '_blank';
-      link.rel = 'noopener';
-      const pichichiLabel = {
-      ca: "Pichichi",
-      es: "Pichichi",
-      en: "Golden Boot"
-      }[porraLang()] || "Pichichi";
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.className = found.live && found.live.className ? found.live.className : "porra-pichichi-link";
+      link.classList.add("porra-pichichi-link");
 
-      link.textContent = pichichiLabel;
-      link.setAttribute('aria-label', 'Pichichi odds, external link');
+      // Place immediately before "Classificació en directe".
+      if (found.live && found.live.parentElement === found.nav) {
+        found.nav.insertBefore(link, found.live);
+      } else {
+        found.nav.appendChild(link);
+      }
     }
 
-    const liveButton = summaryLinks.querySelector('[data-porra-modal-v2="liveLeaderboard"]');
-    if (liveButton && link.nextElementSibling !== liveButton) {
-      summaryLinks.insertBefore(link, liveButton);
-    } else if (!link.parentNode) {
-      summaryLinks.appendChild(link);
-    }
-
+    link.textContent = t().label;
+    link.title = t().title;
     return true;
   }
 
-  function start() {
-    if (ensurePichichiLink()) return;
+  const timer = setInterval(function () {
+    if (addPichichiTab()) clearInterval(timer);
+  }, 200);
 
-    const observer = new MutationObserver(function () {
-      if (ensurePichichiLink()) observer.disconnect();
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
+  setTimeout(function () {
+    clearInterval(timer);
+    addPichichiTab();
+  }, 12000);
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', start, { once: true });
-  } else {
-    start();
-  }
+  // If the site changes language after load, this quietly refreshes the label.
+  setInterval(function () {
+    const link = document.getElementById(LINK_ID);
+    if (link) {
+      link.textContent = t().label;
+      link.title = t().title;
+    }
+  }, 1000);
 })();

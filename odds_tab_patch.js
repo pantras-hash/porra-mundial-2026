@@ -1,45 +1,94 @@
 // Adds a full odds/probabilities leaderboard tab.
-// Safe patch: no index.html replacement. Add one script tag to current index.html:
+// Safe patch: no index.html replacement.
+// Add this line to the current live index.html, near the bottom before </body>:
 // <script src="odds_tab_patch.js" defer></script>
 (function () {
   const TAB_ID = "porraOddsTabButton";
   const MODAL_ID = "porraOddsModal";
   const STYLE_ID = "porraOddsTabStyle";
-  function porraLang() {
-  const raw =
-    (document.documentElement.lang ||
-      window.PORRA_LANG ||
-      localStorage.g:contentReference[oaicite:0]{index=0}ator.language ||
-      "ca").toLowerCase();
 
-  if (raw.startsWith("es")) return "es";
-  if (raw.startsWith("en")) return "en";
-  return "ca";
-}
+  window.porraPatchLang = window.porraPatchLang || function () {
+    const candidates = [];
 
-const PORRA_TEXT = {
-  ca: {
-    oddsTab: "Probabilitats",
-    oddsTitle: "Probabilitats de guanyar",
-    loading: "Monte Carlo · carregant dades…",
-    footer: "Win % / Top 3 % són probabilitats simulades. Pich pts són punts esperats dels bonus de Pichichi."
-  },
-  es: {
-    oddsTab: "Probabilidad",
-    oddsTitle: "Probabilidad de ganar",
-    loading: "Monte Carlo · cargando datos…",
-    footer: "Win % / Top 3 % son probabilidades simuladas. Pich pts son puntos esperados de los bonus de Pichichi."
-  },
-  en: {
-    oddsTab: "Win probability",
-    oddsTitle: "Win probability",
-    loading: "Monte Carlo · loading data…",
-    footer: "Win % / Top 3 % are simulated probabilities. Pich pts are expected points from Golden Boot bonuses."
+    if (window.PORRA_LANG) candidates.push(window.PORRA_LANG);
+    if (document.documentElement.lang) candidates.push(document.documentElement.lang);
+
+    try {
+      const keys = ["porraLang", "PORRA_LANG", "lang", "language", "locale"];
+      keys.forEach(function (key) {
+        const value = localStorage.getItem(key);
+        if (value) candidates.push(value);
+      });
+    } catch (error) {}
+
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("lang")) candidates.push(params.get("lang"));
+    } catch (error) {}
+
+    const raw = String(candidates.find(Boolean) || navigator.language || "ca").toLowerCase();
+
+    if (raw.startsWith("es") || raw.includes("spanish") || raw.includes("castell")) return "es";
+    if (raw.startsWith("en") || raw.includes("english") || raw.includes("angl")) return "en";
+    return "ca";
+  };
+
+  const TEXT = {
+    ca: {
+      tab: "Probabilitats de guanyar",
+      title: "Probabilitats de guanyar",
+      loading: "Monte Carlo · carregant dades…",
+      missing: "No s'han trobat probabilitats. Comprova que odds_latest.js estigui carregat.",
+      footer: "Win % / Top 3 % són probabilitats simulades. Pich pts són punts esperats dels bonus de Pichichi.",
+      columns: {
+        participant: "Participant",
+        win: "Win %",
+        top3: "Top 3 %",
+        avg: "Avg pts",
+        pich: "Pich pts"
+      }
+    },
+    es: {
+      tab: "Probabilidad de ganar",
+      title: "Probabilidad de ganar",
+      loading: "Monte Carlo · cargando datos…",
+      missing: "No se han encontrado probabilidades. Comprueba que odds_latest.js esté cargado.",
+      footer: "Win % / Top 3 % son probabilidades simuladas. Pich pts son puntos esperados de los bonus de Pichichi.",
+      columns: {
+        participant: "Participante",
+        win: "Win %",
+        top3: "Top 3 %",
+        avg: "Pts prom.",
+        pich: "Pts Pich."
+      }
+    },
+    en: {
+      tab: "Win probability",
+      title: "Win probability",
+      loading: "Monte Carlo · loading data…",
+      missing: "No probabilities found. Check that odds_latest.js is loaded.",
+      footer: "Win % / Top 3 % are simulated probabilities. Pich pts are expected points from Golden Boot bonuses.",
+      columns: {
+        participant: "Player",
+        win: "Win %",
+        top3: "Top 3 %",
+        avg: "Avg pts",
+        pich: "Boot pts"
+      }
+    }
+  };
+
+  function t() {
+    return TEXT[window.porraPatchLang()] || TEXT.ca;
   }
-};
 
-const T = PORRA_TEXT[porraLang()];
-const TAB_LABEL = T.oddsTab;
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
 
   function getOddsData() {
     return window.PORRA_ODDS_LATEST || null;
@@ -47,7 +96,22 @@ const TAB_LABEL = T.oddsTab;
 
   function getRows() {
     const data = getOddsData();
-    return data && Array.isArray(data.players) ? data.players.slice() : [];
+
+    // Current generated format.
+    if (data && Array.isArray(data.players)) return data.players.slice();
+
+    // Fallbacks in case the generated object uses a different key.
+    if (data && Array.isArray(data.rows)) return data.rows.slice();
+    if (data && Array.isArray(data.data)) return data.data.slice();
+
+    return [];
+  }
+
+  function val(row, keys, fallback) {
+    for (const key of keys) {
+      if (row && row[key] != null) return row[key];
+    }
+    return fallback;
   }
 
   function pct(value) {
@@ -63,14 +127,6 @@ const TAB_LABEL = T.oddsTab;
   function pichPts(value) {
     const n = Number(value || 0);
     return n.toFixed(2);
-  }
-
-  function esc(value) {
-    return String(value == null ? "" : value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
   }
 
   function ensureStyle() {
@@ -238,11 +294,37 @@ const TAB_LABEL = T.oddsTab;
     document.head.appendChild(style);
   }
 
+  function updateText() {
+    const text = t();
+
+    const btn = document.getElementById(TAB_ID);
+    if (btn) btn.textContent = text.tab;
+
+    const title = document.getElementById("porraOddsTitle");
+    if (title) title.textContent = text.title;
+
+    const footer = document.getElementById("porraOddsFooter");
+    if (footer) footer.textContent = text.footer;
+
+    const colParticipant = document.getElementById("porraOddsColParticipant");
+    const colWin = document.getElementById("porraOddsColWin");
+    const colTop3 = document.getElementById("porraOddsColTop3");
+    const colAvg = document.getElementById("porraOddsColAvg");
+    const colPich = document.getElementById("porraOddsColPich");
+
+    if (colParticipant) colParticipant.textContent = text.columns.participant;
+    if (colWin) colWin.textContent = text.columns.win;
+    if (colTop3) colTop3.textContent = text.columns.top3;
+    if (colAvg) colAvg.textContent = text.columns.avg;
+    if (colPich) colPich.textContent = text.columns.pich;
+  }
+
   function createModal() {
     let modal = document.getElementById(MODAL_ID);
     if (modal) return modal;
 
     ensureStyle();
+    const text = t();
 
     modal = document.createElement("div");
     modal.id = MODAL_ID;
@@ -252,8 +334,8 @@ const TAB_LABEL = T.oddsTab;
       <div class="porra-odds-panel" role="dialog" aria-modal="true" aria-labelledby="porraOddsTitle">
         <div class="porra-odds-header">
           <div>
-           <h2 class="porra-odds-title" id="porraOddsTitle">${esc(T.oddsTitle)}</h2>
-           <p class="porra-odds-subtitle" id="porraOddsSubtitle">${esc(T.loading)}</p>
+            <h2 class="porra-odds-title" id="porraOddsTitle">${esc(text.title)}</h2>
+            <p class="porra-odds-subtitle" id="porraOddsSubtitle">${esc(text.loading)}</p>
           </div>
           <button class="porra-odds-close" type="button" aria-label="Tancar">×</button>
         </div>
@@ -262,21 +344,19 @@ const TAB_LABEL = T.oddsTab;
             <thead>
               <tr>
                 <th>#</th>
-                <th>Participant</th>
-                <th class="num">Win %</th>
-                <th class="num">Top 3 %</th>
-                <th class="num porra-odds-optional">Avg pts</th>
-                <th class="num porra-odds-optional">Pich pts</th>
+                <th id="porraOddsColParticipant">${esc(text.columns.participant)}</th>
+                <th id="porraOddsColWin" class="num">${esc(text.columns.win)}</th>
+                <th id="porraOddsColTop3" class="num">${esc(text.columns.top3)}</th>
+                <th id="porraOddsColAvg" class="num porra-odds-optional">${esc(text.columns.avg)}</th>
+                <th id="porraOddsColPich" class="num porra-odds-optional">${esc(text.columns.pich)}</th>
               </tr>
             </thead>
             <tbody id="porraOddsTableBody">
-              <tr><td colspan="6">Carregant…</td></tr>
+              <tr><td colspan="6">${esc(text.loading)}</td></tr>
             </tbody>
           </table>
         </div>
-        <div class="porra-odds-footer">
-          ${esc(T.footer)}
-        </div>
+        <div class="porra-odds-footer" id="porraOddsFooter">${esc(text.footer)}</div>
       </div>
     `;
 
@@ -293,39 +373,49 @@ const TAB_LABEL = T.oddsTab;
   }
 
   function renderTable() {
+    const text = t();
     const data = getOddsData();
     const rows = getRows().sort(function (a, b) {
-      return Number(a.rank || 9999) - Number(b.rank || 9999);
+      return Number(val(a, ["rank", "Rank"], 9999)) - Number(val(b, ["rank", "Rank"], 9999));
     });
     const body = document.getElementById("porraOddsTableBody");
     const subtitle = document.getElementById("porraOddsSubtitle");
 
+    updateText();
+
     if (subtitle) {
       if (data) {
-        subtitle.textContent = `${data.simulations || ""} simulacions · ${data.label || data.generatedAt || ""}`;
+        const sim = data.simulations || data.nSims || data.num_simulations || "";
+        const label = data.label || data.generatedAt || data.timestamp || "";
+        subtitle.textContent = [sim ? `${sim} simulacions` : "Monte Carlo", label].filter(Boolean).join(" · ");
       } else {
-        subtitle.textContent = "No s'ha trobat odds_latest.js";
+        subtitle.textContent = text.missing;
       }
     }
 
     if (!body) return;
 
     if (!rows.length) {
-      body.innerHTML = `<tr><td colspan="6">No s'han trobat probabilitats. Comprova que odds_latest.js estigui carregat.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="6">${esc(text.missing)}</td></tr>`;
       return;
     }
 
     body.innerHTML = rows.map(function (row, idx) {
-      const rank = row.rank || (idx + 1);
-      const name = row.player || row.displayName || "";
+      const rank = val(row, ["rank", "Rank"], idx + 1);
+      const name = val(row, ["player", "Player", "displayName", "name"], "");
+      const winPct = val(row, ["winPct", "WinPct", "win_pct"], 0);
+      const top3Pct = val(row, ["top3Pct", "Top3Pct", "top3_pct"], 0);
+      const avgPoints = val(row, ["avgPoints", "AvgPoints", "avg_points"], 0);
+      const pichPtsValue = val(row, ["pichichiExpPoints", "PichichiExpPoints", "pichichi_exp_points"], 0);
+
       return `
         <tr>
           <td><span class="porra-odds-rank">${esc(rank)}</span></td>
           <td class="porra-odds-player">${esc(name)}</td>
-          <td class="num porra-odds-win">${pct(row.winPct)}</td>
-          <td class="num">${pct(row.top3Pct)}</td>
-          <td class="num porra-odds-optional">${pts(row.avgPoints)}</td>
-          <td class="num porra-odds-optional porra-odds-pich">${pichPts(row.pichichiExpPoints)}</td>
+          <td class="num porra-odds-win">${pct(winPct)}</td>
+          <td class="num">${pct(top3Pct)}</td>
+          <td class="num porra-odds-optional">${pts(avgPoints)}</td>
+          <td class="num porra-odds-optional porra-odds-pich">${pichPts(pichPtsValue)}</td>
         </tr>
       `;
     }).join("");
@@ -347,41 +437,47 @@ const TAB_LABEL = T.oddsTab;
   function findNavAndLiveButton() {
     const nav = document.getElementById("porraLinksSummaryV2");
     if (nav) {
-      const live = nav.querySelector('[data-porra-modal-v2="liveLeaderboard"]') ||
-        Array.from(nav.querySelectorAll("button,a")).find(el => /directe/i.test(el.textContent || ""));
+      const live =
+        nav.querySelector('[data-porra-modal-v2="liveLeaderboard"]') ||
+        Array.from(nav.querySelectorAll("button,a")).find(function (el) {
+          return /classificaci[oó]\s+en\s+directe|clasificaci[oó]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || "");
+        });
       return { nav, live };
     }
 
-    const live = Array.from(document.querySelectorAll("button,a")).find(el =>
-      /classificaci[oó]\s+en\s+directe|directe/i.test(el.textContent || "")
-    );
+    const live = Array.from(document.querySelectorAll("button,a")).find(function (el) {
+      return /classificaci[oó]\s+en\s+directe|clasificaci[oó]n\s+en\s+directo|live\s+standings|directe|directo|live/i.test(el.textContent || "");
+    });
+
     return { nav: live ? live.parentElement : null, live };
   }
 
   function addTab() {
-    if (document.getElementById(TAB_ID)) return true;
-
     const found = findNavAndLiveButton();
     if (!found.nav) return false;
 
     ensureStyle();
 
-    const btn = document.createElement("button");
-    btn.id = TAB_ID;
-    btn.type = "button";
-    btn.textContent = TAB_LABEL;
-    btn.className = found.live && found.live.className ? found.live.className : "porra-odds-tab-button";
-    btn.classList.add("porra-odds-tab-button");
-    btn.addEventListener("click", openModal);
+    let btn = document.getElementById(TAB_ID);
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.id = TAB_ID;
+      btn.type = "button";
+      btn.className = found.live && found.live.className ? found.live.className : "porra-odds-tab-button";
+      btn.classList.add("porra-odds-tab-button");
+      btn.addEventListener("click", openModal);
 
-    if (found.live && found.live.parentElement === found.nav && found.live.nextSibling) {
-      found.nav.insertBefore(btn, found.live.nextSibling);
-    } else if (found.live && found.live.parentElement === found.nav) {
-      found.nav.appendChild(btn);
-    } else {
-      found.nav.appendChild(btn);
+      // Place immediately to the right of "Classificació en directe".
+      if (found.live && found.live.parentElement === found.nav && found.live.nextSibling) {
+        found.nav.insertBefore(btn, found.live.nextSibling);
+      } else if (found.live && found.live.parentElement === found.nav) {
+        found.nav.appendChild(btn);
+      } else {
+        found.nav.appendChild(btn);
+      }
     }
 
+    updateText();
     return true;
   }
 
@@ -393,4 +489,11 @@ const TAB_LABEL = T.oddsTab;
     clearInterval(timer);
     addTab();
   }, 12000);
+
+  // If the site changes language after load, this quietly refreshes labels.
+  setInterval(function () {
+    if (document.getElementById(TAB_ID)) {
+      updateText();
+    }
+  }, 1000);
 })();
