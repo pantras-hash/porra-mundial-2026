@@ -12,6 +12,7 @@
       topScorers: 'Pichichis',
       winProbability: 'Probabilitats de victòria',
       liveLeaderboard: 'Classificació en directe',
+      realTimeBracket: 'Creuaments en temps real',
       pointsSystem: 'Com funciona el sistema de punts',
       
       economistasEmporrados: 'Economistas emporrados',
@@ -60,6 +61,7 @@
       topScorers: 'Pichichis',
       winProbability: 'Probabilidades de victoria',
       liveLeaderboard: 'Clasificación en directo',
+      realTimeBracket: 'Cruces en tiempo real',
       pointsSystem: 'Cómo funciona el sistema de puntos',
      
       economistasEmporrados: 'Economistas emporrados',
@@ -108,6 +110,7 @@
       topScorers: 'Top scorers',
       winProbability: 'Win probability',
       liveLeaderboard: 'Live leaderboard',
+      realTimeBracket: 'Knock-out stage in real time',
       pointsSystem: 'How the points system works',
      
       economistasEmporrados: 'Economistas emporrados',
@@ -326,9 +329,10 @@ const SUBGROUP_LEADERBOARDS = {
       const wrap = document.createElement('div');
       wrap.id = 'porraLinksSummaryV2';
       wrap.className = 'porra-links-v2 porra-links-v2--summary';
-      wrap.innerHTML = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard']
-        .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`)
-        .join('');
+      const summaryLinks = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard']
+        .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`);
+      summaryLinks.push(`<a href="https://www.bbc.com/sport/football/world-cup/schedule#KnockoutStage" target="_blank" rel="noopener" data-porra-external-v2="realTimeBracket">${escapeHtml(t('realTimeBracket'))}</a>`);
+      wrap.innerHTML = summaryLinks.join('');
       summary.appendChild(wrap);
     }
 
@@ -1078,8 +1082,14 @@ function renderPointsSystem() {
   function refreshDynamicLabels() {
     const summary = document.getElementById('porraLinksSummaryV2');
     if (summary) {
-      const types = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard'];
-      summary.querySelectorAll('[data-porra-modal-v2]').forEach((btn, idx) => { btn.textContent = t(types[idx]); });
+      summary.querySelectorAll('[data-porra-modal-v2]').forEach(btn => {
+        const type = btn.getAttribute('data-porra-modal-v2');
+        btn.textContent = t(type);
+      });
+      summary.querySelectorAll('[data-porra-external-v2]').forEach(link => {
+        const type = link.getAttribute('data-porra-external-v2');
+        link.textContent = t(type);
+      });
     }
    const pointsWrap = document.getElementById('porraLinksPointsV2');
 
