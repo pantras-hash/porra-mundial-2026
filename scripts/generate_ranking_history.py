@@ -8,10 +8,8 @@ It reads:
 
 and writes:
   - ranking_history_latest.js
-  - ranking_history/ranking_history_YYYY-MM-DD_HHMM.js
-  - ranking_history/ranking_history_YYYY-MM-DD_HHMM.json
 
-The website only needs ranking_history_latest.js; archive files are optional.
+The website only needs ranking_history_latest.js. Timestamped archive files are intentionally not written.
 """
 from __future__ import annotations
 
@@ -484,20 +482,13 @@ def build_history(data: Dict[str, Any], results: Dict[str, Dict[str, Any]]) -> D
 
 def write_outputs(history: Dict[str, Any], out_dir: Path, timestamp: Optional[str] = None) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
-    archive_dir = out_dir / "ranking_history"
-    archive_dir.mkdir(parents=True, exist_ok=True)
 
-    if not timestamp:
-        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M")
-
+    # The website reads only ranking_history_latest.js. Do not write timestamped
+    # archive files into ranking_history/, because that folder can grow very large
+    # and slow down GitHub Pages deployments.
     js_text = "window.PORRA_RANKING_HISTORY = " + json.dumps(history, ensure_ascii=False, indent=2) + ";\n"
 
     (out_dir / "ranking_history_latest.js").write_text(js_text, encoding="utf-8")
-    (archive_dir / f"ranking_history_{timestamp}.js").write_text(js_text, encoding="utf-8")
-    (archive_dir / f"ranking_history_{timestamp}.json").write_text(
-        json.dumps(history, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
 
 
 def main() -> int:
