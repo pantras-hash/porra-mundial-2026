@@ -1,0 +1,80 @@
+name: Update results from football-data.org
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: football-data-results
+  cancel-in-progress: true
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show trigger
+        run: |
+          echo "Triggered by: ${{ github.event_name }}"
+          echo "Current UTC time: $(date -u)"
+
+      - name: Allow updates at any time
+        id: window
+        run: |
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+          echo "Update window disabled: this workflow may run at any time."
+
+      - name: Explain skipped update
+        if: steps.window.outputs.should_run != 'true'
+        run: |
+          echo "Outside allowed update window."
+          echo "Current ET time: ${{ steps.window.outputs.now_et }}"
+          echo "Allowed window: 11:55am ET to 2:05am ET."
+
+      - name: Check out repository
+        if: steps.window.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        if: steps.window.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update resultats.js from football-data.org
+        if: steps.window.outputs.should_run == 'true'
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          FOOTBALL_DATA_COMPETITION: "WC"
+          FOOTBALL_DATA_SEASON: "2026"
+          FOOTBALL_DATA_DATE_FROM: "2026-06-11"
+          FOOTBALL_DATA_DATE_TO: "2026-07-20"
+          FOOTBALL_DATA_USE_DAILY: "true"
+          FOOTBALL_DATA_DAILY_DAYS: "1"
+        run: python scripts/update_results_from_football_data.py --resultats resultats.js
+
+      - name: Generate ranking history
+        if: steps.window.outputs.should_run == 'true'
+        run: python scripts/generate_ranking_history.py --data monte_carlo_data.json --resultats resultats.js --out-dir .
+
+      - name: Commit updated results and ranking history if changed
+        if: steps.window.outputs.should_run == 'true'
+        run: |
+          if git diff --quiet -- resultats.js ranking_history_latest.js; then
+            echo "No result or ranking-history changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultats.js ranking_history_latest.js
+          git commit -m "Update World Cup results and ranking history"
+
+          git pull --rebase origin main
+          git push
