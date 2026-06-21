@@ -93,7 +93,7 @@ window.PORRA_RESULTATS = {
     "G-E-4": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-20", sortOrder: 35, status: "FINISHED" },
     // 2026-06-21
     // Tunisia vs Japan
-    "G-F-4": { homeScore: 0, awayScore: 2, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36, status: "IN_PLAY" },
+    "G-F-4": { homeScore: 0, awayScore: 2, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36, status: "PAUSED" },
     // Spain vs Saudi Arabia
     "G-H-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "TIMED" },
     // Belgium vs IR Iran
