@@ -1,7 +1,7 @@
 // RESULTATS DE LA PORRA DEL MUNDIAL 2026
 // Hotfix 2026-06-21: keep chronological date/sortOrder metadata for all group matches.
 // This avoids the two-next-games prediction helper falling back to group-order IDs.
-window.PORRA_ULTIM_PARTIT = "G-F-4";
+window.PORRA_ULTIM_PARTIT = "G-H-3";
 window.PORRA_RESULTATS = {
   matches: {
     // 2026-06-11 · Mexico vs South Africa
@@ -77,7 +77,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-21 · Tunisia vs Japan
     "G-F-4": { homeScore: 0, awayScore: 4, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36, status: "FINISHED" },
     // 2026-06-21 · Spain vs Saudi Arabia
-    "G-H-3": { homeScore: 3, awayScore: 0, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "IN_PLAY" },
+    "G-H-3": { homeScore: 4, awayScore: 0, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "IN_PLAY" },
     // 2026-06-21 · Belgium vs IR Iran
     "G-G-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 38, status: "TIMED" },
     // 2026-06-21 · Uruguay vs Cabo Verde
