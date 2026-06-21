@@ -1,0 +1,516 @@
+{
+  "source": "DataHub football/worldcup matches.csv sourced from Fjelstul World Cup Database; men only, 1930-2022",
+  "base_year": 2022,
+  "recency_weight_half_life_years": 16.0,
+  "smoothing_alpha_per_scoreline": 0.15,
+  "notes": [
+    "canonical_score is high-low: 2-1 means winner 2, loser 1; draws remain g-g.",
+    "Use the model by first selecting match outcome from team ratings, then drawing a canonical score from the matching stage/outcome bucket.",
+    "Knockout scores use recorded score before penalties and include extra time when applicable in the source data."
+  ],
+  "buckets": {
+    "all_draw": [
+      {
+        "score": "1-1",
+        "probability": 0.4237585881863939
+      },
+      {
+        "score": "0-0",
+        "probability": 0.3578231093033733
+      },
+      {
+        "score": "2-2",
+        "probability": 0.16592463499011376
+      },
+      {
+        "score": "3-3",
+        "probability": 0.043829141295104804
+      },
+      {
+        "score": "4-4",
+        "probability": 0.0033004648769955932
+      },
+      {
+        "score": "5-5",
+        "probability": 0.0017880204493394565
+      },
+      {
+        "score": "6-6",
+        "probability": 0.0017880204493394565
+      },
+      {
+        "score": "7-7",
+        "probability": 0.0017880204493394565
+      }
+    ],
+    "all_win": [
+      {
+        "score": "1-0",
+        "probability": 0.261577062950301
+      },
+      {
+        "score": "2-1",
+        "probability": 0.22355449213892079
+      },
+      {
+        "score": "2-0",
+        "probability": 0.16848852688517751
+      },
+      {
+        "score": "3-0",
+        "probability": 0.07998285684982462
+      },
+      {
+        "score": "3-1",
+        "probability": 0.07159082327715666
+      },
+      {
+        "score": "3-2",
+        "probability": 0.04903879748621158
+      },
+      {
+        "score": "4-1",
+        "probability": 0.03571963357071986
+      },
+      {
+        "score": "4-0",
+        "probability": 0.02524952853699078
+      },
+      {
+        "score": "4-2",
+        "probability": 0.014668136856847253
+      },
+      {
+        "score": "6-1",
+        "probability": 0.011231430170744032
+      },
+      {
+        "score": "5-2",
+        "probability": 0.009321291260594888
+      },
+      {
+        "score": "7-0",
+        "probability": 0.007102437201084574
+      },
+      {
+        "score": "5-0",
+        "probability": 0.007070474980295661
+      },
+      {
+        "score": "5-1",
+        "probability": 0.006902176718341588
+      },
+      {
+        "score": "4-3",
+        "probability": 0.004698111850209156
+      },
+      {
+        "score": "6-0",
+        "probability": 0.004257774023976045
+      },
+      {
+        "score": "6-2",
+        "probability": 0.004136191936871141
+      },
+      {
+        "score": "7-1",
+        "probability": 0.0033211752482814167
+      },
+      {
+        "score": "8-0",
+        "probability": 0.0023051911022679166
+      },
+      {
+        "score": "9-0",
+        "probability": 0.001178117037758113
+      },
+      {
+        "score": "10-1",
+        "probability": 0.0011753140280376933
+      },
+      {
+        "score": "5-3",
+        "probability": 0.0008574086620756603
+      },
+      {
+        "score": "6-3",
+        "probability": 0.0008311277068178203
+      },
+      {
+        "score": "7-3",
+        "probability": 0.0007642963361609717
+      },
+      {
+        "score": "8-3",
+        "probability": 0.0007285309576634238
+      },
+      {
+        "score": "7-2",
+        "probability": 0.0007285309576634238
+      },
+      {
+        "score": "7-5",
+        "probability": 0.0007285309576634238
+      },
+      {
+        "score": "6-5",
+        "probability": 0.0006340171268885256
+      },
+      {
+        "score": "5-4",
+        "probability": 0.0005395032961136271
+      },
+      {
+        "score": "6-4",
+        "probability": 0.0005395032961136271
+      },
+      {
+        "score": "7-4",
+        "probability": 0.0005395032961136271
+      },
+      {
+        "score": "7-6",
+        "probability": 0.0005395032961136271
+      }
+    ],
+    "group_draw": [
+      {
+        "score": "1-1",
+        "probability": 0.40043915584591777
+      },
+      {
+        "score": "0-0",
+        "probability": 0.3738397494924596
+      },
+      {
+        "score": "2-2",
+        "probability": 0.17633372493229105
+      },
+      {
+        "score": "3-3",
+        "probability": 0.03817155091477896
+      },
+      {
+        "score": "4-4",
+        "probability": 0.00427229546115398
+      },
+      {
+        "score": "5-5",
+        "probability": 0.002314507784466164
+      },
+      {
+        "score": "6-6",
+        "probability": 0.002314507784466164
+      },
+      {
+        "score": "7-7",
+        "probability": 0.002314507784466164
+      }
+    ],
+    "group_win": [
+      {
+        "score": "1-0",
+        "probability": 0.2662462506356164
+      },
+      {
+        "score": "2-1",
+        "probability": 0.21329847184563133
+      },
+      {
+        "score": "2-0",
+        "probability": 0.1774198212362262
+      },
+      {
+        "score": "3-0",
+        "probability": 0.07782964542291572
+      },
+      {
+        "score": "3-1",
+        "probability": 0.0724380685450641
+      },
+      {
+        "score": "3-2",
+        "probability": 0.04319892111014438
+      },
+      {
+        "score": "4-1",
+        "probability": 0.03428516079662276
+      },
+      {
+        "score": "4-0",
+        "probability": 0.027579919176966783
+      },
+      {
+        "score": "4-2",
+        "probability": 0.011869942820397989
+      },
+      {
+        "score": "5-2",
+        "probability": 0.011690263642687602
+      },
+      {
+        "score": "6-1",
+        "probability": 0.00972219979826039
+      },
+      {
+        "score": "7-0",
+        "probability": 0.009443494352413017
+      },
+      {
+        "score": "5-0",
+        "probability": 0.009400996961311187
+      },
+      {
+        "score": "5-1",
+        "probability": 0.008046223823838896
+      },
+      {
+        "score": "6-0",
+        "probability": 0.005535525765172167
+      },
+      {
+        "score": "6-2",
+        "probability": 0.005499535453882539
+      },
+      {
+        "score": "8-0",
+        "probability": 0.0029393457115205746
+      },
+      {
+        "score": "9-0",
+        "probability": 0.001566439980750745
+      },
+      {
+        "score": "10-1",
+        "probability": 0.0015627130619881966
+      },
+      {
+        "score": "7-3",
+        "probability": 0.0010162185077826431
+      },
+      {
+        "score": "7-2",
+        "probability": 0.0009686643879374255
+      },
+      {
+        "score": "8-3",
+        "probability": 0.0009686643879374255
+      },
+      {
+        "score": "7-1",
+        "probability": 0.0009286762990290366
+      },
+      {
+        "score": "6-3",
+        "probability": 0.0008061905848945545
+      },
+      {
+        "score": "4-3",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "5-3",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "5-4",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "6-4",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "7-4",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "6-5",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "7-5",
+        "probability": 0.0007173307113759834
+      },
+      {
+        "score": "7-6",
+        "probability": 0.0007173307113759834
+      }
+    ],
+    "knockout_draw": [
+      {
+        "score": "1-1",
+        "probability": 0.480593664011027
+      },
+      {
+        "score": "0-0",
+        "probability": 0.29287218139751464
+      },
+      {
+        "score": "2-2",
+        "probability": 0.13024422004165698
+      },
+      {
+        "score": "3-3",
+        "probability": 0.06670860204275741
+      },
+      {
+        "score": "4-4",
+        "probability": 0.007395333126761016
+      },
+      {
+        "score": "5-5",
+        "probability": 0.007395333126761016
+      },
+      {
+        "score": "6-6",
+        "probability": 0.007395333126761016
+      },
+      {
+        "score": "7-7",
+        "probability": 0.007395333126761016
+      }
+    ],
+    "knockout_win": [
+      {
+        "score": "2-1",
+        "probability": 0.2415983084912055
+      },
+      {
+        "score": "1-0",
+        "probability": 0.23477080188793606
+      },
+      {
+        "score": "2-0",
+        "probability": 0.13504551049230187
+      },
+      {
+        "score": "3-0",
+        "probability": 0.08342645583918185
+      },
+      {
+        "score": "3-1",
+        "probability": 0.0669700581011244
+      },
+      {
+        "score": "3-2",
+        "probability": 0.06484023392000936
+      },
+      {
+        "score": "4-1",
+        "probability": 0.03973983629340252
+      },
+      {
+        "score": "4-2",
+        "probability": 0.023829794126108708
+      },
+      {
+        "score": "4-0",
+        "probability": 0.019147305099555683
+      },
+      {
+        "score": "4-3",
+        "probability": 0.017826455078783093
+      },
+      {
+        "score": "6-1",
+        "probability": 0.016918725706226018
+      },
+      {
+        "score": "7-1",
+        "probability": 0.011998696562946286
+      },
+      {
+        "score": "5-1",
+        "probability": 0.0052746829132247364
+      },
+      {
+        "score": "5-2",
+        "probability": 0.004054551992932582
+      },
+      {
+        "score": "5-3",
+        "probability": 0.003253340381406802
+      },
+      {
+        "score": "6-3",
+        "probability": 0.0029000361715197363
+      },
+      {
+        "score": "7-5",
+        "probability": 0.0027643284801130642
+      },
+      {
+        "score": "8-0",
+        "probability": 0.0024057064182399688
+      },
+      {
+        "score": "6-0",
+        "probability": 0.0024057064182399688
+      },
+      {
+        "score": "6-5",
+        "probability": 0.0024057064182399688
+      },
+      {
+        "score": "5-0",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "5-4",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "6-2",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "7-0",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "7-2",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "7-3",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "6-4",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "7-4",
+        "probability": 0.0020470843563668724
+      },
+      {
+        "score": "7-6",
+        "probability": 0.0020470843563668724
+      }
+    ]
+  },
+  "empirical_outcome_rates": {
+    "all": {
+      "weighted_draw_rate": 0.23232876823416324,
+      "weighted_non_draw_rate": 0.7676712317658367,
+      "unweighted_draw_rate": 0.22199170124481327,
+      "matches": 964,
+      "weighted_matches": 355.92517711023936
+    },
+    "group": {
+      "weighted_draw_rate": 0.2374188885618326,
+      "weighted_non_draw_rate": 0.7625811114381674,
+      "unweighted_draw_rate": 0.24373259052924792,
+      "matches": 718,
+      "weighted_matches": 267.91716703851847
+    },
+    "knockout": {
+      "weighted_draw_rate": 0.21683323985029226,
+      "weighted_non_draw_rate": 0.7831667601497078,
+      "unweighted_draw_rate": 0.15853658536585366,
+      "matches": 246,
+      "weighted_matches": 88.00801007172085
+    }
+  }
+}

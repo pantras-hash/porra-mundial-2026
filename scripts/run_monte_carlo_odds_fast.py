@@ -74,6 +74,25 @@ def parse_resultats_js(path):
             out[mid]=(hs,aw)
     return out
 
+
+def _score_to_pair(score):
+    a,b=str(score).split('-')
+    return int(a), int(b)
+
+def _prepare_score_bucket(rows):
+    scores=np.array([_score_to_pair(r['score']) for r in rows],dtype=np.int16)
+    probs=np.array([float(r['probability']) for r in rows],dtype=np.float64)
+    probs=probs/probs.sum()
+    return scores, probs
+
+def load_empirical_score_model(path):
+    if not path:
+        return None
+    pp=Path(path)
+    if not pp.exists():
+        raise FileNotFoundError(f'Empirical score model not found: {path}')
+    return json.loads(pp.read_text(encoding='utf-8'))
+
 def short_names(names):
     def base(n):
         parts=str(n).split(); return n if len(parts)<2 else f'{parts[0]} {parts[1][0].upper()}.'
@@ -85,8 +104,10 @@ def short_names(names):
     return out
 
 class FastMonteCarlo:
-    def __init__(self,data,results,seed=20260618,pichichi_config=None):
+    def __init__(self,data,results,seed=20260618,pichichi_config=None,score_model='poisson',empirical_score_model=None):
         self.data=data; self.results=results; self.rng=np.random.default_rng(seed)
+        self.score_model=score_model
+        self.empirical_score_model=self.prepare_empirical_score_model(empirical_score_model) if score_model=='empirical' else None
         teams=[]
         for gteams in data['groups'].values(): teams.extend(gteams)
         for p in data['players']:
@@ -213,7 +234,54 @@ class FastMonteCarlo:
                 self.p_top_goals[pi]=int(p['summary'].get('topScorerGoals') if p['summary'].get('topScorerGoals') is not None else -99)
             except Exception:
                 self.p_top_goals[pi]=-99
+    def prepare_empirical_score_model(self,model):
+        if not model:
+            raise ValueError('score_model=empirical requires --empirical-score-model')
+        out={'meta':{k:model.get(k) for k in ('source','base_year','recency_weight_half_life_years','smoothing_alpha_per_scoreline')}}
+        for stage in ('group','knockout'):
+            out[stage]={
+                'draw_rate':float(model['empirical_outcome_rates'][stage]['weighted_draw_rate']),
+                'win_scores':_prepare_score_bucket(model['buckets'][f'{stage}_win']),
+                'draw_scores':_prepare_score_bucket(model['buckets'][f'{stage}_draw']),
+            }
+        return out
+
+    def draw_scores_empirical(self,home_ids,away_ids,ko=False):
+        """Draw scores from a recent-weighted empirical World Cup scoreline model.
+
+        Stage-specific empirical rates decide whether the canonical scoreline is
+        a draw or non-draw. For non-draws, a rating-based logistic probability
+        decides which team receives the higher goal total.
+        """
+        home_ids=np.asarray(home_ids,dtype=np.int16)
+        away_ids=np.asarray(away_ids,dtype=np.int16)
+        B=len(home_ids)
+        cfg=self.empirical_score_model['knockout' if ko else 'group']
+        is_draw=self.rng.random(B) < cfg['draw_rate']
+        h=np.zeros(B,dtype=np.int16); a=np.zeros(B,dtype=np.int16)
+        nd=int((~is_draw).sum())
+        if nd:
+            scores,probs=cfg['win_scores']
+            idx=self.rng.choice(len(scores),size=nd,p=probs)
+            hi=scores[idx,0]; lo=scores[idx,1]
+            diff=self.rating[home_ids[~is_draw]]-self.rating[away_ids[~is_draw]]
+            p_home=1/(1+np.exp(-diff/350.0))
+            p_home=np.clip(p_home,0.28,0.72)
+            home_gets_high=self.rng.random(nd) < p_home
+            h[~is_draw]=np.where(home_gets_high,hi,lo).astype(np.int16)
+            a[~is_draw]=np.where(home_gets_high,lo,hi).astype(np.int16)
+        dd=int(is_draw.sum())
+        if dd:
+            scores,probs=cfg['draw_scores']
+            idx=self.rng.choice(len(scores),size=dd,p=probs)
+            g=scores[idx,0]
+            h[is_draw]=g.astype(np.int16)
+            a[is_draw]=g.astype(np.int16)
+        return h,a
+
     def draw_scores(self,home_ids,away_ids,ko=False):
+        if self.score_model=='empirical':
+            return self.draw_scores_empirical(home_ids,away_ids,ko)
         diff=(self.rating[home_ids]-self.rating[away_ids])/400.0
         mu_h=np.clip(1.28*np.exp(0.30*diff),0.35,3.2)
         mu_a=np.clip(1.18*np.exp(-0.30*diff),0.30,3.1)
@@ -426,7 +494,7 @@ class FastMonteCarlo:
         }
         return rows,pichichi_summary
 
-def write_outputs(rows,n,label,outdir,pichichi_summary=None,display_label=None):
+def write_outputs(rows,n,label,outdir,pichichi_summary=None,display_label=None,model_label=None,model_details=None):
     outdir=Path(outdir); outdir.mkdir(parents=True,exist_ok=True)
     csv_path=outdir/f'porra_odds_{label}_{n}.csv'
     with csv_path.open('w',newline='',encoding='utf-8') as f:
@@ -445,7 +513,9 @@ def write_outputs(rows,n,label,outdir,pichichi_summary=None,display_label=None):
         obj={'player':r['Player'],'displayName':dn,'rank':int(r['Rank']),'winPct':round(float(r['WinPct']),3),'top3Pct':round(float(r['Top3Pct']),3),'avgPoints':round(float(r['AvgPoints']),1),'maxPoints':int(r['MaxPoints']),'pichichiPlayerPct':round(float(r.get('PichichiPlayerPct',0)),3),'pichichiGoalsPct':round(float(r.get('PichichiGoalsPct',0)),3),'pichichiExpPoints':round(float(r.get('PichichiExpPoints',0)),2)}
         if aliases: obj['aliases']=aliases
         players.append(obj)
-    latest={'generatedAt':datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),'label':display_label or f'{label}, {n:,} simulations','model':'Monte Carlo amb ranking FIFA, gols limitats a 7, amb bonus de Pichichi proxy','simulations':n,'players':players}
+    latest={'generatedAt':datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),'label':display_label or f'{label}, {n:,} simulations','model':model_label or 'Monte Carlo amb ranking FIFA, gols limitats a 7, amb bonus de Pichichi proxy','simulations':n,'players':players}
+    if model_details is not None:
+        latest['modelDetails']=model_details
     if pichichi_summary is not None:
         latest['pichichi']=pichichi_summary
     js='window.PORRA_ODDS_LATEST = '+json.dumps(latest,ensure_ascii=False,indent=2)+';\n'
@@ -465,6 +535,8 @@ def main():
     ap.add_argument('--outdir',default='mc_out')
     ap.add_argument('--pichichi-current',default='pichichi_current.json',help='JSON with current top scorers and participant-pick team hints')
     ap.add_argument('--display-label',default=None,help='Human-readable label for odds_latest.js')
+    ap.add_argument('--score-model',choices=['poisson','empirical'],default='poisson',help='Score model for unplayed matches')
+    ap.add_argument('--empirical-score-model',default=None,help='JSON model for recent-weighted empirical World Cup scorelines')
     args=ap.parse_args()
     data=json.loads(Path(args.data).read_text(encoding='utf-8'))
     results=parse_resultats_js(args.resultats)
@@ -472,9 +544,14 @@ def main():
     label=args.label or datetime.now(timezone.utc).strftime('%Y-%m-%d_%H%M')
     print(f'Loaded {len(data["players"])} players, {len(data["matches"])} matches, {len(results)} finished scores')
     pichichi_config=load_pichichi_config(args.pichichi_current)
-    sim=FastMonteCarlo(data,results,args.seed,pichichi_config=pichichi_config)
+    empirical_model=load_empirical_score_model(args.empirical_score_model) if args.score_model=='empirical' else None
+    sim=FastMonteCarlo(data,results,args.seed,pichichi_config=pichichi_config,score_model=args.score_model,empirical_score_model=empirical_model)
     rows,pichichi_summary=sim.run(args.n,args.batch_size)
-    write_outputs(rows,args.n,label,args.outdir,pichichi_summary,display_label=args.display_label)
+    model_label='Monte Carlo amb ranking FIFA + distribució empírica recent de marcadors dels Mundials, amb bonus de Pichichi proxy' if args.score_model=='empirical' else 'Monte Carlo amb ranking FIFA, gols limitats a 7, amb bonus de Pichichi proxy'
+    model_details=None
+    if args.score_model=='empirical' and sim.empirical_score_model is not None:
+        model_details={'scoreModel':'empirical_recent_weighted_world_cup_scorelines','recencyHalfLifeYears':sim.empirical_score_model['meta'].get('recency_weight_half_life_years'),'baseYear':sim.empirical_score_model['meta'].get('base_year'),'source':sim.empirical_score_model['meta'].get('source'),'groupDrawRatePct':round(100*sim.empirical_score_model['group']['draw_rate'],3),'knockoutDrawRatePct':round(100*sim.empirical_score_model['knockout']['draw_rate'],3)}
+    write_outputs(rows,args.n,label,args.outdir,pichichi_summary,display_label=args.display_label,model_label=model_label,model_details=model_details)
     print('Top 10:')
     for r in rows[:10]:
         print(f"{r['Rank']:2d}. {r['Player']}: {r['WinPct']:.3f}% win, {r['Top3Pct']:.3f}% top3, avg {r['AvgPoints']:.1f}")

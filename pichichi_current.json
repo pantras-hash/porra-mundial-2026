@@ -1,6 +1,6 @@
 {
-  "asOf": "20 Jun 2026, after Türkiye 0-1 Paraguay",
-  "source": "Updated from match reports: USA 2-0 Australia, Scotland 0-1 Morocco, Brazil 3-0 Haiti, Türkiye 0-1 Paraguay; Oddspedia link retained for market reference.",
+  "asOf": "21 Jun 2026, after Tunisia 0-4 Japan",
+  "source": "Updated through Netherlands 5-1 Sweden, Germany 2-1 Côte d'Ivoire, Ecuador 0-0 Curaçao, and Tunisia 0-4 Japan. Scorers added: Brobbey 2, Gakpo 2, Summerville 1, Elanga 1; Undav 2, Kessié 1; Kamada 1, Ueda 2, Junya Itō 1.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -270,7 +270,7 @@
     {
       "name": "Deniz Undav",
       "team": "Germany",
-      "goals": 1,
+      "goals": 3,
       "aliases": [
         "Undav",
         "Denis Undav"
@@ -288,7 +288,7 @@
     {
       "name": "Crysencio Summerville",
       "team": "Netherlands",
-      "goals": 1,
+      "goals": 2,
       "aliases": [
         "Summerville"
       ]
@@ -304,7 +304,7 @@
     {
       "name": "Daichi Kamada",
       "team": "Japan",
-      "goals": 1,
+      "goals": 2,
       "aliases": [
         "Kamada"
       ]
@@ -702,6 +702,64 @@
       "aliases": [
         "Matias Galarza",
         "Galarza"
+      ]
+    },
+    {
+      "name": "Cody Gakpo",
+      "team": "Netherlands",
+      "goals": 2,
+      "aliases": [
+        "Gakpo",
+        "Cody Gakpo"
+      ]
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
+      "goals": 2,
+      "aliases": [
+        "Brobbey",
+        "Brian Brobbey"
+      ]
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Elanga",
+        "Anthony Elanga"
+      ]
+    },
+    {
+      "name": "Franck Kessié",
+      "team": "Côte d'Ivoire",
+      "goals": 1,
+      "aliases": [
+        "Kessie",
+        "Kessié",
+        "Franck Kessie",
+        "Franck Kessié"
+      ]
+    },
+    {
+      "name": "Ayase Ueda",
+      "team": "Japan",
+      "goals": 2,
+      "aliases": [
+        "Ueda",
+        "Ayase Ueda"
+      ]
+    },
+    {
+      "name": "Junya Itō",
+      "team": "Japan",
+      "goals": 1,
+      "aliases": [
+        "Junya Ito",
+        "Junya Itō",
+        "Ito",
+        "Itō"
       ]
     }
   ],

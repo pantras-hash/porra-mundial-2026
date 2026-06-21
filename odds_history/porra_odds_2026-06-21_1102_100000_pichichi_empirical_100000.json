@@ -1,4 +1,4 @@
-window.PORRA_ODDS_LATEST = {
+{
   "generatedAt": "2026-06-21T11:02:43Z",
   "label": "After Tunisia 0-4 Japan",
   "model": "Monte Carlo amb ranking FIFA + distribució empírica recent de marcadors dels Mundials, amb bonus de Pichichi proxy",
@@ -1423,4 +1423,4 @@ window.PORRA_ODDS_LATEST = {
     ],
     "missingParticipantPicks": []
   }
-};
+}
