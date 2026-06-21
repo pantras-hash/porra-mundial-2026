@@ -217,11 +217,18 @@ def js_value(value: Optional[int] | str | None) -> str:
 
 def parse_comment_pair(comments: str) -> Tuple[Optional[str], Optional[str]]:
     # Use the last comment line that looks like "A vs B".
+    # Comments may be either:
+    #   // Spain vs Saudi Arabia
+    # or the newer chronological form:
+    #   // 2026-06-21 · Spain vs Saudi Arabia
+    # Strip any date/bullet prefix before matching team names.
     lines = [line.strip() for line in comments.splitlines()]
     for line in reversed(lines):
         if not line.startswith("//"):
             continue
         text = line[2:].strip()
+        if " · " in text:
+            text = text.split(" · ", 1)[1].strip()
         if " vs " in text:
             home, away = text.split(" vs ", 1)
             return home.strip(), away.strip()
