@@ -77,7 +77,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-21 · Tunisia vs Japan
     "G-F-4": { homeScore: 0, awayScore: 4, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 36, status: "FINISHED" },
     // 2026-06-21 · Spain vs Saudi Arabia
-    "G-H-3": { homeScore: 4, awayScore: 0, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "IN_PLAY" },
+    "G-H-3": { homeScore: 4, awayScore: 0, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 37, status: "FINISHED" },
     // 2026-06-21 · Belgium vs IR Iran
     "G-G-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-21", sortOrder: 38, status: "TIMED" },
     // 2026-06-21 · Uruguay vs Cabo Verde
