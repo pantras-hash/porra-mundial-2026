@@ -1,6 +1,6 @@
 {
-  "asOf": "21 Jun 2026, after Tunisia 0-4 Japan",
-  "source": "Updated through Netherlands 5-1 Sweden, Germany 2-1 Côte d'Ivoire, Ecuador 0-0 Curaçao, and Tunisia 0-4 Japan. Scorers added: Brobbey 2, Gakpo 2, Summerville 1, Elanga 1; Undav 2, Kessié 1; Kamada 1, Ueda 2, Junya Itō 1.",
+  "asOf": "22 Jun 2026, after New Zealand 1-3 Egypt",
+  "source": "Manual update from confirmed match reports through New Zealand 1-3 Egypt; Pichichi scorers updated from public match reports.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -407,7 +407,7 @@
     {
       "name": "Maxi Araújo",
       "team": "Uruguay",
-      "goals": 1,
+      "goals": 2,
       "aliases": [
         "Maxi Araujo",
         "Araujo",
@@ -642,7 +642,7 @@
     {
       "name": "Mikel Oyarzabal",
       "team": "Spain",
-      "goals": 0,
+      "goals": 2,
       "aliases": [
         "Oyarzábal",
         "Oyarzabal",
@@ -671,7 +671,7 @@
     {
       "name": "Lamine Yamal",
       "team": "Spain",
-      "goals": 0,
+      "goals": 1,
       "aliases": [
         "Lamine Yamal",
         "Yamal"
@@ -760,6 +760,68 @@
         "Junya Itō",
         "Ito",
         "Itō"
+      ]
+    },
+    {
+      "name": "Agustín Canobbio",
+      "team": "Uruguay",
+      "goals": 1,
+      "aliases": [
+        "Agustin Canobbio",
+        "Canobbio"
+      ]
+    },
+    {
+      "name": "Kevin Pina",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "aliases": [
+        "Pina"
+      ]
+    },
+    {
+      "name": "Hélio Varela",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "aliases": [
+        "Helio Varela",
+        "Varela"
+      ]
+    },
+    {
+      "name": "Finn Surman",
+      "team": "New Zealand",
+      "goals": 1,
+      "aliases": [
+        "Surman"
+      ]
+    },
+    {
+      "name": "Mostafa Zico",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Mostafa Ziko",
+        "Zico",
+        "Ziko"
+      ]
+    },
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Salah",
+        "Mo Salah"
+      ]
+    },
+    {
+      "name": "Trézéguet",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Trezeguet",
+        "Trézéguet"
       ]
     }
   ],
