@@ -14,7 +14,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1186,
       "pichichiPlayerPct": 33.613,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 5.04
+      "pichichiExpPoints": 5.04,
+      "winDeltaPp": -0.958,
+      "expectedGallifantes": 90.39,
+      "sdGallifantes": 220.55,
+      "ceGallifantes": 2.44,
+      "ceRank": 1
     },
     {
       "player": "Pablo",
@@ -26,7 +31,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1195,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": -1.468,
+      "expectedGallifantes": 78.35,
+      "sdGallifantes": 198.82,
+      "ceGallifantes": 2.35,
+      "ceRank": 2
     },
     {
       "player": "Chús",
@@ -38,7 +48,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1166,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": 1.631,
+      "expectedGallifantes": 70.81,
+      "sdGallifantes": 194.48,
+      "ceGallifantes": 1.85,
+      "ceRank": 3
     },
     {
       "player": "Rafa Bravo",
@@ -53,7 +68,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Rafa B"
-      ]
+      ],
+      "winDeltaPp": -0.582,
+      "expectedGallifantes": 59.38,
+      "sdGallifantes": 177.01,
+      "ceGallifantes": 1.53,
+      "ceRank": 4
     },
     {
       "player": "JoanRa",
@@ -65,7 +85,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1183,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 2.23
+      "pichichiExpPoints": 2.23,
+      "winDeltaPp": 0.232,
+      "expectedGallifantes": 55.45,
+      "sdGallifantes": 175.42,
+      "ceGallifantes": 1.29,
+      "ceRank": 6
     },
     {
       "player": "Marc",
@@ -77,7 +102,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1176,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 0.01
+      "pichichiExpPoints": 0.01,
+      "winDeltaPp": -0.329,
+      "expectedGallifantes": 53.96,
+      "sdGallifantes": 165.19,
+      "ceGallifantes": 1.47,
+      "ceRank": 5
     },
     {
       "player": "Bernat Garreta",
@@ -92,7 +122,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.65,
       "aliases": [
         "Bernat G"
-      ]
+      ],
+      "winDeltaPp": -0.28,
+      "expectedGallifantes": 45.48,
+      "sdGallifantes": 162.33,
+      "ceGallifantes": 0.95,
+      "ceRank": 9
     },
     {
       "player": "Oriol Oltra",
@@ -107,7 +142,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Oriol O"
-      ]
+      ],
+      "winDeltaPp": 0.084,
+      "expectedGallifantes": 42.42,
+      "sdGallifantes": 147.59,
+      "ceGallifantes": 1.09,
+      "ceRank": 8
     },
     {
       "player": "Martina",
@@ -119,7 +159,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1153,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": 0.262,
+      "expectedGallifantes": 43.31,
+      "sdGallifantes": 147.96,
+      "ceGallifantes": 1.13,
+      "ceRank": 7
     },
     {
       "player": "Jaume Cardús",
@@ -134,7 +179,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.23,
       "aliases": [
         "Jaume C"
-      ]
+      ],
+      "winDeltaPp": -0.493,
+      "expectedGallifantes": 38.26,
+      "sdGallifantes": 145.09,
+      "ceGallifantes": 0.88,
+      "ceRank": 10
     },
     {
       "player": "Antonio",
@@ -146,7 +196,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1125,
       "pichichiPlayerPct": 5.328,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.8
+      "pichichiExpPoints": 0.8,
+      "winDeltaPp": 0.896,
+      "expectedGallifantes": 33.95,
+      "sdGallifantes": 135.22,
+      "ceGallifantes": 0.79,
+      "ceRank": 13
     },
     {
       "player": "Aleix",
@@ -158,7 +213,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1134,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 2.23
+      "pichichiExpPoints": 2.23,
+      "winDeltaPp": 0.125,
+      "expectedGallifantes": 32.01,
+      "sdGallifantes": 125.83,
+      "ceGallifantes": 0.84,
+      "ceRank": 11
     },
     {
       "player": "Xavi Ferrés",
@@ -173,7 +233,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 5.21,
       "aliases": [
         "Xavi F"
-      ]
+      ],
+      "winDeltaPp": 0.116,
+      "expectedGallifantes": 26.06,
+      "sdGallifantes": 117.89,
+      "ceGallifantes": 0.61,
+      "ceRank": 16
     },
     {
       "player": "Sergi Sanromà",
@@ -188,7 +253,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 5.21,
       "aliases": [
         "Sergi S"
-      ]
+      ],
+      "winDeltaPp": -0.062,
+      "expectedGallifantes": 25.43,
+      "sdGallifantes": 114.34,
+      "ceGallifantes": 0.64,
+      "ceRank": 15
     },
     {
       "player": "Rubi",
@@ -200,7 +270,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1172,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": 0.67,
+      "expectedGallifantes": 23.04,
+      "sdGallifantes": 111.16,
+      "ceGallifantes": 0.55,
+      "ceRank": 19
     },
     {
       "player": "Eduard Verdaguer",
@@ -215,7 +290,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.65,
       "aliases": [
         "Eduard V"
-      ]
+      ],
+      "winDeltaPp": 0.052,
+      "expectedGallifantes": 21.22,
+      "sdGallifantes": 108.23,
+      "ceGallifantes": 0.51,
+      "ceRank": 22
     },
     {
       "player": "Biel",
@@ -227,7 +307,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1108,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": 0.15,
+      "expectedGallifantes": 18.4,
+      "sdGallifantes": 101.92,
+      "ceGallifantes": 0.43,
+      "ceRank": 27
     },
     {
       "player": "Oriol Valls",
@@ -242,7 +327,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.66,
       "aliases": [
         "Oriol V"
-      ]
+      ],
+      "winDeltaPp": 0.081,
+      "expectedGallifantes": 19.63,
+      "sdGallifantes": 101.19,
+      "ceGallifantes": 0.48,
+      "ceRank": 23
     },
     {
       "player": "Pau",
@@ -254,7 +344,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1210,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": 0.553,
+      "expectedGallifantes": 20.12,
+      "sdGallifantes": 101.45,
+      "ceGallifantes": 0.52,
+      "ceRank": 21
     },
     {
       "player": "Carlo",
@@ -266,7 +361,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1141,
       "pichichiPlayerPct": 17.665,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 2.65
+      "pichichiExpPoints": 2.65,
+      "winDeltaPp": -0.208,
+      "expectedGallifantes": 17.98,
+      "sdGallifantes": 99.19,
+      "ceGallifantes": 0.42,
+      "ceRank": 28
     },
     {
       "player": "Nicolau",
@@ -278,7 +378,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1110,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": 0.003,
+      "expectedGallifantes": 16.84,
+      "sdGallifantes": 97.03,
+      "ceGallifantes": 0.4,
+      "ceRank": 30
     },
     {
       "player": "Andy",
@@ -290,7 +395,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1123,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": -0.502,
+      "expectedGallifantes": 16.61,
+      "sdGallifantes": 96.7,
+      "ceGallifantes": 0.39,
+      "ceRank": 31
     },
     {
       "player": "Pol",
@@ -302,7 +412,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1198,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": -0.463,
+      "expectedGallifantes": 20.3,
+      "sdGallifantes": 99.42,
+      "ceGallifantes": 0.55,
+      "ceRank": 20
     },
     {
       "player": "Jordi Raventós",
@@ -318,7 +433,12 @@ window.PORRA_ODDS_LATEST = {
       "aliases": [
         "Jordi Ra",
         "Jordi Ra."
-      ]
+      ],
+      "winDeltaPp": 0.302,
+      "expectedGallifantes": 15.92,
+      "sdGallifantes": 93.64,
+      "ceGallifantes": 0.38,
+      "ceRank": 32
     },
     {
       "player": "Oscar Campanyà",
@@ -333,7 +453,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Oscar C"
-      ]
+      ],
+      "winDeltaPp": -0.266,
+      "expectedGallifantes": 18.1,
+      "sdGallifantes": 94.77,
+      "ceGallifantes": 0.48,
+      "ceRank": 24
     },
     {
       "player": "Miquel",
@@ -345,7 +470,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1161,
       "pichichiPlayerPct": 17.665,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.66
+      "pichichiExpPoints": 2.66,
+      "winDeltaPp": 0.133,
+      "expectedGallifantes": 17.0,
+      "sdGallifantes": 91.81,
+      "ceGallifantes": 0.45,
+      "ceRank": 25
     },
     {
       "player": "Emiliano",
@@ -357,7 +487,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1210,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": 0.117,
+      "expectedGallifantes": 15.49,
+      "sdGallifantes": 85.2,
+      "ceGallifantes": 0.44,
+      "ceRank": 26
     },
     {
       "player": "Michael",
@@ -369,7 +504,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1169,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 2.97
+      "pichichiExpPoints": 2.97,
+      "winDeltaPp": 0.068,
+      "expectedGallifantes": 14.03,
+      "sdGallifantes": 83.33,
+      "ceGallifantes": 0.38,
+      "ceRank": 33
     },
     {
       "player": "Manel Pujol",
@@ -384,7 +524,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 5.21,
       "aliases": [
         "Manel P"
-      ]
+      ],
+      "winDeltaPp": 0.324,
+      "expectedGallifantes": 12.62,
+      "sdGallifantes": 78.93,
+      "ceGallifantes": 0.58,
+      "ceRank": 18
     },
     {
       "player": "Juanma",
@@ -396,7 +541,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1160,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": 0.103,
+      "expectedGallifantes": 12.38,
+      "sdGallifantes": 77.16,
+      "ceGallifantes": 0.36,
+      "ceRank": 35
     },
     {
       "player": "Albert Cosí",
@@ -411,7 +561,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.66,
       "aliases": [
         "Albert C"
-      ]
+      ],
+      "winDeltaPp": 0.226,
+      "expectedGallifantes": 11.99,
+      "sdGallifantes": 72.56,
+      "ceGallifantes": 0.8,
+      "ceRank": 12
     },
     {
       "player": "Gerard",
@@ -423,7 +578,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1134,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 5.21
+      "pichichiExpPoints": 5.21,
+      "winDeltaPp": -0.091,
+      "expectedGallifantes": 10.65,
+      "sdGallifantes": 72.53,
+      "ceGallifantes": 0.3,
+      "ceRank": 38
     },
     {
       "player": "Toni Campanyà",
@@ -438,7 +598,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 3.03,
       "aliases": [
         "Toni C"
-      ]
+      ],
+      "winDeltaPp": -0.067,
+      "expectedGallifantes": 9.62,
+      "sdGallifantes": 70.12,
+      "ceGallifantes": 0.38,
+      "ceRank": 34
     },
     {
       "player": "Oscar Bordas",
@@ -453,7 +618,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Oscar B"
-      ]
+      ],
+      "winDeltaPp": 0.008,
+      "expectedGallifantes": 11.8,
+      "sdGallifantes": 73.49,
+      "ceGallifantes": 0.35,
+      "ceRank": 36
     },
     {
       "player": "Teo",
@@ -465,7 +635,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1157,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": -0.28,
+      "expectedGallifantes": 10.21,
+      "sdGallifantes": 69.02,
+      "ceGallifantes": 0.32,
+      "ceRank": 37
     },
     {
       "player": "Guille Amor",
@@ -480,7 +655,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.65,
       "aliases": [
         "Guille A"
-      ]
+      ],
+      "winDeltaPp": -0.213,
+      "expectedGallifantes": 8.66,
+      "sdGallifantes": 66.42,
+      "ceGallifantes": 0.27,
+      "ceRank": 40
     },
     {
       "player": "Jordi Reig",
@@ -496,7 +676,12 @@ window.PORRA_ODDS_LATEST = {
       "aliases": [
         "Jordi Re",
         "Jordi Re."
-      ]
+      ],
+      "winDeltaPp": 0.018,
+      "expectedGallifantes": 8.6,
+      "sdGallifantes": 66.07,
+      "ceGallifantes": 0.25,
+      "ceRank": 43
     },
     {
       "player": "Paco",
@@ -508,7 +693,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1143,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": 0.279,
+      "expectedGallifantes": 8.42,
+      "sdGallifantes": 65.38,
+      "ceGallifantes": 0.28,
+      "ceRank": 39
     },
     {
       "player": "Bernat Raventós",
@@ -523,7 +713,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 5.21,
       "aliases": [
         "Bernat R"
-      ]
+      ],
+      "winDeltaPp": 0.244,
+      "expectedGallifantes": 8.48,
+      "sdGallifantes": 64.81,
+      "ceGallifantes": 0.25,
+      "ceRank": 42
     },
     {
       "player": "Albert Esteve",
@@ -538,7 +733,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.01,
       "aliases": [
         "Albert E"
-      ]
+      ],
+      "winDeltaPp": 0.213,
+      "expectedGallifantes": 7.34,
+      "sdGallifantes": 60.2,
+      "ceGallifantes": 0.27,
+      "ceRank": 41
     },
     {
       "player": "Enrique Moral",
@@ -553,7 +753,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.65,
       "aliases": [
         "Enrique M"
-      ]
+      ],
+      "winDeltaPp": -0.149,
+      "expectedGallifantes": 8.41,
+      "sdGallifantes": 60.22,
+      "ceGallifantes": 0.41,
+      "ceRank": 29
     },
     {
       "player": "Bernat Orriols",
@@ -568,7 +773,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.97,
       "aliases": [
         "Bernat O"
-      ]
+      ],
+      "winDeltaPp": -0.019,
+      "expectedGallifantes": 6.68,
+      "sdGallifantes": 57.44,
+      "ceGallifantes": 0.24,
+      "ceRank": 45
     },
     {
       "player": "Rafa Angulo",
@@ -583,7 +793,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.01,
       "aliases": [
         "Rafa A"
-      ]
+      ],
+      "winDeltaPp": -0.169,
+      "expectedGallifantes": 7.26,
+      "sdGallifantes": 57.56,
+      "ceGallifantes": 0.24,
+      "ceRank": 44
     },
     {
       "player": "Manu GS",
@@ -598,7 +813,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.65,
       "aliases": [
         "Manu G"
-      ]
+      ],
+      "winDeltaPp": -0.211,
+      "expectedGallifantes": 6.28,
+      "sdGallifantes": 54.56,
+      "ceGallifantes": 0.21,
+      "ceRank": 47
     },
     {
       "player": "Jordi Ollé",
@@ -613,7 +833,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Jordi O"
-      ]
+      ],
+      "winDeltaPp": 0.045,
+      "expectedGallifantes": 4.6,
+      "sdGallifantes": 45.07,
+      "ceGallifantes": 0.19,
+      "ceRank": 50
     },
     {
       "player": "Jaume Martí",
@@ -628,7 +853,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.01,
       "aliases": [
         "Jaume M"
-      ]
+      ],
+      "winDeltaPp": -0.032,
+      "expectedGallifantes": 4.4,
+      "sdGallifantes": 43.84,
+      "ceGallifantes": 0.2,
+      "ceRank": 49
     },
     {
       "player": "Daniela",
@@ -640,7 +870,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1132,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.13,
-      "pichichiExpPoints": 2.99
+      "pichichiExpPoints": 2.99,
+      "winDeltaPp": 0.022,
+      "expectedGallifantes": 3.89,
+      "sdGallifantes": 42.12,
+      "ceGallifantes": 0.16,
+      "ceRank": 53
     },
     {
       "player": "Norber",
@@ -652,7 +887,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1073,
       "pichichiPlayerPct": 17.665,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 4.88
+      "pichichiExpPoints": 4.88,
+      "winDeltaPp": -0.03,
+      "expectedGallifantes": 3.62,
+      "sdGallifantes": 37.13,
+      "ceGallifantes": 0.21,
+      "ceRank": 48
     },
     {
       "player": "Pere",
@@ -664,7 +904,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1087,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 2.97
+      "pichichiExpPoints": 2.97,
+      "winDeltaPp": -0.057,
+      "expectedGallifantes": 3.29,
+      "sdGallifantes": 36.52,
+      "ceGallifantes": 0.17,
+      "ceRank": 52
     },
     {
       "player": "Jordi Cunyao",
@@ -679,7 +924,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.99,
       "aliases": [
         "Jordi C"
-      ]
+      ],
+      "winDeltaPp": 0.083,
+      "expectedGallifantes": 4.87,
+      "sdGallifantes": 34.12,
+      "ceGallifantes": 0.59,
+      "ceRank": 17
     },
     {
       "player": "Isra",
@@ -691,7 +941,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1095,
       "pichichiPlayerPct": 19.831,
       "pichichiGoalsPct": 48.365,
-      "pichichiExpPoints": 7.81
+      "pichichiExpPoints": 7.81,
+      "winDeltaPp": -0.02,
+      "expectedGallifantes": 2.62,
+      "sdGallifantes": 32.02,
+      "ceGallifantes": 0.15,
+      "ceRank": 55
     },
     {
       "player": "Nick",
@@ -703,7 +958,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1058,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": -0.032,
+      "expectedGallifantes": 2.79,
+      "sdGallifantes": 30.4,
+      "ceGallifantes": 0.22,
+      "ceRank": 46
     },
     {
       "player": "Eduardo Morales",
@@ -718,7 +978,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.07,
       "aliases": [
         "Eduardo M"
-      ]
+      ],
+      "winDeltaPp": -0.013,
+      "expectedGallifantes": 2.47,
+      "sdGallifantes": 28.5,
+      "ceGallifantes": 0.16,
+      "ceRank": 54
     },
     {
       "player": "Andreu",
@@ -730,7 +995,12 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1101,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 22.338,
-      "pichichiExpPoints": 2.23
+      "pichichiExpPoints": 2.23,
+      "winDeltaPp": -0.075,
+      "expectedGallifantes": 1.73,
+      "sdGallifantes": 19.88,
+      "ceGallifantes": 0.18,
+      "ceRank": 51
     },
     {
       "player": "Guillem Ochoa",
@@ -745,7 +1015,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.01,
       "aliases": [
         "Guillem O"
-      ]
+      ],
+      "winDeltaPp": 0.024,
+      "expectedGallifantes": 1.14,
+      "sdGallifantes": 16.47,
+      "ceGallifantes": 0.11,
+      "ceRank": 57
     },
     {
       "player": "David Muñoz",
@@ -760,7 +1035,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.88,
       "aliases": [
         "David M"
-      ]
+      ],
+      "winDeltaPp": -0.001,
+      "expectedGallifantes": 1.37,
+      "sdGallifantes": 17.12,
+      "ceGallifantes": 0.13,
+      "ceRank": 56
     },
     {
       "player": "Albert Benach",
@@ -775,7 +1055,12 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.0,
       "aliases": [
         "Albert B"
-      ]
+      ],
+      "winDeltaPp": 0.007,
+      "expectedGallifantes": 3.88,
+      "sdGallifantes": 16.51,
+      "ceGallifantes": 0.71,
+      "ceRank": 14
     }
   ],
   "modelDetails": {
@@ -1471,5 +1756,14 @@ window.PORRA_ODDS_LATEST = {
       }
     ],
     "missingParticipantPicks": []
-  }
+  },
+  "comparisonLabel": "Change since Belgium 0-0 IR Iran update",
+  "gallifantesPrizeSchedule": {
+    "first": 750,
+    "second": 250,
+    "third": 100,
+    "twentySeventh": 20,
+    "last": 20
+  },
+  "gallifantesCeUtility": "log1p certainty equivalent: exp(mean(log(1 + gallifantes))) - 1"
 };

@@ -50,9 +50,15 @@
       oddsUpdated: 'Actualitzat',
       oddsModel: 'Model',
       oddsWin: 'Prob. victòria',
+      oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsExpGall: 'Gall. esperats',
+      oddsSdGall: 'SD gall.',
+      oddsCeGall: 'CE gall.',
+      oddsCeRank: 'Rank CE',
       oddsAvg: 'Punts esperats',
       oddsMax: 'Màxim',
+      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20: 750 per al 1r lloc, 250 per al 2n, 100 per al 3r, 20 per al 27è i 20 per a l’últim. Els empats reparteixen els premis corresponents. SD gall. és la desviació estàndard dels gallifantes simulats. CE gall. és l’equivalent cert amb utilitat logarítmica, calculat com exp(mitjana(log(1 + gallifantes))) − 1.',
       oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
@@ -99,9 +105,15 @@
       oddsUpdated: 'Actualizado',
       oddsModel: 'Modelo',
       oddsWin: 'Prob. victoria',
+      oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsExpGall: 'Gall. esperados',
+      oddsSdGall: 'SD gall.',
+      oddsCeGall: 'CE gall.',
+      oddsCeRank: 'Rank CE',
       oddsAvg: 'Puntos esperados',
       oddsMax: 'Máximo',
+      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20: 750 para el 1.º puesto, 250 para el 2.º, 100 para el 3.º, 20 para el 27.º y 20 para el último. Los empates reparten los premios correspondientes. SD gall. es la desviación estándar de los gallifantes simulados. CE gall. es el equivalente cierto con utilidad logarítmica, calculado como exp(media(log(1 + gallifantes))) − 1.',
       oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
@@ -148,9 +160,15 @@
       oddsUpdated: 'Updated',
       oddsModel: 'Model',
       oddsWin: 'Win probability',
+      oddsDelta: 'Δ Prob.',
       oddsTop3: 'Top 3 probability',
+      oddsExpGall: 'Exp. gall.',
+      oddsSdGall: 'SD gall.',
+      oddsCeGall: 'CE gall.',
+      oddsCeRank: 'CE rank',
       oddsAvg: 'Expected points',
       oddsMax: 'Max',
+      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule: 750 for 1st place, 250 for 2nd, 100 for 3rd, 20 for 27th, and 20 for last place. Ties split the relevant prizes. SD gall. is the standard deviation of simulated gallifantes. CE gall. is the log-utility certainty equivalent, computed as exp(mean(log(1 + gallifantes))) − 1.',
       oddsNoData: 'No win-probability data is available yet.'
     }
   };
@@ -461,12 +479,23 @@ return '';
     return Number.isFinite(n) ? n.toFixed(digits) : '—';
   }
 
+  function formatSignedPpV2(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return '—';
+    if (Math.abs(n) < 0.005) return '0.00 pp';
+    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(2)} pp`;
+  }
+
   function renderWinProbability() {
     const odds = window.PORRA_ODDS_LATEST || null;
     const rowsData = odds && Array.isArray(odds.players) ? odds.players.slice() : [];
     if (!rowsData.length) return `<p>${escapeHtml(t('oddsNoData'))}</p>`;
 
-    rowsData.sort((a, b) => (Number(b.winPct) || 0) - (Number(a.winPct) || 0) || display(a.displayName || a.player).localeCompare(display(b.displayName || b.player)));
+    rowsData.sort((a, b) =>
+      (Number(b.winPct) || 0) - (Number(a.winPct) || 0) ||
+      display(a.displayName || a.player).localeCompare(display(b.displayName || b.player))
+    );
+
     const intro = [
       odds.label ? `<p class="porra-muted-v2"><strong>${escapeHtml(t('oddsUpdated'))}:</strong> ${escapeHtml(odds.label)}</p>` : '',
       odds.model ? `<p class="porra-muted-v2"><strong>${escapeHtml(t('oddsModel'))}:</strong> ${escapeHtml(odds.model)}</p>` : ''
@@ -477,13 +506,30 @@ return '';
         <td>${escapeHtml(idx + 1)}</td>
         <td>${escapeHtml(display(row.displayName || row.player))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.winPct))}</td>
+        <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.avgPoints, 1))}</td>
-        <td class="num">${escapeHtml(display(row.maxPoints, '—'))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.sdGallifantes, 2))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.ceGallifantes, 2))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.ceRank, 0))}</td>
       </tr>
     `);
 
-    return `${intro}${tableHtml([t('pos'), t('player'), t('oddsWin'), t('oddsTop3'), t('oddsAvg'), t('oddsMax')], rows)}`;
+    const headers = [
+      t('pos'),
+      t('player'),
+      t('oddsWin'),
+      t('oddsDelta'),
+      t('oddsTop3'),
+      t('oddsExpGall'),
+      t('oddsSdGall'),
+      t('oddsCeGall'),
+      t('oddsCeRank')
+    ];
+
+    const note = `<p class="porra-muted-v2">${escapeHtml(t('oddsGallifantesNote'))}</p>`;
+
+    return `${intro}${tableHtml(headers, rows)}${note}`;
   }
 
   function renderTopScorers() {
