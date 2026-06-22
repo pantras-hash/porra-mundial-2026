@@ -28,6 +28,7 @@
   font-size: .9rem;
   font-weight: 900;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .porra-links-v2 button:hover,
@@ -36,6 +37,7 @@
 .porra-links-v2 a:focus-visible {
   color: var(--navy, #061a36);
   outline: none;
+  text-decoration: none;
 }
 
 .porra-pred-score-v2 {
