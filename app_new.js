@@ -1152,7 +1152,11 @@
     <td class="prediction-cell">${predictionCellHtml(nextPred1)}</td>
     <td class="prediction-cell">${predictionCellHtml(nextPred2)}</td>
     <td>${escapeHtml(teamDisplay(row.summary.champion))}</td>
-    <td>${escapeHtml(teamDisplay(row.summary.topScorer))}</td>
+    <td>${escapeHtml(
+  `${teamDisplay(row.summary.topScorer)}${
+    row.summary.topScorerGoals ? ` (${row.summary.topScorerGoals})` : ''
+  }`
+)}</td>
   </tr>`;
 }
   function openPlayer(id) {
