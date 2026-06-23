@@ -91,7 +91,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-22 · Norway vs Senegal
     "G-I-4": { homeScore: 3, awayScore: 2, penHome: null, penAway: null, date: "2026-06-22", sortOrder: 43, status: "FINISHED" },
     // 2026-06-22 · Jordan vs Algeria
-    "G-J-4": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-22", sortOrder: 44, status: "IN_PLAY" },
+    "G-J-4": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-22", sortOrder: 44, status: "PAUSED" },
     // 2026-06-23 · Portugal vs Uzbekistan
     "G-K-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 45, status: "TIMED" },
     // 2026-06-23 · England vs Ghana
