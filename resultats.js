@@ -95,7 +95,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-23 · Portugal vs Uzbekistan
     "G-K-3": { homeScore: 5, awayScore: 0, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 45, status: "FINISHED" },
     // 2026-06-23 · England vs Ghana
-    "G-L-3": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 46, status: "TIMED" },
+    "G-L-3": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 46, status: "IN_PLAY" },
     // 2026-06-23 · Panama vs Croatia
     "G-L-4": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 47, status: "TIMED" },
     // 2026-06-23 · Colombia vs DR Congo
