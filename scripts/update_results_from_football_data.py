@@ -391,16 +391,21 @@ def build_api_url() -> str:
     return f"{API_BASE}/competitions/{urllib.parse.quote(competition)}/matches?" + urllib.parse.urlencode(params)
 
 
-def match_by_teams(local: LocalMatch, api_matches: List[ApiMatch]) -> Optional[ApiMatch]:
+def match_by_teams(local: LocalMatch, api_matches: List[ApiMatch]) -> Tuple[Optional[ApiMatch], bool]:
+    """Return the matching API match and whether its home/away order is reversed.
+
+    resultats.js has its own canonical fixture order. Occasionally the API lists
+    the same match in the opposite home/away order. In that case, callers must
+    swap API home/away scores before writing them into the local entry.
+    """
     if not local.home_tla or not local.away_tla:
-        return None
+        return None, False
     for am in api_matches:
         if am.home_tla == local.home_tla and am.away_tla == local.away_tla:
-            return am
+            return am, False
         if am.home_tla == local.away_tla and am.away_tla == local.home_tla:
-            # Should not happen for group-stage entries, but handle it safely.
-            return am
-    return None
+            return am, True
+    return None, False
 
 
 def make_date_index(api_matches: List[ApiMatch]) -> Dict[str, List[ApiMatch]]:
@@ -413,7 +418,7 @@ def make_date_index(api_matches: List[ApiMatch]) -> Dict[str, List[ApiMatch]]:
     return by_date
 
 
-def update_entry(local: LocalMatch, api: ApiMatch) -> Tuple[str, bool]:
+def update_entry(local: LocalMatch, api: ApiMatch, reverse_scores: bool = False) -> Tuple[str, bool]:
     fields = parse_fields(local.body)
     current = {
         "homeScore": parse_int_value(fields.get("homeScore")),
@@ -435,11 +440,19 @@ def update_entry(local: LocalMatch, api: ApiMatch) -> Tuple[str, bool]:
     # Only set scores when the API has a score. Status can update without score.
     desired = dict(current)
     if api.home_score is not None and api.away_score is not None:
-        desired["homeScore"] = api.home_score
-        desired["awayScore"] = api.away_score
+        if reverse_scores:
+            desired["homeScore"] = api.away_score
+            desired["awayScore"] = api.home_score
+        else:
+            desired["homeScore"] = api.home_score
+            desired["awayScore"] = api.away_score
     if api.pen_home is not None and api.pen_away is not None:
-        desired["penHome"] = api.pen_home
-        desired["penAway"] = api.pen_away
+        if reverse_scores:
+            desired["penHome"] = api.pen_away
+            desired["penAway"] = api.pen_home
+        else:
+            desired["penHome"] = api.pen_home
+            desired["penAway"] = api.pen_away
     else:
         desired["penHome"] = None
         desired["penAway"] = None
@@ -507,7 +520,7 @@ def main() -> int:
     changed_ids: List[str] = []
 
     for local in locals_:
-        api = match_by_teams(local, api_matches)
+        api, reverse_scores = match_by_teams(local, api_matches)
 
         if api:
             used_api_ids.add(api.raw.get("id"))
@@ -546,13 +559,14 @@ def main() -> int:
 
                 if candidate.raw.get("id") not in used_api_ids:
                     api = candidate
+                    reverse_scores = False
                     used_api_ids.add(candidate.raw.get("id"))
                 else:
                     continue
             else:
                 continue
 
-        new_entry, changed = update_entry(local, api)
+        new_entry, changed = update_entry(local, api, reverse_scores=reverse_scores)
 
         if changed:
             replacements[(local.start, local.end)] = new_entry
@@ -561,6 +575,7 @@ def main() -> int:
                 f"Will update {local.id}: "
                 f"{api.home_tla or '?'} {api.home_score}-{api.away_score} "
                 f"{api.away_tla or '?'} status={api.status}"
+                + (" (scores swapped to match local fixture order)" if reverse_scores else "")
             )
 
     if not replacements:
