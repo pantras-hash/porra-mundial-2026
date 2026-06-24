@@ -40,7 +40,7 @@
       noScorers: 'Encara no hi ha una taula de golejadors a resultats.js.',
       scorerHint: 'Afegeix pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualitzat',
-      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc. En l’última jornada de cada grup, també inclou provisionalment els punts de classificació, punts i gols del grup.',
+      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc. En l’última jornada de cada grup, també inclou provisionalment els punts de classificació, punts i gols del grup. També incorpora els punts de setzens només quan la classificació i/o la posició ja són matemàticament segures.',
       rulesIntro: 'Resum dels punts configurats a prediccions.js.',
       exactResult: 'Resultat exacte / gols',
       outcome: 'Guanyador o empat',
@@ -95,7 +95,7 @@
       noScorers: 'Todavía no hay una tabla de goleadores en resultats.js.',
       scorerHint: 'Añade pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualizado',
-      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego. En la última jornada de cada grupo, también incluye provisionalmente los puntos por clasificación, puntos y goles del grupo.',
+      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego. En la última jornada de cada grupo, también incluye provisionalmente los puntos por clasificación, puntos y goles del grupo. También incorpora los puntos de dieciseisavos solo cuando la clasificación y/o la posición ya son matemáticamente seguras.',
       rulesIntro: 'Resumen de los puntos configurados en prediccions.js.',
       exactResult: 'Resultado exacto / goles',
       outcome: 'Ganador o empate',
@@ -150,7 +150,7 @@
       noScorers: 'There is not yet a top-scorers table in resultats.js.',
       scorerHint: 'Add pichichi_current.json or window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Updated',
-      liveHint: 'Includes finished matches plus current scores for matches in play. During the final matchday of each group, it also provisionally includes group ranking, points, and goals bonuses.',
+      liveHint: 'Includes finished matches plus current scores for matches in play. During the final matchday of each group, it also provisionally includes group ranking, points, and goals bonuses. It also includes Round-of-32 team/position points only when qualification and/or bracket position are mathematically certain.',
       rulesIntro: 'Summary of the points configured in prediccions.js.',
       exactResult: 'Exact score / goals',
       outcome: 'Winner or tie',
@@ -581,10 +581,15 @@ return '';
     return null;
   }
 
+  function compareGroupRows(a, b) {
+    return b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
+  }
+
   function computeThirdPlaces(groups) {
     const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
-    const sorted = rows.slice().sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
-    sorted.forEach((r, idx) => { r.thirdRank = idx + 1; r.qualified = idx < 8 && r.complete; });
+    const sorted = rows.slice().sort(compareGroupRows);
+    const allComplete = sorted.length > 0 && sorted.every(r => r.complete);
+    sorted.forEach((r, idx) => { r.thirdRank = idx + 1; r.qualified = allComplete && idx < 8 && r.complete; });
     return sorted;
   }
 
@@ -635,6 +640,99 @@ return '';
     return finalMatchday.some(m => isMatchLive(m) && !isMatchFinal(m));
   }
 
+
+  function maxPossiblePointsForAnyThirdPlaceTeam(groupObj) {
+    if (!groupObj || groupObj.complete) return Number.NEGATIVE_INFINITY;
+    const matches = Array.isArray(groupObj.matches) ? groupObj.matches : [];
+    const table = Array.isArray(groupObj.table) ? groupObj.table : [];
+    return table.reduce((maxPts, row) => {
+      const remainingForTeam = matches.filter(m => !isMatchFinal(m) && (m.home === row.team || m.away === row.team)).length;
+      return Math.max(maxPts, row.pts + 3 * remainingForTeam);
+    }, Number.NEGATIVE_INFINITY);
+  }
+
+  function thirdPlaceTeamCouldStillFinishAhead(row, groupObj) {
+    if (!row || !groupObj || groupObj.complete) return false;
+    const maxPts = maxPossiblePointsForAnyThirdPlaceTeam(groupObj);
+    // If an incomplete group's eventual third-placed team can still tie this
+    // points total, keep it uncertain: goal difference and goals-for can still
+    // change, so treating ties as uncertain is the safe conservative choice.
+    return maxPts >= row.pts;
+  }
+
+  function lockedThirdPlaceQualifiers(groups, thirdRows) {
+    const locked = [];
+    const groupEntries = Object.entries(groups || {});
+    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
+
+    if (allComplete) {
+      return thirdRows.slice(0, 8).filter(row => row.complete);
+    }
+
+    thirdRows.filter(row => row.complete).forEach(row => {
+      const completedAhead = thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length;
+      const uncertainAhead = groupEntries.filter(([, obj]) => !obj.complete && thirdPlaceTeamCouldStillFinishAhead(row, obj)).length;
+      if (completedAhead + uncertainAhead <= 7) locked.push(row);
+    });
+
+    return locked;
+  }
+
+  function computeR32Certainty(groups, thirdRows) {
+    const d = data();
+    const qualifiedTeams = new Set();
+    const exactSlots = {};
+    const directSeedTeams = {};
+
+    Object.entries(groups || {}).forEach(([g, obj]) => {
+      if (!obj || !obj.complete || !Array.isArray(obj.table)) return;
+      const first = obj.table[0];
+      const second = obj.table[1];
+      if (first && first.team) {
+        qualifiedTeams.add(first.team);
+        directSeedTeams['1' + g] = first.team;
+      }
+      if (second && second.team) {
+        qualifiedTeams.add(second.team);
+        directSeedTeams['2' + g] = second.team;
+      }
+    });
+
+    lockedThirdPlaceQualifiers(groups, thirdRows).forEach(row => {
+      if (row && row.team) qualifiedTeams.add(row.team);
+    });
+
+    const groupEntries = Object.entries(groups || {});
+    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
+    const thirdSlotTeams = {};
+
+    if (allComplete) {
+      const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
+      const matrixRow = (d.thirdPlaceMatrix || {})[qualifiedGroups] || {};
+      Object.entries(matrixRow).forEach(([paired, seed]) => {
+        const row = thirdRows.find(t => t.seed === seed);
+        if (row && row.team) thirdSlotTeams[paired] = row.team;
+      });
+    }
+
+    function exactTeamForSlot(slot) {
+      if (!slot) return null;
+      if (slot.startsWith && slot.startsWith('third:')) {
+        return thirdSlotTeams[slot.split(':')[1]] || null;
+      }
+      return directSeedTeams[String(slot)] || null;
+    }
+
+    (d.matches || []).filter(m => STAGE_CONFIG.r32.keys.includes(m.id)).forEach(m => {
+      exactSlots[m.id] = {
+        home: exactTeamForSlot(m.homeSlot),
+        away: exactTeamForSlot(m.awaySlot)
+      };
+    });
+
+    return { qualifiedTeams, exactSlots };
+  }
+
   function buildActual(includeLive) {
     const d = data();
     const r = results();
@@ -657,7 +755,7 @@ return '';
         else { h.d += 1; a.d += 1; h.pts += 1; a.pts += 1; }
       });
       let arr = Object.values(table).map(row => ({ ...row, gd: row.gf - row.ga }));
-      arr.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+      arr.sort(compareGroupRows);
       const override = (r.groupRankingOverrides || {})[g];
       if (Array.isArray(override) && override.length) {
         const order = new Map(override.map((team, idx) => [team, idx]));
@@ -670,6 +768,7 @@ return '';
     }
 
     const third = computeThirdPlaces(groups);
+    const r32Certainty = computeR32Certainty(groups, third);
     const thirdMap = computeThirdMap(third);
     const all = [];
     const byId = {};
@@ -688,7 +787,7 @@ return '';
       byId[km.id] = km;
       all.push(km);
     }
-    return { matches: all, byId, groups, third, final: r.final || {} };
+    return { matches: all, byId, groups, third, r32Certainty, final: r.final || {} };
   }
 
   function teamSet(actual, keys) {
@@ -731,14 +830,18 @@ return '';
 
     const pKoById = Object.fromEntries((player.knockoutMatches || []).map(m => [m.id, m]));
     Object.values(STAGE_CONFIG).forEach(cfg => {
-      const actualSet = teamSet(actual, cfg.keys);
+      const actualSet = cfg.team === 'E16' && actual.r32Certainty
+        ? actual.r32Certainty.qualifiedTeams
+        : teamSet(actual, cfg.keys);
       cfg.keys.forEach(key => {
         const am = actual.byId[key];
         const pm = pKoById[key];
         if (!am || !pm) return;
         ['home', 'away'].forEach(side => {
           const pTeam = pm[side];
-          const aTeam = am[side];
+          const aTeam = cfg.team === 'E16' && actual.r32Certainty
+            ? ((actual.r32Certainty.exactSlots[key] || {})[side])
+            : am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
           if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
         });
