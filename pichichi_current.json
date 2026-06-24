@@ -1,6 +1,6 @@
 {
-  "asOf": "23 Jun 2026, after Jordan 1-2 Algeria",
-  "source": "Manual update from confirmed match reports through Jordan 1-2 Algeria; scorers added from public match reports.",
+  "asOf": "24 Jun 2026, after Colombia 1-0 DR Congo",
+  "source": "Manual update from confirmed match reports through Colombia 1-0 DR Congo; scorers added from public match reports.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -10,6 +10,15 @@
       "aliases": [
         "Lionel Messi",
         "Messi"
+      ]
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "goals": 4,
+      "aliases": [
+        "Erling Haaland",
+        "Haaland"
       ]
     },
     {
@@ -24,12 +33,12 @@
       ]
     },
     {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "goals": 4,
+      "name": "Deniz Undav",
+      "team": "Germany",
+      "goals": 3,
       "aliases": [
-        "Erling Haaland",
-        "Haaland"
+        "Undav",
+        "Denis Undav"
       ]
     },
     {
@@ -41,83 +50,12 @@
       ]
     },
     {
-      "name": "Deniz Undav",
-      "team": "Germany",
-      "goals": 3,
-      "aliases": [
-        "Undav",
-        "Denis Undav"
-      ]
-    },
-    {
-      "name": "Matheus Cunha",
-      "team": "Brazil",
-      "goals": 2,
-      "aliases": [
-        "Cunha",
-        "Matheus Cunha"
-      ]
-    },
-    {
-      "name": "Vinícius Júnior",
-      "team": "Brazil",
-      "goals": 2,
-      "aliases": [
-        "Vinicius",
-        "Vinícius",
-        "Vinicius Junior",
-        "Vinícius Junior"
-      ]
-    },
-    {
-      "name": "Cyle Larin",
-      "team": "Canada",
-      "goals": 2,
-      "aliases": [
-        "Larin"
-      ]
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "goals": 2,
-      "aliases": [
-        "Kane",
-        "Harry Kane"
-      ]
-    },
-    {
-      "name": "Kai Havertz",
-      "team": "Germany",
-      "goals": 2,
-      "aliases": [
-        "Havertz",
-        "Kai Havertz"
-      ]
-    },
-    {
       "name": "Ayase Ueda",
       "team": "Japan",
       "goals": 2,
       "aliases": [
         "Ueda",
         "Ayase Ueda"
-      ]
-    },
-    {
-      "name": "Daichi Kamada",
-      "team": "Japan",
-      "goals": 2,
-      "aliases": [
-        "Kamada"
-      ]
-    },
-    {
-      "name": "Ismael Saibari",
-      "team": "Morocco",
-      "goals": 2,
-      "aliases": [
-        "Saibari"
       ]
     },
     {
@@ -139,6 +77,16 @@
       ]
     },
     {
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 2,
+      "aliases": [
+        "Cristiano Ronaldo",
+        "Ronaldo",
+        "CR7"
+      ]
+    },
+    {
       "name": "Crysencio Summerville",
       "team": "Netherlands",
       "goals": 2,
@@ -147,11 +95,62 @@
       ]
     },
     {
+      "name": "Cyle Larin",
+      "team": "Canada",
+      "goals": 2,
+      "aliases": [
+        "Larin"
+      ]
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "Japan",
+      "goals": 2,
+      "aliases": [
+        "Kamada"
+      ]
+    },
+    {
+      "name": "Daniel Muñoz",
+      "team": "Colombia",
+      "goals": 2,
+      "aliases": [
+        "Munoz",
+        "Muñoz",
+        "Daniel Munoz"
+      ]
+    },
+    {
       "name": "Elijah Just",
       "team": "New Zealand",
       "goals": 2,
       "aliases": [
         "Just"
+      ]
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "USA",
+      "goals": 2,
+      "aliases": [
+        "Balogun"
+      ]
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 2,
+      "aliases": [
+        "Kane",
+        "Harry Kane"
+      ]
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "goals": 2,
+      "aliases": [
+        "Saibari"
       ]
     },
     {
@@ -165,24 +164,6 @@
       ]
     },
     {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
-      "goals": 2,
-      "aliases": [
-        "Oyarzábal",
-        "Oyarzabal",
-        "Mikel Oyarzábal"
-      ]
-    },
-    {
-      "name": "Yasin Ayari",
-      "team": "Sweden",
-      "goals": 2,
-      "aliases": [
-        "Ayari"
-      ]
-    },
-    {
       "name": "Johan Manzambi",
       "team": "Switzerland",
       "goals": 2,
@@ -191,11 +172,21 @@
       ]
     },
     {
-      "name": "Folarin Balogun",
-      "team": "USA",
+      "name": "Kai Havertz",
+      "team": "Germany",
       "goals": 2,
       "aliases": [
-        "Balogun"
+        "Havertz",
+        "Kai Havertz"
+      ]
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "goals": 2,
+      "aliases": [
+        "Cunha",
+        "Matheus Cunha"
       ]
     },
     {
@@ -209,6 +200,95 @@
       ]
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 2,
+      "aliases": [
+        "Oyarzábal",
+        "Oyarzabal",
+        "Mikel Oyarzábal"
+      ]
+    },
+    {
+      "name": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 2,
+      "aliases": [
+        "Vinicius",
+        "Vinícius",
+        "Vinicius Junior",
+        "Vinícius Junior"
+      ]
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "Sweden",
+      "goals": 2,
+      "aliases": [
+        "Ayari"
+      ]
+    },
+    {
+      "name": "Abbosbek Fayzullayev",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "aliases": [
+        "Fayzullayev"
+      ]
+    },
+    {
+      "name": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "goals": 1,
+      "aliases": [
+        "Abdulelah Al Amri",
+        "Al Amri"
+      ]
+    },
+    {
+      "name": "Agustín Canobbio",
+      "team": "Uruguay",
+      "goals": 1,
+      "aliases": [
+        "Agustin Canobbio",
+        "Canobbio"
+      ]
+    },
+    {
+      "name": "Alex Freeman",
+      "team": "USA",
+      "goals": 1,
+      "aliases": [
+        "Freeman",
+        "Alex Freeman"
+      ]
+    },
+    {
+      "name": "Alexander Isak",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Isak"
+      ]
+    },
+    {
+      "name": "Ali Iyad Olwan",
+      "team": "Jordan",
+      "goals": 1,
+      "aliases": [
+        "Olwan"
+      ]
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "Côte d'Ivoire",
+      "goals": 1,
+      "aliases": [
+        "Amad Dialllo",
+        "Diallo"
+      ]
+    },
+    {
       "name": "Amine Gouiri",
       "team": "Algeria",
       "goals": 1,
@@ -218,12 +298,61 @@
       ]
     },
     {
-      "name": "Nadhir Benbouali",
-      "team": "Algeria",
+      "name": "Ante Budimir",
+      "team": "Croatia",
       "goals": 1,
       "aliases": [
-        "Benbouali",
-        "Nadhir Benbouali"
+        "Ante Budimir",
+        "Budimir"
+      ]
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Elanga",
+        "Anthony Elanga"
+      ]
+    },
+    {
+      "name": "Ayman Hussein",
+      "team": "Iraq",
+      "goals": 1,
+      "aliases": [
+        "Hussein"
+      ]
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "team": "Qatar",
+      "goals": 1,
+      "aliases": [
+        "Khoukhi"
+      ]
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "France",
+      "goals": 1,
+      "aliases": [
+        "Barcola"
+      ]
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "goals": 1,
+      "aliases": [
+        "Embolo"
+      ]
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "goals": 1,
+      "aliases": [
+        "Yirenkyi"
       ]
     },
     {
@@ -235,29 +364,12 @@
       ]
     },
     {
-      "name": "Nestory Irankunda",
-      "team": "Australia",
+      "name": "Emam Ashour",
+      "team": "Egypt",
       "goals": 1,
       "aliases": [
-        "Irankunda"
-      ]
-    },
-    {
-      "name": "Marko Arnautović",
-      "team": "Austria",
-      "goals": 1,
-      "aliases": [
-        "Marko Arnautovic",
-        "Arnautovic",
-        "Arnautović"
-      ]
-    },
-    {
-      "name": "Romano Schmid",
-      "team": "Austria",
-      "goals": 1,
-      "aliases": [
-        "Schmid"
+        "Eman Ashour",
+        "Ashour"
       ]
     },
     {
@@ -271,118 +383,19 @@
       ]
     },
     {
-      "name": "Jovo Lukić",
-      "team": "Bosnia-Herzegovina",
+      "name": "Felix Nmecha",
+      "team": "Germany",
       "goals": 1,
       "aliases": [
-        "Jovo Lukic",
-        "Lukic"
+        "Nmecha"
       ]
     },
     {
-      "name": "Hélio Varela",
-      "team": "Cabo Verde",
+      "name": "Finn Surman",
+      "team": "New Zealand",
       "goals": 1,
       "aliases": [
-        "Helio Varela",
-        "Varela"
-      ]
-    },
-    {
-      "name": "Kevin Pina",
-      "team": "Cabo Verde",
-      "goals": 1,
-      "aliases": [
-        "Pina"
-      ]
-    },
-    {
-      "name": "Nathan Saliba",
-      "team": "Canada",
-      "goals": 1,
-      "aliases": [
-        "Saliba"
-      ]
-    },
-    {
-      "name": "Daniel Muñoz",
-      "team": "Colombia",
-      "goals": 1,
-      "aliases": [
-        "Daniel Munoz",
-        "Munoz",
-        "Muñoz"
-      ]
-    },
-    {
-      "name": "Jaminton Campaz",
-      "team": "Colombia",
-      "goals": 1,
-      "aliases": [
-        "Campaz"
-      ]
-    },
-    {
-      "name": "Luis Díaz",
-      "team": "Colombia",
-      "goals": 1,
-      "aliases": [
-        "Luis Diaz",
-        "Diaz",
-        "Díaz"
-      ]
-    },
-    {
-      "name": "Martin Baturina",
-      "team": "Croatia",
-      "goals": 1,
-      "aliases": [
-        "Baturina"
-      ]
-    },
-    {
-      "name": "Petar Musa",
-      "team": "Croatia",
-      "goals": 1,
-      "aliases": [
-        "Musa"
-      ]
-    },
-    {
-      "name": "Livano Comenencia",
-      "team": "Curaçao",
-      "goals": 1,
-      "aliases": [
-        "Comenencia",
-        "Curacao Comenencia"
-      ]
-    },
-    {
-      "name": "Ladislav Krejčí",
-      "team": "Czechia",
-      "goals": 1,
-      "aliases": [
-        "Ladislav Krejci",
-        "Krejci"
-      ]
-    },
-    {
-      "name": "Michal Sadílek",
-      "team": "Czechia",
-      "goals": 1,
-      "aliases": [
-        "Michal Sadilek",
-        "Sadilek",
-        "Sadílek"
-      ]
-    },
-    {
-      "name": "Amad Diallo",
-      "team": "Côte d'Ivoire",
-      "goals": 1,
-      "aliases": [
-        "Amad Dialllo",
-        "Diallo"
+        "Surman"
       ]
     },
     {
@@ -397,91 +410,46 @@
       ]
     },
     {
-      "name": "Yoane Wissa",
-      "team": "DR Congo",
+      "name": "Gio Reyna",
+      "team": "USA",
       "goals": 1,
       "aliases": [
-        "Wissa"
+        "Giovanni Reyna",
+        "Reyna"
       ]
     },
     {
-      "name": "Emam Ashour",
-      "team": "Egypt",
+      "name": "Granit Xhaka",
+      "team": "Switzerland",
       "goals": 1,
       "aliases": [
-        "Eman Ashour",
-        "Ashour"
+        "Xhaka"
       ]
     },
     {
-      "name": "Mohamed Salah",
-      "team": "Egypt",
+      "name": "Hwang In-beom",
+      "team": "Korea Republic",
       "goals": 1,
       "aliases": [
-        "Salah",
-        "Mo Salah"
+        "In-Beom Hwang",
+        "Hwang In-Beom"
       ]
     },
     {
-      "name": "Mostafa Zico",
-      "team": "Egypt",
+      "name": "Hélio Varela",
+      "team": "Cabo Verde",
       "goals": 1,
       "aliases": [
-        "Mostafa Ziko",
-        "Zico",
-        "Ziko"
+        "Helio Varela",
+        "Varela"
       ]
     },
     {
-      "name": "Trézéguet",
-      "team": "Egypt",
+      "name": "Ibrahim Mbaye",
+      "team": "Senegal",
       "goals": 1,
       "aliases": [
-        "Trezeguet",
-        "Trézéguet"
-      ]
-    },
-    {
-      "name": "Jude Bellingham",
-      "team": "England",
-      "goals": 1,
-      "aliases": [
-        "Bellingham"
-      ]
-    },
-    {
-      "name": "Marcus Rashford",
-      "team": "England",
-      "goals": 1,
-      "aliases": [
-        "Rashford"
-      ]
-    },
-    {
-      "name": "Bradley Barcola",
-      "team": "France",
-      "goals": 1,
-      "aliases": [
-        "Barcola"
-      ]
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "goals": 1,
-      "aliases": [
-        "Dembele",
-        "Dembélé",
-        "Ousmane Dembele",
-        "Ousmane Dembélé"
-      ]
-    },
-    {
-      "name": "Felix Nmecha",
-      "team": "Germany",
-      "goals": 1,
-      "aliases": [
-        "Nmecha"
+        "Mbaye"
       ]
     },
     {
@@ -494,53 +462,54 @@
       ]
     },
     {
-      "name": "Nathaniel Brown",
-      "team": "Germany",
+      "name": "Jaminton Campaz",
+      "team": "Colombia",
       "goals": 1,
       "aliases": [
-        "Brown"
+        "Campaz"
       ]
     },
     {
-      "name": "Nico Schlotterbeck",
-      "team": "Germany",
+      "name": "John McGinn",
+      "team": "Scotland",
       "goals": 1,
       "aliases": [
-        "Schlotterbeck"
+        "McGinn"
       ]
     },
     {
-      "name": "Caleb Yirenkyi",
-      "team": "Ghana",
+      "name": "Jovo Lukić",
+      "team": "Bosnia-Herzegovina",
       "goals": 1,
       "aliases": [
-        "Yirenkyi"
+        "Jovo Lukic",
+        "Lukic"
       ]
     },
     {
-      "name": "Mohammad Mohebi",
-      "team": "IR Iran",
+      "name": "João Neves",
+      "team": "Portugal",
       "goals": 1,
       "aliases": [
-        "Mohamed Mohebi",
-        "Mohebi"
+        "Joao Neves",
+        "Neves"
       ]
     },
     {
-      "name": "Ramin Rezaeian",
-      "team": "IR Iran",
+      "name": "Jude Bellingham",
+      "team": "England",
       "goals": 1,
       "aliases": [
-        "Ramid Rezaeian",
-        "Rezaeian"
+        "Bellingham"
       ]
     },
     {
-      "name": "Ayman Hussein",
-      "team": "Iraq",
+      "name": "Julián Quiñones",
+      "team": "Mexico",
       "goals": 1,
       "aliases": [
-        "Hussein"
+        "Julian Quinones",
+        "Quinones"
       ]
     },
     {
@@ -563,83 +532,29 @@
       ]
     },
     {
-      "name": "Ali Iyad Olwan",
-      "team": "Jordan",
+      "name": "Kevin Pina",
+      "team": "Cabo Verde",
       "goals": 1,
       "aliases": [
-        "Olwan"
+        "Pina"
       ]
     },
     {
-      "name": "Nizar Al-Rashdan",
-      "team": "Jordan",
+      "name": "Ladislav Krejčí",
+      "team": "Czechia",
       "goals": 1,
       "aliases": [
-        "Al-Rashdan",
-        "Alrashdan",
-        "Nizar Al-Rashdan",
-        "Nizar Alrashdan"
+        "Ladislav Krejci",
+        "Krejci"
       ]
     },
     {
-      "name": "Hwang In-beom",
-      "team": "Korea Republic",
+      "name": "Lamine Yamal",
+      "team": "Spain",
       "goals": 1,
       "aliases": [
-        "In-Beom Hwang",
-        "Hwang In-Beom"
-      ]
-    },
-    {
-      "name": "Oh Hyun-gyu",
-      "team": "Korea Republic",
-      "goals": 1,
-      "aliases": [
-        "Hyun-Gyu Oh",
-        "Oh Hyun-Gyu"
-      ]
-    },
-    {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 1,
-      "aliases": [
-        "Julian Quinones",
-        "Quinones"
-      ]
-    },
-    {
-      "name": "Luis Romo",
-      "team": "Mexico",
-      "goals": 1,
-      "aliases": [
-        "Romo"
-      ]
-    },
-    {
-      "name": "Raúl Jiménez",
-      "team": "Mexico",
-      "goals": 1,
-      "aliases": [
-        "Raul Jimenez",
-        "Jimenez"
-      ]
-    },
-    {
-      "name": "Virgil van Dijk",
-      "team": "Netherlands",
-      "goals": 1,
-      "aliases": [
-        "Van Dijk",
-        "Virgil van Dijk"
-      ]
-    },
-    {
-      "name": "Finn Surman",
-      "team": "New Zealand",
-      "goals": 1,
-      "aliases": [
-        "Surman"
+        "Lamine Yamal",
+        "Yamal"
       ]
     },
     {
@@ -653,12 +568,73 @@
       ]
     },
     {
+      "name": "Livano Comenencia",
+      "team": "Curaçao",
+      "goals": 1,
+      "aliases": [
+        "Comenencia",
+        "Curacao Comenencia"
+      ]
+    },
+    {
+      "name": "Luis Díaz",
+      "team": "Colombia",
+      "goals": 1,
+      "aliases": [
+        "Luis Diaz",
+        "Diaz",
+        "Díaz"
+      ]
+    },
+    {
+      "name": "Luis Romo",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Romo"
+      ]
+    },
+    {
       "name": "Marcus Pedersen",
       "team": "Norway",
       "goals": 1,
       "aliases": [
         "Marcus Pedersen",
         "Pedersen"
+      ]
+    },
+    {
+      "name": "Marcus Rashford",
+      "team": "England",
+      "goals": 1,
+      "aliases": [
+        "Rashford"
+      ]
+    },
+    {
+      "name": "Marko Arnautović",
+      "team": "Austria",
+      "goals": 1,
+      "aliases": [
+        "Marko Arnautovic",
+        "Arnautovic",
+        "Arnautović"
+      ]
+    },
+    {
+      "name": "Martin Baturina",
+      "team": "Croatia",
+      "goals": 1,
+      "aliases": [
+        "Baturina"
+      ]
+    },
+    {
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Svanberg"
       ]
     },
     {
@@ -679,79 +655,191 @@
       ]
     },
     {
-      "name": "João Neves",
+      "name": "Michal Sadílek",
+      "team": "Czechia",
+      "goals": 1,
+      "aliases": [
+        "Michal Sadilek",
+        "Sadilek",
+        "Sadílek"
+      ]
+    },
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Salah",
+        "Mo Salah"
+      ]
+    },
+    {
+      "name": "Mohammad Mohebi",
+      "team": "IR Iran",
+      "goals": 1,
+      "aliases": [
+        "Mohamed Mohebi",
+        "Mohebi"
+      ]
+    },
+    {
+      "name": "Mostafa Zico",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Mostafa Ziko",
+        "Zico",
+        "Ziko"
+      ]
+    },
+    {
+      "name": "Nadhir Benbouali",
+      "team": "Algeria",
+      "goals": 1,
+      "aliases": [
+        "Benbouali",
+        "Nadhir Benbouali"
+      ]
+    },
+    {
+      "name": "Nathan Saliba",
+      "team": "Canada",
+      "goals": 1,
+      "aliases": [
+        "Saliba"
+      ]
+    },
+    {
+      "name": "Nathaniel Brown",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Brown"
+      ]
+    },
+    {
+      "name": "Nestory Irankunda",
+      "team": "Australia",
+      "goals": 1,
+      "aliases": [
+        "Irankunda"
+      ]
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Schlotterbeck"
+      ]
+    },
+    {
+      "name": "Nizar Al-Rashdan",
+      "team": "Jordan",
+      "goals": 1,
+      "aliases": [
+        "Al-Rashdan",
+        "Alrashdan",
+        "Nizar Al-Rashdan",
+        "Nizar Alrashdan"
+      ]
+    },
+    {
+      "name": "Nuno Mendes",
       "team": "Portugal",
       "goals": 1,
       "aliases": [
-        "Joao Neves",
-        "Neves"
+        "Nuno Mendes"
       ]
     },
     {
-      "name": "Boualem Khoukhi",
-      "team": "Qatar",
+      "name": "Oh Hyun-gyu",
+      "team": "Korea Republic",
       "goals": 1,
       "aliases": [
-        "Khoukhi"
+        "Hyun-Gyu Oh",
+        "Oh Hyun-Gyu"
       ]
     },
     {
-      "name": "Abdulelah Al-Amri",
-      "team": "Saudi Arabia",
+      "name": "Omar Rekik",
+      "team": "Tunisia",
       "goals": 1,
       "aliases": [
-        "Abdulelah Al Amri",
-        "Al Amri"
+        "Rekik"
       ]
     },
     {
-      "name": "John McGinn",
-      "team": "Scotland",
+      "name": "Ousmane Dembélé",
+      "team": "France",
       "goals": 1,
       "aliases": [
-        "McGinn"
+        "Dembele",
+        "Dembélé",
+        "Ousmane Dembele",
+        "Ousmane Dembélé"
       ]
     },
     {
-      "name": "Ibrahim Mbaye",
-      "team": "Senegal",
+      "name": "Petar Musa",
+      "team": "Croatia",
       "goals": 1,
       "aliases": [
-        "Mbaye"
+        "Musa"
       ]
     },
     {
-      "name": "Lamine Yamal",
-      "team": "Spain",
+      "name": "Rafael Leão",
+      "team": "Portugal",
       "goals": 1,
       "aliases": [
-        "Lamine Yamal",
-        "Yamal"
+        "Rafael Leao",
+        "Rafael Leão",
+        "Rafa Leão",
+        "Rafa Leao"
       ]
     },
     {
-      "name": "Alexander Isak",
-      "team": "Sweden",
+      "name": "Ramin Rezaeian",
+      "team": "IR Iran",
       "goals": 1,
       "aliases": [
-        "Isak"
+        "Ramid Rezaeian",
+        "Rezaeian"
       ]
     },
     {
-      "name": "Anthony Elanga",
-      "team": "Sweden",
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
       "goals": 1,
       "aliases": [
-        "Elanga",
-        "Anthony Elanga"
+        "Raul Jimenez",
+        "Jimenez"
       ]
     },
     {
-      "name": "Mattias Svanberg",
-      "team": "Sweden",
+      "name": "Romano Schmid",
+      "team": "Austria",
       "goals": 1,
       "aliases": [
-        "Svanberg"
+        "Schmid"
+      ]
+    },
+    {
+      "name": "Ruben Vargas",
+      "team": "Switzerland",
+      "goals": 1,
+      "aliases": [
+        "Vargas"
+      ]
+    },
+    {
+      "name": "Trézéguet",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Trezeguet",
+        "Trézéguet"
       ]
     },
     {
@@ -765,70 +853,38 @@
       ]
     },
     {
-      "name": "Breel Embolo",
-      "team": "Switzerland",
+      "name": "Virgil van Dijk",
+      "team": "Netherlands",
       "goals": 1,
       "aliases": [
-        "Embolo"
+        "Van Dijk",
+        "Virgil van Dijk"
       ]
     },
     {
-      "name": "Granit Xhaka",
-      "team": "Switzerland",
+      "name": "Yoane Wissa",
+      "team": "DR Congo",
       "goals": 1,
       "aliases": [
-        "Xhaka"
+        "Wissa"
       ]
     },
     {
-      "name": "Ruben Vargas",
-      "team": "Switzerland",
-      "goals": 1,
+      "name": "Ferran Torres",
+      "team": "Spain",
+      "goals": 0,
       "aliases": [
-        "Vargas"
+        "Ferran Torres",
+        "Ferran"
       ]
     },
     {
-      "name": "Omar Rekik",
-      "team": "Tunisia",
-      "goals": 1,
+      "name": "Gonçalo Ramos",
+      "team": "Portugal",
+      "goals": 0,
       "aliases": [
-        "Rekik"
-      ]
-    },
-    {
-      "name": "Alex Freeman",
-      "team": "USA",
-      "goals": 1,
-      "aliases": [
-        "Freeman",
-        "Alex Freeman"
-      ]
-    },
-    {
-      "name": "Gio Reyna",
-      "team": "USA",
-      "goals": 1,
-      "aliases": [
-        "Giovanni Reyna",
-        "Reyna"
-      ]
-    },
-    {
-      "name": "Agustín Canobbio",
-      "team": "Uruguay",
-      "goals": 1,
-      "aliases": [
-        "Agustin Canobbio",
-        "Canobbio"
-      ]
-    },
-    {
-      "name": "Abbosbek Fayzullayev",
-      "team": "Uzbekistan",
-      "goals": 1,
-      "aliases": [
-        "Fayzullayev"
+        "Goncalo Ramos",
+        "Gonçalo Ramos"
       ]
     },
     {
@@ -842,14 +898,6 @@
       ]
     },
     {
-      "name": "Raphinha",
-      "team": "Brazil",
-      "goals": 0,
-      "aliases": [
-        "Raphinha"
-      ]
-    },
-    {
       "name": "Michael Olise",
       "team": "France",
       "goals": 0,
@@ -859,21 +907,11 @@
       ]
     },
     {
-      "name": "Gonçalo Ramos",
-      "team": "Portugal",
+      "name": "Raphinha",
+      "team": "Brazil",
       "goals": 0,
       "aliases": [
-        "Goncalo Ramos",
-        "Gonçalo Ramos"
-      ]
-    },
-    {
-      "name": "Ferran Torres",
-      "team": "Spain",
-      "goals": 0,
-      "aliases": [
-        "Ferran Torres",
-        "Ferran"
+        "Raphinha"
       ]
     }
   ],
@@ -897,6 +935,33 @@
     "Matías Galarza": "Paraguay"
   },
   "recentUpdates": [
+    {
+      "match": "Portugal 5-0 Uzbekistan",
+      "scorers": {
+        "Cristiano Ronaldo": 2,
+        "Nuno Mendes": 1,
+        "Rafael Leão": 1
+      },
+      "ownGoals": {
+        "Abduvahid Neʼmatov": 1
+      }
+    },
+    {
+      "match": "England 0-0 Ghana",
+      "scorers": {}
+    },
+    {
+      "match": "Panama 0-1 Croatia",
+      "scorers": {
+        "Ante Budimir": 1
+      }
+    },
+    {
+      "match": "Colombia 1-0 DR Congo",
+      "scorers": {
+        "Daniel Muñoz": 1
+      }
+    },
     {
       "match": "Argentina 2-0 Austria",
       "scorers": {
