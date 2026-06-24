@@ -99,7 +99,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-23 · Panama vs Croatia
     "G-L-4": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 47, status: "FINISHED" },
     // 2026-06-23 · Colombia vs DR Congo
-    "G-K-4": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 48, status: "IN_PLAY" },
+    "G-K-4": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-23", sortOrder: 48, status: "IN_PLAY" },
     // 2026-06-24 · Canada vs Switzerland
     "G-B-5": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 49, status: "TIMED" },
     // 2026-06-24 · Bosnia-Herzegovina vs Qatar
