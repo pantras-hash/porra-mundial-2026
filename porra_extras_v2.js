@@ -40,7 +40,7 @@
       noScorers: 'Encara no hi ha una taula de golejadors a resultats.js.',
       scorerHint: 'Afegeix pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualitzat',
-      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc. En l’última jornada de cada grup, també inclou provisionalment els punts de classificació, punts i gols del grup. També incorpora els punts de setzens només quan la classificació i/o la posició ja són matemàticament segures.',
+      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc. En l’última jornada de cada grup, també inclou provisionalment els punts de classificació, punts i gols del grup, i els punts de setzens per als equips que ara mateix van 1r o 2n. Els tercers només compten quan la classificació i la posició ja són segures.',
       rulesIntro: 'Resum dels punts configurats a prediccions.js.',
       exactResult: 'Resultat exacte / gols',
       outcome: 'Guanyador o empat',
@@ -95,7 +95,7 @@
       noScorers: 'Todavía no hay una tabla de goleadores en resultats.js.',
       scorerHint: 'Añade pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualizado',
-      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego. En la última jornada de cada grupo, también incluye provisionalmente los puntos por clasificación, puntos y goles del grupo. También incorpora los puntos de dieciseisavos solo cuando la clasificación y/o la posición ya son matemáticamente seguras.',
+      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego. En la última jornada de cada grupo, también incluye provisionalmente los puntos por clasificación, puntos y goles del grupo, y los puntos de dieciseisavos para los equipos que van 1.º o 2.º en ese momento. Los terceros solo cuentan cuando la clasificación y la posición ya son seguras.',
       rulesIntro: 'Resumen de los puntos configurados en prediccions.js.',
       exactResult: 'Resultado exacto / goles',
       outcome: 'Ganador o empate',
@@ -150,7 +150,7 @@
       noScorers: 'There is not yet a top-scorers table in resultats.js.',
       scorerHint: 'Add pichichi_current.json or window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Updated',
-      liveHint: 'Includes finished matches plus current scores for matches in play. During the final matchday of each group, it also provisionally includes group ranking, points, and goals bonuses. It also includes Round-of-32 team/position points only when qualification and/or bracket position are mathematically certain.',
+      liveHint: 'Includes finished matches plus current scores for matches in play. During the final matchday of each group, it also provisionally includes group ranking, points, and goals bonuses, plus Round-of-32 team/position points for the teams currently 1st or 2nd. Third-placed teams count only when qualification and slot are certain.',
       rulesIntro: 'Summary of the points configured in prediccions.js.',
       exactResult: 'Exact score / goals',
       outcome: 'Winner or tie',
@@ -678,14 +678,16 @@ return '';
     return locked;
   }
 
-  function computeR32Certainty(groups, thirdRows) {
+  function computeR32Certainty(groups, thirdRows, includeLive) {
     const d = data();
     const qualifiedTeams = new Set();
     const exactSlots = {};
     const directSeedTeams = {};
 
     Object.entries(groups || {}).forEach(([g, obj]) => {
-      if (!obj || !obj.complete || !Array.isArray(obj.table)) return;
+      if (!obj || !Array.isArray(obj.table)) return;
+      const directSeedsScoreable = obj.complete || (includeLive && obj.groupBonusesScoreable);
+      if (!directSeedsScoreable) return;
       const first = obj.table[0];
       const second = obj.table[1];
       if (first && first.team) {
@@ -768,7 +770,7 @@ return '';
     }
 
     const third = computeThirdPlaces(groups);
-    const r32Certainty = computeR32Certainty(groups, third);
+    const r32Certainty = computeR32Certainty(groups, third, includeLive);
     const thirdMap = computeThirdMap(third);
     const all = [];
     const byId = {};
