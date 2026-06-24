@@ -1,7 +1,7 @@
 // RESULTATS DE LA PORRA DEL MUNDIAL 2026
 // Hotfix 2026-06-21: keep chronological date/sortOrder metadata for all group matches.
 // This avoids the two-next-games prediction helper falling back to group-order IDs.
-window.PORRA_ULTIM_PARTIT = "G-B-6";
+window.PORRA_ULTIM_PARTIT = "G-C-6";
 window.PORRA_RESULTATS = {
   matches: {
     // 2026-06-11 · Mexico vs South Africa
@@ -105,9 +105,9 @@ window.PORRA_RESULTATS = {
     // 2026-06-24 · Bosnia-Herzegovina vs Qatar
     "G-B-6": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 50, status: "FINISHED" },
     // 2026-06-24 · Brazil vs Scotland
-    "G-C-5": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 51, status: "TIMED" },
+    "G-C-5": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 51, status: "IN_PLAY" },
     // 2026-06-24 · Morocco vs Haiti
-    "G-C-6": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 52, status: "TIMED" },
+    "G-C-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 52, status: "IN_PLAY" },
     // 2026-06-24 · Mexico vs Czechia
     "G-A-5": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 53, status: "TIMED" },
     // 2026-06-24 · South Africa vs Korea Republic
