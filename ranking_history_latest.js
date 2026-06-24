@@ -1,11 +1,11 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-06-24T00:55:20Z",
-  "label": "24 Jun 2026, 00:55 UTC",
+  "generatedAt": "2026-06-24T00:56:19Z",
+  "label": "24 Jun 2026, 00:56 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order",
-  "snapshotCount": 46,
+  "snapshotCount": 47,
   "playerCount": 57,
-  "lastMatchId": "G-L-3",
-  "lastMatchLabel": "England 0–0 Ghana",
+  "lastMatchId": "G-L-4",
+  "lastMatchLabel": "Panama 0–1 Croatia",
   "snapshots": [
     {
       "index": 0,
@@ -328,6 +328,13 @@ window.PORRA_RANKING_HISTORY = {
       "date": "2026-06-23",
       "sortOrder": 46,
       "label": "England 0–0 Ghana"
+    },
+    {
+      "index": 46,
+      "matchId": "G-L-4",
+      "date": "2026-06-23",
+      "sortOrder": 47,
+      "label": "Panama 0–1 Croatia"
     }
   ],
   "players": [
@@ -894,6 +901,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 54,
         "points": 118
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 55,
+        "points": 121
       }
     ],
     "Albert C.": [
@@ -1172,6 +1185,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 49,
         "points": 125
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 48,
+        "points": 130
       }
     ],
     "Albert E.": [
@@ -1450,6 +1469,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 40,
         "points": 131
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 41,
+        "points": 136
       }
     ],
     "Aleix": [
@@ -1728,6 +1753,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 14,
         "points": 146
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 13,
+        "points": 151
       }
     ],
     "Andreu": [
@@ -2006,6 +2037,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 47,
         "points": 126
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 46,
+        "points": 131
       }
     ],
     "Andy": [
@@ -2284,6 +2321,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 24,
         "points": 141
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 28,
+        "points": 144
       }
     ],
     "Antonio": [
@@ -2562,6 +2605,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 14,
         "points": 146
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 18,
+        "points": 148
       }
     ],
     "Bernat G.": [
@@ -2840,6 +2889,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 14,
         "points": 146
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 18,
+        "points": 148
       }
     ],
     "Bernat O.": [
@@ -3118,6 +3173,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 51,
         "points": 122
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 50,
+        "points": 129
       }
     ],
     "Bernat R.": [
@@ -3396,6 +3457,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 35,
         "points": 135
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 33,
+        "points": 140
       }
     ],
     "Biel": [
@@ -3674,6 +3741,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 33,
         "points": 136
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 32,
+        "points": 141
       }
     ],
     "Carlo": [
@@ -3952,6 +4025,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 38,
         "points": 133
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 33,
+        "points": 140
       }
     ],
     "Chús": [
@@ -4230,6 +4309,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 5,
         "points": 154
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 4,
+        "points": 159
       }
     ],
     "Daniela": [
@@ -4508,6 +4593,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 53,
         "points": 120
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 53,
+        "points": 123
       }
     ],
     "David M.": [
@@ -4786,6 +4877,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 47,
         "points": 126
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 46,
+        "points": 131
       }
     ],
     "Eduard V.": [
@@ -5064,6 +5161,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 37,
         "points": 134
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 36,
+        "points": 139
       }
     ],
     "Eduardo M.": [
@@ -5342,6 +5445,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 51,
         "points": 122
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 52,
+        "points": 127
       }
     ],
     "Emiliano": [
@@ -5620,6 +5729,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 26,
         "points": 140
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 30,
+        "points": 143
       }
     ],
     "Enrique M.": [
@@ -5898,6 +6013,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 57,
         "points": 110
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 57,
+        "points": 112
       }
     ],
     "Gerard": [
@@ -6176,6 +6297,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 30,
         "points": 137
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 33,
+        "points": 140
       }
     ],
     "Guille A.": [
@@ -6454,6 +6581,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 43,
         "points": 129
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 44,
+        "points": 132
       }
     ],
     "Guillem O.": [
@@ -6732,6 +6865,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 30,
         "points": 137
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 31,
+        "points": 142
       }
     ],
     "Isra": [
@@ -7010,6 +7149,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 22,
         "points": 142
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 20,
+        "points": 147
       }
     ],
     "Jaume C.": [
@@ -7288,6 +7433,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 19,
         "points": 145
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 20,
+        "points": 147
       }
     ],
     "Jaume M.": [
@@ -7566,6 +7717,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 43,
         "points": 129
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 44,
+        "points": 132
       }
     ],
     "Joan": [
@@ -7844,6 +8001,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 13,
         "points": 147
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 11,
+        "points": 154
       }
     ],
     "JoanRa": [
@@ -8122,6 +8285,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 8,
         "points": 151
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 9,
+        "points": 156
       }
     ],
     "Jordi C.": [
@@ -8400,6 +8569,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 54,
         "points": 118
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 53,
+        "points": 123
       }
     ],
     "Jordi O.": [
@@ -8678,6 +8853,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 22,
         "points": 142
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 20,
+        "points": 147
       }
     ],
     "Jordi Ra.": [
@@ -8956,6 +9137,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 39,
         "points": 132
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 39,
+        "points": 137
       }
     ],
     "Jordi Re.": [
@@ -9234,6 +9421,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 28,
         "points": 139
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 23,
+        "points": 146
       }
     ],
     "Juanma": [
@@ -9512,6 +9705,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 14,
         "points": 146
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 15,
+        "points": 149
       }
     ],
     "Manel P.": [
@@ -9790,6 +9989,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 49,
         "points": 125
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 51,
+        "points": 128
       }
     ],
     "Manu G.": [
@@ -10068,6 +10273,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 45,
         "points": 128
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 43,
+        "points": 133
       }
     ],
     "Martina": [
@@ -10346,6 +10557,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 1,
         "points": 167
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 1,
+        "points": 172
       }
     ],
     "Marc": [
@@ -10624,6 +10841,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 11,
         "points": 149
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 12,
+        "points": 152
       }
     ],
     "Michael": [
@@ -10902,6 +11125,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 41,
         "points": 130
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 39,
+        "points": 137
       }
     ],
     "Miquel": [
@@ -11180,6 +11409,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 2,
         "points": 164
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 3,
+        "points": 167
       }
     ],
     "Nick": [
@@ -11458,6 +11693,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 12,
         "points": 148
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 13,
+        "points": 151
       }
     ],
     "Nicolau": [
@@ -11736,6 +11977,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 28,
         "points": 139
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 23,
+        "points": 146
       }
     ],
     "Norber": [
@@ -12014,6 +12261,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 46,
         "points": 127
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 48,
+        "points": 130
       }
     ],
     "Oriol O.": [
@@ -12292,6 +12545,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 3,
         "points": 162
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 2,
+        "points": 169
       }
     ],
     "Oriol V.": [
@@ -12570,6 +12829,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 14,
         "points": 146
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 15,
+        "points": 149
       }
     ],
     "Oscar C.": [
@@ -12848,6 +13113,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 41,
         "points": 130
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 42,
+        "points": 135
       }
     ],
     "Oscar B.": [
@@ -13126,6 +13397,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 24,
         "points": 141
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 23,
+        "points": 146
       }
     ],
     "Pablo": [
@@ -13404,6 +13681,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 7,
         "points": 152
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 4,
+        "points": 159
       }
     ],
     "Paco": [
@@ -13682,6 +13965,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 56,
         "points": 116
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 55,
+        "points": 121
       }
     ],
     "Pau": [
@@ -13960,6 +14249,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 5,
         "points": 154
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 8,
+        "points": 157
       }
     ],
     "Pere": [
@@ -14238,6 +14533,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 35,
         "points": 135
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 38,
+        "points": 138
       }
     ],
     "Pol": [
@@ -14516,6 +14817,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 20,
         "points": 144
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 15,
+        "points": 149
       }
     ],
     "Rafa A.": [
@@ -14794,6 +15101,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 21,
         "points": 143
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 23,
+        "points": 146
       }
     ],
     "Rubi": [
@@ -15072,6 +15385,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 26,
         "points": 140
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 27,
+        "points": 145
       }
     ],
     "Rafa B.": [
@@ -15350,6 +15669,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 10,
         "points": 150
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 10,
+        "points": 155
       }
     ],
     "Sergi S.": [
@@ -15628,6 +15953,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 8,
         "points": 151
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 6,
+        "points": 158
       }
     ],
     "Teo": [
@@ -15906,6 +16237,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 30,
         "points": 137
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 28,
+        "points": 144
       }
     ],
     "Toni C.": [
@@ -16184,6 +16521,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 33,
         "points": 136
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 36,
+        "points": 139
       }
     ],
     "Xavi F.": [
@@ -16462,6 +16805,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "G-L-3",
         "rank": 4,
         "points": 155
+      },
+      {
+        "x": 46,
+        "matchId": "G-L-4",
+        "rank": 6,
+        "points": 158
       }
     ]
   }
