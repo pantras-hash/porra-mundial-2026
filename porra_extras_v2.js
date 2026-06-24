@@ -40,7 +40,7 @@
       noScorers: 'Encara no hi ha una taula de golejadors a resultats.js.',
       scorerHint: 'Afegeix pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualitzat',
-      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc.',
+      liveHint: 'Inclou els partits finalitzats i també els marcadors dels partits en joc. En l’última jornada de cada grup, també inclou provisionalment els punts de classificació, punts i gols del grup.',
       rulesIntro: 'Resum dels punts configurats a prediccions.js.',
       exactResult: 'Resultat exacte / gols',
       outcome: 'Guanyador o empat',
@@ -95,7 +95,7 @@
       noScorers: 'Todavía no hay una tabla de goleadores en resultats.js.',
       scorerHint: 'Añade pichichi_current.json o window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Actualizado',
-      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego.',
+      liveHint: 'Incluye los partidos finalizados y también los marcadores de los partidos en juego. En la última jornada de cada grupo, también incluye provisionalmente los puntos por clasificación, puntos y goles del grupo.',
       rulesIntro: 'Resumen de los puntos configurados en prediccions.js.',
       exactResult: 'Resultado exacto / goles',
       outcome: 'Ganador o empate',
@@ -150,7 +150,7 @@
       noScorers: 'There is not yet a top-scorers table in resultats.js.',
       scorerHint: 'Add pichichi_current.json or window.PORRA_RESULTATS.topScorers = [{ name, team, goals }].',
       scorerUpdated: 'Updated',
-      liveHint: 'Includes finished matches plus current scores for matches in play.',
+      liveHint: 'Includes finished matches plus current scores for matches in play. During the final matchday of each group, it also provisionally includes group ranking, points, and goals bonuses.',
       rulesIntro: 'Summary of the points configured in prediccions.js.',
       exactResult: 'Exact score / goals',
       outcome: 'Winner or tie',
@@ -624,6 +624,17 @@ return '';
     return typeof v === 'string' && (/^[123][A-L]$/.test(v) || /^W\d+$/.test(v) || /^L\d+$/.test(v));
   }
 
+  function isFinalGroupMatchdayScoreable(matches, includeLive) {
+    if (!includeLive || !Array.isArray(matches) || matches.length !== 6) return false;
+    const ordered = chronologicalMatches(matches);
+    const previousMatchdays = ordered.slice(0, 4);
+    const finalMatchday = ordered.slice(4);
+    if (finalMatchday.length !== 2) return false;
+    if (!previousMatchdays.every(m => isMatchFinal(m))) return false;
+    if (!finalMatchday.every(m => isMatchCounted(m, true))) return false;
+    return finalMatchday.some(m => isMatchLive(m) && !isMatchFinal(m));
+  }
+
   function buildActual(includeLive) {
     const d = data();
     const r = results();
@@ -654,7 +665,8 @@ return '';
       }
       arr.forEach((row, idx) => { row.pos = idx + 1; });
       const complete = matches.length === 6 && matches.every(m => isMatchFinal(m));
-      groups[g] = { table: arr, matches, complete };
+      const groupBonusesScoreable = complete || isFinalGroupMatchdayScoreable(matches, includeLive);
+      groups[g] = { table: arr, matches, complete, groupBonusesScoreable };
     }
 
     const third = computeThirdPlaces(groups);
@@ -705,7 +717,7 @@ return '';
     });
 
     Object.entries(actual.groups).forEach(([g, obj]) => {
-      if (!obj.complete) return;
+      if (!obj.groupBonusesScoreable) return;
       const predRows = (player.groupStandings || {})[g] || [];
       for (let i = 0; i < 4; i += 1) {
         const ar = obj.table[i];
