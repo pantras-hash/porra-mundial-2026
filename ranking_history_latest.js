@@ -1,6 +1,6 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-06-23T23:59:16Z",
-  "label": "23 Jun 2026, 23:59 UTC",
+  "generatedAt": "2026-06-24T00:00:29Z",
+  "label": "24 Jun 2026, 00:00 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order",
   "snapshotCount": 46,
   "playerCount": 57,
