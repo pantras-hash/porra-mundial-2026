@@ -105,9 +105,9 @@ window.PORRA_RESULTATS = {
     // 2026-06-24 · Bosnia-Herzegovina vs Qatar
     "G-B-6": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 50, status: "FINISHED" },
     // 2026-06-24 · Brazil vs Scotland
-    "G-C-5": { homeScore: 3, awayScore: 0, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 51, status: "PAUSED" },
+    "G-C-5": { homeScore: 3, awayScore: 0, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 51, status: "FINISHED" },
     // 2026-06-24 · Morocco vs Haiti
-    "G-C-6": { homeScore: 4, awayScore: 2, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 52, status: "IN_PLAY" },
+    "G-C-6": { homeScore: 4, awayScore: 2, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 52, status: "FINISHED" },
     // 2026-06-24 · Mexico vs Czechia
     "G-A-5": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-24", sortOrder: 53, status: "TIMED" },
     // 2026-06-24 · South Africa vs Korea Republic
