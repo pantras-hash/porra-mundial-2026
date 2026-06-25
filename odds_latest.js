@@ -1,980 +1,791 @@
 window.PORRA_ODDS_LATEST = {
-  "generatedAt": "2026-06-24T04:08:20Z",
-  "label": "After Colombia 1-0 DR Congo · FIFA H2H tiebreakers",
-  "model": "Monte Carlo: current-WC-weighted group scorelines + historical knockout scorelines + FIFA-rating winner assignment + Pichichi proxy",
+  "generatedAt": "2026-06-25T03:03:58Z",
+  "label": "After Group A, 100,000 simulations",
+  "model": "Monte Carlo amb ranking FIFA + distribució empírica recent de marcadors dels Mundials, amb bonus de Pichichi proxy",
   "simulations": 100000,
-  "baselineLabelForDelta": "After Jordan 1-2 Algeria · FIFA H2H tiebreakers",
   "players": [
-    {
-      "player": "Joan",
-      "displayName": "Joan",
-      "rank": 1,
-      "winPct": 13.159,
-      "winDeltaPp": 1.436,
-      "top3Pct": 25.565,
-      "avgPoints": 831.8,
-      "maxPoints": 1207,
-      "expectedGallifantes": 122.03,
-      "sdGallifantes": 252.72,
-      "ceGallifantes": 3.8,
-      "ceRank": 1,
-      "pichichiPlayerPct": 50.076,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 7.51
-    },
     {
       "player": "Rafa Bravo",
       "displayName": "Rafa B.",
-      "rank": 2,
-      "winPct": 10.03,
-      "winDeltaPp": 0.307,
-      "top3Pct": 24.225,
-      "avgPoints": 844.6,
-      "maxPoints": 1220,
-      "expectedGallifantes": 101.07,
-      "sdGallifantes": 226.66,
-      "ceGallifantes": 3.23,
-      "ceRank": 2,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Oriol Oltra",
-      "displayName": "Oriol O.",
-      "rank": 3,
-      "winPct": 7.176,
-      "winDeltaPp": 1.165,
-      "top3Pct": 21.044,
-      "avgPoints": 841.1,
-      "maxPoints": 1214,
-      "expectedGallifantes": 78.62,
-      "sdGallifantes": 197.76,
-      "ceGallifantes": 2.43,
-      "ceRank": 3,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
+      "rank": 1,
+      "winPct": 13.124,
+      "top3Pct": 29.963,
+      "avgPoints": 856.1,
+      "maxPoints": 1250,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Rafa B"
+      ]
     },
     {
       "player": "Aleix",
       "displayName": "Aleix",
-      "rank": 4,
-      "winPct": 5.97,
-      "winDeltaPp": 0.949,
-      "top3Pct": 17.999,
-      "avgPoints": 840.7,
-      "maxPoints": 1240,
-      "expectedGallifantes": 66.43,
-      "sdGallifantes": 182.98,
-      "ceGallifantes": 1.87,
-      "ceRank": 4,
+      "rank": 2,
+      "winPct": 8.851,
+      "top3Pct": 25.045,
+      "avgPoints": 853.6,
+      "maxPoints": 1203,
       "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 2.32
-    },
-    {
-      "player": "Chús",
-      "displayName": "Chús",
-      "rank": 5,
-      "winPct": 5.578,
-      "winDeltaPp": 0.487,
-      "top3Pct": 14.143,
-      "avgPoints": 816.1,
-      "maxPoints": 1185,
-      "expectedGallifantes": 57.49,
-      "sdGallifantes": 176.47,
-      "ceGallifantes": 1.41,
-      "ceRank": 5,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
-    },
-    {
-      "player": "JoanRa",
-      "displayName": "JoanRa",
-      "rank": 6,
-      "winPct": 5.023,
-      "winDeltaPp": -0.9,
-      "top3Pct": 11.843,
-      "avgPoints": 803.1,
-      "maxPoints": 1179,
-      "expectedGallifantes": 50.36,
-      "sdGallifantes": 167.98,
-      "ceGallifantes": 1.12,
-      "ceRank": 7,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 2.32
-    },
-    {
-      "player": "Pablo",
-      "displayName": "Pablo",
-      "rank": 7,
-      "winPct": 3.597,
-      "winDeltaPp": 0.107,
-      "top3Pct": 12.749,
-      "avgPoints": 828.9,
-      "maxPoints": 1182,
-      "expectedGallifantes": 43.26,
-      "sdGallifantes": 146.74,
-      "ceGallifantes": 1.16,
-      "ceRank": 6,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 2.54
     },
     {
       "player": "Sergi Sanromà",
       "displayName": "Sergi S.",
-      "rank": 8,
-      "winPct": 3.174,
-      "winDeltaPp": 0.149,
-      "top3Pct": 10.559,
-      "avgPoints": 818.9,
-      "maxPoints": 1191,
-      "expectedGallifantes": 36.99,
-      "sdGallifantes": 137.89,
-      "ceGallifantes": 0.93,
-      "ceRank": 11,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
+      "rank": 3,
+      "winPct": 7.807,
+      "top3Pct": 20.755,
+      "avgPoints": 842.3,
+      "maxPoints": 1218,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58,
+      "aliases": [
+        "Sergi S"
+      ]
     },
     {
-      "player": "Pol",
-      "displayName": "Pol",
-      "rank": 9,
-      "winPct": 3.173,
-      "winDeltaPp": 0.447,
-      "top3Pct": 11.875,
-      "avgPoints": 829.4,
-      "maxPoints": 1189,
-      "expectedGallifantes": 39.27,
-      "sdGallifantes": 138.98,
-      "ceGallifantes": 1.05,
-      "ceRank": 9,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Martina",
-      "displayName": "Martina",
-      "rank": 10,
-      "winPct": 3.154,
-      "winDeltaPp": -0.221,
-      "top3Pct": 11.913,
-      "avgPoints": 824.6,
-      "maxPoints": 1223,
-      "expectedGallifantes": 39.18,
-      "sdGallifantes": 138.61,
-      "ceGallifantes": 1.05,
-      "ceRank": 8,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Bernat Garreta",
-      "displayName": "Bernat G.",
-      "rank": 11,
-      "winPct": 2.89,
-      "winDeltaPp": -0.345,
-      "top3Pct": 6.776,
-      "avgPoints": 775.6,
-      "maxPoints": 1180,
-      "expectedGallifantes": 29.16,
-      "sdGallifantes": 129.84,
-      "ceGallifantes": 0.6,
-      "ceRank": 18,
-      "pichichiPlayerPct": 6.32,
+      "player": "Joan",
+      "displayName": "Joan",
+      "rank": 4,
+      "winPct": 7.472,
+      "top3Pct": 16.408,
+      "avgPoints": 815.0,
+      "maxPoints": 1171,
+      "pichichiPlayerPct": 50.961,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
+      "pichichiExpPoints": 7.64
+    },
+    {
+      "player": "JoanRa",
+      "displayName": "JoanRa",
+      "rank": 5,
+      "winPct": 6.756,
+      "top3Pct": 14.452,
+      "avgPoints": 813.1,
+      "maxPoints": 1182,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 2.54
+    },
+    {
+      "player": "Pablo",
+      "displayName": "Pablo",
+      "rank": 6,
+      "winPct": 4.153,
+      "top3Pct": 15.211,
+      "avgPoints": 836.9,
+      "maxPoints": 1226,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Chús",
+      "displayName": "Chús",
+      "rank": 7,
+      "winPct": 3.676,
+      "top3Pct": 10.114,
+      "avgPoints": 809.9,
+      "maxPoints": 1195,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 0.0
     },
     {
       "player": "Rubi",
       "displayName": "Rubi",
-      "rank": 12,
-      "winPct": 2.442,
-      "winDeltaPp": 0.363,
-      "top3Pct": 7.642,
-      "avgPoints": 808.0,
-      "maxPoints": 1191,
-      "expectedGallifantes": 27.77,
-      "sdGallifantes": 121.39,
-      "ceGallifantes": 0.67,
-      "ceRank": 17,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
+      "rank": 8,
+      "winPct": 3.512,
+      "top3Pct": 10.698,
+      "avgPoints": 821.5,
+      "maxPoints": 1198,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
     },
     {
       "player": "Oscar Campanyà",
       "displayName": "Oscar C.",
-      "rank": 13,
-      "winPct": 2.208,
-      "winDeltaPp": -0.462,
-      "top3Pct": 7.964,
-      "avgPoints": 813.9,
-      "maxPoints": 1186,
-      "expectedGallifantes": 27.2,
-      "sdGallifantes": 117.19,
-      "ceGallifantes": 0.7,
-      "ceRank": 13,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Carlo",
-      "displayName": "Carlo",
-      "rank": 14,
-      "winPct": 2.096,
-      "winDeltaPp": 0.306,
-      "top3Pct": 5.753,
-      "avgPoints": 793.3,
-      "maxPoints": 1167,
-      "expectedGallifantes": 22.8,
-      "sdGallifantes": 112.3,
-      "ceGallifantes": 0.52,
-      "ceRank": 19,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
-    },
-    {
-      "player": "Emiliano",
-      "displayName": "Emiliano",
-      "rank": 15,
-      "winPct": 1.953,
-      "winDeltaPp": 0.288,
-      "top3Pct": 8.36,
-      "avgPoints": 818.8,
-      "maxPoints": 1180,
-      "expectedGallifantes": 25.86,
-      "sdGallifantes": 111.41,
-      "ceGallifantes": 0.7,
-      "ceRank": 12,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Marc",
-      "displayName": "Marc",
-      "rank": 16,
-      "winPct": 1.902,
-      "winDeltaPp": -0.721,
-      "top3Pct": 8.237,
-      "avgPoints": 820.2,
-      "maxPoints": 1184,
-      "expectedGallifantes": 25.23,
-      "sdGallifantes": 110.03,
-      "ceGallifantes": 0.68,
-      "ceRank": 14,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.01
-    },
-    {
-      "player": "Xavi Ferrés",
-      "displayName": "Xavi F.",
-      "rank": 17,
-      "winPct": 1.754,
-      "winDeltaPp": -0.153,
-      "top3Pct": 5.613,
-      "avgPoints": 795.0,
-      "maxPoints": 1140,
-      "expectedGallifantes": 20.28,
-      "sdGallifantes": 103.78,
-      "ceGallifantes": 0.48,
-      "ceRank": 21,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Jaume Cardús",
-      "displayName": "Jaume C.",
-      "rank": 18,
-      "winPct": 1.7,
-      "winDeltaPp": 0.146,
-      "top3Pct": 4.992,
-      "avgPoints": 797.1,
-      "maxPoints": 1159,
-      "expectedGallifantes": 19.04,
-      "sdGallifantes": 101.65,
-      "ceGallifantes": 0.46,
-      "ceRank": 26,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 2.32
+      "rank": 9,
+      "winPct": 3.224,
+      "top3Pct": 10.026,
+      "avgPoints": 822.6,
+      "maxPoints": 1206,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Oscar C"
+      ]
     },
     {
       "player": "Bernat Raventós",
       "displayName": "Bernat R.",
-      "rank": 19,
-      "winPct": 1.478,
-      "winDeltaPp": 0.15,
-      "top3Pct": 5.348,
-      "avgPoints": 801.2,
-      "maxPoints": 1253,
-      "expectedGallifantes": 18.12,
-      "sdGallifantes": 96.25,
-      "ceGallifantes": 0.47,
-      "ceRank": 23,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
+      "rank": 10,
+      "winPct": 2.579,
+      "top3Pct": 8.939,
+      "avgPoints": 819.5,
+      "maxPoints": 1232,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58,
+      "aliases": [
+        "Bernat R"
+      ]
     },
     {
-      "player": "Oriol Valls",
-      "displayName": "Oriol V.",
-      "rank": 20,
-      "winPct": 1.458,
-      "winDeltaPp": -0.925,
-      "top3Pct": 5.363,
-      "avgPoints": 800.1,
-      "maxPoints": 1155,
-      "expectedGallifantes": 18.13,
-      "sdGallifantes": 95.94,
-      "ceGallifantes": 0.47,
-      "ceRank": 25,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.96
+      "player": "Pol",
+      "displayName": "Pol",
+      "rank": 11,
+      "winPct": 2.52,
+      "top3Pct": 10.837,
+      "avgPoints": 831.5,
+      "maxPoints": 1198,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
     },
     {
-      "player": "Teo",
-      "displayName": "Teo",
-      "rank": 21,
-      "winPct": 1.398,
-      "winDeltaPp": 0.658,
-      "top3Pct": 5.474,
-      "avgPoints": 813.1,
-      "maxPoints": 1184,
-      "expectedGallifantes": 17.8,
-      "sdGallifantes": 94.21,
-      "ceGallifantes": 0.47,
-      "ceRank": 24,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Nicolau",
-      "displayName": "Nicolau",
-      "rank": 22,
-      "winPct": 1.339,
-      "winDeltaPp": 0.12,
-      "top3Pct": 3.287,
-      "avgPoints": 758.2,
-      "maxPoints": 1094,
-      "expectedGallifantes": 14.02,
-      "sdGallifantes": 89.63,
-      "ceGallifantes": 0.32,
-      "ceRank": 35,
-      "pichichiPlayerPct": 0.0,
+      "player": "Carlo",
+      "displayName": "Carlo",
+      "rank": 12,
+      "winPct": 2.162,
+      "top3Pct": 5.658,
+      "avgPoints": 796.3,
+      "maxPoints": 1145,
+      "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 1.02
     },
     {
-      "player": "Pau",
-      "displayName": "Pau",
-      "rank": 23,
-      "winPct": 1.306,
-      "winDeltaPp": -0.377,
-      "top3Pct": 5.54,
-      "avgPoints": 810.0,
-      "maxPoints": 1226,
-      "expectedGallifantes": 17.36,
-      "sdGallifantes": 91.77,
-      "ceGallifantes": 0.48,
-      "ceRank": 22,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
+      "player": "Emiliano",
+      "displayName": "Emiliano",
+      "rank": 13,
+      "winPct": 1.973,
+      "top3Pct": 9.446,
+      "avgPoints": 826.1,
+      "maxPoints": 1240,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
     },
     {
-      "player": "Jordi Raventós",
-      "displayName": "Jordi Ra.",
-      "rank": 24,
-      "winPct": 1.251,
-      "winDeltaPp": 0.133,
-      "top3Pct": 3.439,
-      "avgPoints": 765.4,
-      "maxPoints": 1166,
-      "expectedGallifantes": 13.78,
-      "sdGallifantes": 87.43,
-      "ceGallifantes": 0.33,
-      "ceRank": 34,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Bernat Orriols",
-      "displayName": "Bernat O.",
-      "rank": 25,
-      "winPct": 1.157,
-      "winDeltaPp": 0.199,
-      "top3Pct": 3.617,
-      "avgPoints": 773.0,
-      "maxPoints": 1135,
-      "expectedGallifantes": 13.55,
-      "sdGallifantes": 84.93,
-      "ceGallifantes": 0.33,
-      "ceRank": 32,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 3.93
-    },
-    {
-      "player": "Albert Cosí",
-      "displayName": "Albert C.",
-      "rank": 26,
-      "winPct": 1.097,
-      "winDeltaPp": 0.254,
-      "top3Pct": 3.005,
-      "avgPoints": 727.0,
-      "maxPoints": 1083,
-      "expectedGallifantes": 13.86,
-      "sdGallifantes": 81.96,
-      "ceGallifantes": 0.68,
-      "ceRank": 15,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.96
-    },
-    {
-      "player": "Andy",
-      "displayName": "Andy",
-      "rank": 27,
-      "winPct": 1.077,
-      "winDeltaPp": -1.071,
-      "top3Pct": 3.052,
-      "avgPoints": 789.0,
-      "maxPoints": 1120,
-      "expectedGallifantes": 12.05,
-      "sdGallifantes": 81.23,
-      "ceGallifantes": 0.31,
-      "ceRank": 36,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Toni Campanyà",
-      "displayName": "Toni C.",
-      "rank": 28,
-      "winPct": 0.984,
-      "winDeltaPp": -0.079,
-      "top3Pct": 2.28,
-      "avgPoints": 740.0,
-      "maxPoints": 1184,
-      "expectedGallifantes": 10.61,
-      "sdGallifantes": 76.69,
-      "ceGallifantes": 0.33,
-      "ceRank": 33,
-      "pichichiPlayerPct": 8.835,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 3.65
-    },
-    {
-      "player": "Antonio",
-      "displayName": "Antonio",
-      "rank": 29,
-      "winPct": 0.949,
-      "winDeltaPp": -0.466,
-      "top3Pct": 3.752,
-      "avgPoints": 766.1,
-      "maxPoints": 1136,
-      "expectedGallifantes": 12.57,
-      "sdGallifantes": 78.61,
-      "ceGallifantes": 0.35,
-      "ceRank": 30,
-      "pichichiPlayerPct": 8.835,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 1.33
-    },
-    {
-      "player": "Biel",
-      "displayName": "Biel",
-      "rank": 30,
-      "winPct": 0.902,
-      "winDeltaPp": 0.061,
-      "top3Pct": 2.51,
-      "avgPoints": 756.2,
-      "maxPoints": 1164,
-      "expectedGallifantes": 10.27,
-      "sdGallifantes": 74.64,
-      "ceGallifantes": 0.28,
-      "ceRank": 38,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Juanma",
-      "displayName": "Juanma",
-      "rank": 31,
-      "winPct": 0.896,
-      "winDeltaPp": -0.382,
-      "top3Pct": 3.913,
-      "avgPoints": 803.4,
-      "maxPoints": 1212,
-      "expectedGallifantes": 12.32,
-      "sdGallifantes": 76.68,
-      "ceGallifantes": 0.36,
-      "ceRank": 28,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Eduard Verdaguer",
-      "displayName": "Eduard V.",
-      "rank": 32,
-      "winPct": 0.835,
-      "winDeltaPp": 0.024,
-      "top3Pct": 2.735,
-      "avgPoints": 747.4,
-      "maxPoints": 1134,
-      "expectedGallifantes": 10.51,
-      "sdGallifantes": 72.58,
-      "ceGallifantes": 0.35,
-      "ceRank": 29,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
-    },
-    {
-      "player": "Miquel",
-      "displayName": "Miquel",
-      "rank": 33,
-      "winPct": 0.817,
-      "winDeltaPp": -0.672,
-      "top3Pct": 3.578,
+      "player": "Jaume Cardús",
+      "displayName": "Jaume C.",
+      "rank": 14,
+      "winPct": 1.897,
+      "top3Pct": 5.231,
       "avgPoints": 803.1,
-      "maxPoints": 1206,
-      "expectedGallifantes": 11.26,
-      "sdGallifantes": 73.2,
-      "ceGallifantes": 0.34,
-      "ceRank": 31,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.96
-    },
-    {
-      "player": "Guille Amor",
-      "displayName": "Guille A.",
-      "rank": 34,
-      "winPct": 0.751,
-      "winDeltaPp": -0.114,
-      "top3Pct": 2.409,
-      "avgPoints": 764.0,
-      "maxPoints": 1122,
-      "expectedGallifantes": 9.08,
-      "sdGallifantes": 68.72,
-      "ceGallifantes": 0.26,
-      "ceRank": 39,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
+      "maxPoints": 1174,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 2.54,
+      "aliases": [
+        "Jaume C"
+      ]
     },
     {
       "player": "Oscar Bordas",
       "displayName": "Oscar B.",
-      "rank": 35,
-      "winPct": 0.582,
-      "winDeltaPp": -0.081,
-      "top3Pct": 3.002,
-      "avgPoints": 807.3,
-      "maxPoints": 1216,
-      "expectedGallifantes": 8.76,
-      "sdGallifantes": 62.72,
-      "ceGallifantes": 0.29,
-      "ceRank": 37,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
+      "rank": 15,
+      "winPct": 1.689,
+      "top3Pct": 7.08,
+      "avgPoints": 827.5,
+      "maxPoints": 1231,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Oscar B"
+      ]
     },
     {
-      "player": "Manel Pujol",
-      "displayName": "Manel P.",
-      "rank": 36,
-      "winPct": 0.449,
-      "winDeltaPp": 0.132,
-      "top3Pct": 1.394,
-      "avgPoints": 731.1,
-      "maxPoints": 1112,
-      "expectedGallifantes": 6.77,
-      "sdGallifantes": 53.38,
-      "ceGallifantes": 0.42,
-      "ceRank": 27,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
+      "player": "Jordi Raventós",
+      "displayName": "Jordi Ra.",
+      "rank": 16,
+      "winPct": 1.683,
+      "top3Pct": 4.129,
+      "avgPoints": 774.5,
+      "maxPoints": 1194,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Jordi Ra",
+        "Jordi Ra."
+      ]
     },
     {
-      "player": "Albert Esteve",
-      "displayName": "Albert E.",
-      "rank": 37,
-      "winPct": 0.448,
-      "winDeltaPp": -0.051,
-      "top3Pct": 1.453,
-      "avgPoints": 747.6,
-      "maxPoints": 1096,
-      "expectedGallifantes": 5.78,
-      "sdGallifantes": 53.2,
-      "ceGallifantes": 0.22,
-      "ceRank": 42,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.01
-    },
-    {
-      "player": "Jordi Reig",
-      "displayName": "Jordi Re.",
-      "rank": 38,
-      "winPct": 0.413,
-      "winDeltaPp": -0.001,
-      "top3Pct": 1.627,
-      "avgPoints": 763.6,
-      "maxPoints": 1139,
-      "expectedGallifantes": 5.61,
-      "sdGallifantes": 51.94,
-      "ceGallifantes": 0.19,
-      "ceRank": 45,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.96
-    },
-    {
-      "player": "Jordi Ollé",
-      "displayName": "Jordi O.",
-      "rank": 39,
-      "winPct": 0.395,
-      "winDeltaPp": 0.135,
-      "top3Pct": 1.824,
-      "avgPoints": 786.2,
-      "maxPoints": 1205,
-      "expectedGallifantes": 5.87,
-      "sdGallifantes": 51.47,
-      "ceGallifantes": 0.22,
-      "ceRank": 43,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Paco",
-      "displayName": "Paco",
-      "rank": 40,
-      "winPct": 0.395,
-      "winDeltaPp": -0.019,
-      "top3Pct": 1.245,
-      "avgPoints": 740.7,
-      "maxPoints": 1100,
-      "expectedGallifantes": 5.38,
-      "sdGallifantes": 49.89,
-      "ceGallifantes": 0.26,
-      "ceRank": 40,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Michael",
-      "displayName": "Michael",
-      "rank": 41,
-      "winPct": 0.382,
-      "winDeltaPp": -0.069,
-      "top3Pct": 2.012,
-      "avgPoints": 785.6,
-      "maxPoints": 1149,
-      "expectedGallifantes": 6.0,
-      "sdGallifantes": 51.1,
-      "ceGallifantes": 0.22,
-      "ceRank": 41,
-      "pichichiPlayerPct": 26.184,
+      "player": "Bernat Garreta",
+      "displayName": "Bernat G.",
+      "rank": 17,
+      "winPct": 1.658,
+      "top3Pct": 4.016,
+      "avgPoints": 762.0,
+      "maxPoints": 1138,
+      "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 3.93
+      "pichichiExpPoints": 1.02,
+      "aliases": [
+        "Bernat G"
+      ]
     },
     {
-      "player": "Nick",
-      "displayName": "Nick",
-      "rank": 42,
-      "winPct": 0.362,
-      "winDeltaPp": -0.105,
-      "top3Pct": 1.312,
-      "avgPoints": 755.6,
-      "maxPoints": 1174,
-      "expectedGallifantes": 4.9,
-      "sdGallifantes": 48.33,
-      "ceGallifantes": 0.19,
-      "ceRank": 46,
+      "player": "Antonio",
+      "displayName": "Antonio",
+      "rank": 18,
+      "winPct": 1.637,
+      "top3Pct": 5.534,
+      "avgPoints": 780.1,
+      "maxPoints": 1188,
+      "pichichiPlayerPct": 9.286,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 1.39
+    },
+    {
+      "player": "Juanma",
+      "displayName": "Juanma",
+      "rank": 19,
+      "winPct": 1.605,
+      "top3Pct": 6.622,
+      "avgPoints": 818.9,
+      "maxPoints": 1200,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
+    },
+    {
+      "player": "Miquel",
+      "displayName": "Miquel",
+      "rank": 20,
+      "winPct": 1.593,
+      "top3Pct": 6.444,
+      "avgPoints": 819.8,
+      "maxPoints": 1168,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 1.04
+    },
+    {
+      "player": "Toni Campanyà",
+      "displayName": "Toni C.",
+      "rank": 21,
+      "winPct": 1.265,
+      "top3Pct": 2.868,
+      "avgPoints": 752.5,
+      "maxPoints": 1136,
+      "pichichiPlayerPct": 9.286,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 3.94,
+      "aliases": [
+        "Toni C"
+      ]
+    },
+    {
+      "player": "Andy",
+      "displayName": "Andy",
+      "rank": 22,
+      "winPct": 1.26,
+      "top3Pct": 3.2,
+      "avgPoints": 793.6,
+      "maxPoints": 1105,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Bernat Orriols",
+      "displayName": "Bernat O.",
+      "rank": 23,
+      "winPct": 1.231,
+      "top3Pct": 3.709,
+      "avgPoints": 778.7,
+      "maxPoints": 1124,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 4.04,
+      "aliases": [
+        "Bernat O"
+      ]
+    },
+    {
+      "player": "Xavi Ferrés",
+      "displayName": "Xavi F.",
+      "rank": 24,
+      "winPct": 1.223,
+      "top3Pct": 4.227,
+      "avgPoints": 792.8,
+      "maxPoints": 1189,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58,
+      "aliases": [
+        "Xavi F"
+      ]
+    },
+    {
+      "player": "Nicolau",
+      "displayName": "Nicolau",
+      "rank": 25,
+      "winPct": 1.195,
+      "top3Pct": 3.037,
+      "avgPoints": 757.9,
+      "maxPoints": 1108,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
       "pichichiExpPoints": 0.0
     },
     {
-      "player": "Rafa Angulo",
-      "displayName": "Rafa A.",
-      "rank": 43,
-      "winPct": 0.307,
-      "winDeltaPp": -0.065,
-      "top3Pct": 1.489,
-      "avgPoints": 765.0,
-      "maxPoints": 1129,
-      "expectedGallifantes": 4.78,
-      "sdGallifantes": 45.74,
-      "ceGallifantes": 0.18,
-      "ceRank": 47,
+      "player": "Paco",
+      "displayName": "Paco",
+      "rank": 26,
+      "winPct": 1.098,
+      "top3Pct": 3.174,
+      "avgPoints": 768.8,
+      "maxPoints": 1169,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Albert Cosí",
+      "displayName": "Albert C.",
+      "rank": 27,
+      "winPct": 1.076,
+      "top3Pct": 2.894,
+      "avgPoints": 731.9,
+      "maxPoints": 1041,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 1.04,
+      "aliases": [
+        "Albert C"
+      ]
+    },
+    {
+      "player": "Jordi Cunyao",
+      "displayName": "Jordi C.",
+      "rank": 28,
+      "winPct": 0.941,
+      "top3Pct": 3.088,
+      "avgPoints": 764.1,
+      "maxPoints": 1107,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Jordi C"
+      ]
+    },
+    {
+      "player": "Manel Pujol",
+      "displayName": "Manel P.",
+      "rank": 29,
+      "winPct": 0.903,
+      "top3Pct": 2.689,
+      "avgPoints": 754.7,
+      "maxPoints": 1113,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58,
+      "aliases": [
+        "Manel P"
+      ]
+    },
+    {
+      "player": "Martina",
+      "displayName": "Martina",
+      "rank": 30,
+      "winPct": 0.863,
+      "top3Pct": 3.886,
+      "avgPoints": 808.1,
+      "maxPoints": 1196,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Pau",
+      "displayName": "Pau",
+      "rank": 31,
+      "winPct": 0.845,
+      "top3Pct": 4.384,
+      "avgPoints": 812.6,
+      "maxPoints": 1214,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Guille Amor",
+      "displayName": "Guille A.",
+      "rank": 32,
+      "winPct": 0.833,
+      "top3Pct": 2.616,
+      "avgPoints": 770.7,
+      "maxPoints": 1124,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 1.02,
+      "aliases": [
+        "Guille A"
+      ]
+    },
+    {
+      "player": "Jordi Reig",
+      "displayName": "Jordi Re.",
+      "rank": 33,
+      "winPct": 0.789,
+      "top3Pct": 2.685,
+      "avgPoints": 776.5,
+      "maxPoints": 1135,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 1.04,
+      "aliases": [
+        "Jordi Re",
+        "Jordi Re."
+      ]
+    },
+    {
+      "player": "Eduard Verdaguer",
+      "displayName": "Eduard V.",
+      "rank": 34,
+      "winPct": 0.756,
+      "top3Pct": 2.456,
+      "avgPoints": 750.0,
+      "maxPoints": 1098,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 1.02,
+      "aliases": [
+        "Eduard V"
+      ]
+    },
+    {
+      "player": "Oriol Oltra",
+      "displayName": "Oriol O.",
+      "rank": 35,
+      "winPct": 0.66,
+      "top3Pct": 3.166,
+      "avgPoints": 807.1,
+      "maxPoints": 1213,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Oriol O"
+      ]
+    },
+    {
+      "player": "Teo",
+      "displayName": "Teo",
+      "rank": 36,
+      "winPct": 0.601,
+      "top3Pct": 2.738,
+      "avgPoints": 804.3,
+      "maxPoints": 1162,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
+    },
+    {
+      "player": "Nick",
+      "displayName": "Nick",
+      "rank": 37,
+      "winPct": 0.531,
+      "top3Pct": 1.833,
+      "avgPoints": 767.4,
+      "maxPoints": 1170,
       "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.01
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 0.0
+    },
+    {
+      "player": "Oriol Valls",
+      "displayName": "Oriol V.",
+      "rank": 38,
+      "winPct": 0.524,
+      "top3Pct": 2.21,
+      "avgPoints": 788.3,
+      "maxPoints": 1203,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 1.04,
+      "aliases": [
+        "Oriol V"
+      ]
+    },
+    {
+      "player": "Michael",
+      "displayName": "Michael",
+      "rank": 39,
+      "winPct": 0.464,
+      "top3Pct": 2.938,
+      "avgPoints": 800.1,
+      "maxPoints": 1213,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 4.04
+    },
+    {
+      "player": "Jordi Ollé",
+      "displayName": "Jordi O.",
+      "rank": 40,
+      "winPct": 0.427,
+      "top3Pct": 2.137,
+      "avgPoints": 793.4,
+      "maxPoints": 1165,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05,
+      "aliases": [
+        "Jordi O"
+      ]
+    },
+    {
+      "player": "Biel",
+      "displayName": "Biel",
+      "rank": 41,
+      "winPct": 0.381,
+      "top3Pct": 1.232,
+      "avgPoints": 739.7,
+      "maxPoints": 1091,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
+    },
+    {
+      "player": "Marc",
+      "displayName": "Marc",
+      "rank": 42,
+      "winPct": 0.368,
+      "top3Pct": 1.825,
+      "avgPoints": 799.1,
+      "maxPoints": 1156,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 0.02
+    },
+    {
+      "player": "Guillem Ochoa",
+      "displayName": "Guillem O.",
+      "rank": 43,
+      "winPct": 0.366,
+      "top3Pct": 1.678,
+      "avgPoints": 790.0,
+      "maxPoints": 1154,
+      "pichichiPlayerPct": 6.894,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 1.03,
+      "aliases": [
+        "Guillem O"
+      ]
     },
     {
       "player": "Daniela",
       "displayName": "Daniela",
       "rank": 44,
-      "winPct": 0.27,
-      "winDeltaPp": -0.091,
-      "top3Pct": 1.044,
-      "avgPoints": 772.5,
-      "maxPoints": 1160,
-      "expectedGallifantes": 3.83,
-      "sdGallifantes": 42.0,
-      "ceGallifantes": 0.16,
-      "ceRank": 50,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
+      "winPct": 0.321,
+      "top3Pct": 1.24,
+      "avgPoints": 779.2,
+      "maxPoints": 1142,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 4.05
     },
     {
-      "player": "Jordi Cunyao",
-      "displayName": "Jordi C.",
+      "player": "Rafa Angulo",
+      "displayName": "Rafa A.",
       "rank": 45,
-      "winPct": 0.225,
-      "winDeltaPp": 0.043,
-      "top3Pct": 0.815,
-      "avgPoints": 725.0,
-      "maxPoints": 1156,
-      "expectedGallifantes": 4.99,
-      "sdGallifantes": 38.54,
-      "ceGallifantes": 0.49,
-      "ceRank": 20,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 3.94
-    },
-    {
-      "player": "Jaume Martí",
-      "displayName": "Jaume M.",
-      "rank": 46,
-      "winPct": 0.198,
-      "winDeltaPp": -0.174,
-      "top3Pct": 0.946,
-      "avgPoints": 751.4,
-      "maxPoints": 1127,
-      "expectedGallifantes": 3.33,
-      "sdGallifantes": 36.83,
-      "ceGallifantes": 0.16,
-      "ceRank": 49,
+      "winPct": 0.309,
+      "top3Pct": 1.394,
+      "avgPoints": 768.5,
+      "maxPoints": 1129,
       "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 0.145,
-      "pichichiExpPoints": 0.01
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 0.02,
+      "aliases": [
+        "Rafa A"
+      ]
     },
     {
       "player": "Isra",
       "displayName": "Isra",
+      "rank": 46,
+      "winPct": 0.3,
+      "top3Pct": 1.494,
+      "avgPoints": 790.5,
+      "maxPoints": 1162,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 19.814,
+      "pichichiExpPoints": 6.02
+    },
+    {
+      "player": "Albert Esteve",
+      "displayName": "Albert E.",
       "rank": 47,
-      "winPct": 0.192,
-      "winDeltaPp": 0.064,
-      "top3Pct": 1.078,
-      "avgPoints": 781.6,
-      "maxPoints": 1188,
-      "expectedGallifantes": 3.41,
-      "sdGallifantes": 36.72,
-      "ceGallifantes": 0.17,
-      "ceRank": 48,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 22.115,
-      "pichichiExpPoints": 6.14
-    },
-    {
-      "player": "Gerard",
-      "displayName": "Gerard",
-      "rank": 48,
-      "winPct": 0.162,
-      "winDeltaPp": -0.564,
-      "top3Pct": 0.994,
-      "avgPoints": 771.8,
-      "maxPoints": 1136,
-      "expectedGallifantes": 3.05,
-      "sdGallifantes": 33.97,
-      "ceGallifantes": 0.16,
-      "ceRank": 51,
-      "pichichiPlayerPct": 26.184,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 6.25
-    },
-    {
-      "player": "Manu GS",
-      "displayName": "Manu G.",
-      "rank": 49,
-      "winPct": 0.136,
-      "winDeltaPp": 0.003,
-      "top3Pct": 0.544,
-      "avgPoints": 745.9,
-      "maxPoints": 1184,
-      "expectedGallifantes": 2.24,
-      "sdGallifantes": 29.86,
-      "ceGallifantes": 0.13,
-      "ceRank": 54,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
+      "winPct": 0.269,
+      "top3Pct": 1.083,
+      "avgPoints": 757.9,
+      "maxPoints": 1102,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 0.02,
+      "aliases": [
+        "Albert E"
+      ]
     },
     {
       "player": "Enrique Moral",
       "displayName": "Enrique M.",
-      "rank": 50,
-      "winPct": 0.107,
-      "winDeltaPp": -0.017,
-      "top3Pct": 0.593,
-      "avgPoints": 704.7,
-      "maxPoints": 1081,
-      "expectedGallifantes": 4.75,
-      "sdGallifantes": 28.37,
-      "ceGallifantes": 0.67,
-      "ceRank": 16,
-      "pichichiPlayerPct": 6.32,
+      "rank": 48,
+      "winPct": 0.196,
+      "top3Pct": 0.938,
+      "avgPoints": 714.7,
+      "maxPoints": 1026,
+      "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.95
+      "pichichiExpPoints": 1.02,
+      "aliases": [
+        "Enrique M"
+      ]
     },
     {
-      "player": "Eduardo Morales",
-      "displayName": "Eduardo M.",
-      "rank": 51,
-      "winPct": 0.082,
-      "winDeltaPp": 0.025,
-      "top3Pct": 0.57,
-      "avgPoints": 759.9,
-      "maxPoints": 1112,
-      "expectedGallifantes": 1.92,
-      "sdGallifantes": 24.5,
-      "ceGallifantes": 0.14,
-      "ceRank": 53,
-      "pichichiPlayerPct": 6.551,
+      "player": "Jaume Martí",
+      "displayName": "Jaume M.",
+      "rank": 49,
+      "winPct": 0.103,
+      "top3Pct": 0.581,
+      "avgPoints": 756.8,
+      "maxPoints": 1133,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 0.181,
+      "pichichiExpPoints": 0.02,
+      "aliases": [
+        "Jaume M"
+      ]
+    },
+    {
+      "player": "Manu GS",
+      "displayName": "Manu G.",
+      "rank": 50,
+      "winPct": 0.087,
+      "top3Pct": 0.426,
+      "avgPoints": 747.7,
+      "maxPoints": 1133,
+      "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.98
+      "pichichiExpPoints": 1.02,
+      "aliases": [
+        "Manu G"
+      ]
     },
     {
       "player": "Norber",
       "displayName": "Norber",
-      "rank": 52,
-      "winPct": 0.07,
-      "winDeltaPp": -0.006,
-      "top3Pct": 0.347,
-      "avgPoints": 735.0,
-      "maxPoints": 1076,
-      "expectedGallifantes": 2.05,
-      "sdGallifantes": 22.39,
-      "ceGallifantes": 0.21,
-      "ceRank": 44,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 3.27
+      "rank": 51,
+      "winPct": 0.074,
+      "top3Pct": 0.352,
+      "avgPoints": 745.0,
+      "maxPoints": 1123,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 3.56
     },
     {
-      "player": "Guillem Ochoa",
-      "displayName": "Guillem O.",
+      "player": "David Muñoz",
+      "displayName": "David M.",
+      "rank": 52,
+      "winPct": 0.073,
+      "top3Pct": 0.593,
+      "avgPoints": 771.9,
+      "maxPoints": 1126,
+      "pichichiPlayerPct": 6.794,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 3.56,
+      "aliases": [
+        "David M"
+      ]
+    },
+    {
+      "player": "Andreu",
+      "displayName": "Andreu",
       "rank": 53,
-      "winPct": 0.044,
-      "winDeltaPp": 0.004,
-      "top3Pct": 0.285,
-      "avgPoints": 756.0,
-      "maxPoints": 1192,
-      "expectedGallifantes": 1.17,
-      "sdGallifantes": 17.78,
-      "ceGallifantes": 0.11,
-      "ceRank": 57,
-      "pichichiPlayerPct": 6.411,
-      "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.96
+      "winPct": 0.037,
+      "top3Pct": 0.223,
+      "avgPoints": 746.1,
+      "maxPoints": 1147,
+      "pichichiPlayerPct": 0.0,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 2.54
     },
     {
       "player": "Pere",
       "displayName": "Pere",
       "rank": 54,
-      "winPct": 0.035,
-      "winDeltaPp": -0.032,
-      "top3Pct": 0.255,
-      "avgPoints": 766.0,
-      "maxPoints": 1159,
-      "expectedGallifantes": 1.12,
-      "sdGallifantes": 16.36,
-      "ceGallifantes": 0.11,
-      "ceRank": 55,
-      "pichichiPlayerPct": 26.184,
+      "winPct": 0.033,
+      "top3Pct": 0.224,
+      "avgPoints": 774.5,
+      "maxPoints": 1150,
+      "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 3.93
-    },
-    {
-      "player": "Andreu",
-      "displayName": "Andreu",
-      "rank": 55,
-      "winPct": 0.03,
-      "winDeltaPp": -0.011,
-      "top3Pct": 0.24,
-      "avgPoints": 741.0,
-      "maxPoints": 1109,
-      "expectedGallifantes": 1.34,
-      "sdGallifantes": 15.61,
-      "ceGallifantes": 0.15,
-      "ceRank": 52,
-      "pichichiPlayerPct": 0.0,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 2.32
-    },
-    {
-      "player": "David Muñoz",
-      "displayName": "David M.",
-      "rank": 56,
-      "winPct": 0.029,
-      "winDeltaPp": 0.01,
-      "top3Pct": 0.305,
-      "avgPoints": 757.1,
-      "maxPoints": 1168,
-      "expectedGallifantes": 1.13,
-      "sdGallifantes": 15.65,
-      "ceGallifantes": 0.11,
-      "ceRank": 56,
-      "pichichiPlayerPct": 6.32,
-      "pichichiGoalsPct": 23.206,
-      "pichichiExpPoints": 3.27
+      "pichichiExpPoints": 4.04
     },
     {
       "player": "Albert Benach",
       "displayName": "Albert B.",
-      "rank": 57,
-      "winPct": 0.015,
-      "winDeltaPp": 0.007,
-      "top3Pct": 0.073,
-      "avgPoints": 689.6,
-      "maxPoints": 1060,
-      "expectedGallifantes": 4.49,
-      "sdGallifantes": 12.75,
-      "ceGallifantes": 0.94,
-      "ceRank": 10,
+      "rank": 55,
+      "winPct": 0.01,
+      "top3Pct": 0.038,
+      "avgPoints": 689.7,
+      "maxPoints": 1010,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "aliases": [
+        "Albert B"
+      ]
+    },
+    {
+      "player": "Gerard",
+      "displayName": "Gerard",
+      "rank": 56,
+      "winPct": 0.009,
+      "top3Pct": 0.065,
+      "avgPoints": 749.2,
+      "maxPoints": 1108,
+      "pichichiPlayerPct": 26.912,
+      "pichichiGoalsPct": 25.439,
+      "pichichiExpPoints": 6.58
+    },
+    {
+      "player": "Eduardo Morales",
+      "displayName": "Eduardo M.",
+      "rank": 57,
+      "winPct": 0.006,
+      "top3Pct": 0.07,
+      "avgPoints": 742.5,
+      "maxPoints": 1099,
+      "pichichiPlayerPct": 7.197,
+      "pichichiGoalsPct": 0.0,
+      "pichichiExpPoints": 1.08,
+      "aliases": [
+        "Eduardo M"
+      ]
     }
   ],
+  "modelDetails": {
+    "scoreModel": "empirical_recent_weighted_world_cup_scorelines",
+    "recencyHalfLifeYears": 16.0,
+    "baseYear": 2022,
+    "source": "DataHub football/worldcup matches.csv sourced from Fjelstul World Cup Database; men only, 1930-2022",
+    "groupDrawRatePct": 23.742,
+    "knockoutDrawRatePct": 21.683
+  },
   "pichichi": {
     "asOf": "24 Jun 2026, after Colombia 1-0 DR Congo",
     "source": "Manual update from confirmed match reports through Colombia 1-0 DR Congo; scorers added from public match reports.",
@@ -984,23 +795,23 @@ window.PORRA_ODDS_LATEST = {
     "goalTotalDistribution": [
       {
         "goals": 7,
-        "pct": 0.145
+        "pct": 0.181
       },
       {
         "goals": 8,
-        "pct": 23.206
+        "pct": 25.439
       },
       {
         "goals": 9,
-        "pct": 22.115
+        "pct": 19.814
       },
       {
         "goals": 10,
-        "pct": 23.964
+        "pct": 24.169
       },
       {
         "goals": 11,
-        "pct": 30.57
+        "pct": 30.397
       }
     ],
     "trackedPlayers": [
@@ -1008,413 +819,364 @@ window.PORRA_ODDS_LATEST = {
         "player": "Lionel Messi",
         "team": "Argentina",
         "currentGoals": 5,
-        "topPct": 50.076,
-        "tieSplitTopPct": 41.172
+        "topPct": 50.961,
+        "tieSplitTopPct": 41.824
       },
       {
         "player": "Kylian Mbappé",
         "team": "France",
         "currentGoals": 4,
-        "topPct": 26.184,
-        "tieSplitTopPct": 20.464
+        "topPct": 26.912,
+        "tieSplitTopPct": 20.702
       },
       {
         "player": "Deniz Undav",
         "team": "Germany",
         "currentGoals": 3,
-        "topPct": 12.14,
-        "tieSplitTopPct": 10.549
+        "topPct": 12.342,
+        "tieSplitTopPct": 10.909
       },
       {
         "player": "Erling Haaland",
         "team": "Norway",
         "currentGoals": 4,
-        "topPct": 8.835,
-        "tieSplitTopPct": 5.702
+        "topPct": 9.286,
+        "tieSplitTopPct": 5.859
       },
       {
         "player": "Brian Brobbey",
         "team": "Netherlands",
         "currentGoals": 2,
-        "topPct": 6.644,
-        "tieSplitTopPct": 1.19
+        "topPct": 7.524,
+        "tieSplitTopPct": 1.362
       },
       {
         "player": "Cody Gakpo",
         "team": "Netherlands",
         "currentGoals": 2,
-        "topPct": 6.644,
-        "tieSplitTopPct": 1.19
+        "topPct": 7.524,
+        "tieSplitTopPct": 1.362
       },
       {
         "player": "Crysencio Summerville",
         "team": "Netherlands",
         "currentGoals": 2,
-        "topPct": 6.644,
-        "tieSplitTopPct": 1.19
+        "topPct": 7.524,
+        "tieSplitTopPct": 1.362
       },
       {
         "player": "Matheus Cunha",
         "team": "Brazil",
         "currentGoals": 2,
-        "topPct": 6.551,
-        "tieSplitTopPct": 1.439
+        "topPct": 7.197,
+        "tieSplitTopPct": 1.607
       },
       {
         "player": "Vinícius Júnior",
         "team": "Brazil",
         "currentGoals": 2,
-        "topPct": 6.551,
-        "tieSplitTopPct": 1.439
+        "topPct": 7.197,
+        "tieSplitTopPct": 1.607
       },
       {
         "player": "Mikel Oyarzabal",
         "team": "Spain",
         "currentGoals": 2,
-        "topPct": 6.411,
-        "tieSplitTopPct": 1.697
+        "topPct": 6.894,
+        "tieSplitTopPct": 1.86
       },
       {
         "player": "Harry Kane",
         "team": "England",
         "currentGoals": 2,
-        "topPct": 6.32,
-        "tieSplitTopPct": 1.735
+        "topPct": 6.794,
+        "tieSplitTopPct": 1.915
       },
       {
         "player": "Cristiano Ronaldo",
         "team": "Portugal",
         "currentGoals": 2,
-        "topPct": 5.625,
-        "tieSplitTopPct": 1.426
+        "topPct": 6.029,
+        "tieSplitTopPct": 1.524
       },
       {
         "player": "Ismael Saibari",
         "team": "Morocco",
         "currentGoals": 2,
-        "topPct": 5.077,
-        "tieSplitTopPct": 1.426
+        "topPct": 5.77,
+        "tieSplitTopPct": 1.632
       },
       {
         "player": "Daniel Muñoz",
         "team": "Colombia",
         "currentGoals": 2,
-        "topPct": 4.21,
-        "tieSplitTopPct": 1.034
-      },
-      {
-        "player": "Jonathan David",
-        "team": "Canada",
-        "currentGoals": 3,
-        "topPct": 4.106,
-        "tieSplitTopPct": 3.235
-      },
-      {
-        "player": "Johan Manzambi",
-        "team": "Switzerland",
-        "currentGoals": 2,
-        "topPct": 3.958,
-        "tieSplitTopPct": 1.081
+        "topPct": 4.454,
+        "tieSplitTopPct": 1.111
       },
       {
         "player": "Ayase Ueda",
         "team": "Japan",
         "currentGoals": 2,
-        "topPct": 3.536,
-        "tieSplitTopPct": 0.752
+        "topPct": 3.931,
+        "tieSplitTopPct": 0.848
       },
       {
         "player": "Daichi Kamada",
         "team": "Japan",
         "currentGoals": 2,
-        "topPct": 3.536,
-        "tieSplitTopPct": 0.752
+        "topPct": 3.931,
+        "tieSplitTopPct": 0.848
       },
       {
         "player": "Folarin Balogun",
         "team": "USA",
         "currentGoals": 2,
-        "topPct": 3.312,
-        "tieSplitTopPct": 0.859
+        "topPct": 3.674,
+        "tieSplitTopPct": 0.955
+      },
+      {
+        "player": "Jonathan David",
+        "team": "Canada",
+        "currentGoals": 3,
+        "topPct": 3.433,
+        "tieSplitTopPct": 0.984
       },
       {
         "player": "Maxi Araújo",
         "team": "Uruguay",
         "currentGoals": 2,
-        "topPct": 2.653,
-        "tieSplitTopPct": 0.696
+        "topPct": 2.691,
+        "tieSplitTopPct": 0.729
       },
       {
         "player": "Yasin Ayari",
         "team": "Sweden",
         "currentGoals": 2,
-        "topPct": 1.724,
-        "tieSplitTopPct": 0.503
+        "topPct": 1.771,
+        "tieSplitTopPct": 0.496
       },
       {
         "player": "Ismaïla Sarr",
         "team": "Senegal",
         "currentGoals": 2,
-        "topPct": 1.084,
-        "tieSplitTopPct": 0.288
+        "topPct": 1.041,
+        "tieSplitTopPct": 0.299
       },
       {
         "player": "Elijah Just",
         "team": "New Zealand",
         "currentGoals": 2,
-        "topPct": 0.272,
-        "tieSplitTopPct": 0.063
+        "topPct": 0.308,
+        "tieSplitTopPct": 0.075
       },
       {
         "player": "Ante Budimir",
         "team": "Croatia",
         "currentGoals": 1,
-        "topPct": 0.057,
-        "tieSplitTopPct": 0.006
+        "topPct": 0.058,
+        "tieSplitTopPct": 0.007
       },
       {
         "player": "Martin Baturina",
         "team": "Croatia",
         "currentGoals": 1,
-        "topPct": 0.057,
-        "tieSplitTopPct": 0.006
+        "topPct": 0.058,
+        "tieSplitTopPct": 0.007
       },
       {
         "player": "Petar Musa",
         "team": "Croatia",
         "currentGoals": 1,
-        "topPct": 0.057,
-        "tieSplitTopPct": 0.006
-      },
-      {
-        "player": "Hwang In-beom",
-        "team": "Korea Republic",
-        "currentGoals": 1,
-        "topPct": 0.053,
-        "tieSplitTopPct": 0.006
-      },
-      {
-        "player": "Oh Hyun-gyu",
-        "team": "Korea Republic",
-        "currentGoals": 1,
-        "topPct": 0.053,
-        "tieSplitTopPct": 0.006
-      },
-      {
-        "player": "Julián Quiñones",
-        "team": "Mexico",
-        "currentGoals": 1,
-        "topPct": 0.048,
-        "tieSplitTopPct": 0.005
-      },
-      {
-        "player": "Luis Romo",
-        "team": "Mexico",
-        "currentGoals": 1,
-        "topPct": 0.048,
-        "tieSplitTopPct": 0.005
-      },
-      {
-        "player": "Raúl Jiménez",
-        "team": "Mexico",
-        "currentGoals": 1,
-        "topPct": 0.048,
-        "tieSplitTopPct": 0.005
-      },
-      {
-        "player": "Amad Diallo",
-        "team": "Côte d'Ivoire",
-        "currentGoals": 1,
-        "topPct": 0.039,
-        "tieSplitTopPct": 0.004
-      },
-      {
-        "player": "Connor Metcalfe",
-        "team": "Australia",
-        "currentGoals": 1,
-        "topPct": 0.039,
-        "tieSplitTopPct": 0.005
-      },
-      {
-        "player": "Franck Kessié",
-        "team": "Côte d'Ivoire",
-        "currentGoals": 1,
-        "topPct": 0.039,
-        "tieSplitTopPct": 0.004
-      },
-      {
-        "player": "Nestory Irankunda",
-        "team": "Australia",
-        "currentGoals": 1,
-        "topPct": 0.039,
-        "tieSplitTopPct": 0.005
+        "topPct": 0.058,
+        "tieSplitTopPct": 0.007
       },
       {
         "player": "Emam Ashour",
         "team": "Egypt",
         "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.003
-      },
-      {
-        "player": "Marko Arnautović",
-        "team": "Austria",
-        "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.004
+        "topPct": 0.052,
+        "tieSplitTopPct": 0.006
       },
       {
         "player": "Mohamed Salah",
         "team": "Egypt",
         "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.003
+        "topPct": 0.052,
+        "tieSplitTopPct": 0.006
       },
       {
         "player": "Mostafa Zico",
         "team": "Egypt",
         "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.003
-      },
-      {
-        "player": "Romano Schmid",
-        "team": "Austria",
-        "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.004
+        "topPct": 0.052,
+        "tieSplitTopPct": 0.006
       },
       {
         "player": "Trézéguet",
         "team": "Egypt",
         "currentGoals": 1,
-        "topPct": 0.037,
-        "tieSplitTopPct": 0.003
+        "topPct": 0.052,
+        "tieSplitTopPct": 0.006
+      },
+      {
+        "player": "Amad Diallo",
+        "team": "Côte d'Ivoire",
+        "currentGoals": 1,
+        "topPct": 0.05,
+        "tieSplitTopPct": 0.007
+      },
+      {
+        "player": "Franck Kessié",
+        "team": "Côte d'Ivoire",
+        "currentGoals": 1,
+        "topPct": 0.05,
+        "tieSplitTopPct": 0.007
+      },
+      {
+        "player": "Marko Arnautović",
+        "team": "Austria",
+        "currentGoals": 1,
+        "topPct": 0.046,
+        "tieSplitTopPct": 0.007
+      },
+      {
+        "player": "Romano Schmid",
+        "team": "Austria",
+        "currentGoals": 1,
+        "topPct": 0.046,
+        "tieSplitTopPct": 0.007
+      },
+      {
+        "player": "Johan Manzambi",
+        "team": "Switzerland",
+        "currentGoals": 2,
+        "topPct": 0.038,
+        "tieSplitTopPct": 0.007
+      },
+      {
+        "player": "Connor Metcalfe",
+        "team": "Australia",
+        "currentGoals": 1,
+        "topPct": 0.034,
+        "tieSplitTopPct": 0.005
+      },
+      {
+        "player": "Nestory Irankunda",
+        "team": "Australia",
+        "currentGoals": 1,
+        "topPct": 0.034,
+        "tieSplitTopPct": 0.005
       },
       {
         "player": "John McGinn",
         "team": "Scotland",
         "currentGoals": 1,
-        "topPct": 0.036,
-        "tieSplitTopPct": 0.004
-      },
-      {
-        "player": "Matías Galarza",
-        "team": "Paraguay",
-        "currentGoals": 1,
-        "topPct": 0.034,
-        "tieSplitTopPct": 0.004
-      },
-      {
-        "player": "Mauricio",
-        "team": "Paraguay",
-        "currentGoals": 1,
-        "topPct": 0.034,
-        "tieSplitTopPct": 0.004
+        "topPct": 0.031,
+        "tieSplitTopPct": 0.005
       },
       {
         "player": "Mohammad Mohebi",
         "team": "IR Iran",
         "currentGoals": 1,
         "topPct": 0.03,
-        "tieSplitTopPct": 0.003
+        "tieSplitTopPct": 0.004
       },
       {
         "player": "Ramin Rezaeian",
         "team": "IR Iran",
         "currentGoals": 1,
         "topPct": 0.03,
-        "tieSplitTopPct": 0.003
+        "tieSplitTopPct": 0.004
       },
       {
         "player": "Caleb Yirenkyi",
         "team": "Ghana",
         "currentGoals": 1,
-        "topPct": 0.018,
-        "tieSplitTopPct": 0.002
+        "topPct": 0.029,
+        "tieSplitTopPct": 0.005
+      },
+      {
+        "player": "Matías Galarza",
+        "team": "Paraguay",
+        "currentGoals": 1,
+        "topPct": 0.021,
+        "tieSplitTopPct": 0.003
+      },
+      {
+        "player": "Mauricio",
+        "team": "Paraguay",
+        "currentGoals": 1,
+        "topPct": 0.021,
+        "tieSplitTopPct": 0.003
       },
       {
         "player": "Amine Gouiri",
         "team": "Algeria",
         "currentGoals": 1,
-        "topPct": 0.015,
-        "tieSplitTopPct": 0.002
-      },
-      {
-        "player": "Nadhir Benbouali",
-        "team": "Algeria",
-        "currentGoals": 1,
-        "topPct": 0.015,
-        "tieSplitTopPct": 0.002
+        "topPct": 0.02,
+        "tieSplitTopPct": 0.003
       },
       {
         "player": "Hélio Varela",
         "team": "Cabo Verde",
         "currentGoals": 1,
-        "topPct": 0.014,
-        "tieSplitTopPct": 0.001
+        "topPct": 0.02,
+        "tieSplitTopPct": 0.003
       },
       {
         "player": "Kevin Pina",
         "team": "Cabo Verde",
         "currentGoals": 1,
-        "topPct": 0.014,
-        "tieSplitTopPct": 0.001
+        "topPct": 0.02,
+        "tieSplitTopPct": 0.003
       },
       {
-        "player": "Boualem Khoukhi",
-        "team": "Qatar",
+        "player": "Nadhir Benbouali",
+        "team": "Algeria",
         "currentGoals": 1,
-        "topPct": 0.013,
-        "tieSplitTopPct": 0.002
+        "topPct": 0.02,
+        "tieSplitTopPct": 0.003
       },
       {
         "player": "Abdulelah Al-Amri",
         "team": "Saudi Arabia",
         "currentGoals": 1,
-        "topPct": 0.012,
+        "topPct": 0.008,
         "tieSplitTopPct": 0.001
-      },
-      {
-        "player": "Ladislav Krejčí",
-        "team": "Czechia",
-        "currentGoals": 1,
-        "topPct": 0.01,
-        "tieSplitTopPct": 0.001
-      },
-      {
-        "player": "Michal Sadílek",
-        "team": "Czechia",
-        "currentGoals": 1,
-        "topPct": 0.01,
-        "tieSplitTopPct": 0.001
-      },
-      {
-        "player": "Yoane Wissa",
-        "team": "DR Congo",
-        "currentGoals": 1,
-        "topPct": 0.005,
-        "tieSplitTopPct": 0.0
-      },
-      {
-        "player": "Ermin Mahmić",
-        "team": "Bosnia-Herzegovina",
-        "currentGoals": 1,
-        "topPct": 0.003,
-        "tieSplitTopPct": 0.0
-      },
-      {
-        "player": "Jovo Lukić",
-        "team": "Bosnia-Herzegovina",
-        "currentGoals": 1,
-        "topPct": 0.003,
-        "tieSplitTopPct": 0.0
       },
       {
         "player": "Livano Comenencia",
         "team": "Curaçao",
         "currentGoals": 1,
+        "topPct": 0.008,
+        "tieSplitTopPct": 0.002
+      },
+      {
+        "player": "Yoane Wissa",
+        "team": "DR Congo",
+        "currentGoals": 1,
+        "topPct": 0.006,
+        "tieSplitTopPct": 0.001
+      },
+      {
+        "player": "Ali Iyad Olwan",
+        "team": "Jordan",
+        "currentGoals": 1,
         "topPct": 0.003,
+        "tieSplitTopPct": 0.0
+      },
+      {
+        "player": "Nizar Al-Rashdan",
+        "team": "Jordan",
+        "currentGoals": 1,
+        "topPct": 0.003,
+        "tieSplitTopPct": 0.0
+      },
+      {
+        "player": "Abbosbek Fayzullayev",
+        "team": "Uzbekistan",
+        "currentGoals": 1,
+        "topPct": 0.002,
         "tieSplitTopPct": 0.0
       },
       {
@@ -1422,13 +1184,6 @@ window.PORRA_ODDS_LATEST = {
         "team": "Iraq",
         "currentGoals": 1,
         "topPct": 0.002,
-        "tieSplitTopPct": 0.0
-      },
-      {
-        "player": "Abbosbek Fayzullayev",
-        "team": "Uzbekistan",
-        "currentGoals": 1,
-        "topPct": 0.001,
         "tieSplitTopPct": 0.0
       },
       {
@@ -1453,15 +1208,15 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
-        "player": "Ali Iyad Olwan",
-        "team": "Jordan",
+        "player": "Anthony Elanga",
+        "team": "Sweden",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
       },
       {
-        "player": "Anthony Elanga",
-        "team": "Sweden",
+        "player": "Boualem Khoukhi",
+        "team": "Qatar",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
@@ -1484,6 +1239,13 @@ window.PORRA_ODDS_LATEST = {
         "player": "Cyle Larin",
         "team": "Canada",
         "currentGoals": 2,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
+        "player": "Ermin Mahmić",
+        "team": "Bosnia-Herzegovina",
+        "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
       },
@@ -1530,6 +1292,13 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
+        "player": "Hwang In-beom",
+        "team": "Korea Republic",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
         "player": "Ibrahim Mbaye",
         "team": "Senegal",
         "currentGoals": 1,
@@ -1551,6 +1320,13 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
+        "player": "Jovo Lukić",
+        "team": "Bosnia-Herzegovina",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
         "player": "João Neves",
         "team": "Portugal",
         "currentGoals": 1,
@@ -1560,6 +1336,13 @@ window.PORRA_ODDS_LATEST = {
       {
         "player": "Jude Bellingham",
         "team": "England",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
+        "player": "Julián Quiñones",
+        "team": "Mexico",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
@@ -1593,6 +1376,13 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
+        "player": "Ladislav Krejčí",
+        "team": "Czechia",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
         "player": "Lamine Yamal",
         "team": "Spain",
         "currentGoals": 1,
@@ -1609,6 +1399,13 @@ window.PORRA_ODDS_LATEST = {
       {
         "player": "Luis Díaz",
         "team": "Colombia",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
+        "player": "Luis Romo",
+        "team": "Mexico",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
@@ -1642,6 +1439,13 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
+        "player": "Michal Sadílek",
+        "team": "Czechia",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
         "player": "Nathan Saliba",
         "team": "Canada",
         "currentGoals": 1,
@@ -1663,15 +1467,15 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
-        "player": "Nizar Al-Rashdan",
-        "team": "Jordan",
+        "player": "Nuno Mendes",
+        "team": "Portugal",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
       },
       {
-        "player": "Nuno Mendes",
-        "team": "Portugal",
+        "player": "Oh Hyun-gyu",
+        "team": "Korea Republic",
         "currentGoals": 1,
         "topPct": 0.0,
         "tieSplitTopPct": 0.0
@@ -1705,6 +1509,13 @@ window.PORRA_ODDS_LATEST = {
         "tieSplitTopPct": 0.0
       },
       {
+        "player": "Raúl Jiménez",
+        "team": "Mexico",
+        "currentGoals": 1,
+        "topPct": 0.0,
+        "tieSplitTopPct": 0.0
+      },
+      {
         "player": "Ruben Vargas",
         "team": "Switzerland",
         "currentGoals": 1,
@@ -1727,82 +1538,5 @@ window.PORRA_ODDS_LATEST = {
       }
     ],
     "missingParticipantPicks": []
-  },
-  "modelDetails": {
-    "scoreModel": "current_world_cup_weighted_group_plus_historical_knockout_empirical_scorelines_with_fifa_head_to_head_group_tiebreakers",
-    "groupCurrentWorldCupWeightPct": 66.7,
-    "groupCompletedMatchesUsed": 48,
-    "groupObservedDrawRatePct": 29.167,
-    "groupHistoricalDrawRatePct": 23.742,
-    "groupBlendedDrawRatePct": 27.358,
-    "knockoutModel": "historical_recent_weighted_knockout_scorelines",
-    "groupTiebreakers": "points; head-to-head points/GD/goals among tied teams; overall GD/goals; random if still tied. Best thirds: points/GD/goals/random.",
-    "winnerAssignment": "rating-based logistic assignment of higher score to favorite, clipped to [0.28, 0.72]",
-    "seed": 20260624,
-    "batchSize": 10000
-  },
-  "gallifantesPrizeSchedule": {
-    "first": 750,
-    "second": 250,
-    "third": 100,
-    "rank27": 20,
-    "last": 20,
-    "tieHandling": "split tied rank block prizes"
-  },
-  "groupStageLeaderSummary": {
-    "sourceFile": "group_stage_leader_after_colombia_congo.csv"
-  },
-  "countryChampionProbabilities": {
-    "sourceFile": "country_champion_probabilities_after_colombia_congo.csv",
-    "top": [
-      {
-        "country": "Argentina",
-        "winPct": 11.828
-      },
-      {
-        "country": "France",
-        "winPct": 10.783
-      },
-      {
-        "country": "England",
-        "winPct": 8.076
-      },
-      {
-        "country": "Spain",
-        "winPct": 7.997
-      },
-      {
-        "country": "Portugal",
-        "winPct": 6.635
-      },
-      {
-        "country": "Brazil",
-        "winPct": 6.369
-      },
-      {
-        "country": "Germany",
-        "winPct": 5.734
-      },
-      {
-        "country": "Netherlands",
-        "winPct": 5.325
-      },
-      {
-        "country": "Colombia",
-        "winPct": 3.554
-      },
-      {
-        "country": "Belgium",
-        "winPct": 3.224
-      },
-      {
-        "country": "Morocco",
-        "winPct": 2.847
-      },
-      {
-        "country": "Croatia",
-        "winPct": 2.678
-      }
-    ]
   }
 };
