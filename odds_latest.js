@@ -20,7 +20,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 3.094,
       "top3DeltaPp": 5.738,
-      "rankDelta": 1
+      "rankDelta": 1,
+      "expectedGallifantes": 101.07,
+      "sdGallifantes": 226.66,
+      "ceGallifantes": 3.23,
+      "ceRank": 2
     },
     {
       "player": "Aleix",
@@ -35,7 +39,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.54,
       "winDeltaPp": 2.881,
       "top3DeltaPp": 7.046,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 66.43,
+      "sdGallifantes": 182.98,
+      "ceGallifantes": 1.87,
+      "ceRank": 4
     },
     {
       "player": "Sergi Sanromà",
@@ -53,7 +61,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 4.633,
       "top3DeltaPp": 10.196,
-      "rankDelta": 5
+      "rankDelta": 5,
+      "expectedGallifantes": 36.99,
+      "sdGallifantes": 137.89,
+      "ceGallifantes": 0.93,
+      "ceRank": 11
     },
     {
       "player": "Joan",
@@ -68,7 +80,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 7.64,
       "winDeltaPp": -5.687,
       "top3DeltaPp": -9.157,
-      "rankDelta": -3
+      "rankDelta": -3,
+      "expectedGallifantes": 122.03,
+      "sdGallifantes": 252.72,
+      "ceGallifantes": 3.8,
+      "ceRank": 1
     },
     {
       "player": "JoanRa",
@@ -83,7 +99,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.54,
       "winDeltaPp": 1.733,
       "top3DeltaPp": 2.609,
-      "rankDelta": 1
+      "rankDelta": 1,
+      "expectedGallifantes": 50.36,
+      "sdGallifantes": 167.98,
+      "ceGallifantes": 1.12,
+      "ceRank": 7
     },
     {
       "player": "Pablo",
@@ -98,7 +118,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": 0.556,
       "top3DeltaPp": 2.462,
-      "rankDelta": 1
+      "rankDelta": 1,
+      "expectedGallifantes": 43.26,
+      "sdGallifantes": 146.74,
+      "ceGallifantes": 1.16,
+      "ceRank": 6
     },
     {
       "player": "Chús",
@@ -113,7 +137,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.0,
       "winDeltaPp": -1.902,
       "top3DeltaPp": -4.029,
-      "rankDelta": -2
+      "rankDelta": -2,
+      "expectedGallifantes": 57.49,
+      "sdGallifantes": 176.47,
+      "ceGallifantes": 1.41,
+      "ceRank": 5
     },
     {
       "player": "Rubi",
@@ -128,7 +156,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": 1.07,
       "top3DeltaPp": 3.056,
-      "rankDelta": 4
+      "rankDelta": 4,
+      "expectedGallifantes": 27.77,
+      "sdGallifantes": 121.39,
+      "ceGallifantes": 0.67,
+      "ceRank": 17
     },
     {
       "player": "Oscar Campanyà",
@@ -146,7 +178,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 1.016,
       "top3DeltaPp": 2.062,
-      "rankDelta": 4
+      "rankDelta": 4,
+      "expectedGallifantes": 27.2,
+      "sdGallifantes": 117.19,
+      "ceGallifantes": 0.7,
+      "ceRank": 13
     },
     {
       "player": "Bernat Raventós",
@@ -164,7 +200,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 1.101,
       "top3DeltaPp": 3.591,
-      "rankDelta": 9
+      "rankDelta": 9,
+      "expectedGallifantes": 18.12,
+      "sdGallifantes": 96.25,
+      "ceGallifantes": 0.47,
+      "ceRank": 23
     },
     {
       "player": "Pol",
@@ -179,7 +219,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": -0.653,
       "top3DeltaPp": -1.038,
-      "rankDelta": -2
+      "rankDelta": -2,
+      "expectedGallifantes": 39.27,
+      "sdGallifantes": 138.98,
+      "ceGallifantes": 1.05,
+      "ceRank": 9
     },
     {
       "player": "Carlo",
@@ -194,7 +238,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "winDeltaPp": 0.066,
       "top3DeltaPp": -0.094,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 22.8,
+      "sdGallifantes": 112.3,
+      "ceGallifantes": 0.52,
+      "ceRank": 19
     },
     {
       "player": "Emiliano",
@@ -209,7 +257,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": 0.02,
       "top3DeltaPp": 1.086,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 25.86,
+      "sdGallifantes": 111.41,
+      "ceGallifantes": 0.7,
+      "ceRank": 12
     },
     {
       "player": "Jaume Cardús",
@@ -227,7 +279,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.197,
       "top3DeltaPp": 0.239,
-      "rankDelta": 4
+      "rankDelta": 4,
+      "expectedGallifantes": 19.04,
+      "sdGallifantes": 101.65,
+      "ceGallifantes": 0.46,
+      "ceRank": 26
     },
     {
       "player": "Oscar Bordas",
@@ -245,7 +301,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 1.107,
       "top3DeltaPp": 4.078,
-      "rankDelta": 20
+      "rankDelta": 20,
+      "expectedGallifantes": 8.76,
+      "sdGallifantes": 62.72,
+      "ceGallifantes": 0.29,
+      "ceRank": 37
     },
     {
       "player": "Jordi Raventós",
@@ -264,7 +324,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.432,
       "top3DeltaPp": 0.69,
-      "rankDelta": 8
+      "rankDelta": 8,
+      "expectedGallifantes": 13.78,
+      "sdGallifantes": 87.43,
+      "ceGallifantes": 0.33,
+      "ceRank": 34
     },
     {
       "player": "Bernat Garreta",
@@ -282,7 +346,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -1.232,
       "top3DeltaPp": -2.76,
-      "rankDelta": -6
+      "rankDelta": -6,
+      "expectedGallifantes": 29.16,
+      "sdGallifantes": 129.84,
+      "ceGallifantes": 0.6,
+      "ceRank": 18
     },
     {
       "player": "Antonio",
@@ -297,7 +365,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.39,
       "winDeltaPp": 0.688,
       "top3DeltaPp": 1.782,
-      "rankDelta": 11
+      "rankDelta": 11,
+      "expectedGallifantes": 12.57,
+      "sdGallifantes": 78.61,
+      "ceGallifantes": 0.35,
+      "ceRank": 30
     },
     {
       "player": "Juanma",
@@ -312,7 +384,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": 0.709,
       "top3DeltaPp": 2.708,
-      "rankDelta": 12
+      "rankDelta": 12,
+      "expectedGallifantes": 12.32,
+      "sdGallifantes": 76.68,
+      "ceGallifantes": 0.36,
+      "ceRank": 28
     },
     {
       "player": "Miquel",
@@ -327,7 +403,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.04,
       "winDeltaPp": 0.776,
       "top3DeltaPp": 2.866,
-      "rankDelta": 13
+      "rankDelta": 13,
+      "expectedGallifantes": 11.26,
+      "sdGallifantes": 73.2,
+      "ceGallifantes": 0.34,
+      "ceRank": 31
     },
     {
       "player": "Toni Campanyà",
@@ -345,7 +425,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.281,
       "top3DeltaPp": 0.588,
-      "rankDelta": 7
+      "rankDelta": 7,
+      "expectedGallifantes": 10.61,
+      "sdGallifantes": 76.69,
+      "ceGallifantes": 0.33,
+      "ceRank": 33
     },
     {
       "player": "Andy",
@@ -360,7 +444,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": 0.182,
       "top3DeltaPp": 0.148,
-      "rankDelta": 5
+      "rankDelta": 5,
+      "expectedGallifantes": 12.05,
+      "sdGallifantes": 81.23,
+      "ceGallifantes": 0.31,
+      "ceRank": 36
     },
     {
       "player": "Bernat Orriols",
@@ -378,7 +466,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.074,
       "top3DeltaPp": 0.092,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 13.55,
+      "sdGallifantes": 84.93,
+      "ceGallifantes": 0.33,
+      "ceRank": 32
     },
     {
       "player": "Xavi Ferrés",
@@ -396,7 +488,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.531,
       "top3DeltaPp": -1.386,
-      "rankDelta": -7
+      "rankDelta": -7,
+      "expectedGallifantes": 20.28,
+      "sdGallifantes": 103.78,
+      "ceGallifantes": 0.48,
+      "ceRank": 21
     },
     {
       "player": "Nicolau",
@@ -411,7 +507,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.0,
       "winDeltaPp": -0.144,
       "top3DeltaPp": -0.25,
-      "rankDelta": -3
+      "rankDelta": -3,
+      "expectedGallifantes": 14.02,
+      "sdGallifantes": 89.63,
+      "ceGallifantes": 0.32,
+      "ceRank": 35
     },
     {
       "player": "Paco",
@@ -426,7 +526,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": 0.703,
       "top3DeltaPp": 1.929,
-      "rankDelta": 14
+      "rankDelta": 14,
+      "expectedGallifantes": 5.38,
+      "sdGallifantes": 49.89,
+      "ceGallifantes": 0.26,
+      "ceRank": 40
     },
     {
       "player": "Albert Cosí",
@@ -444,7 +548,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.021,
       "top3DeltaPp": -0.111,
-      "rankDelta": -1
+      "rankDelta": -1,
+      "expectedGallifantes": 13.86,
+      "sdGallifantes": 81.96,
+      "ceGallifantes": 0.68,
+      "ceRank": 15
     },
     {
       "player": "Jordi Cunyao",
@@ -462,7 +570,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.716,
       "top3DeltaPp": 2.273,
-      "rankDelta": 17
+      "rankDelta": 17,
+      "expectedGallifantes": 4.99,
+      "sdGallifantes": 38.54,
+      "ceGallifantes": 0.49,
+      "ceRank": 20
     },
     {
       "player": "Manel Pujol",
@@ -480,7 +592,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.454,
       "top3DeltaPp": 1.295,
-      "rankDelta": 7
+      "rankDelta": 7,
+      "expectedGallifantes": 6.77,
+      "sdGallifantes": 53.38,
+      "ceGallifantes": 0.42,
+      "ceRank": 27
     },
     {
       "player": "Martina",
@@ -495,7 +611,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": -2.291,
       "top3DeltaPp": -8.027,
-      "rankDelta": -20
+      "rankDelta": -20,
+      "expectedGallifantes": 39.18,
+      "sdGallifantes": 138.61,
+      "ceGallifantes": 1.05,
+      "ceRank": 8
     },
     {
       "player": "Pau",
@@ -510,7 +630,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": -0.461,
       "top3DeltaPp": -1.156,
-      "rankDelta": -8
+      "rankDelta": -8,
+      "expectedGallifantes": 17.36,
+      "sdGallifantes": 91.77,
+      "ceGallifantes": 0.48,
+      "ceRank": 22
     },
     {
       "player": "Guille Amor",
@@ -528,7 +652,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.082,
       "top3DeltaPp": 0.207,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 9.08,
+      "sdGallifantes": 68.72,
+      "ceGallifantes": 0.26,
+      "ceRank": 39
     },
     {
       "player": "Jordi Reig",
@@ -547,7 +675,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.376,
       "top3DeltaPp": 1.058,
-      "rankDelta": 5
+      "rankDelta": 5,
+      "expectedGallifantes": 5.61,
+      "sdGallifantes": 51.94,
+      "ceGallifantes": 0.19,
+      "ceRank": 45
     },
     {
       "player": "Eduard Verdaguer",
@@ -565,7 +697,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.078,
       "top3DeltaPp": -0.279,
-      "rankDelta": -2
+      "rankDelta": -2,
+      "expectedGallifantes": 10.51,
+      "sdGallifantes": 72.58,
+      "ceGallifantes": 0.35,
+      "ceRank": 29
     },
     {
       "player": "Oriol Oltra",
@@ -583,7 +719,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -6.516,
       "top3DeltaPp": -17.878,
-      "rankDelta": -32
+      "rankDelta": -32,
+      "expectedGallifantes": 78.62,
+      "sdGallifantes": 197.76,
+      "ceGallifantes": 2.43,
+      "ceRank": 3
     },
     {
       "player": "Teo",
@@ -598,7 +738,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": -0.797,
       "top3DeltaPp": -2.736,
-      "rankDelta": -15
+      "rankDelta": -15,
+      "expectedGallifantes": 17.8,
+      "sdGallifantes": 94.21,
+      "ceGallifantes": 0.47,
+      "ceRank": 24
     },
     {
       "player": "Nick",
@@ -613,7 +757,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.0,
       "winDeltaPp": 0.169,
       "top3DeltaPp": 0.521,
-      "rankDelta": 5
+      "rankDelta": 5,
+      "expectedGallifantes": 4.9,
+      "sdGallifantes": 48.33,
+      "ceGallifantes": 0.19,
+      "ceRank": 46
     },
     {
       "player": "Oriol Valls",
@@ -631,7 +779,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.934,
       "top3DeltaPp": -3.153,
-      "rankDelta": -18
+      "rankDelta": -18,
+      "expectedGallifantes": 18.13,
+      "sdGallifantes": 95.94,
+      "ceGallifantes": 0.47,
+      "ceRank": 25
     },
     {
       "player": "Michael",
@@ -646,7 +798,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.04,
       "winDeltaPp": 0.082,
       "top3DeltaPp": 0.926,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 6.0,
+      "sdGallifantes": 51.1,
+      "ceGallifantes": 0.22,
+      "ceRank": 41
     },
     {
       "player": "Jordi Ollé",
@@ -664,7 +820,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.032,
       "top3DeltaPp": 0.313,
-      "rankDelta": -1
+      "rankDelta": -1,
+      "expectedGallifantes": 5.87,
+      "sdGallifantes": 51.47,
+      "ceGallifantes": 0.22,
+      "ceRank": 43
     },
     {
       "player": "Biel",
@@ -679,7 +839,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": -0.521,
       "top3DeltaPp": -1.278,
-      "rankDelta": -11
+      "rankDelta": -11,
+      "expectedGallifantes": 10.27,
+      "sdGallifantes": 74.64,
+      "ceGallifantes": 0.28,
+      "ceRank": 38
     },
     {
       "player": "Marc",
@@ -694,7 +858,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.02,
       "winDeltaPp": -1.534,
       "top3DeltaPp": -6.412,
-      "rankDelta": -26
+      "rankDelta": -26,
+      "expectedGallifantes": 25.23,
+      "sdGallifantes": 110.03,
+      "ceGallifantes": 0.68,
+      "ceRank": 14
     },
     {
       "player": "Guillem Ochoa",
@@ -712,7 +880,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.322,
       "top3DeltaPp": 1.393,
-      "rankDelta": 10
+      "rankDelta": 10,
+      "expectedGallifantes": 1.17,
+      "sdGallifantes": 17.78,
+      "ceGallifantes": 0.11,
+      "ceRank": 57
     },
     {
       "player": "Daniela",
@@ -727,7 +899,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "winDeltaPp": 0.051,
       "top3DeltaPp": 0.196,
-      "rankDelta": 0
+      "rankDelta": 0,
+      "expectedGallifantes": 3.83,
+      "sdGallifantes": 42.0,
+      "ceGallifantes": 0.16,
+      "ceRank": 50
     },
     {
       "player": "Rafa Angulo",
@@ -745,7 +921,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.002,
       "top3DeltaPp": -0.095,
-      "rankDelta": -2
+      "rankDelta": -2,
+      "expectedGallifantes": 4.78,
+      "sdGallifantes": 45.74,
+      "ceGallifantes": 0.18,
+      "ceRank": 47
     },
     {
       "player": "Isra",
@@ -760,7 +940,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.02,
       "winDeltaPp": 0.108,
       "top3DeltaPp": 0.416,
-      "rankDelta": 1
+      "rankDelta": 1,
+      "expectedGallifantes": 3.41,
+      "sdGallifantes": 36.72,
+      "ceGallifantes": 0.17,
+      "ceRank": 48
     },
     {
       "player": "Albert Esteve",
@@ -778,7 +962,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.179,
       "top3DeltaPp": -0.37,
-      "rankDelta": -10
+      "rankDelta": -10,
+      "expectedGallifantes": 5.78,
+      "sdGallifantes": 53.2,
+      "ceGallifantes": 0.22,
+      "ceRank": 42
     },
     {
       "player": "Enrique Moral",
@@ -796,7 +984,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.089,
       "top3DeltaPp": 0.345,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 4.75,
+      "sdGallifantes": 28.37,
+      "ceGallifantes": 0.67,
+      "ceRank": 16
     },
     {
       "player": "Jaume Martí",
@@ -814,7 +1006,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.095,
       "top3DeltaPp": -0.365,
-      "rankDelta": -3
+      "rankDelta": -3,
+      "expectedGallifantes": 3.33,
+      "sdGallifantes": 36.83,
+      "ceGallifantes": 0.16,
+      "ceRank": 49
     },
     {
       "player": "Manu GS",
@@ -832,7 +1028,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.049,
       "top3DeltaPp": -0.118,
-      "rankDelta": -1
+      "rankDelta": -1,
+      "expectedGallifantes": 2.24,
+      "sdGallifantes": 29.86,
+      "ceGallifantes": 0.13,
+      "ceRank": 54
     },
     {
       "player": "Norber",
@@ -847,7 +1047,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 3.56,
       "winDeltaPp": 0.004,
       "top3DeltaPp": 0.005,
-      "rankDelta": 1
+      "rankDelta": 1,
+      "expectedGallifantes": 2.05,
+      "sdGallifantes": 22.39,
+      "ceGallifantes": 0.21,
+      "ceRank": 44
     },
     {
       "player": "David Muñoz",
@@ -865,7 +1069,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": 0.044,
       "top3DeltaPp": 0.288,
-      "rankDelta": 4
+      "rankDelta": 4,
+      "expectedGallifantes": 1.13,
+      "sdGallifantes": 15.65,
+      "ceGallifantes": 0.11,
+      "ceRank": 56
     },
     {
       "player": "Andreu",
@@ -880,7 +1088,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.54,
       "winDeltaPp": 0.007,
       "top3DeltaPp": -0.017,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 1.34,
+      "sdGallifantes": 15.61,
+      "ceGallifantes": 0.15,
+      "ceRank": 52
     },
     {
       "player": "Pere",
@@ -895,7 +1107,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.04,
       "winDeltaPp": -0.001,
       "top3DeltaPp": -0.031,
-      "rankDelta": 0
+      "rankDelta": 0,
+      "expectedGallifantes": 1.12,
+      "sdGallifantes": 16.36,
+      "ceGallifantes": 0.11,
+      "ceRank": 55
     },
     {
       "player": "Albert Benach",
@@ -913,7 +1129,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.004,
       "top3DeltaPp": -0.036,
-      "rankDelta": 2
+      "rankDelta": 2,
+      "expectedGallifantes": 4.49,
+      "sdGallifantes": 12.75,
+      "ceGallifantes": 0.94,
+      "ceRank": 10
     },
     {
       "player": "Gerard",
@@ -928,7 +1148,11 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "winDeltaPp": -0.153,
       "top3DeltaPp": -0.929,
-      "rankDelta": -8
+      "rankDelta": -8,
+      "expectedGallifantes": 3.05,
+      "sdGallifantes": 33.97,
+      "ceGallifantes": 0.16,
+      "ceRank": 51
     },
     {
       "player": "Eduardo Morales",
@@ -946,7 +1170,11 @@ window.PORRA_ODDS_LATEST = {
       ],
       "winDeltaPp": -0.076,
       "top3DeltaPp": -0.5,
-      "rankDelta": -6
+      "rankDelta": -6,
+      "expectedGallifantes": 1.92,
+      "sdGallifantes": 24.5,
+      "ceGallifantes": 0.14,
+      "ceRank": 53
     }
   ],
   "modelDetails": {
@@ -1715,5 +1943,14 @@ window.PORRA_ODDS_LATEST = {
     "winDeltaPp",
     "top3DeltaPp",
     "rankDelta"
-  ]
+  ],
+  "gallifantesPrizeSchedule": {
+    "first": 750,
+    "second": 250,
+    "third": 100,
+    "rank27": 20,
+    "last": 20,
+    "tieHandling": "split tied rank block prizes"
+  },
+  "gallifantesSourceNote": "Gallifantes fields restored from the gallifantes-enabled odds snapshot in the attached project zip; win/top3 probabilities and deltas remain from the latest delta patch."
 };

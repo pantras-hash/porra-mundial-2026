@@ -524,7 +524,7 @@
       nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
       initialData: 'Dades inicials: {date}', noPlayerFound: 'No s’ha trobat cap participant.', points: 'punts', matchPredictions: 'pronòstics de partit',
       champion: 'Campió', finalist: 'Finalista', third: 'Tercer', topScorer: 'Pichichi', goals: 'gols', nextPredictionTitle: 'Pronòstic del pròxim partit', pointsBreakdown: 'Desglossament de punts', matchPredictionsTitle: 'Pronòstics de partits',
-      stage: 'Fase', date: 'Data', match: 'Partit', result: 'Resultat', winner: 'Guanyador', penalty: 'pen.', close: 'Tancar',
+      stage: 'Fase', date: 'Data', match: 'Partit', result: 'Resultat', actualScore: 'Resultat real', winner: 'Guanyador', penalty: 'pen.', close: 'Tancar',
       updateTitle: 'Com actualitzar resultats a GitHub', updateInstructions: 'Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.',
       footerText: 'Actualització de resultats:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grup', groups: 'Grups', r32: 'Setzens de final', r16: 'Vuitens de final', qf: 'Quarts de final', sf: 'Semifinals', thirdPlace: 'Tercer lloc', final: 'Final'
     },
@@ -535,7 +535,7 @@
       nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
       initialData: 'Datos iniciales: {date}', noPlayerFound: 'No se ha encontrado ningún participante.', points: 'puntos', matchPredictions: 'pronósticos de partidos',
       champion: 'Campeón', finalist: 'Finalista', third: 'Tercero', topScorer: 'Pichichi', goals: 'goles', nextPredictionTitle: 'Pronóstico del próximo partido', pointsBreakdown: 'Desglose de puntos', matchPredictionsTitle: 'Pronósticos de partidos',
-      stage: 'Fase', date: 'Fecha', match: 'Partido', result: 'Resultado', winner: 'Ganador', penalty: 'pen.', close: 'Cerrar',
+      stage: 'Fase', date: 'Fecha', match: 'Partido', result: 'Resultado', actualScore: 'Resultado real', winner: 'Ganador', penalty: 'pen.', close: 'Cerrar',
       updateTitle: 'Cómo actualizar resultados en GitHub', updateInstructions: 'Edita solo <code>resultats.js</code>. Busca el partido, cambia <code>null</code> por el resultado real y haz <strong>Commit changes</strong>. GitHub Pages actualizará la web después de publicar el cambio.',
       footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
     },
@@ -546,7 +546,7 @@
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
       initialData: 'Initial data: {date}', noPlayerFound: 'No player found.', points: 'points', matchPredictions: 'match predictions',
       champion: 'Champion', finalist: 'Runner-up', third: 'Third', topScorer: 'Top scorer', goals: 'goals', nextPredictionTitle: 'Prediction for the next match', pointsBreakdown: 'Points breakdown', matchPredictionsTitle: 'Match predictions',
-      stage: 'Stage', date: 'Date', match: 'Match', result: 'Score', winner: 'Winner', penalty: 'pens', close: 'Close',
+      stage: 'Stage', date: 'Date', match: 'Match', result: 'Score', actualScore: 'Actual score', winner: 'Winner', penalty: 'pens', close: 'Close',
       updateTitle: 'How to update results on GitHub', updateInstructions: 'Edit only <code>resultats.js</code>. Find the match, replace <code>null</code> with the real score, and click <strong>Commit changes</strong>. GitHub Pages will update the website after the change is published.',
       footerText: 'Results updates:', githubAccount: 'GitHub', editResultsFile: 'Edit resultats.js', group: 'Group', groups: 'Groups', r32: 'Round of 32', r16: 'Round of 16', qf: 'Quarter-finals', sf: 'Semi-finals', thirdPlace: 'Third-place match', final: 'Final'
     }
@@ -1175,14 +1175,20 @@
       </div>
       <div class="drawer-section"><h3>${escapeHtml(t('nextPredictionTitle'))}</h3><div class="next-prediction-grid">${nextPredictionsHtml(row, comp)}</div></div>
       <div class="drawer-section"><h3>${escapeHtml(t('pointsBreakdown'))}</h3><div class="breakdown">${Object.entries(row.breakdown).map(([k, v]) => `<span>${escapeHtml(k)} <strong>${escapeHtml(v)}</strong></span>`).join('')}</div></div>
-      <div class="drawer-section"><h3>${escapeHtml(t('matchPredictionsTitle'))}</h3>${matchesTable(row)}</div>`;
+      <div class="drawer-section"><h3>${escapeHtml(t('matchPredictionsTitle'))}</h3>${matchesTable(row, comp.actual)}</div>`;
     els.drawer.classList.add('is-open');
     els.drawer.setAttribute('aria-hidden', 'false');
   }
-  function matchesTable(row) {
+  function actualScoreForPrediction(pred, actual) {
+    if (!pred || !actual || !actual.byId) return '—';
+    const am = actual.byId[pred.id];
+    if (!am || !hasMatchScore(am)) return '—';
+    return scoreText(am);
+  }
+  function matchesTable(row, actual) {
     const matches = chronologicalMatches([...row.groupMatches, ...row.knockoutMatches]);
-    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
-    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('winner'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td><span class="score-pill">${escapeHtml(actualScoreForPrediction(m, actual))}</span></td></tr>`).join('');
+    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('actualScore'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
   }
   function closeDrawer() { els.drawer.classList.remove('is-open'); els.drawer.setAttribute('aria-hidden', 'true'); }
   els.langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
