@@ -100,6 +100,21 @@ def parse_resultats(path: Path) -> Dict[str, Dict[str, Any]]:
             "sortOrder": parse_js_field(body, "sortOrder"),
             "status": parse_js_field(body, "status") or "",
         }
+
+    # Keep the ranking graph aligned with the browser leaderboard if official
+    # tie-breaker overrides are entered in resultats.js. Expected shape:
+    # groupRankingOverrides: { A: ["Mexico", "South Africa", ...], ... }
+    overrides: Dict[str, List[str]] = {}
+    ov_match = re.search(r'groupRankingOverrides\s*:\s*\{(?P<body>.*?)\}\s*[,;]', text, re.S)
+    if ov_match:
+        for gm in re.finditer(r'["\']?(?P<group>[A-L])["\']?\s*:\s*\[(?P<teams>.*?)\]', ov_match.group("body"), re.S):
+            teams = [norm_team(t) for t in re.findall(r'["\']([^"\']+)["\']', gm.group("teams"))]
+            teams = [t for t in teams if t]
+            if teams:
+                overrides[gm.group("group")] = teams
+    if overrides:
+        out["__groupRankingOverrides"] = overrides
+
     return out
 
 
@@ -179,7 +194,13 @@ def compute_group_table(group: str, data: Dict[str, Any], results: Dict[str, Dic
     if finished < len(group_matches):
         return None
 
-    return sorted(table.values(), key=rank_key_table)
+    arr = sorted(table.values(), key=rank_key_table)
+    overrides = results.get("__groupRankingOverrides", {})
+    override = overrides.get(group) if isinstance(overrides, dict) else None
+    if isinstance(override, list) and override:
+        order = {norm_team(team): idx for idx, team in enumerate(override)}
+        arr.sort(key=lambda row: order.get(row["team"], 999))
+    return arr
 
 
 def compute_all_group_tables(data: Dict[str, Any], results: Dict[str, Dict[str, Any]], upto_sort: int) -> Dict[str, Optional[List[Dict[str, Any]]]]:
@@ -318,16 +339,32 @@ def score_player(player: Dict[str, Any], data: Dict[str, Any], results: Dict[str
     for mids, team_pts, goal_pts, goal_min in stage_cfg:
         actual_stage_teams = set()
         actual_by_mid = {}
+        finished_by_mid = {}
+
         for mid in mids:
             m = match_by_id.get(mid)
-            row = results.get(mid, {})
-            sort_order = row.get("sortOrder") or (m or {}).get("sortOrder") or 999
-            if sort_order > upto_sort or not finished_result(row):
+            if not m:
                 continue
+
+            # Match the website scoring logic: team and exact-bracket-position
+            # points become active as soon as the participants in that knockout
+            # slot are known from completed earlier matches or completed group
+            # tables. The knockout match itself does not need to have been
+            # played. Goal points still require the match result. This keeps
+            # ranking_history_latest.js aligned with the live leaderboard while
+            # doing all work offline, so the browser still only reads static data.
             home, away = resolve_knockout_match(mid, data, results, upto_sort, tables_for_slots, cache)
-            if home and away:
-                actual_stage_teams.update([home, away])
-                actual_by_mid[mid] = (home, away, row)
+            if home:
+                actual_stage_teams.add(home)
+            if away:
+                actual_stage_teams.add(away)
+            if home or away:
+                actual_by_mid[mid] = (home, away)
+
+            row = results.get(mid, {})
+            sort_order = row.get("sortOrder") or m.get("sortOrder") or 999
+            if sort_order <= upto_sort and finished_result(row):
+                finished_by_mid[mid] = row
 
         for mid in mids:
             pred = kpreds.get(mid)
@@ -340,11 +377,13 @@ def score_player(player: Dict[str, Any], data: Dict[str, Any], results: Dict[str
             if pa in actual_stage_teams:
                 points += team_pts
             if mid in actual_by_mid:
-                ah, aa, row = actual_by_mid[mid]
+                ah, aa = actual_by_mid[mid]
                 if ph == ah:
                     points += team_pts
                 if pa == aa:
                     points += team_pts
+            if mid in finished_by_mid:
+                row = finished_by_mid[mid]
                 if pred.get("homeScore") == row.get("homeScore"):
                     points += max(goal_min, row["homeScore"]) if goal_min is not None else goal_pts
                 if pred.get("awayScore") == row.get("awayScore"):
@@ -466,7 +505,7 @@ def build_history(data: Dict[str, Any], results: Dict[str, Dict[str, Any]]) -> D
     return {
         "generatedAt": now.isoformat(timespec="seconds").replace("+00:00", "Z"),
         "label": now.strftime("%d %b %Y, %H:%M UTC"),
-        "source": "Reconstructed from current official results in resultats.js, replayed in match order",
+        "source": "Reconstructed from current official results in resultats.js, replayed in match order; includes locked knockout team/position points once slots are known",
         "snapshotCount": len(snapshots),
         "playerCount": len(player_names),
         "lastMatchId": snapshots[-1]["matchId"] if snapshots else None,
