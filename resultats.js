@@ -117,7 +117,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-25 · Curaçao vs Côte d'Ivoire
     "G-E-6": { homeScore: 0, awayScore: 2, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 56, status: "FINISHED" },
     // 2026-06-25 · Netherlands vs Tunisia
-    "G-F-5": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 57, status: "IN_PLAY" },
+    "G-F-5": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 57, status: "PAUSED" },
     // 2026-06-25 · Japan vs Sweden
     "G-F-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 58, status: "IN_PLAY" },
     // 2026-06-25 · USA vs Türkiye
