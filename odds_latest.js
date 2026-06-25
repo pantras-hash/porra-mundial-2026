@@ -17,7 +17,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Rafa B"
-      ]
+      ],
+      "winDeltaPp": 3.094,
+      "top3DeltaPp": 5.738,
+      "rankDelta": 1
     },
     {
       "player": "Aleix",
@@ -29,7 +32,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1203,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 2.54
+      "pichichiExpPoints": 2.54,
+      "winDeltaPp": 2.881,
+      "top3DeltaPp": 7.046,
+      "rankDelta": 2
     },
     {
       "player": "Sergi Sanromà",
@@ -44,7 +50,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "aliases": [
         "Sergi S"
-      ]
+      ],
+      "winDeltaPp": 4.633,
+      "top3DeltaPp": 10.196,
+      "rankDelta": 5
     },
     {
       "player": "Joan",
@@ -56,7 +65,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1171,
       "pichichiPlayerPct": 50.961,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 7.64
+      "pichichiExpPoints": 7.64,
+      "winDeltaPp": -5.687,
+      "top3DeltaPp": -9.157,
+      "rankDelta": -3
     },
     {
       "player": "JoanRa",
@@ -68,7 +80,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1182,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 2.54
+      "pichichiExpPoints": 2.54,
+      "winDeltaPp": 1.733,
+      "top3DeltaPp": 2.609,
+      "rankDelta": 1
     },
     {
       "player": "Pablo",
@@ -80,7 +95,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1226,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": 0.556,
+      "top3DeltaPp": 2.462,
+      "rankDelta": 1
     },
     {
       "player": "Chús",
@@ -92,7 +110,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1195,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": -1.902,
+      "top3DeltaPp": -4.029,
+      "rankDelta": -2
     },
     {
       "player": "Rubi",
@@ -104,7 +125,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1198,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": 1.07,
+      "top3DeltaPp": 3.056,
+      "rankDelta": 4
     },
     {
       "player": "Oscar Campanyà",
@@ -119,7 +143,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Oscar C"
-      ]
+      ],
+      "winDeltaPp": 1.016,
+      "top3DeltaPp": 2.062,
+      "rankDelta": 4
     },
     {
       "player": "Bernat Raventós",
@@ -134,7 +161,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "aliases": [
         "Bernat R"
-      ]
+      ],
+      "winDeltaPp": 1.101,
+      "top3DeltaPp": 3.591,
+      "rankDelta": 9
     },
     {
       "player": "Pol",
@@ -146,7 +176,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1198,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": -0.653,
+      "top3DeltaPp": -1.038,
+      "rankDelta": -2
     },
     {
       "player": "Carlo",
@@ -158,7 +191,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1145,
       "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 1.02
+      "pichichiExpPoints": 1.02,
+      "winDeltaPp": 0.066,
+      "top3DeltaPp": -0.094,
+      "rankDelta": 2
     },
     {
       "player": "Emiliano",
@@ -170,7 +206,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1240,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": 0.02,
+      "top3DeltaPp": 1.086,
+      "rankDelta": 2
     },
     {
       "player": "Jaume Cardús",
@@ -185,7 +224,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 2.54,
       "aliases": [
         "Jaume C"
-      ]
+      ],
+      "winDeltaPp": 0.197,
+      "top3DeltaPp": 0.239,
+      "rankDelta": 4
     },
     {
       "player": "Oscar Bordas",
@@ -200,7 +242,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Oscar B"
-      ]
+      ],
+      "winDeltaPp": 1.107,
+      "top3DeltaPp": 4.078,
+      "rankDelta": 20
     },
     {
       "player": "Jordi Raventós",
@@ -216,7 +261,10 @@ window.PORRA_ODDS_LATEST = {
       "aliases": [
         "Jordi Ra",
         "Jordi Ra."
-      ]
+      ],
+      "winDeltaPp": 0.432,
+      "top3DeltaPp": 0.69,
+      "rankDelta": 8
     },
     {
       "player": "Bernat Garreta",
@@ -231,7 +279,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "aliases": [
         "Bernat G"
-      ]
+      ],
+      "winDeltaPp": -1.232,
+      "top3DeltaPp": -2.76,
+      "rankDelta": -6
     },
     {
       "player": "Antonio",
@@ -243,7 +294,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1188,
       "pichichiPlayerPct": 9.286,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 1.39
+      "pichichiExpPoints": 1.39,
+      "winDeltaPp": 0.688,
+      "top3DeltaPp": 1.782,
+      "rankDelta": 11
     },
     {
       "player": "Juanma",
@@ -255,7 +309,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1200,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": 0.709,
+      "top3DeltaPp": 2.708,
+      "rankDelta": 12
     },
     {
       "player": "Miquel",
@@ -267,7 +324,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1168,
       "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 1.04
+      "pichichiExpPoints": 1.04,
+      "winDeltaPp": 0.776,
+      "top3DeltaPp": 2.866,
+      "rankDelta": 13
     },
     {
       "player": "Toni Campanyà",
@@ -282,7 +342,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 3.94,
       "aliases": [
         "Toni C"
-      ]
+      ],
+      "winDeltaPp": 0.281,
+      "top3DeltaPp": 0.588,
+      "rankDelta": 7
     },
     {
       "player": "Andy",
@@ -294,7 +357,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1105,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": 0.182,
+      "top3DeltaPp": 0.148,
+      "rankDelta": 5
     },
     {
       "player": "Bernat Orriols",
@@ -309,7 +375,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.04,
       "aliases": [
         "Bernat O"
-      ]
+      ],
+      "winDeltaPp": 0.074,
+      "top3DeltaPp": 0.092,
+      "rankDelta": 2
     },
     {
       "player": "Xavi Ferrés",
@@ -324,7 +393,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "aliases": [
         "Xavi F"
-      ]
+      ],
+      "winDeltaPp": -0.531,
+      "top3DeltaPp": -1.386,
+      "rankDelta": -7
     },
     {
       "player": "Nicolau",
@@ -336,7 +408,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1108,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": -0.144,
+      "top3DeltaPp": -0.25,
+      "rankDelta": -3
     },
     {
       "player": "Paco",
@@ -348,7 +423,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1169,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": 0.703,
+      "top3DeltaPp": 1.929,
+      "rankDelta": 14
     },
     {
       "player": "Albert Cosí",
@@ -363,7 +441,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.04,
       "aliases": [
         "Albert C"
-      ]
+      ],
+      "winDeltaPp": -0.021,
+      "top3DeltaPp": -0.111,
+      "rankDelta": -1
     },
     {
       "player": "Jordi Cunyao",
@@ -378,7 +459,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Jordi C"
-      ]
+      ],
+      "winDeltaPp": 0.716,
+      "top3DeltaPp": 2.273,
+      "rankDelta": 17
     },
     {
       "player": "Manel Pujol",
@@ -393,7 +477,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 6.58,
       "aliases": [
         "Manel P"
-      ]
+      ],
+      "winDeltaPp": 0.454,
+      "top3DeltaPp": 1.295,
+      "rankDelta": 7
     },
     {
       "player": "Martina",
@@ -405,7 +492,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1196,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": -2.291,
+      "top3DeltaPp": -8.027,
+      "rankDelta": -20
     },
     {
       "player": "Pau",
@@ -417,7 +507,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1214,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": -0.461,
+      "top3DeltaPp": -1.156,
+      "rankDelta": -8
     },
     {
       "player": "Guille Amor",
@@ -432,7 +525,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "aliases": [
         "Guille A"
-      ]
+      ],
+      "winDeltaPp": 0.082,
+      "top3DeltaPp": 0.207,
+      "rankDelta": 2
     },
     {
       "player": "Jordi Reig",
@@ -448,7 +544,10 @@ window.PORRA_ODDS_LATEST = {
       "aliases": [
         "Jordi Re",
         "Jordi Re."
-      ]
+      ],
+      "winDeltaPp": 0.376,
+      "top3DeltaPp": 1.058,
+      "rankDelta": 5
     },
     {
       "player": "Eduard Verdaguer",
@@ -463,7 +562,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "aliases": [
         "Eduard V"
-      ]
+      ],
+      "winDeltaPp": -0.078,
+      "top3DeltaPp": -0.279,
+      "rankDelta": -2
     },
     {
       "player": "Oriol Oltra",
@@ -478,7 +580,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Oriol O"
-      ]
+      ],
+      "winDeltaPp": -6.516,
+      "top3DeltaPp": -17.878,
+      "rankDelta": -32
     },
     {
       "player": "Teo",
@@ -490,7 +595,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1162,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": -0.797,
+      "top3DeltaPp": -2.736,
+      "rankDelta": -15
     },
     {
       "player": "Nick",
@@ -502,7 +610,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1170,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 0.0
+      "pichichiExpPoints": 0.0,
+      "winDeltaPp": 0.169,
+      "top3DeltaPp": 0.521,
+      "rankDelta": 5
     },
     {
       "player": "Oriol Valls",
@@ -517,7 +628,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.04,
       "aliases": [
         "Oriol V"
-      ]
+      ],
+      "winDeltaPp": -0.934,
+      "top3DeltaPp": -3.153,
+      "rankDelta": -18
     },
     {
       "player": "Michael",
@@ -529,7 +643,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1213,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 4.04
+      "pichichiExpPoints": 4.04,
+      "winDeltaPp": 0.082,
+      "top3DeltaPp": 0.926,
+      "rankDelta": 2
     },
     {
       "player": "Jordi Ollé",
@@ -544,7 +661,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 4.05,
       "aliases": [
         "Jordi O"
-      ]
+      ],
+      "winDeltaPp": 0.032,
+      "top3DeltaPp": 0.313,
+      "rankDelta": -1
     },
     {
       "player": "Biel",
@@ -556,7 +676,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1091,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": -0.521,
+      "top3DeltaPp": -1.278,
+      "rankDelta": -11
     },
     {
       "player": "Marc",
@@ -568,7 +691,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1156,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 0.02
+      "pichichiExpPoints": 0.02,
+      "winDeltaPp": -1.534,
+      "top3DeltaPp": -6.412,
+      "rankDelta": -26
     },
     {
       "player": "Guillem Ochoa",
@@ -583,7 +709,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.03,
       "aliases": [
         "Guillem O"
-      ]
+      ],
+      "winDeltaPp": 0.322,
+      "top3DeltaPp": 1.393,
+      "rankDelta": 10
     },
     {
       "player": "Daniela",
@@ -595,7 +724,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1142,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.181,
-      "pichichiExpPoints": 4.05
+      "pichichiExpPoints": 4.05,
+      "winDeltaPp": 0.051,
+      "top3DeltaPp": 0.196,
+      "rankDelta": 0
     },
     {
       "player": "Rafa Angulo",
@@ -610,7 +742,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.02,
       "aliases": [
         "Rafa A"
-      ]
+      ],
+      "winDeltaPp": 0.002,
+      "top3DeltaPp": -0.095,
+      "rankDelta": -2
     },
     {
       "player": "Isra",
@@ -622,7 +757,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1162,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 19.814,
-      "pichichiExpPoints": 6.02
+      "pichichiExpPoints": 6.02,
+      "winDeltaPp": 0.108,
+      "top3DeltaPp": 0.416,
+      "rankDelta": 1
     },
     {
       "player": "Albert Esteve",
@@ -637,7 +775,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.02,
       "aliases": [
         "Albert E"
-      ]
+      ],
+      "winDeltaPp": -0.179,
+      "top3DeltaPp": -0.37,
+      "rankDelta": -10
     },
     {
       "player": "Enrique Moral",
@@ -652,7 +793,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "aliases": [
         "Enrique M"
-      ]
+      ],
+      "winDeltaPp": 0.089,
+      "top3DeltaPp": 0.345,
+      "rankDelta": 2
     },
     {
       "player": "Jaume Martí",
@@ -667,7 +811,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.02,
       "aliases": [
         "Jaume M"
-      ]
+      ],
+      "winDeltaPp": -0.095,
+      "top3DeltaPp": -0.365,
+      "rankDelta": -3
     },
     {
       "player": "Manu GS",
@@ -682,7 +829,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.02,
       "aliases": [
         "Manu G"
-      ]
+      ],
+      "winDeltaPp": -0.049,
+      "top3DeltaPp": -0.118,
+      "rankDelta": -1
     },
     {
       "player": "Norber",
@@ -694,7 +844,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1123,
       "pichichiPlayerPct": 6.794,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 3.56
+      "pichichiExpPoints": 3.56,
+      "winDeltaPp": 0.004,
+      "top3DeltaPp": 0.005,
+      "rankDelta": 1
     },
     {
       "player": "David Muñoz",
@@ -709,7 +862,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 3.56,
       "aliases": [
         "David M"
-      ]
+      ],
+      "winDeltaPp": 0.044,
+      "top3DeltaPp": 0.288,
+      "rankDelta": 4
     },
     {
       "player": "Andreu",
@@ -721,7 +877,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1147,
       "pichichiPlayerPct": 0.0,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 2.54
+      "pichichiExpPoints": 2.54,
+      "winDeltaPp": 0.007,
+      "top3DeltaPp": -0.017,
+      "rankDelta": 2
     },
     {
       "player": "Pere",
@@ -733,7 +892,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1150,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 0.0,
-      "pichichiExpPoints": 4.04
+      "pichichiExpPoints": 4.04,
+      "winDeltaPp": -0.001,
+      "top3DeltaPp": -0.031,
+      "rankDelta": 0
     },
     {
       "player": "Albert Benach",
@@ -748,7 +910,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 0.0,
       "aliases": [
         "Albert B"
-      ]
+      ],
+      "winDeltaPp": -0.004,
+      "top3DeltaPp": -0.036,
+      "rankDelta": 2
     },
     {
       "player": "Gerard",
@@ -760,7 +925,10 @@ window.PORRA_ODDS_LATEST = {
       "maxPoints": 1108,
       "pichichiPlayerPct": 26.912,
       "pichichiGoalsPct": 25.439,
-      "pichichiExpPoints": 6.58
+      "pichichiExpPoints": 6.58,
+      "winDeltaPp": -0.153,
+      "top3DeltaPp": -0.929,
+      "rankDelta": -8
     },
     {
       "player": "Eduardo Morales",
@@ -775,7 +943,10 @@ window.PORRA_ODDS_LATEST = {
       "pichichiExpPoints": 1.08,
       "aliases": [
         "Eduardo M"
-      ]
+      ],
+      "winDeltaPp": -0.076,
+      "top3DeltaPp": -0.5,
+      "rankDelta": -6
     }
   ],
   "modelDetails": {
@@ -1538,5 +1709,11 @@ window.PORRA_ODDS_LATEST = {
       }
     ],
     "missingParticipantPicks": []
-  }
+  },
+  "deltaBaseline": "End of 06/23 / Colombia 1-0 DR Congo baseline (per handoff comparison file)",
+  "deltaFields": [
+    "winDeltaPp",
+    "top3DeltaPp",
+    "rankDelta"
+  ]
 };

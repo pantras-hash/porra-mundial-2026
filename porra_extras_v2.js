@@ -471,7 +471,7 @@ return '';
 
   function formatPctV2(value) {
     const n = Number(value);
-    return Number.isFinite(n) ? `${n.toFixed(2)}%` : '—';
+    return Number.isFinite(n) ? `${n.toFixed(3)}%` : '—';
   }
 
   function formatNumberV2(value, digits = 1) {
@@ -482,8 +482,8 @@ return '';
   function formatSignedPpV2(value) {
     const n = Number(value);
     if (!Number.isFinite(n)) return '—';
-    if (Math.abs(n) < 0.005) return '0.00 pp';
-    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(2)} pp`;
+    if (Math.abs(n) < 0.0005) return '0.000 pp';
+    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(3)} pp`;
   }
 
   function renderWinProbability() {
