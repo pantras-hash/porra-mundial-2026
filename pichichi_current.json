@@ -1,6 +1,6 @@
 {
-  "asOf": "24 Jun 2026, after Colombia 1-0 DR Congo",
-  "source": "Manual update from confirmed match reports through Colombia 1-0 DR Congo; scorers added from public match reports.",
+  "asOf": "25 Jun 2026, after South Africa 1-0 Korea Republic (54 matches played)",
+  "source": "Manual update from confirmed scorer reports through 24 Jun 2026 matches M49-M54; includes Vinicius Junior brace vs Scotland.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -33,6 +33,22 @@
       ]
     },
     {
+      "name": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 4,
+      "aliases": [
+        "Vini",
+        "Vini Jr",
+        "Vinicius",
+        "Vinicius Jr",
+        "Vinicius Junior",
+        "Vinícius",
+        "Vinícius Junior",
+        "Vinícius Júnior"
+      ],
+      "source": "Scotland 0-3 Brazil, M49: +2"
+    },
+    {
       "name": "Deniz Undav",
       "team": "Germany",
       "goals": 3,
@@ -42,12 +58,42 @@
       ]
     },
     {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "goals": 3,
+      "aliases": [
+        "Ismael Saibari",
+        "Saibari"
+      ],
+      "source": "Morocco 4-2 Haiti, M50: +1"
+    },
+    {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "goals": 3,
+      "aliases": [
+        "Johan Manzambi",
+        "Manzambi"
+      ],
+      "source": "Switzerland 2-1 Canada, M51: +1"
+    },
+    {
       "name": "Jonathan David",
       "team": "Canada",
       "goals": 3,
       "aliases": [
         "David"
       ]
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "goals": 3,
+      "aliases": [
+        "Cunha",
+        "Matheus Cunha"
+      ],
+      "source": "Scotland 0-3 Brazil, M49: +1"
     },
     {
       "name": "Ayase Ueda",
@@ -129,6 +175,18 @@
       ]
     },
     {
+      "name": "Ermin Mahmić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 2,
+      "aliases": [
+        "Ermin Mahmic",
+        "Ermin Mahmić",
+        "Mahmic",
+        "Mahmić"
+      ],
+      "source": "Bosnia-Herzegovina 3-1 Qatar, M52: +1"
+    },
+    {
       "name": "Folarin Balogun",
       "team": "USA",
       "goals": 2,
@@ -146,14 +204,6 @@
       ]
     },
     {
-      "name": "Ismael Saibari",
-      "team": "Morocco",
-      "goals": 2,
-      "aliases": [
-        "Saibari"
-      ]
-    },
-    {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
       "goals": 2,
@@ -164,12 +214,16 @@
       ]
     },
     {
-      "name": "Johan Manzambi",
-      "team": "Switzerland",
+      "name": "Julián Quiñones",
+      "team": "Mexico",
       "goals": 2,
       "aliases": [
-        "Manzambi"
-      ]
+        "Julian Quinones",
+        "Julián Quiñones",
+        "Quinones",
+        "Quiñones"
+      ],
+      "source": "Czechia 0-3 Mexico, M53: +1"
     },
     {
       "name": "Kai Havertz",
@@ -178,15 +232,6 @@
       "aliases": [
         "Havertz",
         "Kai Havertz"
-      ]
-    },
-    {
-      "name": "Matheus Cunha",
-      "team": "Brazil",
-      "goals": 2,
-      "aliases": [
-        "Cunha",
-        "Matheus Cunha"
       ]
     },
     {
@@ -210,15 +255,15 @@
       ]
     },
     {
-      "name": "Vinícius Júnior",
-      "team": "Brazil",
+      "name": "Ruben Vargas",
+      "team": "Switzerland",
       "goals": 2,
       "aliases": [
-        "Vinicius",
-        "Vinícius",
-        "Vinicius Junior",
-        "Vinícius Junior"
-      ]
+        "Ruben Vargas",
+        "Rubén Vargas",
+        "Vargas"
+      ],
+      "source": "Switzerland 2-1 Canada, M51: +1"
     },
     {
       "name": "Yasin Ayari",
@@ -244,6 +289,16 @@
         "Abdulelah Al Amri",
         "Al Amri"
       ]
+    },
+    {
+      "name": "Achraf Hakimi",
+      "team": "Morocco",
+      "goals": 1,
+      "aliases": [
+        "Achraf Hakimi",
+        "Hakimi"
+      ],
+      "source": "Morocco 4-2 Haiti, M50: +1"
     },
     {
       "name": "Agustín Canobbio",
@@ -278,6 +333,17 @@
       "aliases": [
         "Olwan"
       ]
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Alvaro Fidalgo",
+        "Fidalgo",
+        "Álvaro Fidalgo"
+      ],
+      "source": "Czechia 0-3 Mexico, M53: +1"
     },
     {
       "name": "Amad Diallo",
@@ -373,16 +439,6 @@
       ]
     },
     {
-      "name": "Ermin Mahmić",
-      "team": "Bosnia-Herzegovina",
-      "goals": 1,
-      "aliases": [
-        "Ermin Mahmic",
-        "Mahmic",
-        "Mahmić"
-      ]
-    },
-    {
       "name": "Felix Nmecha",
       "team": "Germany",
       "goals": 1,
@@ -410,6 +466,16 @@
       ]
     },
     {
+      "name": "Gessime Yassine",
+      "team": "Morocco",
+      "goals": 1,
+      "aliases": [
+        "Gessime Yassine",
+        "Yassine"
+      ],
+      "source": "Morocco 4-2 Haiti, M50: +1"
+    },
+    {
       "name": "Gio Reyna",
       "team": "USA",
       "goals": 1,
@@ -427,13 +493,16 @@
       ]
     },
     {
-      "name": "Hwang In-beom",
-      "team": "Korea Republic",
+      "name": "Hassan Al-Haydos",
+      "team": "Qatar",
       "goals": 1,
       "aliases": [
-        "In-Beom Hwang",
-        "Hwang In-Beom"
-      ]
+        "Al Haydos",
+        "Al-Haydos",
+        "Hassan Al Haydos",
+        "Hassan Al-Haydos"
+      ],
+      "source": "Bosnia-Herzegovina 3-1 Qatar, M52: +1"
     },
     {
       "name": "Hélio Varela",
@@ -442,6 +511,15 @@
       "aliases": [
         "Helio Varela",
         "Varela"
+      ]
+    },
+    {
+      "name": "Hwang In-beom",
+      "team": "Korea Republic",
+      "goals": 1,
+      "aliases": [
+        "In-Beom Hwang",
+        "Hwang In-Beom"
       ]
     },
     {
@@ -470,6 +548,15 @@
       ]
     },
     {
+      "name": "João Neves",
+      "team": "Portugal",
+      "goals": 1,
+      "aliases": [
+        "Joao Neves",
+        "Neves"
+      ]
+    },
+    {
       "name": "John McGinn",
       "team": "Scotland",
       "goals": 1,
@@ -487,29 +574,11 @@
       ]
     },
     {
-      "name": "João Neves",
-      "team": "Portugal",
-      "goals": 1,
-      "aliases": [
-        "Joao Neves",
-        "Neves"
-      ]
-    },
-    {
       "name": "Jude Bellingham",
       "team": "England",
       "goals": 1,
       "aliases": [
         "Bellingham"
-      ]
-    },
-    {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 1,
-      "aliases": [
-        "Julian Quinones",
-        "Quinones"
       ]
     },
     {
@@ -530,6 +599,18 @@
       "aliases": [
         "Nakamura"
       ]
+    },
+    {
+      "name": "Kerim Alajbegovic",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1,
+      "aliases": [
+        "Alajbegovic",
+        "Alajbegović",
+        "Kerim Alajbegovic",
+        "Kerim Alajbegović"
+      ],
+      "source": "Bosnia-Herzegovina 3-1 Qatar, M52: +1"
     },
     {
       "name": "Kevin Pina",
@@ -630,12 +711,16 @@
       ]
     },
     {
-      "name": "Mattias Svanberg",
-      "team": "Sweden",
+      "name": "Mateo Chávez",
+      "team": "Mexico",
       "goals": 1,
       "aliases": [
-        "Svanberg"
-      ]
+        "Chavez",
+        "Chávez",
+        "Mateo Chavez",
+        "Mateo Chávez"
+      ],
+      "source": "Czechia 0-3 Mexico, M53: +1"
     },
     {
       "name": "Matías Galarza",
@@ -644,6 +729,14 @@
       "aliases": [
         "Matias Galarza",
         "Galarza"
+      ]
+    },
+    {
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Svanberg"
       ]
     },
     {
@@ -789,6 +882,15 @@
       ]
     },
     {
+      "name": "Promise David",
+      "team": "Canada",
+      "goals": 1,
+      "aliases": [
+        "Promise David"
+      ],
+      "source": "Switzerland 2-1 Canada, M51: +1"
+    },
+    {
       "name": "Rafael Leão",
       "team": "Portugal",
       "goals": 1,
@@ -826,12 +928,24 @@
       ]
     },
     {
-      "name": "Ruben Vargas",
-      "team": "Switzerland",
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
       "goals": 1,
       "aliases": [
-        "Vargas"
-      ]
+        "Rahimi",
+        "Soufiane Rahimi"
+      ],
+      "source": "Morocco 4-2 Haiti, M50: +1"
+    },
+    {
+      "name": "Thapelo Maseko",
+      "team": "South Africa",
+      "goals": 1,
+      "aliases": [
+        "Maseko",
+        "Thapelo Maseko"
+      ],
+      "source": "South Africa 1-0 Korea Republic, M54: +1"
     },
     {
       "name": "Trézéguet",
@@ -860,6 +974,16 @@
         "Van Dijk",
         "Virgil van Dijk"
       ]
+    },
+    {
+      "name": "Wilson Isidor",
+      "team": "Haiti",
+      "goals": 1,
+      "aliases": [
+        "Isidor",
+        "Wilson Isidor"
+      ],
+      "source": "Morocco 4-2 Haiti, M50: +1"
     },
     {
       "name": "Yoane Wissa",
