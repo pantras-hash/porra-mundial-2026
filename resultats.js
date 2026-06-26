@@ -121,7 +121,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-25 · Japan vs Sweden
     "G-F-6": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 58, status: "FINISHED" },
     // 2026-06-25 · USA vs Türkiye
-    "G-D-5": { homeScore: 2, awayScore: 3, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 59, status: "IN_PLAY" },
+    "G-D-5": { homeScore: 2, awayScore: 3, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 59, status: "FINISHED" },
     // 2026-06-25 · Paraguay vs Australia
     "G-D-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 60, status: "FINISHED" },
     // 2026-06-26 · France vs Norway
