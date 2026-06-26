@@ -543,7 +543,17 @@ return '';
 
     const note = `<p class="porra-muted-v2">${escapeHtml(t('oddsGallifantesNote'))}</p>`;
 
-    return `${intro}${tableHtml(headers, rows)}${note}`;
+    const oddsTable = tableHtml(headers, rows)
+      .replace('porra-popup-table-wrap-v2"', 'porra-popup-table-wrap-v2 porra-odds-table-wrap-v2"')
+      .replace('porra-popup-table-v2"', 'porra-popup-table-v2 porra-odds-table-v2"');
+    const oddsDeltaStyle = `<style>
+      .porra-odds-table-v2 th:nth-child(4),
+      .porra-odds-table-v2 td:nth-child(4) {
+        min-width: 8.5rem;
+        white-space: nowrap;
+      }
+    </style>`;
+    return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
   }
 
   function renderTopScorers() {
