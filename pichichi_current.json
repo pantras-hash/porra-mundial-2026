@@ -1,6 +1,6 @@
 {
-  "asOf": "25 Jun 2026, after South Africa 1-0 Korea Republic (54 matches played)",
-  "source": "Manual update from confirmed scorer reports through 24 Jun 2026 matches M49-M54; includes Vinicius Junior brace vs Scotland.",
+  "asOf": "26 Jun 2026, after Paraguay 0-0 Australia (60 matches played; end of 25 Jun games)",
+  "source": "Manual update from confirmed scorer reports through 25 Jun 2026 matches M55-M60; pichichi proxy inputs updated after Group D/E/F completion.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -47,6 +47,16 @@
         "Vinícius Júnior"
       ],
       "source": "Scotland 0-3 Brazil, M49: +2"
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
+      "goals": 3,
+      "aliases": [
+        "Brian Brobbey",
+        "Brobbey"
+      ],
+      "source": "Netherlands 3-1 Tunisia, M57: +1"
     },
     {
       "name": "Deniz Undav",
@@ -96,21 +106,22 @@
       "source": "Scotland 0-3 Brazil, M49: +1"
     },
     {
+      "name": "Anthony Elanga",
+      "team": "Sweden",
+      "goals": 2,
+      "aliases": [
+        "Anthony Elanga",
+        "Elanga"
+      ],
+      "source": "Japan 1-1 Sweden, M58: +1"
+    },
+    {
       "name": "Ayase Ueda",
       "team": "Japan",
       "goals": 2,
       "aliases": [
         "Ueda",
         "Ayase Ueda"
-      ]
-    },
-    {
-      "name": "Brian Brobbey",
-      "team": "Netherlands",
-      "goals": 2,
-      "aliases": [
-        "Brobbey",
-        "Brian Brobbey"
       ]
     },
     {
@@ -255,6 +266,18 @@
       ]
     },
     {
+      "name": "Nicolas Pépé",
+      "team": "Côte d'Ivoire",
+      "goals": 2,
+      "aliases": [
+        "Nicolas Pepe",
+        "Nicolas Pépé",
+        "Pepe",
+        "Pépé"
+      ],
+      "source": "Curaçao 0-2 Côte d'Ivoire, M56: +2"
+    },
+    {
       "name": "Ruben Vargas",
       "team": "Switzerland",
       "goals": 2,
@@ -335,17 +358,6 @@
       ]
     },
     {
-      "name": "Álvaro Fidalgo",
-      "team": "Mexico",
-      "goals": 1,
-      "aliases": [
-        "Alvaro Fidalgo",
-        "Fidalgo",
-        "Álvaro Fidalgo"
-      ],
-      "source": "Czechia 0-3 Mexico, M53: +1"
-    },
-    {
       "name": "Amad Diallo",
       "team": "Côte d'Ivoire",
       "goals": 1,
@@ -373,13 +385,26 @@
       ]
     },
     {
-      "name": "Anthony Elanga",
-      "team": "Sweden",
+      "name": "Arda Güler",
+      "team": "Türkiye",
       "goals": 1,
       "aliases": [
-        "Elanga",
-        "Anthony Elanga"
-      ]
+        "Arda Guler",
+        "Arda Güler",
+        "Guler",
+        "Güler"
+      ],
+      "source": "USA 2-3 Türkiye, M59: +1"
+    },
+    {
+      "name": "Auston Trusty",
+      "team": "USA",
+      "goals": 1,
+      "aliases": [
+        "Auston Trusty",
+        "Trusty"
+      ],
+      "source": "USA 2-3 Türkiye, M59: +1"
     },
     {
       "name": "Ayman Hussein",
@@ -388,6 +413,18 @@
       "aliases": [
         "Hussein"
       ]
+    },
+    {
+      "name": "Barış Alper Yılmaz",
+      "team": "Türkiye",
+      "goals": 1,
+      "aliases": [
+        "Baris Alper Yilmaz",
+        "Barış Alper Yılmaz",
+        "Yilmaz",
+        "Yılmaz"
+      ],
+      "source": "USA 2-3 Türkiye, M59: +1"
     },
     {
       "name": "Boualem Khoukhi",
@@ -428,6 +465,16 @@
       "aliases": [
         "Metcalfe"
       ]
+    },
+    {
+      "name": "Daizen Maeda",
+      "team": "Japan",
+      "goals": 1,
+      "aliases": [
+        "Daizen Maeda",
+        "Maeda"
+      ],
+      "source": "Japan 1-1 Sweden, M58: +1"
     },
     {
       "name": "Emam Ashour",
@@ -485,6 +532,16 @@
       ]
     },
     {
+      "name": "Gonzalo Plata",
+      "team": "Ecuador",
+      "goals": 1,
+      "aliases": [
+        "Gonzalo Plata",
+        "Plata"
+      ],
+      "source": "Germany 1-2 Ecuador, M55: +1"
+    },
+    {
       "name": "Granit Xhaka",
       "team": "Switzerland",
       "goals": 1,
@@ -505,13 +562,14 @@
       "source": "Bosnia-Herzegovina 3-1 Qatar, M52: +1"
     },
     {
-      "name": "Hélio Varela",
-      "team": "Cabo Verde",
+      "name": "Hazem Mastouri",
+      "team": "Tunisia",
       "goals": 1,
       "aliases": [
-        "Helio Varela",
-        "Varela"
-      ]
+        "Hazem Mastouri",
+        "Mastouri"
+      ],
+      "source": "Netherlands 3-1 Tunisia, M57: +1"
     },
     {
       "name": "Hwang In-beom",
@@ -520,6 +578,15 @@
       "aliases": [
         "In-Beom Hwang",
         "Hwang In-Beom"
+      ]
+    },
+    {
+      "name": "Hélio Varela",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "aliases": [
+        "Helio Varela",
+        "Varela"
       ]
     },
     {
@@ -548,13 +615,15 @@
       ]
     },
     {
-      "name": "João Neves",
-      "team": "Portugal",
+      "name": "Jan Paul van Hecke",
+      "team": "Netherlands",
       "goals": 1,
       "aliases": [
-        "Joao Neves",
-        "Neves"
-      ]
+        "Jan Paul van Hecke",
+        "Jan-Paul van Hecke",
+        "Van Hecke"
+      ],
+      "source": "Netherlands 3-1 Tunisia, M57: +1"
     },
     {
       "name": "John McGinn",
@@ -571,6 +640,15 @@
       "aliases": [
         "Jovo Lukic",
         "Lukic"
+      ]
+    },
+    {
+      "name": "João Neves",
+      "team": "Portugal",
+      "goals": 1,
+      "aliases": [
+        "Joao Neves",
+        "Neves"
       ]
     },
     {
@@ -591,6 +669,16 @@
         "Ito",
         "Itō"
       ]
+    },
+    {
+      "name": "Kaan Ayhan",
+      "team": "Türkiye",
+      "goals": 1,
+      "aliases": [
+        "Ayhan",
+        "Kaan Ayhan"
+      ],
+      "source": "USA 2-3 Türkiye, M59: +1"
     },
     {
       "name": "Keito Nakamura",
@@ -647,6 +735,18 @@
         "Ostigard",
         "Østigård"
       ]
+    },
+    {
+      "name": "Leroy Sané",
+      "team": "Germany",
+      "goals": 1,
+      "aliases": [
+        "Leroy Sane",
+        "Leroy Sané",
+        "Sane",
+        "Sané"
+      ],
+      "source": "Germany 1-2 Ecuador, M55: +1"
     },
     {
       "name": "Livano Comenencia",
@@ -723,20 +823,20 @@
       "source": "Czechia 0-3 Mexico, M53: +1"
     },
     {
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1,
+      "aliases": [
+        "Svanberg"
+      ]
+    },
+    {
       "name": "Matías Galarza",
       "team": "Paraguay",
       "goals": 1,
       "aliases": [
         "Matias Galarza",
         "Galarza"
-      ]
-    },
-    {
-      "name": "Mattias Svanberg",
-      "team": "Sweden",
-      "goals": 1,
-      "aliases": [
-        "Svanberg"
       ]
     },
     {
@@ -825,6 +925,16 @@
       "aliases": [
         "Schlotterbeck"
       ]
+    },
+    {
+      "name": "Nilson Angulo",
+      "team": "Ecuador",
+      "goals": 1,
+      "aliases": [
+        "Angulo",
+        "Nilson Angulo"
+      ],
+      "source": "Germany 1-2 Ecuador, M55: +1"
     },
     {
       "name": "Nizar Al-Rashdan",
@@ -928,6 +1038,16 @@
       ]
     },
     {
+      "name": "Sebastian Berhalter",
+      "team": "USA",
+      "goals": 1,
+      "aliases": [
+        "Berhalter",
+        "Sebastian Berhalter"
+      ],
+      "source": "USA 2-3 Türkiye, M59: +1"
+    },
+    {
       "name": "Soufiane Rahimi",
       "team": "Morocco",
       "goals": 1,
@@ -992,6 +1112,17 @@
       "aliases": [
         "Wissa"
       ]
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "team": "Mexico",
+      "goals": 1,
+      "aliases": [
+        "Alvaro Fidalgo",
+        "Fidalgo",
+        "Álvaro Fidalgo"
+      ],
+      "source": "Czechia 0-3 Mexico, M53: +1"
     },
     {
       "name": "Ferran Torres",
@@ -1114,6 +1245,52 @@
         "Nadhir Benbouali": 1,
         "Amine Gouiri": 1
       }
+    },
+    {
+      "match": "Germany 1-2 Ecuador",
+      "scorers": {
+        "Leroy Sané": 1,
+        "Nilson Angulo": 1,
+        "Gonzalo Plata": 1
+      }
+    },
+    {
+      "match": "Curaçao 0-2 Côte d'Ivoire",
+      "scorers": {
+        "Nicolas Pépé": 2
+      }
+    },
+    {
+      "match": "Netherlands 3-1 Tunisia",
+      "scorers": {
+        "Brian Brobbey": 1,
+        "Jan Paul van Hecke": 1,
+        "Hazem Mastouri": 1
+      },
+      "ownGoals": {
+        "Ellyes Skhiri": 1
+      }
+    },
+    {
+      "match": "Japan 1-1 Sweden",
+      "scorers": {
+        "Daizen Maeda": 1,
+        "Anthony Elanga": 1
+      }
+    },
+    {
+      "match": "USA 2-3 Türkiye",
+      "scorers": {
+        "Auston Trusty": 1,
+        "Sebastian Berhalter": 1,
+        "Arda Güler": 1,
+        "Barış Alper Yılmaz": 1,
+        "Kaan Ayhan": 1
+      }
+    },
+    {
+      "match": "Paraguay 0-0 Australia",
+      "scorers": {}
     }
   ]
 }

@@ -52,13 +52,17 @@
       oddsWin: 'Prob. victòria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsLast: 'Prob. últim',
       oddsExpGall: 'Gall. esperats',
+      oddsProjectedWinner: 'Guanyador proj.',
+      oddsProjectedFinalist: 'Finalista proj.',
+      oddsProjectedPichichi: 'Pichichi proj.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Punts esperats',
       oddsMax: 'Màxim',
-      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20: 750 per al 1r lloc, 250 per al 2n, 100 per al 3r, 20 per al 27è i 20 per a l’últim. Els empats reparteixen els premis corresponents. SD gall. és la desviació estàndard dels gallifantes simulats. CE gall. és l’equivalent cert amb utilitat logarítmica, calculat com exp(mitjana(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20. La probabilitat d’últim reparteix empats a l’última posició. Les columnes projectades mostren les apostes de cada participant.',
       oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
@@ -107,13 +111,17 @@
       oddsWin: 'Prob. victoria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsLast: 'Prob. último',
       oddsExpGall: 'Gall. esperados',
+      oddsProjectedWinner: 'Ganador proy.',
+      oddsProjectedFinalist: 'Finalista proy.',
+      oddsProjectedPichichi: 'Pichichi proy.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Puntos esperados',
       oddsMax: 'Máximo',
-      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20: 750 para el 1.º puesto, 250 para el 2.º, 100 para el 3.º, 20 para el 27.º y 20 para el último. Los empates reparten los premios correspondientes. SD gall. es la desviación estándar de los gallifantes simulados. CE gall. es el equivalente cierto con utilidad logarítmica, calculado como exp(media(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20. La probabilidad de último reparte empates en la última posición. Las columnas proyectadas muestran las apuestas de cada participante.',
       oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
@@ -162,13 +170,17 @@
       oddsWin: 'Win probability',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Top 3 probability',
+      oddsLast: 'Last-place probability',
       oddsExpGall: 'Exp. gall.',
+      oddsProjectedWinner: 'Projected winner',
+      oddsProjectedFinalist: 'Projected finalist',
+      oddsProjectedPichichi: 'Projected Pichichi',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'CE rank',
       oddsAvg: 'Expected points',
       oddsMax: 'Max',
-      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule: 750 for 1st place, 250 for 2nd, 100 for 3rd, 20 for 27th, and 20 for last place. Ties split the relevant prizes. SD gall. is the standard deviation of simulated gallifantes. CE gall. is the log-utility certainty equivalent, computed as exp(mean(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule. Last-place probability splits ties for last. Projected columns show each participant’s picks.',
       oddsNoData: 'No win-probability data is available yet.'
     }
   };
@@ -508,10 +520,11 @@ return '';
         <td class="num">${escapeHtml(formatPctV2(row.winPct))}</td>
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.sdGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.ceGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.ceRank, 0))}</td>
+        <td>${escapeHtml(display(row.projectedWinner))}</td>
+        <td>${escapeHtml(display(row.projectedFinalist))}</td>
+        <td>${escapeHtml(display(row.projectedPichichi))}</td>
       </tr>
     `);
 
@@ -521,10 +534,11 @@ return '';
       t('oddsWin'),
       t('oddsDelta'),
       t('oddsTop3'),
+      t('oddsLast'),
       t('oddsExpGall'),
-      t('oddsSdGall'),
-      t('oddsCeGall'),
-      t('oddsCeRank')
+      t('oddsProjectedWinner'),
+      t('oddsProjectedFinalist'),
+      t('oddsProjectedPichichi')
     ];
 
     const note = `<p class="porra-muted-v2">${escapeHtml(t('oddsGallifantesNote'))}</p>`;
