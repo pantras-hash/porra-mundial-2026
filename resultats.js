@@ -125,7 +125,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-25 · Paraguay vs Australia
     "G-D-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-25", sortOrder: 60, status: "FINISHED" },
     // 2026-06-26 · France vs Norway
-    "G-I-5": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 61, status: "IN_PLAY" },
+    "G-I-5": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 61, status: "PAUSED" },
     // 2026-06-26 · Senegal vs Iraq
     "G-I-6": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 62, status: "IN_PLAY" },
     // 2026-06-26 · Spain vs Uruguay
