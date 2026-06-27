@@ -686,6 +686,14 @@
     // so a score without a status is treated as final.
     return hasMatchScore(m);
   }
+  function isMatchLive(m) {
+    return LIVE_STATUSES.has(matchStatus(m));
+  }
+  function isMatchCounted(m, includeLive) {
+    if (!hasMatchScore(m)) return false;
+    if (isMatchFinal(m)) return true;
+    return !!includeLive && isMatchLive(m);
+  }
   function statusLabel(status) {
     const s = String(status || '').toUpperCase();
     const labels = {
@@ -801,38 +809,14 @@
     return copy;
   }
 
-  function buildActual(resultsObj) {
-    const resultMap = resultsObj.matches || {};
-    const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
-    const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {});
-    const third = computeThirdPlaces(groups);
-    const r32ThirdMap = computeThirdMap(third);
-    const allMatches = [];
-    for (const gm of groupMatches) {
-      allMatches.push({ ...gm, winner: groupWinner(gm) });
-    }
-    const byId = Object.fromEntries(allMatches.map(m => [m.id, m]));
-    for (const tmpl of data.matches.filter(m => m.type === 'knockout')) {
-      const base = resultMap[tmpl.id] || {};
-      const home = resolveSlot(tmpl.homeSlot, groups, third, r32ThirdMap, byId, 'home');
-      const away = resolveSlot(tmpl.awaySlot, groups, third, r32ThirdMap, byId, 'away');
-      const km = { ...tmpl, home, away, ...base };
-      km.winner = koWinner(km);
-      km.loser = koLoser(km);
-      byId[km.id] = km;
-      allMatches.push(km);
-    }
-    return { matches: allMatches, byId, groups, third, final: resultsObj.final || {} };
-  }
-
-  function groupWinner(m) {
-    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+  function groupWinner(m, includeLive) {
+    if (!isMatchCounted(m, includeLive) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     return 'Empat';
   }
-  function koWinner(m) {
-    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+  function koWinner(m, includeLive) {
+    if (!isMatchCounted(m, includeLive) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     if (isNum(m.penHome) && isNum(m.penAway)) {
@@ -841,21 +825,134 @@
     }
     return null;
   }
-  function koLoser(m) {
-    const w = koWinner(m);
+  function koLoser(m, includeLive) {
+    const w = koWinner(m, includeLive);
     if (!w) return null;
     if (w === m.home) return m.away;
     if (w === m.away) return m.home;
     return null;
   }
 
-  function computeGroups(groupMatches, overrides) {
+  function compareGroupRows(a, b) {
+    return b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
+  }
+
+  function isFinalGroupMatchdayScoreable(matches, includeLive) {
+    if (!includeLive || !Array.isArray(matches) || matches.length !== 6) return false;
+    const ordered = chronologicalMatches(matches);
+    const previousMatchdays = ordered.slice(0, 4);
+    const finalMatchday = ordered.slice(4);
+    if (finalMatchday.length !== 2) return false;
+    if (!previousMatchdays.every(m => isMatchFinal(m))) return false;
+    if (!finalMatchday.every(m => isMatchCounted(m, true))) return false;
+    return finalMatchday.some(m => isMatchLive(m) && !isMatchFinal(m));
+  }
+
+  function maxPossiblePointsForAnyThirdPlaceTeam(groupObj) {
+    if (!groupObj || groupObj.complete) return Number.NEGATIVE_INFINITY;
+    const matches = Array.isArray(groupObj.matches) ? groupObj.matches : [];
+    const table = Array.isArray(groupObj.table) ? groupObj.table : [];
+    return table.reduce((maxPts, row) => {
+      const remainingForTeam = matches.filter(m => !isMatchFinal(m) && (m.home === row.team || m.away === row.team)).length;
+      return Math.max(maxPts, row.pts + 3 * remainingForTeam);
+    }, Number.NEGATIVE_INFINITY);
+  }
+
+  function thirdPlaceTeamCouldStillFinishAhead(row, groupObj) {
+    if (!row || !groupObj || groupObj.complete) return false;
+    const maxPts = maxPossiblePointsForAnyThirdPlaceTeam(groupObj);
+    return maxPts >= row.pts;
+  }
+
+  function lockedThirdPlaceQualifiers(groups, thirdRows) {
+    const locked = [];
+    const groupEntries = Object.entries(groups || {});
+    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
+
+    if (allComplete) {
+      return thirdRows.slice(0, 8).filter(row => row.complete);
+    }
+
+    thirdRows.filter(row => row.complete).forEach(row => {
+      const completedAhead = thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length;
+      const uncertainAhead = groupEntries.filter(([, obj]) => !obj.complete && thirdPlaceTeamCouldStillFinishAhead(row, obj)).length;
+      if (completedAhead + uncertainAhead <= 7) locked.push(row);
+    });
+
+    return locked;
+  }
+
+  function computeThirdPlaces(groups) {
+    const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
+    const sorted = rows.slice().sort(compareGroupRows);
+    const allComplete = sorted.length > 0 && sorted.every(r => r.complete);
+    sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = allComplete && idx < 8 && t.complete; });
+    return sorted;
+  }
+
+  function computeR32Certainty(groups, thirdRows, includeLive) {
+    const qualifiedTeams = new Set();
+    const exactSlots = {};
+    const directSeedTeams = {};
+
+    Object.entries(groups || {}).forEach(([g, obj]) => {
+      if (!obj || !Array.isArray(obj.table)) return;
+      const directSeedsScoreable = obj.complete || (includeLive && obj.groupBonusesScoreable);
+      if (!directSeedsScoreable) return;
+      const first = obj.table[0];
+      const second = obj.table[1];
+      if (first && first.team) {
+        qualifiedTeams.add(first.team);
+        directSeedTeams['1' + g] = first.team;
+      }
+      if (second && second.team) {
+        qualifiedTeams.add(second.team);
+        directSeedTeams['2' + g] = second.team;
+      }
+    });
+
+    lockedThirdPlaceQualifiers(groups, thirdRows).forEach(row => {
+      if (row && row.team) qualifiedTeams.add(row.team);
+    });
+
+    const groupEntries = Object.entries(groups || {});
+    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
+    const thirdSlotTeams = {};
+
+    if (allComplete) {
+      const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
+      const matrixRow = data.thirdPlaceMatrix[qualifiedGroups] || {};
+      Object.entries(matrixRow).forEach(([paired, seed]) => {
+        const row = thirdRows.find(t => t.seed === seed);
+        if (row && row.team) thirdSlotTeams[paired] = row.team;
+      });
+    }
+
+    function exactTeamForSlot(slot) {
+      if (!slot) return null;
+      if (slot.startsWith && slot.startsWith('third:')) {
+        return thirdSlotTeams[slot.split(':')[1]] || null;
+      }
+      return directSeedTeams[String(slot)] || null;
+    }
+
+    data.matches.filter(m => stageConfig.r32.keys.includes(m.id)).forEach(m => {
+      exactSlots[m.id] = {
+        home: exactTeamForSlot(m.homeSlot),
+        away: exactTeamForSlot(m.awaySlot)
+      };
+    });
+
+    return { qualifiedTeams, exactSlots };
+  }
+
+  function computeGroups(groupMatches, overrides, includeLive) {
     const groups = {};
     for (const [g, teams] of Object.entries(data.groups)) {
       const table = Object.fromEntries(teams.map(t => [t, { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]));
       const matches = groupMatches.filter(m => m.group === g);
       for (const m of matches) {
-        if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) continue;
+        if (!isMatchCounted(m, includeLive)) continue;
         const h = table[m.home], a = table[m.away];
         if (!h || !a) continue;
         h.p++; a.p++;
@@ -867,7 +964,7 @@
       }
       Object.values(table).forEach(t => { t.gd = t.gf - t.ga; });
       let arr = Object.values(table);
-      arr.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+      arr.sort(compareGroupRows);
       const override = overrides[g];
       if (Array.isArray(override) && override.length) {
         const order = new Map(override.map((team, idx) => [team, idx]));
@@ -875,16 +972,35 @@
       }
       arr.forEach((t, idx) => { t.pos = idx + 1; });
       const complete = matches.length === 6 && matches.every(m => isMatchFinal(m));
-      groups[g] = { table: arr, matches, complete };
+      const groupBonusesScoreable = complete || isFinalGroupMatchdayScoreable(matches, includeLive);
+      groups[g] = { table: arr, matches, complete, groupBonusesScoreable };
     }
     return groups;
   }
 
-  function computeThirdPlaces(groups) {
-    const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
-    const sorted = rows.slice().sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
-    sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = idx < 8 && t.complete; });
-    return sorted;
+  function buildActual(resultsObj, includeLive) {
+    const resultMap = resultsObj.matches || {};
+    const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
+    const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {}, includeLive);
+    const third = computeThirdPlaces(groups);
+    const r32Certainty = computeR32Certainty(groups, third, includeLive);
+    const r32ThirdMap = computeThirdMap(third);
+    const allMatches = [];
+    for (const gm of groupMatches) {
+      allMatches.push({ ...gm, winner: groupWinner(gm, includeLive) });
+    }
+    const byId = Object.fromEntries(allMatches.map(m => [m.id, m]));
+    for (const tmpl of data.matches.filter(m => m.type === 'knockout')) {
+      const base = resultMap[tmpl.id] || {};
+      const home = resolveSlot(tmpl.homeSlot, groups, third, r32ThirdMap, byId, 'home');
+      const away = resolveSlot(tmpl.awaySlot, groups, third, r32ThirdMap, byId, 'away');
+      const km = { ...tmpl, home, away, ...base };
+      km.winner = koWinner(km, includeLive);
+      km.loser = koLoser(km, includeLive);
+      byId[km.id] = km;
+      allMatches.push(km);
+    }
+    return { matches: allMatches, byId, groups, third, r32Certainty, final: resultsObj.final || {} };
   }
 
   function computeThirdMap(third) {
@@ -928,19 +1044,19 @@
   }
   function isSeedLike(v) { return typeof v === 'string' && (/^[123][A-L]$/.test(v) || /^W\d+$/.test(v) || /^L\d+$/.test(v)); }
 
-  function scorePlayer(player, actual) {
+  function scorePlayer(player, actual, includeLive) {
     const bd = { '1X2': 0, G1: 0, CTG: 0, GTG: 0, PTG: 0, E16: 0, E16P: 0, G16: 0, E8: 0, E8P: 0, G8: 0, E4: 0, E4P: 0, G4: 0, ES: 0, ESP: 0, GS: 0, EF: 0, EC: 0, GC: 0, '4rt': 0, '3er': 0, GF: 0, '2on': 0, '1er': 0, PCH: 0, GPCH: 0 };
     const pGroupById = Object.fromEntries(player.groupMatches.map(m => [m.id, m]));
     for (const am of actual.matches.filter(m => m.type === 'group')) {
-      if (!isMatchFinal(am) || !isNum(am.homeScore) || !isNum(am.awayScore)) continue;
+      if (!isMatchCounted(am, includeLive)) continue;
       const pm = pGroupById[am.id];
       if (!pm) continue;
-      if (pm.winner === groupWinner(am)) bd['1X2'] += data.rules['1X2'];
+      if (pm.winner === groupWinner(am, includeLive)) bd['1X2'] += data.rules['1X2'];
       if (pm.homeScore === am.homeScore) bd.G1 += Math.max(data.rules.G1_MIN, am.homeScore);
       if (pm.awayScore === am.awayScore) bd.G1 += Math.max(data.rules.G1_MIN, am.awayScore);
     }
     for (const [g, obj] of Object.entries(actual.groups)) {
-      if (!obj.complete) continue;
+      if (!obj.groupBonusesScoreable) continue;
       const predRows = player.groupStandings[g] || [];
       for (let i = 0; i < 4; i++) {
         const ar = obj.table[i], pr = predRows[i];
@@ -952,29 +1068,32 @@
     }
     const pKoById = Object.fromEntries(player.knockoutMatches.map(m => [m.id, m]));
     for (const cfg of Object.values(stageConfig)) {
-      const actualSet = teamSet(actual, cfg.keys);
+      const actualSet = cfg.team === 'E16' && actual.r32Certainty
+        ? actual.r32Certainty.qualifiedTeams
+        : teamSet(actual, cfg.keys);
       for (const key of cfg.keys) {
         const am = actual.byId[key], pm = pKoById[key];
         if (!am || !pm) continue;
         for (const side of ['home', 'away']) {
           const pTeam = pm[side];
-          const aTeam = am[side];
+          const aTeam = cfg.team === 'E16' && actual.r32Certainty
+            ? ((actual.r32Certainty.exactSlots[key] || {})[side])
+            : am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
           if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
         }
-        if (isMatchFinal(am) && isNum(am.homeScore) && isNum(am.awayScore)) {
+        if (isMatchCounted(am, includeLive)) {
           if (pm.homeScore === am.homeScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.homeScore) : cfg.goalPts;
           if (pm.awayScore === am.awayScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.awayScore) : cfg.goalPts;
         }
       }
     }
-    // Finalists and consolation teams.
     const finalM = actual.byId.M104, consM = actual.byId.M103;
     const pFinal = pKoById.M104, pCons = pKoById.M103;
     if (finalM && pFinal) {
       const finalSet = new Set([finalM.home, finalM.away].filter(Boolean));
       for (const t of [pFinal.home, pFinal.away]) if (finalSet.has(t)) bd.EF += data.rules.EF;
-      if (isMatchFinal(finalM) && isNum(finalM.homeScore) && isNum(finalM.awayScore)) {
+      if (isMatchCounted(finalM, includeLive)) {
         if (pFinal.homeScore === finalM.homeScore) bd.GF += data.rules.GF;
         if (pFinal.awayScore === finalM.awayScore) bd.GF += data.rules.GF;
       }
@@ -982,22 +1101,18 @@
     if (consM && pCons) {
       const consSet = new Set([consM.home, consM.away].filter(Boolean));
       for (const t of [pCons.home, pCons.away]) if (consSet.has(t)) bd.EC += data.rules.EC;
-      if (isMatchFinal(consM) && isNum(consM.homeScore) && isNum(consM.awayScore)) {
+      if (isMatchCounted(consM, includeLive)) {
         if (pCons.homeScore === consM.homeScore) bd.GC += data.rules.GC;
         if (pCons.awayScore === consM.awayScore) bd.GC += data.rules.GC;
       }
     }
-    const finalPlayed = finalM && isMatchFinal(finalM) && finalM.winner;
-    const thirdPlayed = consM && isMatchFinal(consM) && consM.winner;
-    if (thirdPlayed) {
-      const third = consM.winner, fourth = consM.loser;
-      if (player.summary.third === third) bd['3er'] += data.rules['3er'];
-      if (player.summary.fourth === fourth) bd['4rt'] += data.rules['4rt'];
+    if (consM && koWinner(consM, includeLive)) {
+      if (player.summary.third === consM.winner) bd['3er'] += data.rules['3er'];
+      if (player.summary.fourth === consM.loser) bd['4rt'] += data.rules['4rt'];
     }
-    if (finalPlayed) {
-      const champion = finalM.winner, runnerUp = finalM.loser;
-      if (player.summary.champion === champion) bd['1er'] += data.rules['1er'];
-      if (player.summary.runnerUp === runnerUp) bd['2on'] += data.rules['2on'];
+    if (finalM && koWinner(finalM, includeLive)) {
+      if (player.summary.champion === finalM.winner) bd['1er'] += data.rules['1er'];
+      if (player.summary.runnerUp === finalM.loser) bd['2on'] += data.rules['2on'];
       if (actual.final.topScorer && player.summary.topScorer === actual.final.topScorer) bd.PCH += data.rules.PCH;
       if (isNum(actual.final.topScorerGoals) && player.summary.topScorerGoals === actual.final.topScorerGoals) bd.GPCH += data.rules.GPCH;
     }
@@ -1005,9 +1120,9 @@
     return { breakdown: bd, total };
   }
 
-  function computeLeaderboard(resultsObj) {
-    const actual = buildActual(resultsObj);
-    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual) }));
+  function computeLeaderboard(resultsObj, includeLive = true) {
+    const actual = buildActual(resultsObj, includeLive);
+    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual, includeLive) }));
     rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
     let last = null, rank = 0;
     rows.forEach((r, i) => { if (r.total !== last) { rank = i + 1; last = r.total; } r.rank = rank; });
@@ -1107,9 +1222,11 @@
   }
 
   function init() {
-    const current = computeLeaderboard(resultats);
+    // Main leaderboard intentionally uses the same live/provisional scoring engine as the
+    // "Classificació en directe" tab so both views rank players identically.
+    const current = computeLeaderboard(resultats, true);
     const last = findLastPlayed(current.actual);
-    const previous = computeLeaderboard(cloneResultsWithout(last && last.id));
+    const previous = computeLeaderboard(cloneResultsWithout(last && last.id), true);
     const prevById = Object.fromEntries(previous.rows.map(r => [r.id, r]));
     const nextMatches = findNextMatches(current.actual, 2);
     const next = nextMatches[0] || null;
