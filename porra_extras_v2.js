@@ -16,6 +16,7 @@
       pointsSystem: 'Com funciona el sistema de punts',
       
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Classificació Junior',
       close: 'Tancar',
       date: 'Data',
       stage: 'Fase',
@@ -52,22 +53,13 @@
       oddsWin: 'Prob. victòria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
-      oddsLast: 'Prob. últim',
       oddsExpGall: 'Gall. esperats',
-      oddsProjectedWinner: 'Guanyador proj.',
-      oddsProjectedFinalist: 'Finalista proj.',
-      oddsProjectedPichichi: 'Pichichi proj.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Punts esperats',
       oddsMax: 'Màxim',
-      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20. La probabilitat d’últim reparteix empats a l’última posició. Les columnes projectades mostren les apostes de cada participant.',
-      oddsConditionalTitle: 'Probabilitat condicional si guanya el teu campió projectat',
-      oddsConditionalNote: 'Aquesta taula mostra P(guanyar la porra | el teu campió projectat guanya el Mundial). Les victòries de la porra es reparteixen en cas d’empat.',
-      oddsConditionalSims: 'Sims campió',
-      oddsConditionalProb: 'Prob. cond.',
-      oddsConditionalChampionShort: 'Prob. cond.',
+      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20: 750 per al 1r lloc, 250 per al 2n, 100 per al 3r, 20 per al 27è i 20 per a l’últim. Els empats reparteixen els premis corresponents. SD gall. és la desviació estàndard dels gallifantes simulats. CE gall. és l’equivalent cert amb utilitat logarítmica, calculat com exp(mitjana(log(1 + gallifantes))) − 1.',
       oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
@@ -80,6 +72,7 @@
       pointsSystem: 'Cómo funciona el sistema de puntos',
      
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Clasificación Junior',
       close: 'Cerrar',
       date: 'Fecha',
       stage: 'Fase',
@@ -116,22 +109,13 @@
       oddsWin: 'Prob. victoria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
-      oddsLast: 'Prob. último',
       oddsExpGall: 'Gall. esperados',
-      oddsProjectedWinner: 'Ganador proy.',
-      oddsProjectedFinalist: 'Finalista proy.',
-      oddsProjectedPichichi: 'Pichichi proy.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Puntos esperados',
       oddsMax: 'Máximo',
-      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20. La probabilidad de último reparte empates en la última posición. Las columnas proyectadas muestran las apuestas de cada participante.',
-      oddsConditionalTitle: 'Probabilidad condicional si gana tu campeón proyectado',
-      oddsConditionalNote: 'Esta tabla muestra P(ganar la porra | tu campeón proyectado gana el Mundial). Las victorias de la porra se reparten en caso de empate.',
-      oddsConditionalSims: 'Sims campeón',
-      oddsConditionalProb: 'Prob. cond.',
-      oddsConditionalChampionShort: 'Prob. cond.',
+      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20: 750 para el 1.º puesto, 250 para el 2.º, 100 para el 3.º, 20 para el 27.º y 20 para el último. Los empates reparten los premios correspondientes. SD gall. es la desviación estándar de los gallifantes simulados. CE gall. es el equivalente cierto con utilidad logarítmica, calculado como exp(media(log(1 + gallifantes))) − 1.',
       oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
@@ -144,6 +128,7 @@
       pointsSystem: 'How the points system works',
      
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Junior standings',
       close: 'Close',
       date: 'Date',
       stage: 'Stage',
@@ -180,22 +165,13 @@
       oddsWin: 'Win probability',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Top 3 probability',
-      oddsLast: 'Last-place probability',
       oddsExpGall: 'Exp. gall.',
-      oddsProjectedWinner: 'Projected winner',
-      oddsProjectedFinalist: 'Projected finalist',
-      oddsProjectedPichichi: 'Projected Pichichi',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'CE rank',
       oddsAvg: 'Expected points',
       oddsMax: 'Max',
-      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule. Last-place probability splits ties for last. Projected columns show each participant’s picks.',
-      oddsConditionalTitle: 'Conditional probability if your projected champion wins',
-      oddsConditionalNote: 'This table shows P(winning the pool | your projected champion wins the World Cup). Pool wins are tie-split.',
-      oddsConditionalSims: 'Champion sims',
-      oddsConditionalProb: 'Cond. prob.',
-      oddsConditionalChampionShort: 'Cond. prob.',
+      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule: 750 for 1st place, 250 for 2nd, 100 for 3rd, 20 for 27th, and 20 for last place. Ties split the relevant prizes. SD gall. is the standard deviation of simulated gallifantes. CE gall. is the log-utility certainty equivalent, computed as exp(mean(log(1 + gallifantes))) − 1.',
       oddsNoData: 'No win-probability data is available yet.'
     }
   };
@@ -213,6 +189,10 @@ const SUBGROUP_LEADERBOARDS = {
 
   economistasEmporrados: {
     players: ['Pol', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
+  },
+
+  classificacioJunior: {
+    players: ['Daniela', 'Martina', 'Oriol O.', 'Pau', 'Guillem O.']
   }
 };
   
@@ -498,7 +478,7 @@ return '';
 
   function formatPctV2(value) {
     const n = Number(value);
-    return Number.isFinite(n) ? `${n.toFixed(3)}%` : '—';
+    return Number.isFinite(n) ? `${n.toFixed(2)}%` : '—';
   }
 
   function formatNumberV2(value, digits = 1) {
@@ -509,8 +489,8 @@ return '';
   function formatSignedPpV2(value) {
     const n = Number(value);
     if (!Number.isFinite(n)) return '—';
-    if (Math.abs(n) < 0.0005) return '0.000 pp';
-    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(3)} pp`;
+    if (Math.abs(n) < 0.005) return '0.00 pp';
+    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(2)} pp`;
   }
 
   function renderWinProbability() {
@@ -535,12 +515,10 @@ return '';
         <td class="num">${escapeHtml(formatPctV2(row.winPct))}</td>
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
-        <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
-        <td class="num">${escapeHtml(formatPctV2(row.conditionalChampionWinPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
-        <td>${escapeHtml(display(row.projectedWinner))}</td>
-        <td>${escapeHtml(display(row.projectedFinalist))}</td>
-        <td>${escapeHtml(display(row.projectedPichichi))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.sdGallifantes, 2))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.ceGallifantes, 2))}</td>
+        <td class="num">${escapeHtml(formatNumberV2(row.ceRank, 0))}</td>
       </tr>
     `);
 
@@ -550,40 +528,15 @@ return '';
       t('oddsWin'),
       t('oddsDelta'),
       t('oddsTop3'),
-      t('oddsLast'),
-      t('oddsConditionalChampionShort'),
       t('oddsExpGall'),
-      t('oddsProjectedWinner'),
-      t('oddsProjectedFinalist'),
-      t('oddsProjectedPichichi')
+      t('oddsSdGall'),
+      t('oddsCeGall'),
+      t('oddsCeRank')
     ];
 
     const note = `<p class="porra-muted-v2">${escapeHtml(t('oddsGallifantesNote'))}</p>`;
 
-    const oddsTable = tableHtml(headers, rows)
-      .replace('porra-popup-table-wrap-v2"', 'porra-popup-table-wrap-v2 porra-odds-table-wrap-v2"')
-      .replace('porra-popup-table-v2"', 'porra-popup-table-v2 porra-odds-table-v2"');
-    const oddsDeltaStyle = `<style>
-      .porra-odds-table-v2 th:nth-child(2),
-      .porra-odds-table-v2 td:nth-child(2) {
-        min-width: 5.75rem;
-        max-width: 7.25rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .porra-odds-table-v2 th:nth-child(4),
-      .porra-odds-table-v2 td:nth-child(4) {
-        min-width: 6.2rem;
-        white-space: nowrap;
-      }
-      .porra-odds-table-v2 th:nth-child(7),
-      .porra-odds-table-v2 td:nth-child(7) {
-        min-width: 6.2rem;
-        white-space: nowrap;
-      }
-    </style>`;
-    return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
+    return `${intro}${tableHtml(headers, rows)}${note}`;
   }
 
   function renderTopScorers() {
@@ -647,16 +600,7 @@ return '';
     return sorted;
   }
 
-  const LOCKED_THIRD_SLOT_SEEDS = {
-    // Verified exact third-place Round-of-32 slots already set before all groups finish.
-    // Key = bracket slot paired with group winner; value = third-place seed assigned there.
-    // M81: 1D vs 3B, M74: 1E vs 3D, M77: 1I vs 3F.
-    '1D': '3B',
-    '1E': '3D',
-    '1I': '3F'
-  };
-
-  function computeThirdMap(third, groups) {
+  function computeThirdMap(third) {
     const d = data();
     const qualified = third.filter(t => t.qualified).map(t => t.group).sort().join('');
     const matrixRow = (d.thirdPlaceMatrix || {})[qualified] || {};
@@ -665,10 +609,6 @@ return '';
       const team = third.find(t => t.seed === seed && t.qualified);
       if (team) map[paired] = { seed, team: team.team };
     }
-    Object.entries(lockedThirdSlotTeams(groups, third)).forEach(([paired, team]) => {
-      const seed = LOCKED_THIRD_SLOT_SEEDS[paired];
-      map[paired] = { seed, team };
-    });
     return map;
   }
 
@@ -727,18 +667,6 @@ return '';
     return maxPts >= row.pts;
   }
 
-  function lockedThirdSlotTeams(groups, thirdRows) {
-    const out = {};
-    const lockedQualifiers = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.seed));
-    Object.entries(LOCKED_THIRD_SLOT_SEEDS).forEach(([paired, seed]) => {
-      const row = thirdRows.find(t => t.seed === seed);
-      if (row && row.complete && row.team && lockedQualifiers.has(seed)) {
-        out[paired] = row.team;
-      }
-    });
-    return out;
-  }
-
   function lockedThirdPlaceQualifiers(groups, thirdRows) {
     const locked = [];
     const groupEntries = Object.entries(groups || {});
@@ -785,7 +713,7 @@ return '';
 
     const groupEntries = Object.entries(groups || {});
     const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
-    const thirdSlotTeams = lockedThirdSlotTeams(groups, thirdRows);
+    const thirdSlotTeams = {};
 
     if (allComplete) {
       const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
@@ -850,7 +778,7 @@ return '';
 
     const third = computeThirdPlaces(groups);
     const r32Certainty = computeR32Certainty(groups, third, includeLive);
-    const thirdMap = computeThirdMap(third, groups);
+    const thirdMap = computeThirdMap(third);
     const all = [];
     const byId = {};
     for (const gm of groupMatches) {
