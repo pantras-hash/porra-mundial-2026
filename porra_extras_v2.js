@@ -487,7 +487,7 @@ return '';
 
   function formatPctV2(value) {
     const n = Number(value);
-    return Number.isFinite(n) ? `${n.toFixed(2)}%` : '—';
+    return Number.isFinite(n) ? `${n.toFixed(3)}%` : '—';
   }
 
   function formatNumberV2(value, digits = 1) {
@@ -498,8 +498,8 @@ return '';
   function formatSignedPpV2(value) {
     const n = Number(value);
     if (!Number.isFinite(n)) return '—';
-    if (Math.abs(n) < 0.005) return '0.00 pp';
-    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(2)} pp`;
+    if (Math.abs(n) < 0.0005) return '0.000 pp';
+    return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(3)} pp`;
   }
 
   function renderWinProbability() {
@@ -524,10 +524,12 @@ return '';
         <td class="num">${escapeHtml(formatPctV2(row.winPct))}</td>
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.conditionalChampionWinPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.sdGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.ceGallifantes, 2))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.ceRank, 0))}</td>
+        <td>${escapeHtml(display(row.projectedWinner))}</td>
+        <td>${escapeHtml(display(row.projectedFinalist))}</td>
+        <td>${escapeHtml(display(row.projectedPichichi))}</td>
       </tr>
     `);
 
@@ -537,15 +539,40 @@ return '';
       t('oddsWin'),
       t('oddsDelta'),
       t('oddsTop3'),
+      t('oddsLast'),
+      t('oddsConditionalChampionShort'),
       t('oddsExpGall'),
-      t('oddsSdGall'),
-      t('oddsCeGall'),
-      t('oddsCeRank')
+      t('oddsProjectedWinner'),
+      t('oddsProjectedFinalist'),
+      t('oddsProjectedPichichi')
     ];
 
     const note = `<p class="porra-muted-v2">${escapeHtml(t('oddsGallifantesNote'))}</p>`;
 
-    return `${intro}${tableHtml(headers, rows)}${note}`;
+    const oddsTable = tableHtml(headers, rows)
+      .replace('porra-popup-table-wrap-v2"', 'porra-popup-table-wrap-v2 porra-odds-table-wrap-v2"')
+      .replace('porra-popup-table-v2"', 'porra-popup-table-v2 porra-odds-table-v2"');
+    const oddsDeltaStyle = `<style>
+      .porra-odds-table-v2 th:nth-child(2),
+      .porra-odds-table-v2 td:nth-child(2) {
+        min-width: 5.75rem;
+        max-width: 7.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .porra-odds-table-v2 th:nth-child(4),
+      .porra-odds-table-v2 td:nth-child(4) {
+        min-width: 6.2rem;
+        white-space: nowrap;
+      }
+      .porra-odds-table-v2 th:nth-child(7),
+      .porra-odds-table-v2 td:nth-child(7) {
+        min-width: 6.2rem;
+        white-space: nowrap;
+      }
+    </style>`;
+    return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
   }
 
   function renderTopScorers() {
