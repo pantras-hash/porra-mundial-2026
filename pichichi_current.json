@@ -1,6 +1,6 @@
 {
-  "asOf": "26 Jun 2026, after Paraguay 0-0 Australia (60 matches played; end of 25 Jun games)",
-  "source": "Manual update from confirmed scorer reports through 25 Jun 2026 matches M55-M60; pichichi proxy inputs updated after Group D/E/F completion.",
+  "asOf": "27 Jun 2026, after Group G completed (66 matches played; Belgium group finished)",
+  "source": "Manual update from confirmed scorer reports through Group G completion: Spain 1-0 Uruguay; Cabo Verde 0-0 Saudi Arabia; Belgium 5-1 New Zealand; Egypt 1-1 IR Iran.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
@@ -180,10 +180,12 @@
     {
       "name": "Elijah Just",
       "team": "New Zealand",
-      "goals": 2,
+      "goals": 3,
       "aliases": [
+        "Elijah Just",
         "Just"
-      ]
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
     },
     {
       "name": "Ermin Mahmić",
@@ -217,12 +219,13 @@
     {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
-      "goals": 2,
+      "goals": 3,
       "aliases": [
         "Ismaila Sarr",
         "Ismaïla Sarr",
         "Sarr"
-      ]
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
     },
     {
       "name": "Julián Quiñones",
@@ -975,13 +978,14 @@
     {
       "name": "Ousmane Dembélé",
       "team": "France",
-      "goals": 1,
+      "goals": 4,
       "aliases": [
         "Dembele",
         "Dembélé",
         "Ousmane Dembele",
         "Ousmane Dembélé"
-      ]
+      ],
+      "source": "Norway 1-4 France, M61: +3"
     },
     {
       "name": "Petar Musa",
@@ -1014,11 +1018,13 @@
     {
       "name": "Ramin Rezaeian",
       "team": "IR Iran",
-      "goals": 1,
+      "goals": 2,
       "aliases": [
         "Ramid Rezaeian",
+        "Ramin Rezaeian",
         "Rezaeian"
-      ]
+      ],
+      "source": "Egypt 1-1 IR Iran, M66: +1"
     },
     {
       "name": "Raúl Jiménez",
@@ -1168,6 +1174,123 @@
       "aliases": [
         "Raphinha"
       ]
+    },
+    {
+      "name": "Thelo Aasgaard",
+      "team": "Norway",
+      "goals": 1,
+      "aliases": [
+        "Aasgaard",
+        "Thelo Aasgaard",
+        "Thelo Åsgård",
+        "Åsgård"
+      ],
+      "source": "Norway 1-4 France, M61: +1"
+    },
+    {
+      "name": "Désiré Doué",
+      "team": "France",
+      "goals": 1,
+      "aliases": [
+        "Desire Doue",
+        "Doue",
+        "Doué",
+        "Désiré Doué"
+      ],
+      "source": "Norway 1-4 France, M61: +1"
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "Senegal",
+      "goals": 1,
+      "aliases": [
+        "Diarra",
+        "Habib Diarra"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
+    },
+    {
+      "name": "Pape Gueye",
+      "team": "Senegal",
+      "goals": 2,
+      "aliases": [
+        "Gueye",
+        "P. Gueye",
+        "Pape Gueye"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +2"
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "team": "Senegal",
+      "goals": 1,
+      "aliases": [
+        "Iliman Ndiaye",
+        "Ndiaye"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
+    },
+    {
+      "name": "Álex Baena",
+      "team": "Spain",
+      "goals": 1,
+      "aliases": [
+        "Alex Baena",
+        "Baena",
+        "Álex Baena"
+      ],
+      "source": "Spain 1-0 Uruguay, M63: +1"
+    },
+    {
+      "name": "Leandro Trossard",
+      "team": "Belgium",
+      "goals": 2,
+      "aliases": [
+        "Leandro Trossard",
+        "Trossard"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +2"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "De Bruyne",
+        "KDB",
+        "Kevin De Bruyne"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "Lukaku",
+        "Romelu Lukaku"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "Alexis Saelemaekers",
+        "Saelemaekers"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
+      "name": "Mahmoud Saber",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Mahmoud Saber",
+        "Saber"
+      ],
+      "source": "Egypt 1-1 IR Iran, M66: +1"
     }
   ],
   "predictionTeamHints": {
@@ -1291,6 +1414,25 @@
     {
       "match": "Paraguay 0-0 Australia",
       "scorers": {}
+    },
+    {
+      "match": "G-I-5",
+      "result": "Norway 1-4 France",
+      "scorers": [
+        "Ousmane Dembélé x3",
+        "Thelo Aasgaard",
+        "Désiré Doué"
+      ]
+    },
+    {
+      "match": "G-I-6",
+      "result": "Senegal 5-0 Iraq",
+      "scorers": [
+        "Habib Diarra",
+        "Ismaïla Sarr",
+        "Pape Gueye x2",
+        "Iliman Ndiaye"
+      ]
     }
   ]
 }
