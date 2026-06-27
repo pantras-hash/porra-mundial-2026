@@ -131,7 +131,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-26 · Spain vs Uruguay
     "G-H-5": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 63, status: "IN_PLAY" },
     // 2026-06-26 · Cabo Verde vs Saudi Arabia
-    "G-H-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 64, status: "IN_PLAY" },
+    "G-H-6": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 64, status: "FINISHED" },
     // 2026-06-26 · Belgium vs New Zealand
     "G-G-5": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-26", sortOrder: 65, status: "TIMED" },
     // 2026-06-26 · Egypt vs IR Iran
