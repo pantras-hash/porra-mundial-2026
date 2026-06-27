@@ -761,12 +761,56 @@ return '';
     const groupEntries = Object.entries(groups || {});
     const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
     const thirdSlotTeams = {};
+    const thirdPlaceMatrix = (d.thirdPlaceMatrix || {});
+
+    function completedThirdPlaceDefinitelyEliminated(row) {
+      if (!row || !row.complete) return false;
+      // Conservative elimination test: if eight already-completed third-place
+      // teams are strictly ahead, this group cannot be among the best eight.
+      return thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length >= 8;
+    }
+
+    function forcedThirdSeedForPairedSlot(paired) {
+      const lockedGroups = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.group));
+      const eliminatedGroups = new Set(
+        thirdRows.filter(row => completedThirdPlaceDefinitelyEliminated(row)).map(row => row.group)
+      );
+      const possibleQualifiedGroupKeys = Object.keys(thirdPlaceMatrix).filter(key => {
+        for (const g of lockedGroups) if (!key.includes(g)) return false;
+        for (const g of eliminatedGroups) if (key.includes(g)) return false;
+        return true;
+      });
+
+      if (!possibleQualifiedGroupKeys.length) return null;
+
+      const seeds = new Set(
+        possibleQualifiedGroupKeys
+          .map(key => (thirdPlaceMatrix[key] || {})[paired])
+          .filter(Boolean)
+      );
+      if (seeds.size !== 1) return null;
+
+      const seed = Array.from(seeds)[0];
+      const row = thirdRows.find(t => t.seed === seed);
+      if (!row || !row.team || !lockedGroups.has(row.group)) return null;
+      return seed;
+    }
 
     if (allComplete) {
       const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
-      const matrixRow = (d.thirdPlaceMatrix || {})[qualifiedGroups] || {};
+      const matrixRow = thirdPlaceMatrix[qualifiedGroups] || {};
       Object.entries(matrixRow).forEach(([paired, seed]) => {
         const row = thirdRows.find(t => t.seed === seed);
+        if (row && row.team) thirdSlotTeams[paired] = row.team;
+      });
+    } else {
+      const pairedSlots = new Set();
+      Object.values(thirdPlaceMatrix).forEach(row => {
+        Object.keys(row || {}).forEach(paired => pairedSlots.add(paired));
+      });
+      pairedSlots.forEach(paired => {
+        const seed = forcedThirdSeedForPairedSlot(paired);
+        const row = seed ? thirdRows.find(t => t.seed === seed) : null;
         if (row && row.team) thirdSlotTeams[paired] = row.team;
       });
     }
