@@ -400,6 +400,12 @@ tbody tr:hover { background: #f4f8ff; }
 
 .participant-cell--plain { gap: 0; }
 
+#leaderboardTable th:nth-child(3),
+#leaderboardTable td:nth-child(3) {
+  width: 9rem;
+  max-width: 9rem;
+}
+
 .rank-pill,
 .score-pill,
 .winner-pill {
