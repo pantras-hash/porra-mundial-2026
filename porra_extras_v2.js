@@ -16,6 +16,7 @@
       pointsSystem: 'Com funciona el sistema de punts',
       
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Classificació Junior',
       close: 'Tancar',
       date: 'Data',
       stage: 'Fase',
@@ -80,6 +81,7 @@
       pointsSystem: 'Cómo funciona el sistema de puntos',
      
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Clasificación Junior',
       close: 'Cerrar',
       date: 'Fecha',
       stage: 'Fase',
@@ -144,6 +146,7 @@
       pointsSystem: 'How the points system works',
      
       economistasEmporrados: 'Economistas emporrados',
+      classificacioJunior: 'Junior standings',
       close: 'Close',
       date: 'Date',
       stage: 'Stage',
@@ -213,6 +216,10 @@ const SUBGROUP_LEADERBOARDS = {
 
   economistasEmporrados: {
     players: ['Pol', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
+  },
+
+  classificacioJunior: {
+    players: ['Daniela', 'Martina', 'Oriol O.', 'Pau', 'Guillem O.']
   }
 };
   
