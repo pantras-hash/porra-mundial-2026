@@ -16,7 +16,6 @@
       pointsSystem: 'Com funciona el sistema de punts',
       
       economistasEmporrados: 'Economistas emporrados',
-      classificacioJunior: 'Classificació Junior',
       close: 'Tancar',
       date: 'Data',
       stage: 'Fase',
@@ -27,9 +26,6 @@
       team: 'Equip',
       player: 'Participant',
       pos: 'Pos.',
-      subgroupPos: 'Subgrup',
-      generalRank: 'General',
-      subgroupConsistencyNote: 'Aquesta taula fa servir els mateixos punts que la classificació principal quan no hi ha cap partit en directe: tots els punts segurs ja assignables amb els grups completats.',
       move: 'Mov.',
       points: 'Punts',
       played: 'PJ',
@@ -56,13 +52,22 @@
       oddsWin: 'Prob. victòria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsLast: 'Prob. últim',
       oddsExpGall: 'Gall. esperats',
+      oddsProjectedWinner: 'Guanyador proj.',
+      oddsProjectedFinalist: 'Finalista proj.',
+      oddsProjectedPichichi: 'Pichichi proj.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Punts esperats',
       oddsMax: 'Màxim',
-      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20: 750 per al 1r lloc, 250 per al 2n, 100 per al 3r, 20 per al 27è i 20 per a l’últim. Els empats reparteixen els premis corresponents. SD gall. és la desviació estàndard dels gallifantes simulats. CE gall. és l’equivalent cert amb utilitat logarítmica, calculat com exp(mitjana(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20. La probabilitat d’últim reparteix empats a l’última posició. Les columnes projectades mostren les apostes de cada participant.',
+      oddsConditionalTitle: 'Probabilitat condicional si guanya el teu campió projectat',
+      oddsConditionalNote: 'Aquesta taula mostra P(guanyar la porra | el teu campió projectat guanya el Mundial). Les victòries de la porra es reparteixen en cas d’empat.',
+      oddsConditionalSims: 'Sims campió',
+      oddsConditionalProb: 'Prob. cond.',
+      oddsConditionalChampionShort: 'Prob. cond.',
       oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
@@ -75,7 +80,6 @@
       pointsSystem: 'Cómo funciona el sistema de puntos',
      
       economistasEmporrados: 'Economistas emporrados',
-      classificacioJunior: 'Clasificación Junior',
       close: 'Cerrar',
       date: 'Fecha',
       stage: 'Fase',
@@ -86,9 +90,6 @@
       team: 'Equipo',
       player: 'Participante',
       pos: 'Pos.',
-      subgroupPos: 'Subgrupo',
-      generalRank: 'General',
-      subgroupConsistencyNote: 'Esta tabla usa los mismos puntos que la clasificación principal cuando no hay ningún partido en directo: todos los puntos seguros ya asignables con los grupos completados.',
       move: 'Mov.',
       points: 'Puntos',
       played: 'PJ',
@@ -115,13 +116,22 @@
       oddsWin: 'Prob. victoria',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
+      oddsLast: 'Prob. último',
       oddsExpGall: 'Gall. esperados',
+      oddsProjectedWinner: 'Ganador proy.',
+      oddsProjectedFinalist: 'Finalista proy.',
+      oddsProjectedPichichi: 'Pichichi proy.',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Puntos esperados',
       oddsMax: 'Máximo',
-      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20: 750 para el 1.º puesto, 250 para el 2.º, 100 para el 3.º, 20 para el 27.º y 20 para el último. Los empates reparten los premios correspondientes. SD gall. es la desviación estándar de los gallifantes simulados. CE gall. es el equivalente cierto con utilidad logarítmica, calculado como exp(media(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20. La probabilidad de último reparte empates en la última posición. Las columnas proyectadas muestran las apuestas de cada participante.',
+      oddsConditionalTitle: 'Probabilidad condicional si gana tu campeón proyectado',
+      oddsConditionalNote: 'Esta tabla muestra P(ganar la porra | tu campeón proyectado gana el Mundial). Las victorias de la porra se reparten en caso de empate.',
+      oddsConditionalSims: 'Sims campeón',
+      oddsConditionalProb: 'Prob. cond.',
+      oddsConditionalChampionShort: 'Prob. cond.',
       oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
@@ -134,7 +144,6 @@
       pointsSystem: 'How the points system works',
      
       economistasEmporrados: 'Economistas emporrados',
-      classificacioJunior: 'Junior standings',
       close: 'Close',
       date: 'Date',
       stage: 'Stage',
@@ -145,9 +154,6 @@
       team: 'Team',
       player: 'Player',
       pos: 'Pos.',
-      subgroupPos: 'Subgroup',
-      generalRank: 'Overall',
-      subgroupConsistencyNote: 'This table uses the same points as the main leaderboard when no match is live: all safe points already assignable from completed groups.',
       move: 'Move',
       points: 'Points',
       played: 'P',
@@ -174,13 +180,22 @@
       oddsWin: 'Win probability',
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Top 3 probability',
+      oddsLast: 'Last-place probability',
       oddsExpGall: 'Exp. gall.',
+      oddsProjectedWinner: 'Projected winner',
+      oddsProjectedFinalist: 'Projected finalist',
+      oddsProjectedPichichi: 'Projected Pichichi',
       oddsSdGall: 'SD gall.',
       oddsCeGall: 'CE gall.',
       oddsCeRank: 'CE rank',
       oddsAvg: 'Expected points',
       oddsMax: 'Max',
-      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule: 750 for 1st place, 250 for 2nd, 100 for 3rd, 20 for 27th, and 20 for last place. Ties split the relevant prizes. SD gall. is the standard deviation of simulated gallifantes. CE gall. is the log-utility certainty equivalent, computed as exp(mean(log(1 + gallifantes))) − 1.',
+      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule. Last-place probability splits ties for last. Projected columns show each participant’s picks.',
+      oddsConditionalTitle: 'Conditional probability if your projected champion wins',
+      oddsConditionalNote: 'This table shows P(winning the pool | your projected champion wins the World Cup). Pool wins are tie-split.',
+      oddsConditionalSims: 'Champion sims',
+      oddsConditionalProb: 'Cond. prob.',
+      oddsConditionalChampionShort: 'Cond. prob.',
       oddsNoData: 'No win-probability data is available yet.'
     }
   };
@@ -198,10 +213,6 @@ const SUBGROUP_LEADERBOARDS = {
 
   economistasEmporrados: {
     players: ['Pol', 'Eduardo M', 'Enrique M', 'Manu GS', 'Juanma']
-  },
-
-  classificacioJunior: {
-    players: ['Daniela', 'Martina', 'Oriol O.', 'Pau', 'Guillem O.']
   }
 };
   
@@ -750,56 +761,12 @@ return '';
     const groupEntries = Object.entries(groups || {});
     const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
     const thirdSlotTeams = {};
-    const thirdPlaceMatrix = (d.thirdPlaceMatrix || {});
-
-    function completedThirdPlaceDefinitelyEliminated(row) {
-      if (!row || !row.complete) return false;
-      // Conservative elimination test: if eight already-completed third-place
-      // teams are strictly ahead, this group cannot be among the best eight.
-      return thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length >= 8;
-    }
-
-    function forcedThirdSeedForPairedSlot(paired) {
-      const lockedGroups = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.group));
-      const eliminatedGroups = new Set(
-        thirdRows.filter(row => completedThirdPlaceDefinitelyEliminated(row)).map(row => row.group)
-      );
-      const possibleQualifiedGroupKeys = Object.keys(thirdPlaceMatrix).filter(key => {
-        for (const g of lockedGroups) if (!key.includes(g)) return false;
-        for (const g of eliminatedGroups) if (key.includes(g)) return false;
-        return true;
-      });
-
-      if (!possibleQualifiedGroupKeys.length) return null;
-
-      const seeds = new Set(
-        possibleQualifiedGroupKeys
-          .map(key => (thirdPlaceMatrix[key] || {})[paired])
-          .filter(Boolean)
-      );
-      if (seeds.size !== 1) return null;
-
-      const seed = Array.from(seeds)[0];
-      const row = thirdRows.find(t => t.seed === seed);
-      if (!row || !row.team || !lockedGroups.has(row.group)) return null;
-      return seed;
-    }
 
     if (allComplete) {
       const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
-      const matrixRow = thirdPlaceMatrix[qualifiedGroups] || {};
+      const matrixRow = (d.thirdPlaceMatrix || {})[qualifiedGroups] || {};
       Object.entries(matrixRow).forEach(([paired, seed]) => {
         const row = thirdRows.find(t => t.seed === seed);
-        if (row && row.team) thirdSlotTeams[paired] = row.team;
-      });
-    } else {
-      const pairedSlots = new Set();
-      Object.values(thirdPlaceMatrix).forEach(row => {
-        Object.keys(row || {}).forEach(paired => pairedSlots.add(paired));
-      });
-      pairedSlots.forEach(paired => {
-        const seed = forcedThirdSeedForPairedSlot(paired);
-        const row = seed ? thirdRows.find(t => t.seed === seed) : null;
         if (row && row.team) thirdSlotTeams[paired] = row.team;
       });
     }
@@ -919,11 +886,7 @@ return '';
 
     const pKoById = Object.fromEntries((player.knockoutMatches || []).map(m => [m.id, m]));
     Object.values(STAGE_CONFIG).forEach(cfg => {
-      // Use the same canonical safe Round-of-32 certainty logic as the main leaderboard.
-      // This can award exact-position points for third-place teams when the published
-      // third-place matrix already forces their slot.
-      const useR32Certainty = cfg.team === 'E16' && actual.r32Certainty;
-      const actualSet = useR32Certainty
+      const actualSet = cfg.team === 'E16' && actual.r32Certainty
         ? actual.r32Certainty.qualifiedTeams
         : teamSet(actual, cfg.keys);
       cfg.keys.forEach(key => {
@@ -932,7 +895,7 @@ return '';
         if (!am || !pm) return;
         ['home', 'away'].forEach(side => {
           const pTeam = pm[side];
-          const aTeam = useR32Certainty
+          const aTeam = cfg.team === 'E16' && actual.r32Certainty
             ? ((actual.r32Certainty.exactSlots[key] || {})[side])
             : am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
@@ -1070,33 +1033,28 @@ function renderSubgroupLeaderboard(type) {
   const subgroup = SUBGROUP_LEADERBOARDS[type];
   if (!subgroup) return '';
 
-  // Keep subgroup tabs aligned with the main leaderboard when no match is live:
-  // use the canonical safe total, i.e. all points already locked by completed groups.
-  const officialRows = computeLeaderboard(true);
+  const baseRows = computeLeaderboard(false);
+  const liveRows = computeLeaderboard(true);
+  const prevById = new Map(baseRows.map(row => [row.id, row]));
 
-  const matchedRows = officialRows
+  const rows = liveRows
     .map(row => {
       const subgroupName = subgroupDisplayNameForPlayer(row.name, subgroup);
       return subgroupName ? { row, subgroupName } : null;
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .map(({ row, subgroupName }) => {
+      const move = movementLabel(row, prevById);
 
-  const rows = matchedRows.map(({ row, subgroupName }, idx) => {
-    const prev = matchedRows[idx - 1];
-    const subgroupRank = prev && prev.row.total === row.total
-      ? prev.subgroupRank
-      : idx + 1;
-    matchedRows[idx].subgroupRank = subgroupRank;
-
-    return `
-      <tr>
-        <td><span class="rank-pill">#${escapeHtml(subgroupRank)}</span></td>
-        <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-        <td title="${escapeHtml(row.name)}">${escapeHtml(subgroupName)}</td>
-        <td class="num">${escapeHtml(row.total)}</td>
-      </tr>
-    `;
-  });
+      return `
+        <tr>
+          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
+          <td title="${escapeHtml(row.name)}">${escapeHtml(subgroupName)}</td>
+          <td class="num">${escapeHtml(row.total)}</td>
+        </tr>
+      `;
+    });
 
   if (!rows.length) {
     return `
@@ -1108,8 +1066,7 @@ function renderSubgroupLeaderboard(type) {
     `;
   }
 
-  return `<p class="porra-muted-v2">${escapeHtml(t('subgroupConsistencyNote'))}</p>` +
-    tableHtml([t('subgroupPos'), t('generalRank'), t('player'), t('points')], rows);
+  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
 }
 
 function renderPointsSystem() {
