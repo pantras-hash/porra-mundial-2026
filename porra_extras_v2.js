@@ -67,6 +67,7 @@
       oddsConditionalNote: 'Aquesta taula mostra P(guanyar la porra | el teu campió projectat guanya el Mundial). Les victòries de la porra es reparteixen en cas d’empat.',
       oddsConditionalSims: 'Sims campió',
       oddsConditionalProb: 'Prob. cond.',
+      oddsConditionalChampionShort: 'Prob. cond.',
       oddsNoData: 'Encara no hi ha dades de probabilitats de victòria disponibles.'
     },
     es: {
@@ -130,6 +131,7 @@
       oddsConditionalNote: 'Esta tabla muestra P(ganar la porra | tu campeón proyectado gana el Mundial). Las victorias de la porra se reparten en caso de empate.',
       oddsConditionalSims: 'Sims campeón',
       oddsConditionalProb: 'Prob. cond.',
+      oddsConditionalChampionShort: 'Prob. cond.',
       oddsNoData: 'Todavía no hay datos de probabilidades de victoria disponibles.'
     },
     en: {
@@ -193,6 +195,7 @@
       oddsConditionalNote: 'This table shows P(winning the pool | your projected champion wins the World Cup). Pool wins are tie-split.',
       oddsConditionalSims: 'Champion sims',
       oddsConditionalProb: 'Cond. prob.',
+      oddsConditionalChampionShort: 'Cond. prob.',
       oddsNoData: 'No win-probability data is available yet.'
     }
   };
@@ -533,6 +536,7 @@ return '';
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.conditionalChampionWinPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
         <td>${escapeHtml(display(row.projectedWinner))}</td>
         <td>${escapeHtml(display(row.projectedFinalist))}</td>
@@ -547,6 +551,7 @@ return '';
       t('oddsDelta'),
       t('oddsTop3'),
       t('oddsLast'),
+      t('oddsConditionalChampionShort'),
       t('oddsExpGall'),
       t('oddsProjectedWinner'),
       t('oddsProjectedFinalist'),
@@ -559,57 +564,26 @@ return '';
       .replace('porra-popup-table-wrap-v2"', 'porra-popup-table-wrap-v2 porra-odds-table-wrap-v2"')
       .replace('porra-popup-table-v2"', 'porra-popup-table-v2 porra-odds-table-v2"');
     const oddsDeltaStyle = `<style>
+      .porra-odds-table-v2 th:nth-child(2),
+      .porra-odds-table-v2 td:nth-child(2) {
+        min-width: 5.75rem;
+        max-width: 7.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       .porra-odds-table-v2 th:nth-child(4),
       .porra-odds-table-v2 td:nth-child(4) {
-        min-width: 8.5rem;
+        min-width: 6.2rem;
+        white-space: nowrap;
+      }
+      .porra-odds-table-v2 th:nth-child(7),
+      .porra-odds-table-v2 td:nth-child(7) {
+        min-width: 6.2rem;
         white-space: nowrap;
       }
     </style>`;
-    const conditionalRowsData = Array.isArray(odds.conditionalChampionTable)
-      ? odds.conditionalChampionTable.slice()
-      : rowsData.map(row => ({
-          rank: row.rank,
-          player: row.player,
-          displayName: row.displayName || row.player,
-          projectedWinner: row.projectedWinner,
-          championWinSims: row.projectedChampionWinSims,
-          conditionalWinPct: row.conditionalChampionWinPct
-        }));
-
-    conditionalRowsData.sort((a, b) =>
-      (Number(b.conditionalWinPct) || 0) - (Number(a.conditionalWinPct) || 0) ||
-      display(a.displayName || a.player).localeCompare(display(b.displayName || b.player))
-    );
-
-    const conditionalRows = conditionalRowsData.map((row, idx) => `
-      <tr>
-        <td>${escapeHtml(idx + 1)}</td>
-        <td>${escapeHtml(display(row.displayName || row.player))}</td>
-        <td>${escapeHtml(display(row.projectedWinner))}</td>
-        <td class="num">${escapeHtml(formatNumberV2(row.championWinSims, 0))}</td>
-        <td class="num">${escapeHtml(formatPctV2(row.conditionalWinPct))}</td>
-      </tr>
-    `);
-
-    const conditionalHeaders = [
-      t('pos'),
-      t('player'),
-      t('oddsProjectedWinner'),
-      t('oddsConditionalSims'),
-      t('oddsConditionalProb')
-    ];
-
-    const conditionalTable = conditionalRows.length
-      ? tableHtml(conditionalHeaders, conditionalRows)
-          .replace('porra-popup-table-wrap-v2"', 'porra-popup-table-wrap-v2 porra-conditional-odds-table-wrap-v2"')
-          .replace('porra-popup-table-v2"', 'porra-popup-table-v2 porra-conditional-odds-table-v2"')
-      : '';
-
-    const conditionalBlock = conditionalTable
-      ? `<h3>${escapeHtml(t('oddsConditionalTitle'))}</h3>${conditionalTable}<p class="porra-muted-v2">${escapeHtml(t('oddsConditionalNote'))}</p>`
-      : '';
-
-    return `${intro}${oddsDeltaStyle}${oddsTable}${note}${conditionalBlock}`;
+    return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
   }
 
   function renderTopScorers() {
