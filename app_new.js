@@ -524,7 +524,7 @@
       nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
       initialData: 'Dades inicials: {date}', noPlayerFound: 'No s’ha trobat cap participant.', points: 'punts', matchPredictions: 'pronòstics de partit',
       champion: 'Campió', finalist: 'Finalista', third: 'Tercer', topScorer: 'Pichichi', goals: 'gols', nextPredictionTitle: 'Pronòstic del pròxim partit', pointsBreakdown: 'Desglossament de punts', matchPredictionsTitle: 'Pronòstics de partits',
-      stage: 'Fase', date: 'Data', match: 'Partit', result: 'Resultat', actualScore: 'Resultat real', winner: 'Guanyador', penalty: 'pen.', close: 'Tancar',
+      stage: 'Fase', date: 'Data', match: 'Partit', result: 'Resultat', winner: 'Guanyador', penalty: 'pen.', close: 'Tancar',
       updateTitle: 'Com actualitzar resultats a GitHub', updateInstructions: 'Edita només <code>resultats.js</code>. Busca el partit, canvia <code>null</code> pel resultat real i fes <strong>Commit changes</strong>. GitHub Pages actualitzarà la web després de publicar el canvi.',
       footerText: 'Actualització de resultats:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grup', groups: 'Grups', r32: 'Setzens de final', r16: 'Vuitens de final', qf: 'Quarts de final', sf: 'Semifinals', thirdPlace: 'Tercer lloc', final: 'Final'
     },
@@ -535,7 +535,7 @@
       nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
       initialData: 'Datos iniciales: {date}', noPlayerFound: 'No se ha encontrado ningún participante.', points: 'puntos', matchPredictions: 'pronósticos de partidos',
       champion: 'Campeón', finalist: 'Finalista', third: 'Tercero', topScorer: 'Pichichi', goals: 'goles', nextPredictionTitle: 'Pronóstico del próximo partido', pointsBreakdown: 'Desglose de puntos', matchPredictionsTitle: 'Pronósticos de partidos',
-      stage: 'Fase', date: 'Fecha', match: 'Partido', result: 'Resultado', actualScore: 'Resultado real', winner: 'Ganador', penalty: 'pen.', close: 'Cerrar',
+      stage: 'Fase', date: 'Fecha', match: 'Partido', result: 'Resultado', winner: 'Ganador', penalty: 'pen.', close: 'Cerrar',
       updateTitle: 'Cómo actualizar resultados en GitHub', updateInstructions: 'Edita solo <code>resultats.js</code>. Busca el partido, cambia <code>null</code> por el resultado real y haz <strong>Commit changes</strong>. GitHub Pages actualizará la web después de publicar el cambio.',
       footerText: 'Actualización de resultados:', githubAccount: 'GitHub', editResultsFile: 'Editar resultats.js', group: 'Grupo', groups: 'Grupos', r32: 'Dieciseisavos de final', r16: 'Octavos de final', qf: 'Cuartos de final', sf: 'Semifinales', thirdPlace: 'Tercer puesto', final: 'Final'
     },
@@ -546,7 +546,7 @@
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
       initialData: 'Initial data: {date}', noPlayerFound: 'No player found.', points: 'points', matchPredictions: 'match predictions',
       champion: 'Champion', finalist: 'Runner-up', third: 'Third', topScorer: 'Top scorer', goals: 'goals', nextPredictionTitle: 'Prediction for the next match', pointsBreakdown: 'Points breakdown', matchPredictionsTitle: 'Match predictions',
-      stage: 'Stage', date: 'Date', match: 'Match', result: 'Score', actualScore: 'Actual score', winner: 'Winner', penalty: 'pens', close: 'Close',
+      stage: 'Stage', date: 'Date', match: 'Match', result: 'Score', winner: 'Winner', penalty: 'pens', close: 'Close',
       updateTitle: 'How to update results on GitHub', updateInstructions: 'Edit only <code>resultats.js</code>. Find the match, replace <code>null</code> with the real score, and click <strong>Commit changes</strong>. GitHub Pages will update the website after the change is published.',
       footerText: 'Results updates:', githubAccount: 'GitHub', editResultsFile: 'Edit resultats.js', group: 'Group', groups: 'Groups', r32: 'Round of 32', r16: 'Round of 16', qf: 'Quarter-finals', sf: 'Semi-finals', thirdPlace: 'Third-place match', final: 'Final'
     }
@@ -809,14 +809,39 @@
     return copy;
   }
 
-  function groupWinner(m, includeLive) {
-    if (!isMatchCounted(m, includeLive) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+  function buildActual(resultsObj) {
+    const resultMap = resultsObj.matches || {};
+    const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
+    const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {});
+    const third = computeThirdPlaces(groups);
+    const r32Certainty = computeR32Certainty(groups, third);
+    const r32ThirdMap = computeThirdMap(third);
+    const allMatches = [];
+    for (const gm of groupMatches) {
+      allMatches.push({ ...gm, winner: groupWinner(gm) });
+    }
+    const byId = Object.fromEntries(allMatches.map(m => [m.id, m]));
+    for (const tmpl of data.matches.filter(m => m.type === 'knockout')) {
+      const base = resultMap[tmpl.id] || {};
+      const home = resolveSlot(tmpl.homeSlot, groups, third, r32ThirdMap, byId, 'home');
+      const away = resolveSlot(tmpl.awaySlot, groups, third, r32ThirdMap, byId, 'away');
+      const km = { ...tmpl, home, away, ...base };
+      km.winner = koWinner(km);
+      km.loser = koLoser(km);
+      byId[km.id] = km;
+      allMatches.push(km);
+    }
+    return { matches: allMatches, byId, groups, third, r32Certainty, final: resultsObj.final || {} };
+  }
+
+  function groupWinner(m) {
+    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     return 'Empat';
   }
-  function koWinner(m, includeLive) {
-    if (!isMatchCounted(m, includeLive) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
+  function koWinner(m) {
+    if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) return null;
     if (m.homeScore > m.awayScore) return m.home;
     if (m.awayScore > m.homeScore) return m.away;
     if (isNum(m.penHome) && isNum(m.penAway)) {
@@ -825,8 +850,8 @@
     }
     return null;
   }
-  function koLoser(m, includeLive) {
-    const w = koWinner(m, includeLive);
+  function koLoser(m) {
+    const w = koWinner(m);
     if (!w) return null;
     if (w === m.home) return m.away;
     if (w === m.away) return m.home;
@@ -835,17 +860,6 @@
 
   function compareGroupRows(a, b) {
     return b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
-  }
-
-  function isFinalGroupMatchdayScoreable(matches, includeLive) {
-    if (!includeLive || !Array.isArray(matches) || matches.length !== 6) return false;
-    const ordered = chronologicalMatches(matches);
-    const previousMatchdays = ordered.slice(0, 4);
-    const finalMatchday = ordered.slice(4);
-    if (finalMatchday.length !== 2) return false;
-    if (!previousMatchdays.every(m => isMatchFinal(m))) return false;
-    if (!finalMatchday.every(m => isMatchCounted(m, true))) return false;
-    return finalMatchday.some(m => isMatchLive(m) && !isMatchFinal(m));
   }
 
   function maxPossiblePointsForAnyThirdPlaceTeam(groupObj) {
@@ -861,28 +875,9 @@
   function thirdPlaceTeamCouldStillFinishAhead(row, groupObj) {
     if (!row || !groupObj || groupObj.complete) return false;
     const maxPts = maxPossiblePointsForAnyThirdPlaceTeam(groupObj);
+    // If an incomplete group's eventual third-placed team can still tie this points
+    // total, keep it uncertain: goal difference and goals-for can still change.
     return maxPts >= row.pts;
-  }
-
-  const LOCKED_THIRD_SLOT_SEEDS = {
-    // Verified exact third-place Round-of-32 slots already set before all groups finish.
-    // Key = bracket slot paired with group winner; value = third-place seed assigned there.
-    // M81: 1D vs 3B, M74: 1E vs 3D, M77: 1I vs 3F.
-    '1D': '3B',
-    '1E': '3D',
-    '1I': '3F'
-  };
-
-  function lockedThirdSlotTeams(groups, thirdRows) {
-    const out = {};
-    const lockedQualifiers = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.seed));
-    Object.entries(LOCKED_THIRD_SLOT_SEEDS).forEach(([paired, seed]) => {
-      const row = thirdRows.find(t => t.seed === seed);
-      if (row && row.complete && row.team && lockedQualifiers.has(seed)) {
-        out[paired] = row.team;
-      }
-    });
-    return out;
   }
 
   function lockedThirdPlaceQualifiers(groups, thirdRows) {
@@ -903,23 +898,63 @@
     return locked;
   }
 
+  function computeGroups(groupMatches, overrides) {
+    const groups = {};
+    for (const [g, teams] of Object.entries(data.groups)) {
+      const table = Object.fromEntries(teams.map(t => [t, { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]));
+      const matches = groupMatches.filter(m => m.group === g);
+      for (const m of matches) {
+        if (!isMatchFinal(m) || !isNum(m.homeScore) || !isNum(m.awayScore)) continue;
+        const h = table[m.home], a = table[m.away];
+        if (!h || !a) continue;
+        h.p++; a.p++;
+        h.gf += m.homeScore; h.ga += m.awayScore;
+        a.gf += m.awayScore; a.ga += m.homeScore;
+        if (m.homeScore > m.awayScore) { h.w++; a.l++; h.pts += 3; }
+        else if (m.awayScore > m.homeScore) { a.w++; h.l++; a.pts += 3; }
+        else { h.d++; a.d++; h.pts += 1; a.pts += 1; }
+      }
+      Object.values(table).forEach(t => { t.gd = t.gf - t.ga; });
+      let arr = Object.values(table);
+      arr.sort(compareGroupRows);
+      const override = overrides[g];
+      if (Array.isArray(override) && override.length) {
+        const order = new Map(override.map((team, idx) => [team, idx]));
+        arr.sort((a, b) => (order.has(a.team) ? order.get(a.team) : 999) - (order.has(b.team) ? order.get(b.team) : 999));
+      }
+      arr.forEach((t, idx) => { t.pos = idx + 1; });
+      const complete = matches.length === 6 && matches.every(m => isMatchFinal(m));
+      groups[g] = { table: arr, matches, complete };
+    }
+    return groups;
+  }
+
   function computeThirdPlaces(groups) {
     const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
     const sorted = rows.slice().sort(compareGroupRows);
-    const allComplete = sorted.length > 0 && sorted.every(r => r.complete);
+    const allComplete = sorted.length > 0 && sorted.every(t => t.complete);
     sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = allComplete && idx < 8 && t.complete; });
     return sorted;
   }
 
-  function computeR32Certainty(groups, thirdRows, includeLive) {
+  function computeThirdMap(third) {
+    const qualified = third.filter(t => t.qualified).map(t => t.group).sort().join('');
+    const matrixRow = data.thirdPlaceMatrix[qualified] || {};
+    const map = {};
+    for (const [paired, seed] of Object.entries(matrixRow)) {
+      const team = third.find(t => t.seed === seed && t.qualified);
+      if (team) map[paired] = { seed, team: team.team };
+    }
+    return map;
+  }
+
+  function computeR32Certainty(groups, thirdRows) {
     const qualifiedTeams = new Set();
     const exactSlots = {};
     const directSeedTeams = {};
 
     Object.entries(groups || {}).forEach(([g, obj]) => {
-      if (!obj || !Array.isArray(obj.table)) return;
-      const directSeedsScoreable = obj.complete || (includeLive && obj.groupBonusesScoreable);
-      if (!directSeedsScoreable) return;
+      if (!obj || !obj.complete || !Array.isArray(obj.table)) return;
       const first = obj.table[0];
       const second = obj.table[1];
       if (first && first.team) {
@@ -938,7 +973,7 @@
 
     const groupEntries = Object.entries(groups || {});
     const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
-    const thirdSlotTeams = lockedThirdSlotTeams(groups, thirdRows);
+    const thirdSlotTeams = {};
 
     if (allComplete) {
       const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
@@ -965,78 +1000,6 @@
     });
 
     return { qualifiedTeams, exactSlots };
-  }
-
-  function computeGroups(groupMatches, overrides, includeLive) {
-    const groups = {};
-    for (const [g, teams] of Object.entries(data.groups)) {
-      const table = Object.fromEntries(teams.map(t => [t, { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 }]));
-      const matches = groupMatches.filter(m => m.group === g);
-      for (const m of matches) {
-        if (!isMatchCounted(m, includeLive)) continue;
-        const h = table[m.home], a = table[m.away];
-        if (!h || !a) continue;
-        h.p++; a.p++;
-        h.gf += m.homeScore; h.ga += m.awayScore;
-        a.gf += m.awayScore; a.ga += m.homeScore;
-        if (m.homeScore > m.awayScore) { h.w++; a.l++; h.pts += 3; }
-        else if (m.awayScore > m.homeScore) { a.w++; h.l++; a.pts += 3; }
-        else { h.d++; a.d++; h.pts += 1; a.pts += 1; }
-      }
-      Object.values(table).forEach(t => { t.gd = t.gf - t.ga; });
-      let arr = Object.values(table);
-      arr.sort(compareGroupRows);
-      const override = overrides[g];
-      if (Array.isArray(override) && override.length) {
-        const order = new Map(override.map((team, idx) => [team, idx]));
-        arr.sort((a, b) => (order.has(a.team) ? order.get(a.team) : 999) - (order.has(b.team) ? order.get(b.team) : 999));
-      }
-      arr.forEach((t, idx) => { t.pos = idx + 1; });
-      const complete = matches.length === 6 && matches.every(m => isMatchFinal(m));
-      const groupBonusesScoreable = complete || isFinalGroupMatchdayScoreable(matches, includeLive);
-      groups[g] = { table: arr, matches, complete, groupBonusesScoreable };
-    }
-    return groups;
-  }
-
-  function buildActual(resultsObj, includeLive) {
-    const resultMap = resultsObj.matches || {};
-    const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
-    const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {}, includeLive);
-    const third = computeThirdPlaces(groups);
-    const r32Certainty = computeR32Certainty(groups, third, includeLive);
-    const r32ThirdMap = computeThirdMap(third, groups);
-    const allMatches = [];
-    for (const gm of groupMatches) {
-      allMatches.push({ ...gm, winner: groupWinner(gm, includeLive) });
-    }
-    const byId = Object.fromEntries(allMatches.map(m => [m.id, m]));
-    for (const tmpl of data.matches.filter(m => m.type === 'knockout')) {
-      const base = resultMap[tmpl.id] || {};
-      const home = resolveSlot(tmpl.homeSlot, groups, third, r32ThirdMap, byId, 'home');
-      const away = resolveSlot(tmpl.awaySlot, groups, third, r32ThirdMap, byId, 'away');
-      const km = { ...tmpl, home, away, ...base };
-      km.winner = koWinner(km, includeLive);
-      km.loser = koLoser(km, includeLive);
-      byId[km.id] = km;
-      allMatches.push(km);
-    }
-    return { matches: allMatches, byId, groups, third, r32Certainty, final: resultsObj.final || {} };
-  }
-
-  function computeThirdMap(third, groups) {
-    const qualified = third.filter(t => t.qualified).map(t => t.group).sort().join('');
-    const matrixRow = data.thirdPlaceMatrix[qualified] || {};
-    const map = {};
-    for (const [paired, seed] of Object.entries(matrixRow)) {
-      const team = third.find(t => t.seed === seed && t.qualified);
-      if (team) map[paired] = { seed, team: team.team };
-    }
-    Object.entries(lockedThirdSlotTeams(groups, third)).forEach(([paired, team]) => {
-      const seed = LOCKED_THIRD_SLOT_SEEDS[paired];
-      map[paired] = { seed, team };
-    });
-    return map;
   }
 
   function resolveSlot(slot, groups, third, r32ThirdMap, byId) {
@@ -1069,19 +1032,19 @@
   }
   function isSeedLike(v) { return typeof v === 'string' && (/^[123][A-L]$/.test(v) || /^W\d+$/.test(v) || /^L\d+$/.test(v)); }
 
-  function scorePlayer(player, actual, includeLive) {
+  function scorePlayer(player, actual) {
     const bd = { '1X2': 0, G1: 0, CTG: 0, GTG: 0, PTG: 0, E16: 0, E16P: 0, G16: 0, E8: 0, E8P: 0, G8: 0, E4: 0, E4P: 0, G4: 0, ES: 0, ESP: 0, GS: 0, EF: 0, EC: 0, GC: 0, '4rt': 0, '3er': 0, GF: 0, '2on': 0, '1er': 0, PCH: 0, GPCH: 0 };
     const pGroupById = Object.fromEntries(player.groupMatches.map(m => [m.id, m]));
     for (const am of actual.matches.filter(m => m.type === 'group')) {
-      if (!isMatchCounted(am, includeLive)) continue;
+      if (!isMatchFinal(am) || !isNum(am.homeScore) || !isNum(am.awayScore)) continue;
       const pm = pGroupById[am.id];
       if (!pm) continue;
-      if (pm.winner === groupWinner(am, includeLive)) bd['1X2'] += data.rules['1X2'];
+      if (pm.winner === groupWinner(am)) bd['1X2'] += data.rules['1X2'];
       if (pm.homeScore === am.homeScore) bd.G1 += Math.max(data.rules.G1_MIN, am.homeScore);
       if (pm.awayScore === am.awayScore) bd.G1 += Math.max(data.rules.G1_MIN, am.awayScore);
     }
     for (const [g, obj] of Object.entries(actual.groups)) {
-      if (!obj.groupBonusesScoreable) continue;
+      if (!obj.complete) continue;
       const predRows = player.groupStandings[g] || [];
       for (let i = 0; i < 4; i++) {
         const ar = obj.table[i], pr = predRows[i];
@@ -1093,7 +1056,12 @@
     }
     const pKoById = Object.fromEntries(player.knockoutMatches.map(m => [m.id, m]));
     for (const cfg of Object.values(stageConfig)) {
-      const actualSet = cfg.team === 'E16' && actual.r32Certainty
+      // Canonical safe scoring for Round of 32:
+      // award everything that is logically locked by completed groups.
+      // - completed-group 1st/2nd teams get E16 and exact-position E16P;
+      // - locked third-place qualifiers can get E16, but not E16P until their exact slot is known.
+      const useR32Certainty = cfg.team === 'E16' && actual.r32Certainty;
+      const actualSet = useR32Certainty
         ? actual.r32Certainty.qualifiedTeams
         : teamSet(actual, cfg.keys);
       for (const key of cfg.keys) {
@@ -1101,24 +1069,25 @@
         if (!am || !pm) continue;
         for (const side of ['home', 'away']) {
           const pTeam = pm[side];
-          const aTeam = cfg.team === 'E16' && actual.r32Certainty
+          const aTeam = useR32Certainty
             ? ((actual.r32Certainty.exactSlots[key] || {})[side])
             : am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
           if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
         }
-        if (isMatchCounted(am, includeLive)) {
+        if (isMatchFinal(am) && isNum(am.homeScore) && isNum(am.awayScore)) {
           if (pm.homeScore === am.homeScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.homeScore) : cfg.goalPts;
           if (pm.awayScore === am.awayScore) bd[cfg.goals] += cfg.goalMin ? Math.max(cfg.goalMin, am.awayScore) : cfg.goalPts;
         }
       }
     }
+    // Finalists and consolation teams.
     const finalM = actual.byId.M104, consM = actual.byId.M103;
     const pFinal = pKoById.M104, pCons = pKoById.M103;
     if (finalM && pFinal) {
       const finalSet = new Set([finalM.home, finalM.away].filter(Boolean));
       for (const t of [pFinal.home, pFinal.away]) if (finalSet.has(t)) bd.EF += data.rules.EF;
-      if (isMatchCounted(finalM, includeLive)) {
+      if (isMatchFinal(finalM) && isNum(finalM.homeScore) && isNum(finalM.awayScore)) {
         if (pFinal.homeScore === finalM.homeScore) bd.GF += data.rules.GF;
         if (pFinal.awayScore === finalM.awayScore) bd.GF += data.rules.GF;
       }
@@ -1126,18 +1095,22 @@
     if (consM && pCons) {
       const consSet = new Set([consM.home, consM.away].filter(Boolean));
       for (const t of [pCons.home, pCons.away]) if (consSet.has(t)) bd.EC += data.rules.EC;
-      if (isMatchCounted(consM, includeLive)) {
+      if (isMatchFinal(consM) && isNum(consM.homeScore) && isNum(consM.awayScore)) {
         if (pCons.homeScore === consM.homeScore) bd.GC += data.rules.GC;
         if (pCons.awayScore === consM.awayScore) bd.GC += data.rules.GC;
       }
     }
-    if (consM && koWinner(consM, includeLive)) {
-      if (player.summary.third === consM.winner) bd['3er'] += data.rules['3er'];
-      if (player.summary.fourth === consM.loser) bd['4rt'] += data.rules['4rt'];
+    const finalPlayed = finalM && isMatchFinal(finalM) && finalM.winner;
+    const thirdPlayed = consM && isMatchFinal(consM) && consM.winner;
+    if (thirdPlayed) {
+      const third = consM.winner, fourth = consM.loser;
+      if (player.summary.third === third) bd['3er'] += data.rules['3er'];
+      if (player.summary.fourth === fourth) bd['4rt'] += data.rules['4rt'];
     }
-    if (finalM && koWinner(finalM, includeLive)) {
-      if (player.summary.champion === finalM.winner) bd['1er'] += data.rules['1er'];
-      if (player.summary.runnerUp === finalM.loser) bd['2on'] += data.rules['2on'];
+    if (finalPlayed) {
+      const champion = finalM.winner, runnerUp = finalM.loser;
+      if (player.summary.champion === champion) bd['1er'] += data.rules['1er'];
+      if (player.summary.runnerUp === runnerUp) bd['2on'] += data.rules['2on'];
       if (actual.final.topScorer && player.summary.topScorer === actual.final.topScorer) bd.PCH += data.rules.PCH;
       if (isNum(actual.final.topScorerGoals) && player.summary.topScorerGoals === actual.final.topScorerGoals) bd.GPCH += data.rules.GPCH;
     }
@@ -1145,9 +1118,9 @@
     return { breakdown: bd, total };
   }
 
-  function computeLeaderboard(resultsObj, includeLive = true) {
-    const actual = buildActual(resultsObj, includeLive);
-    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual, includeLive) }));
+  function computeLeaderboard(resultsObj) {
+    const actual = buildActual(resultsObj);
+    const rows = data.players.map(player => ({ ...player, ...scorePlayer(player, actual) }));
     rows.sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
     let last = null, rank = 0;
     rows.forEach((r, i) => { if (r.total !== last) { rank = i + 1; last = r.total; } r.rank = rank; });
@@ -1247,11 +1220,9 @@
   }
 
   function init() {
-    // Main leaderboard intentionally uses the same live/provisional scoring engine as the
-    // "Classificació en directe" tab so both views rank players identically.
-    const current = computeLeaderboard(resultats, true);
+    const current = computeLeaderboard(resultats);
     const last = findLastPlayed(current.actual);
-    const previous = computeLeaderboard(cloneResultsWithout(last && last.id), true);
+    const previous = computeLeaderboard(cloneResultsWithout(last && last.id));
     const prevById = Object.fromEntries(previous.rows.map(r => [r.id, r]));
     const nextMatches = findNextMatches(current.actual, 2);
     const next = nextMatches[0] || null;
@@ -1317,20 +1288,14 @@
       </div>
       <div class="drawer-section"><h3>${escapeHtml(t('nextPredictionTitle'))}</h3><div class="next-prediction-grid">${nextPredictionsHtml(row, comp)}</div></div>
       <div class="drawer-section"><h3>${escapeHtml(t('pointsBreakdown'))}</h3><div class="breakdown">${Object.entries(row.breakdown).map(([k, v]) => `<span>${escapeHtml(k)} <strong>${escapeHtml(v)}</strong></span>`).join('')}</div></div>
-      <div class="drawer-section"><h3>${escapeHtml(t('matchPredictionsTitle'))}</h3>${matchesTable(row, comp.actual)}</div>`;
+      <div class="drawer-section"><h3>${escapeHtml(t('matchPredictionsTitle'))}</h3>${matchesTable(row)}</div>`;
     els.drawer.classList.add('is-open');
     els.drawer.setAttribute('aria-hidden', 'false');
   }
-  function actualScoreForPrediction(pred, actual) {
-    if (!pred || !actual || !actual.byId) return '—';
-    const am = actual.byId[pred.id];
-    if (!am || !hasMatchScore(am)) return '—';
-    return scoreText(am);
-  }
-  function matchesTable(row, actual) {
+  function matchesTable(row) {
     const matches = chronologicalMatches([...row.groupMatches, ...row.knockoutMatches]);
-    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td><span class="score-pill">${escapeHtml(actualScoreForPrediction(m, actual))}</span></td></tr>`).join('');
-    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('actualScore'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
+    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('winner'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
   }
   function closeDrawer() { els.drawer.classList.remove('is-open'); els.drawer.setAttribute('aria-hidden', 'true'); }
   els.langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));

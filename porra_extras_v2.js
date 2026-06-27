@@ -29,7 +29,7 @@
       pos: 'Pos.',
       subgroupPos: 'Subgrup',
       generalRank: 'General',
-      subgroupConsistencyNote: 'Aquesta taula fa servir la mateixa classificació oficial que la classificació principal: només partits ja acabats, sense punts en directe.',
+      subgroupConsistencyNote: 'Aquesta taula fa servir els mateixos punts que la classificació principal quan no hi ha cap partit en directe: tots els punts segurs ja assignables amb els grups completats.',
       move: 'Mov.',
       points: 'Punts',
       played: 'PJ',
@@ -88,7 +88,7 @@
       pos: 'Pos.',
       subgroupPos: 'Subgrupo',
       generalRank: 'General',
-      subgroupConsistencyNote: 'Esta tabla usa la misma clasificación oficial que la clasificación principal: solo partidos ya acabados, sin puntos en directo.',
+      subgroupConsistencyNote: 'Esta tabla usa los mismos puntos que la clasificación principal cuando no hay ningún partido en directo: todos los puntos seguros ya asignables con los grupos completados.',
       move: 'Mov.',
       points: 'Puntos',
       played: 'PJ',
@@ -147,7 +147,7 @@
       pos: 'Pos.',
       subgroupPos: 'Subgroup',
       generalRank: 'Overall',
-      subgroupConsistencyNote: 'This table uses the same official standings as the main leaderboard: finished matches only, no live points.',
+      subgroupConsistencyNote: 'This table uses the same points as the main leaderboard when no match is live: all safe points already assignable from completed groups.',
       move: 'Move',
       points: 'Points',
       played: 'P',
@@ -848,7 +848,11 @@ return '';
 
     const pKoById = Object.fromEntries((player.knockoutMatches || []).map(m => [m.id, m]));
     Object.values(STAGE_CONFIG).forEach(cfg => {
-      const actualSet = cfg.team === 'E16' && actual.r32Certainty
+      // For the official completed-match leaderboard, mirror app_new.js exactly.
+      // The r32Certainty helper is intentionally a live/provisional enhancement; using it
+      // when includeLive=false can make subgroup points diverge from the main table.
+      const useR32Certainty = includeLive && cfg.team === 'E16' && actual.r32Certainty;
+      const actualSet = useR32Certainty
         ? actual.r32Certainty.qualifiedTeams
         : teamSet(actual, cfg.keys);
       cfg.keys.forEach(key => {
@@ -857,7 +861,7 @@ return '';
         if (!am || !pm) return;
         ['home', 'away'].forEach(side => {
           const pTeam = pm[side];
-          const aTeam = cfg.team === 'E16' && actual.r32Certainty
+          const aTeam = useR32Certainty
             ? ((actual.r32Certainty.exactSlots[key] || {})[side])
             : am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
@@ -995,9 +999,9 @@ function renderSubgroupLeaderboard(type) {
   const subgroup = SUBGROUP_LEADERBOARDS[type];
   if (!subgroup) return '';
 
-  // Keep subgroup tabs aligned with the main leaderboard:
-  // use the official completed-match standings, not the live/projected table.
-  const officialRows = computeLeaderboard(false);
+  // Keep subgroup tabs aligned with the main leaderboard when no match is live:
+  // use the canonical safe total, i.e. all points already locked by completed groups.
+  const officialRows = computeLeaderboard(true);
 
   const matchedRows = officialRows
     .map(row => {
