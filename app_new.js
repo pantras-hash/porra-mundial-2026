@@ -520,7 +520,7 @@
     ca: {
       title: 'Classificació', nextPendingLabel: 'Pròxims partits pendents', nextMetaHint: 'La columna de la taula mostra el pronòstic de cada participant per a aquest partit.', localTimeNote: 'Horaris en la teva hora local ({tz})',
       legendUp: '▲ puja', legendDown: '▼ baixa', legendSame: '— igual', fullTableTitle: 'Taula completa', clickHint: 'Fes clic en un participant per veure tots els seus pronòstics.',
-      searchLabel: 'Buscar', searchPlaceholder: 'Nom...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participant', colPoints: 'Punts', colChampion: 'Campió', colTopScorer: 'Pichichi',
+      searchLabel: 'Buscar', searchPlaceholder: 'Nom...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Nom', colPoints: 'Punts', colChampion: 'Campió', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Pròxim partit', predictionFor: 'Pronòstic: {home} – {away}', allMatchesHaveResults: 'Tots els partits tenen resultat', noPendingMatches: 'No queda cap partit pendent.',
       initialData: 'Dades inicials: {date}', noPlayerFound: 'No s’ha trobat cap participant.', points: 'punts', matchPredictions: 'pronòstics de partit',
       champion: 'Campió', finalist: 'Finalista', third: 'Tercer', topScorer: 'Pichichi', goals: 'gols', nextPredictionTitle: 'Pronòstic del pròxim partit', pointsBreakdown: 'Desglossament de punts', matchPredictionsTitle: 'Pronòstics de partits',
@@ -531,7 +531,7 @@
     es: {
       title: 'Clasificación', nextPendingLabel: 'Próximos partidos pendientes', nextMetaHint: 'La columna de la tabla muestra el pronóstico de cada participante para este partido.', localTimeNote: 'Horarios en tu hora local ({tz})',
       legendUp: '▲ sube', legendDown: '▼ baja', legendSame: '— igual', fullTableTitle: 'Tabla completa', clickHint: 'Haz clic en un participante para ver todos sus pronósticos.',
-      searchLabel: 'Buscar', searchPlaceholder: 'Nombre...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Participante', colPoints: 'Puntos', colChampion: 'Campeón', colTopScorer: 'Pichichi',
+      searchLabel: 'Buscar', searchPlaceholder: 'Nombre...', colPosition: 'Pos.', colMovement: 'Mov.', colParticipant: 'Nombre', colPoints: 'Puntos', colChampion: 'Campeón', colTopScorer: 'Pichichi',
       nextMatchColumn: 'Próximo partido', predictionFor: 'Pronóstico: {home} – {away}', allMatchesHaveResults: 'Todos los partidos tienen resultado', noPendingMatches: 'No queda ningún partido pendiente.',
       initialData: 'Datos iniciales: {date}', noPlayerFound: 'No se ha encontrado ningún participante.', points: 'puntos', matchPredictions: 'pronósticos de partidos',
       champion: 'Campeón', finalist: 'Finalista', third: 'Tercero', topScorer: 'Pichichi', goals: 'goles', nextPredictionTitle: 'Pronóstico del próximo partido', pointsBreakdown: 'Desglose de puntos', matchPredictionsTitle: 'Pronósticos de partidos',
@@ -542,7 +542,7 @@
     en: {
       title: 'Leaderboard', nextPendingLabel: 'Next pending matches', nextMetaHint: 'The table column shows each player’s prediction for this match.', localTimeNote: 'All times shown in your local time ({tz})',
       legendUp: '▲ up', legendDown: '▼ down', legendSame: '— same', fullTableTitle: 'Full leaderboard', clickHint: 'Click a player to see all of their predictions.',
-      searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Player', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
+      searchLabel: 'Search', searchPlaceholder: 'Name...', colPosition: 'Pos.', colMovement: 'Move', colParticipant: 'Name', colPoints: 'Points', colChampion: 'Champion', colTopScorer: 'Top scorer',
       nextMatchColumn: 'Next match', predictionFor: 'Prediction: {home} – {away}', allMatchesHaveResults: 'All matches have a result', noPendingMatches: 'There are no pending matches.',
       initialData: 'Initial data: {date}', noPlayerFound: 'No player found.', points: 'points', matchPredictions: 'match predictions',
       champion: 'Champion', finalist: 'Runner-up', third: 'Third', topScorer: 'Top scorer', goals: 'goals', nextPredictionTitle: 'Prediction for the next match', pointsBreakdown: 'Points breakdown', matchPredictionsTitle: 'Match predictions',
@@ -686,14 +686,6 @@
     // so a score without a status is treated as final.
     return hasMatchScore(m);
   }
-  function isMatchLive(m) {
-    return LIVE_STATUSES.has(matchStatus(m));
-  }
-  function isMatchCounted(m, includeLive) {
-    if (!hasMatchScore(m)) return false;
-    if (isMatchFinal(m)) return true;
-    return !!includeLive && isMatchLive(m);
-  }
   function statusLabel(status) {
     const s = String(status || '').toUpperCase();
     const labels = {
@@ -814,7 +806,6 @@
     const groupMatches = data.matches.filter(m => m.type === 'group').map(m => ({ ...m, ...(resultMap[m.id] || {}) }));
     const groups = computeGroups(groupMatches, resultsObj.groupRankingOverrides || {});
     const third = computeThirdPlaces(groups);
-    const r32Certainty = computeR32Certainty(groups, third);
     const r32ThirdMap = computeThirdMap(third);
     const allMatches = [];
     for (const gm of groupMatches) {
@@ -831,7 +822,7 @@
       byId[km.id] = km;
       allMatches.push(km);
     }
-    return { matches: allMatches, byId, groups, third, r32Certainty, final: resultsObj.final || {} };
+    return { matches: allMatches, byId, groups, third, final: resultsObj.final || {} };
   }
 
   function groupWinner(m) {
@@ -858,46 +849,6 @@
     return null;
   }
 
-  function compareGroupRows(a, b) {
-    return b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team);
-  }
-
-  function maxPossiblePointsForAnyThirdPlaceTeam(groupObj) {
-    if (!groupObj || groupObj.complete) return Number.NEGATIVE_INFINITY;
-    const matches = Array.isArray(groupObj.matches) ? groupObj.matches : [];
-    const table = Array.isArray(groupObj.table) ? groupObj.table : [];
-    return table.reduce((maxPts, row) => {
-      const remainingForTeam = matches.filter(m => !isMatchFinal(m) && (m.home === row.team || m.away === row.team)).length;
-      return Math.max(maxPts, row.pts + 3 * remainingForTeam);
-    }, Number.NEGATIVE_INFINITY);
-  }
-
-  function thirdPlaceTeamCouldStillFinishAhead(row, groupObj) {
-    if (!row || !groupObj || groupObj.complete) return false;
-    const maxPts = maxPossiblePointsForAnyThirdPlaceTeam(groupObj);
-    // If an incomplete group's eventual third-placed team can still tie this points
-    // total, keep it uncertain: goal difference and goals-for can still change.
-    return maxPts >= row.pts;
-  }
-
-  function lockedThirdPlaceQualifiers(groups, thirdRows) {
-    const locked = [];
-    const groupEntries = Object.entries(groups || {});
-    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
-
-    if (allComplete) {
-      return thirdRows.slice(0, 8).filter(row => row.complete);
-    }
-
-    thirdRows.filter(row => row.complete).forEach(row => {
-      const completedAhead = thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length;
-      const uncertainAhead = groupEntries.filter(([, obj]) => !obj.complete && thirdPlaceTeamCouldStillFinishAhead(row, obj)).length;
-      if (completedAhead + uncertainAhead <= 7) locked.push(row);
-    });
-
-    return locked;
-  }
-
   function computeGroups(groupMatches, overrides) {
     const groups = {};
     for (const [g, teams] of Object.entries(data.groups)) {
@@ -916,7 +867,7 @@
       }
       Object.values(table).forEach(t => { t.gd = t.gf - t.ga; });
       let arr = Object.values(table);
-      arr.sort(compareGroupRows);
+      arr.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
       const override = overrides[g];
       if (Array.isArray(override) && override.length) {
         const order = new Map(override.map((team, idx) => [team, idx]));
@@ -931,9 +882,8 @@
 
   function computeThirdPlaces(groups) {
     const rows = Object.entries(groups).map(([g, obj]) => ({ ...obj.table[2], group: g, seed: '3' + g, complete: obj.complete }));
-    const sorted = rows.slice().sort(compareGroupRows);
-    const allComplete = sorted.length > 0 && sorted.every(t => t.complete);
-    sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = allComplete && idx < 8 && t.complete; });
+    const sorted = rows.slice().sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf || a.team.localeCompare(b.team));
+    sorted.forEach((t, idx) => { t.thirdRank = idx + 1; t.qualified = idx < 8 && t.complete; });
     return sorted;
   }
 
@@ -946,104 +896,6 @@
       if (team) map[paired] = { seed, team: team.team };
     }
     return map;
-  }
-
-  function computeR32Certainty(groups, thirdRows) {
-    const qualifiedTeams = new Set();
-    const exactSlots = {};
-    const directSeedTeams = {};
-
-    Object.entries(groups || {}).forEach(([g, obj]) => {
-      if (!obj || !obj.complete || !Array.isArray(obj.table)) return;
-      const first = obj.table[0];
-      const second = obj.table[1];
-      if (first && first.team) {
-        qualifiedTeams.add(first.team);
-        directSeedTeams['1' + g] = first.team;
-      }
-      if (second && second.team) {
-        qualifiedTeams.add(second.team);
-        directSeedTeams['2' + g] = second.team;
-      }
-    });
-
-    lockedThirdPlaceQualifiers(groups, thirdRows).forEach(row => {
-      if (row && row.team) qualifiedTeams.add(row.team);
-    });
-
-    const groupEntries = Object.entries(groups || {});
-    const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
-    const thirdSlotTeams = {};
-    const thirdPlaceMatrix = data.thirdPlaceMatrix || {};
-
-    function completedThirdPlaceDefinitelyEliminated(row) {
-      if (!row || !row.complete) return false;
-      // Conservative elimination test: if eight already-completed third-place
-      // teams are strictly ahead, this group cannot be among the best eight.
-      return thirdRows.filter(other => other.complete && compareGroupRows(other, row) < 0).length >= 8;
-    }
-
-    function forcedThirdSeedForPairedSlot(paired) {
-      const lockedGroups = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.group));
-      const eliminatedGroups = new Set(
-        thirdRows.filter(row => completedThirdPlaceDefinitelyEliminated(row)).map(row => row.group)
-      );
-      const possibleQualifiedGroupKeys = Object.keys(thirdPlaceMatrix).filter(key => {
-        for (const g of lockedGroups) if (!key.includes(g)) return false;
-        for (const g of eliminatedGroups) if (key.includes(g)) return false;
-        return true;
-      });
-
-      if (!possibleQualifiedGroupKeys.length) return null;
-
-      const seeds = new Set(
-        possibleQualifiedGroupKeys
-          .map(key => (thirdPlaceMatrix[key] || {})[paired])
-          .filter(Boolean)
-      );
-      if (seeds.size !== 1) return null;
-
-      const seed = Array.from(seeds)[0];
-      const row = thirdRows.find(t => t.seed === seed);
-      if (!row || !row.team || !lockedGroups.has(row.group)) return null;
-      return seed;
-    }
-
-    if (allComplete) {
-      const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
-      const matrixRow = thirdPlaceMatrix[qualifiedGroups] || {};
-      Object.entries(matrixRow).forEach(([paired, seed]) => {
-        const row = thirdRows.find(t => t.seed === seed);
-        if (row && row.team) thirdSlotTeams[paired] = row.team;
-      });
-    } else {
-      const pairedSlots = new Set();
-      Object.values(thirdPlaceMatrix).forEach(row => {
-        Object.keys(row || {}).forEach(paired => pairedSlots.add(paired));
-      });
-      pairedSlots.forEach(paired => {
-        const seed = forcedThirdSeedForPairedSlot(paired);
-        const row = seed ? thirdRows.find(t => t.seed === seed) : null;
-        if (row && row.team) thirdSlotTeams[paired] = row.team;
-      });
-    }
-
-    function exactTeamForSlot(slot) {
-      if (!slot) return null;
-      if (slot.startsWith && slot.startsWith('third:')) {
-        return thirdSlotTeams[slot.split(':')[1]] || null;
-      }
-      return directSeedTeams[String(slot)] || null;
-    }
-
-    data.matches.filter(m => stageConfig.r32.keys.includes(m.id)).forEach(m => {
-      exactSlots[m.id] = {
-        home: exactTeamForSlot(m.homeSlot),
-        away: exactTeamForSlot(m.awaySlot)
-      };
-    });
-
-    return { qualifiedTeams, exactSlots };
   }
 
   function resolveSlot(slot, groups, third, r32ThirdMap, byId) {
@@ -1100,24 +952,13 @@
     }
     const pKoById = Object.fromEntries(player.knockoutMatches.map(m => [m.id, m]));
     for (const cfg of Object.values(stageConfig)) {
-      // Canonical safe scoring for Round of 32:
-      // award everything that is logically locked by completed groups.
-      // - completed-group 1st/2nd teams get E16 and exact-position E16P;
-      // - locked third-place qualifiers get E16;
-      // - those third-place teams also get E16P as soon as the third-place matrix
-      //   forces their exact Round-of-32 slot, even before every group is complete.
-      const useR32Certainty = cfg.team === 'E16' && actual.r32Certainty;
-      const actualSet = useR32Certainty
-        ? actual.r32Certainty.qualifiedTeams
-        : teamSet(actual, cfg.keys);
+      const actualSet = teamSet(actual, cfg.keys);
       for (const key of cfg.keys) {
         const am = actual.byId[key], pm = pKoById[key];
         if (!am || !pm) continue;
         for (const side of ['home', 'away']) {
           const pTeam = pm[side];
-          const aTeam = useR32Certainty
-            ? ((actual.r32Certainty.exactSlots[key] || {})[side])
-            : am[side];
+          const aTeam = am[side];
           if (pTeam && actualSet.has(pTeam)) bd[cfg.team] += cfg.teamPts;
           if (pTeam && aTeam && pTeam === aTeam) bd[cfg.pos] += cfg.posPts;
         }
