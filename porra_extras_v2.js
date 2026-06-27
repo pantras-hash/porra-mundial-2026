@@ -27,6 +27,9 @@
       team: 'Equip',
       player: 'Participant',
       pos: 'Pos.',
+      subgroupPos: 'Subgrup',
+      generalRank: 'General',
+      subgroupConsistencyNote: 'Aquesta taula fa servir la mateixa classificació oficial que la classificació principal: només partits ja acabats, sense punts en directe.',
       move: 'Mov.',
       points: 'Punts',
       played: 'PJ',
@@ -83,6 +86,9 @@
       team: 'Equipo',
       player: 'Participante',
       pos: 'Pos.',
+      subgroupPos: 'Subgrupo',
+      generalRank: 'General',
+      subgroupConsistencyNote: 'Esta tabla usa la misma clasificación oficial que la clasificación principal: solo partidos ya acabados, sin puntos en directo.',
       move: 'Mov.',
       points: 'Puntos',
       played: 'PJ',
@@ -139,6 +145,9 @@
       team: 'Team',
       player: 'Player',
       pos: 'Pos.',
+      subgroupPos: 'Subgroup',
+      generalRank: 'Overall',
+      subgroupConsistencyNote: 'This table uses the same official standings as the main leaderboard: finished matches only, no live points.',
       move: 'Move',
       points: 'Points',
       played: 'P',
@@ -986,28 +995,33 @@ function renderSubgroupLeaderboard(type) {
   const subgroup = SUBGROUP_LEADERBOARDS[type];
   if (!subgroup) return '';
 
-  const baseRows = computeLeaderboard(false);
-  const liveRows = computeLeaderboard(true);
-  const prevById = new Map(baseRows.map(row => [row.id, row]));
+  // Keep subgroup tabs aligned with the main leaderboard:
+  // use the official completed-match standings, not the live/projected table.
+  const officialRows = computeLeaderboard(false);
 
-  const rows = liveRows
+  const matchedRows = officialRows
     .map(row => {
       const subgroupName = subgroupDisplayNameForPlayer(row.name, subgroup);
       return subgroupName ? { row, subgroupName } : null;
     })
-    .filter(Boolean)
-    .map(({ row, subgroupName }) => {
-      const move = movementLabel(row, prevById);
+    .filter(Boolean);
 
-      return `
-        <tr>
-          <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
-          <td><span class="move ${escapeHtml(move.cls)}">${escapeHtml(move.label)}</span></td>
-          <td title="${escapeHtml(row.name)}">${escapeHtml(subgroupName)}</td>
-          <td class="num">${escapeHtml(row.total)}</td>
-        </tr>
-      `;
-    });
+  const rows = matchedRows.map(({ row, subgroupName }, idx) => {
+    const prev = matchedRows[idx - 1];
+    const subgroupRank = prev && prev.row.total === row.total
+      ? prev.subgroupRank
+      : idx + 1;
+    matchedRows[idx].subgroupRank = subgroupRank;
+
+    return `
+      <tr>
+        <td><span class="rank-pill">#${escapeHtml(subgroupRank)}</span></td>
+        <td><span class="rank-pill">#${escapeHtml(row.rank)}</span></td>
+        <td title="${escapeHtml(row.name)}">${escapeHtml(subgroupName)}</td>
+        <td class="num">${escapeHtml(row.total)}</td>
+      </tr>
+    `;
+  });
 
   if (!rows.length) {
     return `
@@ -1019,7 +1033,8 @@ function renderSubgroupLeaderboard(type) {
     `;
   }
 
-  return tableHtml([t('pos'), t('move'), t('player'), t('points')], rows);
+  return `<p class="porra-muted-v2">${escapeHtml(t('subgroupConsistencyNote'))}</p>` +
+    tableHtml([t('subgroupPos'), t('generalRank'), t('player'), t('points')], rows);
 }
 
 function renderPointsSystem() {
