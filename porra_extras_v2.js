@@ -647,7 +647,16 @@ return '';
     return sorted;
   }
 
-  function computeThirdMap(third) {
+  const LOCKED_THIRD_SLOT_SEEDS = {
+    // Verified exact third-place Round-of-32 slots already set before all groups finish.
+    // Key = bracket slot paired with group winner; value = third-place seed assigned there.
+    // M81: 1D vs 3B, M74: 1E vs 3D, M77: 1I vs 3F.
+    '1D': '3B',
+    '1E': '3D',
+    '1I': '3F'
+  };
+
+  function computeThirdMap(third, groups) {
     const d = data();
     const qualified = third.filter(t => t.qualified).map(t => t.group).sort().join('');
     const matrixRow = (d.thirdPlaceMatrix || {})[qualified] || {};
@@ -656,6 +665,10 @@ return '';
       const team = third.find(t => t.seed === seed && t.qualified);
       if (team) map[paired] = { seed, team: team.team };
     }
+    Object.entries(lockedThirdSlotTeams(groups, third)).forEach(([paired, team]) => {
+      const seed = LOCKED_THIRD_SLOT_SEEDS[paired];
+      map[paired] = { seed, team };
+    });
     return map;
   }
 
@@ -714,6 +727,18 @@ return '';
     return maxPts >= row.pts;
   }
 
+  function lockedThirdSlotTeams(groups, thirdRows) {
+    const out = {};
+    const lockedQualifiers = new Set(lockedThirdPlaceQualifiers(groups, thirdRows).map(row => row.seed));
+    Object.entries(LOCKED_THIRD_SLOT_SEEDS).forEach(([paired, seed]) => {
+      const row = thirdRows.find(t => t.seed === seed);
+      if (row && row.complete && row.team && lockedQualifiers.has(seed)) {
+        out[paired] = row.team;
+      }
+    });
+    return out;
+  }
+
   function lockedThirdPlaceQualifiers(groups, thirdRows) {
     const locked = [];
     const groupEntries = Object.entries(groups || {});
@@ -760,7 +785,7 @@ return '';
 
     const groupEntries = Object.entries(groups || {});
     const allComplete = groupEntries.length > 0 && groupEntries.every(([, obj]) => obj.complete);
-    const thirdSlotTeams = {};
+    const thirdSlotTeams = lockedThirdSlotTeams(groups, thirdRows);
 
     if (allComplete) {
       const qualifiedGroups = thirdRows.slice(0, 8).map(row => row.group).sort().join('');
@@ -825,7 +850,7 @@ return '';
 
     const third = computeThirdPlaces(groups);
     const r32Certainty = computeR32Certainty(groups, third, includeLive);
-    const thirdMap = computeThirdMap(third);
+    const thirdMap = computeThirdMap(third, groups);
     const all = [];
     const byId = {};
     for (const gm of groupMatches) {
