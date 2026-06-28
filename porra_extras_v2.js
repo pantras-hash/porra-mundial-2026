@@ -293,7 +293,9 @@ const SUBGROUP_LEADERBOARDS = {
   function scoreText(m) {
     if (!hasMatchScore(m)) return '—';
     let s = `${m.homeScore}–${m.awayScore}`;
-    if (isNum(m.penHome) && isNum(m.penAway)) s += ` (${m.penHome}–${m.penAway})`;
+    const isKnockoutMatch = m.type === 'knockout' || /^M(7[3-9]|8[0-9]|9[0-9]|10[0-4])$/.test(String(m.id || ''));
+    // Penalties only matter in knockout games, and only when the match score is tied.
+    if (isKnockoutMatch && m.homeScore === m.awayScore && isNum(m.penHome) && isNum(m.penAway)) s += ` (${m.penHome}–${m.penAway})`;
     return s;
   }
 
