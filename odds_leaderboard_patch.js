@@ -76,6 +76,36 @@
     if (node && node.textContent !== value) node.textContent = value;
   }
 
+  function setModalHeaderLink(th, label, modalType) {
+    if (!th) return;
+    const existing = th.querySelector('button.porra-header-modal-link');
+    if (
+      existing &&
+      existing.getAttribute('data-porra-modal-v2') === modalType &&
+      existing.textContent === label
+    ) return;
+
+    th.innerHTML = '';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'porra-header-modal-link';
+    button.setAttribute('data-porra-modal-v2', modalType);
+    button.textContent = label;
+    th.appendChild(button);
+  }
+
+  function ensureTopScorerHeaderLink(table) {
+    if (!table || !table.tHead || !table.tHead.rows.length) return;
+    const headerRow = table.tHead.rows[0];
+    const th =
+      headerRow.querySelector('[data-i18n="colTopScorer"]') ||
+      Array.from(headerRow.cells || []).find(cell => /pichichi|top scorer|goleador/i.test(cell.textContent || ''));
+
+    if (!th) return;
+    const label = (th.textContent || '').trim() || 'Pichichi';
+    setModalHeaderLink(th, label, 'topScorers');
+  }
+
   function ensureStyle() {
     if (document.getElementById(STYLE_ID)) return;
     const style = document.createElement('style');
@@ -89,6 +119,24 @@
       }
       #leaderboardTable .odds-cell {
         font-variant-numeric: tabular-nums;
+      }
+      #leaderboardTable .porra-header-modal-link {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        font-weight: inherit;
+        margin: 0;
+        padding: 0;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: inherit;
+      }
+      #leaderboardTable .porra-header-modal-link:hover,
+      #leaderboardTable .porra-header-modal-link:focus {
+        text-decoration: none;
       }
       .odds-note {
         margin: 0.75rem 0 0;
@@ -119,7 +167,7 @@
         th.dataset.oddsColumn = kind;
         headerRow.insertBefore(th, headerRow.cells[insertAfterIndex + 1] || null);
       }
-      setTextIfChanged(th, columnLabel(kind));
+      setModalHeaderLink(th, columnLabel(kind), kind === 'espn' ? 'winProbabilityEspn' : 'winProbability');
       insertAfterIndex = Array.from(headerRow.cells).indexOf(th);
     });
   }
@@ -181,6 +229,7 @@
     const table = document.getElementById('leaderboardTable');
     if (!table) return;
     ensureHeader(table);
+    ensureTopScorerHeaderLink(table);
     ensureBodyCells(table);
     ensureNote(table);
   }
