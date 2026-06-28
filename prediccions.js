@@ -60989,7 +60989,7 @@ window.PORRA_DATA = {
           "id": "G-G-6",
           "round": "Grup G",
           "home": "Egypt",
-          "away": "3IR Iran",
+          "away": "IR Iran",
           "homeScore": 2,
           "awayScore": 1,
           "winner": "Egypt"
