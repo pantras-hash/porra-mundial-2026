@@ -145,9 +145,9 @@ window.PORRA_RESULTATS = {
     // 2026-06-27 · DR Congo vs Uzbekistan
     "G-K-6": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 70, status: "FINISHED" },
     // 2026-06-27 · Argentina vs Jordan
-    "G-J-5": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 71, status: "PAUSED" },
+    "G-J-5": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 71, status: "IN_PLAY" },
     // 2026-06-27 · Algeria vs Austria
-    "G-J-6": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "PAUSED" }
+    "G-J-6": { homeScore: 1, awayScore: 1, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "IN_PLAY" }
   },
   final: { topScorer: null, topScorerGoals: null },
   groupRankingOverrides: {}
