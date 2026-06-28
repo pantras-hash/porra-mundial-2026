@@ -149,7 +149,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-27 · Algeria vs Austria
     "G-J-6": { homeScore: 3, awayScore: 3, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "FINISHED" },
     // 2026-06-28 · 2A vs 2B
-    "M73": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-28", sortOrder: 73, status: "IN_PLAY" },
+    "M73": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-28", sortOrder: 73, status: "FINISHED" },
     // 2026-06-29 · 1E vs third:1E
     "M74": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 74, status: "TIMED" },
     // 2026-06-29 · 1F vs 2C
