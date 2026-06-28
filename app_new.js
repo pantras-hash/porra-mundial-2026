@@ -389,131 +389,163 @@
     },
     "M73": {
         "date": "2026-06-28",
-        "sortOrder": 73
+        "sortOrder": 73,
+        "kickoffUtc": "2026-06-28T19:00:00Z"
     },
     "M74": {
         "date": "2026-06-29",
-        "sortOrder": 74
+        "sortOrder": 74,
+        "kickoffUtc": "2026-06-29T17:00:00Z"
     },
     "M75": {
         "date": "2026-06-29",
-        "sortOrder": 75
+        "sortOrder": 75,
+        "kickoffUtc": "2026-06-29T20:30:00Z"
     },
     "M76": {
         "date": "2026-06-29",
-        "sortOrder": 76
+        "sortOrder": 76,
+        "kickoffUtc": "2026-06-30T01:00:00Z"
     },
     "M77": {
         "date": "2026-06-30",
-        "sortOrder": 77
+        "sortOrder": 77,
+        "kickoffUtc": "2026-06-30T17:00:00Z"
     },
     "M78": {
         "date": "2026-06-30",
-        "sortOrder": 78
+        "sortOrder": 78,
+        "kickoffUtc": "2026-06-30T21:00:00Z"
     },
     "M79": {
         "date": "2026-06-30",
-        "sortOrder": 79
+        "sortOrder": 79,
+        "kickoffUtc": "2026-07-01T01:00:00Z"
     },
     "M80": {
         "date": "2026-07-01",
-        "sortOrder": 80
+        "sortOrder": 80,
+        "kickoffUtc": "2026-07-01T16:00:00Z"
     },
     "M81": {
         "date": "2026-07-01",
-        "sortOrder": 81
+        "sortOrder": 81,
+        "kickoffUtc": "2026-07-01T20:00:00Z"
     },
     "M82": {
         "date": "2026-07-01",
-        "sortOrder": 82
+        "sortOrder": 82,
+        "kickoffUtc": "2026-07-02T00:00:00Z"
     },
     "M83": {
         "date": "2026-07-02",
-        "sortOrder": 83
+        "sortOrder": 83,
+        "kickoffUtc": "2026-07-02T19:00:00Z"
     },
     "M84": {
         "date": "2026-07-02",
-        "sortOrder": 84
+        "sortOrder": 84,
+        "kickoffUtc": "2026-07-02T23:00:00Z"
     },
     "M85": {
         "date": "2026-07-02",
-        "sortOrder": 85
+        "sortOrder": 85,
+        "kickoffUtc": "2026-07-03T03:00:00Z"
     },
     "M86": {
         "date": "2026-07-03",
-        "sortOrder": 86
+        "sortOrder": 86,
+        "kickoffUtc": "2026-07-03T18:00:00Z"
     },
     "M87": {
         "date": "2026-07-03",
-        "sortOrder": 87
+        "sortOrder": 87,
+        "kickoffUtc": "2026-07-03T22:00:00Z"
     },
     "M88": {
         "date": "2026-07-03",
-        "sortOrder": 88
+        "sortOrder": 88,
+        "kickoffUtc": "2026-07-04T01:30:00Z"
     },
     "M89": {
         "date": "2026-07-04",
-        "sortOrder": 89
+        "sortOrder": 89,
+        "kickoffUtc": "2026-07-04T17:00:00Z"
     },
     "M90": {
         "date": "2026-07-04",
-        "sortOrder": 90
+        "sortOrder": 90,
+        "kickoffUtc": "2026-07-04T21:00:00Z"
     },
     "M91": {
         "date": "2026-07-05",
-        "sortOrder": 91
+        "sortOrder": 91,
+        "kickoffUtc": "2026-07-05T20:00:00Z"
     },
     "M92": {
         "date": "2026-07-05",
-        "sortOrder": 92
+        "sortOrder": 92,
+        "kickoffUtc": "2026-07-06T00:00:00Z"
     },
     "M93": {
         "date": "2026-07-06",
-        "sortOrder": 93
+        "sortOrder": 93,
+        "kickoffUtc": "2026-07-06T19:00:00Z"
     },
     "M94": {
         "date": "2026-07-06",
-        "sortOrder": 94
+        "sortOrder": 94,
+        "kickoffUtc": "2026-07-07T00:00:00Z"
     },
     "M95": {
         "date": "2026-07-07",
-        "sortOrder": 95
+        "sortOrder": 95,
+        "kickoffUtc": "2026-07-07T16:00:00Z"
     },
     "M96": {
         "date": "2026-07-07",
-        "sortOrder": 96
+        "sortOrder": 96,
+        "kickoffUtc": "2026-07-07T20:00:00Z"
     },
     "M97": {
         "date": "2026-07-09",
-        "sortOrder": 97
+        "sortOrder": 97,
+        "kickoffUtc": "2026-07-09T20:00:00Z"
     },
     "M98": {
         "date": "2026-07-10",
-        "sortOrder": 98
+        "sortOrder": 98,
+        "kickoffUtc": "2026-07-10T19:00:00Z"
     },
     "M99": {
         "date": "2026-07-11",
-        "sortOrder": 99
+        "sortOrder": 99,
+        "kickoffUtc": "2026-07-11T21:00:00Z"
     },
     "M100": {
         "date": "2026-07-11",
-        "sortOrder": 100
+        "sortOrder": 100,
+        "kickoffUtc": "2026-07-12T01:00:00Z"
     },
     "M101": {
         "date": "2026-07-14",
-        "sortOrder": 101
+        "sortOrder": 101,
+        "kickoffUtc": "2026-07-14T19:00:00Z"
     },
     "M102": {
         "date": "2026-07-15",
-        "sortOrder": 102
+        "sortOrder": 102,
+        "kickoffUtc": "2026-07-15T19:00:00Z"
     },
     "M103": {
         "date": "2026-07-18",
-        "sortOrder": 103
+        "sortOrder": 103,
+        "kickoffUtc": "2026-07-18T21:00:00Z"
     },
     "M104": {
         "date": "2026-07-19",
-        "sortOrder": 104
+        "sortOrder": 104,
+        "kickoffUtc": "2026-07-19T19:00:00Z"
     }
 };
   const I18N = {
