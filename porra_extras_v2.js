@@ -337,8 +337,15 @@ const SUBGROUP_LEADERBOARDS = {
 
   function predictedOutcomeLabel(pred) {
     if (!pred || !hasMatchScore(pred)) return '—';
-    if (pred.homeScore === pred.awayScore) return t('tie');
-    return pred.homeScore > pred.awayScore ? display(pred.home) : display(pred.away);
+    if (pred.homeScore !== pred.awayScore) return pred.homeScore > pred.awayScore ? display(pred.home) : display(pred.away);
+
+    const isKnockoutMatch = pred.type === 'knockout' || /^M(7[3-9]|8[0-9]|9[0-9]|10[0-4])$/.test(String(pred.id || ''));
+    // Penalty winners are only meaningful in knockout games where the match score is tied.
+    if (isKnockoutMatch && isNum(pred.penHome) && isNum(pred.penAway) && pred.penHome !== pred.penAway) {
+      return `${t('tie')} / ${pred.penHome > pred.penAway ? display(pred.home) : display(pred.away)}`;
+    }
+
+    return t('tie');
   }
 
   function enhancePredictionCells() {
