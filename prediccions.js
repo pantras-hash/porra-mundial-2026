@@ -1,11 +1,11 @@
 window.PORRA_DATA = {
   "meta": {
-    "generatedAt": "2026-06-28T15:07:34+00:00",
-    "sourceWorkbook": "AA Classificació Porra Mundial 2026(1).xlsx",
+    "generatedAt": "2026-06-12T22:20:23+00:00",
+    "sourceWorkbook": "AA Classificació Porra Mundial 2026 (4).xlsx",
     "excludedIncompletePlayers": 0,
     "excludedPlayers": [],
-    "mode": "generated-from-updated-xlsx",
-    "notes": "Generated from the uploaded updated Excel. Group-stage winner fields are taken from the workbook winner column when present; standings/knockout rows are taken from the workbook cached values."
+    "mode": "github-results-file",
+    "notes": "Noms abreujats a nom + inicial; si hi ha duplicats, es fa servir la segona lletra del cognom."
   },
   "rules": {
     "1X2": 3,
@@ -2969,648 +2969,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 12,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 5,
             "ga": 10,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 13,
             "ga": 5,
             "gd": 8,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 13,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Sweden",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 5,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 12,
             "ga": 8,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 7,
             "ga": 7,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 11,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 4,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 8,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 11,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -4031,8 +3791,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -4635,648 +4395,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 12,
             "ga": 1,
             "gd": 11,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Japan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "Senegal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "Ghana",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "England",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -5697,7 +5217,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -6301,648 +5821,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Qatar",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 1,
             "gd": 10,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Senegal",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -7967,648 +7247,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -9029,7 +8069,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -9633,648 +8673,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 2,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 12,
             "ga": 3,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 12,
             "ga": 1,
             "gd": 11,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -10713,8 +9513,8 @@ window.PORRA_DATA = {
           "round": "Grup B",
           "home": "Qatar",
           "away": "Switzerland",
-          "homeScore": 0,
-          "awayScore": 3,
+          "homeScore": 3,
+          "awayScore": 0,
           "winner": "Switzerland"
         },
         {
@@ -11299,648 +10099,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 0,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 0,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Colombia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -12965,648 +11525,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 3,
             "ga": 0,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 1
+            "pts": 6
           },
           {
             "pos": 2,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 1,
             "ga": 0,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 2,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 0,
             "ga": 1,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -14027,8 +12347,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -14631,648 +12951,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 11,
             "ga": 2,
             "gd": 9,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 14,
             "gd": -14,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 12,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Austria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -15693,7 +13773,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -16297,648 +14377,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 7,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -17360,7 +15200,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -17963,648 +15803,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 11,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 2
+            "pts": 3
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 1
+            "pts": 4
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 4
+            "pts": 3
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 8,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -19025,7 +16625,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -19629,648 +17229,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 0,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -21295,648 +18655,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 0,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -22358,7 +19478,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -22961,648 +20081,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 0,
             "ga": 2,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 2,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 11,
             "ga": 1,
             "gd": 10,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -24024,7 +20904,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 2,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -24627,648 +21507,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 0,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -25910,6 +22550,15 @@ window.PORRA_DATA = {
           "winner": "Côte d'Ivoire"
         },
         {
+          "id": "G-F-1",
+          "round": "Grup F",
+          "home": "Netherlands",
+          "away": "Japan",
+          "homeScore": null,
+          "awayScore": 0,
+          "winner": "Netherlands"
+        },
+        {
           "id": "G-F-2",
           "round": "Grup F",
           "home": "Sweden",
@@ -26284,648 +22933,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "South Africa",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 0,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -27950,648 +24359,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 1
+            "pts": 6
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -29013,7 +25182,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 2,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -29616,648 +25785,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 14,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -30678,8 +26607,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -31282,648 +27211,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -32344,7 +28033,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -32948,648 +28637,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 9,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Sweden",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 2,
-            "rank": 2
+            "pts": 2
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Spain",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 1,
             "ga": 1,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 2,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -34614,648 +30063,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 2,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 2,
-            "rank": 2
+            "pts": 2
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Colombia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Panama",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -35676,8 +30885,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 3,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -36280,648 +31489,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -37946,648 +32915,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "South Africa",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 1,
             "gd": 10,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 12,
             "ga": 3,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -39612,648 +34341,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 14,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 13,
             "ga": 3,
             "gd": 10,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 12,
             "ga": 1,
             "gd": 11,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -40674,7 +35163,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -41278,648 +35767,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 2
+            "pts": 3
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -42944,648 +37193,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 2
+            "pts": 2
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Senegal",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 0,
             "gd": 10,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Panama",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 2
+            "pts": 3
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 4
+            "pts": 3
           }
         ]
       },
@@ -44006,8 +38015,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -44610,648 +38619,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -46276,648 +40045,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Colombia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -47942,648 +41471,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "South Africa",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 0,
             "gd": 11,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 3,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 8,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Colombia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Panama",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 5,
             "ga": 9,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -49004,8 +42293,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 2,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "South Africa"
         },
         {
@@ -49608,648 +42897,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "South Africa",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 0,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -50670,7 +43719,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -51274,648 +44323,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "Senegal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 0,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "England",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -52336,7 +45145,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -52940,648 +45749,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 6,
-            "rank": 1
+            "pts": 6
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 3
+            "pts": 6
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -54002,8 +46571,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -54606,648 +47175,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 0,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -55669,7 +47998,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -56272,648 +48601,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 0,
             "ga": 1,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 13,
             "gd": -11,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Australia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 12,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 0,
             "gd": 9,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Panama",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 7,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -57334,8 +49423,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "South Africa"
         },
         {
@@ -57938,648 +50027,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 9,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 11,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 5,
             "ga": 11,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -59604,648 +51453,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -60989,7 +52598,7 @@ window.PORRA_DATA = {
           "id": "G-G-6",
           "round": "Grup G",
           "home": "Egypt",
-          "away": "3IR Iran",
+          "away": "IR Iran",
           "homeScore": 2,
           "awayScore": 1,
           "winner": "Egypt"
@@ -61270,648 +52879,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 2,
-            "wins": 1,
-            "draws": 0,
-            "losses": 1,
-            "gf": 1,
-            "ga": 2,
-            "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "gf": 2,
+            "ga": 4,
+            "gd": -2,
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -62287,8 +53656,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "Mexico",
           "away": "South Africa",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 2,
+          "awayScore": 3,
           "winner": "Mexico"
         },
         {
@@ -62297,7 +53666,7 @@ window.PORRA_DATA = {
           "home": "Korea Republic",
           "away": "Czechia",
           "homeScore": 0,
-          "awayScore": 2,
+          "awayScore": 3,
           "winner": "Czechia"
         },
         {
@@ -62306,7 +53675,7 @@ window.PORRA_DATA = {
           "home": "Mexico",
           "away": "Korea Republic",
           "homeScore": 1,
-          "awayScore": 1,
+          "awayScore": 3,
           "winner": "Empat"
         },
         {
@@ -62314,8 +53683,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "Czechia",
           "away": "South Africa",
-          "homeScore": 3,
-          "awayScore": 1,
+          "homeScore": 2,
+          "awayScore": 2,
           "winner": "Czechia"
         },
         {
@@ -62324,7 +53693,7 @@ window.PORRA_DATA = {
           "home": "Mexico",
           "away": "Czechia",
           "homeScore": 2,
-          "awayScore": 1,
+          "awayScore": 3,
           "winner": "Mexico"
         },
         {
@@ -62333,7 +53702,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 2,
-          "awayScore": 1,
+          "awayScore": 0,
           "winner": "South Africa"
         },
         {
@@ -62936,648 +54305,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Norway",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -64602,648 +55731,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -66268,648 +57157,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 11,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Panama",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -67934,648 +58583,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "France",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -68997,7 +59406,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 1,
           "winner": "Empat"
         },
         {
@@ -69600,648 +60009,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Czechia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 1,
             "ga": 1,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 12,
             "ga": 2,
             "gd": 10,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 0,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 15,
             "gd": -15,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 2,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Austria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -71266,648 +61435,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Qatar",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -72328,7 +62257,7 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
+          "homeScore": 0,
           "awayScore": 1,
           "winner": "Empat"
         },
@@ -72932,648 +62861,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 10,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 1,
             "gd": 9,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -74598,648 +64287,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 4
+            "pts": 3
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -76264,648 +65713,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -77326,8 +66535,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -77930,648 +67139,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -79596,648 +68565,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 3,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Belgium",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 2
+            "pts": 2
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 4
+            "pts": 2
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Colombia",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -80658,8 +69387,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 3,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -81262,648 +69991,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 8,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -82324,8 +70813,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 2,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "South Africa"
         },
         {
@@ -82928,648 +71417,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 1
+            "pts": 6
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 2,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 8,
             "ga": 5,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 6,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 4
+            "pts": 3
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 3,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 6,
             "ga": 7,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -83991,7 +72240,7 @@ window.PORRA_DATA = {
           "home": "South Africa",
           "away": "Korea Republic",
           "homeScore": 0,
-          "awayScore": 2,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -84594,648 +72843,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -85656,8 +73665,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 2,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "South Africa"
         },
         {
@@ -86260,648 +74269,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "South Africa",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Canada",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 5,
             "ga": 8,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 11,
             "ga": 0,
             "gd": 11,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 0,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Australia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 7,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 13,
             "ga": 1,
             "gd": 12,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 4,
             "ga": 12,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 15,
             "ga": 1,
             "gd": 14,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 4,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 7,
             "ga": 6,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 9,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Jordan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 3,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -87926,648 +75695,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 7,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 5,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 2,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
@@ -89592,648 +77121,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 0,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 4,
             "ga": 0,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 0,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 8,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 0,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -91258,648 +78547,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 4,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 7,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ghana",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -92924,648 +79973,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 4,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 2,
             "ga": 2,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 5,
-            "rank": 1
+            "pts": 5
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 2,
             "ga": 1,
             "gd": 1,
-            "pts": 5,
-            "rank": 3
+            "pts": 5
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 5,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 0,
             "ga": 1,
             "gd": -1,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 4,
             "ga": 1,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 5,
             "gd": -4,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 8,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 5,
             "ga": 1,
             "gd": 4,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 2,
             "gd": -2,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 0,
             "ga": 4,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 2,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 2,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 6,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 6,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -93986,8 +80795,8 @@ window.PORRA_DATA = {
           "round": "Grup A",
           "home": "South Africa",
           "away": "Korea Republic",
-          "homeScore": 1,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "winner": "Korea Republic"
         },
         {
@@ -94590,648 +81399,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Czechia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Mexico",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 1,
             "ga": 3,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 4
+            "pts": 3
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Brazil",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 4,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 13,
             "gd": -13,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 3,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Japan",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 2,
-            "rank": 3
+            "pts": 2
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 4,
             "gd": 1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 10,
             "gd": -8,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 10,
             "ga": 0,
             "gd": 10,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 6,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 13,
             "gd": -11,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Senegal",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 9,
             "gd": -9,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 9,
             "ga": 1,
             "gd": 8,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 5,
             "ga": 3,
             "gd": 2,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 6,
             "ga": 6,
             "gd": 0,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 11,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 1,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 3,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 9,
             "gd": -8,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "Ghana",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "England",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 9,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ]
       },
@@ -96256,648 +82825,408 @@ window.PORRA_DATA = {
           {
             "pos": 1,
             "team": "Mexico",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Korea Republic",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Czechia",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "South Africa",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "B": [
           {
             "pos": 1,
             "team": "Switzerland",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 6,
             "ga": 0,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Canada",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 4,
             "ga": 3,
             "gd": 1,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Bosnia-Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Qatar",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 2,
             "ga": 6,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "C": [
           {
             "pos": 1,
             "team": "Brazil",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Morocco",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 8,
             "ga": 3,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Scotland",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 4,
             "ga": 5,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Haiti",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 10,
             "gd": -10,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "D": [
           {
             "pos": 1,
             "team": "Türkiye",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "USA",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 4,
-            "rank": 2
+            "pts": 4
           },
           {
             "pos": 3,
             "team": "Australia",
-            "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
             "gf": 4,
             "ga": 4,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Paraguay",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ],
         "E": [
           {
             "pos": 1,
             "team": "Germany",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Ecuador",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Côte d'Ivoire",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 7,
             "ga": 5,
             "gd": 2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Curaçao",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 12,
             "gd": -12,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "F": [
           {
             "pos": 1,
             "team": "Japan",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 3,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Netherlands",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 7,
             "ga": 4,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 5,
             "gd": -2,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Tunisia",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 3,
             "ga": 8,
             "gd": -5,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "G": [
           {
             "pos": 1,
             "team": "Belgium",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "IR Iran",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 5,
             "ga": 2,
             "gd": 3,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Egypt",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 4,
             "gd": -1,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "New Zealand",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 1,
             "ga": 7,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "H": [
           {
             "pos": 1,
             "team": "Spain",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 1,
             "gd": 7,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Uruguay",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 3,
             "gd": 3,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Cabo Verde",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "I": [
           {
             "pos": 1,
             "team": "France",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 8,
             "ga": 2,
             "gd": 6,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Senegal",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Norway",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 5,
             "ga": 5,
             "gd": 0,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "Iraq",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 2,
             "ga": 8,
             "gd": -6,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "J": [
           {
             "pos": 1,
             "team": "Argentina",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 2,
             "gd": 4,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Algeria",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
             "gf": 3,
             "ga": 1,
             "gd": 2,
-            "pts": 5,
-            "rank": 2
+            "pts": 5
           },
           {
             "pos": 3,
             "team": "Austria",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "gf": 3,
             "ga": 2,
             "gd": 1,
-            "pts": 4,
-            "rank": 3
+            "pts": 4
           },
           {
             "pos": 4,
             "team": "Jordan",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "K": [
           {
             "pos": 1,
             "team": "Portugal",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 1
+            "pts": 7
           },
           {
             "pos": 2,
             "team": "Colombia",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
             "gf": 6,
             "ga": 1,
             "gd": 5,
-            "pts": 7,
-            "rank": 2
+            "pts": 7
           },
           {
             "pos": 3,
             "team": "Uzbekistan",
-            "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
             "gf": 2,
             "ga": 5,
             "gd": -3,
-            "pts": 3,
-            "rank": 3
+            "pts": 3
           },
           {
             "pos": 4,
             "team": "DR Congo",
-            "played": 3,
-            "wins": 0,
-            "draws": 0,
-            "losses": 3,
             "gf": 0,
             "ga": 7,
             "gd": -7,
-            "pts": 0,
-            "rank": 4
+            "pts": 0
           }
         ],
         "L": [
           {
             "pos": 1,
             "team": "England",
-            "played": 3,
-            "wins": 3,
-            "draws": 0,
-            "losses": 0,
             "gf": 7,
             "ga": 2,
             "gd": 5,
-            "pts": 9,
-            "rank": 1
+            "pts": 9
           },
           {
             "pos": 2,
             "team": "Croatia",
-            "played": 3,
-            "wins": 2,
-            "draws": 0,
-            "losses": 1,
             "gf": 6,
             "ga": 4,
             "gd": 2,
-            "pts": 6,
-            "rank": 2
+            "pts": 6
           },
           {
             "pos": 3,
             "team": "Ghana",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 3,
             "ga": 6,
             "gd": -3,
-            "pts": 1,
-            "rank": 3
+            "pts": 1
           },
           {
             "pos": 4,
             "team": "Panama",
-            "played": 3,
-            "wins": 0,
-            "draws": 1,
-            "losses": 2,
             "gf": 4,
             "ga": 8,
             "gd": -4,
-            "pts": 1,
-            "rank": 4
+            "pts": 1
           }
         ]
       },
