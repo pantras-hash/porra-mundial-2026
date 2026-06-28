@@ -147,7 +147,7 @@ window.PORRA_RESULTATS = {
     // 2026-06-27 · Argentina vs Jordan
     "G-J-5": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 71, status: "FINISHED" },
     // 2026-06-27 · Algeria vs Austria
-    "G-J-6": { homeScore: 3, awayScore: 3, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "IN_PLAY" }
+    "G-J-6": { homeScore: 3, awayScore: 3, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "FINISHED" }
   },
   final: { topScorer: null, topScorerGoals: null },
   groupRankingOverrides: {}
