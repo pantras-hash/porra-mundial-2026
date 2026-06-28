@@ -148,69 +148,69 @@ window.PORRA_RESULTATS = {
     "G-J-5": { homeScore: 3, awayScore: 1, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 71, status: "FINISHED" },
     // 2026-06-27 · Algeria vs Austria
     "G-J-6": { homeScore: 3, awayScore: 3, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "FINISHED" },
-    // 2026-06-28 · South Africa vs Canada,
+    // 2026-06-28 · 2A vs 2B
     "M73": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-28", sortOrder: 73, status: "TIMED" },
-    // 2026-06-29 · Brazil vs Japan,
-    "M76": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 74, status: "TIMED" },
-    // 2026-06-29 · Germany vs Paraguay,
-    "M74": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 75, status: "TIMED" },
-    // 2026-06-29 · Netherlands vs Morocco,
-    "M75": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 76, status: "TIMED" },
-    // 2026-06-30 · Côte d'Ivoire vs Norway,
-    "M78": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 77, status: "TIMED" },
-    // 2026-06-30 · France vs Sweden,
-    "M77": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 78, status: "TIMED" },
-    // 2026-06-30 · Mexico vs Ecuador,
+    // 2026-06-29 · 1E vs third:1E
+    "M74": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 74, status: "TIMED" },
+    // 2026-06-29 · 1F vs 2C
+    "M75": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 75, status: "TIMED" },
+    // 2026-06-29 · 1C vs 2F
+    "M76": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 76, status: "TIMED" },
+    // 2026-06-30 · 1I vs third:1I
+    "M77": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 77, status: "TIMED" },
+    // 2026-06-30 · 2E vs 2I
+    "M78": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 78, status: "TIMED" },
+    // 2026-06-30 · 1A vs third:1A
     "M79": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 79, status: "TIMED" },
-    // 2026-07-01 · England vs DR Congo,
+    // 2026-07-01 · 1L vs third:1L
     "M80": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 80, status: "TIMED" },
-    // 2026-07-01 · Belgium vs Senegal,
-    "M82": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 81, status: "TIMED" },
-    // 2026-07-01 · USA vs Bosnia-Herzegovina,
-    "M81": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 82, status: "TIMED" },
-    // 2026-07-02 · Spain vs Austria,
-    "M84": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 83, status: "TIMED" },
-    // 2026-07-02 · Portugal vs Croatia,
-    "M83": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "TIMED" },
-    // 2026-07-02 · Switzerland vs Algeria,
+    // 2026-07-01 · 1D vs third:1D
+    "M81": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 81, status: "TIMED" },
+    // 2026-07-01 · 1G vs third:1G
+    "M82": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 82, status: "TIMED" },
+    // 2026-07-02 · 2K vs 2L
+    "M83": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 83, status: "TIMED" },
+    // 2026-07-02 · 1H vs 2J
+    "M84": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "TIMED" },
+    // 2026-07-02 · 1B vs third:1B
     "M85": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 85, status: "TIMED" },
-    // 2026-07-03 · Australia vs Egypt,
-    "M88": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 86, status: "TIMED" },
-    // 2026-07-03 · Argentina vs Cabo Verde,
-    "M86": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 87, status: "TIMED" },
-    // 2026-07-03 · Colombia vs Ghana,
-    "M87": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 88, status: "TIMED" },
-    // 2026-07-04 · W73 vs W75,
-    "M90": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 89, status: "TIMED" },
-    // 2026-07-04 · W74 vs W77,
-    "M89": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 90, status: "TIMED" },
-    // 2026-07-05 · W76 vs W78,
+    // 2026-07-03 · 1J vs 2H
+    "M86": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 86, status: "TIMED" },
+    // 2026-07-03 · 1K vs third:1K
+    "M87": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 87, status: "TIMED" },
+    // 2026-07-03 · 2D vs 2G
+    "M88": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 88, status: "TIMED" },
+    // 2026-07-04 · W74 vs W77
+    "M89": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 89, status: "TIMED" },
+    // 2026-07-04 · W73 vs W75
+    "M90": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 90, status: "TIMED" },
+    // 2026-07-05 · W76 vs W78
     "M91": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 91, status: "TIMED" },
-    // 2026-07-05 · W79 vs W80,
+    // 2026-07-05 · W79 vs W80
     "M92": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 92, status: "TIMED" },
-    // 2026-07-06 · W83 vs W84,
+    // 2026-07-06 · W83 vs W84
     "M93": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-06", sortOrder: 93, status: "TIMED" },
-    // 2026-07-06 · W81 vs W82,
+    // 2026-07-06 · W81 vs W82
     "M94": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-06", sortOrder: 94, status: "TIMED" },
-    // 2026-07-07 · W86 vs W88,
+    // 2026-07-07 · W86 vs W88
     "M95": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-07", sortOrder: 95, status: "TIMED" },
-    // 2026-07-07 · W85 vs W87,
+    // 2026-07-07 · W85 vs W87
     "M96": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-07", sortOrder: 96, status: "TIMED" },
-    // 2026-07-09 · W89 vs W90,
+    // 2026-07-09 · W89 vs W90
     "M97": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-09", sortOrder: 97, status: "TIMED" },
-    // 2026-07-10 · W93 vs W94,
+    // 2026-07-10 · W93 vs W94
     "M98": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-10", sortOrder: 98, status: "TIMED" },
-    // 2026-07-11 · W91 vs W92,
+    // 2026-07-11 · W91 vs W92
     "M99": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-11", sortOrder: 99, status: "TIMED" },
-    // 2026-07-11 · W95 vs W96,
+    // 2026-07-11 · W95 vs W96
     "M100": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-11", sortOrder: 100, status: "TIMED" },
-    // 2026-07-14 · W97 vs W98,
+    // 2026-07-14 · W97 vs W98
     "M101": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-14", sortOrder: 101, status: "TIMED" },
-    // 2026-07-15 · W99 vs W100,
+    // 2026-07-15 · W99 vs W100
     "M102": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-15", sortOrder: 102, status: "TIMED" },
-    // 2026-07-18 · L101 vs L102,
+    // 2026-07-18 · L101 vs L102
     "M103": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-18", sortOrder: 103, status: "TIMED" },
-    // 2026-07-19 · W101 vs W102,
+    // 2026-07-19 · W101 vs W102
     "M104": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-19", sortOrder: 104, status: "TIMED" }
   },
   final: { topScorer: null, topScorerGoals: null },
