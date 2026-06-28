@@ -1,16 +1,17 @@
 {
-  "asOf": "27 Jun 2026, after Group G completed (66 matches played; Belgium group finished)",
-  "source": "Manual update from confirmed scorer reports through Group G completion: Spain 1-0 Uruguay; Cabo Verde 0-0 Saudi Arabia; Belgium 5-1 New Zealand; Egypt 1-1 IR Iran.",
+  "asOf": "28 Jun 2026, after Group J completed (72 matches played; Argentina 3-1 Jordan; Algeria 3-3 Austria)",
+  "source": "Manual update from confirmed scorer reports through Group J completion: Jordan 1-3 Argentina; Algeria 3-3 Austria. Messi updated to 6 goals.",
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation.",
   "players": [
     {
       "name": "Lionel Messi",
       "team": "Argentina",
-      "goals": 5,
+      "goals": 6,
       "aliases": [
         "Lionel Messi",
         "Messi"
-      ]
+      ],
+      "source": "Jordan 1-3 Argentina, G-J-5: +1"
     },
     {
       "name": "Erling Haaland",
@@ -31,6 +32,18 @@
         "Mbappe",
         "Mbappé"
       ]
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "goals": 4,
+      "aliases": [
+        "Dembele",
+        "Dembélé",
+        "Ousmane Dembele",
+        "Ousmane Dembélé"
+      ],
+      "source": "Norway 1-4 France, M61: +3"
     },
     {
       "name": "Vinícius Júnior",
@@ -68,6 +81,16 @@
       ]
     },
     {
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 3,
+      "aliases": [
+        "Elijah Just",
+        "Just"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
       "name": "Ismael Saibari",
       "team": "Morocco",
       "goals": 3,
@@ -76,6 +99,17 @@
         "Saibari"
       ],
       "source": "Morocco 4-2 Haiti, M50: +1"
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "goals": 3,
+      "aliases": [
+        "Ismaila Sarr",
+        "Ismaïla Sarr",
+        "Sarr"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
     },
     {
       "name": "Johan Manzambi",
@@ -178,16 +212,6 @@
       ]
     },
     {
-      "name": "Elijah Just",
-      "team": "New Zealand",
-      "goals": 3,
-      "aliases": [
-        "Elijah Just",
-        "Just"
-      ],
-      "source": "Belgium 5-1 New Zealand, M65: +1"
-    },
-    {
       "name": "Ermin Mahmić",
       "team": "Bosnia-Herzegovina",
       "goals": 2,
@@ -217,17 +241,6 @@
       ]
     },
     {
-      "name": "Ismaïla Sarr",
-      "team": "Senegal",
-      "goals": 3,
-      "aliases": [
-        "Ismaila Sarr",
-        "Ismaïla Sarr",
-        "Sarr"
-      ],
-      "source": "Senegal 5-0 Iraq, M62: +1"
-    },
-    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "goals": 2,
@@ -247,6 +260,28 @@
         "Havertz",
         "Kai Havertz"
       ]
+    },
+    {
+      "name": "Leandro Trossard",
+      "team": "Belgium",
+      "goals": 2,
+      "aliases": [
+        "Leandro Trossard",
+        "Trossard"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +2"
+    },
+    {
+      "name": "Marko Arnautović",
+      "team": "Austria",
+      "goals": 2,
+      "aliases": [
+        "Marko Arnautovic",
+        "Arnautovic",
+        "Arnautović",
+        "Marko Arnautović"
+      ],
+      "source": "Algeria 3-3 Austria, G-J-6: +1"
     },
     {
       "name": "Maxi Araújo",
@@ -279,6 +314,38 @@
         "Pépé"
       ],
       "source": "Curaçao 0-2 Côte d'Ivoire, M56: +2"
+    },
+    {
+      "name": "Pape Gueye",
+      "team": "Senegal",
+      "goals": 2,
+      "aliases": [
+        "Gueye",
+        "P. Gueye",
+        "Pape Gueye"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +2"
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "team": "IR Iran",
+      "goals": 2,
+      "aliases": [
+        "Ramid Rezaeian",
+        "Ramin Rezaeian",
+        "Rezaeian"
+      ],
+      "source": "Egypt 1-1 IR Iran, M66: +1"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "team": "Algeria",
+      "goals": 2,
+      "aliases": [
+        "Riyad Mahrez",
+        "Mahrez"
+      ],
+      "source": "Algeria 3-3 Austria, G-J-6: +2"
     },
     {
       "name": "Ruben Vargas",
@@ -351,6 +418,16 @@
       "aliases": [
         "Isak"
       ]
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "Alexis Saelemaekers",
+        "Saelemaekers"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
     },
     {
       "name": "Ali Iyad Olwan",
@@ -480,6 +557,18 @@
       "source": "Japan 1-1 Sweden, M58: +1"
     },
     {
+      "name": "Désiré Doué",
+      "team": "France",
+      "goals": 1,
+      "aliases": [
+        "Desire Doue",
+        "Doue",
+        "Doué",
+        "Désiré Doué"
+      ],
+      "source": "Norway 1-4 France, M61: +1"
+    },
+    {
       "name": "Emam Ashour",
       "team": "Egypt",
       "goals": 1,
@@ -535,6 +624,16 @@
       ]
     },
     {
+      "name": "Giovani Lo Celso",
+      "team": "Argentina",
+      "goals": 1,
+      "aliases": [
+        "Giovani Lo Celso",
+        "Lo Celso"
+      ],
+      "source": "Jordan 1-3 Argentina, G-J-5: +1"
+    },
+    {
       "name": "Gonzalo Plata",
       "team": "Ecuador",
       "goals": 1,
@@ -551,6 +650,16 @@
       "aliases": [
         "Xhaka"
       ]
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "Senegal",
+      "goals": 1,
+      "aliases": [
+        "Diarra",
+        "Habib Diarra"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
     },
     {
       "name": "Hassan Al-Haydos",
@@ -599,6 +708,16 @@
       "aliases": [
         "Mbaye"
       ]
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "team": "Senegal",
+      "goals": 1,
+      "aliases": [
+        "Iliman Ndiaye",
+        "Ndiaye"
+      ],
+      "source": "Senegal 5-0 Iraq, M62: +1"
     },
     {
       "name": "Jamal Musiala",
@@ -704,6 +823,17 @@
       "source": "Bosnia-Herzegovina 3-1 Qatar, M52: +1"
     },
     {
+      "name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "De Bruyne",
+        "KDB",
+        "Kevin De Bruyne"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
       "name": "Kevin Pina",
       "team": "Cabo Verde",
       "goals": 1,
@@ -728,6 +858,17 @@
         "Lamine Yamal",
         "Yamal"
       ]
+    },
+    {
+      "name": "Lautaro Martínez",
+      "team": "Argentina",
+      "goals": 1,
+      "aliases": [
+        "Lautaro Martinez",
+        "Lautaro Martínez",
+        "Lautaro"
+      ],
+      "source": "Jordan 1-3 Argentina, G-J-5: +1"
     },
     {
       "name": "Leo Østigård",
@@ -779,6 +920,26 @@
       ]
     },
     {
+      "name": "Mahmoud Saber",
+      "team": "Egypt",
+      "goals": 1,
+      "aliases": [
+        "Mahmoud Saber",
+        "Saber"
+      ],
+      "source": "Egypt 1-1 IR Iran, M66: +1"
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "team": "Austria",
+      "goals": 1,
+      "aliases": [
+        "Marcel Sabitzer",
+        "Sabitzer"
+      ],
+      "source": "Algeria 3-3 Austria, G-J-6: +1"
+    },
+    {
       "name": "Marcus Pedersen",
       "team": "Norway",
       "goals": 1,
@@ -793,16 +954,6 @@
       "goals": 1,
       "aliases": [
         "Rashford"
-      ]
-    },
-    {
-      "name": "Marko Arnautović",
-      "team": "Austria",
-      "goals": 1,
-      "aliases": [
-        "Marko Arnautovic",
-        "Arnautovic",
-        "Arnautović"
       ]
     },
     {
@@ -887,6 +1038,19 @@
         "Zico",
         "Ziko"
       ]
+    },
+    {
+      "name": "Musa Al-Taamari",
+      "team": "Jordan",
+      "goals": 1,
+      "aliases": [
+        "Musa Al-Taamari",
+        "Mousa Al-Taamari",
+        "Mousa Altamari",
+        "Al-Taamari",
+        "Altamari"
+      ],
+      "source": "Jordan 1-3 Argentina, G-J-5: +1"
     },
     {
       "name": "Nadhir Benbouali",
@@ -976,18 +1140,6 @@
       ]
     },
     {
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "goals": 4,
-      "aliases": [
-        "Dembele",
-        "Dembélé",
-        "Ousmane Dembele",
-        "Ousmane Dembélé"
-      ],
-      "source": "Norway 1-4 France, M61: +3"
-    },
-    {
       "name": "Petar Musa",
       "team": "Croatia",
       "goals": 1,
@@ -1016,15 +1168,14 @@
       ]
     },
     {
-      "name": "Ramin Rezaeian",
-      "team": "IR Iran",
-      "goals": 2,
+      "name": "Rafik Belghali",
+      "team": "Algeria",
+      "goals": 1,
       "aliases": [
-        "Ramid Rezaeian",
-        "Ramin Rezaeian",
-        "Rezaeian"
+        "Rafik Belghali",
+        "Belghali"
       ],
-      "source": "Egypt 1-1 IR Iran, M66: +1"
+      "source": "Algeria 3-3 Austria, G-J-6: +1"
     },
     {
       "name": "Raúl Jiménez",
@@ -1042,6 +1193,28 @@
       "aliases": [
         "Schmid"
       ]
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 1,
+      "aliases": [
+        "Lukaku",
+        "Romelu Lukaku"
+      ],
+      "source": "Belgium 5-1 New Zealand, M65: +1"
+    },
+    {
+      "name": "Saša Kalajdžić",
+      "team": "Austria",
+      "goals": 1,
+      "aliases": [
+        "Sasa Kalajdzic",
+        "Saša Kalajdžić",
+        "Kalajdzic",
+        "Kalajdžić"
+      ],
+      "source": "Algeria 3-3 Austria, G-J-6: +1"
     },
     {
       "name": "Sebastian Berhalter",
@@ -1072,6 +1245,18 @@
         "Thapelo Maseko"
       ],
       "source": "South Africa 1-0 Korea Republic, M54: +1"
+    },
+    {
+      "name": "Thelo Aasgaard",
+      "team": "Norway",
+      "goals": 1,
+      "aliases": [
+        "Aasgaard",
+        "Thelo Aasgaard",
+        "Thelo Åsgård",
+        "Åsgård"
+      ],
+      "source": "Norway 1-4 France, M61: +1"
     },
     {
       "name": "Trézéguet",
@@ -1118,6 +1303,17 @@
       "aliases": [
         "Wissa"
       ]
+    },
+    {
+      "name": "Álex Baena",
+      "team": "Spain",
+      "goals": 1,
+      "aliases": [
+        "Alex Baena",
+        "Baena",
+        "Álex Baena"
+      ],
+      "source": "Spain 1-0 Uruguay, M63: +1"
     },
     {
       "name": "Álvaro Fidalgo",
@@ -1174,123 +1370,6 @@
       "aliases": [
         "Raphinha"
       ]
-    },
-    {
-      "name": "Thelo Aasgaard",
-      "team": "Norway",
-      "goals": 1,
-      "aliases": [
-        "Aasgaard",
-        "Thelo Aasgaard",
-        "Thelo Åsgård",
-        "Åsgård"
-      ],
-      "source": "Norway 1-4 France, M61: +1"
-    },
-    {
-      "name": "Désiré Doué",
-      "team": "France",
-      "goals": 1,
-      "aliases": [
-        "Desire Doue",
-        "Doue",
-        "Doué",
-        "Désiré Doué"
-      ],
-      "source": "Norway 1-4 France, M61: +1"
-    },
-    {
-      "name": "Habib Diarra",
-      "team": "Senegal",
-      "goals": 1,
-      "aliases": [
-        "Diarra",
-        "Habib Diarra"
-      ],
-      "source": "Senegal 5-0 Iraq, M62: +1"
-    },
-    {
-      "name": "Pape Gueye",
-      "team": "Senegal",
-      "goals": 2,
-      "aliases": [
-        "Gueye",
-        "P. Gueye",
-        "Pape Gueye"
-      ],
-      "source": "Senegal 5-0 Iraq, M62: +2"
-    },
-    {
-      "name": "Iliman Ndiaye",
-      "team": "Senegal",
-      "goals": 1,
-      "aliases": [
-        "Iliman Ndiaye",
-        "Ndiaye"
-      ],
-      "source": "Senegal 5-0 Iraq, M62: +1"
-    },
-    {
-      "name": "Álex Baena",
-      "team": "Spain",
-      "goals": 1,
-      "aliases": [
-        "Alex Baena",
-        "Baena",
-        "Álex Baena"
-      ],
-      "source": "Spain 1-0 Uruguay, M63: +1"
-    },
-    {
-      "name": "Leandro Trossard",
-      "team": "Belgium",
-      "goals": 2,
-      "aliases": [
-        "Leandro Trossard",
-        "Trossard"
-      ],
-      "source": "Belgium 5-1 New Zealand, M65: +2"
-    },
-    {
-      "name": "Kevin De Bruyne",
-      "team": "Belgium",
-      "goals": 1,
-      "aliases": [
-        "De Bruyne",
-        "KDB",
-        "Kevin De Bruyne"
-      ],
-      "source": "Belgium 5-1 New Zealand, M65: +1"
-    },
-    {
-      "name": "Romelu Lukaku",
-      "team": "Belgium",
-      "goals": 1,
-      "aliases": [
-        "Lukaku",
-        "Romelu Lukaku"
-      ],
-      "source": "Belgium 5-1 New Zealand, M65: +1"
-    },
-    {
-      "name": "Alexis Saelemaekers",
-      "team": "Belgium",
-      "goals": 1,
-      "aliases": [
-        "Alexis Saelemaekers",
-        "Saelemaekers"
-      ],
-      "source": "Belgium 5-1 New Zealand, M65: +1"
-    },
-    {
-      "name": "Mahmoud Saber",
-      "team": "Egypt",
-      "goals": 1,
-      "aliases": [
-        "Mahmoud Saber",
-        "Saber"
-      ],
-      "source": "Egypt 1-1 IR Iran, M66: +1"
     }
   ],
   "predictionTeamHints": {
