@@ -25,8 +25,8 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 79.861,
       "projectedChampionWinSims": 16618,
       "rank": 1,
-      "winDeltaPp": 4.542,
-      "top3DeltaPp": 4.429,
+      "winDeltaPp": -0.2,
+      "top3DeltaPp": -0.363,
       "lastDeltaPp": 0.0,
       "rankDelta": 0
     },
@@ -51,8 +51,8 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 54.25,
       "projectedChampionWinSims": 32072,
       "rank": 2,
-      "winDeltaPp": -0.631,
-      "top3DeltaPp": -1.314,
+      "winDeltaPp": -0.536,
+      "top3DeltaPp": -0.912,
       "lastDeltaPp": 0.0,
       "rankDelta": 0,
       "aliases": [
@@ -80,9 +80,9 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 88.279,
       "projectedChampionWinSims": 16245,
       "rank": 3,
-      "winDeltaPp": 0.328,
-      "top3DeltaPp": -0.443,
-      "lastDeltaPp": -0.004,
+      "winDeltaPp": -0.19,
+      "top3DeltaPp": -0.321,
+      "lastDeltaPp": 0.0,
       "rankDelta": 0
     },
     {
@@ -106,10 +106,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 44.104,
       "projectedChampionWinSims": 28071,
       "rank": 4,
-      "winDeltaPp": 1.376,
-      "top3DeltaPp": 2.098,
+      "winDeltaPp": 0.459,
+      "top3DeltaPp": 0.479,
       "lastDeltaPp": 0.0,
-      "rankDelta": 4
+      "rankDelta": 0
     },
     {
       "player": "Oscar Campanyà",
@@ -132,10 +132,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 29.532,
       "projectedChampionWinSims": 40405,
       "rank": 5,
-      "winDeltaPp": 2.769,
-      "top3DeltaPp": 4.907,
-      "lastDeltaPp": -0.001,
-      "rankDelta": 12,
+      "winDeltaPp": -0.045,
+      "top3DeltaPp": -0.136,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 0,
       "aliases": [
         "Oscar C"
       ]
@@ -161,10 +161,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 54.238,
       "projectedChampionWinSims": 12809,
       "rank": 6,
-      "winDeltaPp": 1.728,
-      "top3DeltaPp": 3.478,
+      "winDeltaPp": -0.01,
+      "top3DeltaPp": -0.064,
       "lastDeltaPp": 0.0,
-      "rankDelta": 7
+      "rankDelta": 0
     },
     {
       "player": "Joan",
@@ -187,10 +187,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 18.716,
       "projectedChampionWinSims": 40405,
       "rank": 7,
-      "winDeltaPp": -2.631,
-      "top3DeltaPp": -4.744,
-      "lastDeltaPp": -0.007,
-      "rankDelta": -3
+      "winDeltaPp": -0.049,
+      "top3DeltaPp": -0.082,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 0
     },
     {
       "player": "Oriol Valls",
@@ -213,10 +213,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 13.339,
       "projectedChampionWinSims": 22968,
       "rank": 8,
-      "winDeltaPp": 2.589,
-      "top3DeltaPp": 8.313,
-      "lastDeltaPp": -0.001,
-      "rankDelta": 13,
+      "winDeltaPp": 0.194,
+      "top3DeltaPp": 0.614,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 2,
       "aliases": [
         "Oriol V"
       ]
@@ -242,10 +242,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 14.194,
       "projectedChampionWinSims": 22968,
       "rank": 9,
-      "winDeltaPp": 0.448,
-      "top3DeltaPp": 1.21,
+      "winDeltaPp": -0.179,
+      "top3DeltaPp": -0.463,
       "lastDeltaPp": 0.0,
-      "rankDelta": 1
+      "rankDelta": -1
     },
     {
       "player": "Oscar Bordas",
@@ -268,10 +268,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 17.507,
       "projectedChampionWinSims": 22968,
       "rank": 10,
-      "winDeltaPp": 0.516,
-      "top3DeltaPp": 3.543,
+      "winDeltaPp": 0.033,
+      "top3DeltaPp": 0.105,
       "lastDeltaPp": 0.0,
-      "rankDelta": 1,
+      "rankDelta": -1,
       "aliases": [
         "Oscar B"
       ]
@@ -297,10 +297,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 13.502,
       "projectedChampionWinSims": 22968,
       "rank": 11,
-      "winDeltaPp": 2.734,
-      "top3DeltaPp": 11.121,
+      "winDeltaPp": -0.062,
+      "top3DeltaPp": -0.007,
       "lastDeltaPp": 0.0,
-      "rankDelta": 19,
+      "rankDelta": 0,
       "aliases": [
         "Oriol O"
       ]
@@ -326,10 +326,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 6.648,
       "projectedChampionWinSims": 16618,
       "rank": 12,
-      "winDeltaPp": 0.971,
-      "top3DeltaPp": 5.409,
+      "winDeltaPp": 0.111,
+      "top3DeltaPp": -0.138,
       "lastDeltaPp": 0.0,
-      "rankDelta": 3
+      "rankDelta": 0
     },
     {
       "player": "Pol",
@@ -352,10 +352,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 13.973,
       "projectedChampionWinSims": 32072,
       "rank": 13,
-      "winDeltaPp": 1.962,
-      "top3DeltaPp": 5.758,
+      "winDeltaPp": 0.045,
+      "top3DeltaPp": -0.071,
       "lastDeltaPp": 0.0,
-      "rankDelta": 14
+      "rankDelta": 0
     },
     {
       "player": "Pau",
@@ -378,10 +378,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 10.892,
       "projectedChampionWinSims": 32072,
       "rank": 14,
-      "winDeltaPp": 1.257,
-      "top3DeltaPp": 5.309,
+      "winDeltaPp": 0.004,
+      "top3DeltaPp": 0.065,
       "lastDeltaPp": 0.0,
-      "rankDelta": 8
+      "rankDelta": 0
     },
     {
       "player": "Chús",
@@ -404,10 +404,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 8.019,
       "projectedChampionWinSims": 22968,
       "rank": 15,
-      "winDeltaPp": -1.244,
-      "top3DeltaPp": -3.91,
+      "winDeltaPp": -0.019,
+      "top3DeltaPp": -0.154,
       "lastDeltaPp": 0.0,
-      "rankDelta": -6
+      "rankDelta": 0
     },
     {
       "player": "Miquel",
@@ -430,10 +430,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 5.487,
       "projectedChampionWinSims": 22968,
       "rank": 16,
-      "winDeltaPp": -2.188,
-      "top3DeltaPp": -6.594,
+      "winDeltaPp": 0.203,
+      "top3DeltaPp": 0.73,
       "lastDeltaPp": 0.0,
-      "rankDelta": -9
+      "rankDelta": 1
     },
     {
       "player": "Bernat Orriols",
@@ -456,10 +456,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 10.411,
       "projectedChampionWinSims": 40405,
       "rank": 17,
-      "winDeltaPp": -0.365,
-      "top3DeltaPp": -0.815,
-      "lastDeltaPp": -0.009,
-      "rankDelta": -3,
+      "winDeltaPp": -0.071,
+      "top3DeltaPp": -0.084,
+      "lastDeltaPp": 0.0,
+      "rankDelta": -1,
       "aliases": [
         "Bernat O"
       ]
@@ -485,10 +485,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 3.255,
       "projectedChampionWinSims": 16618,
       "rank": 18,
-      "winDeltaPp": 0.349,
-      "top3DeltaPp": 0.371,
+      "winDeltaPp": -0.001,
+      "top3DeltaPp": -0.02,
       "lastDeltaPp": 0.0,
-      "rankDelta": 2
+      "rankDelta": 0
     },
     {
       "player": "Emiliano",
@@ -511,10 +511,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 5.316,
       "projectedChampionWinSims": 32072,
       "rank": 19,
-      "winDeltaPp": -0.93,
-      "top3DeltaPp": -4.918,
+      "winDeltaPp": -0.02,
+      "top3DeltaPp": -0.179,
       "lastDeltaPp": 0.0,
-      "rankDelta": -7
+      "rankDelta": 0
     },
     {
       "player": "Bernat Garreta",
@@ -537,10 +537,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 9.022,
       "projectedChampionWinSims": 28071,
       "rank": 20,
-      "winDeltaPp": -0.053,
-      "top3DeltaPp": -0.505,
-      "lastDeltaPp": -0.033,
-      "rankDelta": -1,
+      "winDeltaPp": 0.112,
+      "top3DeltaPp": 0.369,
+      "lastDeltaPp": -0.003,
+      "rankDelta": 0,
       "aliases": [
         "Bernat G"
       ]
@@ -566,10 +566,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 4.143,
       "projectedChampionWinSims": 22968,
       "rank": 21,
-      "winDeltaPp": 0.66,
-      "top3DeltaPp": 3.925,
-      "lastDeltaPp": -0.003,
-      "rankDelta": 14
+      "winDeltaPp": 0.032,
+      "top3DeltaPp": 0.108,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 2
     },
     {
       "player": "Bernat Raventós",
@@ -592,10 +592,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 5.342,
       "projectedChampionWinSims": 32072,
       "rank": 22,
-      "winDeltaPp": 0.122,
-      "top3DeltaPp": -1.382,
+      "winDeltaPp": -0.016,
+      "top3DeltaPp": -0.073,
       "lastDeltaPp": 0.0,
-      "rankDelta": 4,
+      "rankDelta": 0,
       "aliases": [
         "Bernat R"
       ]
@@ -621,10 +621,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.977,
       "projectedChampionWinSims": 32072,
       "rank": 23,
-      "winDeltaPp": -5.402,
-      "top3DeltaPp": -11.036,
+      "winDeltaPp": 0.001,
+      "top3DeltaPp": -0.051,
       "lastDeltaPp": 0.0,
-      "rankDelta": -18,
+      "rankDelta": 1,
       "aliases": [
         "Jordi Ra",
         "Jordi Ra."
@@ -651,10 +651,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 4.252,
       "projectedChampionWinSims": 32072,
       "rank": 24,
-      "winDeltaPp": 0.589,
-      "top3DeltaPp": 2.646,
-      "lastDeltaPp": -0.001,
-      "rankDelta": 15
+      "winDeltaPp": 0.052,
+      "top3DeltaPp": 0.013,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 2
     },
     {
       "player": "Jordi Ollé",
@@ -677,10 +677,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 4.061,
       "projectedChampionWinSims": 22968,
       "rank": 25,
-      "winDeltaPp": 0.322,
-      "top3DeltaPp": 1.794,
+      "winDeltaPp": -0.152,
+      "top3DeltaPp": -0.436,
       "lastDeltaPp": 0.0,
-      "rankDelta": 6,
+      "rankDelta": -4,
       "aliases": [
         "Jordi O"
       ]
@@ -706,10 +706,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 8.194,
       "projectedChampionWinSims": 21405,
       "rank": 26,
-      "winDeltaPp": -4.792,
-      "top3DeltaPp": -9.581,
-      "lastDeltaPp": 0.13,
-      "rankDelta": -20
+      "winDeltaPp": -0.005,
+      "top3DeltaPp": -0.007,
+      "lastDeltaPp": 0.026,
+      "rankDelta": -1
     },
     {
       "player": "Rafa Angulo",
@@ -732,10 +732,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 3.398,
       "projectedChampionWinSims": 22968,
       "rank": 27,
-      "winDeltaPp": 0.339,
-      "top3DeltaPp": 1.338,
-      "lastDeltaPp": -0.055,
-      "rankDelta": 9,
+      "winDeltaPp": -0.008,
+      "top3DeltaPp": -0.07,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 0,
       "aliases": [
         "Rafa A"
       ]
@@ -761,10 +761,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 2.765,
       "projectedChampionWinSims": 22968,
       "rank": 28,
-      "winDeltaPp": -0.313,
-      "top3DeltaPp": -0.939,
-      "lastDeltaPp": -0.044,
-      "rankDelta": -5,
+      "winDeltaPp": 0.097,
+      "top3DeltaPp": 0.34,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 1,
       "aliases": [
         "Guille A"
       ]
@@ -790,10 +790,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 1.839,
       "projectedChampionWinSims": 22968,
       "rank": 29,
-      "winDeltaPp": 0.299,
-      "top3DeltaPp": 1.908,
-      "lastDeltaPp": -0.028,
-      "rankDelta": 11,
+      "winDeltaPp": 0.024,
+      "top3DeltaPp": 0.147,
+      "lastDeltaPp": 0.0,
+      "rankDelta": -1,
       "aliases": [
         "Jordi Re",
         "Jordi Re."
@@ -820,10 +820,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 1.587,
       "projectedChampionWinSims": 22968,
       "rank": 30,
-      "winDeltaPp": 0.175,
-      "top3DeltaPp": 1.318,
-      "lastDeltaPp": -0.003,
-      "rankDelta": 8,
+      "winDeltaPp": 0.166,
+      "top3DeltaPp": 0.603,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 3,
       "aliases": [
         "David M"
       ]
@@ -849,10 +849,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 2.22,
       "projectedChampionWinSims": 22968,
       "rank": 31,
-      "winDeltaPp": -0.09,
-      "top3DeltaPp": -0.463,
-      "lastDeltaPp": -0.012,
-      "rankDelta": 1
+      "winDeltaPp": -0.008,
+      "top3DeltaPp": -0.007,
+      "lastDeltaPp": 0.001,
+      "rankDelta": -1
     },
     {
       "player": "Paco",
@@ -875,10 +875,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 2.261,
       "projectedChampionWinSims": 40405,
       "rank": 32,
-      "winDeltaPp": 0.233,
-      "top3DeltaPp": 0.563,
-      "lastDeltaPp": -2.48,
-      "rankDelta": 10
+      "winDeltaPp": 0.009,
+      "top3DeltaPp": 0.033,
+      "lastDeltaPp": 0.005,
+      "rankDelta": -1
     },
     {
       "player": "Jaume Cardús",
@@ -901,10 +901,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 2.724,
       "projectedChampionWinSims": 21405,
       "rank": 33,
-      "winDeltaPp": -0.59,
-      "top3DeltaPp": -2.003,
-      "lastDeltaPp": -0.001,
-      "rankDelta": -9,
+      "winDeltaPp": -0.001,
+      "top3DeltaPp": -0.018,
+      "lastDeltaPp": 0.0,
+      "rankDelta": -1,
       "aliases": [
         "Jaume C"
       ]
@@ -930,10 +930,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.767,
       "projectedChampionWinSims": 22968,
       "rank": 34,
-      "winDeltaPp": -1.652,
-      "top3DeltaPp": -6.454,
+      "winDeltaPp": 0.003,
+      "top3DeltaPp": 0.019,
       "lastDeltaPp": 0.0,
-      "rankDelta": -18,
+      "rankDelta": 0,
       "aliases": [
         "Sergi S"
       ]
@@ -959,10 +959,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.578,
       "projectedChampionWinSims": 22968,
       "rank": 35,
-      "winDeltaPp": -0.402,
-      "top3DeltaPp": -1.959,
+      "winDeltaPp": 0.004,
+      "top3DeltaPp": -0.024,
       "lastDeltaPp": 0.0,
-      "rankDelta": -7
+      "rankDelta": 0
     },
     {
       "player": "Norber",
@@ -985,10 +985,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.45,
       "projectedChampionWinSims": 22968,
       "rank": 36,
-      "winDeltaPp": 0.043,
-      "top3DeltaPp": 0.136,
-      "lastDeltaPp": -0.454,
-      "rankDelta": 7
+      "winDeltaPp": 0.027,
+      "top3DeltaPp": 0.072,
+      "lastDeltaPp": 0.001,
+      "rankDelta": 2
     },
     {
       "player": "Marc",
@@ -1011,10 +1011,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 1.041,
       "projectedChampionWinSims": 22968,
       "rank": 37,
-      "winDeltaPp": -1.099,
-      "top3DeltaPp": -4.267,
+      "winDeltaPp": -0.003,
+      "top3DeltaPp": -0.028,
       "lastDeltaPp": 0.0,
-      "rankDelta": -19
+      "rankDelta": -1
     },
     {
       "player": "Manu GS",
@@ -1037,10 +1037,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.32,
       "projectedChampionWinSims": 22968,
       "rank": 38,
-      "winDeltaPp": -0.165,
-      "top3DeltaPp": -0.656,
-      "lastDeltaPp": -0.032,
-      "rankDelta": -4,
+      "winDeltaPp": 0.008,
+      "top3DeltaPp": 0.029,
+      "lastDeltaPp": -0.001,
+      "rankDelta": 1,
       "aliases": [
         "Manu G"
       ]
@@ -1066,10 +1066,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.414,
       "projectedChampionWinSims": 22968,
       "rank": 39,
-      "winDeltaPp": -0.222,
-      "top3DeltaPp": -0.817,
-      "lastDeltaPp": -0.003,
-      "rankDelta": -6,
+      "winDeltaPp": -0.024,
+      "top3DeltaPp": -0.051,
+      "lastDeltaPp": 0.0,
+      "rankDelta": -2,
       "aliases": [
         "Xavi F"
       ]
@@ -1095,10 +1095,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.17,
       "projectedChampionWinSims": 40405,
       "rank": 40,
-      "winDeltaPp": -0.724,
-      "top3DeltaPp": -2.738,
-      "lastDeltaPp": 0.884,
-      "rankDelta": -15
+      "winDeltaPp": 0.005,
+      "top3DeltaPp": 0.004,
+      "lastDeltaPp": 0.08,
+      "rankDelta": 0
     },
     {
       "player": "Toni Campanyà",
@@ -1121,10 +1121,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.049,
       "projectedChampionWinSims": 21405,
       "rank": 41,
-      "winDeltaPp": -0.006,
-      "top3DeltaPp": -0.02,
-      "lastDeltaPp": -1.193,
-      "rankDelta": 5,
+      "winDeltaPp": 0.001,
+      "top3DeltaPp": 0.011,
+      "lastDeltaPp": 0.008,
+      "rankDelta": 1,
       "aliases": [
         "Toni C"
       ]
@@ -1150,10 +1150,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.109,
       "projectedChampionWinSims": 32072,
       "rank": 42,
-      "winDeltaPp": -0.014,
-      "top3DeltaPp": -0.133,
-      "lastDeltaPp": -5.103,
-      "rankDelta": 3,
+      "winDeltaPp": 0.0,
+      "top3DeltaPp": -0.004,
+      "lastDeltaPp": 0.335,
+      "rankDelta": -1,
       "aliases": [
         "Jordi C"
       ]
@@ -1179,10 +1179,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.056,
       "projectedChampionWinSims": 32072,
       "rank": 43,
-      "winDeltaPp": 0.008,
-      "top3DeltaPp": 0.156,
-      "lastDeltaPp": -17.944,
-      "rankDelta": 5,
+      "winDeltaPp": 0.004,
+      "top3DeltaPp": 0.028,
+      "lastDeltaPp": -0.064,
+      "rankDelta": 1,
       "aliases": [
         "Eduard V"
       ]
@@ -1208,10 +1208,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.126,
       "projectedChampionWinSims": 32072,
       "rank": 44,
-      "winDeltaPp": 0.008,
-      "top3DeltaPp": 0.004,
-      "lastDeltaPp": -5.616,
-      "rankDelta": 5,
+      "winDeltaPp": 0.001,
+      "top3DeltaPp": 0.0,
+      "lastDeltaPp": 0.245,
+      "rankDelta": -1,
       "aliases": [
         "Manel P"
       ]
@@ -1237,10 +1237,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.061,
       "projectedChampionWinSims": 22968,
       "rank": 45,
-      "winDeltaPp": -0.082,
-      "top3DeltaPp": -0.65,
+      "winDeltaPp": 0.003,
+      "top3DeltaPp": -0.004,
       "lastDeltaPp": -0.002,
-      "rankDelta": -4
+      "rankDelta": 0
     },
     {
       "player": "Albert Benach",
@@ -1263,10 +1263,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.0,
       "projectedChampionWinSims": 16618,
       "rank": 46,
-      "winDeltaPp": 0.002,
-      "top3DeltaPp": -0.004,
-      "lastDeltaPp": -11.235,
-      "rankDelta": 8,
+      "winDeltaPp": 0.0,
+      "top3DeltaPp": 0.0,
+      "lastDeltaPp": 0.041,
+      "rankDelta": 2,
       "aliases": [
         "Albert B"
       ]
@@ -1292,10 +1292,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.002,
       "projectedChampionWinSims": 22968,
       "rank": 47,
-      "winDeltaPp": -0.0,
-      "top3DeltaPp": -0.008,
-      "lastDeltaPp": -1.204,
-      "rankDelta": 6
+      "winDeltaPp": -0.001,
+      "top3DeltaPp": -0.001,
+      "lastDeltaPp": 0.068,
+      "rankDelta": 2
     },
     {
       "player": "Albert Cosí",
@@ -1318,10 +1318,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.005,
       "projectedChampionWinSims": 40405,
       "rank": 48,
-      "winDeltaPp": -0.189,
-      "top3DeltaPp": -0.553,
-      "lastDeltaPp": 36.514,
-      "rankDelta": -11,
+      "winDeltaPp": 0.001,
+      "top3DeltaPp": 0.002,
+      "lastDeltaPp": -0.48,
+      "rankDelta": 5,
       "aliases": [
         "Albert C"
       ]
@@ -1348,9 +1348,9 @@ window.PORRA_ODDS_FIFA = {
       "projectedChampionWinSims": 32072,
       "rank": 49,
       "winDeltaPp": 0.001,
-      "top3DeltaPp": 0.002,
-      "lastDeltaPp": -1.034,
-      "rankDelta": 8
+      "top3DeltaPp": -0.002,
+      "lastDeltaPp": 0.033,
+      "rankDelta": 2
     },
     {
       "player": "Biel",
@@ -1373,10 +1373,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.003,
       "projectedChampionWinSims": 32072,
       "rank": 50,
-      "winDeltaPp": -0.524,
-      "top3DeltaPp": -2.281,
-      "lastDeltaPp": 9.378,
-      "rankDelta": -21
+      "winDeltaPp": 0.0,
+      "top3DeltaPp": 0.0,
+      "lastDeltaPp": 0.309,
+      "rankDelta": 5
     },
     {
       "player": "Guillem Ochoa",
@@ -1399,10 +1399,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.004,
       "projectedChampionWinSims": 22968,
       "rank": 51,
-      "winDeltaPp": -0.005,
-      "top3DeltaPp": -0.048,
-      "lastDeltaPp": -0.271,
-      "rankDelta": -1,
+      "winDeltaPp": 0.0,
+      "top3DeltaPp": -0.002,
+      "lastDeltaPp": 0.0,
+      "rankDelta": 1,
       "aliases": [
         "Guillem O"
       ]
@@ -1429,9 +1429,9 @@ window.PORRA_ODDS_FIFA = {
       "projectedChampionWinSims": 22968,
       "rank": 52,
       "winDeltaPp": -0.002,
-      "top3DeltaPp": -0.022,
-      "lastDeltaPp": -0.105,
-      "rankDelta": 0
+      "top3DeltaPp": -0.005,
+      "lastDeltaPp": -0.001,
+      "rankDelta": -5
     },
     {
       "player": "Albert Esteve",
@@ -1454,10 +1454,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.0,
       "projectedChampionWinSims": 16618,
       "rank": 53,
-      "winDeltaPp": -0.007,
-      "top3DeltaPp": -0.045,
-      "lastDeltaPp": -3.945,
-      "rankDelta": -6,
+      "winDeltaPp": -0.001,
+      "top3DeltaPp": -0.002,
+      "lastDeltaPp": 0.018,
+      "rankDelta": -3,
       "aliases": [
         "Albert E"
       ]
@@ -1484,9 +1484,9 @@ window.PORRA_ODDS_FIFA = {
       "projectedChampionWinSims": 32072,
       "rank": 54,
       "winDeltaPp": 0.0,
-      "top3DeltaPp": -0.002,
-      "lastDeltaPp": -1.244,
-      "rankDelta": 1
+      "top3DeltaPp": 0.0,
+      "lastDeltaPp": 0.027,
+      "rankDelta": 0
     },
     {
       "player": "Eduardo Morales",
@@ -1510,8 +1510,8 @@ window.PORRA_ODDS_FIFA = {
       "projectedChampionWinSims": 16618,
       "rank": 55,
       "winDeltaPp": 0.0,
-      "top3DeltaPp": -0.1,
-      "lastDeltaPp": -0.273,
+      "top3DeltaPp": 0.009,
+      "lastDeltaPp": 0.004,
       "rankDelta": 1,
       "aliases": [
         "Eduardo M"
@@ -1538,10 +1538,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.0,
       "projectedChampionWinSims": 16245,
       "rank": 56,
-      "winDeltaPp": -0.042,
-      "top3DeltaPp": -0.285,
-      "lastDeltaPp": 5.611,
-      "rankDelta": -12,
+      "winDeltaPp": -0.002,
+      "top3DeltaPp": 0.002,
+      "lastDeltaPp": -0.645,
+      "rankDelta": -10,
       "aliases": [
         "Enrique M"
       ]
@@ -1567,10 +1567,10 @@ window.PORRA_ODDS_FIFA = {
       "conditionalChampionWinPct": 0.0,
       "projectedChampionWinSims": 16618,
       "rank": 57,
-      "winDeltaPp": -0.005,
-      "top3DeltaPp": -0.048,
-      "lastDeltaPp": -0.176,
-      "rankDelta": -6,
+      "winDeltaPp": 0.0,
+      "top3DeltaPp": 0.0,
+      "lastDeltaPp": -0.007,
+      "rankDelta": 0,
       "aliases": [
         "Jaume M"
       ]
@@ -2781,7 +2781,14 @@ window.PORRA_ODDS_FIFA = {
     "strengthModel": "FIFA-ranking/Elo-style internal ratings",
     "scoreModel": "empirical_recent_weighted_world_cup_scorelines",
     "resultState": "After M73 South Africa 0-1 Canada"
-  }
+  },
+  "deltaBaseline": "Before South Africa 0-1 Canada / M73, using the FIFA simulation in the latest uploaded zip",
+  "deltaFields": [
+    "winDeltaPp",
+    "top3DeltaPp",
+    "lastDeltaPp",
+    "rankDelta"
+  ]
 };
 
 window.PORRA_ODDS_ESPN = {
