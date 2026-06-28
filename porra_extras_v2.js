@@ -10,7 +10,8 @@
       finishedResults: 'Resultats de partits acabats',
       groupStandings: 'Classificacions de grups',
       topScorers: 'Pichichis',
-      winProbability: 'Simulacions Monte Carlo',
+      winProbability: 'Simulacions FIFA',
+      winProbabilityEspn: 'Simulacions ESPN',
       liveLeaderboard: 'Classificació en directe',
       realTimeBracket: 'Creuaments en temps real',
       pointsSystem: 'Com funciona el sistema de punts',
@@ -75,7 +76,8 @@
       finishedResults: 'Resultados de partidos acabados',
       groupStandings: 'Clasificaciones de grupos',
       topScorers: 'Pichichis',
-      winProbability: 'Simulaciones Monte Carlo',
+      winProbability: 'Simulaciones FIFA',
+      winProbabilityEspn: 'Simulaciones ESPN',
       liveLeaderboard: 'Clasificación en directo',
       realTimeBracket: 'Cruces en tiempo real',
       pointsSystem: 'Cómo funciona el sistema de puntos',
@@ -140,7 +142,8 @@
       finishedResults: 'Results of finished games',
       groupStandings: 'Group standings',
       topScorers: 'Top scorers',
-      winProbability: 'Monte Carlo simulations',
+      winProbability: 'FIFA simulations',
+      winProbabilityEspn: 'ESPN simulations',
       liveLeaderboard: 'Live leaderboard',
       realTimeBracket: 'Knock-out stage in real time',
       pointsSystem: 'How the points system works',
@@ -396,7 +399,7 @@ const SUBGROUP_LEADERBOARDS = {
       const wrap = document.createElement('div');
       wrap.id = 'porraLinksSummaryV2';
       wrap.className = 'porra-links-v2 porra-links-v2--summary';
-      const summaryLinks = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'liveLeaderboard']
+      const summaryLinks = ['finishedResults', 'groupStandings', 'topScorers', 'winProbability', 'winProbabilityEspn', 'liveLeaderboard']
         .map(type => `<button type="button" data-porra-modal-v2="${type}">${escapeHtml(t(type))}</button>`);
       summaryLinks.push(`<a href="https://www.bbc.com/sport/football/world-cup/schedule#KnockoutStage" target="_blank" rel="noopener" data-porra-external-v2="realTimeBracket">${escapeHtml(t('realTimeBracket'))}</a>`);
       wrap.innerHTML = summaryLinks.join('');
@@ -469,7 +472,8 @@ if (tableCard && !document.getElementById('porraLinksPointsV2')) {
     if (type === 'finishedResults') return renderFinishedResults();
     if (type === 'groupStandings') return renderGroupStandings();
     if (type === 'topScorers') return renderTopScorers();
-    if (type === 'winProbability') return renderWinProbability();
+    if (type === 'winProbability') return renderWinProbability('fifa');
+    if (type === 'winProbabilityEspn') return renderWinProbability('espn');
     if (type === 'liveLeaderboard') return renderLiveLeaderboard();
     if (type === 'pointsSystem') return renderPointsSystem();
     if (SUBGROUP_LEADERBOARDS[type]) return renderSubgroupLeaderboard(type);
@@ -535,8 +539,10 @@ return '';
     return `${n > 0 ? '▲ ' : '▼ '}${Math.abs(n).toFixed(3)} pp`;
   }
 
-  function renderWinProbability() {
-    const odds = window.PORRA_ODDS_LATEST || null;
+  function renderWinProbability(kind = 'fifa') {
+    const odds = kind === 'espn'
+      ? (window.PORRA_ODDS_ESPN || null)
+      : (window.PORRA_ODDS_FIFA || window.PORRA_ODDS_LATEST || null);
     const rowsData = odds && Array.isArray(odds.players) ? odds.players.slice() : [];
     if (!rowsData.length) return `<p>${escapeHtml(t('oddsNoData'))}</p>`;
 

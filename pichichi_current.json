@@ -1,6 +1,6 @@
 {
-  "asOf": "28 Jun 2026, after completion of the group stage (72 matches played; all Groups A-L complete)",
-  "source": "Rebuilt from post-group-stage Golden Boot tables and manually cross-checked against FIFA/major match reports. The aggregate table was used as a base, then verified missing scorers were restored: Boualem Khoukhi and Derrick Luckassen. Kevin Pina is used as the canonical Cabo Verde name, with Kevin Lenini as an alias.",
+  "asOf": "28 Jun 2026, after South Africa 0-1 Canada (M73)",
+  "source": "Manual update after M73: South Africa 0-1 Canada; Stephen Eustáquio +1. Previous table based on confirmed scorer reports through group stage.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -1903,6 +1903,20 @@
         "Fidalgo"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Stephen Eustáquio",
+      "team": "Canada",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Stephen Eustáquio",
+        "Stephen Eustaquio",
+        "Eustáquio",
+        "Eustaquio"
+      ],
+      "source": "South Africa 0-1 Canada, M73: +1"
     }
   ],
   "predictionTeamHints": {
@@ -1925,6 +1939,13 @@
     "Matías Galarza": "Paraguay"
   },
   "recentUpdates": [
+    {
+      "match": "M73",
+      "result": "South Africa 0-1 Canada",
+      "scorer": "Stephen Eustáquio",
+      "team": "Canada",
+      "goalsAdded": 1
+    },
     {
       "match": "Full group-stage audit",
       "note": "Rebuilt current scorers from a complete post-group-stage Golden Boot table, then manually restored verified scorers that the aggregate table missed."

@@ -3,13 +3,15 @@
 
   const STYLE_ID = 'porra-odds-leaderboard-style';
   const NOTE_ID = 'porra-odds-note';
+  const KINDS = ['fifa', 'espn'];
 
-  function oddsData() {
-    return window.PORRA_ODDS_LATEST || null;
+  function oddsData(kind) {
+    if (kind === 'espn') return window.PORRA_ODDS_ESPN || null;
+    return window.PORRA_ODDS_FIFA || window.PORRA_ODDS_LATEST || null;
   }
 
-  function oddsRows() {
-    const data = oddsData();
+  function oddsRows(kind) {
+    const data = oddsData(kind);
     return data && Array.isArray(data.players) ? data.players : [];
   }
 
@@ -17,9 +19,9 @@
     return String(value || '').trim().replace(/\s+/g, ' ');
   }
 
-  function oddsMap() {
+  function oddsMap(kind) {
     const map = new Map();
-    oddsRows().forEach(row => {
+    oddsRows(kind).forEach(row => {
       if (!row) return;
       const names = [row.player, row.displayName].concat(Array.isArray(row.aliases) ? row.aliases : []);
       names.forEach(name => {
@@ -34,17 +36,18 @@
     return localStorage.getItem('porraLang') || document.documentElement.lang || 'ca';
   }
 
-  function columnLabel() {
-    return ({ ca: 'Prob.', es: 'Prob.', en: 'Win %' }[currentLang()] || 'Prob.');
+  function columnLabel(kind) {
+    return kind === 'espn' ? 'Pr. ESPN' : 'Pr. FIFA';
   }
 
   function noteText() {
-    const data = oddsData();
-    const label = data && data.label ? data.label : '';
+    const fifa = oddsData('fifa');
+    const espn = oddsData('espn');
+    const label = (fifa && fifa.label) || (espn && espn.label) || '';
     const texts = {
-      ca: `Prob.: probabilitat estimada de guanyar segons l'última simulació Monte Carlo${label ? ` (${label})` : ''}.`,
-      es: `Prob.: probabilidad estimada de ganar según la última simulación Monte Carlo${label ? ` (${label})` : ''}.`,
-      en: `Win %: estimated probability of winning from the latest Monte Carlo simulation${label ? ` (${label})` : ''}.`
+      ca: `Pr. FIFA i Pr. ESPN: probabilitat estimada de guanyar segons les simulacions Monte Carlo${label ? ` (${label})` : ''}.`,
+      es: `Pr. FIFA y Pr. ESPN: probabilidad estimada de ganar según las simulaciones Monte Carlo${label ? ` (${label})` : ''}.`,
+      en: `Pr. FIFA and Pr. ESPN: estimated win probability from the Monte Carlo simulations${label ? ` (${label})` : ''}.`
     };
     return texts[currentLang()] || texts.ca;
   }
@@ -56,8 +59,8 @@
 
   function pointsColumnIndex(headerRow) {
     const cells = Array.from(headerRow.cells || []);
-    const byOdds = cells.findIndex(cell => cell.dataset && cell.dataset.oddsColumn === 'true');
-    if (byOdds >= 0) return byOdds - 1;
+    const firstOdds = cells.findIndex(cell => cell.dataset && cell.dataset.oddsColumn);
+    if (firstOdds >= 0) return firstOdds - 1;
     const byI18n = cells.findIndex(cell => cell.getAttribute('data-i18n') === 'colPoints');
     if (byI18n >= 0) return byI18n;
     const byText = cells.findIndex(cell => /punts|puntos|points/i.test(cell.textContent || ''));
@@ -106,51 +109,57 @@
   function ensureHeader(table) {
     if (!table || !table.tHead || !table.tHead.rows.length) return;
     const headerRow = table.tHead.rows[0];
-    const existing = headerRow.querySelector('[data-odds-column="true"]');
-    if (existing) {
-      setTextIfChanged(existing, columnLabel());
-      return;
-    }
-    const th = document.createElement('th');
-    th.className = 'num odds-header';
-    th.dataset.oddsColumn = 'true';
-    th.textContent = columnLabel();
-    const pointsIndex = pointsColumnIndex(headerRow);
-    headerRow.insertBefore(th, headerRow.cells[pointsIndex + 1] || null);
+    let insertAfterIndex = pointsColumnIndex(headerRow);
+
+    KINDS.forEach(kind => {
+      let th = headerRow.querySelector(`[data-odds-column="${kind}"]`);
+      if (!th) {
+        th = document.createElement('th');
+        th.className = 'num odds-header';
+        th.dataset.oddsColumn = kind;
+        headerRow.insertBefore(th, headerRow.cells[insertAfterIndex + 1] || null);
+      }
+      setTextIfChanged(th, columnLabel(kind));
+      insertAfterIndex = Array.from(headerRow.cells).indexOf(th);
+    });
   }
 
   function ensureBodyCells(table) {
     if (!table || !table.tBodies || !table.tBodies.length) return;
-    const map = oddsMap();
+    const maps = Object.fromEntries(KINDS.map(kind => [kind, oddsMap(kind)]));
     const headerRow = table.tHead && table.tHead.rows.length ? table.tHead.rows[0] : null;
     const pointsIndex = headerRow ? pointsColumnIndex(headerRow) : 3;
 
     Array.from(table.tBodies[0].rows).forEach(row => {
       if (row.cells.length === 1) {
-        const desired = Math.max(Number(row.cells[0].colSpan || 1), 8);
+        const desired = Math.max(Number(row.cells[0].colSpan || 1), 10);
         if (row.cells[0].colSpan !== desired) row.cells[0].colSpan = desired;
         return;
       }
 
-      const odds = map.get(playerNameFromRow(row));
-      const value = formatWinPct(odds);
-      let cell = row.querySelector('[data-odds-column="true"]');
-      if (!cell) {
-        cell = document.createElement('td');
-        cell.className = 'num odds-cell';
-        cell.dataset.oddsColumn = 'true';
-        row.insertBefore(cell, row.cells[pointsIndex + 1] || null);
-      }
-      setTextIfChanged(cell, value);
+      let insertAfterIndex = pointsIndex;
+      KINDS.forEach(kind => {
+        const odds = maps[kind].get(playerNameFromRow(row));
+        const value = formatWinPct(odds);
+        let cell = row.querySelector(`[data-odds-column="${kind}"]`);
+        if (!cell) {
+          cell = document.createElement('td');
+          cell.className = 'num odds-cell';
+          cell.dataset.oddsColumn = kind;
+          row.insertBefore(cell, row.cells[insertAfterIndex + 1] || null);
+        }
+        setTextIfChanged(cell, value);
 
-      const title = odds && odds.avgPoints !== undefined
-        ? `Top 3: ${Number(odds.top3Pct || 0).toFixed(2)}% · Avg pts: ${Number(odds.avgPoints || 0).toFixed(1)}`
-        : '';
-      if (title) {
-        if (cell.title !== title) cell.title = title;
-      } else if (cell.hasAttribute('title')) {
-        cell.removeAttribute('title');
-      }
+        const title = odds
+          ? `Top 3: ${Number(odds.top3Pct || 0).toFixed(2)}% · Last: ${Number(odds.lastPct || 0).toFixed(2)}% · Cond.: ${Number(odds.conditionalChampionWinPct || 0).toFixed(2)}%`
+          : '';
+        if (title) {
+          if (cell.title !== title) cell.title = title;
+        } else if (cell.hasAttribute('title')) {
+          cell.removeAttribute('title');
+        }
+        insertAfterIndex = Array.from(row.cells).indexOf(cell);
+      });
     });
   }
 
