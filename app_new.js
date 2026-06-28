@@ -1327,8 +1327,8 @@
 
   function matchesTable(row, actual) {
     const matches = chronologicalMatches([...row.groupMatches, ...row.knockoutMatches]);
-    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td><span class="score-pill">${escapeHtml(actualScoreForPrediction(m, actual))}</span></td><td>${escapeHtml(display(m.winner))}</td></tr>`).join('');
-    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('actualScore'))}</th><th>${escapeHtml(t('winner'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    const body = matches.map(m => `<tr><td>${escapeHtml(formatMatchDate(m))}</td><td>${escapeHtml(translateRound(m.round))}</td><td>${escapeHtml(display(m.home))} vs ${escapeHtml(display(m.away))}</td><td><span class="score-pill">${escapeHtml(predictionScoreText(m))}</span></td><td><span class="score-pill">${escapeHtml(actualScoreForPrediction(m, actual))}</span></td></tr>`).join('');
+    return `<div class="table-wrap"><table class="pred-table"><thead><tr><th>${escapeHtml(t('date'))}</th><th>${escapeHtml(t('stage'))}</th><th>${escapeHtml(t('match'))}</th><th>${escapeHtml(t('result'))}</th><th>${escapeHtml(t('actualScore'))}</th></tr></thead><tbody>${body}</tbody></table></div>`;
   }
   function closeDrawer() { els.drawer.classList.remove('is-open'); els.drawer.setAttribute('aria-hidden', 'true'); }
   els.langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
