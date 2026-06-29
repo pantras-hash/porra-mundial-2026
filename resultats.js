@@ -150,40 +150,40 @@ window.PORRA_RESULTATS = {
     "G-J-6": { homeScore: 3, awayScore: 3, penHome: null, penAway: null, date: "2026-06-27", sortOrder: 72, status: "FINISHED" },
     // 2026-06-28 · 2A vs 2B
     "M73": { homeScore: 0, awayScore: 1, penHome: null, penAway: null, date: "2026-06-28", sortOrder: 73, status: "FINISHED" },
-    // 2026-06-29 · 1E vs third:1E
-    "M74": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 74, status: "TIMED" },
-    // 2026-06-29 · 1F vs 2C
-    "M75": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 75, status: "TIMED" },
     // 2026-06-29 · 1C vs 2F
-    "M76": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 76, status: "TIMED" },
-    // 2026-06-30 · 1I vs third:1I
-    "M77": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 77, status: "TIMED" },
+    "M76": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 74, status: "TIMED" },
+    // 2026-06-29 · 1E vs third:1E
+    "M74": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 75, status: "TIMED" },
+    // 2026-06-29 · 1F vs 2C
+    "M75": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-29", sortOrder: 76, status: "TIMED" },
     // 2026-06-30 · 2E vs 2I
-    "M78": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 78, status: "TIMED" },
+    "M78": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 77, status: "TIMED" },
+    // 2026-06-30 · 1I vs third:1I
+    "M77": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 78, status: "TIMED" },
     // 2026-06-30 · 1A vs third:1A
     "M79": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-06-30", sortOrder: 79, status: "TIMED" },
     // 2026-07-01 · 1L vs third:1L
     "M80": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 80, status: "TIMED" },
-    // 2026-07-01 · 1D vs third:1D
-    "M81": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 81, status: "TIMED" },
     // 2026-07-01 · 1G vs third:1G
-    "M82": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 82, status: "TIMED" },
-    // 2026-07-02 · 2K vs 2L
-    "M83": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 83, status: "TIMED" },
+    "M82": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 81, status: "TIMED" },
+    // 2026-07-01 · 1D vs third:1D
+    "M81": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-01", sortOrder: 82, status: "TIMED" },
     // 2026-07-02 · 1H vs 2J
-    "M84": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "TIMED" },
+    "M84": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 83, status: "TIMED" },
+    // 2026-07-02 · 2K vs 2L
+    "M83": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "TIMED" },
     // 2026-07-02 · 1B vs third:1B
     "M85": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 85, status: "TIMED" },
-    // 2026-07-03 · 1J vs 2H
-    "M86": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 86, status: "TIMED" },
-    // 2026-07-03 · 1K vs third:1K
-    "M87": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 87, status: "TIMED" },
     // 2026-07-03 · 2D vs 2G
-    "M88": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 88, status: "TIMED" },
-    // 2026-07-04 · W74 vs W77
-    "M89": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 89, status: "TIMED" },
+    "M88": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 86, status: "TIMED" },
+    // 2026-07-03 · 1J vs 2H
+    "M86": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 87, status: "TIMED" },
+    // 2026-07-03 · 1K vs third:1K
+    "M87": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-03", sortOrder: 88, status: "TIMED" },
     // 2026-07-04 · W73 vs W75
-    "M90": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 90, status: "TIMED" },
+    "M90": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 89, status: "TIMED" },
+    // 2026-07-04 · W74 vs W77
+    "M89": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-04", sortOrder: 90, status: "TIMED" },
     // 2026-07-05 · W76 vs W78
     "M91": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 91, status: "TIMED" },
     // 2026-07-05 · W79 vs W80
