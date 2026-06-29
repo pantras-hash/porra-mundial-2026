@@ -37,7 +37,7 @@
   }
 
   function columnLabel(kind) {
-    return kind === 'espn' ? 'Pr. ESPN' : 'Pr. FIFA';
+    return kind === 'espn' ? 'Prob. ESPN' : 'Prob. FIFA';
   }
 
   function noteText() {
@@ -102,7 +102,8 @@
       Array.from(headerRow.cells || []).find(cell => /pichichi|top scorer|goleador/i.test(cell.textContent || ''));
 
     if (!th) return;
-    const label = (th.textContent || '').trim() || 'Pichichi';
+    let label = (th.textContent || '').trim() || 'Pichichi';
+    if (/^top scorer$/i.test(label)) label = 'Top Scorer';
     setModalHeaderLink(th, label, 'topScorers');
   }
 
@@ -126,12 +127,16 @@
         background: transparent;
         color: inherit;
         cursor: pointer;
-        font: inherit;
+        font-family: inherit;
+        font-size: inherit;
         font-weight: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
         margin: 0;
         padding: 0;
         text-align: inherit;
         text-decoration: none;
+        text-transform: inherit;
         white-space: inherit;
       }
       #leaderboardTable .porra-header-modal-link:hover,
