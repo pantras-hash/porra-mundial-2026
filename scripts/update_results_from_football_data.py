@@ -125,6 +125,11 @@ TLA_ALIASES = {
 }
 
 FINAL_STATUSES = {"FINISHED", "AWARDED"}
+# Local resultats.js can use additional final-like status labels for knockout
+# matches decided after penalties. Once any local final-like entry has a score,
+# treat it as immutable: football-data.org may later report a different score
+# convention for penalty matches, or omit penalties entirely.
+LOCAL_LOCKED_FINAL_STATUSES = FINAL_STATUSES | {"FINISHED_PEN", "AFTER_PENALTIES"}
 LIVE_STATUSES = {"IN_PLAY", "PAUSED"}
 NON_FINAL_STATUSES = {"SCHEDULED", "TIMED", "POSTPONED", "SUSPENDED", "CANCELED"}
 KNOWN_STATUSES = FINAL_STATUSES | LIVE_STATUSES | NON_FINAL_STATUSES
@@ -418,6 +423,21 @@ def make_date_index(api_matches: List[ApiMatch]) -> Dict[str, List[ApiMatch]]:
     return by_date
 
 
+def is_locked_local_final(current: Dict[str, Any]) -> bool:
+    """Return True when a local result has a final-like status and score.
+
+    These entries are treated as manual/source-of-truth finals. The importer must
+    not rewrite them on later football-data.org fetches, because the API can
+    change score conventions for penalty matches or temporarily omit penalty
+    fields.
+    """
+    return (
+        current.get("status") in LOCAL_LOCKED_FINAL_STATUSES
+        and current.get("homeScore") is not None
+        and current.get("awayScore") is not None
+    )
+
+
 def update_entry(local: LocalMatch, api: ApiMatch, reverse_scores: bool = False) -> Tuple[str, bool]:
     fields = parse_fields(local.body)
     current = {
@@ -428,9 +448,21 @@ def update_entry(local: LocalMatch, api: ApiMatch, reverse_scores: bool = False)
         "status": parse_str_value(fields.get("status")),
     }
 
+    # Once a local match has a final score, never let football-data.org rewrite it.
+    # This protects penalty matches, manual corrections, and provider score-convention changes.
+    if is_locked_local_final(current):
+        print(
+            f"Skipping locked final result for {local.id}: "
+            f"local status={current.get('status')} "
+            f"score={current.get('homeScore')}-{current.get('awayScore')} "
+            f"pens={current.get('penHome')}-{current.get('penAway')} "
+            f"api status={api.status}"
+        )
+        return local.full_text, False
+
     # Never downgrade a locally final result to live/scheduled if the API is stale.
-    # This protects manual corrections such as FINISHED -> IN_PLAY/TIMED reversions.
-    if current.get("status") in FINAL_STATUSES and api.status not in FINAL_STATUSES:
+    # This remains a safety net for any final-like local entry without a score.
+    if current.get("status") in LOCAL_LOCKED_FINAL_STATUSES and api.status not in FINAL_STATUSES:
         print(
             f"Skipping stale downgrade for {local.id}: "
             f"local status={current.get('status')} api status={api.status}"
@@ -454,8 +486,9 @@ def update_entry(local: LocalMatch, api: ApiMatch, reverse_scores: bool = False)
             desired["penHome"] = api.pen_home
             desired["penAway"] = api.pen_away
     else:
-        desired["penHome"] = None
-        desired["penAway"] = None
+        # Preserve existing local penalty fields when the provider omits them.
+        desired["penHome"] = current.get("penHome")
+        desired["penAway"] = current.get("penAway")
     if api.status in KNOWN_STATUSES:
         desired["status"] = api.status
 
