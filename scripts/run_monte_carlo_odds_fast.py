@@ -438,7 +438,7 @@ class FastMonteCarlo:
             pichichi_info={'goal_total':max_goal_total,'top_mask':top_mask,'player_hits':player_hits,'goal_hits':goal_hits}
         return scores,pichichi_info
     def run(self,n,batch_size=10000):
-        win=np.zeros(self.P,dtype=np.float64); top3=np.zeros(self.P,dtype=np.float64); total=np.zeros(self.P,dtype=np.float64); maxp=np.full(self.P,-1,dtype=np.float64)
+        win=np.zeros(self.P,dtype=np.float64); top3=np.zeros(self.P,dtype=np.float64); rank27=np.zeros(self.P,dtype=np.float64); total=np.zeros(self.P,dtype=np.float64); maxp=np.full(self.P,-1,dtype=np.float64)
         pichichi_player_hits=np.zeros(self.P,dtype=np.float64); pichichi_goal_hits=np.zeros(self.P,dtype=np.float64)
         scorer_top_full=np.zeros(len(self.pichichi_rows),dtype=np.float64); scorer_top_share=np.zeros(len(self.pichichi_rows),dtype=np.float64)
         goal_total_counts=Counter()
@@ -460,6 +460,10 @@ class FastMonteCarlo:
             wm=(scores==mx[:,None])
             win += (wm / wm.sum(axis=1)[:,None]).sum(axis=0)
             sorted_scores=np.sort(scores,axis=1)[:,::-1]
+            if self.P >= 27:
+                rank27_thresh=sorted_scores[:,26]
+                rank27_equal=(scores==rank27_thresh[:,None])
+                rank27 += (rank27_equal / rank27_equal.sum(axis=1)[:,None]).sum(axis=0)
             thresh=sorted_scores[:,2]
             above=scores>thresh[:,None]
             equal=scores==thresh[:,None]
@@ -472,7 +476,7 @@ class FastMonteCarlo:
         rows=[]
         for i,name in enumerate(self.player_names):
             rows.append({
-                'Player':name,'WinPct':100*win[i]/n,'Top3Pct':100*top3[i]/n,'AvgPoints':total[i]/n,'MaxPoints':maxp[i],
+                'Player':name,'WinPct':100*win[i]/n,'Top3Pct':100*top3[i]/n,'Rank27Pct':100*rank27[i]/n,'AvgPoints':total[i]/n,'MaxPoints':maxp[i],
                 'PichichiPlayerPct':100*pichichi_player_hits[i]/n,
                 'PichichiGoalsPct':100*pichichi_goal_hits[i]/n,
                 'PichichiExpPoints':(pch*pichichi_player_hits[i] + gpch*pichichi_goal_hits[i])/n,
@@ -498,10 +502,10 @@ def write_outputs(rows,n,label,outdir,pichichi_summary=None,display_label=None,m
     outdir=Path(outdir); outdir.mkdir(parents=True,exist_ok=True)
     csv_path=outdir/f'porra_odds_{label}_{n}.csv'
     with csv_path.open('w',newline='',encoding='utf-8') as f:
-        w=csv.DictWriter(f,fieldnames=['Rank','Player','WinPct','Top3Pct','AvgPoints','MaxPoints','PichichiPlayerPct','PichichiGoalsPct','PichichiExpPoints'])
+        w=csv.DictWriter(f,fieldnames=['Rank','Player','WinPct','Top3Pct','Rank27Pct','AvgPoints','MaxPoints','PichichiPlayerPct','PichichiGoalsPct','PichichiExpPoints'])
         w.writeheader()
         for r in rows:
-            w.writerow({'Rank':r['Rank'],'Player':r['Player'],'WinPct':round(float(r['WinPct']),3),'Top3Pct':round(float(r['Top3Pct']),3),'AvgPoints':round(float(r['AvgPoints']),1),'MaxPoints':int(r['MaxPoints']),'PichichiPlayerPct':round(float(r.get('PichichiPlayerPct',0)),3),'PichichiGoalsPct':round(float(r.get('PichichiGoalsPct',0)),3),'PichichiExpPoints':round(float(r.get('PichichiExpPoints',0)),2)})
+            w.writerow({'Rank':r['Rank'],'Player':r['Player'],'WinPct':round(float(r['WinPct']),3),'Top3Pct':round(float(r['Top3Pct']),3),'Rank27Pct':round(float(r.get('Rank27Pct',0)),3),'AvgPoints':round(float(r['AvgPoints']),1),'MaxPoints':int(r['MaxPoints']),'PichichiPlayerPct':round(float(r.get('PichichiPlayerPct',0)),3),'PichichiGoalsPct':round(float(r.get('PichichiGoalsPct',0)),3),'PichichiExpPoints':round(float(r.get('PichichiExpPoints',0)),2)})
     display=short_names([r['Player'] for r in rows])
     players=[]
     for r in rows:
@@ -510,7 +514,7 @@ def write_outputs(rows,n,label,outdir,pichichi_summary=None,display_label=None,m
         if r['Player']=='Jordi Reig': aliases += ['Jordi Re','Jordi Re.']
         if r['Player']=='Jordi Raventós': aliases += ['Jordi Ra','Jordi Ra.']
         seen=set(); aliases=[a for a in aliases if not (a in seen or seen.add(a))]
-        obj={'player':r['Player'],'displayName':dn,'rank':int(r['Rank']),'winPct':round(float(r['WinPct']),3),'top3Pct':round(float(r['Top3Pct']),3),'avgPoints':round(float(r['AvgPoints']),1),'maxPoints':int(r['MaxPoints']),'pichichiPlayerPct':round(float(r.get('PichichiPlayerPct',0)),3),'pichichiGoalsPct':round(float(r.get('PichichiGoalsPct',0)),3),'pichichiExpPoints':round(float(r.get('PichichiExpPoints',0)),2)}
+        obj={'player':r['Player'],'displayName':dn,'rank':int(r['Rank']),'winPct':round(float(r['WinPct']),3),'top3Pct':round(float(r['Top3Pct']),3),'rank27Pct':round(float(r.get('Rank27Pct',0)),3),'avgPoints':round(float(r['AvgPoints']),1),'maxPoints':int(r['MaxPoints']),'pichichiPlayerPct':round(float(r.get('PichichiPlayerPct',0)),3),'pichichiGoalsPct':round(float(r.get('PichichiGoalsPct',0)),3),'pichichiExpPoints':round(float(r.get('PichichiExpPoints',0)),2)}
         if aliases: obj['aliases']=aliases
         players.append(obj)
     latest={'generatedAt':datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),'label':display_label or f'{label}, {n:,} simulations','model':model_label or 'Monte Carlo amb ranking FIFA, gols limitats a 7, amb bonus de Pichichi proxy','simulations':n,'players':players}
