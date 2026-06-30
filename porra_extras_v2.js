@@ -484,7 +484,8 @@ return '';
   }
 
   function renderFinishedResults() {
-    const rows = chronologicalMatches(allMatchesMerged())
+    const actual = buildActual(false);
+    const rows = chronologicalMatches(actual.matches)
       .filter(m => isMatchFinal(m) && hasMatchScore(m))
       .map(m => `<tr><td>${escapeHtml(display(m.date))}</td><td>${escapeHtml(display(m.round))}</td><td>${escapeHtml(matchLabel(m))}</td><td>${escapeHtml(scoreText(m))}</td><td>${escapeHtml(matchStatus(m).toLowerCase())}</td></tr>`);
     if (!rows.length) return `<p>${escapeHtml(t('noFinished'))}</p>`;
@@ -617,12 +618,8 @@ return '';
         min-width: 6.2rem;
         white-space: nowrap;
       }
-      .porra-odds-table-v2 th:nth-child(7),
       .porra-odds-table-v2 td:nth-child(7) {
         background: rgba(250, 204, 21, 0.12);
-      }
-      .porra-odds-table-v2 td.porra-rank27-cell-v2 {
-        font-weight: 650;
       }
     </style>`;
     return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
