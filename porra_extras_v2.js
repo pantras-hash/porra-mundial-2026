@@ -567,7 +567,7 @@ return '';
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
-        <td class="num">${escapeHtml(formatPctV2(row.rank27Pct))}</td>
+        <td class="num porra-rank27-cell-v2">${escapeHtml(formatPctV2(row.rank27Pct))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.conditionalChampionWinPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
         <td>${escapeHtml(display(row.projectedWinner))}</td>
@@ -616,6 +616,13 @@ return '';
       .porra-odds-table-v2 td:nth-child(8) {
         min-width: 6.2rem;
         white-space: nowrap;
+      }
+      .porra-odds-table-v2 th:nth-child(7),
+      .porra-odds-table-v2 td:nth-child(7) {
+        background: rgba(250, 204, 21, 0.12);
+      }
+      .porra-odds-table-v2 td.porra-rank27-cell-v2 {
+        font-weight: 650;
       }
     </style>`;
     return `${intro}${oddsDeltaStyle}${oddsTable}${note}`;
