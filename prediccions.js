@@ -22322,7 +22322,7 @@ window.PORRA_DATA = {
           "home": "Korea Republic",
           "away": "Czechia",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 1,
           "winner": "Czechia"
         },
         {
@@ -22331,7 +22331,7 @@ window.PORRA_DATA = {
           "home": "Mexico",
           "away": "Korea Republic",
           "homeScore": 1,
-          "awayScore": 1,
+          "awayScore": 0,
           "winner": "Mexico"
         },
         {
