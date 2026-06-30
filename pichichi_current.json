@@ -1,5 +1,5 @@
 {
-  "asOf": "28 Jun 2026, after South Africa 0-1 Canada (M73)",
+  "asOf": "After M76 Brazil 2-1 Japan, M74 Germany 1-1 Paraguay, and M75 Netherlands 1-1 Morocco (2026-06-29; penalty shootouts excluded)",
   "source": "Manual update after M73: South Africa 0-1 Canada; Stephen Eustáquio +1. Previous table based on confirmed scorer reports through group stage.",
   "sourceNotes": [
     {
@@ -33,6 +33,10 @@
     {
       "name": "Croatia 2-1 Ghana reports",
       "note": "Derrick Luckassen restored as Ghana scorer after cross-checking AP/Sky/Guardian/FOX/ESPN match reports."
+    },
+    {
+      "name": "2026-06-29 Round of 32 scorer updates",
+      "note": "Added regulation-time scorers from Brazil 2-1 Japan, Germany 1-1 Paraguay, and Netherlands 1-1 Morocco. Penalty shootout kicks are excluded from Pichichi totals."
     }
   ],
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
@@ -260,14 +264,14 @@
     {
       "name": "Cody Gakpo",
       "team": "Netherlands",
-      "goals": 2,
+      "goals": 3,
       "assists": 1,
       "minutes": 268,
       "aliases": [
         "Cody Gakpo",
         "Gakpo"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Netherlands 1-1 Morocco; penalty shootout pending: +1"
     },
     {
       "name": "Cristiano Ronaldo",
@@ -387,14 +391,14 @@
     {
       "name": "Kai Havertz",
       "team": "Germany",
-      "goals": 2,
+      "goals": 3,
       "assists": 0,
       "minutes": 256,
       "aliases": [
         "Kai Havertz",
         "Havertz"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1"
     },
     {
       "name": "Leandro Trossard",
@@ -1917,6 +1921,65 @@
         "Eustaquio"
       ],
       "source": "South Africa 0-1 Canada, M73: +1"
+    },
+    {
+      "name": "Kaishu Sano",
+      "team": "Japan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Kaishu Sano",
+        "Sano"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Casemiro",
+      "team": "Brazil",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Casemiro"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Gabriel Martinelli",
+      "team": "Brazil",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Gabriel Martinelli",
+        "Martinelli"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Julio Enciso",
+      "team": "Paraguay",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Julio Enciso",
+        "Enciso"
+      ],
+      "source": "Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Issa Diop",
+      "team": "Morocco",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Issa Diop",
+        "Diop"
+      ],
+      "source": "Netherlands 1-1 Morocco; penalty shootout pending: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
     }
   ],
   "predictionTeamHints": {
@@ -1939,6 +2002,55 @@
     "Matías Galarza": "Paraguay"
   },
   "recentUpdates": [
+    {
+      "match": "M76",
+      "result": "Brazil 2-1 Japan",
+      "scorer": "Kaishu Sano",
+      "team": "Japan",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M76",
+      "result": "Brazil 2-1 Japan",
+      "scorer": "Casemiro",
+      "team": "Brazil",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M76",
+      "result": "Brazil 2-1 Japan",
+      "scorer": "Gabriel Martinelli",
+      "team": "Brazil",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M74",
+      "result": "Germany 1-1 Paraguay; Paraguay won 4-3 on penalties",
+      "scorer": "Julio Enciso",
+      "team": "Paraguay",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M74",
+      "result": "Germany 1-1 Paraguay; Paraguay won 4-3 on penalties",
+      "scorer": "Kai Havertz",
+      "team": "Germany",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M75",
+      "result": "Netherlands 1-1 Morocco; penalty shootout pending",
+      "scorer": "Cody Gakpo",
+      "team": "Netherlands",
+      "goalsAdded": 1
+    },
+    {
+      "match": "M75",
+      "result": "Netherlands 1-1 Morocco; penalty shootout pending",
+      "scorer": "Issa Diop",
+      "team": "Morocco",
+      "goalsAdded": 1
+    },
     {
       "match": "M73",
       "result": "South Africa 0-1 Canada",
