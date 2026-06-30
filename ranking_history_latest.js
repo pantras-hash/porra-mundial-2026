@@ -1,11 +1,11 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-06-30T00:21:19Z",
-  "label": "30 Jun 2026, 00:21 UTC",
+  "generatedAt": "2026-06-30T00:22:22Z",
+  "label": "30 Jun 2026, 00:22 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order; includes locked knockout team/position points once slots are known",
   "snapshotCount": 75,
   "playerCount": 57,
   "lastMatchId": "M74",
-  "lastMatchLabel": "1E 5–6 third:1E",
+  "lastMatchLabel": "1E 4–5 third:1E",
   "snapshots": [
     {
       "index": 0,
@@ -530,7 +530,7 @@ window.PORRA_RANKING_HISTORY = {
       "matchId": "M74",
       "date": "2026-06-29",
       "sortOrder": 75,
-      "label": "1E 5–6 third:1E"
+      "label": "1E 4–5 third:1E"
     }
   ],
   "players": [
@@ -8953,7 +8953,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 74,
         "matchId": "M74",
-        "rank": 25,
+        "rank": 26,
         "points": 639
       }
     ],
@@ -10309,7 +10309,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 74,
         "matchId": "M74",
-        "rank": 23,
+        "rank": 24,
         "points": 641
       }
     ],
@@ -11213,8 +11213,8 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 74,
         "matchId": "M74",
-        "rank": 25,
-        "points": 639
+        "rank": 23,
+        "points": 643
       }
     ],
     "Jaume C.": [
@@ -16185,7 +16185,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 74,
         "matchId": "M74",
-        "rank": 31,
+        "rank": 32,
         "points": 624
       }
     ],
@@ -17541,7 +17541,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 74,
         "matchId": "M74",
-        "rank": 24,
+        "rank": 25,
         "points": 640
       }
     ],
@@ -23870,7 +23870,7 @@ window.PORRA_RANKING_HISTORY = {
         "x": 74,
         "matchId": "M74",
         "rank": 31,
-        "points": 624
+        "points": 628
       }
     ],
     "Rubi": [
