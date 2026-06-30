@@ -55,6 +55,7 @@
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
       oddsLast: 'Prob. últim',
+      oddsRank27: 'Prob. 27è',
       oddsExpGall: 'Gall. esperats',
       oddsProjectedWinner: 'Guanyador proj.',
       oddsProjectedFinalist: 'Finalista proj.',
@@ -64,7 +65,7 @@
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Punts esperats',
       oddsMax: 'Màxim',
-      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20. La probabilitat d’últim reparteix empats a l’última posició. Les columnes projectades mostren les apostes de cada participant.',
+      oddsGallifantesNote: 'Nota: Els gallifantes esperats es calculen a partir de la distribució simulada de classificacions finals, amb premis 750–250–100–20–20. Les probabilitats d’últim i de 27è reparteixen empats a la posició corresponent. Les columnes projectades mostren les apostes de cada participant.',
       oddsConditionalTitle: 'Probabilitat condicional si guanya el teu campió projectat',
       oddsConditionalNote: 'Aquesta taula mostra P(guanyar la porra | el teu campió projectat guanya el Mundial). Les victòries de la porra es reparteixen en cas d’empat.',
       oddsConditionalSims: 'Sims campió',
@@ -121,6 +122,7 @@
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Prob. top 3',
       oddsLast: 'Prob. último',
+      oddsRank27: 'Prob. 27.º',
       oddsExpGall: 'Gall. esperados',
       oddsProjectedWinner: 'Ganador proy.',
       oddsProjectedFinalist: 'Finalista proy.',
@@ -130,7 +132,7 @@
       oddsCeRank: 'Rank CE',
       oddsAvg: 'Puntos esperados',
       oddsMax: 'Máximo',
-      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20. La probabilidad de último reparte empates en la última posición. Las columnas proyectadas muestran las apuestas de cada participante.',
+      oddsGallifantesNote: 'Nota: Los gallifantes esperados se calculan a partir de la distribución simulada de clasificaciones finales, con premios 750–250–100–20–20. Las probabilidades de último y de 27.º reparten empates en la posición correspondiente. Las columnas proyectadas muestran las apuestas de cada participante.',
       oddsConditionalTitle: 'Probabilidad condicional si gana tu campeón proyectado',
       oddsConditionalNote: 'Esta tabla muestra P(ganar la porra | tu campeón proyectado gana el Mundial). Las victorias de la porra se reparten en caso de empate.',
       oddsConditionalSims: 'Sims campeón',
@@ -187,6 +189,7 @@
       oddsDelta: 'Δ Prob.',
       oddsTop3: 'Top 3 probability',
       oddsLast: 'Last-place probability',
+      oddsRank27: '27th-place probability',
       oddsExpGall: 'Exp. gall.',
       oddsProjectedWinner: 'Projected winner',
       oddsProjectedFinalist: 'Projected finalist',
@@ -196,7 +199,7 @@
       oddsCeRank: 'CE rank',
       oddsAvg: 'Expected points',
       oddsMax: 'Max',
-      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule. Last-place probability splits ties for last. Projected columns show each participant’s picks.',
+      oddsGallifantesNote: 'Note: Expected gallifantes are computed from the simulated distribution of final rankings using the 750–250–100–20–20 prize schedule. Last-place and 27th-place probabilities split ties at the corresponding position. Projected columns show each participant’s picks.',
       oddsConditionalTitle: 'Conditional probability if your projected champion wins',
       oddsConditionalNote: 'This table shows P(winning the pool | your projected champion wins the World Cup). Pool wins are tie-split.',
       oddsConditionalSims: 'Champion sims',
@@ -564,6 +567,7 @@ return '';
         <td class="num">${escapeHtml(formatSignedPpV2(row.winDeltaPp))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.top3Pct))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.lastPct))}</td>
+        <td class="num">${escapeHtml(formatPctV2(row.rank27Pct))}</td>
         <td class="num">${escapeHtml(formatPctV2(row.conditionalChampionWinPct))}</td>
         <td class="num">${escapeHtml(formatNumberV2(row.expectedGallifantes, 2))}</td>
         <td>${escapeHtml(display(row.projectedWinner))}</td>
@@ -579,6 +583,7 @@ return '';
       t('oddsDelta'),
       t('oddsTop3'),
       t('oddsLast'),
+      t('oddsRank27'),
       t('oddsConditionalChampionShort'),
       t('oddsExpGall'),
       t('oddsProjectedWinner'),
@@ -606,7 +611,9 @@ return '';
         white-space: nowrap;
       }
       .porra-odds-table-v2 th:nth-child(7),
-      .porra-odds-table-v2 td:nth-child(7) {
+      .porra-odds-table-v2 td:nth-child(7),
+      .porra-odds-table-v2 th:nth-child(8),
+      .porra-odds-table-v2 td:nth-child(8) {
         min-width: 6.2rem;
         white-space: nowrap;
       }
