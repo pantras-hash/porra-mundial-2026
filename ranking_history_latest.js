@@ -1,6 +1,6 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-07-01T18:06:26Z",
-  "label": "01 Jul 2026, 18:06 UTC",
+  "generatedAt": "2026-07-01T18:07:16Z",
+  "label": "01 Jul 2026, 18:07 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order; includes locked knockout team/position points once slots are known",
   "snapshotCount": 80,
   "playerCount": 57,
