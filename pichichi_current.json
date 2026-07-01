@@ -1,6 +1,6 @@
 {
-  "asOf": "After M76 Brazil 2-1 Japan, M74 Germany 1-1 Paraguay, and M75 Netherlands 1-1 Morocco (2026-06-29; penalty shootouts excluded)",
-  "source": "Manual update after M73: South Africa 0-1 Canada; Stephen Eustáquio +1. Previous table based on confirmed scorer reports through group stage.",
+  "asOf": "Assumed after M79 Mexico 2-0 Ecuador, with Julián Quiñones and Raúl Jiménez as Mexico scorers (2026-06-30; game not final at request time)",
+  "source": "Manual assumed update requested by user: treat Mexico-Ecuador as final 2-0 and add goals for Julián Quiñones and Raúl Jiménez. Penalty shootout goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -377,7 +377,7 @@
     {
       "name": "Julián Quiñones",
       "team": "Mexico",
-      "goals": 2,
+      "goals": 3,
       "assists": 0,
       "minutes": 270,
       "aliases": [
@@ -386,7 +386,7 @@
         "Quinones",
         "Quiñones"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
     },
     {
       "name": "Kai Havertz",
@@ -1729,7 +1729,7 @@
     {
       "name": "Raúl Jiménez",
       "team": "Mexico",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 164,
       "aliases": [
@@ -1738,7 +1738,7 @@
         "Jiménez",
         "Raul Jimenez"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
     },
     {
       "name": "Romano Schmid",
@@ -2085,6 +2085,24 @@
     {
       "match": "Cabo Verde 2-2 Uruguay",
       "note": "Kevin Pina used as canonical name; Kevin Lenini/Pina variants retained as aliases."
+    },
+    {
+      "matchId": "M79",
+      "match": "Mexico 2-0 Ecuador",
+      "assumption": true,
+      "note": "Assumed final score and scorers at user request before full time.",
+      "updates": [
+        {
+          "player": "Julián Quiñones",
+          "team": "Mexico",
+          "goalsAdded": 1
+        },
+        {
+          "player": "Raúl Jiménez",
+          "team": "Mexico",
+          "goalsAdded": 1
+        }
+      ]
     }
   ]
 }
