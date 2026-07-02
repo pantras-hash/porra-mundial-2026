@@ -171,7 +171,7 @@ window.PORRA_RESULTATS = {
     // 2026-07-02 · 1H vs 2J
     "M84": { homeScore: 3, awayScore: 0, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 83, status: "FINISHED" },
     // 2026-07-02 · 2K vs 2L
-    "M83": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "IN_PLAY" },
+    "M83": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 84, status: "PAUSED" },
     // 2026-07-02 · 1B vs third:1B
     "M85": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-02", sortOrder: 85, status: "TIMED" },
     // 2026-07-03 · 2D vs 2G
