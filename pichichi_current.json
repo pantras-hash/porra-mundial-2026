@@ -1,6 +1,6 @@
 {
-  "asOf": "Assumed after M79 Mexico 2-0 Ecuador, with Julián Quiñones and Raúl Jiménez as Mexico scorers (2026-06-30; game not final at request time)",
-  "source": "Manual assumed update requested by user: treat Mexico-Ecuador as final 2-0 and add goals for Julián Quiñones and Raúl Jiménez. Penalty shootout goals excluded.",
+  "asOf": "After M81 USA 2-0 Bosnia-Herzegovina (2026-07-01)",
+  "source": "Manual update from confirmed Round of 32 scorers through M81: England 2-1 DR Congo, Belgium 3-2 Senegal, USA 2-0 Bosnia-Herzegovina. Penalty shootout goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -37,6 +37,10 @@
     {
       "name": "2026-06-29 Round of 32 scorer updates",
       "note": "Added regulation-time scorers from Brazil 2-1 Japan, Germany 1-1 Paraguay, and Netherlands 1-1 Morocco. Penalty shootout kicks are excluded from Pichichi totals."
+    },
+    {
+      "name": "2026-07-01 Round of 32 scorer updates through M81",
+      "note": "England 2-1 DR Congo: Harry Kane +2, Brian Cipenga +1. Belgium 3-2 Senegal: Romelu Lukaku +1, Youri Tielemans +2, Habib Diarra +1, Ismaïla Sarr +1. USA 2-0 Bosnia-Herzegovina: Folarin Balogun +1, Malik Tillman +1. Penalty shootout goals excluded."
     }
   ],
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
@@ -54,14 +58,36 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "goals": 4,
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 5,
       "assists": 0,
-      "minutes": 208,
+      "minutes": 291,
       "aliases": [
-        "Erling Haaland",
-        "Haaland"
+        "Harry Kane",
+        "Kane"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +2 goals, penalty shootout goals excluded."
+    },
+    {
+      "name": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 4,
+      "assists": 1,
+      "minutes": 294,
+      "aliases": [
+        "Vinícius Júnior",
+        "Junior",
+        "Júnior",
+        "Vini",
+        "Vinicius",
+        "Vinícius",
+        "Vinicius Jr",
+        "Vinicius Jr.",
+        "Vinícius Jr",
+        "Vinicius Junior",
+        "Vinícius Junior",
+        "Vini Jr"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -94,36 +120,63 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Vinícius Júnior",
-      "team": "Brazil",
+      "name": "Erling Haaland",
+      "team": "Norway",
       "goals": 4,
-      "assists": 1,
-      "minutes": 294,
+      "assists": 0,
+      "minutes": 208,
       "aliases": [
-        "Vinícius Júnior",
-        "Junior",
-        "Júnior",
-        "Vini",
-        "Vinicius",
-        "Vinícius",
-        "Vinicius Jr",
-        "Vinicius Jr.",
-        "Vinícius Jr",
-        "Vinicius Junior",
-        "Vinícius Junior",
-        "Vini Jr"
+        "Erling Haaland",
+        "Haaland"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Brian Brobbey",
-      "team": "Netherlands",
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "goals": 4,
+      "assists": 1,
+      "minutes": 275,
+      "aliases": [
+        "Ismaila Sarr",
+        "Ismaïla Sarr",
+        "Sarr"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
       "goals": 3,
       "assists": 0,
-      "minutes": 168,
+      "minutes": 191,
       "aliases": [
-        "Brian Brobbey",
-        "Brobbey"
+        "Matheus Cunha",
+        "Cunha"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Canada",
+      "goals": 3,
+      "assists": 0,
+      "minutes": 271,
+      "aliases": [
+        "Jonathan David",
+        "David"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Yoane Wissa",
+      "team": "DR Congo",
+      "goals": 3,
+      "assists": 0,
+      "minutes": 307,
+      "aliases": [
+        "Yoane Wissa",
+        "Wissa"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -141,28 +194,30 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Elijah Just",
-      "team": "New Zealand",
+      "name": "Kai Havertz",
+      "team": "Germany",
       "goals": 3,
       "assists": 0,
-      "minutes": 292,
+      "minutes": 256,
       "aliases": [
-        "Elijah Just",
-        "Just"
+        "Kai Havertz",
+        "Havertz"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1"
     },
     {
-      "name": "Harry Kane",
-      "team": "England",
+      "name": "Julián Quiñones",
+      "team": "Mexico",
       "goals": 3,
       "assists": 0,
-      "minutes": 291,
+      "minutes": 270,
       "aliases": [
-        "Harry Kane",
-        "Kane"
+        "Julián Quiñones",
+        "Julian Quinones",
+        "Quinones",
+        "Quiñones"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
     },
     {
       "name": "Ismael Saibari",
@@ -177,87 +232,14 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Ismaïla Sarr",
-      "team": "Senegal",
-      "goals": 3,
-      "assists": 1,
-      "minutes": 275,
-      "aliases": [
-        "Ismaïla Sarr",
-        "Ismaila Sarr",
-        "Sarr"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Johan Manzambi",
-      "team": "Switzerland",
-      "goals": 3,
-      "assists": 1,
-      "minutes": 147,
-      "aliases": [
-        "Johan Manzambi",
-        "Manzambi"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Jonathan David",
-      "team": "Canada",
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
       "goals": 3,
       "assists": 0,
-      "minutes": 271,
+      "minutes": 168,
       "aliases": [
-        "Jonathan David",
-        "David"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Matheus Cunha",
-      "team": "Brazil",
-      "goals": 3,
-      "assists": 0,
-      "minutes": 191,
-      "aliases": [
-        "Matheus Cunha",
-        "Cunha"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Yoane Wissa",
-      "team": "DR Congo",
-      "goals": 3,
-      "assists": 0,
-      "minutes": 307,
-      "aliases": [
-        "Yoane Wissa",
-        "Wissa"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Anthony Elanga",
-      "team": "Sweden",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 149,
-      "aliases": [
-        "Anthony Elanga",
-        "Elanga"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Ayase Ueda",
-      "team": "Japan",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 245,
-      "aliases": [
-        "Ayase Ueda",
-        "Ueda"
+        "Brian Brobbey",
+        "Brobbey"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -274,27 +256,114 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Netherlands 1-1 Morocco; penalty shootout pending: +1"
     },
     {
-      "name": "Cristiano Ronaldo",
-      "team": "Portugal",
-      "goals": 2,
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 3,
       "assists": 0,
-      "minutes": 301,
+      "minutes": 292,
       "aliases": [
-        "Cristiano Ronaldo",
-        "CR7",
-        "Ronaldo"
+        "Elijah Just",
+        "Just"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Crysencio Summerville",
-      "team": "Netherlands",
-      "goals": 2,
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "goals": 3,
       "assists": 1,
       "minutes": 147,
       "aliases": [
-        "Crysencio Summerville",
-        "Summerville"
+        "Johan Manzambi",
+        "Manzambi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "USA",
+      "goals": 3,
+      "assists": 0,
+      "minutes": 180,
+      "aliases": [
+        "Balogun",
+        "Folarin Balogun"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
+    },
+    {
+      "name": "Riyad Mahrez",
+      "team": "Algeria",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 214,
+      "aliases": [
+        "Riyad Mahrez",
+        "Mahrez"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Marko Arnautović",
+      "team": "Austria",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 133,
+      "aliases": [
+        "Marko Arnautović",
+        "Arnautovic",
+        "Arnautović",
+        "Marko Arnautovic"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Leandro Trossard",
+      "team": "Belgium",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 280,
+      "aliases": [
+        "Leandro Trossard",
+        "Trossard"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 121,
+      "aliases": [
+        "Lukaku",
+        "Romelu Lukaku"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
+    },
+    {
+      "name": "Youri Tielemans",
+      "team": "Belgium",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Tielemans",
+        "Youri Tielemans"
+      ],
+      "source": "2026-07-01 R32 scorer update added manually; penalty shootout goals excluded."
+    },
+    {
+      "name": "Ermin Mahmić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 37,
+      "aliases": [
+        "Ermin Mahmić",
+        "Ermin Mahmic",
+        "Mahmic",
+        "Mahmić"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -307,18 +376,6 @@
       "aliases": [
         "Cyle Larin",
         "Larin"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Daichi Kamada",
-      "team": "Japan",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 278,
-      "aliases": [
-        "Daichi Kamada",
-        "Kamada"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -337,28 +394,16 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Ermin Mahmić",
-      "team": "Bosnia-Herzegovina",
+      "name": "Nicolas Pépé",
+      "team": "Côte d'Ivoire",
       "goals": 2,
       "assists": 0,
-      "minutes": 37,
+      "minutes": 164,
       "aliases": [
-        "Ermin Mahmić",
-        "Ermin Mahmic",
-        "Mahmic",
-        "Mahmić"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "USA",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 180,
-      "aliases": [
-        "Folarin Balogun",
-        "Balogun"
+        "Nicolas Pépé",
+        "Nicolas Pepe",
+        "Pepe",
+        "Pépé"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -375,54 +420,155 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 3,
-      "assists": 0,
-      "minutes": 270,
-      "aliases": [
-        "Julián Quiñones",
-        "Julian Quinones",
-        "Quinones",
-        "Quiñones"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
-    },
-    {
-      "name": "Kai Havertz",
-      "team": "Germany",
-      "goals": 3,
-      "assists": 0,
-      "minutes": 256,
-      "aliases": [
-        "Kai Havertz",
-        "Havertz"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1"
-    },
-    {
-      "name": "Leandro Trossard",
-      "team": "Belgium",
+      "name": "Ramin Rezaeian",
+      "team": "IR Iran",
       "goals": 2,
-      "assists": 0,
-      "minutes": 280,
+      "assists": 1,
+      "minutes": 309,
       "aliases": [
-        "Leandro Trossard",
-        "Trossard"
+        "Ramin Rezaeian",
+        "Iran",
+        "Ramid Rezaeian",
+        "Rezaeian"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Marko Arnautović",
-      "team": "Austria",
+      "name": "Ayase Ueda",
+      "team": "Japan",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 245,
+      "aliases": [
+        "Ayase Ueda",
+        "Ueda"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "Japan",
       "goals": 2,
       "assists": 0,
-      "minutes": 133,
+      "minutes": 278,
       "aliases": [
-        "Marko Arnautović",
-        "Arnautovic",
-        "Arnautović",
-        "Marko Arnautovic"
+        "Daichi Kamada",
+        "Kamada"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 164,
+      "aliases": [
+        "Raúl Jiménez",
+        "Jimenez",
+        "Jiménez",
+        "Raul Jimenez"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
+    },
+    {
+      "name": "Crysencio Summerville",
+      "team": "Netherlands",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 147,
+      "aliases": [
+        "Crysencio Summerville",
+        "Summerville"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 301,
+      "aliases": [
+        "Cristiano Ronaldo",
+        "CR7",
+        "Ronaldo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "Senegal",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 90,
+      "aliases": [
+        "Diarra",
+        "Habib Diarra"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
+    },
+    {
+      "name": "Pape Gueye",
+      "team": "Senegal",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 186,
+      "aliases": [
+        "Pape Gueye",
+        "Gueye",
+        "P. Gueye"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 228,
+      "aliases": [
+        "Mikel Oyarzabal",
+        "Mikel Oyarzábal",
+        "Oyarzabal",
+        "Oyarzábal"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "Sweden",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 149,
+      "aliases": [
+        "Anthony Elanga",
+        "Elanga"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "Sweden",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 286,
+      "aliases": [
+        "Yasin Ayari",
+        "Ayari"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Ruben Vargas",
+      "team": "Switzerland",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 194,
+      "aliases": [
+        "Ruben Vargas",
+        "Rubén Vargas",
+        "Vargas"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -443,212 +589,6 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 228,
-      "aliases": [
-        "Mikel Oyarzabal",
-        "Mikel Oyarzábal",
-        "Oyarzabal",
-        "Oyarzábal"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nicolas Pépé",
-      "team": "Côte d'Ivoire",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 164,
-      "aliases": [
-        "Nicolas Pépé",
-        "Nicolas Pepe",
-        "Pepe",
-        "Pépé"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Pape Gueye",
-      "team": "Senegal",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 186,
-      "aliases": [
-        "Pape Gueye",
-        "Gueye",
-        "P. Gueye"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Ramin Rezaeian",
-      "team": "IR Iran",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 309,
-      "aliases": [
-        "Ramin Rezaeian",
-        "Iran",
-        "Ramid Rezaeian",
-        "Rezaeian"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Riyad Mahrez",
-      "team": "Algeria",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 214,
-      "aliases": [
-        "Riyad Mahrez",
-        "Mahrez"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Ruben Vargas",
-      "team": "Switzerland",
-      "goals": 2,
-      "assists": 1,
-      "minutes": 194,
-      "aliases": [
-        "Ruben Vargas",
-        "Rubén Vargas",
-        "Vargas"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Yasin Ayari",
-      "team": "Sweden",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 286,
-      "aliases": [
-        "Yasin Ayari",
-        "Ayari"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Abbosbek Fayzullayev",
-      "team": "Uzbekistan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 240,
-      "aliases": [
-        "Abbosbek Fayzullayev",
-        "Abbosbek Fayzullaev",
-        "Fayzullaev",
-        "Fayzullayev"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Abdulelah Al-Amri",
-      "team": "Saudi Arabia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 269,
-      "aliases": [
-        "Abdulelah Al-Amri",
-        "Abdulelah Al Amri",
-        "Al Amri",
-        "Amri"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Achraf Hakimi",
-      "team": "Morocco",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 309,
-      "aliases": [
-        "Achraf Hakimi",
-        "Hakimi"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Agustín Canobbio",
-      "team": "Uruguay",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 262,
-      "aliases": [
-        "Agustín Canobbio",
-        "Agustin Canobbio",
-        "Canobbio"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Alex Freeman",
-      "team": "USA",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 232,
-      "aliases": [
-        "Alex Freeman",
-        "Freeman"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Alexander Isak",
-      "team": "Sweden",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 296,
-      "aliases": [
-        "Alexander Isak",
-        "Isak"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Alexis Saelemaekers",
-      "team": "Belgium",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 89,
-      "aliases": [
-        "Alexis Saelemaekers",
-        "Saelemaekers"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Ali Olwan",
-      "team": "Jordan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 297,
-      "aliases": [
-        "Ali Olwan",
-        "Olwan"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Amad Diallo",
-      "team": "Côte d'Ivoire",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 169,
-      "aliases": [
-        "Amad Diallo",
-        "Amad Dialllo",
-        "Diallo"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
       "name": "Amine Gouiri",
       "team": "Algeria",
       "goals": 1,
@@ -661,266 +601,26 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Ante Budimir",
-      "team": "Croatia",
+      "name": "Nadhir Benbouali",
+      "team": "Algeria",
       "goals": 1,
       "assists": 0,
-      "minutes": 119,
+      "minutes": 52,
       "aliases": [
-        "Ante Budimir",
-        "Budimir"
+        "Nadhir Benbouali",
+        "Benbouali"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Arda Güler",
-      "team": "Türkiye",
+      "name": "Rafik Belghali",
+      "team": "Algeria",
       "goals": 1,
       "assists": 0,
-      "minutes": 314,
+      "minutes": 278,
       "aliases": [
-        "Arda Güler",
-        "Arda Guler",
-        "Guler",
-        "Güler"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Auston Trusty",
-      "team": "USA",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 123,
-      "aliases": [
-        "Auston Trusty",
-        "Trusty"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Aymen Hussein",
-      "team": "Iraq",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 129,
-      "aliases": [
-        "Aymen Hussein",
-        "Hussein"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Barış Alper Yılmaz",
-      "team": "Türkiye",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 196,
-      "aliases": [
-        "Barış Alper Yılmaz",
-        "Baris Alper Yilmaz",
-        "Baris Yilmaz",
-        "Yilmaz",
-        "Yılmaz"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Boualem Khoukhi",
-      "team": "Qatar",
-      "goals": 1,
-      "assists": 0,
-      "minutes": null,
-      "aliases": [
-        "Boualem Khoukhi",
-        "Khoukhi"
-      ],
-      "source": "Qatar 1-1 Switzerland: verified from Qatar/Swiss match reports; not present in the scraped aggregate table used as base"
-    },
-    {
-      "name": "Bradley Barcola",
-      "team": "France",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 136,
-      "aliases": [
-        "Bradley Barcola",
-        "Barcola"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Breel Embolo",
-      "team": "Switzerland",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 283,
-      "aliases": [
-        "Breel Embolo",
-        "Embolo"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Caleb Yirenkyi",
-      "team": "Ghana",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 209,
-      "aliases": [
-        "Caleb Yirenkyi",
-        "Yirenkyi"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Connor Metcalfe",
-      "team": "Australia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 255,
-      "aliases": [
-        "Connor Metcalfe",
-        "Metcalfe"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Daizen Maeda",
-      "team": "Japan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 171,
-      "aliases": [
-        "Daizen Maeda",
-        "Maeda"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Derrick Luckassen",
-      "team": "Ghana",
-      "goals": 1,
-      "assists": 0,
-      "minutes": null,
-      "aliases": [
-        "Derrick Luckassen",
-        "Luckassen"
-      ],
-      "source": "Croatia 2-1 Ghana: verified from AP/Sky/Guardian/FOX/ESPN match reports; not present in the scraped aggregate table used as base"
-    },
-    {
-      "name": "Désiré Doué",
-      "team": "France",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 218,
-      "aliases": [
-        "Désiré Doué",
-        "Desire Doue",
-        "Désiré Doue",
-        "Doue",
-        "Doué"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Eldor Shomurodov",
-      "team": "Uzbekistan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 304,
-      "aliases": [
-        "Eldor Shomurodov",
-        "Shomurodov"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Emam Ashour",
-      "team": "Egypt",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 208,
-      "aliases": [
-        "Emam Ashour",
-        "Ashour",
-        "Eman Ashour"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Felix Nmecha",
-      "team": "Germany",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 250,
-      "aliases": [
-        "Felix Nmecha",
-        "Nmecha"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Finn Surman",
-      "team": "New Zealand",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 307,
-      "aliases": [
-        "Finn Surman",
-        "Surman"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Fiston Mayele",
-      "team": "DR Congo",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 47,
-      "aliases": [
-        "Fiston Mayele",
-        "Mayele"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Franck Kessié",
-      "team": "Côte d'Ivoire",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 288,
-      "aliases": [
-        "Franck Kessié",
-        "Franck Kessie",
-        "Kessie",
-        "Kessié"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Gessime Yassine",
-      "team": "Morocco",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 28,
-      "aliases": [
-        "Gessime Yassine",
-        "Yassine"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Gio Reyna",
-      "team": "USA",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 101,
-      "aliases": [
-        "Gio Reyna",
-        "Giovanni Reyna",
-        "Reyna"
+        "Rafik Belghali",
+        "Belghali"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -934,306 +634,6 @@
         "Giovani Lo Celso",
         "Celso",
         "Lo Celso"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Gonzalo Plata",
-      "team": "Ecuador",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 304,
-      "aliases": [
-        "Gonzalo Plata",
-        "Plata"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Granit Xhaka",
-      "team": "Switzerland",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 304,
-      "aliases": [
-        "Granit Xhaka",
-        "Xhaka"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Habib Diarra",
-      "team": "Senegal",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 90,
-      "aliases": [
-        "Habib Diarra",
-        "Diarra"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Hasan Al Haydos",
-      "team": "Qatar",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 70,
-      "aliases": [
-        "Hasan Al Haydos",
-        "Haydos"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Hazem Mastouri",
-      "team": "Tunisia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 93,
-      "aliases": [
-        "Hazem Mastouri",
-        "Mastouri"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Hwang In-beom",
-      "team": "Korea Republic",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 187,
-      "aliases": [
-        "Hwang In-beom",
-        "beom",
-        "Hwang In Beom",
-        "Hwang In-Beom",
-        "In-Beom Hwang",
-        "Inbeom Hwang"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Hélio Varela",
-      "team": "Cabo Verde",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 75,
-      "aliases": [
-        "Hélio Varela",
-        "Helio Varela",
-        "Varela"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Ibrahim Mbaye",
-      "team": "Senegal",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 137,
-      "aliases": [
-        "Ibrahim Mbaye",
-        "Mbaye"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Iliman Ndiaye",
-      "team": "Senegal",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 56,
-      "aliases": [
-        "Iliman Ndiaye",
-        "Iliman-Cheikh Ndiaye",
-        "Ndiaye"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Jamal Musiala",
-      "team": "Germany",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 237,
-      "aliases": [
-        "Jamal Musiala",
-        "Jamal Musialia",
-        "Musiala"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Jaminton Campaz",
-      "team": "Colombia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 29,
-      "aliases": [
-        "Jaminton Campaz",
-        "Campaz"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Jan Paul van Hecke",
-      "team": "Netherlands",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 298,
-      "aliases": [
-        "Jan Paul van Hecke",
-        "Hecke",
-        "Jan-Paul van Hecke",
-        "Van Hecke"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "John McGinn",
-      "team": "Scotland",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 278,
-      "aliases": [
-        "John McGinn",
-        "McGinn"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Jovo Lukić",
-      "team": "Bosnia-Herzegovina",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 77,
-      "aliases": [
-        "Jovo Lukić",
-        "Jovo Lukic",
-        "Lukic",
-        "Lukić"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "João Neves",
-      "team": "Portugal",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 233,
-      "aliases": [
-        "João Neves",
-        "Joao Neves",
-        "Joāo Neves",
-        "Neves"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Junya Ito",
-      "team": "Japan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 161,
-      "aliases": [
-        "Junya Ito",
-        "Ito",
-        "Itō",
-        "Junya Itō"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Kaan Ayhan",
-      "team": "Türkiye",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 12,
-      "aliases": [
-        "Kaan Ayhan",
-        "Ayhan"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Keito Nakamura",
-      "team": "Japan",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 261,
-      "aliases": [
-        "Keito Nakamura",
-        "Nakamura"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Kerim Alajbegović",
-      "team": "Bosnia-Herzegovina",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 202,
-      "aliases": [
-        "Kerim Alajbegović",
-        "Alajbegovic",
-        "Alajbegović",
-        "Kerim Alajbegovic"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Kevin De Bruyne",
-      "team": "Belgium",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 262,
-      "aliases": [
-        "Kevin De Bruyne",
-        "Bruyne",
-        "De Bruyne",
-        "KDB"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Kevin Pina",
-      "team": "Cabo Verde",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 279,
-      "aliases": [
-        "Kevin Lenini",
-        "Kevin Lenini Pina",
-        "Kevin Pina",
-        "Lenini",
-        "Pina"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; canonical name corrected to Kevin Pina from additional Cabo Verde reports"
-    },
-    {
-      "name": "Ladislav Krejčí",
-      "team": "Czechia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 301,
-      "aliases": [
-        "Ladislav Krejčí",
-        "Krejci",
-        "Krejčí",
-        "Ladislav Krejci"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Lamine Yamal",
-      "team": "Spain",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 153,
-      "aliases": [
-        "Lamine Yamal",
-        "Yamal"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1253,46 +653,221 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Leo Østigard",
-      "team": "Norway",
+      "name": "Connor Metcalfe",
+      "team": "Australia",
       "goals": 1,
       "assists": 0,
-      "minutes": 142,
+      "minutes": 255,
       "aliases": [
-        "Leo Østigard",
-        "Leo Oestigard",
-        "Leo Ostigard",
-        "Leo Østigård",
-        "Ostigard",
-        "Østigard",
-        "Østigård"
+        "Connor Metcalfe",
+        "Metcalfe"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Leroy Sané",
-      "team": "Germany",
+      "name": "Nestory Irankunda",
+      "team": "Australia",
       "goals": 1,
       "assists": 0,
-      "minutes": 268,
+      "minutes": 208,
       "aliases": [
-        "Leroy Sané",
-        "Leroy Sane",
-        "Sane",
-        "Sané"
+        "Nestory Irankunda",
+        "Irankunda"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Livano Comenencia",
-      "team": "Curaçao",
+      "name": "Marcel Sabitzer",
+      "team": "Austria",
       "goals": 1,
       "assists": 0,
-      "minutes": 253,
+      "minutes": 312,
       "aliases": [
-        "Livano Comenencia",
-        "Comenencia",
-        "Curacao Comenencia"
+        "Marcel Sabitzer",
+        "Sabitzer"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Romano Schmid",
+      "team": "Austria",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 216,
+      "aliases": [
+        "Romano Schmid",
+        "Schmid"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Saša Kalajdžić",
+      "team": "Austria",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 48,
+      "aliases": [
+        "Saša Kalajdžić",
+        "Kalajdzic",
+        "Kalajdžić",
+        "Sasa Kalajdzic",
+        "Saša Kalajdzic"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "team": "Belgium",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 89,
+      "aliases": [
+        "Alexis Saelemaekers",
+        "Saelemaekers"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 262,
+      "aliases": [
+        "Kevin De Bruyne",
+        "Bruyne",
+        "De Bruyne",
+        "KDB"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Jovo Lukić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 77,
+      "aliases": [
+        "Jovo Lukić",
+        "Jovo Lukic",
+        "Lukic",
+        "Lukić"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Kerim Alajbegović",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 202,
+      "aliases": [
+        "Kerim Alajbegović",
+        "Alajbegovic",
+        "Alajbegović",
+        "Kerim Alajbegovic"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Casemiro",
+      "team": "Brazil",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Casemiro"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Gabriel Martinelli",
+      "team": "Brazil",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Gabriel Martinelli",
+        "Martinelli"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Hélio Varela",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 75,
+      "aliases": [
+        "Hélio Varela",
+        "Helio Varela",
+        "Varela"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Kevin Pina",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 279,
+      "aliases": [
+        "Kevin Lenini",
+        "Kevin Lenini Pina",
+        "Kevin Pina",
+        "Lenini",
+        "Pina"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; canonical name corrected to Kevin Pina from additional Cabo Verde reports"
+    },
+    {
+      "name": "Nathan Saliba",
+      "team": "Canada",
+      "goals": 1,
+      "assists": 2,
+      "minutes": 143,
+      "aliases": [
+        "Nathan Saliba",
+        "Nathan-Dylan Saliba",
+        "Saliba"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Promise David",
+      "team": "Canada",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 58,
+      "aliases": [
+        "Promise David",
+        "David"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Stephen Eustáquio",
+      "team": "Canada",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Stephen Eustáquio",
+        "Stephen Eustaquio",
+        "Eustáquio",
+        "Eustaquio"
+      ],
+      "source": "South Africa 0-1 Canada, M73: +1"
+    },
+    {
+      "name": "Jaminton Campaz",
+      "team": "Colombia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 29,
+      "aliases": [
+        "Jaminton Campaz",
+        "Campaz"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1311,74 +886,14 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Luis Romo",
-      "team": "Mexico",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 141,
-      "aliases": [
-        "Luis Romo",
-        "Romo"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mahmoud Saber",
-      "team": "Egypt",
+      "name": "Ante Budimir",
+      "team": "Croatia",
       "goals": 1,
       "assists": 0,
-      "minutes": 45,
+      "minutes": 119,
       "aliases": [
-        "Mahmoud Saber",
-        "Saber"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mahmoud Trezeguet",
-      "team": "Egypt",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 129,
-      "aliases": [
-        "Mahmoud Trezeguet",
-        "Trezeguet"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Marcel Sabitzer",
-      "team": "Austria",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 312,
-      "aliases": [
-        "Marcel Sabitzer",
-        "Sabitzer"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Marcus Pedersen",
-      "team": "Norway",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 142,
-      "aliases": [
-        "Marcus Pedersen",
-        "Pedersen"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Marcus Rashford",
-      "team": "England",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 137,
-      "aliases": [
-        "Marcus Rashford",
-        "Rashford"
+        "Ante Budimir",
+        "Budimir"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1395,194 +910,6 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Mateo Chávez",
-      "team": "Mexico",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 82,
-      "aliases": [
-        "Mateo Chávez",
-        "Chavez",
-        "Chávez",
-        "Mateo Chavez"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mattias Svanberg",
-      "team": "Sweden",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 13,
-      "aliases": [
-        "Mattias Svanberg",
-        "Mikel Svanberg",
-        "Svanberg"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Matías Galarza",
-      "team": "Paraguay",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 199,
-      "aliases": [
-        "Matías Galarza",
-        "Galaraza",
-        "Galarza",
-        "Matias Galaraza",
-        "Matías Galaraza",
-        "Matias Galarza"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mauricio",
-      "team": "Paraguay",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 104,
-      "aliases": [
-        "Mauricio"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Michal Sadílek",
-      "team": "Czechia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 204,
-      "aliases": [
-        "Michal Sadílek",
-        "Michal Sadilek",
-        "Sadilek",
-        "Sadílek"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mohamed Salah",
-      "team": "Egypt",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 231,
-      "aliases": [
-        "Mohamed Salah",
-        "Mo Salah",
-        "Salah"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mohammad Mohebi",
-      "team": "IR Iran",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 272,
-      "aliases": [
-        "Mohammad Mohebi",
-        "Mohamed Mohebi",
-        "Mohebi"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mostafa Ziko",
-      "team": "Egypt",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 241,
-      "aliases": [
-        "Mostafa Ziko",
-        "Mostafa Zico",
-        "Zico",
-        "Ziko"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mousa Al-Taamari",
-      "team": "Jordan",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 230,
-      "aliases": [
-        "Mousa Al-Taamari",
-        "Al-Taamari",
-        "Altamari",
-        "Mousa Altamari",
-        "Mousa Tamari",
-        "Musa Al-Taamari",
-        "Musa al-Taamari",
-        "Taamari",
-        "Tamari"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nadhir Benbouali",
-      "team": "Algeria",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 52,
-      "aliases": [
-        "Nadhir Benbouali",
-        "Benbouali"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nathan Saliba",
-      "team": "Canada",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 143,
-      "aliases": [
-        "Nathan Saliba",
-        "Nathan-Dylan Saliba",
-        "Saliba"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nathaniel Brown",
-      "team": "Germany",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 182,
-      "aliases": [
-        "Nathaniel Brown",
-        "Brown"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nestory Irankunda",
-      "team": "Australia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 208,
-      "aliases": [
-        "Nestory Irankunda",
-        "Irankunda"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nico Schlotterbeck",
-      "team": "Germany",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 145,
-      "aliases": [
-        "Nico Schlotterbeck",
-        "Schlotterbeck"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
       "name": "Nikola Vlašić",
       "team": "Croatia",
       "goals": 1,
@@ -1593,70 +920,6 @@
         "Nikola Vlasic",
         "Vlasic",
         "Vlašić"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nilson Angulo",
-      "team": "Ecuador",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 157,
-      "aliases": [
-        "Nilson Angulo",
-        "Angulo"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nizar Al-Rashdan",
-      "team": "Jordan",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 290,
-      "aliases": [
-        "Nizar Al-Rashdan",
-        "Al-Rashdan",
-        "Alrashdan",
-        "Nizar Alrashdan",
-        "Rashdan"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Nuno Mendes",
-      "team": "Portugal",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 273,
-      "aliases": [
-        "Nuno Mendes",
-        "Alexandre Nuno Mendes",
-        "Mendes"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Oh Hyeon-gyu",
-      "team": "Korea Republic",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 145,
-      "aliases": [
-        "Oh Hyeon-gyu",
-        "gyu"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Omar Rekik",
-      "team": "Tunisia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 201,
-      "aliases": [
-        "Omar Rekik",
-        "Rekik"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1687,14 +950,706 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Promise David",
-      "team": "Canada",
+      "name": "Livano Comenencia",
+      "team": "Curaçao",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 253,
+      "aliases": [
+        "Livano Comenencia",
+        "Comenencia",
+        "Curacao Comenencia"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "team": "Czechia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 301,
+      "aliases": [
+        "Ladislav Krejčí",
+        "Krejci",
+        "Krejčí",
+        "Ladislav Krejci"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Michal Sadílek",
+      "team": "Czechia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 204,
+      "aliases": [
+        "Michal Sadílek",
+        "Michal Sadilek",
+        "Sadilek",
+        "Sadílek"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "Côte d'Ivoire",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 169,
+      "aliases": [
+        "Amad Diallo",
+        "Amad Dialllo",
+        "Diallo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Franck Kessié",
+      "team": "Côte d'Ivoire",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 288,
+      "aliases": [
+        "Franck Kessié",
+        "Franck Kessie",
+        "Kessie",
+        "Kessié"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Brian Cipenga",
+      "team": "DR Congo",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Brian Cipenga",
+        "Brian Kibambe Cipenga",
+        "Cipenga"
+      ],
+      "source": "2026-07-01 R32 scorer update added manually; penalty shootout goals excluded."
+    },
+    {
+      "name": "Fiston Mayele",
+      "team": "DR Congo",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 47,
+      "aliases": [
+        "Fiston Mayele",
+        "Mayele"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Gonzalo Plata",
+      "team": "Ecuador",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 304,
+      "aliases": [
+        "Gonzalo Plata",
+        "Plata"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Nilson Angulo",
+      "team": "Ecuador",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 157,
+      "aliases": [
+        "Nilson Angulo",
+        "Angulo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 208,
+      "aliases": [
+        "Emam Ashour",
+        "Ashour",
+        "Eman Ashour"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mahmoud Saber",
+      "team": "Egypt",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 45,
+      "aliases": [
+        "Mahmoud Saber",
+        "Saber"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mahmoud Trezeguet",
+      "team": "Egypt",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 129,
+      "aliases": [
+        "Mahmoud Trezeguet",
+        "Trezeguet"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "goals": 1,
+      "assists": 2,
+      "minutes": 231,
+      "aliases": [
+        "Mohamed Salah",
+        "Mo Salah",
+        "Salah"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mostafa Ziko",
+      "team": "Egypt",
       "goals": 1,
       "assists": 1,
-      "minutes": 58,
+      "minutes": 241,
       "aliases": [
-        "Promise David",
-        "David"
+        "Mostafa Ziko",
+        "Mostafa Zico",
+        "Zico",
+        "Ziko"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Marcus Rashford",
+      "team": "England",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 137,
+      "aliases": [
+        "Marcus Rashford",
+        "Rashford"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "France",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 136,
+      "aliases": [
+        "Bradley Barcola",
+        "Barcola"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Désiré Doué",
+      "team": "France",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 218,
+      "aliases": [
+        "Désiré Doué",
+        "Desire Doue",
+        "Désiré Doue",
+        "Doue",
+        "Doué"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Felix Nmecha",
+      "team": "Germany",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 250,
+      "aliases": [
+        "Felix Nmecha",
+        "Nmecha"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Jamal Musiala",
+      "team": "Germany",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 237,
+      "aliases": [
+        "Jamal Musiala",
+        "Jamal Musialia",
+        "Musiala"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Leroy Sané",
+      "team": "Germany",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 268,
+      "aliases": [
+        "Leroy Sané",
+        "Leroy Sane",
+        "Sane",
+        "Sané"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Nathaniel Brown",
+      "team": "Germany",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 182,
+      "aliases": [
+        "Nathaniel Brown",
+        "Brown"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 145,
+      "aliases": [
+        "Nico Schlotterbeck",
+        "Schlotterbeck"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 209,
+      "aliases": [
+        "Caleb Yirenkyi",
+        "Yirenkyi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Derrick Luckassen",
+      "team": "Ghana",
+      "goals": 1,
+      "assists": 0,
+      "minutes": null,
+      "aliases": [
+        "Derrick Luckassen",
+        "Luckassen"
+      ],
+      "source": "Croatia 2-1 Ghana: verified from AP/Sky/Guardian/FOX/ESPN match reports; not present in the scraped aggregate table used as base"
+    },
+    {
+      "name": "Wilson Isidor",
+      "team": "Haiti",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 201,
+      "aliases": [
+        "Wilson Isidor",
+        "Isidor"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mohammad Mohebi",
+      "team": "IR Iran",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 272,
+      "aliases": [
+        "Mohammad Mohebi",
+        "Mohamed Mohebi",
+        "Mohebi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Aymen Hussein",
+      "team": "Iraq",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 129,
+      "aliases": [
+        "Aymen Hussein",
+        "Hussein"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Daizen Maeda",
+      "team": "Japan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 171,
+      "aliases": [
+        "Daizen Maeda",
+        "Maeda"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Junya Ito",
+      "team": "Japan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 161,
+      "aliases": [
+        "Junya Ito",
+        "Ito",
+        "Itō",
+        "Junya Itō"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Kaishu Sano",
+      "team": "Japan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Kaishu Sano",
+        "Sano"
+      ],
+      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Keito Nakamura",
+      "team": "Japan",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 261,
+      "aliases": [
+        "Keito Nakamura",
+        "Nakamura"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Ali Olwan",
+      "team": "Jordan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 297,
+      "aliases": [
+        "Ali Olwan",
+        "Olwan"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mousa Al-Taamari",
+      "team": "Jordan",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 230,
+      "aliases": [
+        "Mousa Al-Taamari",
+        "Al-Taamari",
+        "Altamari",
+        "Mousa Altamari",
+        "Mousa Tamari",
+        "Musa Al-Taamari",
+        "Musa al-Taamari",
+        "Taamari",
+        "Tamari"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Nizar Al-Rashdan",
+      "team": "Jordan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 290,
+      "aliases": [
+        "Nizar Al-Rashdan",
+        "Al-Rashdan",
+        "Alrashdan",
+        "Nizar Alrashdan",
+        "Rashdan"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Hwang In-beom",
+      "team": "Korea Republic",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 187,
+      "aliases": [
+        "Hwang In-beom",
+        "beom",
+        "Hwang In Beom",
+        "Hwang In-Beom",
+        "In-Beom Hwang",
+        "Inbeom Hwang"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Oh Hyeon-gyu",
+      "team": "Korea Republic",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 145,
+      "aliases": [
+        "Oh Hyeon-gyu",
+        "gyu"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Luis Romo",
+      "team": "Mexico",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 141,
+      "aliases": [
+        "Luis Romo",
+        "Romo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mateo Chávez",
+      "team": "Mexico",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 82,
+      "aliases": [
+        "Mateo Chávez",
+        "Chavez",
+        "Chávez",
+        "Mateo Chavez"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "team": "Mexico",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 94,
+      "aliases": [
+        "Álvaro Fidalgo",
+        "Alvaro Fidalgo",
+        "Fidalgo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Achraf Hakimi",
+      "team": "Morocco",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 309,
+      "aliases": [
+        "Achraf Hakimi",
+        "Hakimi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Gessime Yassine",
+      "team": "Morocco",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 28,
+      "aliases": [
+        "Gessime Yassine",
+        "Yassine"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Issa Diop",
+      "team": "Morocco",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Issa Diop",
+        "Diop"
+      ],
+      "source": "Netherlands 1-1 Morocco; penalty shootout pending: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 54,
+      "aliases": [
+        "Soufiane Rahimi",
+        "Rahimi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Jan Paul van Hecke",
+      "team": "Netherlands",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 298,
+      "aliases": [
+        "Jan Paul van Hecke",
+        "Hecke",
+        "Jan-Paul van Hecke",
+        "Van Hecke"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 298,
+      "aliases": [
+        "Virgil van Dijk",
+        "Dijk",
+        "Van Dijk"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Finn Surman",
+      "team": "New Zealand",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 307,
+      "aliases": [
+        "Finn Surman",
+        "Surman"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Leo Østigard",
+      "team": "Norway",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 142,
+      "aliases": [
+        "Leo Østigard",
+        "Leo Oestigard",
+        "Leo Ostigard",
+        "Leo Østigård",
+        "Ostigard",
+        "Østigard",
+        "Østigård"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Marcus Pedersen",
+      "team": "Norway",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 142,
+      "aliases": [
+        "Marcus Pedersen",
+        "Pedersen"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Thelo Aasgaard",
+      "team": "Norway",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 100,
+      "aliases": [
+        "Thelo Aasgaard",
+        "Aasgaard",
+        "Åsgård",
+        "Thelo Åsgård",
+        "Thelonious Aasgaard"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Julio Enciso",
+      "team": "Paraguay",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Julio Enciso",
+        "Enciso"
+      ],
+      "source": "Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+    },
+    {
+      "name": "Matías Galarza",
+      "team": "Paraguay",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 199,
+      "aliases": [
+        "Matías Galarza",
+        "Galaraza",
+        "Galarza",
+        "Matias Galaraza",
+        "Matías Galaraza",
+        "Matias Galarza"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mauricio",
+      "team": "Paraguay",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 104,
+      "aliases": [
+        "Mauricio"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "João Neves",
+      "team": "Portugal",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 233,
+      "aliases": [
+        "João Neves",
+        "Joao Neves",
+        "Joāo Neves",
+        "Neves"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Nuno Mendes",
+      "team": "Portugal",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 273,
+      "aliases": [
+        "Nuno Mendes",
+        "Alexandre Nuno Mendes",
+        "Mendes"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1715,91 +1670,77 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Rafik Belghali",
-      "team": "Algeria",
+      "name": "Boualem Khoukhi",
+      "team": "Qatar",
+      "goals": 1,
+      "assists": 0,
+      "minutes": null,
+      "aliases": [
+        "Boualem Khoukhi",
+        "Khoukhi"
+      ],
+      "source": "Qatar 1-1 Switzerland: verified from Qatar/Swiss match reports; not present in the scraped aggregate table used as base"
+    },
+    {
+      "name": "Hasan Al Haydos",
+      "team": "Qatar",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 70,
+      "aliases": [
+        "Hasan Al Haydos",
+        "Haydos"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 269,
+      "aliases": [
+        "Abdulelah Al-Amri",
+        "Abdulelah Al Amri",
+        "Al Amri",
+        "Amri"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "John McGinn",
+      "team": "Scotland",
       "goals": 1,
       "assists": 0,
       "minutes": 278,
       "aliases": [
-        "Rafik Belghali",
-        "Belghali"
+        "John McGinn",
+        "McGinn"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Raúl Jiménez",
-      "team": "Mexico",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 164,
-      "aliases": [
-        "Raúl Jiménez",
-        "Jimenez",
-        "Jiménez",
-        "Raul Jimenez"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
-    },
-    {
-      "name": "Romano Schmid",
-      "team": "Austria",
+      "name": "Ibrahim Mbaye",
+      "team": "Senegal",
       "goals": 1,
       "assists": 0,
-      "minutes": 216,
+      "minutes": 137,
       "aliases": [
-        "Romano Schmid",
-        "Schmid"
+        "Ibrahim Mbaye",
+        "Mbaye"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Romelu Lukaku",
-      "team": "Belgium",
+      "name": "Iliman Ndiaye",
+      "team": "Senegal",
       "goals": 1,
-      "assists": 1,
-      "minutes": 121,
+      "assists": 2,
+      "minutes": 56,
       "aliases": [
-        "Romelu Lukaku",
-        "Lukaku"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Saša Kalajdžić",
-      "team": "Austria",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 48,
-      "aliases": [
-        "Saša Kalajdžić",
-        "Kalajdzic",
-        "Kalajdžić",
-        "Sasa Kalajdzic",
-        "Saša Kalajdzic"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Sebastian Berhalter",
-      "team": "USA",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 183,
-      "aliases": [
-        "Sebastian Berhalter",
-        "Berhalter"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Soufiane Rahimi",
-      "team": "Morocco",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 54,
-      "aliases": [
-        "Soufiane Rahimi",
-        "Rahimi"
+        "Iliman Ndiaye",
+        "Iliman-Cheikh Ndiaye",
+        "Ndiaye"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1828,56 +1769,14 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Thelo Aasgaard",
-      "team": "Norway",
+      "name": "Lamine Yamal",
+      "team": "Spain",
       "goals": 1,
       "assists": 0,
-      "minutes": 100,
+      "minutes": 153,
       "aliases": [
-        "Thelo Aasgaard",
-        "Aasgaard",
-        "Åsgård",
-        "Thelo Åsgård",
-        "Thelonious Aasgaard"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Viktor Gyökeres",
-      "team": "Sweden",
-      "goals": 1,
-      "assists": 2,
-      "minutes": 303,
-      "aliases": [
-        "Viktor Gyökeres",
-        "Gyokeres",
-        "Gyökeres",
-        "Viktor Gyokeres"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Virgil van Dijk",
-      "team": "Netherlands",
-      "goals": 1,
-      "assists": 1,
-      "minutes": 298,
-      "aliases": [
-        "Virgil van Dijk",
-        "Dijk",
-        "Van Dijk"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Wilson Isidor",
-      "team": "Haiti",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 201,
-      "aliases": [
-        "Wilson Isidor",
-        "Isidor"
+        "Lamine Yamal",
+        "Yamal"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
@@ -1896,90 +1795,232 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Álvaro Fidalgo",
-      "team": "Mexico",
+      "name": "Alexander Isak",
+      "team": "Sweden",
       "goals": 1,
-      "assists": 0,
-      "minutes": 94,
+      "assists": 2,
+      "minutes": 296,
       "aliases": [
-        "Álvaro Fidalgo",
-        "Alvaro Fidalgo",
-        "Fidalgo"
+        "Alexander Isak",
+        "Isak"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Stephen Eustáquio",
-      "team": "Canada",
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
       "goals": 1,
       "assists": 0,
-      "minutes": 0,
+      "minutes": 13,
       "aliases": [
-        "Stephen Eustáquio",
-        "Stephen Eustaquio",
-        "Eustáquio",
-        "Eustaquio"
+        "Mattias Svanberg",
+        "Mikel Svanberg",
+        "Svanberg"
       ],
-      "source": "South Africa 0-1 Canada, M73: +1"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Kaishu Sano",
-      "team": "Japan",
+      "name": "Viktor Gyökeres",
+      "team": "Sweden",
       "goals": 1,
-      "assists": 0,
-      "minutes": 0,
+      "assists": 2,
+      "minutes": 303,
       "aliases": [
-        "Kaishu Sano",
-        "Sano"
+        "Viktor Gyökeres",
+        "Gyokeres",
+        "Gyökeres",
+        "Viktor Gyokeres"
       ],
-      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Casemiro",
-      "team": "Brazil",
+      "name": "Breel Embolo",
+      "team": "Switzerland",
       "goals": 1,
-      "assists": 0,
-      "minutes": 0,
+      "assists": 2,
+      "minutes": 283,
       "aliases": [
-        "Casemiro"
+        "Breel Embolo",
+        "Embolo"
       ],
-      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Gabriel Martinelli",
-      "team": "Brazil",
+      "name": "Granit Xhaka",
+      "team": "Switzerland",
       "goals": 1,
       "assists": 0,
-      "minutes": 0,
+      "minutes": 304,
       "aliases": [
-        "Gabriel Martinelli",
-        "Martinelli"
+        "Granit Xhaka",
+        "Xhaka"
       ],
-      "source": "Brazil 2-1 Japan: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Julio Enciso",
-      "team": "Paraguay",
+      "name": "Hazem Mastouri",
+      "team": "Tunisia",
       "goals": 1,
       "assists": 0,
-      "minutes": 0,
+      "minutes": 93,
       "aliases": [
-        "Julio Enciso",
-        "Enciso"
+        "Hazem Mastouri",
+        "Mastouri"
       ],
-      "source": "Germany 1-1 Paraguay; Paraguay won 4-3 on penalties: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Issa Diop",
-      "team": "Morocco",
+      "name": "Omar Rekik",
+      "team": "Tunisia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 201,
+      "aliases": [
+        "Omar Rekik",
+        "Rekik"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Arda Güler",
+      "team": "Türkiye",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 314,
+      "aliases": [
+        "Arda Güler",
+        "Arda Guler",
+        "Guler",
+        "Güler"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Barış Alper Yılmaz",
+      "team": "Türkiye",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 196,
+      "aliases": [
+        "Barış Alper Yılmaz",
+        "Baris Alper Yilmaz",
+        "Baris Yilmaz",
+        "Yilmaz",
+        "Yılmaz"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Kaan Ayhan",
+      "team": "Türkiye",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 12,
+      "aliases": [
+        "Kaan Ayhan",
+        "Ayhan"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Alex Freeman",
+      "team": "USA",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 232,
+      "aliases": [
+        "Alex Freeman",
+        "Freeman"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Auston Trusty",
+      "team": "USA",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 123,
+      "aliases": [
+        "Auston Trusty",
+        "Trusty"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Gio Reyna",
+      "team": "USA",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 101,
+      "aliases": [
+        "Gio Reyna",
+        "Giovanni Reyna",
+        "Reyna"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Malik Tillman",
+      "team": "USA",
       "goals": 1,
       "assists": 0,
       "minutes": 0,
       "aliases": [
-        "Issa Diop",
-        "Diop"
+        "Malik Tillman",
+        "Tillman"
       ],
-      "source": "Netherlands 1-1 Morocco; penalty shootout pending: +1 (Round of 32 2026-06-29 live/match reports; regulation-time match goals only; penalty shootout kicks excluded.)"
+      "source": "2026-07-01 R32 scorer update added manually; penalty shootout goals excluded."
+    },
+    {
+      "name": "Sebastian Berhalter",
+      "team": "USA",
+      "goals": 1,
+      "assists": 1,
+      "minutes": 183,
+      "aliases": [
+        "Sebastian Berhalter",
+        "Berhalter"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Agustín Canobbio",
+      "team": "Uruguay",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 262,
+      "aliases": [
+        "Agustín Canobbio",
+        "Agustin Canobbio",
+        "Canobbio"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Abbosbek Fayzullayev",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 240,
+      "aliases": [
+        "Abbosbek Fayzullayev",
+        "Abbosbek Fayzullaev",
+        "Fayzullaev",
+        "Fayzullayev"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 304,
+      "aliases": [
+        "Eldor Shomurodov",
+        "Shomurodov"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     }
   ],
   "predictionTeamHints": {
