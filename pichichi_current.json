@@ -1,6 +1,6 @@
 {
-  "asOf": "After M83 Portugal 2-1 Croatia and M84 Spain 3-0 Austria (2026-07-02)",
-  "source": "Manual update from confirmed Round of 32 scorers through Portugal-Croatia. Penalty shootout goals excluded.",
+  "asOf": "After M85 Switzerland 2-0 Algeria (2026-07-02), with M83/M84 already locked",
+  "source": "Manual update from confirmed Round of 32 scorers through Switzerland-Algeria. Penalty shootout goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -806,14 +806,14 @@
     {
       "name": "Breel Embolo",
       "team": "Switzerland",
-      "goals": 1,
+      "goals": 2,
       "assists": 2,
       "minutes": 283,
       "aliases": [
         "Breel Embolo",
         "Embolo"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye."
     },
     {
       "name": "Brian Cipenga",
@@ -2060,6 +2060,18 @@
         "Fidalgo"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Dan Ndoye",
+        "Ndoye"
+      ],
+      "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation."
     }
   ],
   "predictionTeamHints": {
@@ -2218,6 +2230,24 @@
         }
       ],
       "note": "Penalty shootout goals excluded."
+    },
+    {
+      "date": "2026-07-02",
+      "matchId": "M85",
+      "match": "Switzerland 2-0 Algeria",
+      "scorers": [
+        {
+          "player": "Breel Embolo",
+          "team": "Switzerland",
+          "goalsAdded": 1
+        },
+        {
+          "player": "Dan Ndoye",
+          "team": "Switzerland",
+          "goalsAdded": 1
+        }
+      ],
+      "note": "Penalty shootout goals excluded; assists/minutes not used by the simulation."
     }
   ]
 }
