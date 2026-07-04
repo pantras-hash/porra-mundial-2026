@@ -1,6 +1,6 @@
 {
-  "asOf": "After M85 Switzerland 2-0 Algeria (2026-07-02), with M83/M84 already locked",
-  "source": "Manual update from confirmed Round of 32 scorers through Switzerland-Algeria. Penalty shootout goals excluded.",
+  "asOf": "After Colombia 1-0 Ghana / M87 (2026-07-03), with Australia-Egypt and Argentina-Cape Verde also locked",
+  "source": "Manual update from confirmed Round of 32 scorers through Colombia-Ghana. Penalty shootout goals and own goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -48,14 +48,14 @@
     {
       "name": "Lionel Messi",
       "team": "Argentina",
-      "goals": 6,
+      "goals": 7,
       "assists": 0,
       "minutes": 223,
       "aliases": [
         "Lionel Messi",
         "Messi"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Harry Kane",
@@ -917,7 +917,7 @@
     {
       "name": "Emam Ashour",
       "team": "Egypt",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 208,
       "aliases": [
@@ -925,7 +925,7 @@
         "Ashour",
         "Eman Ashour"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Felix Nmecha",
@@ -2072,6 +2072,55 @@
         "Ndoye"
       ],
       "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation."
+    },
+    {
+      "name": "Lisandro Martínez",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Lisandro Martínez",
+        "Lisandro Martinez"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+    },
+    {
+      "name": "Deroy Duarte",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Deroy Duarte",
+        "Duarte"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+    },
+    {
+      "name": "Sidny Lopes Cabral",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Sidny Lopes Cabral",
+        "Sidny Cabral",
+        "Cabral"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+    },
+    {
+      "name": "Jhon Arias",
+      "team": "Colombia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Jhon Arias",
+        "Arias"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     }
   ],
   "predictionTeamHints": {
@@ -2248,6 +2297,14 @@
         }
       ],
       "note": "Penalty shootout goals excluded; assists/minutes not used by the simulation."
+    },
+    {
+      "asOf": "After M87 Colombia 1-0 Ghana",
+      "updates": [
+        "Australia 1-1 Egypt: Emam Ashour +1; Australia goal treated as own goal, no Pichichi scorer.",
+        "Argentina 3-2 Cabo Verde: Lionel Messi +1, Lisandro Martínez +1, Deroy Duarte +1, Sidny Lopes Cabral +1; Argentina third treated as own goal.",
+        "Colombia 1-0 Ghana: Jhon Arias +1."
+      ]
     }
   ]
 }
