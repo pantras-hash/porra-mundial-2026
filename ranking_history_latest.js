@@ -1,11 +1,11 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-07-04T03:32:25Z",
-  "label": "04 Jul 2026, 03:32 UTC",
+  "generatedAt": "2026-07-04T03:33:26Z",
+  "label": "04 Jul 2026, 03:33 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order; includes locked knockout team/position points once slots are known",
-  "snapshotCount": 87,
+  "snapshotCount": 88,
   "playerCount": 57,
-  "lastMatchId": "M86",
-  "lastMatchLabel": "1J 3–2 2H",
+  "lastMatchId": "M87",
+  "lastMatchLabel": "1K 1–0 third:1K",
   "snapshots": [
     {
       "index": 0,
@@ -615,6 +615,13 @@ window.PORRA_RANKING_HISTORY = {
       "date": "2026-07-03",
       "sortOrder": 87,
       "label": "1J 3–2 2H"
+    },
+    {
+      "index": 87,
+      "matchId": "M87",
+      "date": "2026-07-03",
+      "sortOrder": 88,
+      "label": "1K 1–0 third:1K"
     }
   ],
   "players": [
@@ -1427,6 +1434,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 50,
         "points": 697
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 50,
+        "points": 707
       }
     ],
     "Albert C.": [
@@ -1950,6 +1963,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 56,
+        "points": 613
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 57,
         "points": 613
       }
     ],
@@ -2475,6 +2494,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 53,
         "points": 679
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 53,
+        "points": 689
       }
     ],
     "Aleix": [
@@ -2999,6 +3024,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 1,
         "points": 887
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 1,
+        "points": 893
       }
     ],
     "Andreu": [
@@ -3523,6 +3554,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 44,
         "points": 714
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 46,
+        "points": 718
       }
     ],
     "Andy": [
@@ -4047,6 +4084,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 14,
         "points": 805
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 14,
+        "points": 815
       }
     ],
     "Antonio": [
@@ -4571,6 +4614,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 51,
         "points": 695
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 51,
+        "points": 705
       }
     ],
     "Bernat G.": [
@@ -5095,6 +5144,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 35,
         "points": 758
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 33,
+        "points": 772
       }
     ],
     "Bernat O.": [
@@ -5619,6 +5674,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 32,
         "points": 766
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 34,
+        "points": 770
       }
     ],
     "Bernat R.": [
@@ -6143,6 +6204,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 27,
         "points": 775
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 30,
+        "points": 775
       }
     ],
     "Biel": [
@@ -6665,6 +6732,12 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 86,
         "matchId": "M86",
+        "rank": 55,
+        "points": 658
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
         "rank": 55,
         "points": 658
       }
@@ -7191,6 +7264,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 11,
         "points": 816
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 11,
+        "points": 824
       }
     ],
     "Chús": [
@@ -7715,6 +7794,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 15,
         "points": 803
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 15,
+        "points": 809
       }
     ],
     "Daniela": [
@@ -8239,6 +8324,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 38,
         "points": 749
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 36,
+        "points": 759
       }
     ],
     "David M.": [
@@ -8762,6 +8853,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 20,
+        "points": 793
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 22,
         "points": 793
       }
     ],
@@ -9287,6 +9384,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 45,
         "points": 710
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 44,
+        "points": 722
       }
     ],
     "Eduardo M.": [
@@ -9811,6 +9914,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 32,
         "points": 766
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 29,
+        "points": 776
       }
     ],
     "Emiliano": [
@@ -10335,6 +10444,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 20,
         "points": 793
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 20,
+        "points": 799
       }
     ],
     "Enrique M.": [
@@ -10859,6 +10974,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 57,
         "points": 611
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 56,
+        "points": 625
       }
     ],
     "Gerard": [
@@ -11382,6 +11503,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 41,
+        "points": 735
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 43,
         "points": 735
       }
     ],
@@ -11907,6 +12034,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 34,
         "points": 761
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 35,
+        "points": 767
       }
     ],
     "Guillem O.": [
@@ -12431,6 +12564,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 39,
         "points": 746
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 39,
+        "points": 752
       }
     ],
     "Isra": [
@@ -12955,6 +13094,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 25,
         "points": 779
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 25,
+        "points": 785
       }
     ],
     "Jaume C.": [
@@ -13479,6 +13624,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 25,
         "points": 779
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 24,
+        "points": 789
       }
     ],
     "Jaume M.": [
@@ -14003,6 +14154,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 45,
         "points": 710
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 49,
+        "points": 714
       }
     ],
     "Joan": [
@@ -14527,6 +14684,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 18,
         "points": 796
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 16,
+        "points": 806
       }
     ],
     "JoanRa": [
@@ -15051,6 +15214,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 13,
         "points": 810
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 12,
+        "points": 822
       }
     ],
     "Jordi C.": [
@@ -15575,6 +15744,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 52,
         "points": 690
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 52,
+        "points": 702
       }
     ],
     "Jordi O.": [
@@ -16098,6 +16273,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 24,
+        "points": 783
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 26,
         "points": 783
       }
     ],
@@ -16623,6 +16804,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 37,
         "points": 754
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 38,
+        "points": 754
       }
     ],
     "Jordi Re.": [
@@ -17147,6 +17334,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 31,
         "points": 770
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 32,
+        "points": 774
       }
     ],
     "Juanma": [
@@ -17671,6 +17864,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 6,
         "points": 846
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 5,
+        "points": 852
       }
     ],
     "Manel P.": [
@@ -18195,6 +18394,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 54,
         "points": 661
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 54,
+        "points": 665
       }
     ],
     "Manu G.": [
@@ -18719,6 +18924,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 30,
         "points": 772
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 28,
+        "points": 778
       }
     ],
     "Martina": [
@@ -19242,6 +19453,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 8,
+        "points": 838
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 9,
         "points": 838
       }
     ],
@@ -19767,6 +19984,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 29,
         "points": 773
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 27,
+        "points": 779
       }
     ],
     "Michael": [
@@ -20289,6 +20512,12 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 86,
         "matchId": "M86",
+        "rank": 23,
+        "points": 790
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
         "rank": 23,
         "points": 790
       }
@@ -20815,6 +21044,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 3,
         "points": 854
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 4,
+        "points": 858
       }
     ],
     "Nick": [
@@ -21339,6 +21574,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 42,
         "points": 731
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 40,
+        "points": 741
       }
     ],
     "Nicolau": [
@@ -21863,6 +22104,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 48,
         "points": 708
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 46,
+        "points": 718
       }
     ],
     "Norber": [
@@ -22386,6 +22633,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 27,
+        "points": 775
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 30,
         "points": 775
       }
     ],
@@ -22911,6 +23164,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 7,
         "points": 839
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 7,
+        "points": 849
       }
     ],
     "Oriol V.": [
@@ -23434,6 +23693,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 11,
+        "points": 816
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 13,
         "points": 816
       }
     ],
@@ -23959,6 +24224,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 19,
         "points": 795
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 17,
+        "points": 805
       }
     ],
     "Oscar B.": [
@@ -24483,6 +24754,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 5,
         "points": 847
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 6,
+        "points": 851
       }
     ],
     "Pablo": [
@@ -25005,6 +25282,12 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 86,
         "matchId": "M86",
+        "rank": 2,
+        "points": 863
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
         "rank": 2,
         "points": 863
       }
@@ -25531,6 +25814,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 49,
         "points": 704
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 45,
+        "points": 720
       }
     ],
     "Pau": [
@@ -26055,6 +26344,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 9,
         "points": 834
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 8,
+        "points": 844
       }
     ],
     "Pere": [
@@ -26578,6 +26873,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 40,
+        "points": 737
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 41,
         "points": 737
       }
     ],
@@ -27103,6 +27404,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 10,
         "points": 820
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 10,
+        "points": 830
       }
     ],
     "Rafa A.": [
@@ -27626,6 +27933,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 16,
+        "points": 802
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 19,
         "points": 802
       }
     ],
@@ -28151,6 +28464,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 20,
         "points": 793
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 20,
+        "points": 799
       }
     ],
     "Rafa B.": [
@@ -28675,6 +28994,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 4,
         "points": 851
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 3,
+        "points": 861
       }
     ],
     "Sergi S.": [
@@ -29199,6 +29524,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 17,
         "points": 797
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 18,
+        "points": 803
       }
     ],
     "Teo": [
@@ -29723,6 +30054,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 43,
         "points": 730
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 42,
+        "points": 736
       }
     ],
     "Toni C.": [
@@ -30247,6 +30584,12 @@ window.PORRA_RANKING_HISTORY = {
         "matchId": "M86",
         "rank": 45,
         "points": 710
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 48,
+        "points": 716
       }
     ],
     "Xavi F.": [
@@ -30770,6 +31113,12 @@ window.PORRA_RANKING_HISTORY = {
         "x": 86,
         "matchId": "M86",
         "rank": 36,
+        "points": 755
+      },
+      {
+        "x": 87,
+        "matchId": "M87",
+        "rank": 37,
         "points": 755
       }
     ]
