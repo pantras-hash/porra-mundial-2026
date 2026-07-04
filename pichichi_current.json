@@ -1,5 +1,5 @@
 {
-  "asOf": "After Colombia 1-0 Ghana / M87 (2026-07-03), with Australia-Egypt and Argentina-Cape Verde also locked",
+  "asOf": "After Colombia 1-0 Ghana / M87 (2026-07-03), corrected Golden Boot baselines for Mbappé and Haaland",
   "source": "Manual update from confirmed Round of 32 scorers through Colombia-Ghana. Penalty shootout goals and own goals excluded.",
   "sourceNotes": [
     {
@@ -41,6 +41,10 @@
     {
       "name": "2026-07-01 Round of 32 scorer updates through M81",
       "note": "England 2-1 DR Congo: Harry Kane +2, Brian Cipenga +1. Belgium 3-2 Senegal: Romelu Lukaku +1, Youri Tielemans +2, Habib Diarra +1, Ismaïla Sarr +1. USA 2-0 Bosnia-Herzegovina: Folarin Balogun +1, Malik Tillman +1. Penalty shootout goals excluded."
+    },
+    {
+      "name": "2026-07-04 correction",
+      "note": "Corrected Kylian Mbappé from 4 to 6 goals and Erling Haaland from 4 to 5 goals; Ousmane Dembélé assists corrected to 2. FOX and Whereig both list Messi 7, Mbappé 6, Kane/Haaland 5."
     }
   ],
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
@@ -72,14 +76,14 @@
     {
       "name": "Erling Haaland",
       "team": "Norway",
-      "goals": 4,
+      "goals": 5,
       "assists": 0,
       "minutes": 208,
       "aliases": [
         "Erling Haaland",
         "Haaland"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
     },
     {
       "name": "Ismaïla Sarr",
@@ -97,7 +101,7 @@
     {
       "name": "Kylian Mbappé",
       "team": "France",
-      "goals": 4,
+      "goals": 6,
       "assists": 2,
       "minutes": 290,
       "aliases": [
@@ -106,7 +110,7 @@
         "Mbappe",
         "Mbappé"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
     },
     {
       "name": "Mikel Oyarzabal",
@@ -126,7 +130,7 @@
       "name": "Ousmane Dembélé",
       "team": "France",
       "goals": 4,
-      "assists": 1,
+      "assists": 2,
       "minutes": 226,
       "aliases": [
         "Ousmane Dembélé",
@@ -134,7 +138,7 @@
         "Dembélé",
         "Ousmane Dembele"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
     },
     {
       "name": "Vinícius Júnior",
@@ -2304,6 +2308,14 @@
         "Australia 1-1 Egypt: Emam Ashour +1; Australia goal treated as own goal, no Pichichi scorer.",
         "Argentina 3-2 Cabo Verde: Lionel Messi +1, Lisandro Martínez +1, Deroy Duarte +1, Sidny Lopes Cabral +1; Argentina third treated as own goal.",
         "Colombia 1-0 Ghana: Jhon Arias +1."
+      ]
+    },
+    {
+      "match": "Pichichi baseline correction",
+      "updates": [
+        "Kylian Mbappé 4 -> 6",
+        "Erling Haaland 4 -> 5",
+        "Ousmane Dembélé assists 1 -> 2"
       ]
     }
   ]
