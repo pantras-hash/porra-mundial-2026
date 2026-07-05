@@ -1,6 +1,6 @@
 {
-  "asOf": "After Colombia 1-0 Ghana / M87 (2026-07-03), corrected Golden Boot baselines for Mbappé and Haaland",
-  "source": "Manual update from confirmed Round of 32 scorers through Colombia-Ghana. Penalty shootout goals and own goals excluded.",
+  "asOf": "After Morocco 3-0 Canada and France 1-0 Paraguay / M89, 2026-07-04",
+  "source": "Corrected with July 4 R16 scorers: Morocco 3-0 Canada (Ounahi x2, Rahimi) and France 1-0 Paraguay (Mbappé pen).",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -50,6 +50,20 @@
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
   "players": [
     {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "goals": 7,
+      "assists": 2,
+      "minutes": 290,
+      "aliases": [
+        "Kylian Mbappe",
+        "Kylian Mbappé",
+        "Mbappe",
+        "Mbappé"
+      ],
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded.; 2026-07-04 R16 Paraguay 0-1 France: +1 penalty goal, shootout goals excluded."
+    },
+    {
       "name": "Lionel Messi",
       "team": "Argentina",
       "goals": 7,
@@ -60,18 +74,6 @@
         "Messi"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "goals": 5,
-      "assists": 0,
-      "minutes": 291,
-      "aliases": [
-        "Harry Kane",
-        "Kane"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +2 goals, penalty shootout goals excluded."
     },
     {
       "name": "Erling Haaland",
@@ -86,6 +88,18 @@
       "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
     },
     {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 5,
+      "assists": 0,
+      "minutes": 291,
+      "aliases": [
+        "Harry Kane",
+        "Kane"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +2 goals, penalty shootout goals excluded."
+    },
+    {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
       "goals": 4,
@@ -97,20 +111,6 @@
         "Sarr"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
-    },
-    {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "goals": 6,
-      "assists": 2,
-      "minutes": 290,
-      "aliases": [
-        "Kylian Mbappé",
-        "Kylian Mbappe",
-        "Mbappe",
-        "Mbappé"
-      ],
-      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
     },
     {
       "name": "Mikel Oyarzabal",
@@ -347,6 +347,30 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
+      "name": "Azzedine Ounahi",
+      "team": "Morocco",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Azzedine Ounahi",
+        "Ounahi"
+      ],
+      "source": "2026-07-04 R16 Canada 0-3 Morocco: +2 goals, penalty shootout goals and own goals excluded."
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "goals": 2,
+      "assists": 2,
+      "minutes": 283,
+      "aliases": [
+        "Breel Embolo",
+        "Embolo"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye."
+    },
+    {
       "name": "Crysencio Summerville",
       "team": "Netherlands",
       "goals": 2,
@@ -395,6 +419,19 @@
         "Muñoz"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 208,
+      "aliases": [
+        "Emam Ashour",
+        "Ashour",
+        "Eman Ashour"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Ermin Mahmić",
@@ -567,6 +604,18 @@
         "Vargas"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
+      "goals": 2,
+      "assists": 1,
+      "minutes": 54,
+      "aliases": [
+        "Rahimi",
+        "Soufiane Rahimi"
+      ],
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-04 R16 Canada 0-3 Morocco: +1 goal, penalty shootout goals and own goals excluded."
     },
     {
       "name": "Yasin Ayari",
@@ -808,18 +857,6 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Breel Embolo",
-      "team": "Switzerland",
-      "goals": 2,
-      "assists": 2,
-      "minutes": 283,
-      "aliases": [
-        "Breel Embolo",
-        "Embolo"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye."
-    },
-    {
       "name": "Brian Cipenga",
       "team": "DR Congo",
       "goals": 1,
@@ -880,6 +917,30 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Dan Ndoye",
+        "Ndoye"
+      ],
+      "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation."
+    },
+    {
+      "name": "Deroy Duarte",
+      "team": "Cabo Verde",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Deroy Duarte",
+        "Duarte"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+    },
+    {
       "name": "Derrick Luckassen",
       "team": "Ghana",
       "goals": 1,
@@ -917,19 +978,6 @@
         "Shomurodov"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Emam Ashour",
-      "team": "Egypt",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 208,
-      "aliases": [
-        "Emam Ashour",
-        "Ashour",
-        "Eman Ashour"
-      ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Felix Nmecha",
@@ -1212,6 +1260,18 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
+      "name": "Jhon Arias",
+      "team": "Colombia",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Jhon Arias",
+        "Arias"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+    },
+    {
       "name": "John McGinn",
       "team": "Scotland",
       "goals": 1,
@@ -1427,6 +1487,18 @@
         "Sané"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Lisandro Martínez",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Lisandro Martínez",
+        "Lisandro Martinez"
+      ],
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Livano Comenencia",
@@ -1935,16 +2007,17 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
-      "name": "Soufiane Rahimi",
-      "team": "Morocco",
+      "name": "Sidny Lopes Cabral",
+      "team": "Cabo Verde",
       "goals": 1,
-      "assists": 1,
-      "minutes": 54,
+      "assists": 0,
+      "minutes": 0,
       "aliases": [
-        "Soufiane Rahimi",
-        "Rahimi"
+        "Sidny Lopes Cabral",
+        "Sidny Cabral",
+        "Cabral"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     },
     {
       "name": "Stephen Eustáquio",
@@ -2064,67 +2137,6 @@
         "Fidalgo"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Dan Ndoye",
-      "team": "Switzerland",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Dan Ndoye",
-        "Ndoye"
-      ],
-      "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation."
-    },
-    {
-      "name": "Lisandro Martínez",
-      "team": "Argentina",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Lisandro Martínez",
-        "Lisandro Martinez"
-      ],
-      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
-    },
-    {
-      "name": "Deroy Duarte",
-      "team": "Cabo Verde",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Deroy Duarte",
-        "Duarte"
-      ],
-      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
-    },
-    {
-      "name": "Sidny Lopes Cabral",
-      "team": "Cabo Verde",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Sidny Lopes Cabral",
-        "Sidny Cabral",
-        "Cabral"
-      ],
-      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
-    },
-    {
-      "name": "Jhon Arias",
-      "team": "Colombia",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Jhon Arias",
-        "Arias"
-      ],
-      "source": "Manual Round of 32 update after M87; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
     }
   ],
   "predictionTeamHints": {
@@ -2316,6 +2328,19 @@
         "Kylian Mbappé 4 -> 6",
         "Erling Haaland 4 -> 5",
         "Ousmane Dembélé assists 1 -> 2"
+      ]
+    },
+    {
+      "match": "M90 Canada 0-3 Morocco",
+      "updates": [
+        "Azzedine Ounahi +2",
+        "Soufiane Rahimi +1"
+      ]
+    },
+    {
+      "match": "M89 Paraguay 0-1 France",
+      "updates": [
+        "Kylian Mbappé +1"
       ]
     }
   ]
