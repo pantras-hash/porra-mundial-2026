@@ -1,7 +1,7 @@
 // RESULTATS DE LA PORRA DEL MUNDIAL 2026
 // Hotfix 2026-06-21: keep chronological date/sortOrder metadata for all group matches.
 // This avoids the two-next-games prediction helper falling back to group-order IDs.
-window.PORRA_ULTIM_PARTIT = "M91";
+window.PORRA_ULTIM_PARTIT = "M92";
 window.PORRA_RESULTATS = {
   matches: {
     // 2026-06-11 · Mexico vs South Africa
@@ -187,7 +187,7 @@ window.PORRA_RESULTATS = {
     // 2026-07-05 · W76 vs W78
     "M91": { homeScore: 1, awayScore: 2, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 91, status: "FINISHED" },
     // 2026-07-05 · W79 vs W80
-    "M92": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 92, status: "TIMED" },
+    "M92": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-05", sortOrder: 92, status: "SCHEDULED" },
     // 2026-07-06 · W83 vs W84
     "M93": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-06", sortOrder: 93, status: "TIMED" },
     // 2026-07-06 · W81 vs W82
