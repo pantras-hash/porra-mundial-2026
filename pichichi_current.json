@@ -1,5 +1,5 @@
 {
-  "asOf": "After Morocco 3-0 Canada and France 1-0 Paraguay / M89, 2026-07-04",
+  "asOf": "After Brazil 1-2 Norway and Mexico 2-3 England / M92",
   "source": "Corrected with July 4 R16 scorers: Morocco 3-0 Canada (Ounahi x2, Rahimi) and France 1-0 Paraguay (Mbappé pen).",
   "sourceNotes": [
     {
@@ -78,26 +78,26 @@
     {
       "name": "Erling Haaland",
       "team": "Norway",
-      "goals": 5,
+      "goals": 7,
       "assists": 0,
       "minutes": 208,
       "aliases": [
         "Erling Haaland",
         "Haaland"
       ],
-      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded."
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded.; 2026-07-05 R16 Brazil 1-2 Norway: +2 goals."
     },
     {
       "name": "Harry Kane",
       "team": "England",
-      "goals": 5,
+      "goals": 6,
       "assists": 0,
       "minutes": 291,
       "aliases": [
         "Harry Kane",
         "Kane"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +2 goals, penalty shootout goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +2 goals, penalty shootout goals excluded.; 2026-07-05 R16 Mexico 2-3 England: +1 penalty goal."
     },
     {
       "name": "Ismaïla Sarr",
@@ -275,7 +275,7 @@
     {
       "name": "Julián Quiñones",
       "team": "Mexico",
-      "goals": 3,
+      "goals": 4,
       "assists": 0,
       "minutes": 270,
       "aliases": [
@@ -284,7 +284,7 @@
         "Quinones",
         "Quiñones"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded.; 2026-07-05 R16 Mexico 2-3 England: +1 goal."
     },
     {
       "name": "Kai Havertz",
@@ -462,14 +462,14 @@
     {
       "name": "Jude Bellingham",
       "team": "England",
-      "goals": 2,
+      "goals": 4,
       "assists": 1,
       "minutes": 238,
       "aliases": [
         "Jude Bellingham",
         "Bellingham"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-05 R16 Mexico 2-3 England: +2 goals."
     },
     {
       "name": "Leandro Trossard",
@@ -557,7 +557,7 @@
     {
       "name": "Raúl Jiménez",
       "team": "Mexico",
-      "goals": 2,
+      "goals": 3,
       "assists": 0,
       "minutes": 164,
       "aliases": [
@@ -566,7 +566,7 @@
         "Jiménez",
         "Raul Jimenez"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; Assumed M79 Mexico 2-0 Ecuador scorer update: +1 goal, penalty shootout goals excluded.; 2026-07-05 R16 Mexico 2-3 England: +1 penalty goal."
     },
     {
       "name": "Riyad Mahrez",
@@ -2137,6 +2137,19 @@
         "Fidalgo"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Neymar",
+      "team": "Brazil",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Neymar",
+        "Neymar Jr",
+        "Neymar Jr."
+      ],
+      "source": "Added from knockout match scorer update; penalty shootout goals excluded.; 2026-07-05 R16 Brazil 1-2 Norway: +1 goal."
     }
   ],
   "predictionTeamHints": {
@@ -2342,6 +2355,26 @@
       "updates": [
         "Kylian Mbappé +1"
       ]
+    },
+    {
+      "match": "M91",
+      "label": "Brazil 1-2 Norway",
+      "updates": [
+        "Erling Haaland +2",
+        "Neymar +1"
+      ],
+      "note": "Penalty shootout goals excluded; Neymar goal was in-match penalty."
+    },
+    {
+      "match": "M92",
+      "label": "Mexico 2-3 England",
+      "updates": [
+        "Jude Bellingham +2",
+        "Harry Kane +1",
+        "Julián Quiñones +1",
+        "Raúl Jiménez +1"
+      ],
+      "note": "Penalty shootout goals excluded; Kane/Jiménez goals were in-match penalties."
     }
   ]
 }
