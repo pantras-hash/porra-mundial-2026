@@ -1,5 +1,5 @@
 {
-  "asOf": "After Brazil 1-2 Norway and Mexico 2-3 England / M92",
+  "asOf": "After USA 1-4 Belgium / M94",
   "source": "Corrected with July 4 R16 scorers: Morocco 3-0 Canada (Ounahi x2, Rahimi) and France 1-0 Paraguay (Mbappé pen).",
   "sourceNotes": [
     {
@@ -583,14 +583,14 @@
     {
       "name": "Romelu Lukaku",
       "team": "Belgium",
-      "goals": 2,
+      "goals": 3,
       "assists": 1,
       "minutes": 121,
       "aliases": [
         "Lukaku",
         "Romelu Lukaku"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-01 R32 scorer update: +1 goal, penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +1 goal."
     },
     {
       "name": "Ruben Vargas",
@@ -1566,14 +1566,14 @@
     {
       "name": "Malik Tillman",
       "team": "USA",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 0,
       "aliases": [
         "Malik Tillman",
         "Tillman"
       ],
-      "source": "2026-07-01 R32 scorer update added manually; penalty shootout goals excluded."
+      "source": "2026-07-01 R32 scorer update added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +1 goal."
     },
     {
       "name": "Marcel Sabitzer",
@@ -2150,6 +2150,43 @@
         "Neymar Jr."
       ],
       "source": "Added from knockout match scorer update; penalty shootout goals excluded.; 2026-07-05 R16 Brazil 1-2 Norway: +1 goal."
+    },
+    {
+      "name": "Mikel Merino",
+      "team": "Spain",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Mikel Merino",
+        "Merino"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 Portugal 0-1 Spain: +1 goal."
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Charles De Ketelaere",
+        "De Ketelaere",
+        "CDK"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +2 goals."
+    },
+    {
+      "name": "Hans Vanaken",
+      "team": "Belgium",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Hans Vanaken",
+        "Vanaken"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +1 goal."
     }
   ],
   "predictionTeamHints": {
@@ -2375,6 +2412,21 @@
         "Raúl Jiménez +1"
       ],
       "note": "Penalty shootout goals excluded; Kane/Jiménez goals were in-match penalties."
+    },
+    {
+      "match": "Portugal 0-1 Spain",
+      "updates": [
+        "Mikel Merino +1"
+      ]
+    },
+    {
+      "match": "USA 1-4 Belgium",
+      "updates": [
+        "Charles De Ketelaere +2",
+        "Hans Vanaken +1",
+        "Romelu Lukaku +1",
+        "Malik Tillman +1"
+      ]
     }
   ]
 }
