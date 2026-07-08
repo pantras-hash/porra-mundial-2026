@@ -1,6 +1,6 @@
 {
-  "asOf": "After USA 1-4 Belgium / M94",
-  "source": "Corrected with July 4 R16 scorers: Morocco 3-0 Canada (Ounahi x2, Rahimi) and France 1-0 Paraguay (Mbappé pen).",
+  "asOf": "After Argentina 3-2 Egypt and Switzerland 0-0 Colombia, Switzerland advance on penalties / M96",
+  "source": "Updated through M96: Argentina 3-2 Egypt scorer updates applied; Switzerland-Colombia had no regulation/extra-time goals, shootout goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -45,6 +45,10 @@
     {
       "name": "2026-07-04 correction",
       "note": "Corrected Kylian Mbappé from 4 to 6 goals and Erling Haaland from 4 to 5 goals; Ousmane Dembélé assists corrected to 2. FOX and Whereig both list Messi 7, Mbappé 6, Kane/Haaland 5."
+    },
+    {
+      "name": "2026-07-07 Round of 16 scorer updates",
+      "note": "Argentina 3-2 Egypt: Yasser Ibrahim +1, Mostafa Zico +1, Cristian Romero +1, Lionel Messi +1, Enzo Fernández +1. Switzerland 0-0 Colombia: no Pichichi additions; penalty shootout goals excluded."
     }
   ],
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
@@ -66,14 +70,14 @@
     {
       "name": "Lionel Messi",
       "team": "Argentina",
-      "goals": 7,
+      "goals": 8,
       "assists": 0,
       "minutes": 223,
       "aliases": [
         "Lionel Messi",
         "Messi"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-03 R32 update: +1 goal(s), penalty shootout goals and own goals excluded.; 2026-07-07 R16 Argentina 3-2 Egypt: +1 goal(s), shootout goals excluded."
     },
     {
       "name": "Erling Haaland",
@@ -1720,16 +1724,16 @@
     {
       "name": "Mostafa Ziko",
       "team": "Egypt",
-      "goals": 1,
+      "goals": 2,
       "assists": 1,
       "minutes": 241,
       "aliases": [
-        "Mostafa Ziko",
         "Mostafa Zico",
+        "Mostafa Ziko",
         "Zico",
         "Ziko"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-07 R16 Argentina 3-2 Egypt: +1 goal, shootout goals excluded."
     },
     {
       "name": "Mousa Al-Taamari",
@@ -2187,6 +2191,42 @@
         "Vanaken"
       ],
       "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +1 goal."
+    },
+    {
+      "name": "Cristian Romero",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Cristian Romero",
+        "Cuti Romero",
+        "Romero"
+      ],
+      "source": "2026-07-07 R16 Argentina 3-2 Egypt scorer update; penalty shootout goals excluded.; 2026-07-07 R16 Argentina 3-2 Egypt: +1 goal(s), shootout goals excluded."
+    },
+    {
+      "name": "Enzo Fernández",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Enzo Fernandez",
+        "Enzo Fernández"
+      ],
+      "source": "2026-07-07 R16 Argentina 3-2 Egypt scorer update; penalty shootout goals excluded.; 2026-07-07 R16 Argentina 3-2 Egypt: +1 goal(s), shootout goals excluded."
+    },
+    {
+      "name": "Yasser Ibrahim",
+      "team": "Egypt",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Yasser Ibrahim"
+      ],
+      "source": "2026-07-07 R16 Argentina 3-2 Egypt scorer update; penalty shootout goals excluded.; 2026-07-07 R16 Argentina 3-2 Egypt: +1 goal(s), shootout goals excluded."
     }
   ],
   "predictionTeamHints": {
