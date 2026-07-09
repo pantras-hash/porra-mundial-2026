@@ -197,7 +197,7 @@ window.PORRA_RESULTATS = {
     // 2026-07-07 · W85 vs W87
     "M96": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-07-07", sortOrder: 96, status: "FINISHED" },
     // 2026-07-09 · W89 vs W90
-    "M97": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-07-09", sortOrder: 97, status: "IN_PLAY" },
+    "M97": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-07-09", sortOrder: 97, status: "IN_PLAY" },
     // 2026-07-10 · W93 vs W94
     "M98": { homeScore: null, awayScore: null, penHome: null, penAway: null, date: "2026-07-10", sortOrder: 98, status: "TIMED" },
     // 2026-07-11 · W91 vs W92
