@@ -1,6 +1,6 @@
 window.PORRA_RANKING_HISTORY = {
-  "generatedAt": "2026-07-10T21:19:33Z",
-  "label": "10 Jul 2026, 21:19 UTC",
+  "generatedAt": "2026-07-10T21:20:31Z",
+  "label": "10 Jul 2026, 21:20 UTC",
   "source": "Reconstructed from current official results in resultats.js, replayed in match order; includes locked knockout team/position points once slots are known",
   "snapshotCount": 98,
   "playerCount": 57,
@@ -3922,13 +3922,13 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 41,
+        "rank": 42,
         "points": 848
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 38,
+        "rank": 39,
         "points": 880
       }
     ],
@@ -5686,13 +5686,13 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 95,
         "matchId": "M96",
-        "rank": 39,
+        "rank": 40,
         "points": 840
       },
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 44,
+        "rank": 45,
         "points": 840
       },
       {
@@ -9232,13 +9232,13 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 42,
+        "rank": 43,
         "points": 845
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 41,
+        "rank": 42,
         "points": 871
       }
     ],
@@ -13356,20 +13356,20 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 95,
         "matchId": "M96",
-        "rank": 41,
-        "points": 839
+        "rank": 36,
+        "points": 855
       },
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 46,
-        "points": 839
+        "rank": 40,
+        "points": 855
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 45,
-        "points": 865
+        "rank": 38,
+        "points": 881
       }
     ],
     "Guillem O.": [
@@ -13946,7 +13946,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 95,
         "matchId": "M96",
-        "rank": 37,
+        "rank": 38,
         "points": 850
       },
       {
@@ -15722,13 +15722,13 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 43,
+        "rank": 44,
         "points": 844
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 42,
+        "rank": 43,
         "points": 870
       }
     ],
@@ -16318,7 +16318,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 40,
+        "rank": 41,
         "points": 872
       }
     ],
@@ -18666,19 +18666,19 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 95,
         "matchId": "M96",
-        "rank": 39,
+        "rank": 40,
         "points": 840
       },
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 40,
+        "rank": 41,
         "points": 850
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 42,
+        "rank": 43,
         "points": 870
       }
     ],
@@ -28702,13 +28702,13 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 96,
         "matchId": "M97",
-        "rank": 44,
+        "rank": 45,
         "points": 840
       },
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 44,
+        "rank": 45,
         "points": 866
       }
     ],
@@ -29876,7 +29876,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 95,
         "matchId": "M96",
-        "rank": 38,
+        "rank": 39,
         "points": 847
       },
       {
@@ -33428,7 +33428,7 @@ window.PORRA_RANKING_HISTORY = {
       {
         "x": 97,
         "matchId": "M98",
-        "rank": 38,
+        "rank": 39,
         "points": 880
       }
     ],
