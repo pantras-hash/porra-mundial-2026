@@ -1,6 +1,6 @@
 {
-  "asOf": "After France 2-0 Morocco / M97",
-  "source": "Updated through M97: France 2-0 Morocco; Kylian Mbappé +1 and Ousmane Dembélé +1. Penalty shootout goals excluded; missed penalties do not count.",
+  "asOf": "After Spain 2-1 Belgium / M98",
+  "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -53,6 +53,10 @@
     {
       "name": "2026-07-09 France 2-0 Morocco scorer updates",
       "note": "ESPN/FotMob/Guardian match reports list Kylian Mbappé (60) and Ousmane Dembélé (66) as France scorers. Mbappé missed an earlier penalty; only the goal is counted."
+    },
+    {
+      "name": "2026-07-10 Spain 2-1 Belgium scorer updates",
+      "note": "Match reports list Fabián Ruiz and Mikel Merino for Spain and Charles De Ketelaere for Belgium."
     }
   ],
   "methodNote": "Proxy model: final player goals = current goals + number of remaining matches played by that player's team in each Monte Carlo simulation. Assists/minutes are included for audit/tie-break context and are ignored by the current simulation code.",
@@ -195,6 +199,19 @@
         "Oyarzábal"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-02 R32 scorer update Spain 3-0 Austria: +2 goals, penalty shootout goals excluded."
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "goals": 3,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Charles De Ketelaere",
+        "De Ketelaere",
+        "CDK"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +2 goals.; 2026-07-10 QF Spain 2-1 Belgium: +1 goal."
     },
     {
       "name": "Romelu Lukaku",
@@ -393,19 +410,6 @@
         "Marko Arnautovic"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Charles De Ketelaere",
-      "team": "Belgium",
-      "goals": 2,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Charles De Ketelaere",
-        "De Ketelaere",
-        "CDK"
-      ],
-      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 USA 1-4 Belgium: +2 goals."
     },
     {
       "name": "Leandro Trossard",
@@ -610,6 +614,18 @@
         "P. Gueye"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Mikel Merino",
+      "team": "Spain",
+      "goals": 2,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Mikel Merino",
+        "Merino"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 Portugal 0-1 Spain: +1 goal.; 2026-07-10 QF Spain 2-1 Belgium: +1 goal."
     },
     {
       "name": "Anthony Elanga",
@@ -1967,6 +1983,21 @@
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
     },
     {
+      "name": "Fabián Ruiz",
+      "team": "Spain",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Fabián Ruiz",
+        "Fabian Ruiz",
+        "Fabián",
+        "Fabian",
+        "Ruiz"
+      ],
+      "source": "Added manually; penalty shootout goals excluded.; 2026-07-10 QF Spain 2-1 Belgium: +1 goal."
+    },
+    {
       "name": "Lamine Yamal",
       "team": "Spain",
       "goals": 1,
@@ -1977,18 +2008,6 @@
         "Yamal"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
-    },
-    {
-      "name": "Mikel Merino",
-      "team": "Spain",
-      "goals": 1,
-      "assists": 0,
-      "minutes": 0,
-      "aliases": [
-        "Mikel Merino",
-        "Merino"
-      ],
-      "source": "Added manually; penalty shootout goals excluded.; 2026-07-06 R16 Portugal 0-1 Spain: +1 goal."
     },
     {
       "name": "Pedro Porro",
@@ -2485,6 +2504,24 @@
         }
       ],
       "note": "No Morocco goals. Mbappé missed one penalty, which is not counted as a goal."
+    },
+    {
+      "match": "M98 Spain 2-1 Belgium",
+      "updates": [
+        {
+          "name": "Fabián Ruiz",
+          "goalsAdded": 1
+        },
+        {
+          "name": "Mikel Merino",
+          "goalsAdded": 1
+        },
+        {
+          "name": "Charles De Ketelaere",
+          "goalsAdded": 1
+        }
+      ],
+      "note": "Spain advances to semifinal. No penalties; shootout goals not relevant."
     }
   ]
 }
