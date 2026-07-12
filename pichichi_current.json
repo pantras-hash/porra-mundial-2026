@@ -150,14 +150,14 @@
     {
       "name": "Jude Bellingham",
       "team": "England",
-      "goals": 4,
+      "goals": 6,
       "assists": 1,
       "minutes": 238,
       "aliases": [
         "Jude Bellingham",
         "Bellingham"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-05 R16 Mexico 2-3 England: +2 goals."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-05 R16 Mexico 2-3 England: +2 goals.; 2026-07-11 QF Norway 1-2 England: +2 goals, extra-time goals count, shootout goals excluded."
     },
     {
       "name": "Julián Quiñones",
@@ -2077,14 +2077,14 @@
     {
       "name": "Dan Ndoye",
       "team": "Switzerland",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 0,
       "aliases": [
         "Dan Ndoye",
         "Ndoye"
       ],
-      "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation."
+      "source": "Manual M85 update from match reports: Switzerland 2-0 Algeria; goals by Breel Embolo and Dan Ndoye. Added as new tracked scorer; assists/minutes unavailable and ignored by simulation.; 2026-07-11 QF Argentina 3-1 Switzerland: +1 verified Switzerland goal."
     },
     {
       "name": "Granit Xhaka",
@@ -2250,6 +2250,44 @@
         "Shomurodov"
       ],
       "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "team": "Norway",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Andreas Schjelderup",
+        "Schjelderup"
+      ],
+      "source": "2026-07-11 QF Norway 1-2 England: +1 goal."
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Alexis Mac Allister",
+        "Mac Allister"
+      ],
+      "source": "2026-07-11 QF Argentina 3-1 Switzerland: +1 verified opening goal."
+    },
+    {
+      "name": "Julián Álvarez",
+      "team": "Argentina",
+      "goals": 1,
+      "assists": 0,
+      "minutes": 0,
+      "aliases": [
+        "Julián Álvarez",
+        "Julian Alvarez",
+        "Álvarez",
+        "Alvarez"
+      ],
+      "source": "2026-07-11 QF Argentina 3-1 Switzerland: +1 verified extra-time goal."
     }
   ],
   "predictionTeamHints": {
@@ -2523,5 +2561,6 @@
       ],
       "note": "Spain advances to semifinal. No penalties; shootout goals not relevant."
     }
-  ]
+  ],
+  "notes": " Argentina-Switzerland set to 3-1 by user; verified scorers added: Mac Allister, Dan Ndoye, Julian Alvarez. Third Argentina scorer not verified in available sources and not added."
 }
