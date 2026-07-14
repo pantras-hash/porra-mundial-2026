@@ -1,6 +1,6 @@
 {
-  "asOf": "After Spain 2-1 Belgium / M98",
-  "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.",
+  "asOf": "After M101 France 0-2 Spain, 2026-07-14",
+  "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.; France 0-2 Spain scorers: Mikel Oyarzabal, Pedro Porro.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -189,7 +189,7 @@
     {
       "name": "Mikel Oyarzabal",
       "team": "Spain",
-      "goals": 4,
+      "goals": 5,
       "assists": 1,
       "minutes": 228,
       "aliases": [
@@ -198,7 +198,7 @@
         "Oyarzabal",
         "Oyarzábal"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-02 R32 scorer update Spain 3-0 Austria: +2 goals, penalty shootout goals excluded."
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-02 R32 scorer update Spain 3-0 Austria: +2 goals, penalty shootout goals excluded.; 2026-07-14 SF France 0-2 Spain: +1 penalty goal."
     },
     {
       "name": "Charles De Ketelaere",
@@ -781,7 +781,7 @@
     {
       "name": "Lautaro Martínez",
       "team": "Argentina",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 195,
       "aliases": [
@@ -791,7 +791,7 @@
         "Martinez",
         "Martínez"
       ],
-      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports"
+      "source": "SB Nation Golden Boot table, updated 2026-06-28 13:50 UTC; top scorers cross-checked with FOX/Sporting News and selected FIFA match reports; 2026-07-11 QF Argentina 3-1 Switzerland: +1 third Argentina goal (user correction)."
     },
     {
       "name": "Lisandro Martínez",
@@ -2012,14 +2012,14 @@
     {
       "name": "Pedro Porro",
       "team": "Spain",
-      "goals": 1,
+      "goals": 2,
       "assists": 0,
       "minutes": 0,
       "aliases": [
         "Pedro Porro",
         "Porro"
       ],
-      "source": "2026-07-02 R32 scorer update Spain 3-0 Austria: +1 goal, penalty shootout goals excluded."
+      "source": "2026-07-02 R32 scorer update Spain 3-0 Austria: +1 goal, penalty shootout goals excluded.; 2026-07-14 SF France 0-2 Spain: +1 goal."
     },
     {
       "name": "Álex Baena",
@@ -2560,7 +2560,17 @@
         }
       ],
       "note": "Spain advances to semifinal. No penalties; shootout goals not relevant."
+    },
+    {
+      "match": "M100 Argentina 3-1 Switzerland",
+      "updates": [
+        {
+          "name": "Lautaro Martínez",
+          "goalsAdded": 1
+        }
+      ],
+      "note": "User correction: Lautaro Martínez scored Argentina third. Penalty shootout goals excluded."
     }
   ],
-  "notes": " Argentina-Switzerland set to 3-1 by user; verified scorers added: Mac Allister, Dan Ndoye, Julian Alvarez. Third Argentina scorer not verified in available sources and not added."
+  "notes": " Argentina-Switzerland set to 3-1 by user; verified scorers added: Mac Allister, Dan Ndoye, Julian Alvarez. Third Argentina scorer corrected by user as Lautaro Martínez and added. M101 France-Spain pichichi update applied: Mikel Oyarzabal +1; Pedro Porro +1."
 }
