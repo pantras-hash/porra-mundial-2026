@@ -1,6 +1,6 @@
 {
-  "asOf": "After M102 England 1-2 Argentina, 2026-07-15",
-  "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.; France 0-2 Spain scorers: Mikel Oyarzabal, Pedro Porro.; England 1-2 Argentina scorers: Anthony Gordon, Enzo Fernández, Lautaro Martínez.",
+  "asOf": "After M103 France 4-6 England, 2026-07-18",
+  "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.; France 0-2 Spain scorers: Mikel Oyarzabal, Pedro Porro.; England 1-2 Argentina scorers: Anthony Gordon, Enzo Fernández, Lautaro Martínez.; France 4-6 England result applied. WARNING: individual scorers for M103 were not supplied, so no Pichichi goal increments were applied for this match.",
   "sourceNotes": [
     {
       "name": "SB Nation Golden Boot table",
@@ -2586,5 +2586,5 @@
       "note": "User correction: Lautaro Martínez scored Argentina third. Penalty shootout goals excluded."
     }
   ],
-  "notes": " Argentina-Switzerland set to 3-1 by user; verified scorers added: Mac Allister, Dan Ndoye, Julian Alvarez. Third Argentina scorer corrected by user as Lautaro Martínez and added. M101 France-Spain pichichi update applied: Mikel Oyarzabal +1; Pedro Porro +1. M102 England-Argentina pichichi update applied: Anthony Gordon +1; Enzo Fernández +1; Lautaro Martínez +1."
+  "notes": " Argentina-Switzerland set to 3-1 by user; verified scorers added: Mac Allister, Dan Ndoye, Julian Alvarez. Third Argentina scorer corrected by user as Lautaro Martínez and added. M101 France-Spain pichichi update applied: Mikel Oyarzabal +1; Pedro Porro +1. M102 England-Argentina pichichi update applied: Anthony Gordon +1; Enzo Fernández +1; Lautaro Martínez +1. M103 France-England score applied as 4-6; scorer-level Pichichi increments were not applied because scorers were not supplied."
 }
