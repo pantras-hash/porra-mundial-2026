@@ -211,7 +211,7 @@ window.PORRA_RESULTATS = {
     // 2026-07-18 · L101 vs L102
     "M103": { homeScore: 4, awayScore: 6, penHome: null, penAway: null, date: "2026-07-18", sortOrder: 103, status: "FINISHED" },
     // 2026-07-19 · W101 vs W102
-    "M104": { homeScore: 0, awayScore: 0, penHome: null, penAway: null, date: "2026-07-19", sortOrder: 104, status: "PAUSED" }
+    "M104": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-07-19", sortOrder: 104, status: "IN_PLAY" }
   },
   final: { topScorer: null, topScorerGoals: null },
   groupRankingOverrides: {}
