@@ -1,5 +1,5 @@
 {
-  "asOf": "After M103 France 4-6 England, 2026-07-18; scorer-level Pichichi updated",
+  "asOf": "Final: Spain 1-0 Argentina; Mbappé Pichichi with 10 goals",
   "source": "Updated through M98: Spain 2-1 Belgium; Fabián Ruiz +1, Mikel Merino +1, Charles De Ketelaere +1. Penalty shootout goals excluded.; France 0-2 Spain scorers: Mikel Oyarzabal, Pedro Porro.; England 1-2 Argentina scorers: Anthony Gordon, Enzo Fernández, Lautaro Martínez.; France 4-6 England scorers: Mbappé +2, Barcola +1, Dembélé +1; Rice +1, Konsa +1, Saka +3, Bellingham +1.",
   "sourceNotes": [
     {
@@ -73,7 +73,7 @@
         "Mbappe",
         "Mbappé"
       ],
-      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded.; 2026-07-04 R16 Paraguay 0-1 France: +1 penalty goal, shootout goals excluded.; 2026-07-09 QF France 2-0 Morocco: +1 goal, missed penalty not counted.; 2026-07-18 Third-place playoff France 4-6 England: +2 goal(s), shootout goals excluded."
+      "source": "Corrected against FOX Golden Boot tracker updated 2026-07-03 21:17 ET and Whereig tracker updated 2026-07-03 20:26 ET; 2026-07-03 R32 own goals and shootout goals excluded.; 2026-07-04 R16 Paraguay 0-1 France: +1 penalty goal, shootout goals excluded.; 2026-07-09 QF France 2-0 Morocco: +1 goal, missed penalty not counted.; 2026-07-18 Third-place playoff France 4-6 England: +2 goal(s), shootout goals excluded.; FINAL PATCH: Mbappé fixed as Pichichi on 10 after Spain 1-0 Argentina."
     },
     {
       "name": "Lionel Messi",
