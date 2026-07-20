@@ -221,6 +221,6 @@ window.PORRA_RESULTATS = {
     sortOrder: 104
   }
   },
-  final: { topScorer: "Kylian Mbappé", topScorerGoals: 10 },
+  final: { topScorer: "Mbappé", topScorerGoals: 10 },
   groupRankingOverrides: {}
 };
