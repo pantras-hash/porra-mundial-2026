@@ -195,7 +195,7 @@ window.PORRA_RESULTATS = {
     // 2026-07-07 · W86 vs W88
     "M95": { homeScore: 3, awayScore: 2, penHome: null, penAway: null, date: "2026-07-07", sortOrder: 95, status: "FINISHED" },
     // 2026-07-07 · W85 vs W87
-    "M96": { homeScore: 0, awayScore: 0, penHome: 4, penAway: 3, date: "2026-07-07", sortOrder: 96, status: "FINISHED" },
+    "M96": { homeScore: 0, awayScore: 0, penHome: 5, penAway: 4, date: "2026-07-07", sortOrder: 96, status: "FINISHED_PEN" },
     // 2026-07-09 · W89 vs W90
     "M97": { homeScore: 2, awayScore: 0, penHome: null, penAway: null, date: "2026-07-09", sortOrder: 97, status: "FINISHED" },
     // 2026-07-10 · W93 vs W94
@@ -211,8 +211,16 @@ window.PORRA_RESULTATS = {
     // 2026-07-18 · L101 vs L102
     "M103": { homeScore: 4, awayScore: 6, penHome: null, penAway: null, date: "2026-07-18", sortOrder: 103, status: "FINISHED" },
     // 2026-07-19 · W101 vs W102
-    "M104": { homeScore: 1, awayScore: 0, penHome: null, penAway: null, date: "2026-07-19", sortOrder: 104, status: "FINISHED" }
+    "M104": {
+    homeScore: 1,
+    awayScore: 0,
+    penHome: null,
+    penAway: null,
+    status: "FINISHED",
+    date: "2026-07-19",
+    sortOrder: 104
+  }
   },
-  final: { topScorer: null, topScorerGoals: null },
+  final: { topScorer: "Kylian Mbappé", topScorerGoals: 10 },
   groupRankingOverrides: {}
 };

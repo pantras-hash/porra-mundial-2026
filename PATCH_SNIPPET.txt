@@ -1,0 +1,7 @@
+Change in resultats.js:
+
+window.PORRA_ULTIM_PARTIT = "M104";
+
+...
+final: { topScorer: "Kylian Mbappé", topScorerGoals: 10 },
+...
